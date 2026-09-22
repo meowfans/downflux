@@ -6,7 +6,7 @@
 
 # Class: HlsTokenExpiredException
 
-Defined in: [packages/core/exceptions/HLSExpiredException.ts:4](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/exceptions/HLSExpiredException.ts#L4)
+Defined in: [packages/core/exceptions/HLSExpiredException.ts:4](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/HLSExpiredException.ts#L4)
 
 Exception
 The base exception class for all custom exceptions in the application.
@@ -22,7 +22,7 @@ Provides a consistent structure for error information, including error codes, co
 
 > **new HlsTokenExpiredException**(`provider`, `url`): `HlsTokenExpiredException`
 
-Defined in: [packages/core/exceptions/HLSExpiredException.ts:5](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/exceptions/HLSExpiredException.ts#L5)
+Defined in: [packages/core/exceptions/HLSExpiredException.ts:5](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/HLSExpiredException.ts#L5)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ not capture any frames.
 
 > `readonly` **errorCode**: [`ErrorCodes`](../enumerations/ErrorCodes.md)
 
-Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/exceptions/BaseException.ts#L18)
+Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L18)
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/fo
 
 > `readonly` **context**: `Record`\<`string`, `any`\>
 
-Defined in: [packages/core/exceptions/BaseException.ts:19](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/exceptions/BaseException.ts#L19)
+Defined in: [packages/core/exceptions/BaseException.ts:19](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L19)
 
 #### Inherited from
 
@@ -94,7 +94,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:19](https://github.com/fo
 
 > `readonly` `optional` **metadata?**: `any`
 
-Defined in: [packages/core/exceptions/BaseException.ts:20](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/exceptions/BaseException.ts#L20)
+Defined in: [packages/core/exceptions/BaseException.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L20)
 
 #### Inherited from
 
@@ -254,7 +254,7 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 > **toJSON**(): `object`
 
-Defined in: [packages/core/exceptions/BaseException.ts:33](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/exceptions/BaseException.ts#L33)
+Defined in: [packages/core/exceptions/BaseException.ts:33](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L33)
 
 #### Returns
 

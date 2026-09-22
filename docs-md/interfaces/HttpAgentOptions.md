@@ -6,7 +6,7 @@
 
 # Interface: HttpAgentOptions
 
-Defined in: [packages/contracts/ExecutionContracts.ts:128](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L128)
+Defined in: [packages/contracts/ExecutionContracts.ts:149](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L149)
 
 ## Extended by
 
@@ -18,7 +18,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:128](https://github.com/fo
 
 > `optional` **userAgent?**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:129](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L129)
+Defined in: [packages/contracts/ExecutionContracts.ts:150](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L150)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:129](https://github.com/fo
 
 > `optional` **enableSniSpoofing?**: `boolean`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:131](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L131)
+Defined in: [packages/contracts/ExecutionContracts.ts:152](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L152)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:131](https://github.com/fo
 
 > `optional` **proxy?**: [`ProxyOptions`](ProxyOptions.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:133](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L133)
+Defined in: [packages/contracts/ExecutionContracts.ts:154](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L154)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [packages/contracts/ExecutionContracts.ts:133](https://github.com/fo
 
 > `optional` **dispatcher?**: `Dispatcher`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:135](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L135)
+Defined in: [packages/contracts/ExecutionContracts.ts:156](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L156)

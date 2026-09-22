@@ -1,26 +1,23 @@
 import { BasePipeline } from '@base';
 import { IdentifierContext } from '@contracts';
-import { MediaType } from '@types';
+import { NotImplementedException } from '@core/exceptions';
+import { Provider } from '@types';
 import { {{ArgsName}}, {{OutputName}} } from './{{ProviderName}}Contracts';
 
 export class {{ProviderName}}Pipeline extends BasePipeline<{{ArgsName}}, {{OutputName}}> {
-	protected override buildIdentifier(ctx: IdentifierContext<{{OutputName}}>): string {
-		const { mediaType, id } = ctx;
-		const prefix = '{{ProviderName}}';
-		let mediaSegment: string;
-
-		switch (mediaType) {
-			case MediaType.VIDEOS:
-				mediaSegment = `${MediaType.VIDEOS}/${id}`;
-				break;
-			default:
-				mediaSegment = `${mediaType}/${id}`;
-		}
-
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer('// implementation needs here'), mediaSegment);
-
+	protected override buildIdentifier(_ctx: IdentifierContext<{{OutputName}}>): string {
+		/**
+		 * Replace this with the real identifier once extraction is implemented.
+		 *
+		 * Scaffolded providers throw instead of emitting a placeholder path, so an
+		 * unfinished provider fails loudly rather than writing output that looks valid.
+		 *
+		 * A finished implementation looks like:
+		 *   const { mediaType, id } = _ctx;
+		 *   return this.pathBuilder.join('{{ProviderName}}', `${mediaType}/${id}`);
+		 */
+		throw new NotImplementedException(Provider.{{ProviderName}}, 'buildIdentifier');
 	}
 
-	// override mapping method if needed
-
+	// override mappings() to declare which URLs become downloadable items
 }

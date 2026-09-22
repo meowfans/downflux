@@ -8,6 +8,14 @@ import { FFmpegEngine, FileManager } from '@storage';
 
 /**
  * Creates the default service dependency graph.
+ *
+ * @remarks
+ * One graph per provider instance is intentional: `ProgressManager` carries
+ * per-job state, so sharing it across providers would interleave progress from
+ * unrelated jobs. The graph itself is cheap because the undici connection pools
+ * underneath it are process-wide and shared (see `BaseHttpClient`), which is what
+ * previously leaked six pools per provider construction.
+ *
  * @returns Default service dependencies
  */
 export function createDefaultDependencies(): CoordinatorDependencies {

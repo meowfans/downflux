@@ -6,7 +6,7 @@
 
 # Class: ProgressManager
 
-Defined in: [packages/core/progress/ProgressManager.ts:20](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/progress/ProgressManager.ts#L20)
+Defined in: [packages/core/progress/ProgressManager.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L20)
 
 Manages progress updates during ExecutionCoordinator execution.
 
@@ -43,6 +43,26 @@ Defined in: node\_modules/.pnpm/@types+node@25.6.0/node\_modules/@types/node/eve
 #### Inherited from
 
 `EventEmitter.constructor`
+
+## Accessors
+
+### renderOptions
+
+#### Get Signature
+
+> **get** **renderOptions**(): `object`
+
+Defined in: [packages/core/progress/ProgressManager.ts:90](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L90)
+
+Rendering preferences for the current job.
+
+##### Returns
+
+`object`
+
+###### captureConsole?
+
+> `optional` **captureConsole?**: `boolean`
 
 ## Methods
 
@@ -654,7 +674,7 @@ v0.3.5
 
 > **on**\<`E`\>(`eventName`, `listener`): `this`
 
-Defined in: [packages/core/progress/ProgressManager.ts:43](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/progress/ProgressManager.ts#L43)
+Defined in: [packages/core/progress/ProgressManager.ts:58](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L58)
 
 Adds the `listener` function to the end of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -723,7 +743,7 @@ v0.1.101
 
 > **emit**\<`E`\>(`eventName`, ...`args`): `boolean`
 
-Defined in: [packages/core/progress/ProgressManager.ts:47](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/progress/ProgressManager.ts#L47)
+Defined in: [packages/core/progress/ProgressManager.ts:62](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L62)
 
 Synchronously calls each of the listeners registered for the event named
 `eventName`, in the order they were registered, passing the supplied arguments
@@ -798,7 +818,7 @@ v0.1.26
 
 > **off**\<`E`\>(`eventName`, `listener`): `this`
 
-Defined in: [packages/core/progress/ProgressManager.ts:51](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/progress/ProgressManager.ts#L51)
+Defined in: [packages/core/progress/ProgressManager.ts:66](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L66)
 
 Alias for `emitter.removeListener()`.
 
@@ -836,7 +856,7 @@ v10.0.0
 
 > **once**\<`E`\>(`eventName`, `listener`): `this`
 
-Defined in: [packages/core/progress/ProgressManager.ts:55](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/progress/ProgressManager.ts#L55)
+Defined in: [packages/core/progress/ProgressManager.ts:70](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L70)
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -902,7 +922,9 @@ v0.3.0
 
 > **init**(`options`): `void`
 
-Defined in: [packages/core/progress/ProgressManager.ts:59](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/progress/ProgressManager.ts#L59)
+Defined in: [packages/core/progress/ProgressManager.ts:82](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L82)
+
+Binds a new job to this manager.
 
 #### Parameters
 
@@ -914,13 +936,19 @@ Defined in: [packages/core/progress/ProgressManager.ts:59](https://github.com/fo
 
 `void`
 
+#### Remarks
+
+State is cleared as well as options: counters, byte totals and the last error
+are cumulative within a job, so leaving them in place made a second run on the
+same provider instance start from the previous run's numbers.
+
 ***
 
 ### update()
 
 > **update**(`params`): `void`
 
-Defined in: [packages/core/progress/ProgressManager.ts:67](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/progress/ProgressManager.ts#L67)
+Defined in: [packages/core/progress/ProgressManager.ts:251](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L251)
 
 #### Parameters
 

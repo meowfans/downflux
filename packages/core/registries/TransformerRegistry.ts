@@ -111,7 +111,14 @@ export class TransformerRegistry {
 
 		if (cached) return cached;
 
-		const factory = transformerFactories[provider] ?? transformerFactories[Provider.Default];
+		/**
+		 * The factory table is a `Record<Provider, ...>`, so an unknown provider can
+		 * only arrive from an unchecked cast. Failing loudly beats resolving to the
+		 * default transformer and silently extracting the wrong shape.
+		 */
+		const factory = transformerFactories[provider];
+
+		if (!factory) throw new Error(`No transformer registered for provider "${provider}"`);
 
 		const TransformerClass = await factory();
 

@@ -1,6 +1,7 @@
 import { DownloadOptions, HttpAgentOptions } from '@contracts';
 import { ProgressManager } from '@core/progress';
 import { HEADER_PRESETS } from '@shared';
+import { checkServerIdentity as tlsCheckServerIdentity } from 'tls';
 import { Agent, Dispatcher, Headers, ProxyAgent, fetch as UFetch } from 'undici';
 import { brotliDecompressSync, gunzipSync, inflateSync } from 'zlib';
 
@@ -16,7 +17,7 @@ export abstract class BaseHttpClient {
 	constructor(protected readonly progressManager: ProgressManager) {}
 
 	protected readonly cookieJar = new Map<string, Map<string, string>>();
-	protected readonly CHROME_CIPHERS = [
+	protected static readonly CHROME_CIPHERS = [
 		'TLS_AES_128_GCM_SHA256',
 		'TLS_AES_256_GCM_SHA384',
 		'TLS_CHACHA20_POLY1305_SHA256',
@@ -34,28 +35,94 @@ export abstract class BaseHttpClient {
 		'AES256-SHA'
 	].join(':');
 
-	protected readonly agent = new Agent({
-		connect: {
-			ciphers: this.CHROME_CIPHERS,
-			honorCipherOrder: true,
-			minVersion: 'TLSv1.2',
-			maxVersion: 'TLSv1.3',
-			ALPNProtocols: ['h2', 'http/1.1']
-		}
-	});
+	protected get CHROME_CIPHERS(): string {
+		return BaseHttpClient.CHROME_CIPHERS;
+	}
 
-	protected readonly spoofAgent = new Agent({
-		connect: {
-			ciphers: this.CHROME_CIPHERS,
-			honorCipherOrder: true,
-			minVersion: 'TLSv1.2',
-			maxVersion: 'TLSv1.3',
-			ALPNProtocols: ['h2', 'http/1.1'],
-			/* This does not works with all sites, but is necessary for some SNI-restricted ones */
-			servername: 'www.google.com',
-			checkServerIdentity: () => undefined
-		}
-	});
+	/**
+	 * Connection pools are process-wide.
+	 *
+	 * @remarks
+	 * These used to be instance fields, so every client built its own pools and every
+	 * provider instance built three clients. Nothing ever closed them, so each
+	 * construction leaked sockets. Sharing them keeps keep-alive working across
+	 * providers; {@link BaseHttpClient.closeSharedAgents} disposes them.
+	 */
+	private static sharedAgent: Agent | null = null;
+	private static readonly sharedSpoofAgents = new Map<string, Agent>();
+	private static readonly sharedProxyAgents = new Map<string, ProxyAgent>();
+
+	protected get agent(): Agent {
+		BaseHttpClient.sharedAgent ??= new Agent({
+			connect: {
+				ciphers: BaseHttpClient.CHROME_CIPHERS,
+				honorCipherOrder: true,
+				minVersion: 'TLSv1.2',
+				maxVersion: 'TLSv1.3',
+				ALPNProtocols: ['h2', 'http/1.1']
+			}
+		});
+
+		return BaseHttpClient.sharedAgent;
+	}
+
+	/**
+	 * Builds the SNI-spoofing agent for one host.
+	 *
+	 * @remarks
+	 * The TLS handshake advertises `www.google.com` to get past SNI-based DPI
+	 * filtering, but the certificate is still verified against the host actually
+	 * being contacted. The previous `checkServerIdentity: () => undefined` accepted
+	 * *any* certificate, which silently turned the workaround into a MITM hole.
+	 */
+	protected spoofAgentFor(hostname: string): Agent {
+		const cached = BaseHttpClient.sharedSpoofAgents.get(hostname);
+
+		if (cached) return cached;
+
+		const agent = new Agent({
+			connect: {
+				ciphers: BaseHttpClient.CHROME_CIPHERS,
+				honorCipherOrder: true,
+				minVersion: 'TLSv1.2',
+				maxVersion: 'TLSv1.3',
+				ALPNProtocols: ['h2', 'http/1.1'],
+				/* This does not works with all sites, but is necessary for some SNI-restricted ones */
+				servername: 'www.google.com',
+				checkServerIdentity: (_servername, cert) => tlsCheckServerIdentity(hostname, cert)
+			}
+		});
+
+		BaseHttpClient.sharedSpoofAgents.set(hostname, agent);
+
+		return agent;
+	}
+
+	/**
+	 * Closes every shared connection pool.
+	 *
+	 * @remarks
+	 * Long-lived processes that stop using DownFlux should call this so undici
+	 * releases its sockets; a fresh pool is created lazily on the next request.
+	 */
+	/** Instance-side alias for {@link BaseHttpClient.closeSharedAgents}. */
+	public async closeConnections(): Promise<void> {
+		await BaseHttpClient.closeSharedAgents();
+	}
+
+	public static async closeSharedAgents(): Promise<void> {
+		const pools: Array<Agent | ProxyAgent> = [
+			...(BaseHttpClient.sharedAgent ? [BaseHttpClient.sharedAgent] : []),
+			...BaseHttpClient.sharedSpoofAgents.values(),
+			...BaseHttpClient.sharedProxyAgents.values()
+		];
+
+		BaseHttpClient.sharedAgent = null;
+		BaseHttpClient.sharedSpoofAgents.clear();
+		BaseHttpClient.sharedProxyAgents.clear();
+
+		await Promise.allSettled(pools.map((pool) => pool.close()));
+	}
 
 	protected randomHeaders(extra: Record<string, string> = {}) {
 		const preset = HEADER_PRESETS[Math.floor(Math.random() * HEADER_PRESETS.length)];
@@ -75,7 +142,7 @@ export abstract class BaseHttpClient {
 		};
 	}
 
-	private createDispatcher(options?: HttpAgentOptions): Dispatcher {
+	private createDispatcher(url: string, options?: HttpAgentOptions): Dispatcher {
 		if (options?.dispatcher) return options.dispatcher;
 
 		if (options?.proxy) {
@@ -83,12 +150,66 @@ export abstract class BaseHttpClient {
 			const auth = username && password ? `${encodeURIComponent(username)}:${encodeURIComponent(password)}@` : '';
 			const proxyUrl = `${type}://${auth}${host}:${port}`;
 
-			return new ProxyAgent({ uri: proxyUrl });
+			/**
+			 * Cached per proxy URL. Building a ProxyAgent per request gave every call
+			 * its own pool, so keep-alive never applied and the pools were abandoned.
+			 */
+			const cached = BaseHttpClient.sharedProxyAgents.get(proxyUrl);
+
+			if (cached) return cached;
+
+			const proxyAgent = new ProxyAgent({ uri: proxyUrl });
+
+			BaseHttpClient.sharedProxyAgents.set(proxyUrl, proxyAgent);
+
+			return proxyAgent;
 		}
 
-		if (options?.enableSniSpoofing) return this.spoofAgent;
+		if (options?.enableSniSpoofing) return this.spoofAgentFor(this.hostnameOf(url));
 
 		return this.agent;
+	}
+
+	private hostnameOf(url: string): string {
+		try {
+			return new URL(url).hostname;
+		} catch {
+			return url;
+		}
+	}
+
+	/**
+	 * Combines a per-request timeout with a caller-supplied abort signal.
+	 *
+	 * @param timeoutMs Timeout applied when the caller supplies no signal of its own.
+	 * @param external Optional caller abort signal.
+	 * @returns A signal that aborts on whichever fires first.
+	 */
+	protected linkSignal(timeoutMs: number, external?: AbortSignal): AbortSignal {
+		const timeout = AbortSignal.timeout(timeoutMs);
+
+		if (!external) return timeout;
+
+		return AbortSignal.any([external, timeout]);
+	}
+
+	/**
+	 * Short display name for a download item, falling back to the URL tail.
+	 *
+	 * @remarks
+	 * Lives on the base client because both the plain and HLS engines label the
+	 * per-item progress rows they emit.
+	 */
+	protected itemLabel(opts: DownloadOptions): string | undefined {
+		const url = opts.pipelineItem?.downloadUrl;
+
+		if (!url) return undefined;
+
+		try {
+			return new URL(url).pathname.split('/').filter(Boolean).pop() ?? url;
+		} catch {
+			return url;
+		}
 	}
 
 	protected async delay(attempt: number) {
@@ -211,25 +332,29 @@ export abstract class BaseHttpClient {
 		options: HttpAgentOptions,
 		allowFallback: boolean = true
 	): ReturnType<typeof UFetch> {
+		const signal = init?.signal ?? (options as DownloadOptions)?.signal;
+
 		try {
-			return await UFetch(url, { ...init, dispatcher: this.agent });
+			return await UFetch(url, { ...init, signal, dispatcher: this.agent });
 		} catch (error) {
 			const transportError = this.isTransportError(error);
-			if (!allowFallback || !transportError) throw error;
+
+			// a caller-requested abort is final, never retry through another transport
+			if (signal?.aborted || !allowFallback || !transportError) throw error;
 
 			this.progressManager.update({ message: `Transport failure, Retrying with SNI spoof, CODE: ${transportError}` });
 
 			try {
-				return await UFetch(url, { ...init, dispatcher: this.createDispatcher(options) });
+				return await UFetch(url, { ...init, signal, dispatcher: this.createDispatcher(url, options) });
 			} catch (spoofError) {
 				this.progressManager.update({ message: `SNI spoof transport failed, Retry with default, ${spoofError}` });
-				return await UFetch(url, init);
+				return await UFetch(url, { ...init, signal });
 			}
 		}
 	}
 
-	public async fetchText(url: string, timeoutMs: number, headers: Record<string, any>): Promise<string> {
-		return (await fetch(url, { signal: AbortSignal.timeout(timeoutMs), headers })).text();
+	public async fetchText(url: string, timeoutMs: number, headers: Record<string, any>, signal?: AbortSignal): Promise<string> {
+		return (await fetch(url, { signal: this.linkSignal(timeoutMs, signal), headers })).text();
 	}
 
 	public async fetchJson(url: string, opts: DownloadOptions) {
@@ -243,7 +368,7 @@ export abstract class BaseHttpClient {
 				url,
 				{
 					method: 'GET',
-					signal: AbortSignal.timeout(opts?.timeoutMs ?? 30_000),
+					signal: this.linkSignal(opts?.timeoutMs ?? 30_000, opts?.signal),
 					headers
 				},
 				opts

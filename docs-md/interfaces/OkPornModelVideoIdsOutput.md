@@ -6,7 +6,7 @@
 
 # Interface: OkPornModelVideoIdsOutput
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:125](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/okporn/OkPornContracts.ts#L125)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:125](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L125)
 
 Output structure for OkPorn model video card operations.
 Contains model context and video cards.
@@ -21,7 +21,7 @@ Contains model context and video cards.
 
 > **pageTitle**: `string`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:127](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/okporn/OkPornContracts.ts#L127)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:127](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L127)
 
 Model video page title
 
@@ -31,7 +31,7 @@ Model video page title
 
 > **videoCount**: `number`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:130](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/okporn/OkPornContracts.ts#L130)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:130](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L130)
 
 Number of video cards found
 
@@ -41,7 +41,7 @@ Number of video cards found
 
 > **modelName**: `string`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:133](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/okporn/OkPornContracts.ts#L133)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:133](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L133)
 
 Model name associated with the videos
 
@@ -51,6 +51,6 @@ Model name associated with the videos
 
 > **videoCards**: [`OkPornModelVideoCard`](OkPornModelVideoCard.md)[]
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:136](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/okporn/OkPornContracts.ts#L136)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:136](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L136)
 
 Video cards found on the page

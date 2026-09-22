@@ -6,7 +6,7 @@
 
 # Interface: ProxyOptions
 
-Defined in: [packages/contracts/ExecutionContracts.ts:138](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L138)
+Defined in: [packages/contracts/ExecutionContracts.ts:159](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L159)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:138](https://github.com/fo
 
 > **type**: `"http"` \| `"https"` \| `"socks4"` \| `"socks5"`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:139](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L139)
+Defined in: [packages/contracts/ExecutionContracts.ts:160](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L160)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:139](https://github.com/fo
 
 > **host**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:141](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L141)
+Defined in: [packages/contracts/ExecutionContracts.ts:162](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L162)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:141](https://github.com/fo
 
 > **port**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:143](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L143)
+Defined in: [packages/contracts/ExecutionContracts.ts:164](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L164)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:143](https://github.com/fo
 
 > `optional` **username?**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:145](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L145)
+Defined in: [packages/contracts/ExecutionContracts.ts:166](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L166)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [packages/contracts/ExecutionContracts.ts:145](https://github.com/fo
 
 > `optional` **password?**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:147](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L147)
+Defined in: [packages/contracts/ExecutionContracts.ts:168](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L168)

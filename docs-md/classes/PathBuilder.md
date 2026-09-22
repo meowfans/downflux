@@ -6,7 +6,7 @@
 
 # Class: PathBuilder
 
-Defined in: [packages/storage/PathBuilder.ts:10](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/storage/PathBuilder.ts#L10)
+Defined in: [packages/storage/PathBuilder.ts:14](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/PathBuilder.ts#L14)
 
 Small helper for provider output paths and identifiers.
 
@@ -14,6 +14,10 @@ Small helper for provider output paths and identifiers.
 
 Path building is centralized so providers can describe logical media groups
 without duplicating path separators, normalization, or filename conventions.
+
+Identifiers are POSIX-style logical keys built with [PathBuilder.join](#join);
+they are converted to platform paths only when [PathBuilder.buildDirectoryPath](#builddirectorypath)
+hands them to the filesystem, so provider code never deals with separators.
 
 ## Constructors
 
@@ -27,37 +31,11 @@ without duplicating path separators, normalization, or filename conventions.
 
 ## Methods
 
-### buildOutputPath()
-
-> **buildOutputPath**(`basePath`, `filename`, `identifier?`): `string`
-
-Defined in: [packages/storage/PathBuilder.ts:11](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/storage/PathBuilder.ts#L11)
-
-#### Parameters
-
-##### basePath
-
-`string`
-
-##### filename
-
-`string`
-
-##### identifier?
-
-`string`
-
-#### Returns
-
-`string`
-
-***
-
 ### buildDirectoryPath()
 
 > **buildDirectoryPath**(`filename`, `identifier?`): `string`
 
-Defined in: [packages/storage/PathBuilder.ts:19](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/storage/PathBuilder.ts#L19)
+Defined in: [packages/storage/PathBuilder.ts:15](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/PathBuilder.ts#L15)
 
 #### Parameters
 
@@ -79,7 +57,9 @@ Defined in: [packages/storage/PathBuilder.ts:19](https://github.com/forkts/downf
 
 > **join**(...`segments`): `string`
 
-Defined in: [packages/storage/PathBuilder.ts:25](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/storage/PathBuilder.ts#L25)
+Defined in: [packages/storage/PathBuilder.ts:28](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/PathBuilder.ts#L28)
+
+Joins logical identifier segments.
 
 #### Parameters
 
@@ -91,13 +71,18 @@ Defined in: [packages/storage/PathBuilder.ts:25](https://github.com/forkts/downf
 
 `string`
 
+#### Remarks
+
+Uses `path.posix` so the result normalizes consistently on every platform
+and empty segments collapse instead of producing doubled separators.
+
 ***
 
 ### spaceNormalizer()
 
 > **spaceNormalizer**(`input?`): `string`
 
-Defined in: [packages/storage/PathBuilder.ts:29](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/storage/PathBuilder.ts#L29)
+Defined in: [packages/storage/PathBuilder.ts:32](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/PathBuilder.ts#L32)
 
 #### Parameters
 

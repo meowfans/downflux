@@ -6,7 +6,7 @@
 
 # Enumeration: Provider
 
-Defined in: [packages/types/ExecutionTypes.ts:37](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L37)
+Defined in: [packages/types/ExecutionTypes.ts:37](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L37)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [packages/types/ExecutionTypes.ts:37](https://github.com/forkts/down
 
 > **AnalRz**: `"AnalRzProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:39](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L39)
+Defined in: [packages/types/ExecutionTypes.ts:39](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L39)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/types/ExecutionTypes.ts:39](https://github.com/forkts/down
 
 > **ArtStation**: `"ArtStationProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:40](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L40)
+Defined in: [packages/types/ExecutionTypes.ts:40](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L40)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/types/ExecutionTypes.ts:40](https://github.com/forkts/down
 
 > **Beeg**: `"BeegProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:41](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L41)
+Defined in: [packages/types/ExecutionTypes.ts:41](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L41)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/types/ExecutionTypes.ts:41](https://github.com/forkts/down
 
 > **Behance**: `"BehanceProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:42](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L42)
+Defined in: [packages/types/ExecutionTypes.ts:42](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L42)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/types/ExecutionTypes.ts:42](https://github.com/forkts/down
 
 > **BlackPorn**: `"BlackPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:43](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L43)
+Defined in: [packages/types/ExecutionTypes.ts:43](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L43)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/types/ExecutionTypes.ts:43](https://github.com/forkts/down
 
 > **Bluesky**: `"BlueskyProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:44](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L44)
+Defined in: [packages/types/ExecutionTypes.ts:44](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L44)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [packages/types/ExecutionTypes.ts:44](https://github.com/forkts/down
 
 > **BoKepPorn**: `"BoKepPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:45](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L45)
+Defined in: [packages/types/ExecutionTypes.ts:45](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L45)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [packages/types/ExecutionTypes.ts:45](https://github.com/forkts/down
 
 > **ColliderPorn**: `"ColliderPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:46](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L46)
+Defined in: [packages/types/ExecutionTypes.ts:46](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L46)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [packages/types/ExecutionTypes.ts:46](https://github.com/forkts/down
 
 > **CumLouder**: `"CumLouderProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:47](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L47)
+Defined in: [packages/types/ExecutionTypes.ts:47](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L47)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [packages/types/ExecutionTypes.ts:47](https://github.com/forkts/down
 
 > **DaFreePorn**: `"DaFreePornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:48](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L48)
+Defined in: [packages/types/ExecutionTypes.ts:48](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L48)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [packages/types/ExecutionTypes.ts:48](https://github.com/forkts/down
 
 > **Danbooru**: `"DanbooruProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:49](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L49)
+Defined in: [packages/types/ExecutionTypes.ts:49](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L49)
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: [packages/types/ExecutionTypes.ts:49](https://github.com/forkts/down
 
 > **DaNude**: `"DaNudeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:50](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L50)
+Defined in: [packages/types/ExecutionTypes.ts:50](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L50)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: [packages/types/ExecutionTypes.ts:50](https://github.com/forkts/down
 
 > **Default**: `"DefaultProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:51](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L51)
+Defined in: [packages/types/ExecutionTypes.ts:51](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L51)
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: [packages/types/ExecutionTypes.ts:51](https://github.com/forkts/down
 
 > **DeviantArt**: `"DeviantArtProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:52](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L52)
+Defined in: [packages/types/ExecutionTypes.ts:52](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L52)
 
 ***
 
@@ -126,7 +126,7 @@ Defined in: [packages/types/ExecutionTypes.ts:52](https://github.com/forkts/down
 
 > **EpicGfs**: `"EpicGfsProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:53](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L53)
+Defined in: [packages/types/ExecutionTypes.ts:53](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L53)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: [packages/types/ExecutionTypes.ts:53](https://github.com/forkts/down
 
 > **EPorner**: `"EPornerProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:54](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L54)
+Defined in: [packages/types/ExecutionTypes.ts:54](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L54)
 
 ***
 
@@ -142,7 +142,7 @@ Defined in: [packages/types/ExecutionTypes.ts:54](https://github.com/forkts/down
 
 > **Flickr**: `"FlickrProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:55](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L55)
+Defined in: [packages/types/ExecutionTypes.ts:55](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L55)
 
 ***
 
@@ -150,7 +150,7 @@ Defined in: [packages/types/ExecutionTypes.ts:55](https://github.com/forkts/down
 
 > **Gelbooru**: `"GelbooruProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:56](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L56)
+Defined in: [packages/types/ExecutionTypes.ts:56](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L56)
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: [packages/types/ExecutionTypes.ts:56](https://github.com/forkts/down
 
 > **HqPorn**: `"HqPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:57](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L57)
+Defined in: [packages/types/ExecutionTypes.ts:57](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L57)
 
 ***
 
@@ -166,7 +166,7 @@ Defined in: [packages/types/ExecutionTypes.ts:57](https://github.com/forkts/down
 
 > **Imgur**: `"ImgurProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:58](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L58)
+Defined in: [packages/types/ExecutionTypes.ts:58](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L58)
 
 ***
 
@@ -174,7 +174,7 @@ Defined in: [packages/types/ExecutionTypes.ts:58](https://github.com/forkts/down
 
 > **Instagram**: `"InstagramProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:59](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L59)
+Defined in: [packages/types/ExecutionTypes.ts:59](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L59)
 
 ***
 
@@ -182,7 +182,7 @@ Defined in: [packages/types/ExecutionTypes.ts:59](https://github.com/forkts/down
 
 > **Interracial**: `"InterracialProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:60](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L60)
+Defined in: [packages/types/ExecutionTypes.ts:60](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L60)
 
 ***
 
@@ -190,7 +190,7 @@ Defined in: [packages/types/ExecutionTypes.ts:60](https://github.com/forkts/down
 
 > **ItsPorn**: `"ItsPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:61](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L61)
+Defined in: [packages/types/ExecutionTypes.ts:61](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L61)
 
 ***
 
@@ -198,7 +198,7 @@ Defined in: [packages/types/ExecutionTypes.ts:61](https://github.com/forkts/down
 
 > **Lesbian8**: `"Lesbian8Provider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:62](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L62)
+Defined in: [packages/types/ExecutionTypes.ts:62](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L62)
 
 ***
 
@@ -206,7 +206,7 @@ Defined in: [packages/types/ExecutionTypes.ts:62](https://github.com/forkts/down
 
 > **MangaDex**: `"MangaDexProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:63](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L63)
+Defined in: [packages/types/ExecutionTypes.ts:63](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L63)
 
 ***
 
@@ -214,7 +214,7 @@ Defined in: [packages/types/ExecutionTypes.ts:63](https://github.com/forkts/down
 
 > **Mastodon**: `"MastodonProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:64](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L64)
+Defined in: [packages/types/ExecutionTypes.ts:64](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L64)
 
 ***
 
@@ -222,7 +222,7 @@ Defined in: [packages/types/ExecutionTypes.ts:64](https://github.com/forkts/down
 
 > **MegaTube**: `"MegaTubeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:65](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L65)
+Defined in: [packages/types/ExecutionTypes.ts:65](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L65)
 
 ***
 
@@ -230,7 +230,7 @@ Defined in: [packages/types/ExecutionTypes.ts:65](https://github.com/forkts/down
 
 > **MomVids**: `"MomVidsProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:66](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L66)
+Defined in: [packages/types/ExecutionTypes.ts:66](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L66)
 
 ***
 
@@ -238,7 +238,7 @@ Defined in: [packages/types/ExecutionTypes.ts:66](https://github.com/forkts/down
 
 > **MyLust**: `"MyLustProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:67](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L67)
+Defined in: [packages/types/ExecutionTypes.ts:67](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L67)
 
 ***
 
@@ -246,7 +246,7 @@ Defined in: [packages/types/ExecutionTypes.ts:67](https://github.com/forkts/down
 
 > **Newgrounds**: `"NewgroundsProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:68](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L68)
+Defined in: [packages/types/ExecutionTypes.ts:68](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L68)
 
 ***
 
@@ -254,7 +254,7 @@ Defined in: [packages/types/ExecutionTypes.ts:68](https://github.com/forkts/down
 
 > **OkPorn**: `"OkPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:69](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L69)
+Defined in: [packages/types/ExecutionTypes.ts:69](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L69)
 
 ***
 
@@ -262,7 +262,7 @@ Defined in: [packages/types/ExecutionTypes.ts:69](https://github.com/forkts/down
 
 > **PerfectGirls**: `"PerfectGirlsProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:70](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L70)
+Defined in: [packages/types/ExecutionTypes.ts:70](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L70)
 
 ***
 
@@ -270,7 +270,7 @@ Defined in: [packages/types/ExecutionTypes.ts:70](https://github.com/forkts/down
 
 > **Pexels**: `"PexelsProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:71](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L71)
+Defined in: [packages/types/ExecutionTypes.ts:71](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L71)
 
 ***
 
@@ -278,7 +278,7 @@ Defined in: [packages/types/ExecutionTypes.ts:71](https://github.com/forkts/down
 
 > **Pinterest**: `"PinterestProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:72](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L72)
+Defined in: [packages/types/ExecutionTypes.ts:72](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L72)
 
 ***
 
@@ -286,7 +286,7 @@ Defined in: [packages/types/ExecutionTypes.ts:72](https://github.com/forkts/down
 
 > **Pixiv**: `"PixivProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:73](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L73)
+Defined in: [packages/types/ExecutionTypes.ts:73](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L73)
 
 ***
 
@@ -294,7 +294,7 @@ Defined in: [packages/types/ExecutionTypes.ts:73](https://github.com/forkts/down
 
 > **Porn300**: `"Porn300Provider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:74](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L74)
+Defined in: [packages/types/ExecutionTypes.ts:74](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L74)
 
 ***
 
@@ -302,7 +302,7 @@ Defined in: [packages/types/ExecutionTypes.ts:74](https://github.com/forkts/down
 
 > **PornDoe**: `"PornDoeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:75](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L75)
+Defined in: [packages/types/ExecutionTypes.ts:75](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L75)
 
 ***
 
@@ -310,7 +310,7 @@ Defined in: [packages/types/ExecutionTypes.ts:75](https://github.com/forkts/down
 
 > **PornHub**: `"PornHubProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:76](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L76)
+Defined in: [packages/types/ExecutionTypes.ts:76](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L76)
 
 ***
 
@@ -318,7 +318,7 @@ Defined in: [packages/types/ExecutionTypes.ts:76](https://github.com/forkts/down
 
 > **PornId**: `"PornIdProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:77](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L77)
+Defined in: [packages/types/ExecutionTypes.ts:77](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L77)
 
 ***
 
@@ -326,7 +326,7 @@ Defined in: [packages/types/ExecutionTypes.ts:77](https://github.com/forkts/down
 
 > **PornOne**: `"PornOneProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:78](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L78)
+Defined in: [packages/types/ExecutionTypes.ts:78](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L78)
 
 ***
 
@@ -334,7 +334,7 @@ Defined in: [packages/types/ExecutionTypes.ts:78](https://github.com/forkts/down
 
 > **PornSeven**: `"PornSevenProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:79](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L79)
+Defined in: [packages/types/ExecutionTypes.ts:79](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L79)
 
 ***
 
@@ -342,7 +342,7 @@ Defined in: [packages/types/ExecutionTypes.ts:79](https://github.com/forkts/down
 
 > **PornsOk**: `"PornsOkProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:80](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L80)
+Defined in: [packages/types/ExecutionTypes.ts:80](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L80)
 
 ***
 
@@ -350,7 +350,7 @@ Defined in: [packages/types/ExecutionTypes.ts:80](https://github.com/forkts/down
 
 > **PussySpace**: `"PussySpaceProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:81](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L81)
+Defined in: [packages/types/ExecutionTypes.ts:81](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L81)
 
 ***
 
@@ -358,7 +358,7 @@ Defined in: [packages/types/ExecutionTypes.ts:81](https://github.com/forkts/down
 
 > **Reddit**: `"RedditProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:82](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L82)
+Defined in: [packages/types/ExecutionTypes.ts:82](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L82)
 
 ***
 
@@ -366,7 +366,7 @@ Defined in: [packages/types/ExecutionTypes.ts:82](https://github.com/forkts/down
 
 > **SexVid**: `"SexVidProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:83](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L83)
+Defined in: [packages/types/ExecutionTypes.ts:83](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L83)
 
 ***
 
@@ -374,7 +374,7 @@ Defined in: [packages/types/ExecutionTypes.ts:83](https://github.com/forkts/down
 
 > **Shameless**: `"ShamelessProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:84](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L84)
+Defined in: [packages/types/ExecutionTypes.ts:84](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L84)
 
 ***
 
@@ -382,7 +382,7 @@ Defined in: [packages/types/ExecutionTypes.ts:84](https://github.com/forkts/down
 
 > **SuperPorn**: `"SuperPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:85](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L85)
+Defined in: [packages/types/ExecutionTypes.ts:85](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L85)
 
 ***
 
@@ -390,7 +390,7 @@ Defined in: [packages/types/ExecutionTypes.ts:85](https://github.com/forkts/down
 
 > **SxyPorn**: `"SxyPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:86](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L86)
+Defined in: [packages/types/ExecutionTypes.ts:86](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L86)
 
 ***
 
@@ -398,7 +398,7 @@ Defined in: [packages/types/ExecutionTypes.ts:86](https://github.com/forkts/down
 
 > **TheyAreHuge**: `"TheyAreHugeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:87](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L87)
+Defined in: [packages/types/ExecutionTypes.ts:87](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L87)
 
 ***
 
@@ -406,7 +406,7 @@ Defined in: [packages/types/ExecutionTypes.ts:87](https://github.com/forkts/down
 
 > **TikTok**: `"TikTokProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:88](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L88)
+Defined in: [packages/types/ExecutionTypes.ts:88](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L88)
 
 ***
 
@@ -414,7 +414,7 @@ Defined in: [packages/types/ExecutionTypes.ts:88](https://github.com/forkts/down
 
 > **TnAFlix**: `"TnAFlixProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:89](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L89)
+Defined in: [packages/types/ExecutionTypes.ts:89](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L89)
 
 ***
 
@@ -422,7 +422,7 @@ Defined in: [packages/types/ExecutionTypes.ts:89](https://github.com/forkts/down
 
 > **TubeVSex**: `"TubeVSexProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:90](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L90)
+Defined in: [packages/types/ExecutionTypes.ts:90](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L90)
 
 ***
 
@@ -430,7 +430,7 @@ Defined in: [packages/types/ExecutionTypes.ts:90](https://github.com/forkts/down
 
 > **Tumblr**: `"TumblrProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:91](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L91)
+Defined in: [packages/types/ExecutionTypes.ts:91](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L91)
 
 ***
 
@@ -438,7 +438,7 @@ Defined in: [packages/types/ExecutionTypes.ts:91](https://github.com/forkts/down
 
 > **Twitter**: `"TwitterProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:92](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L92)
+Defined in: [packages/types/ExecutionTypes.ts:92](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L92)
 
 ***
 
@@ -446,7 +446,7 @@ Defined in: [packages/types/ExecutionTypes.ts:92](https://github.com/forkts/down
 
 > **Unsplash**: `"UnsplashProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:93](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L93)
+Defined in: [packages/types/ExecutionTypes.ts:93](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L93)
 
 ***
 
@@ -454,7 +454,7 @@ Defined in: [packages/types/ExecutionTypes.ts:93](https://github.com/forkts/down
 
 > **WallHaven**: `"WallHavenProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:94](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L94)
+Defined in: [packages/types/ExecutionTypes.ts:94](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L94)
 
 ***
 
@@ -462,7 +462,7 @@ Defined in: [packages/types/ExecutionTypes.ts:94](https://github.com/forkts/down
 
 > **WikiArt**: `"WikiArtProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:95](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L95)
+Defined in: [packages/types/ExecutionTypes.ts:95](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L95)
 
 ***
 
@@ -470,7 +470,7 @@ Defined in: [packages/types/ExecutionTypes.ts:95](https://github.com/forkts/down
 
 > **Wikimedia**: `"WikimediaProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:96](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L96)
+Defined in: [packages/types/ExecutionTypes.ts:96](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L96)
 
 ***
 
@@ -478,7 +478,7 @@ Defined in: [packages/types/ExecutionTypes.ts:96](https://github.com/forkts/down
 
 > **XCafe**: `"XCafeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:97](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L97)
+Defined in: [packages/types/ExecutionTypes.ts:97](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L97)
 
 ***
 
@@ -486,7 +486,7 @@ Defined in: [packages/types/ExecutionTypes.ts:97](https://github.com/forkts/down
 
 > **XDegu**: `"XDeguProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:98](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L98)
+Defined in: [packages/types/ExecutionTypes.ts:98](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L98)
 
 ***
 
@@ -494,7 +494,7 @@ Defined in: [packages/types/ExecutionTypes.ts:98](https://github.com/forkts/down
 
 > **XGroovy**: `"XGroovyProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:99](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L99)
+Defined in: [packages/types/ExecutionTypes.ts:99](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L99)
 
 ***
 
@@ -502,7 +502,7 @@ Defined in: [packages/types/ExecutionTypes.ts:99](https://github.com/forkts/down
 
 > **XHamster**: `"XHamsterProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:100](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L100)
+Defined in: [packages/types/ExecutionTypes.ts:100](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L100)
 
 ***
 
@@ -510,7 +510,7 @@ Defined in: [packages/types/ExecutionTypes.ts:100](https://github.com/forkts/dow
 
 > **XnXX**: `"XnXXProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:101](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L101)
+Defined in: [packages/types/ExecutionTypes.ts:101](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L101)
 
 ***
 
@@ -518,7 +518,7 @@ Defined in: [packages/types/ExecutionTypes.ts:101](https://github.com/forkts/dow
 
 > **Xozilla**: `"XozillaProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:102](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L102)
+Defined in: [packages/types/ExecutionTypes.ts:102](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L102)
 
 ***
 
@@ -526,7 +526,7 @@ Defined in: [packages/types/ExecutionTypes.ts:102](https://github.com/forkts/dow
 
 > **XVideos**: `"XVideosProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:103](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L103)
+Defined in: [packages/types/ExecutionTypes.ts:103](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L103)
 
 ***
 
@@ -534,7 +534,7 @@ Defined in: [packages/types/ExecutionTypes.ts:103](https://github.com/forkts/dow
 
 > **ZbPorn**: `"ZbPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:104](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L104)
+Defined in: [packages/types/ExecutionTypes.ts:104](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L104)
 
 ***
 
@@ -542,4 +542,4 @@ Defined in: [packages/types/ExecutionTypes.ts:104](https://github.com/forkts/dow
 
 > **ZzzTube**: `"ZzzTubeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:105](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L105)
+Defined in: [packages/types/ExecutionTypes.ts:105](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L105)

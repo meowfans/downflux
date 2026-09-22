@@ -6,7 +6,7 @@
 
 # Interface: ProgressEvents
 
-Defined in: [packages/core/progress/ProgressManager.ts:5](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/progress/ProgressManager.ts#L5)
+Defined in: [packages/core/progress/ProgressManager.ts:5](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L5)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/core/progress/ProgressManager.ts:5](https://github.com/for
 
 > **progress**: (`state`) => `void`
 
-Defined in: [packages/core/progress/ProgressManager.ts:6](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/progress/ProgressManager.ts#L6)
+Defined in: [packages/core/progress/ProgressManager.ts:6](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L6)
 
 #### Parameters
 

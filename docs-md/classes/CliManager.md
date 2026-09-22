@@ -6,7 +6,15 @@
 
 # Class: CliManager
 
-Defined in: [packages/core/ui/CliManager.ts:5](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/ui/CliManager.ts#L5)
+Defined in: [packages/core/ui/CliManager.ts:14](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/CliManager.ts#L14)
+
+Renders job progress as a branded terminal panel.
+
+## Remarks
+
+Subscribes to `ProgressManager` and turns each event into a fixed block that
+`LogManager` redraws in place. Rows that carry no data for the current phase
+are omitted, so an image job does not show empty HLS segment counters.
 
 ## Constructors
 
@@ -14,7 +22,7 @@ Defined in: [packages/core/ui/CliManager.ts:5](https://github.com/forkts/downflu
 
 > **new CliManager**(`progressManager`): `CliManager`
 
-Defined in: [packages/core/ui/CliManager.ts:7](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/ui/CliManager.ts#L7)
+Defined in: [packages/core/ui/CliManager.ts:19](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/CliManager.ts#L19)
 
 #### Parameters
 
@@ -32,7 +40,7 @@ Defined in: [packages/core/ui/CliManager.ts:7](https://github.com/forkts/downflu
 
 > **destroy**(): `void`
 
-Defined in: [packages/core/ui/CliManager.ts:15](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/ui/CliManager.ts#L15)
+Defined in: [packages/core/ui/CliManager.ts:27](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/CliManager.ts#L27)
 
 #### Returns
 

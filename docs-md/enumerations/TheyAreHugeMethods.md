@@ -6,7 +6,7 @@
 
 # Enumeration: TheyAreHugeMethods
 
-Defined in: [packages/providers/theyarehuge/TheyAreHugeTypes.ts:1](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/theyarehuge/TheyAreHugeTypes.ts#L1)
+Defined in: [packages/providers/theyarehuge/TheyAreHugeTypes.ts:1](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/theyarehuge/TheyAreHugeTypes.ts#L1)
 
 ## Enumeration Members
 
@@ -14,4 +14,4 @@ Defined in: [packages/providers/theyarehuge/TheyAreHugeTypes.ts:1](https://githu
 
 > **getVideo**: `"getVideo"`
 
-Defined in: [packages/providers/theyarehuge/TheyAreHugeTypes.ts:2](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/theyarehuge/TheyAreHugeTypes.ts#L2)
+Defined in: [packages/providers/theyarehuge/TheyAreHugeTypes.ts:2](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/theyarehuge/TheyAreHugeTypes.ts#L2)

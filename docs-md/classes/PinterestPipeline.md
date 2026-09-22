@@ -6,7 +6,7 @@
 
 # Class: PinterestPipeline
 
-Defined in: [packages/providers/pinterest/PinterestPipeline.ts:6](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/pinterest/PinterestPipeline.ts#L6)
+Defined in: [packages/providers/pinterest/PinterestPipeline.ts:7](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/pinterest/PinterestPipeline.ts#L7)
 
 Converts extracted metadata into downloadable work items.
 
@@ -27,7 +27,7 @@ grouped on disk.
 
 > **new PinterestPipeline**(`fileManager`): `PinterestPipeline`
 
-Defined in: [packages/base/BasePipeline.ts:28](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L28)
+Defined in: [packages/base/BasePipeline.ts:28](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L28)
 
 #### Parameters
 
@@ -49,7 +49,7 @@ Defined in: [packages/base/BasePipeline.ts:28](https://github.com/forkts/downflu
 
 > `protected` `readonly` **pathBuilder**: [`PathBuilder`](PathBuilder.md)
 
-Defined in: [packages/base/BasePipeline.ts:25](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L25)
+Defined in: [packages/base/BasePipeline.ts:25](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L25)
 
 #### Inherited from
 
@@ -61,7 +61,7 @@ Defined in: [packages/base/BasePipeline.ts:25](https://github.com/forkts/downflu
 
 > `protected` `readonly` **helper**: [`Helper`](Helper.md)
 
-Defined in: [packages/base/BasePipeline.ts:26](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L26)
+Defined in: [packages/base/BasePipeline.ts:26](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L26)
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ Defined in: [packages/base/BasePipeline.ts:26](https://github.com/forkts/downflu
 
 > `protected` **fileManager**: [`FileManager`](FileManager.md)
 
-Defined in: [packages/base/BasePipeline.ts:28](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L28)
+Defined in: [packages/base/BasePipeline.ts:28](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L28)
 
 #### Inherited from
 
@@ -85,7 +85,7 @@ Defined in: [packages/base/BasePipeline.ts:28](https://github.com/forkts/downflu
 
 > **build**(`metadata`, `request`): [`PipelineItem`](../interfaces/PipelineItem.md)[]
 
-Defined in: [packages/base/BasePipeline.ts:37](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L37)
+Defined in: [packages/base/BasePipeline.ts:37](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L37)
 
 Builds filtered, deduplicated pipeline items for a single metadata result.
 
@@ -119,7 +119,7 @@ Downloadable pipeline items.
 
 > `protected` **filterByExt**(`request`, `pipelineItems`): [`PipelineItem`](../interfaces/PipelineItem.md)[]
 
-Defined in: [packages/base/BasePipeline.ts:62](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L62)
+Defined in: [packages/base/BasePipeline.ts:62](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L62)
 
 #### Parameters
 
@@ -145,7 +145,7 @@ Defined in: [packages/base/BasePipeline.ts:62](https://github.com/forkts/downflu
 
 > `protected` **sliceByMaxDownloads**(`request`, `items`): [`PipelineItem`](../interfaces/PipelineItem.md)[]
 
-Defined in: [packages/base/BasePipeline.ts:68](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L68)
+Defined in: [packages/base/BasePipeline.ts:68](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L68)
 
 #### Parameters
 
@@ -171,7 +171,7 @@ Defined in: [packages/base/BasePipeline.ts:68](https://github.com/forkts/downflu
 
 > `protected` **createMappings**\<`T`\>(`elements`, `handler`): [`PipelineMapping`](../type-aliases/PipelineMapping.md)\<`T`\>
 
-Defined in: [packages/base/BasePipeline.ts:84](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L84)
+Defined in: [packages/base/BasePipeline.ts:84](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L84)
 
 #### Type Parameters
 
@@ -203,7 +203,7 @@ Defined in: [packages/base/BasePipeline.ts:84](https://github.com/forkts/downflu
 
 > `protected` **mappings**(`metadata`, `request`): [`PipelineMappings`](../type-aliases/PipelineMappings.md)
 
-Defined in: [packages/base/BasePipeline.ts:97](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L97)
+Defined in: [packages/base/BasePipeline.ts:97](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L97)
 
 Defines which metadata collections should become pipeline items.
 
@@ -237,7 +237,7 @@ Mapping definitions used by `extract`.
 
 > `protected` **extract**(`request`, `metadata`): [`PipelineExtractedItem`](../interfaces/PipelineExtractedItem.md)[]
 
-Defined in: [packages/base/BasePipeline.ts:108](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L108)
+Defined in: [packages/base/BasePipeline.ts:108](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L108)
 
 #### Parameters
 
@@ -263,7 +263,7 @@ Defined in: [packages/base/BasePipeline.ts:108](https://github.com/forkts/downfl
 
 > `protected` **filterByQuality**\<`T`, `TEnum`\>(`items?`, `options`): `T`[]
 
-Defined in: [packages/base/BasePipeline.ts:125](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L125)
+Defined in: [packages/base/BasePipeline.ts:125](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L125)
 
 Applies provider quality filtering without changing source order.
 
@@ -313,7 +313,7 @@ Sources matching the requested quality, or all sources when no quality is reques
 
 > `protected` **uniquePipelines**(`pipelines`): [`PipelineItem`](../interfaces/PipelineItem.md)[]
 
-Defined in: [packages/base/BasePipeline.ts:139](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L139)
+Defined in: [packages/base/BasePipeline.ts:139](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L139)
 
 #### Parameters
 
@@ -335,7 +335,7 @@ Defined in: [packages/base/BasePipeline.ts:139](https://github.com/forkts/downfl
 
 > `protected` **extractedItems**\<`T`\>(`targets`, `handlers`, `elements?`): `never`[] \| `undefined`
 
-Defined in: [packages/base/BasePipeline.ts:151](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BasePipeline.ts#L151)
+Defined in: [packages/base/BasePipeline.ts:151](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BasePipeline.ts#L151)
 
 #### Type Parameters
 
@@ -369,19 +369,17 @@ Defined in: [packages/base/BasePipeline.ts:151](https://github.com/forkts/downfl
 
 ### buildIdentifier()
 
-> `protected` **buildIdentifier**(`ctx`): `string`
+> `protected` **buildIdentifier**(`_ctx`): `string`
 
-Defined in: [packages/providers/pinterest/PinterestPipeline.ts:7](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/pinterest/PinterestPipeline.ts#L7)
+Defined in: [packages/providers/pinterest/PinterestPipeline.ts:8](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/pinterest/PinterestPipeline.ts#L8)
 
 Builds the storage identifier used as the logical output path.
 
 #### Parameters
 
-##### ctx
+##### \_ctx
 
 [`IdentifierContext`](../interfaces/IdentifierContext.md)\<[`PinterestOutput`](../interfaces/PinterestOutput.md)\>
-
-Media item context and source metadata.
 
 #### Returns
 

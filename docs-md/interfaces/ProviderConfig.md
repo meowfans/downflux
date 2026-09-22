@@ -6,7 +6,7 @@
 
 # Interface: ProviderConfig
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:29](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/CoordinatorDependency.ts#L29)
+Defined in: [packages/contracts/CoordinatorDependency.ts:29](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L29)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:29](https://github.com/
 
 > **provider**: [`Provider`](../enumerations/Provider.md)
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:30](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/CoordinatorDependency.ts#L30)
+Defined in: [packages/contracts/CoordinatorDependency.ts:30](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L30)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:30](https://github.com/
 
 > **urlPattern**: `RegExp`
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:31](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/CoordinatorDependency.ts#L31)
+Defined in: [packages/contracts/CoordinatorDependency.ts:31](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L31)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:31](https://github.com/
 
 > **metadata**: [`ProviderMetadata`](ProviderMetadata.md)
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:32](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/CoordinatorDependency.ts#L32)
+Defined in: [packages/contracts/CoordinatorDependency.ts:32](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L32)

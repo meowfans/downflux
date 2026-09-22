@@ -1,5 +1,5 @@
 import { OutputType, Provider, VideoQuality } from '@types';
-import { Writable } from 'stream';
+import { Readable, Writable } from 'stream';
 import { HttpAgentOptions } from './ExecutionContracts';
 import { PipelineItem } from './PipelineContracts';
 import { DirectoryOutputOptions, TranscodeOptions } from './StorageContracts';
@@ -13,6 +13,18 @@ export interface DownloadOptions extends HttpFetchOptions {
 	pipelineItem?: PipelineItem;
 	noDownload?: boolean;
 	allowedVideoQuality?: VideoQuality;
+
+	/**
+	 * Remaining CDN fallback attempts for this transfer.
+	 *
+	 * @remarks
+	 * Carried on the request rather than on the client so one item cannot exhaust
+	 * the budget of every other item sharing the same `StreamHttpClient`.
+	 */
+	cdnFallbackBudget?: number;
+
+	/** Remaining expired-URL re-extraction attempts for this transfer. */
+	reExtractBudget?: number;
 }
 
 /**
@@ -22,9 +34,6 @@ export interface DownloadOptions extends HttpFetchOptions {
 export interface DownloadResult {
 	/** Requested download URL */
 	url: string;
-
-	/** Downloaded file buffer */
-	buffer: Buffer;
 
 	/** Final URL after redirects */
 	finalUrl: string;
@@ -49,6 +58,24 @@ export interface DownloadResult {
 
 	/** Service used for the download */
 	provider: Provider;
+
+	/**
+	 * Approximate source size when the exact delivered length is unknown.
+	 *
+	 * @remarks
+	 * Derived from the playlist for HLS, or the origin's `Content-Length` for a
+	 * remuxed file. Use it to show progress; never send it as `Content-Length`.
+	 */
+	estimatedBytes?: number;
+
+	/**
+	 * Readable media, present only for `OutputType.STREAM`.
+	 *
+	 * @remarks
+	 * The transfer runs while this is consumed, so it must be piped or destroyed
+	 * promptly. Leaving it unread stalls the download behind the pipe buffer.
+	 */
+	stream?: Readable;
 }
 
 export interface FetchResult {
@@ -64,6 +91,20 @@ export interface HLSStreamRequest {
 	finalUrl: string;
 	headers: Record<string, string>;
 	isFmp4?: boolean;
+
+	/**
+	 * Exact byte length of what will be delivered, when it can be known.
+	 *
+	 * @remarks
+	 * Only set when bytes pass through untouched. Remuxing changes the container,
+	 * so the origin's length no longer describes the output and publishing it as
+	 * `Content-Length` would truncate or stall the client.
+	 */
+	contentLength?: number;
+
+	/** Best-effort source size, safe for progress UI but never for `Content-Length`. */
+	estimatedBytes?: number;
+
 	start: (stream: Writable, noDownload?: boolean) => Promise<void>;
 }
 
@@ -72,6 +113,16 @@ export interface HLSStreamRequest {
  * Controls request headers, retries, timeout, and referer.
  */
 export interface HttpFetchOptions extends HttpAgentOptions {
+	/**
+	 * Abort signal honoured by every request this option reaches.
+	 *
+	 * @remarks
+	 * Declared here rather than only on `ExecutionOptions` so the transport layer
+	 * can actually observe it; previously it was visible to the scheduler but never
+	 * reached a single fetch.
+	 */
+	signal?: AbortSignal;
+
 	/** Custom request headers */
 	headers?: Record<string, string>;
 

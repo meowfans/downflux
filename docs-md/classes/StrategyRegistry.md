@@ -6,7 +6,7 @@
 
 # Class: StrategyRegistry
 
-Defined in: [packages/core/registries/StrategyRegistry.ts:99](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/registries/StrategyRegistry.ts#L99)
+Defined in: [packages/core/registries/StrategyRegistry.ts:99](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/StrategyRegistry.ts#L99)
 
 Resolves provider transport strategies for HTTP clients.
 
@@ -22,7 +22,7 @@ re-extraction behavior without importing provider modules themselves.
 
 > **new StrategyRegistry**(`progressManager`): `StrategyRegistry`
 
-Defined in: [packages/core/registries/StrategyRegistry.ts:102](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/registries/StrategyRegistry.ts#L102)
+Defined in: [packages/core/registries/StrategyRegistry.ts:102](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/StrategyRegistry.ts#L102)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [packages/core/registries/StrategyRegistry.ts:102](https://github.co
 
 > **getStrategy**(`provider`): `Promise`\<[`BaseStrategy`](BaseStrategy.md)\>
 
-Defined in: [packages/core/registries/StrategyRegistry.ts:124](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/registries/StrategyRegistry.ts#L124)
+Defined in: [packages/core/registries/StrategyRegistry.ts:131](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/StrategyRegistry.ts#L131)
 
 Creates a strategy instance for the requested provider.
 

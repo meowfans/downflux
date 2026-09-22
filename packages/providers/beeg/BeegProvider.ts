@@ -17,7 +17,6 @@ import { BeegMethods } from './BeegTypes';
 export class BeegProvider extends BaseProvider<BeegExecArgs> {
 	protected readonly provider = Provider.Beeg;
 	private readonly VIDEO_PATH_REGEX = /^https:\/\/(?:www\.)?beeg\.com\/-0([0-9]+)\/?$/i;
-	private VIDEO_ID: string = '';
 
 	constructor(url: string) {
 		super(url, {
@@ -41,24 +40,35 @@ export class BeegProvider extends BaseProvider<BeegExecArgs> {
 		});
 	}
 
-	private get videoUrl() {
-		const videoId = this.url.match(this.VIDEO_PATH_REGEX)?.[1];
+	/**
+	 * Resolves the video id and its canonical URL together.
+	 *
+	 * @remarks
+	 * These were previously a getter that assigned `this.VIDEO_ID` as a side effect,
+	 * which meant `getVideo` only worked because `targets` happened to be evaluated
+	 * before `id` in the request literal. Returning both makes the order irrelevant.
+	 */
+	private resolveVideo(): { videoId: string; videoUrl: string } {
+		const matched = this.url.match(this.VIDEO_PATH_REGEX)?.[1];
 
-		if (!videoId) throw new GenericException('Video id is missing or not found', this.provider, BeegMethods.getVideo);
+		if (!matched) throw new GenericException('Video id is missing or not found', this.provider, BeegMethods.getVideo);
 
-		this.VIDEO_ID = videoId.replace(/^-0/i, '');
-
-		return `https://beeg.com/${videoId}`;
+		return {
+			videoId: matched.replace(/^-0/i, ''),
+			videoUrl: `https://beeg.com/${matched}`
+		};
 	}
 
 	public async getVideo(): Promise<BeegVideoOutput> {
+		const { videoId, videoUrl } = this.resolveVideo();
+
 		return await this.execute<BeegVideoOutput>({
-			targets: [this.videoUrl],
+			targets: [videoUrl],
 			executionShape: 'single',
 			provider: this.provider,
 			method: BeegMethods.getVideo,
 			extractionTarget: ExtractionTarget.SOURCES,
-			id: this.VIDEO_ID
+			id: videoId
 		});
 	}
 }

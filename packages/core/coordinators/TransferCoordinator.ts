@@ -1,4 +1,4 @@
-import { DownloadOptions, DownloadResult, PipelineItem } from '@contracts';
+import { DownloadOptions, DownloadResult, HLSStreamRequest, PipelineItem, ResolvedFile } from '@contracts';
 import { ProgressManager } from '@core/progress';
 import { StreamHttpClient } from '@engine/http';
 import { FileManager } from '@storage';
@@ -21,6 +21,72 @@ export class TransferCoordinator {
 	) {}
 
 	/**
+	 * Hands back a readable for one item while the transfer runs behind it.
+	 *
+	 * @remarks
+	 * Returns as soon as the pipe is open rather than after the bytes land, which
+	 * is what lets an HTTP handler start responding immediately. The transfer is
+	 * driven in the background and its failures are surfaced by destroying the
+	 * readable, so a consumer that only pipes still sees the error.
+	 */
+	private async streamItem(
+		item: PipelineItem,
+		opts: DownloadOptions,
+		request: Pick<HLSStreamRequest, 'finalUrl' | 'headers' | 'start' | 'isFmp4' | 'contentLength' | 'estimatedBytes'>,
+		resolvedFile: ResolvedFile
+	): Promise<DownloadResult> {
+		const sink = this.fileManager.createStreamSink(
+			{
+				provider: opts.provider,
+				type: OutputType.STREAM,
+				filename: resolvedFile.originalFilename,
+				identifier: item.identifier.key,
+				transCodeOptions: opts.transcodeOptions
+			},
+			resolvedFile,
+			request.isFmp4
+		);
+
+		const transfer = (async () => {
+			await request.start(sink.input, opts.noDownload);
+
+			if (!sink.input.destroyed && !sink.input.writableEnded) sink.input.end();
+
+			await sink.done;
+		})();
+
+		transfer.catch((error) => {
+			const normalized = error instanceof Error ? error : new Error(String(error));
+
+			sink.input.destroy(normalized);
+			sink.output.destroy(normalized);
+		});
+
+		/**
+		 * A remux rewrites the container, so the source length stops describing the
+		 * output - measured at roughly a fifth smaller for TS to fragmented MP4.
+		 * The exact length is therefore only published when bytes pass through
+		 * untouched; otherwise the caller gets an estimate it must not send as
+		 * `Content-Length`.
+		 */
+		const remuxed = this.fileManager.needsRemux(resolvedFile.extension, request.isFmp4);
+
+		return {
+			url: item.downloadUrl,
+			finalUrl: request.finalUrl,
+			provider: opts.provider,
+			stream: sink.output,
+			sizeBytes: remuxed ? 0 : (request.contentLength ?? 0),
+			estimatedBytes: request.estimatedBytes,
+			path: item.identifier.key,
+			originalFilename: sink.filename,
+			extendedFilename: `${opts.dirConfig?.prefix ?? ''}${sink.filename}`,
+			extension: sink.extension,
+			mimeType: sink.mimeType
+		};
+	}
+
+	/**
 	 * Downloads a single pipeline item.
 	 *
 	 * @param item Pipeline item describing the media URL and identifier.
@@ -33,17 +99,23 @@ export class TransferCoordinator {
 
 		const initialFile = this.fileManager.getFileInfo(url, dirConfig?.prefix);
 
-		const { finalUrl, headers, start, isFmp4 } = await this.streamHttpClient.requestStream(url, {
+		const streamRequest = await this.streamHttpClient.requestStream(url, {
 			...opts,
 			referer: item.sourceUrl,
 			pipelineItem: item
 		});
 
+		const { finalUrl, headers, start, isFmp4 } = streamRequest;
+
 		const resolvedFile = this.fileManager.deriveResolvedFile(initialFile, finalUrl, headers, isFmp4, dirConfig?.prefix);
 
 		this.progressManager.update({ message: `Extracting metadata for: ${resolvedFile.extendedFilename}` });
 
-		const { stream, finalize } = this.fileManager.createSink({
+		if (outputType === OutputType.STREAM) {
+			return this.streamItem(item, opts, streamRequest, resolvedFile);
+		}
+
+		const { stream, finalize, cleanup } = this.fileManager.createSink({
 			provider,
 			type: outputType as OutputType,
 			directoryPath: dirConfig?.directoryPath,
@@ -53,23 +125,30 @@ export class TransferCoordinator {
 			transCodeOptions: opts.transcodeOptions
 		});
 
+		/**
+		 * Finalization runs inside the same guard as the transfer so a failure in
+		 * either phase releases the sink instead of leaving a partial artifact behind.
+		 */
 		try {
 			await start(stream, opts.noDownload);
 
 			if (!stream.destroyed && !stream.writableEnded) stream.end();
 			await finished(stream);
+
+			const finalDetails = await finalize(resolvedFile, headers, isFmp4);
+
+			return {
+				...finalDetails,
+				url,
+				finalUrl,
+				provider
+			};
 		} catch (err) {
 			stream.destroy(err instanceof Error ? err : new Error(String(err)));
+
+			await cleanup?.();
+
 			throw err;
 		}
-
-		const finalDetails = await finalize(resolvedFile, headers, isFmp4);
-
-		return {
-			...finalDetails,
-			url,
-			finalUrl,
-			provider
-		};
 	}
 }
