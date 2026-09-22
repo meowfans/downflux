@@ -6,4 +6,6 @@ export * from './InvalidDestinationException';
 export * from './InvalidRangeException';
 export * from './InvalidUrlException';
 export * from './NotFoundException';
+export * from './NotImplementedException';
 export * from './ProviderMismatchException';
+export * from './UnsupportedOperationException';

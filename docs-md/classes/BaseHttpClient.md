@@ -6,7 +6,7 @@
 
 # Abstract Class: BaseHttpClient
 
-Defined in: [packages/base/BaseHttpClient.ts:15](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L15)
+Defined in: [packages/base/BaseHttpClient.ts:16](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L16)
 
 Shared HTTP engine foundation.
 
@@ -28,7 +28,7 @@ dispatchers, retries, and low-level fetch fallback behavior.
 
 > **new BaseHttpClient**(`progressManager`): `BaseHttpClient`
 
-Defined in: [packages/base/BaseHttpClient.ts:16](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L16)
+Defined in: [packages/base/BaseHttpClient.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L17)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [packages/base/BaseHttpClient.ts:16](https://github.com/forkts/downf
 
 > `protected` `readonly` **progressManager**: [`ProgressManager`](ProgressManager.md)
 
-Defined in: [packages/base/BaseHttpClient.ts:16](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L16)
+Defined in: [packages/base/BaseHttpClient.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L17)
 
 ***
 
@@ -54,39 +54,104 @@ Defined in: [packages/base/BaseHttpClient.ts:16](https://github.com/forkts/downf
 
 > `protected` `readonly` **cookieJar**: `Map`\<`string`, `Map`\<`string`, `string`\>\>
 
-Defined in: [packages/base/BaseHttpClient.ts:18](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L18)
+Defined in: [packages/base/BaseHttpClient.ts:19](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L19)
 
 ***
 
 ### CHROME\_CIPHERS
 
-> `protected` `readonly` **CHROME\_CIPHERS**: `string`
+> `protected` `readonly` `static` **CHROME\_CIPHERS**: `string`
 
-Defined in: [packages/base/BaseHttpClient.ts:19](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L19)
+Defined in: [packages/base/BaseHttpClient.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L20)
+
+## Accessors
+
+### CHROME\_CIPHERS
+
+#### Get Signature
+
+> **get** `protected` **CHROME\_CIPHERS**(): `string`
+
+Defined in: [packages/base/BaseHttpClient.ts:38](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L38)
+
+##### Returns
+
+`string`
 
 ***
 
 ### agent
 
-> `protected` `readonly` **agent**: `Agent`
+#### Get Signature
 
-Defined in: [packages/base/BaseHttpClient.ts:37](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L37)
+> **get** `protected` **agent**(): `Agent`
+
+Defined in: [packages/base/BaseHttpClient.ts:55](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L55)
+
+##### Returns
+
+`Agent`
+
+## Methods
+
+### spoofAgentFor()
+
+> `protected` **spoofAgentFor**(`hostname`): `Agent`
+
+Defined in: [packages/base/BaseHttpClient.ts:78](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L78)
+
+Builds the SNI-spoofing agent for one host.
+
+#### Parameters
+
+##### hostname
+
+`string`
+
+#### Returns
+
+`Agent`
+
+#### Remarks
+
+The TLS handshake advertises `www.google.com` to get past SNI-based DPI
+filtering, but the certificate is still verified against the host actually
+being contacted. The previous `checkServerIdentity: () => undefined` accepted
+*any* certificate, which silently turned the workaround into a MITM hole.
 
 ***
 
-### spoofAgent
+### closeConnections()
 
-> `protected` `readonly` **spoofAgent**: `Agent`
+> **closeConnections**(): `Promise`\<`void`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:47](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L47)
+Defined in: [packages/base/BaseHttpClient.ts:109](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L109)
 
-## Methods
+Instance-side alias for [BaseHttpClient.closeSharedAgents](#closesharedagents).
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### closeSharedAgents()
+
+> `static` **closeSharedAgents**(): `Promise`\<`void`\>
+
+Defined in: [packages/base/BaseHttpClient.ts:113](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L113)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
 
 ### randomHeaders()
 
 > `protected` **randomHeaders**(`extra?`): `object`
 
-Defined in: [packages/base/BaseHttpClient.ts:60](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L60)
+Defined in: [packages/base/BaseHttpClient.ts:127](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L127)
 
 #### Parameters
 
@@ -104,7 +169,7 @@ Defined in: [packages/base/BaseHttpClient.ts:60](https://github.com/forkts/downf
 
 > `protected` **buildHlsHeaders**(`opts`): `object`
 
-Defined in: [packages/base/BaseHttpClient.ts:69](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L69)
+Defined in: [packages/base/BaseHttpClient.ts:136](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L136)
 
 #### Parameters
 
@@ -134,11 +199,66 @@ Defined in: [packages/base/BaseHttpClient.ts:69](https://github.com/forkts/downf
 
 ***
 
+### linkSignal()
+
+> `protected` **linkSignal**(`timeoutMs`, `external?`): `AbortSignal`
+
+Defined in: [packages/base/BaseHttpClient.ts:188](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L188)
+
+Combines a per-request timeout with a caller-supplied abort signal.
+
+#### Parameters
+
+##### timeoutMs
+
+`number`
+
+Timeout applied when the caller supplies no signal of its own.
+
+##### external?
+
+`AbortSignal`
+
+Optional caller abort signal.
+
+#### Returns
+
+`AbortSignal`
+
+A signal that aborts on whichever fires first.
+
+***
+
+### itemLabel()
+
+> `protected` **itemLabel**(`opts`): `string` \| `undefined`
+
+Defined in: [packages/base/BaseHttpClient.ts:203](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L203)
+
+Short display name for a download item, falling back to the URL tail.
+
+#### Parameters
+
+##### opts
+
+[`DownloadOptions`](../interfaces/DownloadOptions.md)
+
+#### Returns
+
+`string` \| `undefined`
+
+#### Remarks
+
+Lives on the base client because both the plain and HLS engines label the
+per-item progress rows they emit.
+
+***
+
 ### delay()
 
 > `protected` **delay**(`attempt`): `Promise`\<`unknown`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:94](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L94)
+Defined in: [packages/base/BaseHttpClient.ts:215](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L215)
 
 #### Parameters
 
@@ -156,7 +276,7 @@ Defined in: [packages/base/BaseHttpClient.ts:94](https://github.com/forkts/downf
 
 > `protected` **readBody**(`body`): `Promise`\<`Buffer`\<`ArrayBufferLike`\>\>
 
-Defined in: [packages/base/BaseHttpClient.ts:101](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L101)
+Defined in: [packages/base/BaseHttpClient.ts:222](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L222)
 
 #### Parameters
 
@@ -174,7 +294,7 @@ Defined in: [packages/base/BaseHttpClient.ts:101](https://github.com/forkts/down
 
 > `protected` **decodeBody**(`buffer`, `headers`): `Buffer`
 
-Defined in: [packages/base/BaseHttpClient.ts:116](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L116)
+Defined in: [packages/base/BaseHttpClient.ts:237](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L237)
 
 #### Parameters
 
@@ -196,7 +316,7 @@ Defined in: [packages/base/BaseHttpClient.ts:116](https://github.com/forkts/down
 
 > `protected` **applyCookieWithHeader**(`url`, `headers`): `Record`\<`string`, `string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:132](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L132)
+Defined in: [packages/base/BaseHttpClient.ts:253](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L253)
 
 #### Parameters
 
@@ -218,7 +338,7 @@ Defined in: [packages/base/BaseHttpClient.ts:132](https://github.com/forkts/down
 
 > `protected` **storeCookies**(`url`, `headers`): `void`
 
-Defined in: [packages/base/BaseHttpClient.ts:147](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L147)
+Defined in: [packages/base/BaseHttpClient.ts:268](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L268)
 
 #### Parameters
 
@@ -240,7 +360,7 @@ Defined in: [packages/base/BaseHttpClient.ts:147](https://github.com/forkts/down
 
 > `protected` **addOriginWithHeader**(`headers`, `referer?`): `Record`\<`string`, `string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:170](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L170)
+Defined in: [packages/base/BaseHttpClient.ts:291](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L291)
 
 #### Parameters
 
@@ -262,7 +382,7 @@ Defined in: [packages/base/BaseHttpClient.ts:170](https://github.com/forkts/down
 
 > `protected` **headers**(`headers`): `Record`\<`string`, `string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:181](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L181)
+Defined in: [packages/base/BaseHttpClient.ts:302](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L302)
 
 #### Parameters
 
@@ -280,7 +400,7 @@ Defined in: [packages/base/BaseHttpClient.ts:181](https://github.com/forkts/down
 
 > `protected` **isTransportError**(`error`): `string` \| `undefined`
 
-Defined in: [packages/base/BaseHttpClient.ts:185](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L185)
+Defined in: [packages/base/BaseHttpClient.ts:306](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L306)
 
 #### Parameters
 
@@ -298,7 +418,7 @@ Defined in: [packages/base/BaseHttpClient.ts:185](https://github.com/forkts/down
 
 > **fetchWithTransportFallback**(`url`, `init`, `options`, `allowFallback?`): `Promise`\<`Response`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:208](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L208)
+Defined in: [packages/base/BaseHttpClient.ts:329](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L329)
 
 Runs a fetch request with transport fallback for transient TLS/socket failures.
 
@@ -338,9 +458,9 @@ Native fetch response.
 
 ### fetchText()
 
-> **fetchText**(`url`, `timeoutMs`, `headers`): `Promise`\<`string`\>
+> **fetchText**(`url`, `timeoutMs`, `headers`, `signal?`): `Promise`\<`string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:231](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L231)
+Defined in: [packages/base/BaseHttpClient.ts:356](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L356)
 
 #### Parameters
 
@@ -356,6 +476,10 @@ Defined in: [packages/base/BaseHttpClient.ts:231](https://github.com/forkts/down
 
 `Record`\<`string`, `any`\>
 
+##### signal?
+
+`AbortSignal`
+
 #### Returns
 
 `Promise`\<`string`\>
@@ -366,7 +490,7 @@ Defined in: [packages/base/BaseHttpClient.ts:231](https://github.com/forkts/down
 
 > **fetchJson**(`url`, `opts`): `Promise`\<`any`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:235](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseHttpClient.ts#L235)
+Defined in: [packages/base/BaseHttpClient.ts:360](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L360)
 
 #### Parameters
 

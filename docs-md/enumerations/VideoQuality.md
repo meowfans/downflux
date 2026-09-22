@@ -6,7 +6,7 @@
 
 # Enumeration: VideoQuality
 
-Defined in: [packages/types/ExecutionTypes.ts:112](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L112)
+Defined in: [packages/types/ExecutionTypes.ts:112](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L112)
 
 Video quality labels
 
@@ -16,7 +16,7 @@ Video quality labels
 
 > **Q144**: `"144p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:114](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L114)
+Defined in: [packages/types/ExecutionTypes.ts:114](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L114)
 
 144p quality
 
@@ -26,7 +26,7 @@ Defined in: [packages/types/ExecutionTypes.ts:114](https://github.com/forkts/dow
 
 > **Q240**: `"240p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:117](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L117)
+Defined in: [packages/types/ExecutionTypes.ts:117](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L117)
 
 240p quality
 
@@ -36,7 +36,7 @@ Defined in: [packages/types/ExecutionTypes.ts:117](https://github.com/forkts/dow
 
 > **Q360**: `"360p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:120](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L120)
+Defined in: [packages/types/ExecutionTypes.ts:120](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L120)
 
 360p quality
 
@@ -46,7 +46,7 @@ Defined in: [packages/types/ExecutionTypes.ts:120](https://github.com/forkts/dow
 
 > **Q480**: `"480p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:123](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L123)
+Defined in: [packages/types/ExecutionTypes.ts:123](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L123)
 
 480p quality
 
@@ -56,7 +56,7 @@ Defined in: [packages/types/ExecutionTypes.ts:123](https://github.com/forkts/dow
 
 > **Q720**: `"720p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:126](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L126)
+Defined in: [packages/types/ExecutionTypes.ts:126](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L126)
 
 720p quality
 
@@ -66,7 +66,7 @@ Defined in: [packages/types/ExecutionTypes.ts:126](https://github.com/forkts/dow
 
 > **Q1080**: `"1080p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:129](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L129)
+Defined in: [packages/types/ExecutionTypes.ts:129](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L129)
 
 1080p quality
 
@@ -76,7 +76,7 @@ Defined in: [packages/types/ExecutionTypes.ts:129](https://github.com/forkts/dow
 
 > **Q1440**: `"1440p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:132](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L132)
+Defined in: [packages/types/ExecutionTypes.ts:132](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L132)
 
 1440p quality
 
@@ -86,7 +86,7 @@ Defined in: [packages/types/ExecutionTypes.ts:132](https://github.com/forkts/dow
 
 > **Q2160**: `"2160p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:135](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L135)
+Defined in: [packages/types/ExecutionTypes.ts:135](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L135)
 
 2160p quality
 
@@ -96,7 +96,7 @@ Defined in: [packages/types/ExecutionTypes.ts:135](https://github.com/forkts/dow
 
 > **Q4320**: `"4320p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:138](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L138)
+Defined in: [packages/types/ExecutionTypes.ts:138](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L138)
 
 4320p quality
 
@@ -106,6 +106,6 @@ Defined in: [packages/types/ExecutionTypes.ts:138](https://github.com/forkts/dow
 
 > **QUnknown**: `"unknown"`
 
-Defined in: [packages/types/ExecutionTypes.ts:140](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/types/ExecutionTypes.ts#L140)
+Defined in: [packages/types/ExecutionTypes.ts:140](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/ExecutionTypes.ts#L140)
 
 Unknown quality

@@ -103,7 +103,14 @@ export class ParserRegistry {
 
 		if (cached) return cached;
 
-		const factory = parserFactories[provider] ?? parserFactories[Provider.Default];
+		/**
+		 * The factory table is a `Record<Provider, ...>`, so an unknown provider can
+		 * only arrive from an unchecked cast. Failing loudly beats resolving to the
+		 * default parser and silently extracting the wrong shape.
+		 */
+		const factory = parserFactories[provider];
+
+		if (!factory) throw new Error(`No parser registered for provider "${provider}"`);
 
 		const ParserClass = await factory();
 

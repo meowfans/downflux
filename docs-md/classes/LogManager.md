@@ -6,7 +6,15 @@
 
 # Class: LogManager
 
-Defined in: [packages/core/ui/LogManager.ts:1](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/ui/LogManager.ts#L1)
+Defined in: [packages/core/ui/LogManager.ts:11](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/LogManager.ts#L11)
+
+Per-job handle onto the shared terminal region.
+
+## Remarks
+
+Rendering state lives in [TerminalSurface](TerminalSurface.md) because only one component in
+a process may move the cursor. Each job owns a slice of the live region, so
+concurrent jobs stack instead of erasing one another.
 
 ## Constructors
 
@@ -22,9 +30,11 @@ Defined in: [packages/core/ui/LogManager.ts:1](https://github.com/forkts/downflu
 
 ### renderBlock()
 
-> **renderBlock**(`lines`): `void`
+> **renderBlock**(`lines`, `options?`): `void`
 
-Defined in: [packages/core/ui/LogManager.ts:116](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/ui/LogManager.ts#L116)
+Defined in: [packages/core/ui/LogManager.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/LogManager.ts#L20)
+
+Prints the banner and the job's current block.
 
 #### Parameters
 
@@ -32,9 +42,44 @@ Defined in: [packages/core/ui/LogManager.ts:116](https://github.com/forkts/downf
 
 `string`[]
 
+Block body, already styled.
+
+##### options?
+
+`captureConsole` routes foreign `console` output around the live region.
+
+###### captureConsole?
+
+`boolean`
+
 #### Returns
 
 `void`
+
+***
+
+### log()
+
+> **log**(`line`): `void`
+
+Defined in: [packages/core/ui/LogManager.ts:31](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/LogManager.ts#L31)
+
+Writes a permanent line above the live region.
+
+#### Parameters
+
+##### line
+
+`string`
+
+#### Returns
+
+`void`
+
+#### Remarks
+
+Use this instead of `console.log` while a job is rendering: direct writes
+land inside the region the next frame rewinds over, and are lost.
 
 ***
 
@@ -42,7 +87,9 @@ Defined in: [packages/core/ui/LogManager.ts:116](https://github.com/forkts/downf
 
 > **destroy**(): `void`
 
-Defined in: [packages/core/ui/LogManager.ts:128](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/ui/LogManager.ts#L128)
+Defined in: [packages/core/ui/LogManager.ts:36](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/LogManager.ts#L36)
+
+Freezes this job's final block and restores the terminal when it is the last one.
 
 #### Returns
 

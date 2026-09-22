@@ -6,7 +6,7 @@
 
 # Enumeration: WallHavenThumbnailQuality
 
-Defined in: [packages/providers/wallhaven/WallHavenTypes.ts:30](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/wallhaven/WallHavenTypes.ts#L30)
+Defined in: [packages/providers/wallhaven/WallHavenTypes.ts:30](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/wallhaven/WallHavenTypes.ts#L30)
 
 WallHaven thumbnail quality levels
 
@@ -16,7 +16,7 @@ WallHaven thumbnail quality levels
 
 > **HIGH**: `"high"`
 
-Defined in: [packages/providers/wallhaven/WallHavenTypes.ts:32](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/wallhaven/WallHavenTypes.ts#L32)
+Defined in: [packages/providers/wallhaven/WallHavenTypes.ts:32](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/wallhaven/WallHavenTypes.ts#L32)
 
 High quality thumbnail
 
@@ -26,7 +26,7 @@ High quality thumbnail
 
 > **LOW**: `"low"`
 
-Defined in: [packages/providers/wallhaven/WallHavenTypes.ts:35](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/wallhaven/WallHavenTypes.ts#L35)
+Defined in: [packages/providers/wallhaven/WallHavenTypes.ts:35](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/wallhaven/WallHavenTypes.ts#L35)
 
 Low quality thumbnail
 
@@ -36,6 +36,6 @@ Low quality thumbnail
 
 > **MEDIUM**: `"medium"`
 
-Defined in: [packages/providers/wallhaven/WallHavenTypes.ts:38](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/wallhaven/WallHavenTypes.ts#L38)
+Defined in: [packages/providers/wallhaven/WallHavenTypes.ts:38](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/wallhaven/WallHavenTypes.ts#L38)
 
 Medium quality thumbnail

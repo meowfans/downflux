@@ -1,4 +1,5 @@
 import { OutputType, Provider } from '@types';
+import { Readable, Writable } from 'stream';
 
 export interface CreateSinkInput {
 	provider: Provider;
@@ -17,8 +18,27 @@ export interface CreateSinkOutput {
 	mimeType: string;
 	sizeBytes: number;
 	path: string;
-	buffer: Buffer;
 	isFmp4?: boolean;
+}
+
+/**
+ * A sink that exposes its readable side to the caller.
+ *
+ * @remarks
+ * `input` receives downloaded bytes, `output` carries playable media. They are
+ * the two ends of the same pipe when no remux is needed, and ffmpeg's stdin and
+ * stdout when one is.
+ */
+export interface StreamSink {
+	input: Writable;
+	output: Readable;
+
+	/** Settles when the underlying remux finishes, or rejects if it failed. */
+	done: Promise<void>;
+
+	extension: string;
+	mimeType: string;
+	filename: string;
 }
 
 export interface ResolvedFile {

@@ -6,7 +6,7 @@
 
 # Interface: OkPornChannelOutput
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:92](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/okporn/OkPornContracts.ts#L92)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:92](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L92)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/okporn/OkPornContracts.ts:92](https://github.com
 
 > **channelUrls**: `string`[]
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:93](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/okporn/OkPornContracts.ts#L93)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:93](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L93)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [packages/providers/okporn/OkPornContracts.ts:93](https://github.com
 
 > **channelCount**: `number`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:94](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/okporn/OkPornContracts.ts#L94)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:94](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L94)

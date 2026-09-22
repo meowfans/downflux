@@ -136,7 +136,7 @@ flowchart TD
 
         FFmpegEngine[FFmpegEngine<br/>Muxing / Conversion / Finalization]
 
-        Output[Output<br/>JSON / Buffer / Device File]
+        Output[Output<br/>JSON / Device File / Stream]
     end
 
     User --> ServiceProvider

@@ -6,7 +6,7 @@
 
 # Interface: TagFilterOptions
 
-Defined in: [packages/base/BaseContracts.ts:8](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseContracts.ts#L8)
+Defined in: [packages/base/BaseContracts.ts:8](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseContracts.ts#L8)
 
 Options for filtering tag output.
 Used by tag-based service operations.
@@ -17,7 +17,7 @@ Used by tag-based service operations.
 
 > `optional` **allowedKeys?**: [`TagKeys`](../type-aliases/TagKeys.md)[]
 
-Defined in: [packages/base/BaseContracts.ts:10](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseContracts.ts#L10)
+Defined in: [packages/base/BaseContracts.ts:10](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseContracts.ts#L10)
 
 Allowed tag keys
 
@@ -27,7 +27,7 @@ Allowed tag keys
 
 > `optional` **format?**: `"url"` \| `"path"`
 
-Defined in: [packages/base/BaseContracts.ts:16](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseContracts.ts#L16)
+Defined in: [packages/base/BaseContracts.ts:16](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseContracts.ts#L16)
 
 Output format for tag values
 

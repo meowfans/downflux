@@ -97,6 +97,27 @@ export interface ExecutionOptions extends HttpFetchOptions {
 	/** Extraction phase concurrency */
 	extractConcurrency?: number;
 
+	/**
+	 * Whether progress rendering may take over `stdout`/`stderr`.
+	 *
+	 * @remarks
+	 * Off by default. Live progress redraws in place, so anything written directly
+	 * to the terminal while a job renders is erased by the next frame. Enabling this
+	 * patches both streams for the duration of the job so `console.log` survives.
+	 *
+	 * It is opt-in because patching a global belongs to the application that owns
+	 * the process, not to a library running inside it.
+	 *
+	 * @defaultValue false
+	 */
+	captureConsole?: boolean;
+
+	/** Maximum CDN fallback attempts allowed per download item. */
+	maxCdnFallbacks?: number;
+
+	/** Maximum expired-URL re-extraction attempts allowed per download item. */
+	maxReExtractions?: number;
+
 	/** Transcoding options */
 	transcodeOptions?: TranscodeOptions;
 
@@ -153,6 +174,32 @@ export interface ExecutionResult<TResult, S extends ExecutionShape> extends Exec
 	failed: number;
 	errors: Error[];
 	pipelineItems: PipelineItem[];
+
+	/**
+	 * Settles when background downloads finish.
+	 *
+	 * @remarks
+	 * Present only for the output modes that download. Extraction still returns
+	 * immediately so callers learn what is coming without waiting; this is the
+	 * handle for callers that also need to know when it arrived. Previously the
+	 * only signal was a `COMPLETED` progress event, and per-item failures were
+	 * unreachable through `await`.
+	 */
+	completion?: Promise<JobSettlement>;
+}
+
+/**
+ * Outcome of a job's download phase.
+ *
+ * @remarks
+ * Resolves rather than rejects when individual items fail, because a partial
+ * batch is a normal result: inspect `failed` and `errors` to decide. The promise
+ * only rejects if the download pipeline itself could not run.
+ */
+export interface JobSettlement {
+	downloaded: number;
+	failed: number;
+	errors: Error[];
 }
 
 /**

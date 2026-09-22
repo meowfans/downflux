@@ -7,11 +7,12 @@ import {
 	HttpAgentOptions,
 	HttpFetchOptions,
 	JobProgressEvent,
+	JobSettlement,
 	ProviderConfig,
 	TranscodeOptions
 } from '@contracts';
 import { createDefaultDependencies } from '@core/dependency';
-import { InvalidRangeException, InvalidUrlException } from '@core/exceptions';
+import { InvalidRangeException, InvalidUrlException, UnsupportedOperationException } from '@core/exceptions';
 import {
 	AllowedExtension,
 	ExecutionShape,
@@ -37,6 +38,9 @@ import { ProviderMetadata } from './BaseContracts';
  */
 export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> {
 	protected executionOptions: ExecutionOptions = {};
+
+	/** Download phase of the most recent job, awaited via {@link BaseProvider.whenSettled}. */
+	private pendingJob?: Promise<JobSettlement>;
 	protected httpOptions: HttpFetchOptions = {};
 	protected readonly deps: CoordinatorDependencies;
 	protected readonly provider: Provider;
@@ -260,11 +264,22 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 
 	/**
 	 * Enables console progress logging.
+	 *
 	 * @param enabled Console logging flag
+	 * @param options Rendering options.
 	 * @defaultValue true
+	 *
+	 * @remarks
+	 * Progress redraws in place, so output written directly to the terminal while a
+	 * job runs is erased by the next frame. Pass `captureConsole: true` to route
+	 * `console.log` around the live region; it is off by default because it patches
+	 * `stdout`/`stderr`, which is the host application's call to make, not the
+	 * library's.
 	 */
-	public setProgressLogging(enabled = true): this {
+	public setProgressLogging(enabled = true, options: { captureConsole?: boolean } = {}): this {
 		this.executionOptions.logProgress = enabled;
+		this.executionOptions.captureConsole = options.captureConsole;
+
 		return this;
 	}
 
@@ -298,6 +313,85 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 	public setExecutionType(type: ExecutionType): this {
 		this.executionOptions.executionType = type;
 		return this;
+	}
+
+	/**
+	 * Waits for the download phase of the most recent job.
+	 *
+	 * @returns How many items were written, how many failed, and their errors.
+	 *
+	 * @remarks
+	 * Provider methods resolve as soon as extraction finishes so callers learn what
+	 * is about to download without blocking on it. For `DEVICE` and
+	 * `STREAM` the transfers continue afterwards, and this is the handle for code
+	 * that needs to know when they finished:
+	 *
+	 * ```ts
+	 * const provider = new BeegProvider(url).setOutput(OutputType.DEVICE, { directoryPath: '/srv/media' });
+	 *
+	 * const metadata = await provider.getVideo();   // returns immediately
+	 * const { downloaded, failed, errors } = await provider.whenSettled();
+	 * ```
+	 *
+	 * Resolves even when individual items fail, since a partial batch is a normal
+	 * outcome; inspect `failed` and `errors`. It rejects only if the download
+	 * pipeline itself could not run. Returns a zeroed settlement for output modes
+	 * that never download.
+	 */
+	public async whenSettled(): Promise<JobSettlement> {
+		return (await this.pendingJob) ?? { downloaded: 0, failed: 0, errors: [] };
+	}
+
+	/**
+	 * Enforces the capability flags declared in {@link ProviderMetadata}.
+	 *
+	 * @remarks
+	 * The metadata block documents what a provider can and cannot do. Without this
+	 * check the flags were write-only: `canDownload: false` still attempted a
+	 * download and `requiresBrowser: true` still issued plain HTTP, so callers only
+	 * discovered the limitation as an obscure failure deep in the transport layer.
+	 *
+	 * @param method Provider method being invoked, used for error context.
+	 */
+	protected assertSupported(method?: string): void {
+		const { nonFunctional, requiresBrowser, canDownload } = this.metadata;
+
+		if (nonFunctional) {
+			throw new UnsupportedOperationException('provider is currently non-functional', this.provider, method);
+		}
+
+		if (requiresBrowser) {
+			throw new UnsupportedOperationException(
+				'provider requires browser automation and cannot be extracted over plain HTTP',
+				this.provider,
+				method
+			);
+		}
+
+		const downloadsRequested =
+			this.executionOptions.outputType === OutputType.DEVICE || this.executionOptions.outputType === OutputType.STREAM;
+
+		if (downloadsRequested && canDownload === false) {
+			throw new UnsupportedOperationException(
+				`provider does not support downloading, use OutputType.JSON or OutputType.RETURN`,
+				this.provider,
+				method
+			);
+		}
+	}
+
+	/**
+	 * Releases resources held by this provider instance.
+	 *
+	 * @remarks
+	 * Detaches the CLI progress listener. Pass `closeConnections` to also close the
+	 * process-wide undici pools, which is appropriate when the host process is done
+	 * with DownFlux entirely rather than between jobs.
+	 */
+	public async dispose(options: { closeConnections?: boolean } = {}): Promise<void> {
+		this.deps.cliManager?.destroy();
+
+		if (options.closeConnections) await this.deps.httpClient.closeConnections();
 	}
 
 	/**
@@ -338,10 +432,14 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 
 		const request = this.buildRequest(overrides as TExec) as TRequest;
 
+		this.assertSupported(request.method);
+
 		// without calling the `init` method, the ProgressManager will not emit events
 		this.deps.progressManager.init(request);
 
 		const result = await this.deps.executionCoordinator.execute<TItem, TShape, TRequest>(request);
+
+		this.pendingJob = result.completion;
 
 		return result.extracted as TResult;
 	}

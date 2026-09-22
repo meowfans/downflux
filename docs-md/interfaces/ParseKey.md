@@ -6,7 +6,7 @@
 
 # Interface: ParseKey
 
-Defined in: [packages/engines/http/HlsClient.ts:10](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/engines/http/HlsClient.ts#L10)
+Defined in: [packages/engines/http/HlsClient.ts:10](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L10)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/engines/http/HlsClient.ts:10](https://github.com/forkts/do
 
 > **url**: `string`
 
-Defined in: [packages/engines/http/HlsClient.ts:11](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/engines/http/HlsClient.ts#L11)
+Defined in: [packages/engines/http/HlsClient.ts:11](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L11)
 
 ***
 
@@ -22,4 +22,12 @@ Defined in: [packages/engines/http/HlsClient.ts:11](https://github.com/forkts/do
 
 > `optional` **iv?**: `Buffer`\<`ArrayBufferLike`\>
 
-Defined in: [packages/engines/http/HlsClient.ts:12](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/engines/http/HlsClient.ts#L12)
+Defined in: [packages/engines/http/HlsClient.ts:12](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L12)
+
+***
+
+### method
+
+> **method**: `"AES-128"` \| `"NONE"`
+
+Defined in: [packages/engines/http/HlsClient.ts:13](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L13)

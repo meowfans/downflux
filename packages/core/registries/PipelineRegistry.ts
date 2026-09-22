@@ -107,7 +107,14 @@ export class PipelineRegistry {
 
 		if (cached) return cached;
 
-		const factory = pipelineFactories[provider] ?? pipelineFactories[Provider.Default];
+		/**
+		 * The factory table is a `Record<Provider, ...>`, so an unknown provider can
+		 * only arrive from an unchecked cast. Failing loudly beats resolving to the
+		 * default pipeline and silently extracting the wrong shape.
+		 */
+		const factory = pipelineFactories[provider];
+
+		if (!factory) throw new Error(`No pipeline registered for provider "${provider}"`);
 
 		const PipelineClass = await factory();
 

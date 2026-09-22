@@ -6,7 +6,7 @@
 
 # Class: FFmpegEngine
 
-Defined in: [packages/storage/FFmpegEngine.ts:19](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/storage/FFmpegEngine.ts#L19)
+Defined in: [packages/storage/FFmpegEngine.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FFmpegEngine.ts#L20)
 
 Media finalization wrapper around ffmpeg.
 
@@ -22,7 +22,7 @@ transcodes formats such as HLS `.ts`/fMP4 into a playable final file.
 
 > **new FFmpegEngine**(`progressManager`): `FFmpegEngine`
 
-Defined in: [packages/storage/FFmpegEngine.ts:20](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/storage/FFmpegEngine.ts#L20)
+Defined in: [packages/storage/FFmpegEngine.ts:21](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FFmpegEngine.ts#L21)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [packages/storage/FFmpegEngine.ts:20](https://github.com/forkts/down
 
 > **get** **ffmpeg**(): `string`
 
-Defined in: [packages/storage/FFmpegEngine.ts:22](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/storage/FFmpegEngine.ts#L22)
+Defined in: [packages/storage/FFmpegEngine.ts:23](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FFmpegEngine.ts#L23)
 
 ##### Returns
 
@@ -50,11 +50,60 @@ Defined in: [packages/storage/FFmpegEngine.ts:22](https://github.com/forkts/down
 
 ## Methods
 
+### createRemuxStream()
+
+> **createRemuxStream**(`options?`): `object`
+
+Defined in: [packages/storage/FFmpegEngine.ts:45](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FFmpegEngine.ts#L45)
+
+Opens a streaming remux: bytes in one side, playable media out the other.
+
+#### Parameters
+
+##### options?
+
+[`TranscodeOptions`](../interfaces/TranscodeOptions.md) = `{}`
+
+Codec/transcode settings.
+
+#### Returns
+
+`object`
+
+The ffmpeg stdin to write to, its stdout to read from, and a promise
+that settles when the process exits.
+
+##### input
+
+> **input**: `Writable`
+
+##### output
+
+> **output**: `Readable`
+
+##### done
+
+> **done**: `Promise`\<`void`\>
+
+#### Remarks
+
+Output is **fragmented** MP4. A regular MP4 stores its `moov` index at a
+known offset and therefore needs a seekable destination, which a pipe is not;
+`frag_keyframe+empty_moov+default_base_moof` writes self-describing fragments
+instead. That is the same container HLS and DASH deliver, so browsers and
+modern players handle it, but it is not byte-identical to the `+faststart`
+file the device sink produces.
+
+The caller must consume `output` while writing to `input`; ffmpeg blocks once
+its stdout pipe fills, which would otherwise deadlock the transfer.
+
+***
+
 ### finalizeMedia()
 
 > **finalizeMedia**(`options`): `Promise`\<\{ `path`: `string`; `filename`: `string`; `extension`: `string`; `mimeType`: `string`; \}\>
 
-Defined in: [packages/storage/FFmpegEngine.ts:32](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/storage/FFmpegEngine.ts#L32)
+Defined in: [packages/storage/FFmpegEngine.ts:97](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FFmpegEngine.ts#L97)
 
 Finalizes a downloaded media file with ffmpeg.
 

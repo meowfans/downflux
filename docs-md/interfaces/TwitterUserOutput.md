@@ -6,7 +6,7 @@
 
 # Interface: TwitterUserOutput
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:40](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L40)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:40](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L40)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:40](https://github.c
 
 > `optional` **id?**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:41](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L41)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:41](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L41)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:41](https://github.c
 
 > **username**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:42](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L42)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:42](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L42)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:42](https://github.c
 
 > `optional` **displayName?**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:43](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L43)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:43](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L43)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:43](https://github.c
 
 > `optional` **description?**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:44](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L44)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:44](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L44)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:44](https://github.c
 
 > `optional` **avatarUrl?**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:45](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L45)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:45](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L45)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:45](https://github.c
 
 > `optional` **bannerUrl?**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:46](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L46)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:46](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L46)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:46](https://github.c
 
 > `optional` **followersCount?**: `number`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:47](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L47)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:47](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L47)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:47](https://github.c
 
 > `optional` **followingCount?**: `number`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:48](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L48)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:48](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L48)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:48](https://github.c
 
 > `optional` **postCount?**: `number`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:49](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L49)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:49](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L49)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:49](https://github.c
 
 > `optional` **verified?**: `boolean`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:50](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L50)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:50](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L50)
 
 ***
 
@@ -94,4 +94,4 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:50](https://github.c
 
 > `optional` **protected?**: `boolean`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:51](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/twitter/TwitterContracts.ts#L51)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:51](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L51)

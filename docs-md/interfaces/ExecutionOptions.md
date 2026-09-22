@@ -6,7 +6,7 @@
 
 # Interface: ExecutionOptions
 
-Defined in: [packages/contracts/ExecutionContracts.ts:66](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L66)
+Defined in: [packages/contracts/ExecutionContracts.ts:66](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L66)
 
 Configuration options for a DownFlux ExecutionCoordinator.
 Combines fetch, extraction, pipeline, and output settings.
@@ -25,7 +25,7 @@ Combines fetch, extraction, pipeline, and output settings.
 
 > `optional` **headers?**: `Record`\<`string`, `string`\>
 
-Defined in: [packages/contracts/DownloadContracts.ts:76](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L76)
+Defined in: [packages/contracts/DownloadContracts.ts:127](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L127)
 
 Custom request headers
 
@@ -39,7 +39,7 @@ Custom request headers
 
 > `optional` **timeoutMs?**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:79](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L79)
+Defined in: [packages/contracts/DownloadContracts.ts:130](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L130)
 
 Request timeout in milliseconds
 
@@ -53,7 +53,7 @@ Request timeout in milliseconds
 
 > `optional` **retries?**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:82](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L82)
+Defined in: [packages/contracts/DownloadContracts.ts:133](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L133)
 
 Failed request retry count
 
@@ -67,7 +67,7 @@ Failed request retry count
 
 > `optional` **referer?**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:85](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L85)
+Defined in: [packages/contracts/DownloadContracts.ts:136](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L136)
 
 Request referer URL
 
@@ -81,7 +81,7 @@ Request referer URL
 
 > `optional` **formData?**: `Record`\<`string`, `string`\>
 
-Defined in: [packages/contracts/DownloadContracts.ts:88](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L88)
+Defined in: [packages/contracts/DownloadContracts.ts:139](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L139)
 
 Optional FormData for POST requests
 
@@ -95,7 +95,7 @@ Optional FormData for POST requests
 
 > `optional` **dirConfig?**: [`DirectoryOutputOptions`](DirectoryOutputOptions.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:68](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L68)
+Defined in: [packages/contracts/ExecutionContracts.ts:68](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L68)
 
 Directory output configuration
 
@@ -105,7 +105,7 @@ Directory output configuration
 
 > `optional` **allowedExtensions?**: [`AllowedExtension`](../type-aliases/AllowedExtension.md)[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:71](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L71)
+Defined in: [packages/contracts/ExecutionContracts.ts:71](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L71)
 
 Allowed file extensions
 
@@ -115,7 +115,7 @@ Allowed file extensions
 
 > `optional` **allowedVideoQuality?**: [`VideoQuality`](../enumerations/VideoQuality.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:74](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L74)
+Defined in: [packages/contracts/ExecutionContracts.ts:74](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L74)
 
 Allowed video quality
 
@@ -125,7 +125,7 @@ Allowed video quality
 
 > `optional` **preferredVideoFormat?**: [`VideoFormat`](../enumerations/VideoFormat.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:77](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L77)
+Defined in: [packages/contracts/ExecutionContracts.ts:77](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L77)
 
 Preferred video format (e.g. hls, mp4)
 
@@ -135,7 +135,7 @@ Preferred video format (e.g. hls, mp4)
 
 > `optional` **preferredVideoCodec?**: [`VideoCodec`](../enumerations/VideoCodec.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:80](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L80)
+Defined in: [packages/contracts/ExecutionContracts.ts:80](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L80)
 
 Preferred video codec (e.g. h264, av1)
 
@@ -145,7 +145,7 @@ Preferred video codec (e.g. h264, av1)
 
 > `optional` **tagFilterOptions?**: [`TagFilterOptions`](TagFilterOptions.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:83](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L83)
+Defined in: [packages/contracts/ExecutionContracts.ts:83](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L83)
 
 Tag filtering options
 
@@ -155,7 +155,7 @@ Tag filtering options
 
 > `optional` **maxDownloads?**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:86](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L86)
+Defined in: [packages/contracts/ExecutionContracts.ts:86](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L86)
 
 Maximum number of items to download
 
@@ -165,7 +165,7 @@ Maximum number of items to download
 
 > `optional` **transformOutput?**: `boolean`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:89](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L89)
+Defined in: [packages/contracts/ExecutionContracts.ts:89](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L89)
 
 Transform output to service-specific result type
 
@@ -175,7 +175,7 @@ Transform output to service-specific result type
 
 > `optional` **concurrency?**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:92](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L92)
+Defined in: [packages/contracts/ExecutionContracts.ts:92](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L92)
 
 Download phase concurrency
 
@@ -185,7 +185,7 @@ Download phase concurrency
 
 > `optional` **noDownload?**: `boolean`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:95](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L95)
+Defined in: [packages/contracts/ExecutionContracts.ts:95](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L95)
 
 Iterate only-- this prop is only used for logging http-services
 
@@ -195,9 +195,54 @@ Iterate only-- this prop is only used for logging http-services
 
 > `optional` **extractConcurrency?**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:98](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L98)
+Defined in: [packages/contracts/ExecutionContracts.ts:98](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L98)
 
 Extraction phase concurrency
+
+***
+
+### captureConsole?
+
+> `optional` **captureConsole?**: `boolean`
+
+Defined in: [packages/contracts/ExecutionContracts.ts:113](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L113)
+
+Whether progress rendering may take over `stdout`/`stderr`.
+
+#### Remarks
+
+Off by default. Live progress redraws in place, so anything written directly
+to the terminal while a job renders is erased by the next frame. Enabling this
+patches both streams for the duration of the job so `console.log` survives.
+
+It is opt-in because patching a global belongs to the application that owns
+the process, not to a library running inside it.
+
+#### Default Value
+
+```ts
+false
+```
+
+***
+
+### maxCdnFallbacks?
+
+> `optional` **maxCdnFallbacks?**: `number`
+
+Defined in: [packages/contracts/ExecutionContracts.ts:116](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L116)
+
+Maximum CDN fallback attempts allowed per download item.
+
+***
+
+### maxReExtractions?
+
+> `optional` **maxReExtractions?**: `number`
+
+Defined in: [packages/contracts/ExecutionContracts.ts:119](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L119)
+
+Maximum expired-URL re-extraction attempts allowed per download item.
 
 ***
 
@@ -205,7 +250,7 @@ Extraction phase concurrency
 
 > `optional` **transcodeOptions?**: [`TranscodeOptions`](TranscodeOptions.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:101](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L101)
+Defined in: [packages/contracts/ExecutionContracts.ts:122](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L122)
 
 Transcoding options
 
@@ -215,7 +260,7 @@ Transcoding options
 
 > `optional` **downloadRetries?**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:104](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L104)
+Defined in: [packages/contracts/ExecutionContracts.ts:125](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L125)
 
 Download retry count
 
@@ -225,7 +270,7 @@ Download retry count
 
 > `optional` **retryDelayMs?**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:107](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L107)
+Defined in: [packages/contracts/ExecutionContracts.ts:128](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L128)
 
 Delay between download retries in milliseconds
 
@@ -235,7 +280,7 @@ Delay between download retries in milliseconds
 
 > `optional` **pipelineHooks?**: [`PipelineHook`](PipelineHook.md)[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:110](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L110)
+Defined in: [packages/contracts/ExecutionContracts.ts:131](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L131)
 
 PipelineRegistry lifecycle hooks
 
@@ -245,7 +290,7 @@ PipelineRegistry lifecycle hooks
 
 > `optional` **onProgress?**: (`event`) => `void`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:113](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L113)
+Defined in: [packages/contracts/ExecutionContracts.ts:134](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L134)
 
 Progress event handler
 
@@ -265,7 +310,7 @@ Progress event handler
 
 > `optional` **logProgress?**: `boolean`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:116](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L116)
+Defined in: [packages/contracts/ExecutionContracts.ts:137](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L137)
 
 Enables console progress logging
 
@@ -275,7 +320,7 @@ Enables console progress logging
 
 > `optional` **outputType?**: [`OutputType`](../enumerations/OutputType.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:119](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L119)
+Defined in: [packages/contracts/ExecutionContracts.ts:140](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L140)
 
 Output format for ExecutionCoordinator results
 
@@ -285,7 +330,7 @@ Output format for ExecutionCoordinator results
 
 > `optional` **executionType?**: [`ExecutionType`](../enumerations/ExecutionType.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:122](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L122)
+Defined in: [packages/contracts/ExecutionContracts.ts:143](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L143)
 
 Job execution strategy
 
@@ -295,9 +340,13 @@ Job execution strategy
 
 > `optional` **signal?**: `AbortSignal`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:125](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L125)
+Defined in: [packages/contracts/ExecutionContracts.ts:146](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L146)
 
 Abort signal for cancelling the ExecutionCoordinator
+
+#### Overrides
+
+[`HttpFetchOptions`](HttpFetchOptions.md).[`signal`](HttpFetchOptions.md#signal)
 
 ***
 
@@ -305,7 +354,7 @@ Abort signal for cancelling the ExecutionCoordinator
 
 > `optional` **userAgent?**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:129](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L129)
+Defined in: [packages/contracts/ExecutionContracts.ts:150](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L150)
 
 #### Inherited from
 
@@ -317,7 +366,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:129](https://github.com/fo
 
 > `optional` **enableSniSpoofing?**: `boolean`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:131](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L131)
+Defined in: [packages/contracts/ExecutionContracts.ts:152](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L152)
 
 #### Inherited from
 
@@ -329,7 +378,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:131](https://github.com/fo
 
 > `optional` **proxy?**: [`ProxyOptions`](ProxyOptions.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:133](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L133)
+Defined in: [packages/contracts/ExecutionContracts.ts:154](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L154)
 
 #### Inherited from
 
@@ -341,7 +390,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:133](https://github.com/fo
 
 > `optional` **dispatcher?**: `Dispatcher`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:135](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/ExecutionContracts.ts#L135)
+Defined in: [packages/contracts/ExecutionContracts.ts:156](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L156)
 
 #### Inherited from
 

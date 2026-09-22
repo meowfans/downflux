@@ -6,7 +6,7 @@
 
 # Class: ParserRegistry
 
-Defined in: [packages/core/registries/ParserRegistry.ts:98](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/registries/ParserRegistry.ts#L98)
+Defined in: [packages/core/registries/ParserRegistry.ts:98](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/ParserRegistry.ts#L98)
 
 Resolves and caches parser classes by provider.
 
@@ -32,7 +32,7 @@ a provider-specific implementation is absent.
 
 > `static` **getParser**(`provider`): `Promise`\<[`BaseParser`](BaseParser.md)\>
 
-Defined in: [packages/core/registries/ParserRegistry.ts:121](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/core/registries/ParserRegistry.ts#L121)
+Defined in: [packages/core/registries/ParserRegistry.ts:128](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/ParserRegistry.ts#L128)
 
 Creates a parser instance for the requested provider.
 

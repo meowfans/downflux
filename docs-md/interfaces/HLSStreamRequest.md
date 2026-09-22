@@ -6,7 +6,7 @@
 
 # Interface: HLSStreamRequest
 
-Defined in: [packages/contracts/DownloadContracts.ts:63](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L63)
+Defined in: [packages/contracts/DownloadContracts.ts:90](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L90)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:63](https://github.com/fork
 
 > **finalUrl**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:64](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L64)
+Defined in: [packages/contracts/DownloadContracts.ts:91](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L91)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:64](https://github.com/fork
 
 > **headers**: `Record`\<`string`, `string`\>
 
-Defined in: [packages/contracts/DownloadContracts.ts:65](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L65)
+Defined in: [packages/contracts/DownloadContracts.ts:92](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L92)
 
 ***
 
@@ -30,7 +30,33 @@ Defined in: [packages/contracts/DownloadContracts.ts:65](https://github.com/fork
 
 > `optional` **isFmp4?**: `boolean`
 
-Defined in: [packages/contracts/DownloadContracts.ts:66](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L66)
+Defined in: [packages/contracts/DownloadContracts.ts:93](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L93)
+
+***
+
+### contentLength?
+
+> `optional` **contentLength?**: `number`
+
+Defined in: [packages/contracts/DownloadContracts.ts:103](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L103)
+
+Exact byte length of what will be delivered, when it can be known.
+
+#### Remarks
+
+Only set when bytes pass through untouched. Remuxing changes the container,
+so the origin's length no longer describes the output and publishing it as
+`Content-Length` would truncate or stall the client.
+
+***
+
+### estimatedBytes?
+
+> `optional` **estimatedBytes?**: `number`
+
+Defined in: [packages/contracts/DownloadContracts.ts:106](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L106)
+
+Best-effort source size, safe for progress UI but never for `Content-Length`.
 
 ***
 
@@ -38,7 +64,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:66](https://github.com/fork
 
 > **start**: (`stream`, `noDownload?`) => `Promise`\<`void`\>
 
-Defined in: [packages/contracts/DownloadContracts.ts:67](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L67)
+Defined in: [packages/contracts/DownloadContracts.ts:108](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L108)
 
 #### Parameters
 

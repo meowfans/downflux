@@ -1,4 +1,4 @@
-import { DownloadResult, ExecutionArgs, ExecutionOptions, ExecutionResult, PipelineHook, PipelineItem } from '@contracts';
+import { DownloadResult, ExecutionArgs, ExecutionOptions, ExecutionResult, JobSettlement, PipelineHook, PipelineItem } from '@contracts';
 import { ProgressManager } from '@core/progress';
 import { PipelineRegistry, TransformerRegistry } from '@core/registries';
 import { FileManager } from '@storage';
@@ -65,21 +65,35 @@ export class TaskCoordinator {
 					...options,
 					outputType,
 					provider: request.provider,
+					cdnFallbackBudget: options.maxCdnFallbacks,
+					reExtractBudget: options.maxReExtractions,
 					reExtract: async (item) => {
 						const result = await this.transformerRegistry.transform(item.sourceUrl, { ...request, entryUrl: item.sourceUrl });
 
 						const newItems = await this.pipelineRegistry.build(result, request);
 
-						return newItems[0] ?? null;
+						/**
+						 * Re-extraction has to return the replacement for *this* item. Taking
+						 * the first rebuilt item would silently swap quality or media type
+						 * whenever a page yields more than one download.
+						 */
+						return (
+							newItems.find((candidate) => candidate.identifier.key === item.identifier.key) ??
+							newItems.find((candidate) => candidate.identifier.mediaType === item.identifier.mediaType) ??
+							null
+						);
 					}
 				});
 
 				this.runDownloadHooks(pipelineHooks, pipelineItem, downloadResult);
 
+				result.downloaded++;
+
 				this.progressManager.update({
 					status: 'DOWNLOADED',
+					itemKey: pipelineItem.identifier.key,
 					totalItems: result.pipelineItems.length,
-					resolvedItems: result.downloaded++,
+					resolvedItems: result.downloaded,
 					failed: result.failed,
 					item: pipelineItem,
 					resolvedTargets: result.targets.indexOf(pipelineItem.sourceUrl) + 1,
@@ -89,14 +103,16 @@ export class TaskCoordinator {
 				const normalizedError = err instanceof Error ? err : new Error(String(err));
 
 				result.errors.push(normalizedError);
+				result.failed++;
 
 				this.progressManager.update({
 					status: 'FAILED',
+					itemKey: pipelineItem.identifier.key,
 					currentItem: pipelineItem.downloadUrl,
 					currentTarget: pipelineItem.sourceUrl,
 					totalItems: result.pipelineItems.length,
 					resolvedItems: result.downloaded,
-					failed: result.failed++,
+					failed: result.failed,
 					item: pipelineItem,
 					resolvedTargets: result.targets.indexOf(pipelineItem.sourceUrl),
 					error: normalizedError
@@ -186,12 +202,17 @@ export class TaskCoordinator {
 		request: ExecutionArgs,
 		pipelineHooks: PipelineHook[],
 		result: ExecutionResult<T, S>
-	): void {
-		this.processDownloadsInBackground<T, S>(options, outputType, request, pipelineHooks, result).catch((err) => {
-			this.progressManager.update({
-				status: 'FAILED',
-				error: { name: 'BackgroundProgress', cause: err, message: 'Background download pipeline error:' }
-			});
-		});
+	): Promise<JobSettlement> {
+		return this.processDownloadsInBackground<T, S>(options, outputType, request, pipelineHooks, result).then(
+			() => ({ downloaded: result.downloaded, failed: result.failed, errors: result.errors }),
+			(err) => {
+				this.progressManager.update({
+					status: 'FAILED',
+					error: { name: 'BackgroundProgress', cause: err, message: 'Background download pipeline error:' }
+				});
+
+				throw err instanceof Error ? err : new Error(String(err));
+			}
+		);
 	}
 }

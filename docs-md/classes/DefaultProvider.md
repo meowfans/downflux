@@ -6,7 +6,7 @@
 
 # Class: DefaultProvider
 
-Defined in: [packages/providers/default/DefaultProvider.ts:9](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/default/DefaultProvider.ts#L9)
+Defined in: [packages/providers/default/DefaultProvider.ts:9](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/default/DefaultProvider.ts#L9)
 
 Default provider.
 Supports generic URL extraction.
@@ -21,7 +21,7 @@ Supports generic URL extraction.
 
 > **new DefaultProvider**(`url`): `DefaultProvider`
 
-Defined in: [packages/providers/default/DefaultProvider.ts:12](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/default/DefaultProvider.ts#L12)
+Defined in: [packages/providers/default/DefaultProvider.ts:12](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/default/DefaultProvider.ts#L12)
 
 #### Parameters
 
@@ -43,7 +43,7 @@ Defined in: [packages/providers/default/DefaultProvider.ts:12](https://github.co
 
 > `protected` **executionOptions**: [`ExecutionOptions`](../interfaces/ExecutionOptions.md) = `{}`
 
-Defined in: [packages/base/BaseProvider.ts:39](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L39)
+Defined in: [packages/base/BaseProvider.ts:40](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L40)
 
 #### Inherited from
 
@@ -55,7 +55,7 @@ Defined in: [packages/base/BaseProvider.ts:39](https://github.com/forkts/downflu
 
 > `protected` **httpOptions**: [`HttpFetchOptions`](../interfaces/HttpFetchOptions.md) = `{}`
 
-Defined in: [packages/base/BaseProvider.ts:40](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L40)
+Defined in: [packages/base/BaseProvider.ts:44](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L44)
 
 #### Inherited from
 
@@ -67,7 +67,7 @@ Defined in: [packages/base/BaseProvider.ts:40](https://github.com/forkts/downflu
 
 > `protected` `readonly` **deps**: [`CoordinatorDependencies`](../interfaces/CoordinatorDependencies.md)
 
-Defined in: [packages/base/BaseProvider.ts:41](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L41)
+Defined in: [packages/base/BaseProvider.ts:45](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L45)
 
 #### Inherited from
 
@@ -79,7 +79,7 @@ Defined in: [packages/base/BaseProvider.ts:41](https://github.com/forkts/downflu
 
 > `protected` `readonly` **urlPattern**: `RegExp`
 
-Defined in: [packages/base/BaseProvider.ts:43](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L43)
+Defined in: [packages/base/BaseProvider.ts:47](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L47)
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ Defined in: [packages/base/BaseProvider.ts:43](https://github.com/forkts/downflu
 
 > `protected` `readonly` **providerMetadata**: [`ProviderMetadata`](../interfaces/ProviderMetadata.md)
 
-Defined in: [packages/base/BaseProvider.ts:44](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L44)
+Defined in: [packages/base/BaseProvider.ts:48](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L48)
 
 #### Inherited from
 
@@ -103,7 +103,7 @@ Defined in: [packages/base/BaseProvider.ts:44](https://github.com/forkts/downflu
 
 > `protected` `readonly` **url**: `string`
 
-Defined in: [packages/base/BaseProvider.ts:52](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L52)
+Defined in: [packages/base/BaseProvider.ts:56](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L56)
 
 #### Inherited from
 
@@ -115,7 +115,7 @@ Defined in: [packages/base/BaseProvider.ts:52](https://github.com/forkts/downflu
 
 > `protected` **config**: [`ProviderConfig`](../interfaces/ProviderConfig.md)
 
-Defined in: [packages/base/BaseProvider.ts:53](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L53)
+Defined in: [packages/base/BaseProvider.ts:57](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L57)
 
 #### Inherited from
 
@@ -127,7 +127,7 @@ Defined in: [packages/base/BaseProvider.ts:53](https://github.com/forkts/downflu
 
 > `protected` `readonly` **provider**: [`Default`](../enumerations/Provider.md#default) = `Provider.Default`
 
-Defined in: [packages/providers/default/DefaultProvider.ts:10](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/default/DefaultProvider.ts#L10)
+Defined in: [packages/providers/default/DefaultProvider.ts:10](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/default/DefaultProvider.ts#L10)
 
 #### Overrides
 
@@ -141,7 +141,7 @@ Defined in: [packages/providers/default/DefaultProvider.ts:10](https://github.co
 
 > **get** `protected` **metadata**(): [`ProviderMetadata`](../interfaces/ProviderMetadata.md)
 
-Defined in: [packages/base/BaseProvider.ts:47](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L47)
+Defined in: [packages/base/BaseProvider.ts:51](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L51)
 
 Provider capabilities, integration status, and access restrictions.
 
@@ -161,7 +161,7 @@ Provider capabilities, integration status, and access restrictions.
 
 > **get** `protected` **ORIGIN**(): `string`
 
-Defined in: [packages/base/BaseProvider.ts:81](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L81)
+Defined in: [packages/base/BaseProvider.ts:85](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L85)
 
 ##### Returns
 
@@ -179,7 +179,7 @@ Defined in: [packages/base/BaseProvider.ts:81](https://github.com/forkts/downflu
 
 > **get** `protected` **HOST\_NAME**(): `string`
 
-Defined in: [packages/base/BaseProvider.ts:85](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L85)
+Defined in: [packages/base/BaseProvider.ts:89](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L89)
 
 ##### Returns
 
@@ -195,7 +195,7 @@ Defined in: [packages/base/BaseProvider.ts:85](https://github.com/forkts/downflu
 
 > `protected` **isValidHostName**(): `boolean`
 
-Defined in: [packages/base/BaseProvider.ts:89](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L89)
+Defined in: [packages/base/BaseProvider.ts:93](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L93)
 
 #### Returns
 
@@ -211,7 +211,7 @@ Defined in: [packages/base/BaseProvider.ts:89](https://github.com/forkts/downflu
 
 > **setAuth**(`auth`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:110](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L110)
+Defined in: [packages/base/BaseProvider.ts:114](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L114)
 
 Sets authentication credentials for the provider.
 
@@ -242,7 +242,7 @@ Supports multiple authentication methods: cookies, bearer tokens, CSRF tokens, A
 
 > **setHeaders**(`headers`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:129](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L129)
+Defined in: [packages/base/BaseProvider.ts:133](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L133)
 
 Sets custom HTTP headers.
 
@@ -268,7 +268,7 @@ Request header map
 
 > **setTimeout**(`timeoutMs`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:138](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L138)
+Defined in: [packages/base/BaseProvider.ts:142](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L142)
 
 Sets HTTP timeout.
 
@@ -294,7 +294,7 @@ Timeout in milliseconds
 
 > **setRetries**(`retries`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:147](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L147)
+Defined in: [packages/base/BaseProvider.ts:151](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L151)
 
 Sets fetch retry count.
 
@@ -320,7 +320,7 @@ Retry attempt count
 
 > **setTransformOutput**(`transform?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:156](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L156)
+Defined in: [packages/base/BaseProvider.ts:160](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L160)
 
 Transform output to provider-specific result type.
 
@@ -346,7 +346,7 @@ Default is true, which applies the default transformation. Set to false to retur
 
 > **setHttpOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:165](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L165)
+Defined in: [packages/base/BaseProvider.ts:169](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L169)
 
 Sets HTTP fetch options.
 
@@ -372,7 +372,7 @@ HTTP options to merge
 
 > **setNoDownload**(`noDownload?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:175](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L175)
+Defined in: [packages/base/BaseProvider.ts:179](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L179)
 
 Sets no download flag.
 
@@ -404,7 +404,7 @@ false - set to true to skip the download phase and only perform extraction (usef
 
 > **setTranscodeOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:188](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L188)
+Defined in: [packages/base/BaseProvider.ts:192](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L192)
 
 Sets transcode options.
 
@@ -433,7 +433,7 @@ Make sure your OS can handle it
 
 > **setPreferredFormat**(`format`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:197](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L197)
+Defined in: [packages/base/BaseProvider.ts:201](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L201)
 
 Sets preferred video format.
 
@@ -459,7 +459,7 @@ Video format (hls or mp4)
 
 > **setPreferredCodec**(`codec`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:211](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L211)
+Defined in: [packages/base/BaseProvider.ts:215](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L215)
 
 Sets preferred video codec.
 
@@ -490,7 +490,7 @@ If the provider supports it, it will try to download the video in the specified 
 
 > **setJobOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:220](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L220)
+Defined in: [packages/base/BaseProvider.ts:224](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L224)
 
 Sets ExecutionCoordinator options.
 
@@ -516,7 +516,7 @@ Job options to merge
 
 > **setAgentOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:229](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L229)
+Defined in: [packages/base/BaseProvider.ts:233](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L233)
 
 Sets HTTP agent options.
 
@@ -542,7 +542,7 @@ HTTP agent options to merge
 
 > **setMaxDownloads**(`maxDownloads`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:238](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L238)
+Defined in: [packages/base/BaseProvider.ts:242](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L242)
 
 Sets maximum downloads.
 
@@ -568,7 +568,7 @@ Download limit
 
 > **setAllowedExtensions**(...`extensions`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:247](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L247)
+Defined in: [packages/base/BaseProvider.ts:251](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L251)
 
 Sets allowed file extensions.
 
@@ -594,7 +594,7 @@ File extensions such as `jpg` or `png`
 
 > **onProgress**(`handler`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:256](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L256)
+Defined in: [packages/base/BaseProvider.ts:260](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L260)
 
 Sets progress handler.
 
@@ -618,9 +618,9 @@ Progress event callback
 
 ### setProgressLogging()
 
-> **setProgressLogging**(`enabled?`): `this`
+> **setProgressLogging**(`enabled?`, `options?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:266](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L266)
+Defined in: [packages/base/BaseProvider.ts:279](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L279)
 
 Enables console progress logging.
 
@@ -632,6 +632,14 @@ Enables console progress logging.
 
 Console logging flag
 
+##### options?
+
+Rendering options.
+
+###### captureConsole?
+
+`boolean`
+
 #### Returns
 
 `this`
@@ -641,6 +649,14 @@ Console logging flag
 ```ts
 true
 ```
+
+#### Remarks
+
+Progress redraws in place, so output written directly to the terminal while a
+job runs is erased by the next frame. Pass `captureConsole: true` to route
+`console.log` around the live region; it is off by default because it patches
+`stdout`/`stderr`, which is the host application's call to make, not the
+library's.
 
 #### Inherited from
 
@@ -652,7 +668,7 @@ true
 
 > **setOutput**(`type`, `config?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:277](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L277)
+Defined in: [packages/base/BaseProvider.ts:292](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L292)
 
 Sets output type.
 
@@ -690,7 +706,7 @@ OutputType.JSON
 
 > **setExecutionType**(`type`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:298](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L298)
+Defined in: [packages/base/BaseProvider.ts:313](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L313)
 
 Sets execution strategy.
 
@@ -726,11 +742,115 @@ Use with caution and test thoroughly if you choose to use `PARALLEL` execution.
 
 ***
 
+### whenSettled()
+
+> **whenSettled**(): `Promise`\<[`JobSettlement`](../interfaces/JobSettlement.md)\>
+
+Defined in: [packages/base/BaseProvider.ts:341](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L341)
+
+Waits for the download phase of the most recent job.
+
+#### Returns
+
+`Promise`\<[`JobSettlement`](../interfaces/JobSettlement.md)\>
+
+How many items were written, how many failed, and their errors.
+
+#### Remarks
+
+Provider methods resolve as soon as extraction finishes so callers learn what
+is about to download without blocking on it. For `DEVICE` and
+`STREAM` the transfers continue afterwards, and this is the handle for code
+that needs to know when they finished:
+
+```ts
+const provider = new BeegProvider(url).setOutput(OutputType.DEVICE, { directoryPath: '/srv/media' });
+
+const metadata = await provider.getVideo();   // returns immediately
+const { downloaded, failed, errors } = await provider.whenSettled();
+```
+
+Resolves even when individual items fail, since a partial batch is a normal
+outcome; inspect `failed` and `errors`. It rejects only if the download
+pipeline itself could not run. Returns a zeroed settlement for output modes
+that never download.
+
+#### Inherited from
+
+[`BaseProvider`](BaseProvider.md).[`whenSettled`](BaseProvider.md#whensettled)
+
+***
+
+### assertSupported()
+
+> `protected` **assertSupported**(`method?`): `void`
+
+Defined in: [packages/base/BaseProvider.ts:356](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L356)
+
+Enforces the capability flags declared in [ProviderMetadata](../interfaces/ProviderMetadata.md).
+
+#### Parameters
+
+##### method?
+
+`string`
+
+Provider method being invoked, used for error context.
+
+#### Returns
+
+`void`
+
+#### Remarks
+
+The metadata block documents what a provider can and cannot do. Without this
+check the flags were write-only: `canDownload: false` still attempted a
+download and `requiresBrowser: true` still issued plain HTTP, so callers only
+discovered the limitation as an obscure failure deep in the transport layer.
+
+#### Inherited from
+
+[`BaseProvider`](BaseProvider.md).[`assertSupported`](BaseProvider.md#assertsupported)
+
+***
+
+### dispose()
+
+> **dispose**(`options?`): `Promise`\<`void`\>
+
+Defined in: [packages/base/BaseProvider.ts:391](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L391)
+
+Releases resources held by this provider instance.
+
+#### Parameters
+
+##### options?
+
+###### closeConnections?
+
+`boolean`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Remarks
+
+Detaches the CLI progress listener. Pass `closeConnections` to also close the
+process-wide undici pools, which is appropriate when the host process is done
+with DownFlux entirely rather than between jobs.
+
+#### Inherited from
+
+[`BaseProvider`](BaseProvider.md).[`dispose`](BaseProvider.md#dispose)
+
+***
+
 ### buildRequest()
 
 > `protected` **buildRequest**(`overrides?`): [`DefaultExecArgs`](../interfaces/DefaultExecArgs.md)
 
-Defined in: [packages/base/BaseProvider.ts:309](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L309)
+Defined in: [packages/base/BaseProvider.ts:403](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L403)
 
 Builds the execution request passed to the coordinator layer.
 
@@ -758,7 +878,7 @@ A typed request containing provider metadata and execution options.
 
 > `protected` **execute**\<`TResult`\>(`overrides`): `Promise`\<`TResult`\>
 
-Defined in: [packages/base/BaseProvider.ts:330](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L330)
+Defined in: [packages/base/BaseProvider.ts:424](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L424)
 
 Runs extraction and optional downloads through the shared coordinator.
 
@@ -792,7 +912,7 @@ Extracted output in the shape requested by the provider method.
 
 > `protected` **makeTargets**(`sourceUrl`, `range`, `provider`, `method`, `addTrailingSlash?`): `object`
 
-Defined in: [packages/base/BaseProvider.ts:359](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/base/BaseProvider.ts#L359)
+Defined in: [packages/base/BaseProvider.ts:457](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L457)
 
 Builds paginated target URLs for list-like provider methods.
 
@@ -856,7 +976,7 @@ Provider, method, and generated target URLs.
 
 > **getLinks**(): `Promise`\<`string`[]\>
 
-Defined in: [packages/providers/default/DefaultProvider.ts:35](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/default/DefaultProvider.ts#L35)
+Defined in: [packages/providers/default/DefaultProvider.ts:35](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/default/DefaultProvider.ts#L35)
 
 Gets links.
 
@@ -872,7 +992,7 @@ Extracted anchor result array
 
 > **getImages**(): `Promise`\<`string`[]\>
 
-Defined in: [packages/providers/default/DefaultProvider.ts:49](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/default/DefaultProvider.ts#L49)
+Defined in: [packages/providers/default/DefaultProvider.ts:49](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/default/DefaultProvider.ts#L49)
 
 Gets images.
 
@@ -888,7 +1008,7 @@ Extracted image result array
 
 > **getVideos**(): `Promise`\<`string`[]\>
 
-Defined in: [packages/providers/default/DefaultProvider.ts:63](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/default/DefaultProvider.ts#L63)
+Defined in: [packages/providers/default/DefaultProvider.ts:63](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/default/DefaultProvider.ts#L63)
 
 Gets videos.
 
@@ -904,7 +1024,7 @@ Extracted video result array
 
 > **getAudio**(): `Promise`\<`string`[]\>
 
-Defined in: [packages/providers/default/DefaultProvider.ts:77](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/providers/default/DefaultProvider.ts#L77)
+Defined in: [packages/providers/default/DefaultProvider.ts:77](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/default/DefaultProvider.ts#L77)
 
 Gets audio.
 

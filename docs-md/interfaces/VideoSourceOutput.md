@@ -6,7 +6,7 @@
 
 # Interface: VideoSourceOutput
 
-Defined in: [packages/contracts/DownloadContracts.ts:107](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L107)
+Defined in: [packages/contracts/DownloadContracts.ts:158](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L158)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:107](https://github.com/for
 
 > **quality**: [`VideoQuality`](../enumerations/VideoQuality.md)
 
-Defined in: [packages/contracts/DownloadContracts.ts:108](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L108)
+Defined in: [packages/contracts/DownloadContracts.ts:159](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L159)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [packages/contracts/DownloadContracts.ts:108](https://github.com/for
 
 > **url**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:109](https://github.com/forkts/downflux/blob/5efca2ef75dcde54077f697ac650839042e172a5/packages/contracts/DownloadContracts.ts#L109)
+Defined in: [packages/contracts/DownloadContracts.ts:160](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L160)

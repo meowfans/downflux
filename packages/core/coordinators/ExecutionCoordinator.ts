@@ -41,7 +41,7 @@ export class ExecutionCoordinator {
 
 		this.progressManager.update({ status: 'STARTED', totalTargets: targets.length });
 
-		const transformed = await this.extractMetadataFromTargets<TResult, TExec>(targets, request);
+		const transformed = await this.extractMetadataFromTargets<TResult, TExec>(targets, request, errors);
 
 		iterables.push(...transformed);
 
@@ -55,7 +55,7 @@ export class ExecutionCoordinator {
 			outputType,
 			extracted: (request.executionShape === 'single' ? iterables[0] : iterables) as ShapeOutput<TResult, TShape>,
 			downloaded: 0,
-			failed: 0,
+			failed: errors.length,
 			errors,
 			pipelineItems
 		};
@@ -66,10 +66,21 @@ export class ExecutionCoordinator {
 			case OutputType.JSON:
 				return this.taskCoordinator.handleJsonOutput<TResult, TShape>(result, options);
 
-			case OutputType.BUFFER:
 			case OutputType.DEVICE:
-				this.taskCoordinator.handleDeviceOutputAsync<TResult, TShape>(options, outputType, request, pipelineHooks, result);
-				return result;
+			case OutputType.STREAM: {
+				const completion = this.taskCoordinator.handleDeviceOutputAsync<TResult, TShape>(
+					options,
+					outputType,
+					request,
+					pipelineHooks,
+					result
+				);
+
+				// attached so a caller can await the downloads it was just told about
+				completion.catch(() => undefined);
+
+				return { ...result, completion };
+			}
 
 			case OutputType.RETURN:
 				return result;
@@ -79,7 +90,11 @@ export class ExecutionCoordinator {
 		}
 	}
 
-	private async extractMetadataFromTargets<TResult, TExec extends ExecutionArgs>(targets: string[], request: TExec): Promise<TResult[]> {
+	private async extractMetadataFromTargets<TResult, TExec extends ExecutionArgs>(
+		targets: string[],
+		request: TExec,
+		errors: Error[]
+	): Promise<TResult[]> {
 		const extractConcurrency = request.extractConcurrency ?? ExecutionCoordinator.DEFAULT_EXTRACT_CONCURRENCY;
 
 		const extractedChunks: TResult[][] = new Array(targets.length);
@@ -94,7 +109,18 @@ export class ExecutionCoordinator {
 
 				extractedChunks[index] = Array.isArray(result) ? result : [result];
 			} catch (err) {
-				this.progressManager.update({ error: { cause: err, name: 'Extraction Error', message: `Error EXTRACTING ${target}` } });
+				const normalizedError = err instanceof Error ? err : new Error(String(err));
+
+				/**
+				 * Extraction failures are recorded on the result alongside download
+				 * failures. Reporting them only through progress events made a run where
+				 * every target failed look identical to a clean one.
+				 */
+				errors.push(normalizedError);
+
+				this.progressManager.update({
+					error: { cause: normalizedError, name: 'Extraction Error', message: `Error EXTRACTING ${target}` }
+				});
 			}
 		});
 
