@@ -23,6 +23,5 @@
 	"target": "node22",
 	"platform": "node",
 	"sourcemap": false,
-	"minify": true,
-	"keepNames": true
+	"minify": false
 }
