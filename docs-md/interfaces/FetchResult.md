@@ -6,7 +6,7 @@
 
 # Interface: FetchResult
 
-Defined in: [packages/contracts/DownloadContracts.ts:81](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L81)
+Defined in: [packages/contracts/DownloadContracts.ts:81](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L81)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:81](https://github.com/clou
 
 > **html**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:82](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L82)
+Defined in: [packages/contracts/DownloadContracts.ts:82](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L82)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:82](https://github.com/clou
 
 > **buffer**: `Buffer`
 
-Defined in: [packages/contracts/DownloadContracts.ts:83](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L83)
+Defined in: [packages/contracts/DownloadContracts.ts:83](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L83)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:83](https://github.com/clou
 
 > **finalUrl**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:84](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L84)
+Defined in: [packages/contracts/DownloadContracts.ts:84](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L84)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:84](https://github.com/clou
 
 > **status**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:85](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L85)
+Defined in: [packages/contracts/DownloadContracts.ts:85](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L85)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:85](https://github.com/clou
 
 > **ok**: `boolean`
 
-Defined in: [packages/contracts/DownloadContracts.ts:86](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L86)
+Defined in: [packages/contracts/DownloadContracts.ts:86](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L86)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [packages/contracts/DownloadContracts.ts:86](https://github.com/clou
 
 > **headers**: `Record`\<`string`, `string`\>
 
-Defined in: [packages/contracts/DownloadContracts.ts:87](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L87)
+Defined in: [packages/contracts/DownloadContracts.ts:87](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L87)

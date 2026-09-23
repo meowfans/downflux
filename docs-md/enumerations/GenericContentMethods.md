@@ -6,7 +6,7 @@
 
 # Enumeration: GenericContentMethods
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:11](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L11)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:11](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L11)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:11](https://git
 
 > **getMetadata**: `"getMetadata"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:12](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L12)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:12](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L12)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:12](https://git
 
 > **getLinks**: `"getLinks"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:13](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L13)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:13](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L13)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:13](https://git
 
 > **getImages**: `"getImages"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:14](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L14)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L14)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:14](https://git
 
 > **getVideos**: `"getVideos"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:15](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L15)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:15](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L15)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:15](https://git
 
 > **getAudio**: `"getAudio"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:16](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L16)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L16)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:16](https://git
 
 > **getAllUrls**: `"getAllUrls"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L17)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L17)

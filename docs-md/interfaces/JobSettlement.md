@@ -6,7 +6,7 @@
 
 # Interface: JobSettlement
 
-Defined in: [packages/contracts/ExecutionContracts.ts:199](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L199)
+Defined in: [packages/contracts/ExecutionContracts.ts:216](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L216)
 
 Outcome of a job's download phase.
 
@@ -22,7 +22,7 @@ only rejects if the download pipeline itself could not run.
 
 > **downloaded**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:200](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L200)
+Defined in: [packages/contracts/ExecutionContracts.ts:217](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L217)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:200](https://github.com/cl
 
 > **failed**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:201](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L201)
+Defined in: [packages/contracts/ExecutionContracts.ts:218](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L218)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [packages/contracts/ExecutionContracts.ts:201](https://github.com/cl
 
 > **errors**: `Error`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:202](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L202)
+Defined in: [packages/contracts/ExecutionContracts.ts:219](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L219)

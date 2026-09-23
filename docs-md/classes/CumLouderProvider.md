@@ -6,7 +6,7 @@
 
 # Class: CumLouderProvider
 
-Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/cumlouder/CumLouderProvider.ts#L17)
+Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/cumlouder/CumLouderProvider.ts#L17)
 
 `CumLouderProvider`
 
@@ -31,7 +31,7 @@ CumLouder supports video downloading (canDownload: true).
 
 > **new CumLouderProvider**(`url`): `CumLouderProvider`
 
-Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:22](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/cumlouder/CumLouderProvider.ts#L22)
+Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:22](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/cumlouder/CumLouderProvider.ts#L22)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:22](https://githu
 
 > `protected` **executionOptions**: [`ExecutionOptions`](../interfaces/ExecutionOptions.md) = `{}`
 
-Defined in: [packages/base/BaseProvider.ts:40](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L40)
+Defined in: [packages/base/BaseProvider.ts:41](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L41)
 
 #### Inherited from
 
@@ -65,7 +65,7 @@ Defined in: [packages/base/BaseProvider.ts:40](https://github.com/cloudgrids/dow
 
 > `protected` **httpOptions**: [`HttpFetchOptions`](../interfaces/HttpFetchOptions.md) = `{}`
 
-Defined in: [packages/base/BaseProvider.ts:44](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L44)
+Defined in: [packages/base/BaseProvider.ts:48](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L48)
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ Defined in: [packages/base/BaseProvider.ts:44](https://github.com/cloudgrids/dow
 
 > `protected` `readonly` **deps**: [`CoordinatorDependencies`](../interfaces/CoordinatorDependencies.md)
 
-Defined in: [packages/base/BaseProvider.ts:45](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L45)
+Defined in: [packages/base/BaseProvider.ts:49](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L49)
 
 #### Inherited from
 
@@ -89,7 +89,7 @@ Defined in: [packages/base/BaseProvider.ts:45](https://github.com/cloudgrids/dow
 
 > `protected` `readonly` **urlPattern**: `RegExp`
 
-Defined in: [packages/base/BaseProvider.ts:47](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L47)
+Defined in: [packages/base/BaseProvider.ts:51](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L51)
 
 #### Inherited from
 
@@ -101,7 +101,7 @@ Defined in: [packages/base/BaseProvider.ts:47](https://github.com/cloudgrids/dow
 
 > `protected` `readonly` **providerMetadata**: [`ProviderMetadata`](../interfaces/ProviderMetadata.md)
 
-Defined in: [packages/base/BaseProvider.ts:48](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L48)
+Defined in: [packages/base/BaseProvider.ts:52](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L52)
 
 #### Inherited from
 
@@ -113,7 +113,7 @@ Defined in: [packages/base/BaseProvider.ts:48](https://github.com/cloudgrids/dow
 
 > `protected` `readonly` **url**: `string`
 
-Defined in: [packages/base/BaseProvider.ts:56](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L56)
+Defined in: [packages/base/BaseProvider.ts:60](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L60)
 
 #### Inherited from
 
@@ -125,7 +125,7 @@ Defined in: [packages/base/BaseProvider.ts:56](https://github.com/cloudgrids/dow
 
 > `protected` **config**: [`ProviderConfig`](../interfaces/ProviderConfig.md)
 
-Defined in: [packages/base/BaseProvider.ts:57](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L57)
+Defined in: [packages/base/BaseProvider.ts:61](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L61)
 
 #### Inherited from
 
@@ -137,7 +137,7 @@ Defined in: [packages/base/BaseProvider.ts:57](https://github.com/cloudgrids/dow
 
 > `protected` `readonly` **provider**: [`CumLouder`](../enumerations/Provider.md#cumlouder) = `Provider.CumLouder`
 
-Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:18](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/cumlouder/CumLouderProvider.ts#L18)
+Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:18](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/cumlouder/CumLouderProvider.ts#L18)
 
 #### Overrides
 
@@ -151,7 +151,7 @@ Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:18](https://githu
 
 > **get** `protected` **metadata**(): [`ProviderMetadata`](../interfaces/ProviderMetadata.md)
 
-Defined in: [packages/base/BaseProvider.ts:51](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L51)
+Defined in: [packages/base/BaseProvider.ts:55](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L55)
 
 Provider capabilities, integration status, and access restrictions.
 
@@ -171,7 +171,7 @@ Provider capabilities, integration status, and access restrictions.
 
 > **get** `protected` **ORIGIN**(): `string`
 
-Defined in: [packages/base/BaseProvider.ts:85](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L85)
+Defined in: [packages/base/BaseProvider.ts:89](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L89)
 
 ##### Returns
 
@@ -189,7 +189,7 @@ Defined in: [packages/base/BaseProvider.ts:85](https://github.com/cloudgrids/dow
 
 > **get** `protected` **HOST\_NAME**(): `string`
 
-Defined in: [packages/base/BaseProvider.ts:89](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L89)
+Defined in: [packages/base/BaseProvider.ts:93](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L93)
 
 ##### Returns
 
@@ -207,7 +207,7 @@ Defined in: [packages/base/BaseProvider.ts:89](https://github.com/cloudgrids/dow
 
 > **get** **videoUrl**(): `string`
 
-Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:41](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/cumlouder/CumLouderProvider.ts#L41)
+Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:41](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/cumlouder/CumLouderProvider.ts#L41)
 
 ##### Returns
 
@@ -219,7 +219,7 @@ Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:41](https://githu
 
 > `protected` **isValidHostName**(): `boolean`
 
-Defined in: [packages/base/BaseProvider.ts:93](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L93)
+Defined in: [packages/base/BaseProvider.ts:97](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L97)
 
 #### Returns
 
@@ -235,7 +235,7 @@ Defined in: [packages/base/BaseProvider.ts:93](https://github.com/cloudgrids/dow
 
 > **setAuth**(`auth`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:114](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L114)
+Defined in: [packages/base/BaseProvider.ts:118](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L118)
 
 Sets authentication credentials for the provider.
 
@@ -266,7 +266,7 @@ Supports multiple authentication methods: cookies, bearer tokens, CSRF tokens, A
 
 > **setHeaders**(`headers`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:133](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L133)
+Defined in: [packages/base/BaseProvider.ts:137](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L137)
 
 Sets custom HTTP headers.
 
@@ -292,7 +292,7 @@ Request header map
 
 > **setTimeout**(`timeoutMs`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:142](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L142)
+Defined in: [packages/base/BaseProvider.ts:146](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L146)
 
 Sets HTTP timeout.
 
@@ -318,7 +318,7 @@ Timeout in milliseconds
 
 > **setRetries**(`retries`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:151](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L151)
+Defined in: [packages/base/BaseProvider.ts:155](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L155)
 
 Sets fetch retry count.
 
@@ -344,7 +344,7 @@ Retry attempt count
 
 > **setTransformOutput**(`transform?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:160](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L160)
+Defined in: [packages/base/BaseProvider.ts:164](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L164)
 
 Transform output to provider-specific result type.
 
@@ -370,7 +370,7 @@ Default is true, which applies the default transformation. Set to false to retur
 
 > **setHttpOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:169](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L169)
+Defined in: [packages/base/BaseProvider.ts:173](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L173)
 
 Sets HTTP fetch options.
 
@@ -396,7 +396,7 @@ HTTP options to merge
 
 > **setNoDownload**(`noDownload?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:179](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L179)
+Defined in: [packages/base/BaseProvider.ts:183](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L183)
 
 Sets no download flag.
 
@@ -428,7 +428,7 @@ false - set to true to skip the download phase and only perform extraction (usef
 
 > **setTranscodeOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:192](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L192)
+Defined in: [packages/base/BaseProvider.ts:196](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L196)
 
 Sets transcode options.
 
@@ -457,7 +457,7 @@ Make sure your OS can handle it
 
 > **setPreferredFormat**(`format`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:201](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L201)
+Defined in: [packages/base/BaseProvider.ts:205](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L205)
 
 Sets preferred video format.
 
@@ -483,7 +483,7 @@ Video format (hls or mp4)
 
 > **setPreferredCodec**(`codec`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:215](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L215)
+Defined in: [packages/base/BaseProvider.ts:219](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L219)
 
 Sets preferred video codec.
 
@@ -514,7 +514,7 @@ If the provider supports it, it will try to download the video in the specified 
 
 > **setJobOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:224](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L224)
+Defined in: [packages/base/BaseProvider.ts:228](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L228)
 
 Sets ExecutionCoordinator options.
 
@@ -540,7 +540,7 @@ Job options to merge
 
 > **setAgentOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:233](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L233)
+Defined in: [packages/base/BaseProvider.ts:237](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L237)
 
 Sets HTTP agent options.
 
@@ -566,7 +566,7 @@ HTTP agent options to merge
 
 > **setMaxDownloads**(`maxDownloads`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:242](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L242)
+Defined in: [packages/base/BaseProvider.ts:246](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L246)
 
 Sets maximum downloads.
 
@@ -592,7 +592,7 @@ Download limit
 
 > **setAllowedExtensions**(...`extensions`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:251](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L251)
+Defined in: [packages/base/BaseProvider.ts:255](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L255)
 
 Sets allowed file extensions.
 
@@ -618,7 +618,7 @@ File extensions such as `jpg` or `png`
 
 > **onProgress**(`handler`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:260](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L260)
+Defined in: [packages/base/BaseProvider.ts:264](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L264)
 
 Sets progress handler.
 
@@ -644,7 +644,7 @@ Progress event callback
 
 > **setProgressLogging**(`enabled?`, `options?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:279](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L279)
+Defined in: [packages/base/BaseProvider.ts:283](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L283)
 
 Enables console progress logging.
 
@@ -692,7 +692,7 @@ library's.
 
 > **setOutput**(`type`, `config?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:292](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L292)
+Defined in: [packages/base/BaseProvider.ts:296](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L296)
 
 Sets output type.
 
@@ -730,7 +730,7 @@ OutputType.JSON
 
 > **setExecutionType**(`type`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:313](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L313)
+Defined in: [packages/base/BaseProvider.ts:317](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L317)
 
 Sets execution strategy.
 
@@ -770,7 +770,7 @@ Use with caution and test thoroughly if you choose to use `PARALLEL` execution.
 
 > **whenSettled**(): `Promise`\<[`JobSettlement`](../interfaces/JobSettlement.md)\>
 
-Defined in: [packages/base/BaseProvider.ts:341](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L341)
+Defined in: [packages/base/BaseProvider.ts:380](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L380)
 
 Waits for the download phase of the most recent job.
 
@@ -809,7 +809,7 @@ that never download.
 
 > `protected` **assertSupported**(`method?`): `void`
 
-Defined in: [packages/base/BaseProvider.ts:356](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L356)
+Defined in: [packages/base/BaseProvider.ts:395](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L395)
 
 Enforces the capability flags declared in [ProviderMetadata](../interfaces/ProviderMetadata.md).
 
@@ -842,7 +842,7 @@ discovered the limitation as an obscure failure deep in the transport layer.
 
 > **dispose**(`options?`): `Promise`\<`void`\>
 
-Defined in: [packages/base/BaseProvider.ts:391](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L391)
+Defined in: [packages/base/BaseProvider.ts:430](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L430)
 
 Releases resources held by this provider instance.
 
@@ -874,7 +874,7 @@ with DownFlux entirely rather than between jobs.
 
 > `protected` **buildRequest**(`overrides?`): [`CumLouderExecArgs`](../interfaces/CumLouderExecArgs.md)
 
-Defined in: [packages/base/BaseProvider.ts:403](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L403)
+Defined in: [packages/base/BaseProvider.ts:445](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L445)
 
 Builds the execution request passed to the coordinator layer.
 
@@ -902,7 +902,7 @@ A typed request containing provider metadata and execution options.
 
 > `protected` **execute**\<`TResult`\>(`overrides`): `Promise`\<`TResult`\>
 
-Defined in: [packages/base/BaseProvider.ts:424](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L424)
+Defined in: [packages/base/BaseProvider.ts:466](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L466)
 
 Runs extraction and optional downloads through the shared coordinator.
 
@@ -936,7 +936,7 @@ Extracted output in the shape requested by the provider method.
 
 > `protected` **makeTargets**(`sourceUrl`, `range`, `provider`, `method`, `addTrailingSlash?`): `object`
 
-Defined in: [packages/base/BaseProvider.ts:457](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseProvider.ts#L457)
+Defined in: [packages/base/BaseProvider.ts:501](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L501)
 
 Builds paginated target URLs for list-like provider methods.
 
@@ -1000,7 +1000,7 @@ Provider, method, and generated target URLs.
 
 > **getVideo**(): `Promise`\<[`CumLouderVideoOutput`](../interfaces/CumLouderVideoOutput.md)\>
 
-Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:47](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/cumlouder/CumLouderProvider.ts#L47)
+Defined in: [packages/providers/cumlouder/CumLouderProvider.ts:47](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/cumlouder/CumLouderProvider.ts#L47)
 
 #### Returns
 

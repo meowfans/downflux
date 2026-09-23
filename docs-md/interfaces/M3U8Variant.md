@@ -6,7 +6,7 @@
 
 # Interface: M3U8Variant
 
-Defined in: [packages/contracts/DownloadContracts.ts:142](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L142)
+Defined in: [packages/contracts/DownloadContracts.ts:142](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L142)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:142](https://github.com/clo
 
 > **url**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:143](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L143)
+Defined in: [packages/contracts/DownloadContracts.ts:143](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L143)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:143](https://github.com/clo
 
 > **width**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:144](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L144)
+Defined in: [packages/contracts/DownloadContracts.ts:144](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L144)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:144](https://github.com/clo
 
 > **height**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:145](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L145)
+Defined in: [packages/contracts/DownloadContracts.ts:145](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L145)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [packages/contracts/DownloadContracts.ts:145](https://github.com/clo
 
 > **bw**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:146](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L146)
+Defined in: [packages/contracts/DownloadContracts.ts:146](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L146)

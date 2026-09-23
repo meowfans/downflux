@@ -6,7 +6,7 @@
 
 # Class: TransferCoordinator
 
-Defined in: [packages/core/coordinators/TransferCoordinator.ts:16](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TransferCoordinator.ts#L16)
+Defined in: [packages/core/coordinators/TransferCoordinator.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TransferCoordinator.ts#L16)
 
 Coordinates one pipeline item transfer into storage.
 
@@ -22,7 +22,7 @@ stored media, and returns download metadata to the task coordinator.
 
 > **new TransferCoordinator**(`fileManager`, `streamHttpClient`, `progressManager`): `TransferCoordinator`
 
-Defined in: [packages/core/coordinators/TransferCoordinator.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TransferCoordinator.ts#L17)
+Defined in: [packages/core/coordinators/TransferCoordinator.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TransferCoordinator.ts#L17)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/core/coordinators/TransferCoordinator.ts:17](https://githu
 
 > `protected` `readonly` **fileManager**: [`FileManager`](FileManager.md)
 
-Defined in: [packages/core/coordinators/TransferCoordinator.ts:18](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TransferCoordinator.ts#L18)
+Defined in: [packages/core/coordinators/TransferCoordinator.ts:18](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TransferCoordinator.ts#L18)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [packages/core/coordinators/TransferCoordinator.ts:18](https://githu
 
 > `protected` `readonly` **streamHttpClient**: [`StreamHttpClient`](StreamHttpClient.md)
 
-Defined in: [packages/core/coordinators/TransferCoordinator.ts:19](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TransferCoordinator.ts#L19)
+Defined in: [packages/core/coordinators/TransferCoordinator.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TransferCoordinator.ts#L19)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [packages/core/coordinators/TransferCoordinator.ts:19](https://githu
 
 > `protected` `readonly` **progressManager**: [`ProgressManager`](ProgressManager.md)
 
-Defined in: [packages/core/coordinators/TransferCoordinator.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TransferCoordinator.ts#L20)
+Defined in: [packages/core/coordinators/TransferCoordinator.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TransferCoordinator.ts#L20)
 
 ## Methods
 
@@ -72,7 +72,7 @@ Defined in: [packages/core/coordinators/TransferCoordinator.ts:20](https://githu
 
 > **download**(`item`, `opts`): `Promise`\<[`DownloadResult`](../interfaces/DownloadResult.md)\>
 
-Defined in: [packages/core/coordinators/TransferCoordinator.ts:96](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TransferCoordinator.ts#L96)
+Defined in: [packages/core/coordinators/TransferCoordinator.ts:99](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TransferCoordinator.ts#L99)
 
 Downloads a single pipeline item.
 

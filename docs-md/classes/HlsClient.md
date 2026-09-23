@@ -6,7 +6,7 @@
 
 # Class: HlsClient
 
-Defined in: [packages/engines/http/HlsClient.ts:57](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L57)
+Defined in: [packages/engines/http/HlsClient.ts:57](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L57)
 
 HTTP engine for HLS playlists and media segments.
 
@@ -26,7 +26,7 @@ detection before storage can finalize the media.
 
 > **new HlsClient**(`progressManager`): `HlsClient`
 
-Defined in: [packages/engines/http/HlsClient.ts:61](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L61)
+Defined in: [packages/engines/http/HlsClient.ts:61](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L61)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/engines/http/HlsClient.ts:61](https://github.com/cloudgrid
 
 > `protected` `readonly` **progressManager**: [`ProgressManager`](ProgressManager.md)
 
-Defined in: [packages/base/BaseHttpClient.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L17)
+Defined in: [packages/base/BaseHttpClient.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L17)
 
 #### Inherited from
 
@@ -60,7 +60,7 @@ Defined in: [packages/base/BaseHttpClient.ts:17](https://github.com/cloudgrids/d
 
 > `protected` `readonly` **cookieJar**: `Map`\<`string`, `Map`\<`string`, `string`\>\>
 
-Defined in: [packages/base/BaseHttpClient.ts:19](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L19)
+Defined in: [packages/base/BaseHttpClient.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L19)
 
 #### Inherited from
 
@@ -72,7 +72,7 @@ Defined in: [packages/base/BaseHttpClient.ts:19](https://github.com/cloudgrids/d
 
 > `protected` `readonly` `static` **CHROME\_CIPHERS**: `string`
 
-Defined in: [packages/base/BaseHttpClient.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L20)
+Defined in: [packages/base/BaseHttpClient.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L20)
 
 #### Inherited from
 
@@ -86,7 +86,7 @@ Defined in: [packages/base/BaseHttpClient.ts:20](https://github.com/cloudgrids/d
 
 > **get** `protected` **CHROME\_CIPHERS**(): `string`
 
-Defined in: [packages/base/BaseHttpClient.ts:38](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L38)
+Defined in: [packages/base/BaseHttpClient.ts:38](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L38)
 
 ##### Returns
 
@@ -104,7 +104,7 @@ Defined in: [packages/base/BaseHttpClient.ts:38](https://github.com/cloudgrids/d
 
 > **get** `protected` **agent**(): `Agent`
 
-Defined in: [packages/base/BaseHttpClient.ts:55](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L55)
+Defined in: [packages/base/BaseHttpClient.ts:55](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L55)
 
 ##### Returns
 
@@ -120,7 +120,7 @@ Defined in: [packages/base/BaseHttpClient.ts:55](https://github.com/cloudgrids/d
 
 > `protected` **spoofAgentFor**(`hostname`): `Agent`
 
-Defined in: [packages/base/BaseHttpClient.ts:78](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L78)
+Defined in: [packages/base/BaseHttpClient.ts:78](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L78)
 
 Builds the SNI-spoofing agent for one host.
 
@@ -151,7 +151,7 @@ being contacted. The previous `checkServerIdentity: () => undefined` accepted
 
 > **closeConnections**(): `Promise`\<`void`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:109](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L109)
+Defined in: [packages/base/BaseHttpClient.ts:109](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L109)
 
 Instance-side alias for [BaseHttpClient.closeSharedAgents](BaseHttpClient.md#closesharedagents).
 
@@ -169,7 +169,7 @@ Instance-side alias for [BaseHttpClient.closeSharedAgents](BaseHttpClient.md#clo
 
 > `static` **closeSharedAgents**(): `Promise`\<`void`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:113](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L113)
+Defined in: [packages/base/BaseHttpClient.ts:113](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L113)
 
 #### Returns
 
@@ -185,7 +185,7 @@ Defined in: [packages/base/BaseHttpClient.ts:113](https://github.com/cloudgrids/
 
 > `protected` **randomHeaders**(`extra?`): `object`
 
-Defined in: [packages/base/BaseHttpClient.ts:127](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L127)
+Defined in: [packages/base/BaseHttpClient.ts:127](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L127)
 
 #### Parameters
 
@@ -207,7 +207,7 @@ Defined in: [packages/base/BaseHttpClient.ts:127](https://github.com/cloudgrids/
 
 > `protected` **buildHlsHeaders**(`opts`): `object`
 
-Defined in: [packages/base/BaseHttpClient.ts:136](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L136)
+Defined in: [packages/base/BaseHttpClient.ts:136](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L136)
 
 #### Parameters
 
@@ -245,7 +245,7 @@ Defined in: [packages/base/BaseHttpClient.ts:136](https://github.com/cloudgrids/
 
 > `protected` **linkSignal**(`timeoutMs`, `external?`): `AbortSignal`
 
-Defined in: [packages/base/BaseHttpClient.ts:188](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L188)
+Defined in: [packages/base/BaseHttpClient.ts:188](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L188)
 
 Combines a per-request timeout with a caller-supplied abort signal.
 
@@ -279,7 +279,7 @@ A signal that aborts on whichever fires first.
 
 > `protected` **itemLabel**(`opts`): `string` \| `undefined`
 
-Defined in: [packages/base/BaseHttpClient.ts:203](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L203)
+Defined in: [packages/base/BaseHttpClient.ts:203](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L203)
 
 Short display name for a download item, falling back to the URL tail.
 
@@ -308,7 +308,7 @@ per-item progress rows they emit.
 
 > `protected` **delay**(`attempt`): `Promise`\<`unknown`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:215](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L215)
+Defined in: [packages/base/BaseHttpClient.ts:215](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L215)
 
 #### Parameters
 
@@ -330,7 +330,7 @@ Defined in: [packages/base/BaseHttpClient.ts:215](https://github.com/cloudgrids/
 
 > `protected` **readBody**(`body`): `Promise`\<`Buffer`\<`ArrayBufferLike`\>\>
 
-Defined in: [packages/base/BaseHttpClient.ts:222](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L222)
+Defined in: [packages/base/BaseHttpClient.ts:222](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L222)
 
 #### Parameters
 
@@ -352,7 +352,7 @@ Defined in: [packages/base/BaseHttpClient.ts:222](https://github.com/cloudgrids/
 
 > `protected` **decodeBody**(`buffer`, `headers`): `Buffer`
 
-Defined in: [packages/base/BaseHttpClient.ts:237](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L237)
+Defined in: [packages/base/BaseHttpClient.ts:237](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L237)
 
 #### Parameters
 
@@ -378,7 +378,7 @@ Defined in: [packages/base/BaseHttpClient.ts:237](https://github.com/cloudgrids/
 
 > `protected` **applyCookieWithHeader**(`url`, `headers`): `Record`\<`string`, `string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:253](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L253)
+Defined in: [packages/base/BaseHttpClient.ts:253](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L253)
 
 #### Parameters
 
@@ -404,7 +404,7 @@ Defined in: [packages/base/BaseHttpClient.ts:253](https://github.com/cloudgrids/
 
 > `protected` **storeCookies**(`url`, `headers`): `void`
 
-Defined in: [packages/base/BaseHttpClient.ts:268](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L268)
+Defined in: [packages/base/BaseHttpClient.ts:268](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L268)
 
 #### Parameters
 
@@ -430,7 +430,7 @@ Defined in: [packages/base/BaseHttpClient.ts:268](https://github.com/cloudgrids/
 
 > `protected` **addOriginWithHeader**(`headers`, `referer?`): `Record`\<`string`, `string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:291](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L291)
+Defined in: [packages/base/BaseHttpClient.ts:291](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L291)
 
 #### Parameters
 
@@ -456,7 +456,7 @@ Defined in: [packages/base/BaseHttpClient.ts:291](https://github.com/cloudgrids/
 
 > `protected` **headers**(`headers`): `Record`\<`string`, `string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:302](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L302)
+Defined in: [packages/base/BaseHttpClient.ts:302](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L302)
 
 #### Parameters
 
@@ -478,7 +478,7 @@ Defined in: [packages/base/BaseHttpClient.ts:302](https://github.com/cloudgrids/
 
 > `protected` **isTransportError**(`error`): `string` \| `undefined`
 
-Defined in: [packages/base/BaseHttpClient.ts:306](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L306)
+Defined in: [packages/base/BaseHttpClient.ts:306](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L306)
 
 #### Parameters
 
@@ -500,7 +500,7 @@ Defined in: [packages/base/BaseHttpClient.ts:306](https://github.com/cloudgrids/
 
 > **fetchWithTransportFallback**(`url`, `init`, `options`, `allowFallback?`): `Promise`\<`Response`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:329](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L329)
+Defined in: [packages/base/BaseHttpClient.ts:329](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L329)
 
 Runs a fetch request with transport fallback for transient TLS/socket failures.
 
@@ -546,7 +546,7 @@ Native fetch response.
 
 > **fetchText**(`url`, `timeoutMs`, `headers`, `signal?`): `Promise`\<`string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:356](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L356)
+Defined in: [packages/base/BaseHttpClient.ts:356](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L356)
 
 #### Parameters
 
@@ -580,7 +580,7 @@ Defined in: [packages/base/BaseHttpClient.ts:356](https://github.com/cloudgrids/
 
 > **fetchJson**(`url`, `opts`): `Promise`\<`any`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:360](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseHttpClient.ts#L360)
+Defined in: [packages/base/BaseHttpClient.ts:360](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseHttpClient.ts#L360)
 
 #### Parameters
 
@@ -606,7 +606,7 @@ Defined in: [packages/base/BaseHttpClient.ts:360](https://github.com/cloudgrids/
 
 > **resolvePlaylist**(`manifest`, `manifestUrl`, `timeoutMs`, `opts`): `Promise`\<[`ResolvedPlaylist`](../interfaces/ResolvedPlaylist.md)\>
 
-Defined in: [packages/engines/http/HlsClient.ts:74](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L74)
+Defined in: [packages/engines/http/HlsClient.ts:74](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L74)
 
 Resolves a manifest into the playlist that will actually be streamed.
 
@@ -648,7 +648,7 @@ Selected playlist URL, its segments with per-segment keys, and fMP4 state.
 
 > **streamPlaylist**(`playlist`, `timeoutMs`, `stream`, `opts`): `Promise`\<`void`\>
 
-Defined in: [packages/engines/http/HlsClient.ts:106](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L106)
+Defined in: [packages/engines/http/HlsClient.ts:106](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L106)
 
 Writes an already resolved playlist to a destination stream.
 
@@ -688,7 +688,7 @@ Download and quality options.
 
 > **fetchHlsStream**(`manifest`, `manifestUrl`, `timeoutMs`, `stream`, `opts`): `Promise`\<`void`\>
 
-Defined in: [packages/engines/http/HlsClient.ts:125](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L125)
+Defined in: [packages/engines/http/HlsClient.ts:125](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L125)
 
 Writes a resolved HLS playlist to a destination stream.
 
@@ -734,7 +734,7 @@ Download and quality options.
 
 > **isFmp4**(`manifest`, `manifestUrl`, `opts`): `Promise`\<`boolean`\>
 
-Defined in: [packages/engines/http/HlsClient.ts:145](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L145)
+Defined in: [packages/engines/http/HlsClient.ts:145](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L145)
 
 Detects whether the selected playlist uses fMP4 initialization segments.
 
@@ -770,7 +770,7 @@ Download and quality options.
 
 > **isHlsManifest**(`contentType`, `url`): `boolean`
 
-Defined in: [packages/engines/http/HlsClient.ts:386](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L386)
+Defined in: [packages/engines/http/HlsClient.ts:400](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L400)
 
 Checks whether a response should be handled as an HLS manifest.
 

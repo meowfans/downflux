@@ -6,7 +6,7 @@
 
 # Class: LogManager
 
-Defined in: [packages/core/ui/LogManager.ts:11](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/LogManager.ts#L11)
+Defined in: [packages/core/ui/LogManager.ts:11](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/LogManager.ts#L11)
 
 Per-job handle onto the shared terminal region.
 
@@ -32,7 +32,7 @@ concurrent jobs stack instead of erasing one another.
 
 > **renderBlock**(`lines`, `options?`): `void`
 
-Defined in: [packages/core/ui/LogManager.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/LogManager.ts#L20)
+Defined in: [packages/core/ui/LogManager.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/LogManager.ts#L20)
 
 Prints the banner and the job's current block.
 
@@ -62,7 +62,7 @@ Block body, already styled.
 
 > **log**(`line`): `void`
 
-Defined in: [packages/core/ui/LogManager.ts:31](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/LogManager.ts#L31)
+Defined in: [packages/core/ui/LogManager.ts:31](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/LogManager.ts#L31)
 
 Writes a permanent line above the live region.
 
@@ -87,7 +87,7 @@ land inside the region the next frame rewinds over, and are lost.
 
 > **destroy**(): `void`
 
-Defined in: [packages/core/ui/LogManager.ts:36](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/ui/LogManager.ts#L36)
+Defined in: [packages/core/ui/LogManager.ts:36](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/LogManager.ts#L36)
 
 Freezes this job's final block and restores the terminal when it is the last one.
 

@@ -6,7 +6,7 @@
 
 # Interface: GenericContentProviderConfig
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:5](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L5)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:5](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L5)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:5](https://gith
 
 > **provider**: [`Provider`](../enumerations/Provider.md)
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:6](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L6)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:6](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L6)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:6](https://gith
 
 > **urlPattern**: `RegExp`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:7](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L7)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:7](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L7)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:7](https://gith
 
 > **metadata**: [`ProviderMetadata`](ProviderMetadata.md)
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:8](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/shared/GenericContentProvider.ts#L8)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:8](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/shared/GenericContentProvider.ts#L8)

@@ -6,7 +6,7 @@
 
 # Interface: DownloadResult
 
-Defined in: [packages/contracts/DownloadContracts.ts:34](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L34)
+Defined in: [packages/contracts/DownloadContracts.ts:34](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L34)
 
 Result of a download operation.
 Contains file metadata and the downloaded buffer.
@@ -17,7 +17,7 @@ Contains file metadata and the downloaded buffer.
 
 > **url**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:36](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L36)
+Defined in: [packages/contracts/DownloadContracts.ts:36](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L36)
 
 Requested download URL
 
@@ -27,7 +27,7 @@ Requested download URL
 
 > **finalUrl**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:39](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L39)
+Defined in: [packages/contracts/DownloadContracts.ts:39](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L39)
 
 Final URL after redirects
 
@@ -37,7 +37,7 @@ Final URL after redirects
 
 > **extendedFilename**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:42](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L42)
+Defined in: [packages/contracts/DownloadContracts.ts:42](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L42)
 
 Generated filename with metadata
 
@@ -47,7 +47,7 @@ Generated filename with metadata
 
 > **originalFilename**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:45](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L45)
+Defined in: [packages/contracts/DownloadContracts.ts:45](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L45)
 
 Original filename from URL or response
 
@@ -57,7 +57,7 @@ Original filename from URL or response
 
 > **extension**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:48](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L48)
+Defined in: [packages/contracts/DownloadContracts.ts:48](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L48)
 
 File extension
 
@@ -67,7 +67,7 @@ File extension
 
 > **mimeType**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:51](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L51)
+Defined in: [packages/contracts/DownloadContracts.ts:51](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L51)
 
 MIME type
 
@@ -77,7 +77,7 @@ MIME type
 
 > **sizeBytes**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:54](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L54)
+Defined in: [packages/contracts/DownloadContracts.ts:54](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L54)
 
 File size in bytes
 
@@ -87,7 +87,7 @@ File size in bytes
 
 > **path**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:57](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L57)
+Defined in: [packages/contracts/DownloadContracts.ts:57](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L57)
 
 Path of the downloaded file
 
@@ -97,7 +97,7 @@ Path of the downloaded file
 
 > **provider**: [`Provider`](../enumerations/Provider.md)
 
-Defined in: [packages/contracts/DownloadContracts.ts:60](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L60)
+Defined in: [packages/contracts/DownloadContracts.ts:60](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L60)
 
 Service used for the download
 
@@ -107,7 +107,7 @@ Service used for the download
 
 > `optional` **estimatedBytes?**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:69](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L69)
+Defined in: [packages/contracts/DownloadContracts.ts:69](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L69)
 
 Approximate source size when the exact delivered length is unknown.
 
@@ -122,7 +122,7 @@ remuxed file. Use it to show progress; never send it as `Content-Length`.
 
 > `optional` **stream?**: `Readable`
 
-Defined in: [packages/contracts/DownloadContracts.ts:78](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L78)
+Defined in: [packages/contracts/DownloadContracts.ts:78](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L78)
 
 Readable media, present only for `OutputType.STREAM`.
 

@@ -6,7 +6,7 @@
 
 # Enumeration: DaFreePornMethods
 
-Defined in: [packages/providers/dafreeporn/DaFreePornTypes.ts:1](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/dafreeporn/DaFreePornTypes.ts#L1)
+Defined in: [packages/providers/dafreeporn/DaFreePornTypes.ts:1](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/dafreeporn/DaFreePornTypes.ts#L1)
 
 ## Enumeration Members
 
@@ -14,4 +14,4 @@ Defined in: [packages/providers/dafreeporn/DaFreePornTypes.ts:1](https://github.
 
 > **getVideo**: `"getVideo"`
 
-Defined in: [packages/providers/dafreeporn/DaFreePornTypes.ts:2](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/dafreeporn/DaFreePornTypes.ts#L2)
+Defined in: [packages/providers/dafreeporn/DaFreePornTypes.ts:2](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/dafreeporn/DaFreePornTypes.ts#L2)

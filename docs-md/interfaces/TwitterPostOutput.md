@@ -6,7 +6,7 @@
 
 # Interface: TwitterPostOutput
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:54](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L54)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:54](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L54)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:54](https://github.c
 
 > **id**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:55](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L55)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:55](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L55)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:55](https://github.c
 
 > **url**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:56](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L56)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:56](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L56)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:56](https://github.c
 
 > `optional` **text?**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:57](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L57)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:57](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L57)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:57](https://github.c
 
 > `optional` **createdAt?**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:58](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L58)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:58](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L58)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:58](https://github.c
 
 > `optional` **author?**: [`TwitterUserOutput`](TwitterUserOutput.md)
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:59](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L59)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:59](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L59)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:59](https://github.c
 
 > `optional` **replyCount?**: `number`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:60](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L60)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:60](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L60)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:60](https://github.c
 
 > `optional` **repostCount?**: `number`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:61](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L61)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:61](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L61)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:61](https://github.c
 
 > `optional` **likeCount?**: `number`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:62](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L62)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:62](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L62)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:62](https://github.c
 
 > `optional` **quoteCount?**: `number`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:63](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L63)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:63](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L63)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:63](https://github.c
 
 > `optional` **viewCount?**: `number`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:64](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L64)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:64](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L64)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:64](https://github.c
 
 > **hashtags**: `string`[]
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:65](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L65)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:65](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L65)
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:65](https://github.c
 
 > **links**: `string`[]
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:66](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L66)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:66](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L66)
 
 ***
 
@@ -110,4 +110,4 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:66](https://github.c
 
 > **media**: [`TwitterMediaOutput`](TwitterMediaOutput.md)[]
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:67](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L67)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:67](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L67)

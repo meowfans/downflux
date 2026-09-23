@@ -6,7 +6,7 @@
 
 # Class: ProgressManager
 
-Defined in: [packages/core/progress/ProgressManager.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L20)
+Defined in: [packages/core/progress/ProgressManager.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressManager.ts#L20)
 
 Manages progress updates during ExecutionCoordinator execution.
 
@@ -52,7 +52,7 @@ Defined in: node\_modules/.pnpm/@types+node@25.6.0/node\_modules/@types/node/eve
 
 > **get** **renderOptions**(): `object`
 
-Defined in: [packages/core/progress/ProgressManager.ts:90](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L90)
+Defined in: [packages/core/progress/ProgressManager.ts:90](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressManager.ts#L90)
 
 Rendering preferences for the current job.
 
@@ -674,7 +674,7 @@ v0.3.5
 
 > **on**\<`E`\>(`eventName`, `listener`): `this`
 
-Defined in: [packages/core/progress/ProgressManager.ts:58](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L58)
+Defined in: [packages/core/progress/ProgressManager.ts:58](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressManager.ts#L58)
 
 Adds the `listener` function to the end of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -743,7 +743,7 @@ v0.1.101
 
 > **emit**\<`E`\>(`eventName`, ...`args`): `boolean`
 
-Defined in: [packages/core/progress/ProgressManager.ts:62](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L62)
+Defined in: [packages/core/progress/ProgressManager.ts:62](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressManager.ts#L62)
 
 Synchronously calls each of the listeners registered for the event named
 `eventName`, in the order they were registered, passing the supplied arguments
@@ -818,7 +818,7 @@ v0.1.26
 
 > **off**\<`E`\>(`eventName`, `listener`): `this`
 
-Defined in: [packages/core/progress/ProgressManager.ts:66](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L66)
+Defined in: [packages/core/progress/ProgressManager.ts:66](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressManager.ts#L66)
 
 Alias for `emitter.removeListener()`.
 
@@ -856,7 +856,7 @@ v10.0.0
 
 > **once**\<`E`\>(`eventName`, `listener`): `this`
 
-Defined in: [packages/core/progress/ProgressManager.ts:70](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L70)
+Defined in: [packages/core/progress/ProgressManager.ts:70](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressManager.ts#L70)
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -922,7 +922,7 @@ v0.3.0
 
 > **init**(`options`): `void`
 
-Defined in: [packages/core/progress/ProgressManager.ts:82](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L82)
+Defined in: [packages/core/progress/ProgressManager.ts:82](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressManager.ts#L82)
 
 Binds a new job to this manager.
 
@@ -948,7 +948,7 @@ same provider instance start from the previous run's numbers.
 
 > **update**(`params`): `void`
 
-Defined in: [packages/core/progress/ProgressManager.ts:251](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressManager.ts#L251)
+Defined in: [packages/core/progress/ProgressManager.ts:259](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressManager.ts#L259)
 
 #### Parameters
 

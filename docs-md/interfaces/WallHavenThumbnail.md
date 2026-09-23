@@ -6,7 +6,7 @@
 
 # Interface: WallHavenThumbnail
 
-Defined in: [packages/providers/wallhaven/WallHavenContracts.ts:159](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/wallhaven/WallHavenContracts.ts#L159)
+Defined in: [packages/providers/wallhaven/WallHavenContracts.ts:159](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/wallhaven/WallHavenContracts.ts#L159)
 
 Interface representing a WallHaven thumbnail.
 Contains thumbnail URL, wallpaper ID, page URL, and quality.
@@ -17,7 +17,7 @@ Contains thumbnail URL, wallpaper ID, page URL, and quality.
 
 > **url**: `string`
 
-Defined in: [packages/providers/wallhaven/WallHavenContracts.ts:161](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/wallhaven/WallHavenContracts.ts#L161)
+Defined in: [packages/providers/wallhaven/WallHavenContracts.ts:161](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/wallhaven/WallHavenContracts.ts#L161)
 
 Thumbnail image URL
 
@@ -27,7 +27,7 @@ Thumbnail image URL
 
 > **id**: `string`
 
-Defined in: [packages/providers/wallhaven/WallHavenContracts.ts:164](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/wallhaven/WallHavenContracts.ts#L164)
+Defined in: [packages/providers/wallhaven/WallHavenContracts.ts:164](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/wallhaven/WallHavenContracts.ts#L164)
 
 Wallpaper identifier
 
@@ -37,7 +37,7 @@ Wallpaper identifier
 
 > **siteUrl**: `string`
 
-Defined in: [packages/providers/wallhaven/WallHavenContracts.ts:167](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/wallhaven/WallHavenContracts.ts#L167)
+Defined in: [packages/providers/wallhaven/WallHavenContracts.ts:167](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/wallhaven/WallHavenContracts.ts#L167)
 
 WallHaven wallpaper page URL
 
@@ -47,6 +47,6 @@ WallHaven wallpaper page URL
 
 > **quality**: [`WallHavenThumbnailQuality`](../enumerations/WallHavenThumbnailQuality.md)
 
-Defined in: [packages/providers/wallhaven/WallHavenContracts.ts:170](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/wallhaven/WallHavenContracts.ts#L170)
+Defined in: [packages/providers/wallhaven/WallHavenContracts.ts:170](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/wallhaven/WallHavenContracts.ts#L170)
 
 Thumbnail quality

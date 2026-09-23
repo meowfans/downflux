@@ -6,7 +6,7 @@
 
 # Class: ProgressFormatter
 
-Defined in: [packages/core/progress/ProgressFormatter.ts:11](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressFormatter.ts#L11)
+Defined in: [packages/core/progress/ProgressFormatter.ts:11](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressFormatter.ts#L11)
 
 Formats byte counts, rates, and progress bars for CLI output.
 
@@ -32,7 +32,7 @@ download path.
 
 > `static` **formatBytes**(`bytes`): `string`
 
-Defined in: [packages/core/progress/ProgressFormatter.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressFormatter.ts#L17)
+Defined in: [packages/core/progress/ProgressFormatter.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressFormatter.ts#L17)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [packages/core/progress/ProgressFormatter.ts:17](https://github.com/
 
 > `static` **formatSpeed**(`bytesPerSecond`): `string`
 
-Defined in: [packages/core/progress/ProgressFormatter.ts:28](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressFormatter.ts#L28)
+Defined in: [packages/core/progress/ProgressFormatter.ts:28](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressFormatter.ts#L28)
 
 Formats a byte rate, e.g. `4.21 MB/s`.
 
@@ -70,7 +70,7 @@ Formats a byte rate, e.g. `4.21 MB/s`.
 
 > `static` **formatDuration**(`seconds`): `string`
 
-Defined in: [packages/core/progress/ProgressFormatter.ts:35](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressFormatter.ts#L35)
+Defined in: [packages/core/progress/ProgressFormatter.ts:35](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressFormatter.ts#L35)
 
 Formats a duration in seconds as `mm:ss`, or `hh:mm:ss` past an hour.
 
@@ -90,7 +90,7 @@ Formats a duration in seconds as `mm:ss`, or `hh:mm:ss` past an hour.
 
 > `static` **bar**(`done`, `total?`, `width?`): `string`
 
-Defined in: [packages/core/progress/ProgressFormatter.ts:61](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressFormatter.ts#L61)
+Defined in: [packages/core/progress/ProgressFormatter.ts:61](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressFormatter.ts#L61)
 
 Renders a unicode progress bar.
 
@@ -124,7 +124,7 @@ Bar width in cells.
 
 > `static` **percent**(`done`, `total?`): `string`
 
-Defined in: [packages/core/progress/ProgressFormatter.ts:87](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressFormatter.ts#L87)
+Defined in: [packages/core/progress/ProgressFormatter.ts:87](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressFormatter.ts#L87)
 
 `42.5%`, padded so the column does not jitter as the number grows.
 
@@ -154,7 +154,7 @@ ratio that was never measured.
 
 > `static` **byteTrack**(`downloadedBytes?`, `totalBytes?`, `speed?`, `eta?`): `string`
 
-Defined in: [packages/core/progress/ProgressFormatter.ts:101](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressFormatter.ts#L101)
+Defined in: [packages/core/progress/ProgressFormatter.ts:101](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressFormatter.ts#L101)
 
 A byte-oriented track: bar, percentage, transferred/total, rate and ETA.
 
@@ -194,7 +194,7 @@ Seconds remaining.
 
 > `static` **countTrack**(`done?`, `total?`, `width?`): `string`
 
-Defined in: [packages/core/progress/ProgressFormatter.ts:116](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressFormatter.ts#L116)
+Defined in: [packages/core/progress/ProgressFormatter.ts:116](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressFormatter.ts#L116)
 
 A count-oriented track: bar, percentage and `done/total`.
 
@@ -222,7 +222,7 @@ A count-oriented track: bar, percentage and `done/total`.
 
 > `static` **createTrack**(`type`, `downloaded?`, `total?`): `string`
 
-Defined in: [packages/core/progress/ProgressFormatter.ts:127](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/progress/ProgressFormatter.ts#L127)
+Defined in: [packages/core/progress/ProgressFormatter.ts:127](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/progress/ProgressFormatter.ts#L127)
 
 Legacy track formatter.
 

@@ -6,7 +6,7 @@
 
 # Interface: TwitterSearchArgs
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:26](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L26)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:26](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L26)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:26](https://github.c
 
 > **query**: `string`
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:27](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L27)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:27](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L27)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [packages/providers/twitter/TwitterContracts.ts:27](https://github.c
 
 > `optional` **mode?**: [`TwitterSearchMode`](../type-aliases/TwitterSearchMode.md)
 
-Defined in: [packages/providers/twitter/TwitterContracts.ts:28](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/twitter/TwitterContracts.ts#L28)
+Defined in: [packages/providers/twitter/TwitterContracts.ts:28](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/twitter/TwitterContracts.ts#L28)

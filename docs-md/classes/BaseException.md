@@ -6,7 +6,7 @@
 
 # Class: BaseException\<TMeta\>
 
-Defined in: [packages/core/exceptions/BaseException.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L17)
+Defined in: [packages/core/exceptions/BaseException.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/BaseException.ts#L17)
 
 Exception
 The base exception class for all custom exceptions in the application.
@@ -41,7 +41,7 @@ Provides a consistent structure for error information, including error codes, co
 
 > **new BaseException**\<`TMeta`\>(`payload`): `BaseException`\<`TMeta`\>
 
-Defined in: [packages/core/exceptions/BaseException.ts:22](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L22)
+Defined in: [packages/core/exceptions/BaseException.ts:22](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/BaseException.ts#L22)
 
 #### Parameters
 
@@ -85,7 +85,7 @@ not capture any frames.
 
 > `readonly` **errorCode**: [`ErrorCodes`](../enumerations/ErrorCodes.md)
 
-Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L18)
+Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/BaseException.ts#L18)
 
 ***
 
@@ -93,7 +93,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/cl
 
 > `readonly` **context**: `Record`\<`string`, `any`\>
 
-Defined in: [packages/core/exceptions/BaseException.ts:19](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L19)
+Defined in: [packages/core/exceptions/BaseException.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/BaseException.ts#L19)
 
 ***
 
@@ -101,7 +101,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:19](https://github.com/cl
 
 > `readonly` `optional` **metadata?**: `TMeta`
 
-Defined in: [packages/core/exceptions/BaseException.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L20)
+Defined in: [packages/core/exceptions/BaseException.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/BaseException.ts#L20)
 
 ***
 
@@ -257,7 +257,7 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 > **toJSON**(): `object`
 
-Defined in: [packages/core/exceptions/BaseException.ts:33](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L33)
+Defined in: [packages/core/exceptions/BaseException.ts:33](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/BaseException.ts#L33)
 
 #### Returns
 

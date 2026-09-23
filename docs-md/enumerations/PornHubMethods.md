@@ -6,7 +6,7 @@
 
 # Enumeration: PornHubMethods
 
-Defined in: [packages/providers/pornhub/PornHubTypes.ts:3](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/pornhub/PornHubTypes.ts#L3)
+Defined in: [packages/providers/pornhub/PornHubTypes.ts:3](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/pornhub/PornHubTypes.ts#L3)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/pornhub/PornHubTypes.ts:3](https://github.com/cl
 
 > **getVideo**: `"getVideo"`
 
-Defined in: [packages/providers/pornhub/PornHubTypes.ts:5](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/pornhub/PornHubTypes.ts#L5)
+Defined in: [packages/providers/pornhub/PornHubTypes.ts:5](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/pornhub/PornHubTypes.ts#L5)
 
 Video page extraction
 
@@ -24,7 +24,7 @@ Video page extraction
 
 > **getModel**: `"getModel"`
 
-Defined in: [packages/providers/pornhub/PornHubTypes.ts:8](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/pornhub/PornHubTypes.ts#L8)
+Defined in: [packages/providers/pornhub/PornHubTypes.ts:8](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/pornhub/PornHubTypes.ts#L8)
 
 Model page extraction
 
@@ -34,7 +34,7 @@ Model page extraction
 
 > **getChannels**: `"getChannels"`
 
-Defined in: [packages/providers/pornhub/PornHubTypes.ts:11](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/pornhub/PornHubTypes.ts#L11)
+Defined in: [packages/providers/pornhub/PornHubTypes.ts:11](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/pornhub/PornHubTypes.ts#L11)
 
 Channel page extraction
 
@@ -44,7 +44,7 @@ Channel page extraction
 
 > **getTags**: `"getTags"`
 
-Defined in: [packages/providers/pornhub/PornHubTypes.ts:14](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/pornhub/PornHubTypes.ts#L14)
+Defined in: [packages/providers/pornhub/PornHubTypes.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/pornhub/PornHubTypes.ts#L14)
 
 Tag page extraction
 
@@ -54,6 +54,6 @@ Tag page extraction
 
 > **getVideos**: `"getVideos"`
 
-Defined in: [packages/providers/pornhub/PornHubTypes.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/pornhub/PornHubTypes.ts#L17)
+Defined in: [packages/providers/pornhub/PornHubTypes.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/pornhub/PornHubTypes.ts#L17)
 
 Model videos extraction

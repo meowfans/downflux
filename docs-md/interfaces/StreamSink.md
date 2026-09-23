@@ -6,7 +6,7 @@
 
 # Interface: StreamSink
 
-Defined in: [packages/contracts/StorageContracts.ts:32](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/StorageContracts.ts#L32)
+Defined in: [packages/contracts/StorageContracts.ts:32](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L32)
 
 A sink that exposes its readable side to the caller.
 
@@ -22,7 +22,7 @@ stdout when one is.
 
 > **input**: `Writable`
 
-Defined in: [packages/contracts/StorageContracts.ts:33](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/StorageContracts.ts#L33)
+Defined in: [packages/contracts/StorageContracts.ts:33](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L33)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/StorageContracts.ts:33](https://github.com/cloud
 
 > **output**: `Readable`
 
-Defined in: [packages/contracts/StorageContracts.ts:34](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/StorageContracts.ts#L34)
+Defined in: [packages/contracts/StorageContracts.ts:34](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L34)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/contracts/StorageContracts.ts:34](https://github.com/cloud
 
 > **done**: `Promise`\<`void`\>
 
-Defined in: [packages/contracts/StorageContracts.ts:37](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/StorageContracts.ts#L37)
+Defined in: [packages/contracts/StorageContracts.ts:37](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L37)
 
 Settles when the underlying remux finishes, or rejects if it failed.
 
@@ -48,7 +48,7 @@ Settles when the underlying remux finishes, or rejects if it failed.
 
 > **extension**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:39](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/StorageContracts.ts#L39)
+Defined in: [packages/contracts/StorageContracts.ts:39](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L39)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [packages/contracts/StorageContracts.ts:39](https://github.com/cloud
 
 > **mimeType**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:40](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/StorageContracts.ts#L40)
+Defined in: [packages/contracts/StorageContracts.ts:40](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L40)
 
 ***
 
@@ -64,4 +64,4 @@ Defined in: [packages/contracts/StorageContracts.ts:40](https://github.com/cloud
 
 > **filename**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:41](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/StorageContracts.ts#L41)
+Defined in: [packages/contracts/StorageContracts.ts:41](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L41)
