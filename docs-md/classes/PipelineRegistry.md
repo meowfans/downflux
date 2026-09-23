@@ -6,7 +6,7 @@
 
 # Class: PipelineRegistry
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:100](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/PipelineRegistry.ts#L100)
+Defined in: [packages/core/registries/PipelineRegistry.ts:100](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/PipelineRegistry.ts#L100)
 
 Resolves provider pipelines and builds download work items.
 
@@ -22,7 +22,7 @@ concrete items that the download coordinator can process.
 
 > **new PipelineRegistry**(`fileManager`): `PipelineRegistry`
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:103](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/PipelineRegistry.ts#L103)
+Defined in: [packages/core/registries/PipelineRegistry.ts:103](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/PipelineRegistry.ts#L103)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [packages/core/registries/PipelineRegistry.ts:103](https://github.co
 
 > `protected` `readonly` **fileManager**: [`FileManager`](FileManager.md)
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:103](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/PipelineRegistry.ts#L103)
+Defined in: [packages/core/registries/PipelineRegistry.ts:103](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/PipelineRegistry.ts#L103)
 
 ## Methods
 
@@ -48,7 +48,7 @@ Defined in: [packages/core/registries/PipelineRegistry.ts:103](https://github.co
 
 > **build**\<`TResult`, `TExec`\>(`metadata`, `request`): `Promise`\<[`PipelineItem`](../interfaces/PipelineItem.md)[]\>
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:133](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/PipelineRegistry.ts#L133)
+Defined in: [packages/core/registries/PipelineRegistry.ts:133](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/PipelineRegistry.ts#L133)
 
 Builds pipeline items with the matching provider pipeline.
 

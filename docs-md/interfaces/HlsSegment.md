@@ -6,7 +6,7 @@
 
 # Interface: HlsSegment
 
-Defined in: [packages/engines/http/HlsClient.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L17)
+Defined in: [packages/engines/http/HlsClient.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L17)
 
 One media segment together with the `#EXT-X-KEY` in effect for it.
 
@@ -16,7 +16,7 @@ One media segment together with the `#EXT-X-KEY` in effect for it.
 
 > **url**: `string`
 
-Defined in: [packages/engines/http/HlsClient.ts:18](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L18)
+Defined in: [packages/engines/http/HlsClient.ts:18](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L18)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [packages/engines/http/HlsClient.ts:18](https://github.com/cloudgrid
 
 > **key**: [`ParseKey`](ParseKey.md) \| `null`
 
-Defined in: [packages/engines/http/HlsClient.ts:19](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L19)
+Defined in: [packages/engines/http/HlsClient.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L19)
 
 ***
 
@@ -32,6 +32,6 @@ Defined in: [packages/engines/http/HlsClient.ts:19](https://github.com/cloudgrid
 
 > **sequence**: `number`
 
-Defined in: [packages/engines/http/HlsClient.ts:21](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L21)
+Defined in: [packages/engines/http/HlsClient.ts:21](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L21)
 
 Media sequence number, used as the implicit AES-128 IV when no `IV=` is declared.

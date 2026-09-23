@@ -6,4 +6,4 @@
 
 # Interface: DefaultOutput
 
-Defined in: [packages/providers/default/DefaultContracts.ts:4](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/default/DefaultContracts.ts#L4)
+Defined in: [packages/providers/default/DefaultContracts.ts:4](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/default/DefaultContracts.ts#L4)

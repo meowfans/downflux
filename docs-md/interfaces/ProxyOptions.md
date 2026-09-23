@@ -6,7 +6,7 @@
 
 # Interface: ProxyOptions
 
-Defined in: [packages/contracts/ExecutionContracts.ts:159](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L159)
+Defined in: [packages/contracts/ExecutionContracts.ts:176](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L176)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:159](https://github.com/cl
 
 > **type**: `"http"` \| `"https"` \| `"socks4"` \| `"socks5"`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:160](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L160)
+Defined in: [packages/contracts/ExecutionContracts.ts:177](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L177)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:160](https://github.com/cl
 
 > **host**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:162](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L162)
+Defined in: [packages/contracts/ExecutionContracts.ts:179](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L179)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:162](https://github.com/cl
 
 > **port**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:164](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L164)
+Defined in: [packages/contracts/ExecutionContracts.ts:181](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L181)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:164](https://github.com/cl
 
 > `optional` **username?**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:166](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L166)
+Defined in: [packages/contracts/ExecutionContracts.ts:183](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L183)
 
 ***
 
@@ -46,4 +46,4 @@ Defined in: [packages/contracts/ExecutionContracts.ts:166](https://github.com/cl
 
 > `optional` **password?**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:168](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L168)
+Defined in: [packages/contracts/ExecutionContracts.ts:185](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L185)

@@ -6,7 +6,7 @@
 
 # Class: NotImplementedException
 
-Defined in: packages/core/exceptions/NotImplementedException.ts:14
+Defined in: [packages/core/exceptions/NotImplementedException.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/NotImplementedException.ts#L14)
 
 NotImplementedException
 
@@ -31,7 +31,7 @@ producing output that looks valid.
 
 > **new NotImplementedException**(`provider`, `method?`, `context?`, `metadata?`): `NotImplementedException`
 
-Defined in: packages/core/exceptions/NotImplementedException.ts:15
+Defined in: [packages/core/exceptions/NotImplementedException.ts:15](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/NotImplementedException.ts#L15)
 
 #### Parameters
 
@@ -87,7 +87,7 @@ not capture any frames.
 
 > `readonly` **errorCode**: [`ErrorCodes`](../enumerations/ErrorCodes.md)
 
-Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L18)
+Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/BaseException.ts#L18)
 
 #### Inherited from
 
@@ -99,7 +99,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/cl
 
 > `readonly` **provider**: [`Provider`](../enumerations/Provider.md)
 
-Defined in: packages/core/exceptions/NotImplementedException.ts:16
+Defined in: [packages/core/exceptions/NotImplementedException.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/NotImplementedException.ts#L16)
 
 ***
 
@@ -107,7 +107,7 @@ Defined in: packages/core/exceptions/NotImplementedException.ts:16
 
 > `readonly` `optional` **method?**: `string`
 
-Defined in: packages/core/exceptions/NotImplementedException.ts:17
+Defined in: [packages/core/exceptions/NotImplementedException.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/NotImplementedException.ts#L17)
 
 ***
 
@@ -115,7 +115,7 @@ Defined in: packages/core/exceptions/NotImplementedException.ts:17
 
 > `readonly` **context**: `Record`\<`string`, `any`\> = `{}`
 
-Defined in: packages/core/exceptions/NotImplementedException.ts:18
+Defined in: [packages/core/exceptions/NotImplementedException.ts:18](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/NotImplementedException.ts#L18)
 
 #### Inherited from
 
@@ -127,7 +127,7 @@ Defined in: packages/core/exceptions/NotImplementedException.ts:18
 
 > `readonly` `optional` **metadata?**: `any`
 
-Defined in: packages/core/exceptions/NotImplementedException.ts:19
+Defined in: [packages/core/exceptions/NotImplementedException.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/NotImplementedException.ts#L19)
 
 #### Inherited from
 
@@ -287,7 +287,7 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 > **toJSON**(): `object`
 
-Defined in: [packages/core/exceptions/BaseException.ts:33](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L33)
+Defined in: [packages/core/exceptions/BaseException.ts:33](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/BaseException.ts#L33)
 
 #### Returns
 

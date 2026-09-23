@@ -6,7 +6,7 @@
 
 # Class: TransformerRegistry
 
-Defined in: [packages/core/registries/TransformerRegistry.ts:101](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/TransformerRegistry.ts#L101)
+Defined in: [packages/core/registries/TransformerRegistry.ts:101](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/TransformerRegistry.ts#L101)
 
 Resolves provider transformers and runs metadata extraction.
 
@@ -22,7 +22,7 @@ lighter and preserves a single place for provider-to-class mapping.
 
 > **new TransformerRegistry**(`httpClient`, `progressManager`): `TransformerRegistry`
 
-Defined in: [packages/core/registries/TransformerRegistry.ts:104](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/TransformerRegistry.ts#L104)
+Defined in: [packages/core/registries/TransformerRegistry.ts:104](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/TransformerRegistry.ts#L104)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [packages/core/registries/TransformerRegistry.ts:104](https://github
 
 > **transform**\<`TArgs`, `TResult`\>(`url`, `request`): `Promise`\<`TResult`\>
 
-Defined in: [packages/core/registries/TransformerRegistry.ts:137](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/registries/TransformerRegistry.ts#L137)
+Defined in: [packages/core/registries/TransformerRegistry.ts:137](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/TransformerRegistry.ts#L137)
 
 Runs the matching transformer for a URL and request.
 

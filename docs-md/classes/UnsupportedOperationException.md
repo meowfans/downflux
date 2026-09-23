@@ -6,7 +6,7 @@
 
 # Class: UnsupportedOperationException
 
-Defined in: packages/core/exceptions/UnsupportedOperationException.ts:14
+Defined in: [packages/core/exceptions/UnsupportedOperationException.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/UnsupportedOperationException.ts#L14)
 
 UnsupportedOperationException
 
@@ -31,7 +31,7 @@ failing deep inside the transport or storage layers.
 
 > **new UnsupportedOperationException**(`reason`, `provider`, `method?`, `context?`, `metadata?`): `UnsupportedOperationException`
 
-Defined in: packages/core/exceptions/UnsupportedOperationException.ts:15
+Defined in: [packages/core/exceptions/UnsupportedOperationException.ts:15](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/UnsupportedOperationException.ts#L15)
 
 #### Parameters
 
@@ -91,7 +91,7 @@ not capture any frames.
 
 > `readonly` **errorCode**: [`ErrorCodes`](../enumerations/ErrorCodes.md)
 
-Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L18)
+Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/BaseException.ts#L18)
 
 #### Inherited from
 
@@ -103,7 +103,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:18](https://github.com/cl
 
 > `readonly` **reason**: `string`
 
-Defined in: packages/core/exceptions/UnsupportedOperationException.ts:16
+Defined in: [packages/core/exceptions/UnsupportedOperationException.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/UnsupportedOperationException.ts#L16)
 
 ***
 
@@ -111,7 +111,7 @@ Defined in: packages/core/exceptions/UnsupportedOperationException.ts:16
 
 > `readonly` **provider**: [`Provider`](../enumerations/Provider.md)
 
-Defined in: packages/core/exceptions/UnsupportedOperationException.ts:17
+Defined in: [packages/core/exceptions/UnsupportedOperationException.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/UnsupportedOperationException.ts#L17)
 
 ***
 
@@ -119,7 +119,7 @@ Defined in: packages/core/exceptions/UnsupportedOperationException.ts:17
 
 > `readonly` `optional` **method?**: `string`
 
-Defined in: packages/core/exceptions/UnsupportedOperationException.ts:18
+Defined in: [packages/core/exceptions/UnsupportedOperationException.ts:18](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/UnsupportedOperationException.ts#L18)
 
 ***
 
@@ -127,7 +127,7 @@ Defined in: packages/core/exceptions/UnsupportedOperationException.ts:18
 
 > `readonly` **context**: `Record`\<`string`, `any`\> = `{}`
 
-Defined in: packages/core/exceptions/UnsupportedOperationException.ts:19
+Defined in: [packages/core/exceptions/UnsupportedOperationException.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/UnsupportedOperationException.ts#L19)
 
 #### Inherited from
 
@@ -139,7 +139,7 @@ Defined in: packages/core/exceptions/UnsupportedOperationException.ts:19
 
 > `readonly` `optional` **metadata?**: `any`
 
-Defined in: packages/core/exceptions/UnsupportedOperationException.ts:20
+Defined in: [packages/core/exceptions/UnsupportedOperationException.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/UnsupportedOperationException.ts#L20)
 
 #### Inherited from
 
@@ -299,7 +299,7 @@ https://v8.dev/docs/stack-trace-api#customizing-stack-traces
 
 > **toJSON**(): `object`
 
-Defined in: [packages/core/exceptions/BaseException.ts:33](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/exceptions/BaseException.ts#L33)
+Defined in: [packages/core/exceptions/BaseException.ts:33](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/exceptions/BaseException.ts#L33)
 
 #### Returns
 

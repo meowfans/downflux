@@ -6,7 +6,7 @@
 
 # Interface: HLSStreamRequest
 
-Defined in: [packages/contracts/DownloadContracts.ts:90](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L90)
+Defined in: [packages/contracts/DownloadContracts.ts:90](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L90)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:90](https://github.com/clou
 
 > **finalUrl**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:91](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L91)
+Defined in: [packages/contracts/DownloadContracts.ts:91](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L91)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:91](https://github.com/clou
 
 > **headers**: `Record`\<`string`, `string`\>
 
-Defined in: [packages/contracts/DownloadContracts.ts:92](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L92)
+Defined in: [packages/contracts/DownloadContracts.ts:92](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L92)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:92](https://github.com/clou
 
 > `optional` **isFmp4?**: `boolean`
 
-Defined in: [packages/contracts/DownloadContracts.ts:93](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L93)
+Defined in: [packages/contracts/DownloadContracts.ts:93](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L93)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:93](https://github.com/clou
 
 > `optional` **contentLength?**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:103](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L103)
+Defined in: [packages/contracts/DownloadContracts.ts:103](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L103)
 
 Exact byte length of what will be delivered, when it can be known.
 
@@ -54,7 +54,7 @@ so the origin's length no longer describes the output and publishing it as
 
 > `optional` **estimatedBytes?**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:106](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L106)
+Defined in: [packages/contracts/DownloadContracts.ts:106](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L106)
 
 Best-effort source size, safe for progress UI but never for `Content-Length`.
 
@@ -64,7 +64,7 @@ Best-effort source size, safe for progress UI but never for `Content-Length`.
 
 > **start**: (`stream`, `noDownload?`) => `Promise`\<`void`\>
 
-Defined in: [packages/contracts/DownloadContracts.ts:108](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L108)
+Defined in: [packages/contracts/DownloadContracts.ts:108](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L108)
 
 #### Parameters
 

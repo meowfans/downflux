@@ -6,7 +6,7 @@
 
 # Interface: ServiceStrategy
 
-Defined in: [packages/contracts/DownloadContracts.ts:149](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L149)
+Defined in: [packages/contracts/DownloadContracts.ts:149](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L149)
 
 ## Methods
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:149](https://github.com/clo
 
 > `optional` **shouldFallback404**(`url`): `boolean`
 
-Defined in: [packages/contracts/DownloadContracts.ts:150](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L150)
+Defined in: [packages/contracts/DownloadContracts.ts:150](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L150)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:150](https://github.com/clo
 
 > `optional` **getFallbackUrl**(`url`): `string` \| `null`
 
-Defined in: [packages/contracts/DownloadContracts.ts:151](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L151)
+Defined in: [packages/contracts/DownloadContracts.ts:151](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L151)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:151](https://github.com/clo
 
 > `optional` **shouldReExtract**(`url`): `boolean`
 
-Defined in: [packages/contracts/DownloadContracts.ts:152](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L152)
+Defined in: [packages/contracts/DownloadContracts.ts:152](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L152)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:152](https://github.com/clo
 
 > `optional` **shouldResolveTextResponse**(`url`, `contentType`): `boolean`
 
-Defined in: [packages/contracts/DownloadContracts.ts:153](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L153)
+Defined in: [packages/contracts/DownloadContracts.ts:153](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L153)
 
 #### Parameters
 
@@ -90,7 +90,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:153](https://github.com/clo
 
 > `optional` **getDirectVideoUrlFromText**(`body`, `opts`): `string` \| `null`
 
-Defined in: [packages/contracts/DownloadContracts.ts:154](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L154)
+Defined in: [packages/contracts/DownloadContracts.ts:154](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L154)
 
 #### Parameters
 
@@ -112,7 +112,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:154](https://github.com/clo
 
 > `optional` **getHostFallbackUrls**(`url`): `string`[]
 
-Defined in: [packages/contracts/DownloadContracts.ts:155](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L155)
+Defined in: [packages/contracts/DownloadContracts.ts:155](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L155)
 
 #### Parameters
 

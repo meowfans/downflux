@@ -6,7 +6,7 @@
 
 # Interface: VideosFormat
 
-Defined in: [packages/contracts/ExecutionContracts.ts:263](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L263)
+Defined in: [packages/contracts/ExecutionContracts.ts:280](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L280)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:263](https://github.com/cl
 
 > `optional` **mp4?**: [`VideoSourceOutput`](VideoSourceOutput.md)[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:264](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L264)
+Defined in: [packages/contracts/ExecutionContracts.ts:281](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L281)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [packages/contracts/ExecutionContracts.ts:264](https://github.com/cl
 
 > `optional` **hls?**: [`VideoSourceOutput`](VideoSourceOutput.md)[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:265](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L265)
+Defined in: [packages/contracts/ExecutionContracts.ts:282](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L282)

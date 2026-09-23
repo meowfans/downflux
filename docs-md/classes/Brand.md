@@ -6,7 +6,7 @@
 
 # Class: Brand
 
-Defined in: packages/shared/ui/Brand.ts:12
+Defined in: [packages/shared/ui/Brand.ts:12](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L12)
 
 ANSI styling helpers and DownFlux brand assets.
 
@@ -33,7 +33,7 @@ consumer. Colour is disabled automatically when the stream is not a TTY, when
 
 > `readonly` `static` **ICON**: `"⬇"` = `'⬇'`
 
-Defined in: packages/shared/ui/Brand.ts:14
+Defined in: [packages/shared/ui/Brand.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L14)
 
 Downward flux arrow used as the product icon.
 
@@ -43,7 +43,7 @@ Downward flux arrow used as the product icon.
 
 > `readonly` `static` **NAME**: `"DOWNFLUX"` = `'DOWNFLUX'`
 
-Defined in: packages/shared/ui/Brand.ts:16
+Defined in: [packages/shared/ui/Brand.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L16)
 
 ***
 
@@ -51,7 +51,7 @@ Defined in: packages/shared/ui/Brand.ts:16
 
 > `readonly` `static` **TAGLINE**: `"modular media extraction"` = `'modular media extraction'`
 
-Defined in: packages/shared/ui/Brand.ts:18
+Defined in: [packages/shared/ui/Brand.ts:18](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L18)
 
 ## Accessors
 
@@ -61,7 +61,7 @@ Defined in: packages/shared/ui/Brand.ts:18
 
 > **get** `static` **colorEnabled**(): `boolean`
 
-Defined in: packages/shared/ui/Brand.ts:22
+Defined in: [packages/shared/ui/Brand.ts:22](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L22)
 
 ##### Returns
 
@@ -73,7 +73,7 @@ Defined in: packages/shared/ui/Brand.ts:22
 
 > `static` **bold**(`value`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:36
+Defined in: [packages/shared/ui/Brand.ts:36](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L36)
 
 #### Parameters
 
@@ -91,7 +91,7 @@ Defined in: packages/shared/ui/Brand.ts:36
 
 > `static` **dim**(`value`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:40
+Defined in: [packages/shared/ui/Brand.ts:40](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L40)
 
 #### Parameters
 
@@ -109,7 +109,7 @@ Defined in: packages/shared/ui/Brand.ts:40
 
 > `static` **accent**(`value`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:45
+Defined in: [packages/shared/ui/Brand.ts:45](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L45)
 
 Brand accent, a cyan-leaning gradient anchor.
 
@@ -129,7 +129,7 @@ Brand accent, a cyan-leaning gradient anchor.
 
 > `static` **accentSoft**(`value`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:49
+Defined in: [packages/shared/ui/Brand.ts:49](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L49)
 
 #### Parameters
 
@@ -147,7 +147,7 @@ Defined in: packages/shared/ui/Brand.ts:49
 
 > `static` **success**(`value`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:53
+Defined in: [packages/shared/ui/Brand.ts:53](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L53)
 
 #### Parameters
 
@@ -165,7 +165,7 @@ Defined in: packages/shared/ui/Brand.ts:53
 
 > `static` **warn**(`value`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:57
+Defined in: [packages/shared/ui/Brand.ts:57](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L57)
 
 #### Parameters
 
@@ -183,7 +183,7 @@ Defined in: packages/shared/ui/Brand.ts:57
 
 > `static` **danger**(`value`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:61
+Defined in: [packages/shared/ui/Brand.ts:61](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L61)
 
 #### Parameters
 
@@ -201,7 +201,7 @@ Defined in: packages/shared/ui/Brand.ts:61
 
 > `static` **muted**(`value`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:65
+Defined in: [packages/shared/ui/Brand.ts:65](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L65)
 
 #### Parameters
 
@@ -219,7 +219,7 @@ Defined in: packages/shared/ui/Brand.ts:65
 
 > `static` **plain**(`value`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:70
+Defined in: [packages/shared/ui/Brand.ts:70](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L70)
 
 Strips ANSI so width maths stay correct for styled strings.
 
@@ -239,7 +239,7 @@ Strips ANSI so width maths stay correct for styled strings.
 
 > `static` **width**(`value`): `number`
 
-Defined in: packages/shared/ui/Brand.ts:75
+Defined in: [packages/shared/ui/Brand.ts:75](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L75)
 
 #### Parameters
 
@@ -257,7 +257,7 @@ Defined in: packages/shared/ui/Brand.ts:75
 
 > `static` **wordmark**(): `string`
 
-Defined in: packages/shared/ui/Brand.ts:80
+Defined in: [packages/shared/ui/Brand.ts:80](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L80)
 
 The one-line wordmark shown at the top of a render block.
 
@@ -271,7 +271,7 @@ The one-line wordmark shown at the top of a render block.
 
 > `static` **banner**(`width?`): `string`[]
 
-Defined in: packages/shared/ui/Brand.ts:94
+Defined in: [packages/shared/ui/Brand.ts:94](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L94)
 
 Multi-line banner, used once when a job starts on an interactive terminal.
 
@@ -296,7 +296,7 @@ ASCII block without wrapping it into noise.
 
 > `static` **statusIcon**(`status`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:120
+Defined in: [packages/shared/ui/Brand.ts:120](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L120)
 
 #### Parameters
 
@@ -314,7 +314,7 @@ Defined in: packages/shared/ui/Brand.ts:120
 
 > `static` **statusLabel**(`status`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:125
+Defined in: [packages/shared/ui/Brand.ts:125](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L125)
 
 Colors a status label with its icon.
 
@@ -334,7 +334,7 @@ Colors a status label with its icon.
 
 > `static` **spinner**(`tick`): `string`
 
-Defined in: packages/shared/ui/Brand.ts:149
+Defined in: [packages/shared/ui/Brand.ts:149](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/ui/Brand.ts#L149)
 
 #### Parameters
 

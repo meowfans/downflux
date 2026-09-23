@@ -6,7 +6,7 @@
 
 # Enumeration: OutputType
 
-Defined in: [packages/types/DownloadTypes.ts:2](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/DownloadTypes.ts#L2)
+Defined in: [packages/types/DownloadTypes.ts:2](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/DownloadTypes.ts#L2)
 
 Job output mode
 
@@ -16,7 +16,7 @@ Job output mode
 
 > **DEVICE**: `"DEVICE"`
 
-Defined in: [packages/types/DownloadTypes.ts:4](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/DownloadTypes.ts#L4)
+Defined in: [packages/types/DownloadTypes.ts:4](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/DownloadTypes.ts#L4)
 
 Writes files to device storage
 
@@ -26,7 +26,7 @@ Writes files to device storage
 
 > **JSON**: `"JSON"`
 
-Defined in: [packages/types/DownloadTypes.ts:7](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/DownloadTypes.ts#L7)
+Defined in: [packages/types/DownloadTypes.ts:7](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/DownloadTypes.ts#L7)
 
 Writes ExecutionCoordinator metadata as JSON
 
@@ -36,7 +36,7 @@ Writes ExecutionCoordinator metadata as JSON
 
 > **STREAM**: `"STREAM"`
 
-Defined in: [packages/types/DownloadTypes.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/DownloadTypes.ts#L17)
+Defined in: [packages/types/DownloadTypes.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/DownloadTypes.ts#L17)
 
 Delivers each item as a readable stream.
 
@@ -52,6 +52,6 @@ constant memory regardless of file size.
 
 > **RETURN**: `"RETURN"`
 
-Defined in: [packages/types/DownloadTypes.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/DownloadTypes.ts#L20)
+Defined in: [packages/types/DownloadTypes.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/DownloadTypes.ts#L20)
 
 Returns extracted metadata without downloading

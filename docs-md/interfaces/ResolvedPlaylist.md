@@ -6,7 +6,7 @@
 
 # Interface: ResolvedPlaylist
 
-Defined in: [packages/engines/http/HlsClient.ts:32](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L32)
+Defined in: [packages/engines/http/HlsClient.ts:32](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L32)
 
 A fully resolved media playlist.
 
@@ -22,7 +22,7 @@ before they open a sink and segments after.
 
 > **playlistUrl**: `string`
 
-Defined in: [packages/engines/http/HlsClient.ts:33](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L33)
+Defined in: [packages/engines/http/HlsClient.ts:33](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L33)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/engines/http/HlsClient.ts:33](https://github.com/cloudgrid
 
 > **segments**: [`HlsSegment`](HlsSegment.md)[]
 
-Defined in: [packages/engines/http/HlsClient.ts:34](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L34)
+Defined in: [packages/engines/http/HlsClient.ts:34](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L34)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/engines/http/HlsClient.ts:34](https://github.com/cloudgrid
 
 > **initUrl**: `string` \| `null`
 
-Defined in: [packages/engines/http/HlsClient.ts:35](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L35)
+Defined in: [packages/engines/http/HlsClient.ts:35](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L35)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/engines/http/HlsClient.ts:35](https://github.com/cloudgrid
 
 > **isFmp4**: `boolean`
 
-Defined in: [packages/engines/http/HlsClient.ts:36](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L36)
+Defined in: [packages/engines/http/HlsClient.ts:36](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L36)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/engines/http/HlsClient.ts:36](https://github.com/cloudgrid
 
 > **estimatedBytes**: `number`
 
-Defined in: [packages/engines/http/HlsClient.ts:46](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/engines/http/HlsClient.ts#L46)
+Defined in: [packages/engines/http/HlsClient.ts:46](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/engines/http/HlsClient.ts#L46)
 
 Approximate size of the source stream in bytes.
 

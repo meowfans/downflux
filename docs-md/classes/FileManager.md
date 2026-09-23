@@ -6,7 +6,7 @@
 
 # Class: FileManager
 
-Defined in: [packages/storage/FileManager.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L20)
+Defined in: [packages/storage/FileManager.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L20)
 
 Storage service for JSON results, buffers, and files on disk.
 
@@ -23,7 +23,7 @@ and coordinators from duplicating filesystem rules.
 
 > **new FileManager**(`ffmpegEngine`, `progressManager`): `FileManager`
 
-Defined in: [packages/storage/FileManager.ts:25](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L25)
+Defined in: [packages/storage/FileManager.ts:25](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L25)
 
 #### Parameters
 
@@ -45,7 +45,7 @@ Defined in: [packages/storage/FileManager.ts:25](https://github.com/cloudgrids/d
 
 > **createSink**(`sinkInput`): `object`
 
-Defined in: [packages/storage/FileManager.ts:36](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L36)
+Defined in: [packages/storage/FileManager.ts:36](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L36)
 
 Creates the output sink for a download.
 
@@ -103,7 +103,7 @@ Writable stream and finalize callback for the selected output mode.
 
 > **createStreamSink**(`sinkInput`, `resolved`, `isFmp4?`): [`StreamSink`](../interfaces/StreamSink.md)
 
-Defined in: [packages/storage/FileManager.ts:86](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L86)
+Defined in: [packages/storage/FileManager.ts:86](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L86)
 
 Opens a pass-through sink whose readable side is handed to the caller.
 
@@ -144,7 +144,7 @@ keeps one code path for every media type.
 
 > **needsRemux**(`extension?`, `isFmp4?`): `boolean`
 
-Defined in: [packages/storage/FileManager.ts:173](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L173)
+Defined in: [packages/storage/FileManager.ts:173](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L173)
 
 Whether downloaded bytes still need remuxing into a playable container.
 
@@ -181,7 +181,7 @@ as finished; the buffer sink previously applied no such test at all.
 
 > **finalizeStream**(`finalPath`, `tOptions?`, `isFmp4?`, `opts?`): `Promise`\<\{ `path`: `string`; `filename`: `string`; `extension`: `string`; `mimeType`: `any`; \}\>
 
-Defined in: [packages/storage/FileManager.ts:186](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L186)
+Defined in: [packages/storage/FileManager.ts:186](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L186)
 
 Finalizes a file after streaming completes.
 
@@ -229,7 +229,7 @@ Final path, filename, extension, and MIME type.
 
 > **toJSON**\<`T`, `S`\>(`result`, `directoryPath?`): `string`
 
-Defined in: [packages/storage/FileManager.ts:212](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L212)
+Defined in: [packages/storage/FileManager.ts:212](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L212)
 
 Writes an execution result as JSON.
 
@@ -269,7 +269,7 @@ Path to the written JSON file.
 
 > **getFileInfo**(`url`, `prefix?`): [`ResolvedFile`](../interfaces/ResolvedFile.md)
 
-Defined in: [packages/storage/FileManager.ts:238](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L238)
+Defined in: [packages/storage/FileManager.ts:238](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L238)
 
 Extracts filename and extension from URL.
 
@@ -299,7 +299,7 @@ path undefined => fud_timestamp
 
 > **sanitizeFilename**(`name`): `string`
 
-Defined in: [packages/storage/FileManager.ts:268](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L268)
+Defined in: [packages/storage/FileManager.ts:268](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L268)
 
 Sanitize filename by replacing invalid characters with underscores mostly for
 Windows OS which has a lot of reserved characters for filenames such as < > : " / \ | ? *
@@ -320,7 +320,7 @@ Windows OS which has a lot of reserved characters for filenames such as < > : " 
 
 > **detectResourceType**(`url`, `request`): `object`
 
-Defined in: [packages/storage/FileManager.ts:334](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L334)
+Defined in: [packages/storage/FileManager.ts:334](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L334)
 
 Infers MIME type and extension for a media URL.
 
@@ -358,7 +358,7 @@ Detected or provider-default resource type.
 
 > **deriveResolvedFile**(`initial`, `finalUrl`, `headers`, `isFmp4?`, `prefix?`): [`ResolvedFile`](../interfaces/ResolvedFile.md)
 
-Defined in: [packages/storage/FileManager.ts:367](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FileManager.ts#L367)
+Defined in: [packages/storage/FileManager.ts:367](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FileManager.ts#L367)
 
 Reconciles the initial file guess with the final response URL and headers.
 

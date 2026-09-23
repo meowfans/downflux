@@ -6,7 +6,7 @@
 
 # Interface: CoordinatorDependencies
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:9](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L9)
+Defined in: [packages/contracts/CoordinatorDependency.ts:9](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L9)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:9](https://github.com/c
 
 > **httpClient**: [`HttpClient`](../classes/HttpClient.md)
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:10](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L10)
+Defined in: [packages/contracts/CoordinatorDependency.ts:10](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L10)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:10](https://github.com/
 
 > **streamHttpClient**: [`StreamHttpClient`](../classes/StreamHttpClient.md)
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:11](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L11)
+Defined in: [packages/contracts/CoordinatorDependency.ts:11](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L11)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:11](https://github.com/
 
 > **transformerRegistry**: [`TransformerRegistry`](../classes/TransformerRegistry.md)
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:12](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L12)
+Defined in: [packages/contracts/CoordinatorDependency.ts:12](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L12)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:12](https://github.com/
 
 > **transferCoordinator**: [`TransferCoordinator`](../classes/TransferCoordinator.md)
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:13](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L13)
+Defined in: [packages/contracts/CoordinatorDependency.ts:13](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L13)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:13](https://github.com/
 
 > **executionCoordinator**: [`ExecutionCoordinator`](../classes/ExecutionCoordinator.md)
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:14](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L14)
+Defined in: [packages/contracts/CoordinatorDependency.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L14)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:14](https://github.com/
 
 > **strategyRegistry**: [`StrategyRegistry`](../classes/StrategyRegistry.md)
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:15](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L15)
+Defined in: [packages/contracts/CoordinatorDependency.ts:15](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L15)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:15](https://github.com/
 
 > **progressManager**: [`ProgressManager`](../classes/ProgressManager.md)
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:16](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L16)
+Defined in: [packages/contracts/CoordinatorDependency.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L16)
 
 ***
 
@@ -70,4 +70,4 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:16](https://github.com/
 
 > **cliManager**: [`CliManager`](../classes/CliManager.md)
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/CoordinatorDependency.ts#L17)
+Defined in: [packages/contracts/CoordinatorDependency.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L17)

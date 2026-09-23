@@ -4,6 +4,8 @@ Modular TypeScript media extraction and download toolkit. Each site integration 
 
 ## Installation
 
+Requires **Node.js 22 or newer**.
+
 ```bash
 npm install downflux
 ```
@@ -14,6 +16,8 @@ pnpm add downflux
 
 ## Usage
 
+Extraction only. This is the default and writes nothing but a JSON record of what was found:
+
 ```ts
 import { BeegProvider } from 'downflux';
 
@@ -22,6 +26,22 @@ const result = await provider.getVideo();
 
 console.log(result);
 ```
+
+Downloading to disk. Provider methods resolve as soon as extraction finishes, so you learn what is
+coming without waiting for it; `whenSettled()` waits for the transfers:
+
+```ts
+import { BeegProvider, OutputType } from 'downflux';
+
+const provider = new BeegProvider('https://beeg.com/example-video-url')
+  .setOutput(OutputType.DEVICE, { directoryPath: '/srv/media' });
+
+const metadata = await provider.getVideo();
+const { downloaded, failed, errors } = await provider.whenSettled();
+```
+
+`whenSettled()` resolves even when some items fail, because a partial batch is a normal result -
+inspect `failed` and `errors`. It rejects only if the download pipeline itself could not run.
 
 ## FFmpeg Setup
 
@@ -56,6 +76,108 @@ await new BeegProvider('https://beeg.com/example-video-url')
   .getVideo();
 ```
 
+## Output Modes
+
+`setOutput()` decides what a job produces. Downloading modes run their transfers in the background,
+so the bytes arrive through `pipelineHooks.onDownload` and completion comes from `whenSettled()`.
+
+| Mode | Downloads | How you receive it | Memory | Use for |
+| ------ | --------- | ----------------- | ------ | ------- |
+| `JSON` *(default)* | no | Writes a `.json` metadata file, returns metadata | trivial | Cataloguing, debugging a provider |
+| `RETURN` | no | Returns metadata, writes nothing | trivial | Feeding your own pipeline or database |
+| `DEVICE` | yes | Files on disk under `dirConfig.directoryPath` | constant | Anything large; batch jobs; media libraries |
+| `STREAM` | yes | A `Readable` per item, via `onDownload` | constant | HTTP responses, object storage uploads |
+
+`DEVICE` streams to a `.part` file and renames on success, so an interrupted run never leaves a
+truncated file at the real name. Pass an **absolute** `directoryPath` on a server; relative paths
+resolve against `process.cwd()`. A URI such as `s3://bucket/media` is rejected - that is a remote
+target, not a filesystem path, so use `STREAM` and pipe to your storage client instead.
+
+### Serving over HTTP
+
+```ts
+import { PornHubProvider, OutputType } from 'downflux';
+import { pipeline } from 'stream/promises';
+
+await new PornHubProvider(url)
+  .setOutput(OutputType.STREAM)
+  .setJobOptions({
+    pipelineHooks: [
+      {
+        onDownload: async ({ result }) => {
+          reply.writeHead(200, {
+            'content-type': result.mimeType,
+            // present only when bytes pass through untouched
+            ...(result.sizeBytes ? { 'content-length': String(result.sizeBytes) } : {}),
+            // omit this header to play inline instead of downloading
+            'content-disposition': `attachment; filename="${result.originalFilename}"`
+          });
+
+          await pipeline(result.stream!, reply);
+        }
+      }
+    ]
+  })
+  .getVideo();
+```
+
+Consume the stream promptly; an unread one stalls the transfer behind the pipe buffer.
+
+Segmented sources are remuxed on the fly into **fragmented** MP4, which a pipe can carry but a
+regular MP4 cannot. Those responses have no `Content-Length`, so the browser shows no percentage and
+cannot seek. `result.estimatedBytes` is a best-effort source size for progress UI - never send it as
+`Content-Length`. When seeking matters, download with `DEVICE` and serve the finished file.
+
+### Uploading to object storage
+
+```ts
+import { Upload } from '@aws-sdk/lib-storage';
+
+onDownload: async ({ result }) => {
+  await new Upload({
+    client: s3,
+    params: { Bucket: 'my-bucket', Key: result.originalFilename, Body: result.stream, ContentType: result.mimeType }
+  }).done();
+}
+```
+
+## Cancelling A Job
+
+`DEVICE` jobs handle `SIGINT`/`SIGTERM` by default: in-flight transfers abort, each deletes its own
+`.part` file, the job reports `ABORTED`, and the process exits once cleanup finishes. A second Ctrl+C
+exits immediately.
+
+Other modes leave signals alone, since servers own their own shutdown. Set `abortOnSignal` to
+override either default, or drive cancellation yourself:
+
+```ts
+const controller = new AbortController();
+
+const provider = new PornHubProvider(url)
+  .setOutput(OutputType.DEVICE, { directoryPath: '/srv/media' })
+  .setJobOptions({ signal: controller.signal, abortOnSignal: false });
+```
+
+Call `provider.dispose()` when finished to detach the progress renderer, or
+`dispose({ closeConnections: true })` to also close the shared undici pools.
+
+## Progress Output
+
+`setProgressLogging(true)` renders a live panel that redraws in place, with a bar per concurrent
+item, transfer rate and ETA. It uses no colour dependency and degrades to plain append-only text
+when stdout is not a TTY, when `NO_COLOR` is set, or under `TERM=dumb`.
+
+```ts
+provider.setProgressLogging(true, { captureConsole: true });
+```
+
+`captureConsole` routes your own `console.log` around the live region so it is not erased by the next
+frame. It is off by default because it patches `stdout`/`stderr`, which is the host application's
+call to make.
+
+For programmatic progress use `onProgress`, which reports aggregate counters plus an `activeItems`
+snapshot carrying per-item bytes, rate and ETA.
+
 ## Documentation
 
 The generated Markdown API docs live in [`docs-md`](docs-md/README.md).
@@ -71,6 +193,9 @@ Useful entry points:
 - [TransferCoordinator](docs-md/classes/TransferCoordinator.md) - streams one pipeline item into storage.
 - [HttpClient](docs-md/classes/HttpClient.md), [StreamHttpClient](docs-md/classes/StreamHttpClient.md), and [HlsClient](docs-md/classes/HlsClient.md) - HTTP and HLS engines.
 - [FileManager](docs-md/classes/FileManager.md) and [FFmpegEngine](docs-md/classes/FFmpegEngine.md) - output sinks, filenames, JSON, and media finalization.
+- [ProgressManager](docs-md/classes/ProgressManager.md), [CliManager](docs-md/classes/CliManager.md), and [TerminalSurface](docs-md/classes/TerminalSurface.md) - progress state and terminal rendering.
+- [SignalHandler](docs-md/classes/SignalHandler.md) - shutdown tasks and cancellation on process signals.
+- [JobSettlement](docs-md/interfaces/JobSettlement.md) and [ItemProgressSnapshot](docs-md/interfaces/ItemProgressSnapshot.md) - what `whenSettled()` and `onProgress` hand back.
 - [Provider](docs-md/enumerations/Provider.md), [OutputType](docs-md/enumerations/OutputType.md), [ExecutionType](docs-md/enumerations/ExecutionType.md), [VideoQuality](docs-md/enumerations/VideoQuality.md).
 
 Regenerate the Markdown docs with:
@@ -249,6 +374,11 @@ In short: a provider creates a typed request, coordinators run the extraction/do
 
 ## Gallery & General Providers (not yet fully implemented)
 
+These are scaffolding. They are exported and registered like any other provider, but throw
+`NotImplementedException` rather than emitting placeholder output, so an unfinished provider fails
+loudly instead of producing files that look valid. Providers whose metadata declares
+`canDownload: false` or `requiresBrowser: true` reject downloads up front for the same reason.
+
 | Site                                                               | Provider             | Short description                                                                               |
 | ------------------------------------------------------------------ | -------------------- | ----------------------------------------------------------------------------------------------- |
 | [ArtStation](docs-md/classes/ArtStationProvider.md) <sup>new</sup> | `ArtStationProvider` | Art gallery extraction; under development.                                                      |
@@ -278,10 +408,18 @@ More incoming...
 
 ## Development
 
+Requires Node.js 22 or newer.
+
 ```bash
 pnpm install
 pnpm run build
 pnpm run docs:md
+```
+
+`.gitignore` ignores `*.md`, so newly generated documentation pages need forcing:
+
+```bash
+git add -f docs-md
 ```
 
 ## Add new Provider

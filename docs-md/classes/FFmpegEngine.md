@@ -6,7 +6,7 @@
 
 # Class: FFmpegEngine
 
-Defined in: [packages/storage/FFmpegEngine.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FFmpegEngine.ts#L20)
+Defined in: [packages/storage/FFmpegEngine.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FFmpegEngine.ts#L20)
 
 Media finalization wrapper around ffmpeg.
 
@@ -22,7 +22,7 @@ transcodes formats such as HLS `.ts`/fMP4 into a playable final file.
 
 > **new FFmpegEngine**(`progressManager`): `FFmpegEngine`
 
-Defined in: [packages/storage/FFmpegEngine.ts:21](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FFmpegEngine.ts#L21)
+Defined in: [packages/storage/FFmpegEngine.ts:21](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FFmpegEngine.ts#L21)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [packages/storage/FFmpegEngine.ts:21](https://github.com/cloudgrids/
 
 > **get** **ffmpeg**(): `string`
 
-Defined in: [packages/storage/FFmpegEngine.ts:23](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FFmpegEngine.ts#L23)
+Defined in: [packages/storage/FFmpegEngine.ts:23](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FFmpegEngine.ts#L23)
 
 ##### Returns
 
@@ -54,7 +54,7 @@ Defined in: [packages/storage/FFmpegEngine.ts:23](https://github.com/cloudgrids/
 
 > **createRemuxStream**(`options?`): `object`
 
-Defined in: [packages/storage/FFmpegEngine.ts:45](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FFmpegEngine.ts#L45)
+Defined in: [packages/storage/FFmpegEngine.ts:45](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FFmpegEngine.ts#L45)
 
 Opens a streaming remux: bytes in one side, playable media out the other.
 
@@ -103,7 +103,7 @@ its stdout pipe fills, which would otherwise deadlock the transfer.
 
 > **finalizeMedia**(`options`): `Promise`\<\{ `path`: `string`; `filename`: `string`; `extension`: `string`; `mimeType`: `string`; \}\>
 
-Defined in: [packages/storage/FFmpegEngine.ts:97](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/storage/FFmpegEngine.ts#L97)
+Defined in: [packages/storage/FFmpegEngine.ts:97](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/FFmpegEngine.ts#L97)
 
 Finalizes a downloaded media file with ffmpeg.
 

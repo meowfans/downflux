@@ -6,7 +6,7 @@
 
 # Interface: HttpFetchOptions
 
-Defined in: [packages/contracts/DownloadContracts.ts:115](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L115)
+Defined in: [packages/contracts/DownloadContracts.ts:115](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L115)
 
 HTTP fetch options.
 Controls request headers, retries, timeout, and referer.
@@ -26,7 +26,7 @@ Controls request headers, retries, timeout, and referer.
 
 > `optional` **signal?**: `AbortSignal`
 
-Defined in: [packages/contracts/DownloadContracts.ts:124](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L124)
+Defined in: [packages/contracts/DownloadContracts.ts:124](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L124)
 
 Abort signal honoured by every request this option reaches.
 
@@ -42,7 +42,7 @@ reached a single fetch.
 
 > `optional` **headers?**: `Record`\<`string`, `string`\>
 
-Defined in: [packages/contracts/DownloadContracts.ts:127](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L127)
+Defined in: [packages/contracts/DownloadContracts.ts:127](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L127)
 
 Custom request headers
 
@@ -52,7 +52,7 @@ Custom request headers
 
 > `optional` **timeoutMs?**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:130](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L130)
+Defined in: [packages/contracts/DownloadContracts.ts:130](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L130)
 
 Request timeout in milliseconds
 
@@ -62,7 +62,7 @@ Request timeout in milliseconds
 
 > `optional` **retries?**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:133](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L133)
+Defined in: [packages/contracts/DownloadContracts.ts:133](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L133)
 
 Failed request retry count
 
@@ -72,7 +72,7 @@ Failed request retry count
 
 > `optional` **referer?**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:136](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L136)
+Defined in: [packages/contracts/DownloadContracts.ts:136](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L136)
 
 Request referer URL
 
@@ -82,7 +82,7 @@ Request referer URL
 
 > `optional` **formData?**: `Record`\<`string`, `string`\>
 
-Defined in: [packages/contracts/DownloadContracts.ts:139](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/DownloadContracts.ts#L139)
+Defined in: [packages/contracts/DownloadContracts.ts:139](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L139)
 
 Optional FormData for POST requests
 
@@ -92,7 +92,7 @@ Optional FormData for POST requests
 
 > `optional` **userAgent?**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:150](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L150)
+Defined in: [packages/contracts/ExecutionContracts.ts:167](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L167)
 
 #### Inherited from
 
@@ -104,7 +104,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:150](https://github.com/cl
 
 > `optional` **enableSniSpoofing?**: `boolean`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:152](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L152)
+Defined in: [packages/contracts/ExecutionContracts.ts:169](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L169)
 
 #### Inherited from
 
@@ -116,7 +116,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:152](https://github.com/cl
 
 > `optional` **proxy?**: [`ProxyOptions`](ProxyOptions.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:154](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L154)
+Defined in: [packages/contracts/ExecutionContracts.ts:171](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L171)
 
 #### Inherited from
 
@@ -128,7 +128,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:154](https://github.com/cl
 
 > `optional` **dispatcher?**: `Dispatcher`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:156](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L156)
+Defined in: [packages/contracts/ExecutionContracts.ts:173](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L173)
 
 #### Inherited from
 

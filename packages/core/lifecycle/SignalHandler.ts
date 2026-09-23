@@ -11,7 +11,7 @@ export type ShutdownTask = () => Promise<void> | void;
  * restores the terminal, an aborting job removes its partial files, and the exit
  * happens once, after both have run.
  *
- * Tasks are bounded by {@link SignalHandler.GRACE_MS}; a download that refuses to
+ * Tasks are bounded by a five second grace period; a download that refuses to
  * unwind must not leave the user stuck on a terminal that will not respond.
  */
 export class SignalHandler {

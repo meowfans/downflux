@@ -6,7 +6,7 @@
 
 # Class: XozillaTransformer
 
-Defined in: [packages/providers/xozilla/XozillaTransformer.ts:14](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/xozilla/XozillaTransformer.ts#L14)
+Defined in: [packages/providers/xozilla/XozillaTransformer.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xozilla/XozillaTransformer.ts#L14)
 
 Normalizes parsed Xozilla metadata into the public output shape.
 
@@ -24,7 +24,7 @@ Transformers bridge raw parser fields and typed provider results, including meth
 
 > **new XozillaTransformer**(`httpClient`, `progressManager`): `XozillaTransformer`
 
-Defined in: [packages/base/BaseTransformer.ts:34](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseTransformer.ts#L34)
+Defined in: [packages/base/BaseTransformer.ts:34](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L34)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [packages/base/BaseTransformer.ts:34](https://github.com/cloudgrids/
 
 > `protected` `readonly` **httpClient**: [`HttpClient`](HttpClient.md)
 
-Defined in: [packages/base/BaseTransformer.ts:35](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseTransformer.ts#L35)
+Defined in: [packages/base/BaseTransformer.ts:35](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L35)
 
 #### Inherited from
 
@@ -62,7 +62,7 @@ Defined in: [packages/base/BaseTransformer.ts:35](https://github.com/cloudgrids/
 
 > `protected` `readonly` **progressManager**: [`ProgressManager`](ProgressManager.md)
 
-Defined in: [packages/base/BaseTransformer.ts:36](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseTransformer.ts#L36)
+Defined in: [packages/base/BaseTransformer.ts:36](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L36)
 
 #### Inherited from
 
@@ -74,7 +74,7 @@ Defined in: [packages/base/BaseTransformer.ts:36](https://github.com/cloudgrids/
 
 > **requestData**(`url`, `opts`): `Promise`\<`any`\>
 
-Defined in: [packages/base/BaseTransformer.ts:66](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseTransformer.ts#L66)
+Defined in: [packages/base/BaseTransformer.ts:66](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L66)
 
 Fetches JSON data for providers that expose API-backed metadata.
 
@@ -108,7 +108,7 @@ Parsed JSON response.
 
 > `protected` **uniqueVideos**\<`T`\>(`videos`, `options`): [`VideoSourceOutput`](../interfaces/VideoSourceOutput.md)[]
 
-Defined in: [packages/base/BaseTransformer.ts:77](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseTransformer.ts#L77)
+Defined in: [packages/base/BaseTransformer.ts:77](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L77)
 
 Removes duplicate video URLs while preserving quality information.
 
@@ -148,7 +148,7 @@ Unique video sources in the shared shape.
 
 > `protected` **unique**\<`T`\>(`arr`): `T`[]
 
-Defined in: [packages/base/BaseTransformer.ts:94](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseTransformer.ts#L94)
+Defined in: [packages/base/BaseTransformer.ts:94](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L94)
 
 #### Type Parameters
 
@@ -176,7 +176,7 @@ Defined in: [packages/base/BaseTransformer.ts:94](https://github.com/cloudgrids/
 
 > `protected` **defaultFlashVarsVideoOutput**\<`T`\>(`metadata`): [`DefaultFlashVarsVideoOutput`](../interfaces/DefaultFlashVarsVideoOutput.md)
 
-Defined in: [packages/base/BaseTransformer.ts:99](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseTransformer.ts#L99)
+Defined in: [packages/base/BaseTransformer.ts:99](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L99)
 
 #### Type Parameters
 
@@ -204,7 +204,7 @@ Defined in: [packages/base/BaseTransformer.ts:99](https://github.com/cloudgrids/
 
 > `protected` **mapSources**(`sources`, `quality?`, `filter?`): [`VideosFormat`](../interfaces/VideosFormat.md)
 
-Defined in: [packages/base/BaseTransformer.ts:119](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseTransformer.ts#L119)
+Defined in: [packages/base/BaseTransformer.ts:119](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L119)
 
 #### Parameters
 
@@ -234,7 +234,7 @@ Defined in: [packages/base/BaseTransformer.ts:119](https://github.com/cloudgrids
 
 > `protected` **defaultVideoOutput**\<`T`\>(`metadata`, `options?`): `T`
 
-Defined in: [packages/base/BaseTransformer.ts:137](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/base/BaseTransformer.ts#L137)
+Defined in: [packages/base/BaseTransformer.ts:137](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L137)
 
 #### Type Parameters
 
@@ -276,7 +276,7 @@ Defined in: [packages/base/BaseTransformer.ts:137](https://github.com/cloudgrids
 
 > **transform**(`url`, `request?`): `Promise`\<[`DefaultExecutionResult`](../interfaces/DefaultExecutionResult.md)\<`unknown`\> \| [`XozillaVideoOutput`](../interfaces/XozillaVideoOutput.md)\>
 
-Defined in: [packages/providers/xozilla/XozillaTransformer.ts:15](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/xozilla/XozillaTransformer.ts#L15)
+Defined in: [packages/providers/xozilla/XozillaTransformer.ts:15](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xozilla/XozillaTransformer.ts#L15)
 
 Fetches HTML and merges default metadata with provider-specific metadata.
 

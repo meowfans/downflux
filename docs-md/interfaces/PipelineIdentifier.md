@@ -6,7 +6,7 @@
 
 # Interface: PipelineIdentifier
 
-Defined in: [packages/contracts/PipelineContracts.ts:4](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L4)
+Defined in: [packages/contracts/PipelineContracts.ts:4](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L4)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:4](https://github.com/cloud
 
 > **key**: `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:5](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L5)
+Defined in: [packages/contracts/PipelineContracts.ts:5](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L5)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:5](https://github.com/cloud
 
 > **mediaType**: [`MediaType`](../enumerations/MediaType.md)
 
-Defined in: [packages/contracts/PipelineContracts.ts:6](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L6)
+Defined in: [packages/contracts/PipelineContracts.ts:6](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L6)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:6](https://github.com/cloud
 
 > **mimeType**: `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:7](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L7)
+Defined in: [packages/contracts/PipelineContracts.ts:7](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L7)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [packages/contracts/PipelineContracts.ts:7](https://github.com/cloud
 
 > **extension**: [`AllowedExtension`](../type-aliases/AllowedExtension.md)
 
-Defined in: [packages/contracts/PipelineContracts.ts:8](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L8)
+Defined in: [packages/contracts/PipelineContracts.ts:8](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L8)

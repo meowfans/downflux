@@ -6,7 +6,7 @@
 
 # Class: TaskCoordinator
 
-Defined in: [packages/core/coordinators/TaskCoordinator.ts:16](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TaskCoordinator.ts#L16)
+Defined in: [packages/core/coordinators/TaskCoordinator.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TaskCoordinator.ts#L16)
 
 Coordinates concurrent work within an execution result.
 
@@ -22,7 +22,7 @@ and from the lower-level transfer code that writes individual items.
 
 > **new TaskCoordinator**(`transferCoordinator`, `fileManager`, `transformerRegistry`, `progressManager`, `pipelineRegistry`): `TaskCoordinator`
 
-Defined in: [packages/core/coordinators/TaskCoordinator.ts:19](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TaskCoordinator.ts#L19)
+Defined in: [packages/core/coordinators/TaskCoordinator.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TaskCoordinator.ts#L19)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [packages/core/coordinators/TaskCoordinator.ts:19](https://github.co
 
 > **runWithConcurrency**\<`T`\>(`items`, `concurrency`, `worker`): `Promise`\<`void`\>
 
-Defined in: [packages/core/coordinators/TaskCoordinator.ts:158](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TaskCoordinator.ts#L158)
+Defined in: [packages/core/coordinators/TaskCoordinator.ts:178](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TaskCoordinator.ts#L178)
 
 Runs asynchronous workers with a bounded concurrency limit.
 
@@ -96,7 +96,7 @@ Async item handler.
 
 > **handleJsonOutput**\<`T`, `S`\>(`result`, `options`): `Promise`\<[`ExecutionResult`](../interfaces/ExecutionResult.md)\<`T`, `S`\>\>
 
-Defined in: [packages/core/coordinators/TaskCoordinator.ts:182](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TaskCoordinator.ts#L182)
+Defined in: [packages/core/coordinators/TaskCoordinator.ts:202](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TaskCoordinator.ts#L202)
 
 Persists a JSON execution result.
 
@@ -136,7 +136,7 @@ The original execution result.
 
 > **handleDeviceOutputAsync**\<`T`, `S`\>(`options`, `outputType`, `request`, `pipelineHooks`, `result`): `Promise`\<[`JobSettlement`](../interfaces/JobSettlement.md)\>
 
-Defined in: [packages/core/coordinators/TaskCoordinator.ts:199](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/core/coordinators/TaskCoordinator.ts#L199)
+Defined in: [packages/core/coordinators/TaskCoordinator.ts:219](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/TaskCoordinator.ts#L219)
 
 Starts background download processing for device or buffer output.
 

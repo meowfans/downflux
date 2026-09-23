@@ -6,7 +6,7 @@
 
 # Interface: IdentifierContext\<TMetadata\>
 
-Defined in: [packages/contracts/PipelineContracts.ts:46](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L46)
+Defined in: [packages/contracts/PipelineContracts.ts:46](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L46)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:46](https://github.com/clou
 
 > **mediaType**: [`MediaType`](../enumerations/MediaType.md)
 
-Defined in: [packages/contracts/PipelineContracts.ts:47](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L47)
+Defined in: [packages/contracts/PipelineContracts.ts:47](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L47)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:47](https://github.com/clou
 
 > **metadata**: `TMetadata`
 
-Defined in: [packages/contracts/PipelineContracts.ts:48](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L48)
+Defined in: [packages/contracts/PipelineContracts.ts:48](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L48)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:48](https://github.com/clou
 
 > **url**: `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:49](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L49)
+Defined in: [packages/contracts/PipelineContracts.ts:49](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L49)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:49](https://github.com/clou
 
 > `optional` **id?**: `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:50](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L50)
+Defined in: [packages/contracts/PipelineContracts.ts:50](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L50)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:50](https://github.com/clou
 
 > `optional` **secondaryId?**: `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:51](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L51)
+Defined in: [packages/contracts/PipelineContracts.ts:51](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L51)
 
 ***
 
@@ -60,4 +60,4 @@ Defined in: [packages/contracts/PipelineContracts.ts:51](https://github.com/clou
 
 > `optional` **username?**: `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:52](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/PipelineContracts.ts#L52)
+Defined in: [packages/contracts/PipelineContracts.ts:52](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L52)

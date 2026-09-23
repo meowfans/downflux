@@ -6,7 +6,7 @@
 
 # Interface: OkPornVideoOutput
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:57](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L57)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:57](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/okporn/OkPornContracts.ts#L57)
 
 Output structure for OkPorn video operations.
 Contains video metadata, sources, poster, and album context.
@@ -25,7 +25,7 @@ Contains video metadata, sources, poster, and album context.
 
 > **title**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:257](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L257)
+Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L274)
 
 #### Inherited from
 
@@ -37,7 +37,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:257](https://github.com/cl
 
 > **tags**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:258](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L258)
+Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L275)
 
 #### Inherited from
 
@@ -49,7 +49,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:258](https://github.com/cl
 
 > **description**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:259](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L259)
+Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L276)
 
 #### Inherited from
 
@@ -61,7 +61,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:259](https://github.com/cl
 
 > **pageUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:260](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L260)
+Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L277)
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:260](https://github.com/cl
 
 > **poster**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:269](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L269)
+Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L286)
 
 #### Inherited from
 
@@ -85,7 +85,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:269](https://github.com/cl
 
 > **videos**: [`VideosFormat`](VideosFormat.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:270](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ExecutionContracts.ts#L270)
+Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L287)
 
 #### Inherited from
 
@@ -97,7 +97,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:270](https://github.com/cl
 
 > **videoId**: `string`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:59](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L59)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:59](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/okporn/OkPornContracts.ts#L59)
 
 Video identifier
 
@@ -107,7 +107,7 @@ Video identifier
 
 > **videoScreenshot**: `string`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:62](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L62)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:62](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/okporn/OkPornContracts.ts#L62)
 
 Screenshot image URL
 
@@ -117,7 +117,7 @@ Screenshot image URL
 
 > `optional` **videoCreatedAt?**: `string`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:65](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L65)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:65](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/okporn/OkPornContracts.ts#L65)
 
 Video creation date text
 
@@ -127,7 +127,7 @@ Video creation date text
 
 > **author**: `string`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:68](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L68)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:68](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/okporn/OkPornContracts.ts#L68)
 
 Author name associated with the video
 
@@ -137,7 +137,7 @@ Author name associated with the video
 
 > `optional` **fullVideoSource?**: `string`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:71](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L71)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:71](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/okporn/OkPornContracts.ts#L71)
 
 Full source URL when available
 
@@ -147,7 +147,7 @@ Full source URL when available
 
 > `optional` **videoAlbumId?**: `string`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:74](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L74)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:74](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/okporn/OkPornContracts.ts#L74)
 
 Album identifier linked to the video
 
@@ -157,7 +157,7 @@ Album identifier linked to the video
 
 > `optional` **videoAlbum?**: [`OkPornAlbumOutput`](OkPornAlbumOutput.md)
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:77](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L77)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:77](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/okporn/OkPornContracts.ts#L77)
 
 Album metadata linked to the video
 
@@ -167,6 +167,6 @@ Album metadata linked to the video
 
 > **starredBy**: `string`[]
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:80](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/providers/okporn/OkPornContracts.ts#L80)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:80](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/okporn/OkPornContracts.ts#L80)
 
 Starred by list

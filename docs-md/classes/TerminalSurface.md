@@ -6,7 +6,7 @@
 
 # Class: TerminalSurface
 
-Defined in: packages/core/ui/TerminalSurface.ts:15
+Defined in: [packages/core/ui/TerminalSurface.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/TerminalSurface.ts#L16)
 
 Process-wide owner of the live terminal region.
 
@@ -38,7 +38,7 @@ gives one place to push permanent lines through ([TerminalSurface.persist](#pers
 
 > **get** `static` **instance**(): `TerminalSurface`
 
-Defined in: packages/core/ui/TerminalSurface.ts:18
+Defined in: [packages/core/ui/TerminalSurface.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/TerminalSurface.ts#L19)
 
 ##### Returns
 
@@ -50,7 +50,7 @@ Defined in: packages/core/ui/TerminalSurface.ts:18
 
 > **setBlock**(`owner`, `lines`, `options?`): `void`
 
-Defined in: packages/core/ui/TerminalSurface.ts:295
+Defined in: [packages/core/ui/TerminalSurface.ts:295](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/TerminalSurface.ts#L295)
 
 Registers or updates one owner's live block.
 
@@ -80,7 +80,7 @@ Registers or updates one owner's live block.
 
 > **persist**(`line`): `void`
 
-Defined in: packages/core/ui/TerminalSurface.ts:318
+Defined in: [packages/core/ui/TerminalSurface.ts:318](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/TerminalSurface.ts#L318)
 
 Writes a permanent line above the live region.
 
@@ -106,7 +106,7 @@ here erases the region first, emits the line, then redraws below it.
 
 > **releaseBlock**(`owner`): `void`
 
-Defined in: packages/core/ui/TerminalSurface.ts:336
+Defined in: [packages/core/ui/TerminalSurface.ts:336](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/TerminalSurface.ts#L336)
 
 Retires one owner's block, leaving its last frame on screen.
 
@@ -131,7 +131,7 @@ completed job's summary survives while other jobs keep rendering below it.
 
 > **release**(): `void`
 
-Defined in: packages/core/ui/TerminalSurface.ts:355
+Defined in: [packages/core/ui/TerminalSurface.ts:355](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/TerminalSurface.ts#L355)
 
 Restores the terminal once no block is live.
 

@@ -6,7 +6,7 @@
 
 # Enumeration: MediaType
 
-Defined in: [packages/types/PipelineTypes.ts:1](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L1)
+Defined in: [packages/types/PipelineTypes.ts:1](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L1)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [packages/types/PipelineTypes.ts:1](https://github.com/cloudgrids/do
 
 > **VIDEOS**: `"videos"`
 
-Defined in: [packages/types/PipelineTypes.ts:2](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L2)
+Defined in: [packages/types/PipelineTypes.ts:2](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L2)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/types/PipelineTypes.ts:2](https://github.com/cloudgrids/do
 
 > **IMAGES**: `"images"`
 
-Defined in: [packages/types/PipelineTypes.ts:3](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L3)
+Defined in: [packages/types/PipelineTypes.ts:3](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L3)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/types/PipelineTypes.ts:3](https://github.com/cloudgrids/do
 
 > **AUDIOS**: `"audios"`
 
-Defined in: [packages/types/PipelineTypes.ts:4](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L4)
+Defined in: [packages/types/PipelineTypes.ts:4](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L4)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/types/PipelineTypes.ts:4](https://github.com/cloudgrids/do
 
 > **ALBUMS**: `"albums"`
 
-Defined in: [packages/types/PipelineTypes.ts:5](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L5)
+Defined in: [packages/types/PipelineTypes.ts:5](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L5)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/types/PipelineTypes.ts:5](https://github.com/cloudgrids/do
 
 > **SCREENSHOT**: `"screenshot"`
 
-Defined in: [packages/types/PipelineTypes.ts:6](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L6)
+Defined in: [packages/types/PipelineTypes.ts:6](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L6)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/types/PipelineTypes.ts:6](https://github.com/cloudgrids/do
 
 > **VIDEO\_SCREENSHOT**: `"video_screenshot"`
 
-Defined in: [packages/types/PipelineTypes.ts:7](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L7)
+Defined in: [packages/types/PipelineTypes.ts:7](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L7)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [packages/types/PipelineTypes.ts:7](https://github.com/cloudgrids/do
 
 > **VIDEO\_TIMELINES**: `"video_timelines"`
 
-Defined in: [packages/types/PipelineTypes.ts:8](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L8)
+Defined in: [packages/types/PipelineTypes.ts:8](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L8)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [packages/types/PipelineTypes.ts:8](https://github.com/cloudgrids/do
 
 > **VIDEO\_POSTER**: `"video_poster"`
 
-Defined in: [packages/types/PipelineTypes.ts:9](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L9)
+Defined in: [packages/types/PipelineTypes.ts:9](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L9)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [packages/types/PipelineTypes.ts:9](https://github.com/cloudgrids/do
 
 > **ALBUM\_PREVIEW**: `"album_preview"`
 
-Defined in: [packages/types/PipelineTypes.ts:10](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L10)
+Defined in: [packages/types/PipelineTypes.ts:10](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L10)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [packages/types/PipelineTypes.ts:10](https://github.com/cloudgrids/d
 
 > **VIDEO\_ALBUM**: `"video_album"`
 
-Defined in: [packages/types/PipelineTypes.ts:11](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L11)
+Defined in: [packages/types/PipelineTypes.ts:11](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L11)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [packages/types/PipelineTypes.ts:11](https://github.com/cloudgrids/d
 
 > **VIDEO\_PREVIEW**: `"video_preview"`
 
-Defined in: [packages/types/PipelineTypes.ts:12](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L12)
+Defined in: [packages/types/PipelineTypes.ts:12](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L12)
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: [packages/types/PipelineTypes.ts:12](https://github.com/cloudgrids/d
 
 > **VIDEO\_PREVIEWS**: `"video_previews"`
 
-Defined in: [packages/types/PipelineTypes.ts:13](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L13)
+Defined in: [packages/types/PipelineTypes.ts:13](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L13)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: [packages/types/PipelineTypes.ts:13](https://github.com/cloudgrids/d
 
 > **THUMBNAILS**: `"thumbnails"`
 
-Defined in: [packages/types/PipelineTypes.ts:14](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L14)
+Defined in: [packages/types/PipelineTypes.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L14)
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: [packages/types/PipelineTypes.ts:14](https://github.com/cloudgrids/d
 
 > **FAVORITES**: `"favorites"`
 
-Defined in: [packages/types/PipelineTypes.ts:15](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L15)
+Defined in: [packages/types/PipelineTypes.ts:15](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L15)
 
 ***
 
@@ -126,7 +126,7 @@ Defined in: [packages/types/PipelineTypes.ts:15](https://github.com/cloudgrids/d
 
 > **COLLECTION**: `"collection"`
 
-Defined in: [packages/types/PipelineTypes.ts:16](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L16)
+Defined in: [packages/types/PipelineTypes.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L16)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: [packages/types/PipelineTypes.ts:16](https://github.com/cloudgrids/d
 
 > **UPLOADS**: `"uploads"`
 
-Defined in: [packages/types/PipelineTypes.ts:17](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L17)
+Defined in: [packages/types/PipelineTypes.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L17)
 
 ***
 
@@ -142,7 +142,7 @@ Defined in: [packages/types/PipelineTypes.ts:17](https://github.com/cloudgrids/d
 
 > **AVATAR**: `"avatar"`
 
-Defined in: [packages/types/PipelineTypes.ts:18](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L18)
+Defined in: [packages/types/PipelineTypes.ts:18](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L18)
 
 ***
 
@@ -150,7 +150,7 @@ Defined in: [packages/types/PipelineTypes.ts:18](https://github.com/cloudgrids/d
 
 > **COVER**: `"cover"`
 
-Defined in: [packages/types/PipelineTypes.ts:19](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L19)
+Defined in: [packages/types/PipelineTypes.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L19)
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: [packages/types/PipelineTypes.ts:19](https://github.com/cloudgrids/d
 
 > **CHANNELS**: `"channels"`
 
-Defined in: [packages/types/PipelineTypes.ts:20](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L20)
+Defined in: [packages/types/PipelineTypes.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L20)
 
 ***
 
@@ -166,4 +166,4 @@ Defined in: [packages/types/PipelineTypes.ts:20](https://github.com/cloudgrids/d
 
 > **OTHER**: `"other"`
 
-Defined in: [packages/types/PipelineTypes.ts:21](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/types/PipelineTypes.ts#L21)
+Defined in: [packages/types/PipelineTypes.ts:21](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/types/PipelineTypes.ts#L21)

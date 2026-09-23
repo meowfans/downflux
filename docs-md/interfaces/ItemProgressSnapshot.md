@@ -6,7 +6,7 @@
 
 # Interface: ItemProgressSnapshot
 
-Defined in: [packages/contracts/ProgressContracts.ts:14](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ProgressContracts.ts#L14)
+Defined in: [packages/contracts/ProgressContracts.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ProgressContracts.ts#L14)
 
 Progress for a single download item.
 
@@ -23,7 +23,7 @@ job fields.
 
 > **key**: `string`
 
-Defined in: [packages/contracts/ProgressContracts.ts:16](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ProgressContracts.ts#L16)
+Defined in: [packages/contracts/ProgressContracts.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ProgressContracts.ts#L16)
 
 Stable identity of the pipeline item.
 
@@ -33,7 +33,7 @@ Stable identity of the pipeline item.
 
 > **label**: `string`
 
-Defined in: [packages/contracts/ProgressContracts.ts:19](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ProgressContracts.ts#L19)
+Defined in: [packages/contracts/ProgressContracts.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ProgressContracts.ts#L19)
 
 Short human label, typically the filename.
 
@@ -43,7 +43,7 @@ Short human label, typically the filename.
 
 > **status**: `"DOWNLOADING"` \| `"DOWNLOADED"` \| `"FAILED"`
 
-Defined in: [packages/contracts/ProgressContracts.ts:22](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ProgressContracts.ts#L22)
+Defined in: [packages/contracts/ProgressContracts.ts:22](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ProgressContracts.ts#L22)
 
 Whether the item is still transferring.
 
@@ -53,7 +53,7 @@ Whether the item is still transferring.
 
 > **downloadedBytes**: `number`
 
-Defined in: [packages/contracts/ProgressContracts.ts:24](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ProgressContracts.ts#L24)
+Defined in: [packages/contracts/ProgressContracts.ts:24](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ProgressContracts.ts#L24)
 
 ***
 
@@ -61,7 +61,7 @@ Defined in: [packages/contracts/ProgressContracts.ts:24](https://github.com/clou
 
 > **totalBytes**: `number`
 
-Defined in: [packages/contracts/ProgressContracts.ts:27](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ProgressContracts.ts#L27)
+Defined in: [packages/contracts/ProgressContracts.ts:27](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ProgressContracts.ts#L27)
 
 Expected size, or 0 when the source declares none (segmented streams).
 
@@ -71,7 +71,7 @@ Expected size, or 0 when the source declares none (segmented streams).
 
 > **speed**: `number`
 
-Defined in: [packages/contracts/ProgressContracts.ts:30](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ProgressContracts.ts#L30)
+Defined in: [packages/contracts/ProgressContracts.ts:30](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ProgressContracts.ts#L30)
 
 Bytes per second for this item.
 
@@ -81,7 +81,7 @@ Bytes per second for this item.
 
 > **eta**: `number`
 
-Defined in: [packages/contracts/ProgressContracts.ts:33](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ProgressContracts.ts#L33)
+Defined in: [packages/contracts/ProgressContracts.ts:33](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ProgressContracts.ts#L33)
 
 Seconds remaining for this item, or 0 when not estimable.
 
@@ -91,7 +91,7 @@ Seconds remaining for this item, or 0 when not estimable.
 
 > **totalSegments**: `number`
 
-Defined in: [packages/contracts/ProgressContracts.ts:35](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ProgressContracts.ts#L35)
+Defined in: [packages/contracts/ProgressContracts.ts:35](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ProgressContracts.ts#L35)
 
 ***
 
@@ -99,4 +99,4 @@ Defined in: [packages/contracts/ProgressContracts.ts:35](https://github.com/clou
 
 > **resolvedSegments**: `number`
 
-Defined in: [packages/contracts/ProgressContracts.ts:36](https://github.com/cloudgrids/downflux/blob/1f8790287a3ea22feb0e5a1f559d29d445cd9a44/packages/contracts/ProgressContracts.ts#L36)
+Defined in: [packages/contracts/ProgressContracts.ts:36](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ProgressContracts.ts#L36)
