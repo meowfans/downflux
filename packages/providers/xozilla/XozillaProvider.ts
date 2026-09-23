@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { XozillaExecArgs, XozillaVideoOutput } from './XozillaContracts';
+import { type XozillaExecArgs, type XozillaVideoOutput } from './XozillaContracts';
 import { XozillaMethods } from './XozillaTypes';
 
 /**

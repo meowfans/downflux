@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { DaFreePornExecArgs, DaFreePornVideoOutput } from './DaFreePornContracts';
+import { type DaFreePornExecArgs, type DaFreePornVideoOutput } from './DaFreePornContracts';
 import { DaFreePornMethods } from './DaFreePornTypes';
 
 /**

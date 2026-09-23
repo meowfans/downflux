@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
-import { ImageExtension, MediaType } from '@types';
-import { Porn300ExecArgs, Porn300Output } from './Porn300Contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
+import { type ImageExtension, MediaType } from '@types';
+import { type Porn300ExecArgs, type Porn300Output } from './Porn300Contracts';
 
 /**
  * Builds downloadable Porn300 pipeline items from normalized metadata.

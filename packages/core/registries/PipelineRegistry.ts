@@ -1,6 +1,6 @@
 import { BasePipeline } from '@base';
-import { ExecutionArgs, PipelineItem } from '@contracts';
-import { FileManager } from '@storage';
+import { type ExecutionArgs, type PipelineItem } from '@contracts';
+import { type FileManager } from '@storage';
 import { Provider } from '@types';
 
 type PipelineCtor = new (fileManager: FileManager) => BasePipeline<any, any>;

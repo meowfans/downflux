@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { XHamsterExecArgs, XHamsterOutput, XHamsterVideoOutput } from './XHamsterContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type XHamsterExecArgs, type XHamsterOutput, type XHamsterVideoOutput } from './XHamsterContracts';
 import { XHamsterMethods } from './XHamsterTypes';
 
 /**

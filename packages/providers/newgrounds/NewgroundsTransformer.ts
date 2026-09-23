@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { NewgroundsExecArgs, NewgroundsOutput } from './NewgroundsContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type NewgroundsExecArgs, type NewgroundsOutput } from './NewgroundsContracts';
 import { NewgroundsMethods } from './NewgroundsTypes';
 
 type NewgroundsTransformedOutput = DefaultExecutionResult<Partial<NewgroundsOutput>>;

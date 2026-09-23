@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { MangaDexExecArgs, MangaDexOutput } from './MangaDexContracts';
+import { type MangaDexExecArgs, type MangaDexOutput } from './MangaDexContracts';
 
 export class MangaDexPipeline extends BasePipeline<MangaDexExecArgs, MangaDexOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<MangaDexOutput>): string {

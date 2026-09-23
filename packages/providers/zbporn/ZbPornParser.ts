@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { ZbPornOutput } from './ZbPornContracts';
+import { type ZbPornOutput } from './ZbPornContracts';
 
 /**
  * Extracts ZbPorn-specific metadata from fetched HTML.

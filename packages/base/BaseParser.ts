@@ -1,4 +1,4 @@
-import { DefaultExecutionResult, DefaultFlashVarsVideoOutput, FlashVarsOutput, VideoSourceOutput } from '@contracts';
+import { type DefaultExecutionResult, type DefaultFlashVarsVideoOutput, type FlashVarsOutput, type VideoSourceOutput } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { inferVideoQuality, KvsResolver } from '@shared';
 import { Provider, VideoQuality } from '@types';

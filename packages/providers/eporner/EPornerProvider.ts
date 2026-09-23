@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider } from '@types';
-import { EPornerExecArgs, EPornerVideoOutput } from './EPornerContracts';
+import { type EPornerExecArgs, type EPornerVideoOutput } from './EPornerContracts';
 import { EPornerMethods } from './EPornerTypes';
 
 /**

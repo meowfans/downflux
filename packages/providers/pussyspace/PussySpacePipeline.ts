@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { PussySpaceExecArgs, PussySpaceOutput } from './PussySpaceContracts';
+import { type PussySpaceExecArgs, type PussySpaceOutput } from './PussySpaceContracts';
 
 /**
  * Builds downloadable PussySpace pipeline items from normalized metadata.

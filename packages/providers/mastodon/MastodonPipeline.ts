@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { MastodonExecArgs, MastodonOutput } from './MastodonContracts';
+import { type MastodonExecArgs, type MastodonOutput } from './MastodonContracts';
 
 export class MastodonPipeline extends BasePipeline<MastodonExecArgs, MastodonOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<MastodonOutput>): string {

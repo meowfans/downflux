@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { BoKepPornExecArgs, BoKepPornOutput, BoKepPornVideoOutput } from './BoKepPornContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type BoKepPornExecArgs, type BoKepPornOutput, type BoKepPornVideoOutput } from './BoKepPornContracts';
 import { BoKepPornMethods } from './BoKepPornTypes';
 
 type BoKepPornTransformedOutput = DefaultExecutionResult<Partial<BoKepPornOutput>>;

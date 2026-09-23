@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { MastodonExecArgs } from './MastodonContracts';
+import { type MastodonExecArgs } from './MastodonContracts';
 
 export class MastodonProvider extends GenericContentProvider<MastodonExecArgs> {
 	constructor(url: string) {

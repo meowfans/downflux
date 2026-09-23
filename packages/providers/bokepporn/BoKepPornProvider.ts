@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { BoKepPornExecArgs, BoKepPornVideoOutput } from './BoKepPornContracts';
+import { type BoKepPornExecArgs, type BoKepPornVideoOutput } from './BoKepPornContracts';
 import { BoKepPornMethods } from './BoKepPornTypes';
 
 /**

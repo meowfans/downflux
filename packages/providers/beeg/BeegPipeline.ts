@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMapping } from '@contracts';
+import { type IdentifierContext, type PipelineMapping } from '@contracts';
 import { MediaType } from '@types';
-import { BeegExecArgs, BeegOutput } from './BeegContracts';
+import { type BeegExecArgs, type BeegOutput } from './BeegContracts';
 
 /**
  * Builds downloadable Beeg pipeline items from normalized metadata.

@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { MangaDexExecArgs } from './MangaDexContracts';
+import { type MangaDexExecArgs } from './MangaDexContracts';
 
 export class MangaDexProvider extends GenericContentProvider<MangaDexExecArgs> {
 	constructor(url: string) {

@@ -1,5 +1,5 @@
-import { ExecutionOptions, ItemProgressSnapshot, JobProgressEvent } from '@contracts';
-import { JobProgressStatus } from '@types';
+import { type ExecutionOptions, type ItemProgressSnapshot, type JobProgressEvent } from '@contracts';
+import { type JobProgressStatus } from '@types';
 import EventEmitter from 'events';
 
 export interface ProgressEvents {

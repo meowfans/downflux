@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { PixivExecArgs } from './PixivContracts';
+import { type PixivExecArgs } from './PixivContracts';
 
 export class PixivProvider extends GenericContentProvider<PixivExecArgs> {
 	constructor(url: string) {

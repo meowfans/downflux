@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { EpicGfsExecArgs, EpicGfsOutput } from './EpicGfsContracts';
+import { type EpicGfsExecArgs, type EpicGfsOutput } from './EpicGfsContracts';
 
 /**
  * Builds downloadable EpicGfs pipeline items from normalized metadata.

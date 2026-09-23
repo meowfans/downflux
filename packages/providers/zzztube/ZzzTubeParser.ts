@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { ZzzTubeOutput } from './ZzzTubeContracts';
+import { type ZzzTubeOutput } from './ZzzTubeContracts';
 
 /**
  * Extracts ZzzTube-specific metadata from fetched HTML.

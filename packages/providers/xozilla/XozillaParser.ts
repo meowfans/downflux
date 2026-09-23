@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { XozillaOutput } from './XozillaContracts';
+import { type XozillaOutput } from './XozillaContracts';
 
 /**
  * Extracts Xozilla-specific metadata from fetched HTML.

@@ -1,6 +1,6 @@
-import { BaseProvider, ProviderMetadata } from '@base';
-import { DefaultExecutionResult, ExecutionArgs } from '@contracts';
-import { ExtractionTarget, Provider } from '@types';
+import { BaseProvider, type ProviderMetadata } from '@base';
+import { type DefaultExecutionResult, type ExecutionArgs } from '@contracts';
+import { ExtractionTarget, type Provider } from '@types';
 
 export interface GenericContentProviderConfig {
 	provider: Provider;

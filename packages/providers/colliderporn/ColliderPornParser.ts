@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider, VideoQuality } from '@types';
-import { ColliderPornOutput } from './ColliderPornContracts';
+import { type ColliderPornOutput } from './ColliderPornContracts';
 
 /**
  * Extracts ColliderPorn-specific metadata from fetched HTML.

@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { BehanceExecArgs, BehanceOutput } from './BehanceContracts';
+import { type BehanceExecArgs, type BehanceOutput } from './BehanceContracts';
 
 export class BehancePipeline extends BasePipeline<BehanceExecArgs, BehanceOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<BehanceOutput>): string {

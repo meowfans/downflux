@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { InstagramExecArgs, InstagramOutput } from './InstagramContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type InstagramExecArgs, type InstagramOutput } from './InstagramContracts';
 import { InstagramMethods } from './InstagramTypes';
 
 type InstagramTransformedOutput = DefaultExecutionResult<Partial<InstagramOutput>>;

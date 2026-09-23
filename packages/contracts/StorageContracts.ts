@@ -1,5 +1,5 @@
-import { OutputType, Provider } from '@types';
-import { Readable, Writable } from 'stream';
+import { type OutputType, type Provider } from '@types';
+import { type Readable, type Writable } from 'stream';
 
 export interface CreateSinkInput {
 	provider: Provider;

@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { ItsPornExecArgs, ItsPornVideoOutput } from './ItsPornContracts';
+import { type ItsPornExecArgs, type ItsPornVideoOutput } from './ItsPornContracts';
 import { ItsPornMethods } from './ItsPornTypes';
 
 /**

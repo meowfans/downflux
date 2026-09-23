@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { BlackPornExecArgs, BlackPornOutput } from './BlackPornContracts';
+import { type BlackPornExecArgs, type BlackPornOutput } from './BlackPornContracts';
 
 /**
  * Pipeline for organizing BlackPorn video media files.

@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { TheyAreHugeExecArgs, TheyAreHugeOutput } from './TheyAreHugeContracts';
+import { type TheyAreHugeExecArgs, type TheyAreHugeOutput } from './TheyAreHugeContracts';
 
 /**
  * Builds downloadable TheyAreHuge pipeline items from normalized metadata.

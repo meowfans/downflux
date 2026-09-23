@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { inferVideoQuality } from '@shared';
 import { MediaType } from '@types';
-import { PerfectGirlsExecArgs, PerfectGirlsOutput } from './PerfectGirlsContracts';
+import { type PerfectGirlsExecArgs, type PerfectGirlsOutput } from './PerfectGirlsContracts';
 
 /**
  * Builds downloadable PerfectGirls pipeline items from normalized metadata.

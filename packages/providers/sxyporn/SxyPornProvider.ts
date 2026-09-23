@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { SxyPornExecArgs, SxyPornVideoOutput } from './SxyPornContracts';
+import { type SxyPornExecArgs, type SxyPornVideoOutput } from './SxyPornContracts';
 import { SxyPornMethods } from './SxyPornTypes';
 
 /**

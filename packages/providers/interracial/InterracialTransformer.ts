@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { InterracialExecArgs, InterracialOutput, InterracialVideoOutput } from './InterracialContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type InterracialExecArgs, type InterracialOutput, type InterracialVideoOutput } from './InterracialContracts';
 import { InterracialMethods } from './InterracialTypes';
 
 type InterracialTransformedOutput = DefaultExecutionResult<Partial<InterracialOutput>>;

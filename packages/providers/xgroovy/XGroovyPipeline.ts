@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { XGroovyExecArgs, XGroovyOutput } from './XGroovyContracts';
+import { type XGroovyExecArgs, type XGroovyOutput } from './XGroovyContracts';
 
 /**
  * Builds downloadable XGroovy pipeline items from normalized metadata.

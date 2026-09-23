@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { Lesbian8ExecArgs, Lesbian8Output, Lesbian8VideoOutput } from './Lesbian8Contracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type Lesbian8ExecArgs, type Lesbian8Output, type Lesbian8VideoOutput } from './Lesbian8Contracts';
 import { Lesbian8Methods } from './Lesbian8Types';
 
 /**

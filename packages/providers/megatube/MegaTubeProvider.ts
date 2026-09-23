@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { MegaTubeExecArgs, MegaTubeVideoOutput } from './MegaTubeContracts';
+import { type MegaTubeExecArgs, type MegaTubeVideoOutput } from './MegaTubeContracts';
 import { MegaTubeMethods } from './MegaTubeTypes';
 
 /**

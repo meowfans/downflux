@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { XGroovyExecArgs, XGroovyOutput, XGroovyVideoOutput } from './XGroovyContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type XGroovyExecArgs, type XGroovyOutput, type XGroovyVideoOutput } from './XGroovyContracts';
 import { XGroovyMethods } from './XGroovyTypes';
 
 /**

@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { PornHubExecArgs, PornHubOutput } from './PornHubContracts';
+import { type PornHubExecArgs, type PornHubOutput } from './PornHubContracts';
 
 /**
  * Builds downloadable PornHub pipeline items from normalized metadata.

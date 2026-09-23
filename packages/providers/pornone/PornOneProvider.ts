@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { Provider } from '@types';
-import { PornOneExecArgs, PornOneVideoOutput } from './PornOneContracts';
+import { type PornOneExecArgs, type PornOneVideoOutput } from './PornOneContracts';
 import { PornOneMethods } from './PornOneTypes';
 
 /**

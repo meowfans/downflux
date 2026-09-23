@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { XozillaExecArgs, XozillaOutput, XozillaVideoOutput } from './XozillaContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type XozillaExecArgs, type XozillaOutput, type XozillaVideoOutput } from './XozillaContracts';
 import { XozillaMethods } from './XozillaTypes';
 
 type XozillaTransformedOutput = DefaultExecutionResult<Partial<XozillaOutput>>;

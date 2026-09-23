@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { SexVidExecArgs, SexVidOutput, SexVidVideoOutput } from './SexVidContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type SexVidExecArgs, type SexVidOutput, type SexVidVideoOutput } from './SexVidContracts';
 import { SexVidMethods } from './SexVidTypes';
 
 /**

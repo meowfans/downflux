@@ -1,4 +1,4 @@
-import { DefaultExecutionResult, DefaultVideoOutput, ExecutionArgs } from '@contracts';
+import { type DefaultExecutionResult, type DefaultVideoOutput, type ExecutionArgs } from '@contracts';
 
 export interface ZzzTubeExecArgs extends ExecutionArgs {}
 export interface ZzzTubeOutput extends DefaultExecutionResult, ZzzTubeVideoOutput {}

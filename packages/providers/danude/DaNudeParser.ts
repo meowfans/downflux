@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { DaNudeOutput } from './DaNudeContracts';
+import { type DaNudeOutput } from './DaNudeContracts';
 
 /**
  * Extracts DaNude-specific metadata from fetched HTML.

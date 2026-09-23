@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { UnsplashExecArgs } from './UnsplashContracts';
+import { type UnsplashExecArgs } from './UnsplashContracts';
 
 export class UnsplashProvider extends GenericContentProvider<UnsplashExecArgs> {
 	constructor(url: string) {

@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { FlickrOutput } from './FlickrContracts';
+import { type FlickrOutput } from './FlickrContracts';
 
 export class FlickrParser extends BaseParser {
 	public override transform(html: string, sourceUrl: string): Partial<DefaultExecutionResult<Partial<FlickrOutput>>> {

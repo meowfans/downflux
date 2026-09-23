@@ -1,7 +1,7 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { OutputType, VideoQuality } from '@types';
-import { PornDoeExecArgs, PornDoeOutput, PornDoeVideoOutput, PornDoeVideoSource } from './PornDoeContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type OutputType, type VideoQuality } from '@types';
+import { type PornDoeExecArgs, type PornDoeOutput, type PornDoeVideoOutput, type PornDoeVideoSource } from './PornDoeContracts';
 import { PornDoeMethods } from './PornDoeTypes';
 
 /**

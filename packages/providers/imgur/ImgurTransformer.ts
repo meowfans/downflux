@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { ImgurExecArgs, ImgurOutput } from './ImgurContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type ImgurExecArgs, type ImgurOutput } from './ImgurContracts';
 import { ImgurMethods } from './ImgurTypes';
 
 type ImgurTransformedOutput = DefaultExecutionResult<Partial<ImgurOutput>>;

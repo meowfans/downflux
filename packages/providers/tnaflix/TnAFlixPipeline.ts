@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { TnAFlixExecArgs, TnAFlixOutput } from './TnAFlixContracts';
+import { type TnAFlixExecArgs, type TnAFlixOutput } from './TnAFlixContracts';
 
 /**
  * Builds downloadable TnAFlix pipeline items from normalized metadata.

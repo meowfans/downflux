@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider } from '@types';
-import { SexVidExecArgs, SexVidVideoOutput } from './SexVidContracts';
+import { type SexVidExecArgs, type SexVidVideoOutput } from './SexVidContracts';
 import { SexVidMethods } from './SexVidTypes';
 
 /**

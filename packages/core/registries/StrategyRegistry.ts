@@ -1,5 +1,5 @@
 import { BaseStrategy } from '@base';
-import { ProgressManager } from '@core/progress';
+import { type ProgressManager } from '@core/progress';
 import { Provider } from '@types';
 
 type StrategyCtor = new (progress: ProgressManager) => BaseStrategy;

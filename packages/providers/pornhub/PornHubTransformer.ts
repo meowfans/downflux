@@ -1,6 +1,12 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { PornHubChannelsOutput, PornHubExecArgs, PornHubOutput, PornHubVideoOutput, PornHubVideosOutput } from './PornHubContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import {
+	type PornHubChannelsOutput,
+	type PornHubExecArgs,
+	type PornHubOutput,
+	type PornHubVideoOutput,
+	type PornHubVideosOutput
+} from './PornHubContracts';
 import { PornHubMethods } from './PornHubTypes';
 
 /**

@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { ColliderPornExecArgs, ColliderPornOutput, ColliderPornVideoOutput } from './ColliderPornContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type ColliderPornExecArgs, type ColliderPornOutput, type ColliderPornVideoOutput } from './ColliderPornContracts';
 import { ColliderPornMethods } from './ColliderPornTypes';
 
 /**

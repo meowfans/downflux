@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { TwitterExecArgs, TwitterOutput } from './TwitterContracts';
+import { type TwitterExecArgs, type TwitterOutput } from './TwitterContracts';
 
 export class TwitterPipeline extends BasePipeline<TwitterExecArgs, TwitterOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<TwitterOutput>): string {

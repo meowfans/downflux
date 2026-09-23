@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
-import { ExtractionTarget, Provider, VideoQuality } from '@types';
-import { TnAFlixExecArgs, TnAFlixVideoOutput } from './TnAFlixContracts';
+import { ExtractionTarget, Provider, type VideoQuality } from '@types';
+import { type TnAFlixExecArgs, type TnAFlixVideoOutput } from './TnAFlixContracts';
 import { TnAFlixMethods } from './TnAFlixTypes';
 
 /**

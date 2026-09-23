@@ -1,7 +1,7 @@
 import { BaseStrategy } from '@base';
-import { DownloadOptions } from '@contracts';
+import { type DownloadOptions } from '@contracts';
 import { VideoQuality } from '@types';
-import { PornHubMediaDefinition } from './PornHubContracts';
+import { type PornHubMediaDefinition } from './PornHubContracts';
 
 /**
  * Provides PornHub-specific HTTP behavior.

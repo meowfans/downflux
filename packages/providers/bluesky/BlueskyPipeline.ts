@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { BlueskyExecArgs, BlueskyOutput } from './BlueskyContracts';
+import { type BlueskyExecArgs, type BlueskyOutput } from './BlueskyContracts';
 
 export class BlueskyPipeline extends BasePipeline<BlueskyExecArgs, BlueskyOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<BlueskyOutput>): string {

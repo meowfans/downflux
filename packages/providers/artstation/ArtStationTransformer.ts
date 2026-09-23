@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { ArtStationExecArgs, ArtStationOutput } from './ArtStationContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type ArtStationExecArgs, type ArtStationOutput } from './ArtStationContracts';
 import { ArtStationMethods } from './ArtStationTypes';
 
 type ArtStationTransformedOutput = DefaultExecutionResult<Partial<ArtStationOutput>>;

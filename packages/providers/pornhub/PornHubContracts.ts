@@ -1,6 +1,6 @@
-import { DefaultExecutionResult, DefaultVideoOutput, ExecutionArgs } from '@contracts';
-import { UrlFormat } from '@types';
-import { PornHubVideosFormat } from './PornHubTypes';
+import { type DefaultExecutionResult, type DefaultVideoOutput, type ExecutionArgs } from '@contracts';
+import { type UrlFormat } from '@types';
+import { type PornHubVideosFormat } from './PornHubTypes';
 
 /**
  * @interface

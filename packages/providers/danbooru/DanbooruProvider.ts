@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { DanbooruExecArgs } from './DanbooruContracts';
+import { type DanbooruExecArgs } from './DanbooruContracts';
 
 export class DanbooruProvider extends GenericContentProvider<DanbooruExecArgs> {
 	constructor(url: string) {

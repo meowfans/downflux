@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { DaFreePornExecArgs, DaFreePornOutput } from './DaFreePornContracts';
+import { type DaFreePornExecArgs, type DaFreePornOutput } from './DaFreePornContracts';
 
 /**
  * Builds downloadable DaFreePorn pipeline items from normalized metadata.

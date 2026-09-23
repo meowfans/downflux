@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider, VideoQuality } from '@types';
-import { MyLustOutput } from './MyLustContracts';
+import { type MyLustOutput } from './MyLustContracts';
 
 /**
  * Extracts MyLust-specific metadata from fetched HTML.

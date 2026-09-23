@@ -1,4 +1,4 @@
-import { DefaultExecutionResult, DefaultMetadata, ExecutionArgs } from '@contracts';
+import { type DefaultExecutionResult, type DefaultMetadata, type ExecutionArgs } from '@contracts';
 
 export interface XHamsterExecArgs extends ExecutionArgs {}
 

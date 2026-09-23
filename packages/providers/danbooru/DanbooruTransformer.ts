@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { DanbooruExecArgs, DanbooruOutput } from './DanbooruContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type DanbooruExecArgs, type DanbooruOutput } from './DanbooruContracts';
 import { DanbooruMethods } from './DanbooruTypes';
 
 type DanbooruTransformedOutput = DefaultExecutionResult<Partial<DanbooruOutput>>;

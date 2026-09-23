@@ -1,4 +1,4 @@
-import { ErrorCodes, Provider } from '@types';
+import { ErrorCodes, type Provider } from '@types';
 import { BaseException } from './BaseException';
 
 export class NotFoundException extends BaseException {

@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { PexelsExecArgs } from './PexelsContracts';
+import { type PexelsExecArgs } from './PexelsContracts';
 
 export class PexelsProvider extends GenericContentProvider<PexelsExecArgs> {
 	constructor(url: string) {

@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { HqPornExecArgs, HqPornOutput, HqPornVideoOutput } from './HqPornContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type HqPornExecArgs, type HqPornOutput, type HqPornVideoOutput } from './HqPornContracts';
 import { HqPornMethods } from './HqPornTypes';
 
 /**

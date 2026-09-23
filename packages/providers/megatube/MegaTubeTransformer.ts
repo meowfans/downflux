@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { MegaTubeExecArgs, MegaTubeOutput, MegaTubeVideoOutput } from './MegaTubeContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type MegaTubeExecArgs, type MegaTubeOutput, type MegaTubeVideoOutput } from './MegaTubeContracts';
 import { MegaTubeMethods } from './MegaTubeTypes';
 
 /**

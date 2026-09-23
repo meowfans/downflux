@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { InterracialOutput } from './InterracialContracts';
+import { type InterracialOutput } from './InterracialContracts';
 
 /**
  * Extracts Interracial-specific metadata from fetched HTML.

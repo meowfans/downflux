@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineExtractedItem, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineExtractedItem, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { TubeVSexExecArgs, TubeVSexOutput } from './TubeVSexContracts';
+import { type TubeVSexExecArgs, type TubeVSexOutput } from './TubeVSexContracts';
 
 /**
  * Builds downloadable TubeVSex pipeline items from normalized metadata.

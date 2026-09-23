@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { CumLouderExecArgs, CumLouderVideoOutput } from './CumLouderContracts';
+import { type CumLouderExecArgs, type CumLouderVideoOutput } from './CumLouderContracts';
 import { CumLouderMethods } from './CumLouderTypes';
 
 /**

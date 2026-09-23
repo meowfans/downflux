@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { ShamelessExecArgs, ShamelessOutput, ShamelessVideoOutput } from './ShamelessContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type ShamelessExecArgs, type ShamelessOutput, type ShamelessVideoOutput } from './ShamelessContracts';
 import { ShamelessMethods } from './ShamelessTypes';
 
 /**

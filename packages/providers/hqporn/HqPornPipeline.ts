@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { HqPornExecArgs, HqPornOutput } from './HqPornContracts';
+import { type HqPornExecArgs, type HqPornOutput } from './HqPornContracts';
 
 /**
  * Builds downloadable HqPorn pipeline items from normalized metadata.

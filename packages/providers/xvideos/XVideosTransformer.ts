@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { XVideosExecArgs, XVideosOutput, XVideosVideoOutput } from './XVideosContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type XVideosExecArgs, type XVideosOutput, type XVideosVideoOutput } from './XVideosContracts';
 import { XVideosMethods } from './XVideosTypes';
 
 /**

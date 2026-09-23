@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { ZzzTubeExecArgs, ZzzTubeVideoOutput } from './ZzzTubeContracts';
+import { type ZzzTubeExecArgs, type ZzzTubeVideoOutput } from './ZzzTubeContracts';
 import { ZzzTubeMethods } from './ZzzTubeTypes';
 
 /**

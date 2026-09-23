@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider, VideoQuality } from '@types';
-import { PornOneOutput } from './PornOneContracts';
+import { type PornOneOutput } from './PornOneContracts';
 
 /**
  * Extracts PornOne-specific metadata from fetched HTML.

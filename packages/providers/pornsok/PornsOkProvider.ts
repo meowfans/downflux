@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
-import { ExtractionTarget, Provider, VideoQuality } from '@types';
-import { PornsOkExecArgs, PornsOkVideoOutput } from './PornsOkContracts';
+import { ExtractionTarget, Provider, type VideoQuality } from '@types';
+import { type PornsOkExecArgs, type PornsOkVideoOutput } from './PornsOkContracts';
 import { PornsOkMethods } from './PornsOkTypes';
 
 /**

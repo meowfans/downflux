@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { InstagramExecArgs, InstagramOutput } from './InstagramContracts';
+import { type InstagramExecArgs, type InstagramOutput } from './InstagramContracts';
 
 export class InstagramPipeline extends BasePipeline<InstagramExecArgs, InstagramOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<InstagramOutput>): string {

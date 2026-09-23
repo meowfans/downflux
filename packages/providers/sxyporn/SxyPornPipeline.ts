@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { SxyPornExecArgs, SxyPornOutput } from './SxyPornContracts';
+import { type SxyPornExecArgs, type SxyPornOutput } from './SxyPornContracts';
 
 /**
  * Builds downloadable SxyPorn pipeline items from normalized metadata.

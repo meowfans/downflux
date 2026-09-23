@@ -1,4 +1,4 @@
-import { DefaultExecutionResult, DefaultFlashVarsVideoOutput, ExecutionArgs } from '@contracts';
+import { type DefaultExecutionResult, type DefaultFlashVarsVideoOutput, type ExecutionArgs } from '@contracts';
 
 export interface ZbPornExecArgs extends ExecutionArgs {}
 export interface ZbPornOutput extends DefaultExecutionResult, ZbPornVideoOutput {}

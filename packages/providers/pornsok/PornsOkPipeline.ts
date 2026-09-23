@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { MediaType } from '@types';
-import { PornsOkExecArgs, PornsOkOutput } from './PornsOkContracts';
+import { type PornsOkExecArgs, type PornsOkOutput } from './PornsOkContracts';
 
 /**
  * Builds downloadable PornsOk pipeline items from normalized metadata.

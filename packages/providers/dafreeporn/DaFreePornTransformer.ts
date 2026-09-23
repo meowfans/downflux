@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { DaFreePornExecArgs, DaFreePornOutput, DaFreePornVideoOutput } from './DaFreePornContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type DaFreePornExecArgs, type DaFreePornOutput, type DaFreePornVideoOutput } from './DaFreePornContracts';
 import { DaFreePornMethods } from './DaFreePornTypes';
 
 type DaFreePornTransformedOutput = DefaultExecutionResult<Partial<DaFreePornOutput>>;

@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { DanbooruExecArgs, DanbooruOutput } from './DanbooruContracts';
+import { type DanbooruExecArgs, type DanbooruOutput } from './DanbooruContracts';
 
 export class DanbooruPipeline extends BasePipeline<DanbooruExecArgs, DanbooruOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<DanbooruOutput>): string {

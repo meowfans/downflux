@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider, VideoQuality } from '@types';
-import { PornsOkOutput } from './PornsOkContracts';
+import { type PornsOkOutput } from './PornsOkContracts';
 
 /**
  * Extracts PornsOk-specific metadata from fetched HTML.

@@ -1,5 +1,5 @@
-import { TagKeys } from '@contracts';
-import { ProviderType, SniSpoofStatus } from './BaseTypes';
+import { type TagKeys } from '@contracts';
+import { type ProviderType, type SniSpoofStatus } from './BaseTypes';
 
 /**
  * Options for filtering tag output.

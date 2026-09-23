@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { PinterestExecArgs, PinterestOutput } from './PinterestContracts';
+import { type PinterestExecArgs, type PinterestOutput } from './PinterestContracts';
 
 export class PinterestPipeline extends BasePipeline<PinterestExecArgs, PinterestOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<PinterestOutput>): string {

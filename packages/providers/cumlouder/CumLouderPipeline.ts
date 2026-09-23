@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { CumLouderExecArgs, CumLouderOutput } from './CumLouderContracts';
+import { type CumLouderExecArgs, type CumLouderOutput } from './CumLouderContracts';
 
 /**
  * Builds downloadable CumLouder pipeline items from normalized metadata.

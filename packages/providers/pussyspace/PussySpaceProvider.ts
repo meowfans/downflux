@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { PussySpaceExecArgs, PussySpaceVideoOutput } from './PussySpaceContracts';
+import { type PussySpaceExecArgs, type PussySpaceVideoOutput } from './PussySpaceContracts';
 import { PussySpaceMethods } from './PussySpaceTypes';
 
 /**

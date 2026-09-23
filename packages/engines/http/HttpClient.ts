@@ -1,6 +1,6 @@
 import { BaseHttpClient } from '@base';
-import { DownloadOptions, FetchResult } from '@contracts';
-import { ProgressManager } from '@core/progress';
+import { type DownloadOptions, type FetchResult } from '@contracts';
+import { type ProgressManager } from '@core/progress';
 import { StrategyRegistry } from '@core/registries';
 import { Provider } from '@types';
 

@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { ZbPornExecArgs, ZbPornVideoOutput } from './ZbPornContracts';
+import { type ZbPornExecArgs, type ZbPornVideoOutput } from './ZbPornContracts';
 import { ZbPornMethods } from './ZbPornTypes';
 
 /**

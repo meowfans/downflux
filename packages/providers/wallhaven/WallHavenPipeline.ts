@@ -1,9 +1,9 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineExtractedItem, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineExtractedItem, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
 import path from 'path';
-import { WallHavenExecArgs, WallHavenOutput, WallHavenUserFavoriteCollectionsOutput } from './WallHavenContracts';
-import { WallHavenMethods, WallHavenThumbnailQuality } from './WallHavenTypes';
+import { type WallHavenExecArgs, type WallHavenOutput, type WallHavenUserFavoriteCollectionsOutput } from './WallHavenContracts';
+import { WallHavenMethods, type WallHavenThumbnailQuality } from './WallHavenTypes';
 
 /**
  * Builds downloadable WallHaven pipeline items from normalized metadata.

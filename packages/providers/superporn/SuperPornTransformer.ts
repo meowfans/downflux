@@ -1,7 +1,7 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { VideoQuality } from '@types';
-import { SuperPornExecArgs, SuperPornOutput, SuperPornVideoOutput } from './SuperPornContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type VideoQuality } from '@types';
+import { type SuperPornExecArgs, type SuperPornOutput, type SuperPornVideoOutput } from './SuperPornContracts';
 import { SuperPornMethods } from './SuperPornTypes';
 
 /**

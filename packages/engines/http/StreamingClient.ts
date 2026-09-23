@@ -1,12 +1,12 @@
 import { BaseHttpClient } from '@base';
-import { DownloadOptions, HLSStreamRequest, PipelineItem } from '@contracts';
+import { type DownloadOptions, type HLSStreamRequest, type PipelineItem } from '@contracts';
 import { DownloadException, NotFoundException } from '@core/exceptions';
-import { ProgressManager } from '@core/progress';
-import { StrategyRegistry } from '@core/registries';
-import { Readable, Transform, Writable } from 'stream';
+import { type ProgressManager } from '@core/progress';
+import { type StrategyRegistry } from '@core/registries';
+import { Readable, Transform, type Writable } from 'stream';
 import { pipeline } from 'stream/promises';
-import { Response as UResponse } from 'undici';
-import { HlsClient } from './HlsClient';
+import { type Response as UResponse } from 'undici';
+import { type HlsClient } from './HlsClient';
 
 /**
  * HTTP engine for downloadable media streams.

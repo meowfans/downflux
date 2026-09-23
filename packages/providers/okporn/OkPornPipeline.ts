@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { inferVideoQuality } from '@shared';
 import { MediaType } from '@types';
-import { OkPornExecArgs, OkPornOutput } from './OkPornContracts';
+import { type OkPornExecArgs, type OkPornOutput } from './OkPornContracts';
 
 /**
  * Builds downloadable OkPorn pipeline items from normalized metadata.

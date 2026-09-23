@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { MomVidsExecArgs, MomVidsVideoOutput } from './MomVidsContracts';
+import { type MomVidsExecArgs, type MomVidsVideoOutput } from './MomVidsContracts';
 import { MomVidsMethods } from './MomVidsTypes';
 
 /**

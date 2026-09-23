@@ -1,4 +1,4 @@
-import { ExecutionArgs } from '@contracts';
+import { type ExecutionArgs } from '@contracts';
 
 export interface DefaultExecArgs extends ExecutionArgs {}
 export interface DefaultOutput {}

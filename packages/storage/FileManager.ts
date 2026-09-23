@@ -1,11 +1,19 @@
-import { CreateSinkInput, CreateSinkOutput, ExecutionArgs, ExecutionResult, ResolvedFile, StreamSink, TranscodeOptions } from '@contracts';
+import {
+	type CreateSinkInput,
+	type CreateSinkOutput,
+	type ExecutionArgs,
+	type ExecutionResult,
+	type ResolvedFile,
+	type StreamSink,
+	type TranscodeOptions
+} from '@contracts';
 import { InvalidDestinationException } from '@core/exceptions';
-import { ProgressManager } from '@core/progress';
-import { AllowedExtension, ExecutionShape, MIME_TYPE, OutputType, Provider } from '@types';
+import { type ProgressManager } from '@core/progress';
+import { type AllowedExtension, type ExecutionShape, MIME_TYPE, OutputType, type Provider } from '@types';
 import { createWriteStream, promises as fs, mkdirSync, writeFileSync } from 'fs';
 import { basename, dirname, extname, isAbsolute, relative, resolve } from 'path';
 import { PassThrough, Writable } from 'stream';
-import { FFmpegEngine } from './FFmpegEngine';
+import { type FFmpegEngine } from './FFmpegEngine';
 import { PathBuilder } from './PathBuilder';
 
 /**

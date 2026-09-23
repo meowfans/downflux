@@ -1,7 +1,7 @@
-import { TagFilterOptions } from '@base';
-import { DefaultExecutionResult, DefaultVideoOutput, ExecutionArgs } from '@contracts';
-import { TagsOutput } from '@provider/okporn';
-import { VideoQuality } from '@types';
+import { type TagFilterOptions } from '@base';
+import { type DefaultExecutionResult, type DefaultVideoOutput, type ExecutionArgs } from '@contracts';
+import { type TagsOutput } from '@provider/okporn';
+import { type VideoQuality } from '@types';
 
 export type PerfectGirlsIdType = 'path' | 'url';
 

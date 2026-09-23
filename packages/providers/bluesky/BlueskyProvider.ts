@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { BlueskyExecArgs } from './BlueskyContracts';
+import { type BlueskyExecArgs } from './BlueskyContracts';
 
 export class BlueskyProvider extends GenericContentProvider<BlueskyExecArgs> {
 	constructor(url: string) {

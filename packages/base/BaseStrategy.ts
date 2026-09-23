@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
-import { DownloadOptions, ServiceStrategy } from '@contracts';
-import { ProgressManager } from '@core/progress';
+import { type DownloadOptions, type ServiceStrategy } from '@contracts';
+import { type ProgressManager } from '@core/progress';
 
 /**
  * Default provider transport strategy.

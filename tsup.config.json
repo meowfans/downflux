@@ -1,14 +1,21 @@
 {
-	"entry": ["packages/index.ts"],
-	"format": ["cjs", "esm"],
+	"entry": [
+		"packages/index.ts"
+	],
+	"format": [
+		"cjs",
+		"esm"
+	],
 	"dts": {
 		"compilerOptions": {
 			"ignoreDeprecations": "6.0"
 		}
 	},
 	"clean": true,
-	"splitting": false,
+	"splitting": true,
 	"target": "node22",
 	"platform": "node",
-	"sourcemap": false
+	"sourcemap": false,
+	"minify": true,
+	"keepNames": true
 }

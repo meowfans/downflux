@@ -1,7 +1,7 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { OutputType, VideoQuality } from '@types';
-import { BeegExecArgs, BeegVideoMetadata, BeegVideoOutput } from './BeegContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type OutputType, type VideoQuality } from '@types';
+import { type BeegExecArgs, type BeegVideoMetadata, type BeegVideoOutput } from './BeegContracts';
 import { BeegMethods } from './BeegTypes';
 
 /**

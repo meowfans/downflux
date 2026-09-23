@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { SuperPornExecArgs, SuperPornVideoOutput } from './SuperPornContracts';
+import { type SuperPornExecArgs, type SuperPornVideoOutput } from './SuperPornContracts';
 import { SuperPornMethods } from './SuperPornTypes';
 
 /**

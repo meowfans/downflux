@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { PornIdExecArgs, PornIdVideoOutput } from './PornIdContracts';
+import { type PornIdExecArgs, type PornIdVideoOutput } from './PornIdContracts';
 import { PornIdMethods } from './PornIdTypes';
 
 /**

@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { XDeguExecArgs, XDeguOutput, XDeguVideoOutput } from './XDeguContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type XDeguExecArgs, type XDeguOutput, type XDeguVideoOutput } from './XDeguContracts';
 import { XDeguMethods } from './XDeguTypes';
 
 type XDeguTransformedOutput = DefaultExecutionResult<Partial<XDeguOutput>>;

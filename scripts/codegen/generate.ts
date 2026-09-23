@@ -1,6 +1,6 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
-import { RegistryCoordinator } from '../../packages/contracts';
+import { type RegistryCoordinator } from '../../packages/contracts';
 
 interface Registry {
 	services: RegistryCoordinator[];

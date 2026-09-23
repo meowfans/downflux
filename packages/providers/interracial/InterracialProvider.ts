@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { InterracialExecArgs, InterracialVideoOutput } from './InterracialContracts';
+import { type InterracialExecArgs, type InterracialVideoOutput } from './InterracialContracts';
 import { InterracialMethods } from './InterracialTypes';
 
 /**

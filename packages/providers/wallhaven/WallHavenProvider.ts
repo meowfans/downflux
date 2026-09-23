@@ -1,17 +1,17 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, IndexRange, OutputType, Provider } from '@types';
+import { ExtractionTarget, type IndexRange, OutputType, Provider } from '@types';
 import {
-	WallHavenExecArgs,
-	WallHavenUserExecArgs,
-	WallHavenUserFavoriteCollectionOutput,
-	WallHavenUserFavoriteCollectionsOutput,
-	WallHavenUserFavoritesExecArgs,
-	WallHavenUserInfoOutput,
-	WallHavenUserUploadsOutput,
-	WallHavenWallPaperOutput
+	type WallHavenExecArgs,
+	type WallHavenUserExecArgs,
+	type WallHavenUserFavoriteCollectionOutput,
+	type WallHavenUserFavoriteCollectionsOutput,
+	type WallHavenUserFavoritesExecArgs,
+	type WallHavenUserInfoOutput,
+	type WallHavenUserUploadsOutput,
+	type WallHavenWallPaperOutput
 } from './WallHavenContracts';
-import { WallHavenMethods, WallHavenThumbnailQuality } from './WallHavenTypes';
+import { WallHavenMethods, type WallHavenThumbnailQuality } from './WallHavenTypes';
 
 /**
  * WallHaven provider.

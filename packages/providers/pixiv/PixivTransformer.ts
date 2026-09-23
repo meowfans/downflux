@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { PixivExecArgs, PixivOutput } from './PixivContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type PixivExecArgs, type PixivOutput } from './PixivContracts';
 import { PixivMethods } from './PixivTypes';
 
 type PixivTransformedOutput = DefaultExecutionResult<Partial<PixivOutput>>;

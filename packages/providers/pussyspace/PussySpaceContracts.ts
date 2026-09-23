@@ -1,4 +1,4 @@
-import { DefaultExecutionResult, DefaultVideoOutput, ExecutionArgs } from '@contracts';
+import { type DefaultExecutionResult, type DefaultVideoOutput, type ExecutionArgs } from '@contracts';
 
 export interface PussySpaceExecArgs extends ExecutionArgs {}
 export interface PussySpaceOutput extends DefaultExecutionResult, PussySpaceVideoOutput {

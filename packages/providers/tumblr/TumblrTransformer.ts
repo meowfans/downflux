@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { TumblrExecArgs, TumblrOutput } from './TumblrContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type TumblrExecArgs, type TumblrOutput } from './TumblrContracts';
 import { TumblrMethods } from './TumblrTypes';
 
 type TumblrTransformedOutput = DefaultExecutionResult<Partial<TumblrOutput>>;

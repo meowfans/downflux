@@ -1,16 +1,16 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult, TagKeys } from '@contracts';
-import { TagsOutput } from '@provider/okporn';
+import { type DefaultExecutionResult, type TagKeys } from '@contracts';
+import { type TagsOutput } from '@provider/okporn';
 import { ExtractionTarget } from '@types';
 import {
-	PerfectGirlsAlbumOutput,
-	PerfectGirlsChannelOutput,
-	PerfectGirlsExecArgs,
-	PerfectGirlsModelOutput,
-	PerfectGirlsModelVideoIdsOutput,
-	PerfectGirlsOutput,
-	PerfectGirlsTagOutput,
-	PerfectGirlsVideoOutput
+	type PerfectGirlsAlbumOutput,
+	type PerfectGirlsChannelOutput,
+	type PerfectGirlsExecArgs,
+	type PerfectGirlsModelOutput,
+	type PerfectGirlsModelVideoIdsOutput,
+	type PerfectGirlsOutput,
+	type PerfectGirlsTagOutput,
+	type PerfectGirlsVideoOutput
 } from './PerfectGirlsContracts';
 import { PerfectGirlsMethods } from './PerfectGirlsTypes';
 

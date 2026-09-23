@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { PornSevenExecArgs, PornSevenOutput, PornSevenVideoOutput } from './PornSevenContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type PornSevenExecArgs, type PornSevenOutput, type PornSevenVideoOutput } from './PornSevenContracts';
 import { PornSevenMethods } from './PornSevenTypes';
 
 type PornSevenTransformedOutput = DefaultExecutionResult<Partial<PornSevenOutput>>;

@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { Lesbian8ExecArgs, Lesbian8VideoOutput } from './Lesbian8Contracts';
+import { type Lesbian8ExecArgs, type Lesbian8VideoOutput } from './Lesbian8Contracts';
 import { Lesbian8Methods } from './Lesbian8Types';
 
 /**

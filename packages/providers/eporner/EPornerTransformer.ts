@@ -1,7 +1,7 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult, VideosFormat } from '@contracts';
+import { type DefaultExecutionResult, type VideosFormat } from '@contracts';
 import { OutputType, Provider, VideoQuality } from '@types';
-import { EPornerExecArgs, EPornerOutput, EPornerVideoOutput } from './EPornerContracts';
+import { type EPornerExecArgs, type EPornerOutput, type EPornerVideoOutput } from './EPornerContracts';
 import { EPornerMethods } from './EPornerTypes';
 
 interface EPornerSource {

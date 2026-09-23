@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { MomVidsExecArgs, MomVidsOutput } from './MomVidsContracts';
+import { type MomVidsExecArgs, type MomVidsOutput } from './MomVidsContracts';
 
 /**
  * Builds downloadable MomVids pipeline items from normalized metadata.

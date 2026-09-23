@@ -1,7 +1,7 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult, VideoSourceOutput } from '@contracts';
-import { VideoQuality } from '@types';
-import { TnAFlixOutput } from './TnAFlixContracts';
+import { type DefaultExecutionResult, type VideoSourceOutput } from '@contracts';
+import { type VideoQuality } from '@types';
+import { type TnAFlixOutput } from './TnAFlixContracts';
 
 /**
  * Extracts TnAFlix-specific metadata from fetched HTML.

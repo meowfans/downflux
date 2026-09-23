@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { MegaTubeOutput } from './MegaTubeContracts';
+import { type MegaTubeOutput } from './MegaTubeContracts';
 
 /**
  * Extracts MegaTube-specific metadata from fetched HTML.

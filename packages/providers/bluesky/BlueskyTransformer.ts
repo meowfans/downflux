@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { BlueskyExecArgs, BlueskyOutput } from './BlueskyContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type BlueskyExecArgs, type BlueskyOutput } from './BlueskyContracts';
 import { BlueskyMethods } from './BlueskyTypes';
 
 type BlueskyTransformedOutput = DefaultExecutionResult<Partial<BlueskyOutput>>;

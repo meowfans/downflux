@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { DeviantArtExecArgs } from './DeviantArtContracts';
+import { type DeviantArtExecArgs } from './DeviantArtContracts';
 
 export class DeviantArtProvider extends GenericContentProvider<DeviantArtExecArgs> {
 	constructor(url: string) {

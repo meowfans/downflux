@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { ImgurExecArgs } from './ImgurContracts';
+import { type ImgurExecArgs } from './ImgurContracts';
 
 export class ImgurProvider extends GenericContentProvider<ImgurExecArgs> {
 	constructor(url: string) {

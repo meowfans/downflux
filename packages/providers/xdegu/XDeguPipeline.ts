@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { XDeguExecArgs, XDeguOutput } from './XDeguContracts';
+import { type XDeguExecArgs, type XDeguOutput } from './XDeguContracts';
 
 /**
  * Builds downloadable XDegu pipeline items from normalized metadata.

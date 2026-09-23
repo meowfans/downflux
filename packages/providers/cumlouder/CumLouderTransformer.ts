@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { CumLouderExecArgs, CumLouderOutput, CumLouderVideoOutput } from './CumLouderContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type CumLouderExecArgs, type CumLouderOutput, type CumLouderVideoOutput } from './CumLouderContracts';
 import { CumLouderMethods } from './CumLouderTypes';
 
 /**

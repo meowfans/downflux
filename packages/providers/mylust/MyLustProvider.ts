@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { MyLustExecArgs, MyLustVideoOutput } from './MyLustContracts';
+import { type MyLustExecArgs, type MyLustVideoOutput } from './MyLustContracts';
 import { MyLustMethods } from './MyLustTypes';
 
 /**

@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { TheyAreHugeOutput } from './TheyAreHugeContracts';
+import { type TheyAreHugeOutput } from './TheyAreHugeContracts';
 
 /**
  * Extracts TheyAreHuge-specific metadata from fetched HTML.

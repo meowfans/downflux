@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { RedditExecArgs, RedditOutput } from './RedditContracts';
+import { type RedditExecArgs, type RedditOutput } from './RedditContracts';
 
 export class RedditPipeline extends BasePipeline<RedditExecArgs, RedditOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<RedditOutput>): string {

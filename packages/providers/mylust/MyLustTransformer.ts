@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { MyLustExecArgs, MyLustOutput, MyLustVideoOutput } from './MyLustContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type MyLustExecArgs, type MyLustOutput, type MyLustVideoOutput } from './MyLustContracts';
 import { MyLustMethods } from './MyLustTypes';
 
 /**
