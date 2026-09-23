@@ -1,7 +1,14 @@
 {
-	"entry": [
-		"packages/index.ts"
-	],
+	"entry": {
+		"base": "packages/base/index.ts",
+		"contracts": "packages/contracts/index.ts",
+		"core": "packages/core/index.ts",
+		"engines": "packages/engines/index.ts",
+		"providers": "packages/providers/index.ts",
+		"shared": "packages/shared/index.ts",
+		"storage": "packages/storage/index.ts",
+		"types": "packages/types/index.ts"
+	},
 	"format": [
 		"cjs",
 		"esm"
@@ -12,7 +19,7 @@
 		}
 	},
 	"clean": true,
-	"splitting": false,
+	"splitting": true,
 	"target": "node22",
 	"platform": "node",
 	"sourcemap": false,
