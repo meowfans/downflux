@@ -226,11 +226,19 @@ export class ProgressManager extends EventEmitter {
 		if (!snapshots.length) return {};
 
 		const active = snapshots.filter((item) => item.status === 'DOWNLOADING');
+
+		// rate is a property of what is still moving; finished items contribute none
 		const rated = active.length ? active : snapshots;
 
+		/**
+		 * Byte totals are counted over the same set as the bytes themselves.
+		 * Summing progress across every item while testing sizes across only the
+		 * active ones let a finished unsized download count toward the numerator
+		 * and vanish from the denominator, reporting "587 MB / 22 KB" at 100%.
+		 */
 		const downloadedBytes = snapshots.reduce((sum, item) => sum + item.downloadedBytes, 0);
-		const allSized = rated.every((item) => item.totalBytes > 0);
-		const totalBytes = allSized ? rated.reduce((sum, item) => sum + item.totalBytes, 0) : 0;
+		const allSized = snapshots.every((item) => item.totalBytes > 0);
+		const totalBytes = allSized ? snapshots.reduce((sum, item) => sum + item.totalBytes, 0) : 0;
 
 		const totalSegments = snapshots.reduce((sum, item) => sum + item.totalSegments, 0);
 		const resolvedSegments = snapshots.reduce((sum, item) => sum + item.resolvedSegments, 0);

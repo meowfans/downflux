@@ -91,7 +91,7 @@ export class TaskCoordinator {
 
 				this.progressManager.update({
 					status: 'DOWNLOADED',
-					itemKey: pipelineItem.identifier.key,
+					itemKey: pipelineItem.downloadUrl,
 					totalItems: result.pipelineItems.length,
 					resolvedItems: result.downloaded,
 					failed: result.failed,
@@ -102,12 +102,31 @@ export class TaskCoordinator {
 			} catch (err) {
 				const normalizedError = err instanceof Error ? err : new Error(String(err));
 
+				/**
+				 * A cancelled transfer is not a failure. Counting it as one made an
+				 * interrupted run look like a broken provider, and the partial file has
+				 * already been removed by the transfer's own cleanup.
+				 */
+				if (options?.signal?.aborted) {
+					this.progressManager.update({
+						status: 'ABORTED',
+						itemKey: pipelineItem.downloadUrl,
+						currentItem: pipelineItem.downloadUrl,
+						currentTarget: pipelineItem.sourceUrl,
+						totalItems: result.pipelineItems.length,
+						resolvedItems: result.downloaded,
+						failed: result.failed
+					});
+
+					return;
+				}
+
 				result.errors.push(normalizedError);
 				result.failed++;
 
 				this.progressManager.update({
 					status: 'FAILED',
-					itemKey: pipelineItem.identifier.key,
+					itemKey: pipelineItem.downloadUrl,
 					currentItem: pipelineItem.downloadUrl,
 					currentTarget: pipelineItem.sourceUrl,
 					totalItems: result.pipelineItems.length,
@@ -121,7 +140,8 @@ export class TaskCoordinator {
 		});
 
 		this.progressManager.update({
-			status: 'COMPLETED',
+			// a cancelled run did not complete, whatever the loop did on its way out
+			status: options?.signal?.aborted ? 'ABORTED' : 'COMPLETED',
 			totalItems: result.pipelineItems.length,
 			resolvedItems: result.downloaded,
 			failed: result.failed

@@ -11,9 +11,9 @@ import { PornHubMediaDefinition } from './PornHubContracts';
  */
 export class PornHubStrategy extends BaseStrategy {
 	private SUB_DOMAINS = [
-		'pornhub.com',
 		'pornhub.org',
 		'de.pornhub.org',
+		'pornhub.com',
 		'es.pornhub.org',
 		'fr.pornhub.org',
 		'it.pornhub.org',

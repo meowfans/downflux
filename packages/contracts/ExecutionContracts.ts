@@ -112,6 +112,23 @@ export interface ExecutionOptions extends HttpFetchOptions {
 	 */
 	captureConsole?: boolean;
 
+	/**
+	 * Whether `SIGINT`/`SIGTERM` should cancel the job before the process exits.
+	 *
+	 * @remarks
+	 * Defaults to `true` for `OutputType.DEVICE` and `false` for every other mode.
+	 *
+	 * Device output writes partial `.part` files, so an interrupted run leaves
+	 * debris unless something unwinds it. Progress rendering already registers a
+	 * signal listener to restore the cursor, which suppresses Node's default exit
+	 * and makes this library the owner of shutdown regardless - having claimed it,
+	 * exiting without deleting the partial files it created is not defensible.
+	 *
+	 * `STREAM` defaults to `false` because it is used inside servers that own their
+	 * own shutdown sequence; set it explicitly to override either default.
+	 */
+	abortOnSignal?: boolean;
+
 	/** Maximum CDN fallback attempts allowed per download item. */
 	maxCdnFallbacks?: number;
 

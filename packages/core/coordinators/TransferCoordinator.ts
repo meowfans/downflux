@@ -55,10 +55,13 @@ export class TransferCoordinator {
 			await sink.done;
 		})();
 
+		// the writable end only needs to close; the readable carries the error to the consumer
+		sink.input.on('error', () => undefined);
+
 		transfer.catch((error) => {
 			const normalized = error instanceof Error ? error : new Error(String(error));
 
-			sink.input.destroy(normalized);
+			sink.input.destroy();
 			sink.output.destroy(normalized);
 		});
 
@@ -126,6 +129,15 @@ export class TransferCoordinator {
 		});
 
 		/**
+		 * Destroying a stream with an error makes it emit `error`, and an unlistened
+		 * `error` on a WriteStream is a fatal uncaught exception. On abort that killed
+		 * the process before cleanup could delete the partial file. The failure is
+		 * already propagated by rethrowing, so the stream only needs a sink for the
+		 * event, not another path for it.
+		 */
+		stream.on('error', () => undefined);
+
+		/**
 		 * Finalization runs inside the same guard as the transfer so a failure in
 		 * either phase releases the sink instead of leaving a partial artifact behind.
 		 */
@@ -144,7 +156,8 @@ export class TransferCoordinator {
 				provider
 			};
 		} catch (err) {
-			stream.destroy(err instanceof Error ? err : new Error(String(err)));
+			// no error argument: the caller gets it by rethrow, the stream just closes
+			stream.destroy();
 
 			await cleanup?.();
 
