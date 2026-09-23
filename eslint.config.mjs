@@ -14,12 +14,6 @@ export default defineConfig(
 					allowDefaultProject: [
 						'eslint.config.mjs',
 						'test-regex.js',
-						'scripts/codegen/*.ts',
-						'scripts/codegen/templates/*.ts',
-						'scripts/make-registry.ts',
-						'scripts/release.ts',
-						'scripts/make-index.ts',
-						'scripts/generate.ts'
 					]
 				},
 				tsconfigRootDir: import.meta.dirname
