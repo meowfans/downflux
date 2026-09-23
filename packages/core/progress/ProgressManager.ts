@@ -24,6 +24,12 @@ export class ProgressManager extends EventEmitter {
 	/** Weight of the newest sample in the smoothed transfer rate. */
 	private static readonly SPEED_SMOOTHING = 0.3;
 
+	/** Statuses after which a job no longer changes state. */
+	private static readonly TERMINAL_STATUSES: JobProgressStatus[] = ['COMPLETED', 'FAILED', 'ABORTED'];
+
+	/** Set once a terminal status has been reported. */
+	private settled = false;
+
 	/** Live per-item progress, keyed by pipeline item identity. */
 	private readonly items = new Map<string, ItemProgressSnapshot & { startedAt: number; lastUpdate: number }>();
 
@@ -83,6 +89,7 @@ export class ProgressManager extends EventEmitter {
 		this.options = options;
 		this.state = ProgressManager.initialState();
 		this.lastRender = 0;
+		this.settled = false;
 		this.items.clear();
 	}
 
@@ -261,12 +268,25 @@ export class ProgressManager extends EventEmitter {
 
 		this.trackItem(params, now);
 
+		const next = ProgressManager.withoutItemFields(params);
+
+		/**
+		 * A segmented download has several writers - segment counts, throttled byte
+		 * reports, and the item lifecycle - so an update already in flight can land
+		 * after the job settles. Without this the panel repainted as DOWNLOADING
+		 * moments after reporting ABORTED, and that stale frame was the last thing
+		 * left on screen.
+		 */
+		if (this.settled) delete next.status;
+
 		this.state = {
 			...this.state,
-			...ProgressManager.withoutItemFields(params),
+			...next,
 			...this.aggregate(),
 			lastUpdateTime: now
 		};
+
+		if (next.status && ProgressManager.TERMINAL_STATUSES.includes(next.status)) this.settled = true;
 
 		this.options?.onProgress?.(this.state as JobProgressEvent);
 
