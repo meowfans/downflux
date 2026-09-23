@@ -2,9 +2,14 @@ import { execFileSync } from 'child_process';
 import { readFileSync } from 'fs';
 
 /**
- * End-to-end release.
+ * Versions and tags a release. Distribution is deliberately not part of it.
  *
  * @remarks
+ * Publishing to npm is irreversible — a version number can never be reused — so it
+ * stays a separate, deliberate command rather than the tail of a longer chain that
+ * might reach it after something earlier went wrong. The GitHub release is separate
+ * again, so either can be retried without redoing the other.
+ *
  * `main` is protected, so the version commit has to travel through a pull request
  * while the tag has to wait for whatever commit actually lands. Two ordering rules
  * fall out of that, and both were learned the hard way on v2.0.0:
@@ -24,7 +29,7 @@ const run = (command: string, args: string[], quiet = false): string => {
 
 const version = (): string => JSON.parse(readFileSync('package.json', 'utf-8')).version;
 
-const step = (n: number, message: string) => console.log(`\n[${n}/6] ${message}`);
+const step = (n: number, message: string) => console.log(`\n[${n}/5] ${message}`);
 
 const preflight = () => {
 	if (run('git', ['rev-parse', '--abbrev-ref', 'HEAD'], true) !== 'main') throw new Error('release must start from main');
@@ -63,16 +68,11 @@ try {
 	run('git', ['tag', '-a', tag, '-m', tag]);
 	run('git', ['push', '-q', 'origin', tag]);
 
-	step(6, 'publishing to npm and creating the GitHub release');
-	run('pnpm', ['publish', '--access', 'public']);
-
-	const tarball = run('npm', ['pack', '--silent'], true).split('\n').pop() as string;
-	run('gh', ['release', 'create', tag, tarball, '--generate-notes']);
-	run('rm', ['-f', tarball], true);
-
-	console.log(`\nreleased ${tag}`);
+	console.log(`\n${tag} is tagged on main.`);
+	console.log('publish it with: pnpm run publish:npm');
+	console.log('then announce it with: pnpm run publish:github');
 } catch (error) {
 	console.error(`\nrelease failed: ${(error as Error).message}`);
-	console.error('nothing further was attempted; re-run after fixing, or finish by hand with release:tag and release:publish');
+	console.error('nothing further was attempted; re-run after fixing, or finish by hand with release:tag');
 	process.exit(1);
 }
