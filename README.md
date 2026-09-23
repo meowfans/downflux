@@ -19,7 +19,7 @@ pnpm add downflux
 Extraction only. This is the default and writes nothing but a JSON record of what was found:
 
 ```ts
-import { BeegProvider } from 'downflux';
+import { BeegProvider } from 'downflux/providers';
 
 const provider = new BeegProvider('https://beeg.com/example-video-url');
 const result = await provider.getVideo();
@@ -31,7 +31,8 @@ Downloading to disk. Provider methods resolve as soon as extraction finishes, so
 coming without waiting for it; `whenSettled()` waits for the transfers:
 
 ```ts
-import { BeegProvider, OutputType } from 'downflux';
+import { BeegProvider } from 'downflux/providers';
+import { OutputType } from 'downflux/types';
 
 const provider = new BeegProvider('https://beeg.com/example-video-url')
   .setOutput(OutputType.DEVICE, { directoryPath: '/srv/media' });
@@ -42,6 +43,36 @@ const { downloaded, failed, errors } = await provider.whenSettled();
 
 `whenSettled()` resolves even when some items fail, because a partial batch is a normal result -
 inspect `failed` and `errors`. It rejects only if the download pipeline itself could not run.
+
+## Entry Points
+
+There is no root entry. Every import names the package directory it comes from, so a symbol
+has exactly one import path and you only pay for what you name.
+
+```ts
+import { OutputType } from 'downflux/types';
+import { FileManager } from 'downflux/storage';
+import { BeegProvider } from 'downflux/providers';
+```
+
+| Subpath | Contents |
+| --- | --- |
+| `downflux/providers` | every site integration |
+| `downflux/base` | `BaseProvider`, `BaseParser`, `BaseTransformer`, `BasePipeline`, `BaseStrategy` |
+| `downflux/core` | coordinators, registries, progress, exceptions, lifecycle, CLI |
+| `downflux/engines` | `HttpClient`, `StreamHttpClient`, `HlsClient` |
+| `downflux/storage` | `FileManager`, `FFmpegEngine`, `PathBuilder` |
+| `downflux/shared` | constants, helpers, `Brand` |
+| `downflux/types` | enums and type-level helpers |
+| `downflux/contracts` | interfaces only, erased at runtime |
+
+Bundled cost of a single subpath, measured against a real install:
+
+| Import | Bundle |
+| --- | --- |
+| `downflux/providers` | 269.8 KB |
+| `downflux/storage` | 13.0 KB |
+| `downflux/types` | 4.9 KB |
 
 ## FFmpeg Setup
 
@@ -64,7 +95,8 @@ brew install ffmpeg
 Then point DownFlux at that executable:
 
 ```ts
-import { BeegProvider, OutputType } from 'downflux';
+import { BeegProvider } from 'downflux/providers';
+import { OutputType } from 'downflux/types';
 
 await new BeegProvider('https://beeg.com/example-video-url')
   .setOutput(OutputType.DEVICE, { directoryPath: 'downloads' })
@@ -96,7 +128,8 @@ target, not a filesystem path, so use `STREAM` and pipe to your storage client i
 ### Serving over HTTP
 
 ```ts
-import { PornHubProvider, OutputType } from 'downflux';
+import { PornHubProvider } from 'downflux/providers';
+import { OutputType } from 'downflux/types';
 import { pipeline } from 'stream/promises';
 
 await new PornHubProvider(url)
