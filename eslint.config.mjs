@@ -17,6 +17,7 @@ export default defineConfig(
 						'scripts/codegen/*.ts',
 						'scripts/codegen/templates/*.ts',
 						'scripts/make-registry.ts',
+						'scripts/release.ts',
 						'scripts/make-index.ts',
 						'scripts/generate.ts'
 					]
