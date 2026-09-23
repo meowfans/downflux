@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type BeegExecArgs, type BeegVideoOutput } from './BeegContracts';
+import { BeegParser } from './BeegParser';
+import { BeegTransformer } from './BeegTransformer';
+import { BeegPipeline } from './BeegPipeline';
 import { BeegMethods } from './BeegTypes';
 
 /**
@@ -36,7 +39,10 @@ export class BeegProvider extends BaseProvider<BeegExecArgs> {
 				cloudflareChallenge: false,
 				needsExternalAPI: true,
 				sniSpoofing: 'working'
-			}
+			},
+			parser: BeegParser,
+			transformer: BeegTransformer,
+			pipeline: BeegPipeline
 		});
 	}
 

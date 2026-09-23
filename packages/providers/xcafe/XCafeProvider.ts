@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type XCafeExecArgs, type XCafeVideoOutput } from './XCafeContracts';
+import { XCafeParser } from './XCafeParser';
+import { XCafeTransformer } from './XCafeTransformer';
+import { XCafePipeline } from './XCafePipeline';
 import { XCafeMethods } from './XCafeTypes';
 
 /**
@@ -33,7 +36,10 @@ export class XCafeProvider extends BaseProvider<XCafeExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: XCafeParser,
+			transformer: XCafeTransformer,
+			pipeline: XCafePipeline
 		});
 	}
 

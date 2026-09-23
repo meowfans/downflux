@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type UnsplashExecArgs } from './UnsplashContracts';
+import { UnsplashParser } from './UnsplashParser';
+import { UnsplashTransformer } from './UnsplashTransformer';
+import { UnsplashPipeline } from './UnsplashPipeline';
 
 export class UnsplashProvider extends GenericContentProvider<UnsplashExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class UnsplashProvider extends GenericContentProvider<UnsplashExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: UnsplashParser,
+			transformer: UnsplashTransformer,
+			pipeline: UnsplashPipeline
 		});
 	}
 }

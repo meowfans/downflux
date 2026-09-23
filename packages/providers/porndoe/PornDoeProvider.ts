@@ -2,6 +2,10 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type PornDoeExecArgs, type PornDoeVideoOutput } from './PornDoeContracts';
+import { PornDoeParser } from './PornDoeParser';
+import { PornDoeTransformer } from './PornDoeTransformer';
+import { PornDoePipeline } from './PornDoePipeline';
+import { PornDoeStrategy } from './PornDoeStrategy';
 import { PornDoeMethods } from './PornDoeTypes';
 
 /**
@@ -35,7 +39,11 @@ export class PornDoeProvider extends BaseProvider<PornDoeExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: PornDoeParser,
+			transformer: PornDoeTransformer,
+			pipeline: PornDoePipeline,
+			strategy: PornDoeStrategy
 		});
 	}
 

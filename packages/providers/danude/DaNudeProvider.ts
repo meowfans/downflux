@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type DaNudeExecArgs, type DaNudeVideoOutput } from './DaNudeContracts';
+import { DaNudeParser } from './DaNudeParser';
+import { DaNudeTransformer } from './DaNudeTransformer';
+import { DaNudePipeline } from './DaNudePipeline';
 import { DaNudeMethods } from './DaNudeTypes';
 
 /**
@@ -32,7 +35,10 @@ export class DaNudeProvider extends BaseProvider<DaNudeExecArgs> {
 				requiresBrowser: false,
 				sniSpoofing: 'untested',
 				underGeoRestriction: false
-			}
+			},
+			parser: DaNudeParser,
+			transformer: DaNudeTransformer,
+			pipeline: DaNudePipeline
 		});
 	}
 

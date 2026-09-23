@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type PixivExecArgs } from './PixivContracts';
+import { PixivParser } from './PixivParser';
+import { PixivTransformer } from './PixivTransformer';
+import { PixivPipeline } from './PixivPipeline';
 
 export class PixivProvider extends GenericContentProvider<PixivExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class PixivProvider extends GenericContentProvider<PixivExecArgs> {
 				requiresLogin: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: PixivParser,
+			transformer: PixivTransformer,
+			pipeline: PixivPipeline
 		});
 	}
 }

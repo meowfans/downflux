@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type XDeguExecArgs, type XDeguVideoOutput } from './XDeguContracts';
+import { XDeguParser } from './XDeguParser';
+import { XDeguTransformer } from './XDeguTransformer';
+import { XDeguPipeline } from './XDeguPipeline';
 import { XDeguMethods } from './XDeguTypes';
 
 /**
@@ -32,7 +35,10 @@ export class XDeguProvider extends BaseProvider<XDeguExecArgs> {
 				requiresBrowser: false,
 				sniSpoofing: 'untested',
 				underGeoRestriction: false
-			}
+			},
+			parser: XDeguParser,
+			transformer: XDeguTransformer,
+			pipeline: XDeguPipeline
 		});
 	}
 

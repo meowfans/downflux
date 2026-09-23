@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type BlackPornExecArgs, type BlackPornVideoOutput } from './BlackPornContracts';
+import { BlackPornParser } from './BlackPornParser';
+import { BlackPornTransformer } from './BlackPornTransformer';
+import { BlackPornPipeline } from './BlackPornPipeline';
 import { BlackPornMethods } from './BlackPornTypes';
 
 /**
@@ -32,7 +35,10 @@ export class BlackPornProvider extends BaseProvider<BlackPornExecArgs> {
 				underDevelopment: true,
 				needsExternalAPI: false,
 				canDownload: false
-			}
+			},
+			parser: BlackPornParser,
+			transformer: BlackPornTransformer,
+			pipeline: BlackPornPipeline
 		});
 	}
 

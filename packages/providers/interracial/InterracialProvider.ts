@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type InterracialExecArgs, type InterracialVideoOutput } from './InterracialContracts';
+import { InterracialParser } from './InterracialParser';
+import { InterracialTransformer } from './InterracialTransformer';
+import { InterracialPipeline } from './InterracialPipeline';
 import { InterracialMethods } from './InterracialTypes';
 
 /**
@@ -32,7 +35,10 @@ export class InterracialProvider extends BaseProvider<InterracialExecArgs> {
 				requiresBrowser: false,
 				sniSpoofing: 'untested',
 				underGeoRestriction: false
-			}
+			},
+			parser: InterracialParser,
+			transformer: InterracialTransformer,
+			pipeline: InterracialPipeline
 		});
 	}
 

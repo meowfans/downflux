@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type BlueskyExecArgs } from './BlueskyContracts';
+import { BlueskyParser } from './BlueskyParser';
+import { BlueskyTransformer } from './BlueskyTransformer';
+import { BlueskyPipeline } from './BlueskyPipeline';
 
 export class BlueskyProvider extends GenericContentProvider<BlueskyExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class BlueskyProvider extends GenericContentProvider<BlueskyExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: BlueskyParser,
+			transformer: BlueskyTransformer,
+			pipeline: BlueskyPipeline
 		});
 	}
 }

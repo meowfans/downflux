@@ -1,6 +1,10 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider } from '@types';
 import { type XnXXExecArgs, type XnXXVideoOutput } from './XnXXContracts';
+import { XnXXParser } from './XnXXParser';
+import { XnXXTransformer } from './XnXXTransformer';
+import { XnXXPipeline } from './XnXXPipeline';
+import { XnXXStrategy } from './XnXXStrategy';
 import { XnXXMethods } from './XnXXTypes';
 
 /**
@@ -33,7 +37,11 @@ export class XnXXProvider extends BaseProvider<XnXXExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'working'
-			}
+			},
+			parser: XnXXParser,
+			transformer: XnXXTransformer,
+			pipeline: XnXXPipeline,
+			strategy: XnXXStrategy
 		});
 	}
 

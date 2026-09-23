@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type PornSevenExecArgs, type PornSevenVideoOutput } from './PornSevenContracts';
+import { PornSevenParser } from './PornSevenParser';
+import { PornSevenTransformer } from './PornSevenTransformer';
+import { PornSevenPipeline } from './PornSevenPipeline';
 import { PornSevenMethods } from './PornSevenTypes';
 
 /**
@@ -33,7 +36,10 @@ export class PornSevenProvider extends BaseProvider<PornSevenExecArgs> {
 				underGeoRestriction: false,
 				underDevelopment: true,
 				canDownload: false
-			}
+			},
+			parser: PornSevenParser,
+			transformer: PornSevenTransformer,
+			pipeline: PornSevenPipeline
 		});
 	}
 

@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type SuperPornExecArgs, type SuperPornVideoOutput } from './SuperPornContracts';
+import { SuperPornParser } from './SuperPornParser';
+import { SuperPornTransformer } from './SuperPornTransformer';
+import { SuperPornPipeline } from './SuperPornPipeline';
 import { SuperPornMethods } from './SuperPornTypes';
 
 /**
@@ -35,7 +38,10 @@ export class SuperPornProvider extends BaseProvider<SuperPornExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: SuperPornParser,
+			transformer: SuperPornTransformer,
+			pipeline: SuperPornPipeline
 		});
 	}
 

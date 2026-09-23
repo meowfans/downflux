@@ -1,8 +1,8 @@
 import { BaseHttpClient } from '@base';
 import { type DownloadOptions, type FetchResult } from '@contracts';
 import { type ProgressManager } from '@core/progress';
+import type { ProviderComponents } from '@contracts';
 import { StrategyRegistry } from '@core/registries';
-import { Provider } from '@types';
 
 /**
  * HTTP engine for page and JSON metadata requests.
@@ -12,10 +12,17 @@ import { Provider } from '@types';
  * transport fallback, and response decoding before parsers receive HTML.
  */
 export class HttpClient extends BaseHttpClient {
-	constructor(progressManager: ProgressManager) {
+	constructor(
+		progressManager: ProgressManager,
+		private readonly components: ProviderComponents = {}
+	) {
 		super(progressManager);
+
+		// built here, not as a field initialiser, which would run before `components` is set
+		this.strategyRegistry = new StrategyRegistry(progressManager, components);
 	}
-	private readonly strategyRegistry = new StrategyRegistry(this.progressManager);
+
+	private readonly strategyRegistry: StrategyRegistry;
 
 	/**
 	 * Fetches a page as HTML using provider-aware transport rules.
@@ -27,7 +34,7 @@ export class HttpClient extends BaseHttpClient {
 	public async fetchHtml(url: string, opts: DownloadOptions): Promise<FetchResult> {
 		const { retries = 3 } = opts;
 		const timeoutMs = opts.timeoutMs ?? 30_000;
-		const strategy = await this.strategyRegistry.getStrategy(opts.provider ?? Provider.Default);
+		const strategy = await this.strategyRegistry.getStrategy();
 		const candidateUrls = strategy.getHostFallbackUrls?.(url) ?? [url];
 
 		let lastError: Error | null = null;

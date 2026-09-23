@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type PinterestExecArgs } from './PinterestContracts';
+import { PinterestParser } from './PinterestParser';
+import { PinterestTransformer } from './PinterestTransformer';
+import { PinterestPipeline } from './PinterestPipeline';
 
 export class PinterestProvider extends GenericContentProvider<PinterestExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class PinterestProvider extends GenericContentProvider<PinterestExecArgs>
 				requiresLogin: false,
 				cloudflareChallenge: true,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: PinterestParser,
+			transformer: PinterestTransformer,
+			pipeline: PinterestPipeline
 		});
 	}
 }

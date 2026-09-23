@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type ArtStationExecArgs } from './ArtStationContracts';
+import { ArtStationParser } from './ArtStationParser';
+import { ArtStationTransformer } from './ArtStationTransformer';
+import { ArtStationPipeline } from './ArtStationPipeline';
 
 export class ArtStationProvider extends GenericContentProvider<ArtStationExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class ArtStationProvider extends GenericContentProvider<ArtStationExecArg
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: ArtStationParser,
+			transformer: ArtStationTransformer,
+			pipeline: ArtStationPipeline
 		});
 	}
 }

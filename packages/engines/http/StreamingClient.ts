@@ -29,7 +29,7 @@ export class StreamHttpClient extends BaseHttpClient {
 	}
 
 	private async handleServiceAware404(url: string, opts: DownloadOptions): Promise<HLSStreamRequest | null> {
-		const strategy = await this.strategyRegistry.getStrategy(opts.provider);
+		const strategy = await this.strategyRegistry.getStrategy();
 
 		if (!strategy) return null;
 
@@ -91,7 +91,7 @@ export class StreamHttpClient extends BaseHttpClient {
 		body: UResponse,
 		opts: DownloadOptions
 	): Promise<HLSStreamRequest | null> {
-		const strategy = await this.strategyRegistry.getStrategy(opts.provider);
+		const strategy = await this.strategyRegistry.getStrategy();
 		const shouldResolve = strategy?.shouldResolveTextResponse?.(url, contentType);
 
 		this.progressManager.update({ message: `Resolving text response...${url} should resolve ${shouldResolve}` });
@@ -115,7 +115,7 @@ export class StreamHttpClient extends BaseHttpClient {
 	public async requestStream(url: string, opts: DownloadOptions): Promise<HLSStreamRequest> {
 		const { timeoutMs = 30_000, retries = 3 } = opts;
 
-		const strategy = await this.strategyRegistry.getStrategy(opts.provider);
+		const strategy = await this.strategyRegistry.getStrategy();
 		const candidateUrls = strategy.getHostFallbackUrls?.(url) ?? [url];
 
 		let lastError: Error | null = null;

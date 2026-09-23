@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type WikiArtExecArgs } from './WikiArtContracts';
+import { WikiArtParser } from './WikiArtParser';
+import { WikiArtTransformer } from './WikiArtTransformer';
+import { WikiArtPipeline } from './WikiArtPipeline';
 
 export class WikiArtProvider extends GenericContentProvider<WikiArtExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class WikiArtProvider extends GenericContentProvider<WikiArtExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: WikiArtParser,
+			transformer: WikiArtTransformer,
+			pipeline: WikiArtPipeline
 		});
 	}
 }

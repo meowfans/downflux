@@ -12,6 +12,9 @@ import {
 	type WallHavenWallPaperOutput
 } from './WallHavenContracts';
 import { WallHavenMethods, type WallHavenThumbnailQuality } from './WallHavenTypes';
+import { WallHavenParser } from './WallHavenParser';
+import { WallHavenTransformer } from './WallHavenTransformer';
+import { WallHavenPipeline } from './WallHavenPipeline';
 
 /**
  * WallHaven provider.
@@ -42,7 +45,10 @@ export class WallHavenProvider extends BaseProvider<WallHavenExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: WallHavenParser,
+			transformer: WallHavenTransformer,
+			pipeline: WallHavenPipeline
 		});
 	}
 

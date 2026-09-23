@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type TheyAreHugeExecArgs, type TheyAreHugeVideoOutput } from './TheyAreHugeContracts';
+import { TheyAreHugeParser } from './TheyAreHugeParser';
+import { TheyAreHugeTransformer } from './TheyAreHugeTransformer';
+import { TheyAreHugePipeline } from './TheyAreHugePipeline';
 import { TheyAreHugeMethods } from './TheyAreHugeTypes';
 
 /**
@@ -38,7 +41,10 @@ export class TheyAreHugeProvider extends BaseProvider<TheyAreHugeExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: TheyAreHugeParser,
+			transformer: TheyAreHugeTransformer,
+			pipeline: TheyAreHugePipeline
 		});
 	}
 

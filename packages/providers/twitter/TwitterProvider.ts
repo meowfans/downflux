@@ -9,6 +9,9 @@ import {
 	type TwitterTimelineOutput
 } from './TwitterContracts';
 import { TwitterMethods } from './TwitterTypes';
+import { TwitterParser } from './TwitterParser';
+import { TwitterTransformer } from './TwitterTransformer';
+import { TwitterPipeline } from './TwitterPipeline';
 
 const DEFAULT_PAGE_RANGE: PageRange = { page: 1, limit: 1 };
 
@@ -34,7 +37,10 @@ export class TwitterProvider extends BaseProvider<TwitterExecArgs> {
 				requiresLogin: true,
 				cloudflareChallenge: true,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: TwitterParser,
+			transformer: TwitterTransformer,
+			pipeline: TwitterPipeline
 		});
 	}
 

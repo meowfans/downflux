@@ -2,6 +2,10 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type MyLustExecArgs, type MyLustVideoOutput } from './MyLustContracts';
+import { MyLustParser } from './MyLustParser';
+import { MyLustTransformer } from './MyLustTransformer';
+import { MyLustPipeline } from './MyLustPipeline';
+import { MyLustStrategy } from './MyLustStrategy';
 import { MyLustMethods } from './MyLustTypes';
 
 /**
@@ -33,7 +37,11 @@ export class MyLustProvider extends BaseProvider<MyLustExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: MyLustParser,
+			transformer: MyLustTransformer,
+			pipeline: MyLustPipeline,
+			strategy: MyLustStrategy
 		});
 	}
 

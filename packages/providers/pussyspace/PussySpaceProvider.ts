@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type PussySpaceExecArgs, type PussySpaceVideoOutput } from './PussySpaceContracts';
+import { PussySpaceParser } from './PussySpaceParser';
+import { PussySpaceTransformer } from './PussySpaceTransformer';
+import { PussySpacePipeline } from './PussySpacePipeline';
 import { PussySpaceMethods } from './PussySpaceTypes';
 
 /**
@@ -35,7 +38,10 @@ export class PussySpaceProvider extends BaseProvider<PussySpaceExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: PussySpaceParser,
+			transformer: PussySpaceTransformer,
+			pipeline: PussySpacePipeline
 		});
 	}
 

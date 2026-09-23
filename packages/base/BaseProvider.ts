@@ -77,7 +77,17 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 
 		this.validate();
 
-		this.deps = createDefaultDependencies();
+		/**
+		 * The provider hands its own parser, transformer, pipeline and strategy to
+		 * the dependency graph, so the core layer never has to look them up by enum
+		 * and therefore never imports any provider.
+		 */
+		this.deps = createDefaultDependencies({
+			parser: config.parser,
+			transformer: config.transformer,
+			pipeline: config.pipeline,
+			strategy: config.strategy
+		});
 		this.executionOptions = {
 			outputType: OutputType.JSON,
 			executionType: ExecutionType.SEQUENTIAL,

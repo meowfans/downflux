@@ -12,6 +12,9 @@ import {
 	type OkPornVideoOutput
 } from './OkPornContracts';
 import { OkPornMethods } from './OkPornTypes';
+import { OkPornParser } from './OkPornParser';
+import { OkPornTransformer } from './OkPornTransformer';
+import { OkPornPipeline } from './OkPornPipeline';
 
 /**
  * OkPorn provider
@@ -53,7 +56,10 @@ export class OkPornProvider extends BaseProvider<OkPornExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: OkPornParser,
+			transformer: OkPornTransformer,
+			pipeline: OkPornPipeline
 		});
 	}
 

@@ -1,6 +1,9 @@
 import { BaseProvider } from '@base';
 import { Provider, type VideoQuality } from '@types';
 import { type HqPornExecArgs, type HqPornVideoOutput } from './HqPornContracts';
+import { HqPornParser } from './HqPornParser';
+import { HqPornTransformer } from './HqPornTransformer';
+import { HqPornPipeline } from './HqPornPipeline';
 import { HqPornMethods } from './HqPornTypes';
 
 /**
@@ -34,7 +37,10 @@ export class HqPornProvider extends BaseProvider<HqPornExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: HqPornParser,
+			transformer: HqPornTransformer,
+			pipeline: HqPornPipeline
 		});
 	}
 

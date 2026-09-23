@@ -1,17 +1,19 @@
 import { BaseProvider } from '@base';
 import { Provider } from '@types';
 import { {{ArgsName}} } from './{{ProviderName}}Contracts';
-
+import { {{ProviderName}}Parser } from './{{ProviderName}}Parser';
+import { {{ProviderName}}Pipeline } from './{{ProviderName}}Pipeline';
+import { {{ProviderName}}Transformer } from './{{ProviderName}}Transformer';
 
 export class {{ProviderName}}Provider extends BaseProvider<{{ArgsName}}> {
-	protected readonly provider = Provider.{{ProviderName}}
+	protected readonly provider = Provider.{{ProviderName}};
 
 	constructor(url: string) {
-		super(url,{
-			provider:Provider.{{ProviderName}},
-			urlPattern:/implementation$/i,
+		super(url, {
+			provider: Provider.{{ProviderName}},
+			urlPattern: /implementation$/i,
 			metadata: {
-			    hasHls: false,
+				hasHls: false,
 				type: 'implementation',
 				hasMp4: true,
 				hasKvs: false,
@@ -20,10 +22,16 @@ export class {{ProviderName}}Provider extends BaseProvider<{{ArgsName}}> {
 				underGeoRestriction: false,
 				underDevelopment: true,
 				needsExternalAPI: false,
-				canDownload:false
-			}
+				canDownload: false
+			},
+			/**
+			 * The provider supplies its own components. Core resolves them from here
+			 * rather than from a registry, which is what keeps the core layer free of
+			 * provider imports. Drop any line whose file you did not generate.
+			 */
+			parser: {{ProviderName}}Parser,
+			transformer: {{ProviderName}}Transformer,
+			pipeline: {{ProviderName}}Pipeline
 		});
 	}
 }
-
-

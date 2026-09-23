@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type InstagramExecArgs } from './InstagramContracts';
+import { InstagramParser } from './InstagramParser';
+import { InstagramTransformer } from './InstagramTransformer';
+import { InstagramPipeline } from './InstagramPipeline';
 
 export class InstagramProvider extends GenericContentProvider<InstagramExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class InstagramProvider extends GenericContentProvider<InstagramExecArgs>
 				requiresLogin: true,
 				cloudflareChallenge: true,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: InstagramParser,
+			transformer: InstagramTransformer,
+			pipeline: InstagramPipeline
 		});
 	}
 }

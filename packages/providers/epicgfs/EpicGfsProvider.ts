@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type EpicGfsExecArgs, type EpicGfsVideoOutput } from './EpicGfsContracts';
+import { EpicGfsParser } from './EpicGfsParser';
+import { EpicGfsTransformer } from './EpicGfsTransformer';
+import { EpicGfsPipeline } from './EpicGfsPipeline';
 import { EpicGfsMethods } from './EpicGfsTypes';
 
 /**
@@ -32,7 +35,10 @@ export class EpicGfsProvider extends BaseProvider<EpicGfsExecArgs> {
 				requiresBrowser: false,
 				sniSpoofing: 'untested',
 				underGeoRestriction: false
-			}
+			},
+			parser: EpicGfsParser,
+			transformer: EpicGfsTransformer,
+			pipeline: EpicGfsPipeline
 		});
 	}
 

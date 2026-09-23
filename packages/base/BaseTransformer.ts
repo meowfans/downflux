@@ -8,9 +8,9 @@ import {
 	type VideoSourceOutput
 } from '@contracts';
 import { type ProgressManager } from '@core/progress';
-import { ParserRegistry } from '@core/registries';
+import { BaseParser } from './BaseParser';
 import { type HttpClient } from '@engine/http';
-import { Provider, VideoQuality } from '@types';
+import { VideoQuality } from '@types';
 
 /**
  * Selectors used to normalize provider-specific video records.
@@ -31,9 +31,17 @@ export interface UniqueVideosProps<T> {
  * subclasses can map those raw fields into stable public result types.
  */
 export class BaseTransformer<TExec extends ExecutionArgs, TResult = DefaultExecutionResult> {
+	/**
+	 * @param parser Provider parser, injected by the provider that owns it.
+	 *
+	 * @remarks
+	 * Receiving the class removes the last runtime edge from `base` into `core`:
+	 * this used to call a registry that imported every provider.
+	 */
 	constructor(
 		protected readonly httpClient: HttpClient,
-		protected readonly progressManager: ProgressManager
+		protected readonly progressManager: ProgressManager,
+		protected readonly parser?: new () => BaseParser
 	) {}
 
 	/**
@@ -46,10 +54,11 @@ export class BaseTransformer<TExec extends ExecutionArgs, TResult = DefaultExecu
 	public async transform(url: string, request?: TExec): Promise<TResult> {
 		const fetched = await this.httpClient.fetchHtml(url, request as DownloadOptions);
 
-		const base = (await ParserRegistry.getParser(Provider.Default)).transform(fetched.html, fetched.finalUrl);
+		const base = new BaseParser().transform(fetched.html, fetched.finalUrl);
 
-		if (request?.provider !== Provider.Default) {
-			const transformed = (await ParserRegistry.getParser(request?.provider as Provider)).transform(fetched.html, fetched.finalUrl);
+		if (this.parser) {
+			const transformed = new this.parser().transform(fetched.html, fetched.finalUrl);
+
 			return { ...base, ...transformed, request } as TResult;
 		}
 
