@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type TumblrExecArgs } from './TumblrContracts';
+import { TumblrParser } from './TumblrParser';
+import { TumblrTransformer } from './TumblrTransformer';
+import { TumblrPipeline } from './TumblrPipeline';
 
 export class TumblrProvider extends GenericContentProvider<TumblrExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class TumblrProvider extends GenericContentProvider<TumblrExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: TumblrParser,
+			transformer: TumblrTransformer,
+			pipeline: TumblrPipeline
 		});
 	}
 }

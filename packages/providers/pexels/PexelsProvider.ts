@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type PexelsExecArgs } from './PexelsContracts';
+import { PexelsParser } from './PexelsParser';
+import { PexelsTransformer } from './PexelsTransformer';
+import { PexelsPipeline } from './PexelsPipeline';
 
 export class PexelsProvider extends GenericContentProvider<PexelsExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class PexelsProvider extends GenericContentProvider<PexelsExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: PexelsParser,
+			transformer: PexelsTransformer,
+			pipeline: PexelsPipeline
 		});
 	}
 }

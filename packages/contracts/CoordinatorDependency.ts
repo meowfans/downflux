@@ -8,6 +8,7 @@
  * in the package and left classes extending an undefined base at load time.
  */
 import type { ProviderMetadata } from '@base';
+import type { ProviderComponents } from './ProviderComponents';
 import type { ExecutionCoordinator, TransferCoordinator } from '@core/coordinators';
 import type { ProgressManager } from '@core/progress';
 import type { StrategyRegistry, TransformerRegistry } from '@core/registries';
@@ -35,7 +36,7 @@ export interface RegistryCoordinator {
 	method?: boolean;
 }
 
-export interface ProviderConfig {
+export interface ProviderConfig extends ProviderComponents {
 	provider: Provider;
 	urlPattern: RegExp;
 	metadata: ProviderMetadata;

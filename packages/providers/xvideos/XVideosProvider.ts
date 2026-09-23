@@ -1,6 +1,10 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider } from '@types';
 import { type XVideosExecArgs, type XVideosVideoOutput } from './XVideosContracts';
+import { XVideosParser } from './XVideosParser';
+import { XVideosTransformer } from './XVideosTransformer';
+import { XVideosPipeline } from './XVideosPipeline';
+import { XVideosStrategy } from './XVideosStrategy';
 import { XVideosMethods } from './XVideosTypes';
 
 /**
@@ -37,7 +41,11 @@ export class XVideosProvider extends BaseProvider<XVideosExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'failed' // for xvideos.com, untested for subdomains like xvideos2
-			}
+			},
+			parser: XVideosParser,
+			transformer: XVideosTransformer,
+			pipeline: XVideosPipeline,
+			strategy: XVideosStrategy
 		});
 	}
 

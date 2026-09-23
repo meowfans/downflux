@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type ZzzTubeExecArgs, type ZzzTubeVideoOutput } from './ZzzTubeContracts';
+import { ZzzTubeParser } from './ZzzTubeParser';
+import { ZzzTubeTransformer } from './ZzzTubeTransformer';
+import { ZzzTubePipeline } from './ZzzTubePipeline';
 import { ZzzTubeMethods } from './ZzzTubeTypes';
 
 /**
@@ -33,7 +36,10 @@ export class ZzzTubeProvider extends BaseProvider<ZzzTubeExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: ZzzTubeParser,
+			transformer: ZzzTubeTransformer,
+			pipeline: ZzzTubePipeline
 		});
 	}
 

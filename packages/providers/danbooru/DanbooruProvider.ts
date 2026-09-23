@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type DanbooruExecArgs } from './DanbooruContracts';
+import { DanbooruParser } from './DanbooruParser';
+import { DanbooruTransformer } from './DanbooruTransformer';
+import { DanbooruPipeline } from './DanbooruPipeline';
 
 export class DanbooruProvider extends GenericContentProvider<DanbooruExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class DanbooruProvider extends GenericContentProvider<DanbooruExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: DanbooruParser,
+			transformer: DanbooruTransformer,
+			pipeline: DanbooruPipeline
 		});
 	}
 }

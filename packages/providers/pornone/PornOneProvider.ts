@@ -1,6 +1,10 @@
 import { BaseProvider } from '@base';
 import { Provider } from '@types';
 import { type PornOneExecArgs, type PornOneVideoOutput } from './PornOneContracts';
+import { PornOneParser } from './PornOneParser';
+import { PornOneTransformer } from './PornOneTransformer';
+import { PornOnePipeline } from './PornOnePipeline';
+import { PornOneStrategy } from './PornOneStrategy';
 import { PornOneMethods } from './PornOneTypes';
 
 /**
@@ -33,7 +37,11 @@ export class PornOneProvider extends BaseProvider<PornOneExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: true,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: PornOneParser,
+			transformer: PornOneTransformer,
+			pipeline: PornOnePipeline,
+			strategy: PornOneStrategy
 		});
 	}
 

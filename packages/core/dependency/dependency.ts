@@ -1,4 +1,4 @@
-import { type CoordinatorDependencies } from '@contracts';
+import { type CoordinatorDependencies, type ProviderComponents } from '@contracts';
 import { ExecutionCoordinator, TaskCoordinator, TransferCoordinator } from '@core/coordinators';
 import { ProgressManager } from '@core/progress';
 import { PipelineRegistry, StrategyRegistry, TransformerRegistry } from '@core/registries';
@@ -16,9 +16,10 @@ import { FFmpegEngine, FileManager } from '@storage';
  * underneath it are process-wide and shared (see `BaseHttpClient`), which is what
  * previously leaked six pools per provider construction.
  *
+ * @param components Classes the provider contributes; anything omitted falls back to `Base*`.
  * @returns Default service dependencies
  */
-export function createDefaultDependencies(): CoordinatorDependencies {
+export function createDefaultDependencies(components: ProviderComponents = {}): CoordinatorDependencies {
 	const progressManager = new ProgressManager();
 
 	const cliManager = new CliManager(progressManager);
@@ -26,15 +27,15 @@ export function createDefaultDependencies(): CoordinatorDependencies {
 	const ffmpegEngine = new FFmpegEngine(progressManager);
 	const fileManager = new FileManager(ffmpegEngine, progressManager);
 
-	const strategyRegistry = new StrategyRegistry(progressManager);
+	const strategyRegistry = new StrategyRegistry(progressManager, components);
 
-	const httpClient = new HttpClient(progressManager);
+	const httpClient = new HttpClient(progressManager, components);
 	const hlsClient = new HlsClient(progressManager);
 	const streamHttpClient = new StreamHttpClient(hlsClient, strategyRegistry, progressManager);
 
-	const pipelineRegistry = new PipelineRegistry(fileManager);
+	const pipelineRegistry = new PipelineRegistry(fileManager, components);
 
-	const transformerRegistry = new TransformerRegistry(httpClient, progressManager);
+	const transformerRegistry = new TransformerRegistry(httpClient, progressManager, components);
 
 	const transferCoordinator = new TransferCoordinator(fileManager, streamHttpClient, progressManager);
 

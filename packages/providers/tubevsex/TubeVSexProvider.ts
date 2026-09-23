@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type TubeVSexExecArgs, type TubeVSexVideoOutput } from './TubeVSexContracts';
+import { TubeVSexParser } from './TubeVSexParser';
+import { TubeVSexTransformer } from './TubeVSexTransformer';
+import { TubeVSexPipeline } from './TubeVSexPipeline';
 import { TubeVSexMethods } from './TubeVSexTypes';
 
 /**
@@ -33,7 +36,10 @@ export class TubeVSexProvider extends BaseProvider<TubeVSexExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: TubeVSexParser,
+			transformer: TubeVSexTransformer,
+			pipeline: TubeVSexPipeline
 		});
 	}
 

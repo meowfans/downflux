@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type WikimediaExecArgs } from './WikimediaContracts';
+import { WikimediaParser } from './WikimediaParser';
+import { WikimediaTransformer } from './WikimediaTransformer';
+import { WikimediaPipeline } from './WikimediaPipeline';
 
 export class WikimediaProvider extends GenericContentProvider<WikimediaExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class WikimediaProvider extends GenericContentProvider<WikimediaExecArgs>
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: WikimediaParser,
+			transformer: WikimediaTransformer,
+			pipeline: WikimediaPipeline
 		});
 	}
 }

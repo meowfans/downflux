@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type AnalRzExecArgs, type AnalRzVideoOutput } from './AnalRzContracts';
+import { AnalRzParser } from './AnalRzParser';
+import { AnalRzTransformer } from './AnalRzTransformer';
+import { AnalRzPipeline } from './AnalRzPipeline';
 import { AnalRzMethods } from './AnalRzTypes';
 
 /**
@@ -34,7 +37,10 @@ export class AnalRzProvider extends BaseProvider<AnalRzExecArgs> {
 				underDevelopment: true,
 				needsExternalAPI: false,
 				canDownload: true
-			}
+			},
+			parser: AnalRzParser,
+			transformer: AnalRzTransformer,
+			pipeline: AnalRzPipeline
 		});
 	}
 

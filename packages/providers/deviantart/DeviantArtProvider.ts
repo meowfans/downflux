@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type DeviantArtExecArgs } from './DeviantArtContracts';
+import { DeviantArtParser } from './DeviantArtParser';
+import { DeviantArtTransformer } from './DeviantArtTransformer';
+import { DeviantArtPipeline } from './DeviantArtPipeline';
 
 export class DeviantArtProvider extends GenericContentProvider<DeviantArtExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class DeviantArtProvider extends GenericContentProvider<DeviantArtExecArg
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: DeviantArtParser,
+			transformer: DeviantArtTransformer,
+			pipeline: DeviantArtPipeline
 		});
 	}
 }

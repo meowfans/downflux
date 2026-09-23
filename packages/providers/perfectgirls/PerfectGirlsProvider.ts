@@ -12,6 +12,10 @@ import {
 	type PerfectGirlsVideoOutput
 } from './PerfectGirlsContracts';
 import { PerfectGirlsMethods } from './PerfectGirlsTypes';
+import { PerfectGirlsParser } from './PerfectGirlsParser';
+import { PerfectGirlsTransformer } from './PerfectGirlsTransformer';
+import { PerfectGirlsPipeline } from './PerfectGirlsPipeline';
+import { PerfectGirlsStrategy } from './PerfectGirlsStrategy';
 
 /**
  * @class PerfectGirlsProvider
@@ -54,7 +58,11 @@ export class PerfectGirlsProvider extends BaseProvider<PerfectGirlsExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: PerfectGirlsParser,
+			transformer: PerfectGirlsTransformer,
+			pipeline: PerfectGirlsPipeline,
+			strategy: PerfectGirlsStrategy
 		});
 	}
 

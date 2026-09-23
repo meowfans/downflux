@@ -1,6 +1,9 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider } from '@types';
 import { type SexVidExecArgs, type SexVidVideoOutput } from './SexVidContracts';
+import { SexVidParser } from './SexVidParser';
+import { SexVidTransformer } from './SexVidTransformer';
+import { SexVidPipeline } from './SexVidPipeline';
 import { SexVidMethods } from './SexVidTypes';
 
 /**
@@ -33,7 +36,10 @@ export class SexVidProvider extends BaseProvider<SexVidExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: SexVidParser,
+			transformer: SexVidTransformer,
+			pipeline: SexVidPipeline
 		});
 	}
 

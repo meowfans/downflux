@@ -125,51 +125,6 @@ const members = registry.services
 execTypes = patchRegion(execTypes, 'entries', members);
 write(execTypesPath, execTypes);
 
-const resolvePath = (service: any, type: string) => {
-	const name = service.name;
-	return `() => load${type}(() => import('@provider/${name.toLowerCase()}'), '${name}${type}')`;
-};
-
-// ParserRegistry
-const parserPath = 'packages/core/registries/ParserRegistry.ts';
-let parserReg = read(parserPath);
-const pEntries = registry.services
-	.map((s) => `\t\t[Provider.${s.name}]: ${s.parser ? resolvePath(s, 'Parser') : 'async () => BaseParser'}`)
-	.sort((a, b) => a.localeCompare(b))
-	.join(',\n');
-parserReg = patchRegion(parserReg, 'entries', pEntries);
-write(parserPath, parserReg);
-
-// PipelineRegistry
-const pipelinePath = 'packages/core/registries/PipelineRegistry.ts';
-let pipelineReg = read(pipelinePath);
-const pipEntries = registry.services
-	.map((s) => `\t\t[Provider.${s.name}]: ${s.pipeline ? resolvePath(s, 'Pipeline') : 'async () => BasePipeline'}`)
-	.sort((a, b) => a.localeCompare(b))
-	.join(',\n');
-pipelineReg = patchRegion(pipelineReg, 'entries', pipEntries);
-write(pipelinePath, pipelineReg);
-
-// StrategyRegistry
-const strategyPath = 'packages/core/registries/StrategyRegistry.ts';
-let strategyReg = read(strategyPath);
-const sEntries = registry.services
-	.map((s) => `\t\t[Provider.${s.name}]: ${s.strategy ? resolvePath(s, 'Strategy') : 'async () => BaseStrategy'}`)
-	.sort((a, b) => a.localeCompare(b))
-	.join(',\n');
-strategyReg = patchRegion(strategyReg, 'entries', sEntries);
-write(strategyPath, strategyReg);
-
-// TransformerRegistry
-const transPath = 'packages/core/registries/TransformerRegistry.ts';
-let transReg = read(transPath);
-const tEntries = registry.services
-	.map((s) => `\t\t[Provider.${s.name}]: ${s.transformer ? resolvePath(s, 'Transformer') : 'async () => BaseTransformer'}`)
-	.sort((a, b) => a.localeCompare(b))
-	.join(',\n');
-transReg = patchRegion(transReg, 'entries', tEntries);
-write(transPath, transReg);
-
 // tsconfig.json
 const tsConfigPath = 'tsconfig.json';
 let tsConfigReg = read(tsConfigPath);

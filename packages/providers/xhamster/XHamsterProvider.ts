@@ -2,6 +2,10 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type XHamsterExecArgs, type XHamsterVideoOutput } from './XHamsterContracts';
+import { XHamsterParser } from './XHamsterParser';
+import { XHamsterTransformer } from './XHamsterTransformer';
+import { XHamsterPipeline } from './XHamsterPipeline';
+import { XHamsterStrategy } from './XHamsterStrategy';
 import { XHamsterMethods } from './XHamsterTypes';
 
 /**
@@ -37,7 +41,11 @@ export class XHamsterProvider extends BaseProvider<XHamsterExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'working'
-			}
+			},
+			parser: XHamsterParser,
+			transformer: XHamsterTransformer,
+			pipeline: XHamsterPipeline,
+			strategy: XHamsterStrategy
 		});
 	}
 

@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type BoKepPornExecArgs, type BoKepPornVideoOutput } from './BoKepPornContracts';
+import { BoKepPornParser } from './BoKepPornParser';
+import { BoKepPornTransformer } from './BoKepPornTransformer';
+import { BoKepPornPipeline } from './BoKepPornPipeline';
 import { BoKepPornMethods } from './BoKepPornTypes';
 
 /**
@@ -32,7 +35,10 @@ export class BoKepPornProvider extends BaseProvider<BoKepPornExecArgs> {
 				requiresBrowser: false,
 				sniSpoofing: 'untested',
 				underGeoRestriction: false
-			}
+			},
+			parser: BoKepPornParser,
+			transformer: BoKepPornTransformer,
+			pipeline: BoKepPornPipeline
 		});
 	}
 

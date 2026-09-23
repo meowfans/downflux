@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type CumLouderExecArgs, type CumLouderVideoOutput } from './CumLouderContracts';
+import { CumLouderParser } from './CumLouderParser';
+import { CumLouderTransformer } from './CumLouderTransformer';
+import { CumLouderPipeline } from './CumLouderPipeline';
 import { CumLouderMethods } from './CumLouderTypes';
 
 /**
@@ -34,7 +37,10 @@ export class CumLouderProvider extends BaseProvider<CumLouderExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'failed'
-			}
+			},
+			parser: CumLouderParser,
+			transformer: CumLouderTransformer,
+			pipeline: CumLouderPipeline
 		});
 	}
 

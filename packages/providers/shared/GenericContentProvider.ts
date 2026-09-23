@@ -1,8 +1,9 @@
+import type { ProviderComponents } from '@contracts';
 import { BaseProvider, type ProviderMetadata } from '@base';
 import { type DefaultExecutionResult, type ExecutionArgs } from '@contracts';
 import { ExtractionTarget, type Provider } from '@types';
 
-export interface GenericContentProviderConfig {
+export interface GenericContentProviderConfig extends ProviderComponents {
 	provider: Provider;
 	urlPattern: RegExp;
 	metadata: ProviderMetadata;

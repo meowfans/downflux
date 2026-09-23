@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type MangaDexExecArgs } from './MangaDexContracts';
+import { MangaDexParser } from './MangaDexParser';
+import { MangaDexTransformer } from './MangaDexTransformer';
+import { MangaDexPipeline } from './MangaDexPipeline';
 
 export class MangaDexProvider extends GenericContentProvider<MangaDexExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class MangaDexProvider extends GenericContentProvider<MangaDexExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: MangaDexParser,
+			transformer: MangaDexTransformer,
+			pipeline: MangaDexPipeline
 		});
 	}
 }

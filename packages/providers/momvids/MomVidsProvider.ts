@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type MomVidsExecArgs, type MomVidsVideoOutput } from './MomVidsContracts';
+import { MomVidsParser } from './MomVidsParser';
+import { MomVidsTransformer } from './MomVidsTransformer';
+import { MomVidsPipeline } from './MomVidsPipeline';
 import { MomVidsMethods } from './MomVidsTypes';
 
 /**
@@ -32,7 +35,10 @@ export class MomVidsProvider extends BaseProvider<MomVidsExecArgs> {
 				requiresBrowser: false,
 				sniSpoofing: 'untested',
 				underGeoRestriction: false
-			}
+			},
+			parser: MomVidsParser,
+			transformer: MomVidsTransformer,
+			pipeline: MomVidsPipeline
 		});
 	}
 

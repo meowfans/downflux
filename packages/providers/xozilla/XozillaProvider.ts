@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type XozillaExecArgs, type XozillaVideoOutput } from './XozillaContracts';
+import { XozillaParser } from './XozillaParser';
+import { XozillaTransformer } from './XozillaTransformer';
+import { XozillaPipeline } from './XozillaPipeline';
 import { XozillaMethods } from './XozillaTypes';
 
 /**
@@ -32,7 +35,10 @@ export class XozillaProvider extends BaseProvider<XozillaExecArgs> {
 				requiresBrowser: false,
 				sniSpoofing: 'untested',
 				underGeoRestriction: false
-			}
+			},
+			parser: XozillaParser,
+			transformer: XozillaTransformer,
+			pipeline: XozillaPipeline
 		});
 	}
 

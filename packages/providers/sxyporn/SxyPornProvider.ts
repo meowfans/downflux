@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type SxyPornExecArgs, type SxyPornVideoOutput } from './SxyPornContracts';
+import { SxyPornParser } from './SxyPornParser';
+import { SxyPornTransformer } from './SxyPornTransformer';
+import { SxyPornPipeline } from './SxyPornPipeline';
 import { SxyPornMethods } from './SxyPornTypes';
 
 /**
@@ -36,7 +39,10 @@ export class SxyPornProvider extends BaseProvider<SxyPornExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: true,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: SxyPornParser,
+			transformer: SxyPornTransformer,
+			pipeline: SxyPornPipeline
 		});
 	}
 

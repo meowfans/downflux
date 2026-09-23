@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type ImgurExecArgs } from './ImgurContracts';
+import { ImgurParser } from './ImgurParser';
+import { ImgurTransformer } from './ImgurTransformer';
+import { ImgurPipeline } from './ImgurPipeline';
 
 export class ImgurProvider extends GenericContentProvider<ImgurExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class ImgurProvider extends GenericContentProvider<ImgurExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: ImgurParser,
+			transformer: ImgurTransformer,
+			pipeline: ImgurPipeline
 		});
 	}
 }

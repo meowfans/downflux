@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type RedditExecArgs } from './RedditContracts';
+import { RedditParser } from './RedditParser';
+import { RedditTransformer } from './RedditTransformer';
+import { RedditPipeline } from './RedditPipeline';
 
 export class RedditProvider extends GenericContentProvider<RedditExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class RedditProvider extends GenericContentProvider<RedditExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: RedditParser,
+			transformer: RedditTransformer,
+			pipeline: RedditPipeline
 		});
 	}
 }

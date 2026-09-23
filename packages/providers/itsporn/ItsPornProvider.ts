@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type ItsPornExecArgs, type ItsPornVideoOutput } from './ItsPornContracts';
+import { ItsPornParser } from './ItsPornParser';
+import { ItsPornTransformer } from './ItsPornTransformer';
+import { ItsPornPipeline } from './ItsPornPipeline';
 import { ItsPornMethods } from './ItsPornTypes';
 
 /**
@@ -32,7 +35,10 @@ export class ItsPornProvider extends BaseProvider<ItsPornExecArgs> {
 				requiresBrowser: false,
 				sniSpoofing: 'untested',
 				underGeoRestriction: false
-			}
+			},
+			parser: ItsPornParser,
+			transformer: ItsPornTransformer,
+			pipeline: ItsPornPipeline
 		});
 	}
 

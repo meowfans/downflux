@@ -1,6 +1,9 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider, type VideoQuality } from '@types';
 import { type TnAFlixExecArgs, type TnAFlixVideoOutput } from './TnAFlixContracts';
+import { TnAFlixParser } from './TnAFlixParser';
+import { TnAFlixTransformer } from './TnAFlixTransformer';
+import { TnAFlixPipeline } from './TnAFlixPipeline';
 import { TnAFlixMethods } from './TnAFlixTypes';
 
 /**
@@ -33,7 +36,10 @@ export class TnAFlixProvider extends BaseProvider<TnAFlixExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: TnAFlixParser,
+			transformer: TnAFlixTransformer,
+			pipeline: TnAFlixPipeline
 		});
 	}
 

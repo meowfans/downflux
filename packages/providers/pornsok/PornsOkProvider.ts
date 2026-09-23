@@ -1,6 +1,9 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider, type VideoQuality } from '@types';
 import { type PornsOkExecArgs, type PornsOkVideoOutput } from './PornsOkContracts';
+import { PornsOkParser } from './PornsOkParser';
+import { PornsOkTransformer } from './PornsOkTransformer';
+import { PornsOkPipeline } from './PornsOkPipeline';
 import { PornsOkMethods } from './PornsOkTypes';
 
 /**
@@ -31,7 +34,10 @@ export class PornsOkProvider extends BaseProvider<PornsOkExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: PornsOkParser,
+			transformer: PornsOkTransformer,
+			pipeline: PornsOkPipeline
 		});
 	}
 

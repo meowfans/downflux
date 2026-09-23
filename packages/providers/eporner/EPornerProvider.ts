@@ -1,6 +1,10 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider } from '@types';
 import { type EPornerExecArgs, type EPornerVideoOutput } from './EPornerContracts';
+import { EPornerParser } from './EPornerParser';
+import { EPornerTransformer } from './EPornerTransformer';
+import { EPornerPipeline } from './EPornerPipeline';
+import { EPornerStrategy } from './EPornerStrategy';
 import { EPornerMethods } from './EPornerTypes';
 
 /**
@@ -32,7 +36,11 @@ export class EPornerProvider extends BaseProvider<EPornerExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'working'
-			}
+			},
+			parser: EPornerParser,
+			transformer: EPornerTransformer,
+			pipeline: EPornerPipeline,
+			strategy: EPornerStrategy
 		});
 	}
 

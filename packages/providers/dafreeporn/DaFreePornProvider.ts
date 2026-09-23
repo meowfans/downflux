@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type DaFreePornExecArgs, type DaFreePornVideoOutput } from './DaFreePornContracts';
+import { DaFreePornParser } from './DaFreePornParser';
+import { DaFreePornTransformer } from './DaFreePornTransformer';
+import { DaFreePornPipeline } from './DaFreePornPipeline';
 import { DaFreePornMethods } from './DaFreePornTypes';
 
 /**
@@ -32,7 +35,10 @@ export class DaFreePornProvider extends BaseProvider<DaFreePornExecArgs> {
 				requiresBrowser: false,
 				sniSpoofing: 'untested',
 				underGeoRestriction: false
-			}
+			},
+			parser: DaFreePornParser,
+			transformer: DaFreePornTransformer,
+			pipeline: DaFreePornPipeline
 		});
 	}
 

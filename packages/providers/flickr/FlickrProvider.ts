@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type FlickrExecArgs } from './FlickrContracts';
+import { FlickrParser } from './FlickrParser';
+import { FlickrTransformer } from './FlickrTransformer';
+import { FlickrPipeline } from './FlickrPipeline';
 
 export class FlickrProvider extends GenericContentProvider<FlickrExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class FlickrProvider extends GenericContentProvider<FlickrExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: FlickrParser,
+			transformer: FlickrTransformer,
+			pipeline: FlickrPipeline
 		});
 	}
 }

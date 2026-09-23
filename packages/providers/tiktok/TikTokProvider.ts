@@ -1,6 +1,8 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type TikTokExecArgs } from './TikTokContracts';
+import { TikTokParser } from './TikTokParser';
+import { TikTokTransformer } from './TikTokTransformer';
 
 export class TikTokProvider extends GenericContentProvider<TikTokExecArgs> {
 	constructor(url: string) {
@@ -22,7 +24,9 @@ export class TikTokProvider extends GenericContentProvider<TikTokExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: true,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: TikTokParser,
+			transformer: TikTokTransformer
 		});
 	}
 }

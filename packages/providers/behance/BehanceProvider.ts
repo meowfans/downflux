@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type BehanceExecArgs } from './BehanceContracts';
+import { BehanceParser } from './BehanceParser';
+import { BehanceTransformer } from './BehanceTransformer';
+import { BehancePipeline } from './BehancePipeline';
 
 export class BehanceProvider extends GenericContentProvider<BehanceExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class BehanceProvider extends GenericContentProvider<BehanceExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: BehanceParser,
+			transformer: BehanceTransformer,
+			pipeline: BehancePipeline
 		});
 	}
 }

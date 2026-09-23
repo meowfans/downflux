@@ -9,6 +9,10 @@ import {
 	type PornHubVideosOutput
 } from './PornHubContracts';
 import { type PornHubChannelsQueryArgsType, PornHubMethods, type PornHubVideosFormat } from './PornHubTypes';
+import { PornHubParser } from './PornHubParser';
+import { PornHubTransformer } from './PornHubTransformer';
+import { PornHubPipeline } from './PornHubPipeline';
+import { PornHubStrategy } from './PornHubStrategy';
 
 /**
  * @class PornHub provider.
@@ -51,7 +55,11 @@ export class PornHubProvider extends BaseProvider<PornHubExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'working'
-			}
+			},
+			parser: PornHubParser,
+			transformer: PornHubTransformer,
+			pipeline: PornHubPipeline,
+			strategy: PornHubStrategy
 		});
 	}
 

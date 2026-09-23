@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type ColliderPornExecArgs, type ColliderPornVideoOutput } from './ColliderPornContracts';
+import { ColliderPornParser } from './ColliderPornParser';
+import { ColliderPornTransformer } from './ColliderPornTransformer';
+import { ColliderPornPipeline } from './ColliderPornPipeline';
 import { ColliderPornMethods } from './ColliderPornTypes';
 
 /**
@@ -40,7 +43,10 @@ export class ColliderPornProvider extends BaseProvider<ColliderPornExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: ColliderPornParser,
+			transformer: ColliderPornTransformer,
+			pipeline: ColliderPornPipeline
 		});
 	}
 

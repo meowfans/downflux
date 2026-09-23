@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type Lesbian8ExecArgs, type Lesbian8VideoOutput } from './Lesbian8Contracts';
+import { Lesbian8Parser } from './Lesbian8Parser';
+import { Lesbian8Transformer } from './Lesbian8Transformer';
+import { Lesbian8Pipeline } from './Lesbian8Pipeline';
 import { Lesbian8Methods } from './Lesbian8Types';
 
 /**
@@ -33,7 +36,10 @@ export class Lesbian8Provider extends BaseProvider<Lesbian8ExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: Lesbian8Parser,
+			transformer: Lesbian8Transformer,
+			pipeline: Lesbian8Pipeline
 		});
 	}
 

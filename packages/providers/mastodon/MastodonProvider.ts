@@ -1,6 +1,9 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type MastodonExecArgs } from './MastodonContracts';
+import { MastodonParser } from './MastodonParser';
+import { MastodonTransformer } from './MastodonTransformer';
+import { MastodonPipeline } from './MastodonPipeline';
 
 export class MastodonProvider extends GenericContentProvider<MastodonExecArgs> {
 	constructor(url: string) {
@@ -22,7 +25,10 @@ export class MastodonProvider extends GenericContentProvider<MastodonExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: MastodonParser,
+			transformer: MastodonTransformer,
+			pipeline: MastodonPipeline
 		});
 	}
 }

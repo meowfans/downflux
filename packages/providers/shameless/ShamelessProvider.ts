@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type ShamelessExecArgs, type ShamelessVideoOutput } from './ShamelessContracts';
+import { ShamelessParser } from './ShamelessParser';
+import { ShamelessTransformer } from './ShamelessTransformer';
+import { ShamelessPipeline } from './ShamelessPipeline';
 import { ShamelessMethods } from './ShamelessTypes';
 
 /**
@@ -34,7 +37,10 @@ export class ShamelessProvider extends BaseProvider<ShamelessExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: ShamelessParser,
+			transformer: ShamelessTransformer,
+			pipeline: ShamelessPipeline
 		});
 	}
 

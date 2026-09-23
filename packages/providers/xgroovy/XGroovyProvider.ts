@@ -2,6 +2,10 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type XGroovyExecArgs, type XGroovyVideoOutput } from './XGroovyContracts';
+import { XGroovyParser } from './XGroovyParser';
+import { XGroovyTransformer } from './XGroovyTransformer';
+import { XGroovyPipeline } from './XGroovyPipeline';
+import { XGroovyStrategy } from './XGroovyStrategy';
 import { XGroovyMethods } from './XGroovyTypes';
 
 /**
@@ -35,7 +39,11 @@ export class XGroovyProvider extends BaseProvider<XGroovyExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: XGroovyParser,
+			transformer: XGroovyTransformer,
+			pipeline: XGroovyPipeline,
+			strategy: XGroovyStrategy
 		});
 	}
 

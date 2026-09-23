@@ -2,6 +2,9 @@ import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
 import { type MegaTubeExecArgs, type MegaTubeVideoOutput } from './MegaTubeContracts';
+import { MegaTubeParser } from './MegaTubeParser';
+import { MegaTubeTransformer } from './MegaTubeTransformer';
+import { MegaTubePipeline } from './MegaTubePipeline';
 import { MegaTubeMethods } from './MegaTubeTypes';
 
 /**
@@ -33,7 +36,10 @@ export class MegaTubeProvider extends BaseProvider<MegaTubeExecArgs> {
 				underDevelopment: true,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: MegaTubeParser,
+			transformer: MegaTubeTransformer,
+			pipeline: MegaTubePipeline
 		});
 	}
 

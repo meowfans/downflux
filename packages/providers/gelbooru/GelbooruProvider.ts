@@ -1,6 +1,8 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type GelbooruExecArgs } from './GelbooruContracts';
+import { GelbooruParser } from './GelbooruParser';
+import { GelbooruTransformer } from './GelbooruTransformer';
 
 export class GelbooruProvider extends GenericContentProvider<GelbooruExecArgs> {
 	constructor(url: string) {
@@ -22,7 +24,9 @@ export class GelbooruProvider extends GenericContentProvider<GelbooruExecArgs> {
 				requiresLogin: false,
 				cloudflareChallenge: false,
 				sniSpoofing: 'untested'
-			}
+			},
+			parser: GelbooruParser,
+			transformer: GelbooruTransformer
 		});
 	}
 }
