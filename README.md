@@ -447,9 +447,27 @@ The generated docs are intentionally linked from this README so provider and API
 
 ## Publishing
 
+`main` is protected, so the version bump goes through a pull request and the tag is
+created afterwards, against the commit that actually landed.
+
 ```bash
-pnpm run pack:dry-run
-pnpm publish
+# 1. bump the version and write the CHANGELOG (no tag yet)
+pnpm run release:prepare          # or release:prepare:major for a breaking release
+
+# 2. land the version commit
+git checkout -b release/v$(node -p "require('./package.json').version")
+git push -u origin HEAD
+gh pr create -t "Release v$(node -p "require('./package.json').version")" -b "" && gh pr merge -sd
+
+# 3. tag the merged commit and publish
+git checkout main && git pull
+pnpm run release:tag
+pnpm run release:publish
 ```
 
-`pnpm run pack:dry-run` rebuilds the package and previews the files that npm will receive.
+`release:tag` refuses to run unless `HEAD` is already on `origin/main`. Tagging before the
+pull request is merged strands the tag: a squash merge rewrites the commit, so the tag ends
+up pointing at an orphan that is not in the released history.
+
+`pnpm run release:dry-run` previews the bump and changelog without writing anything, and
+`pnpm run pack:dry-run` rebuilds and lists the files npm will receive.

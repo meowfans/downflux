@@ -36,12 +36,12 @@
 		"generate": "tsx scripts/codegen/generate.ts",
 		"make:index": "tsx scripts/make-index.ts",
 		"make:registry": "tsx scripts/make-registry.ts",
-		"release": "standard-version",
-		"release:major": "standard-version --release-as major",
+		"release:prepare": "standard-version --skip.tag",
+		"release:prepare:major": "standard-version --release-as major --skip.tag",
 		"release:dry-run": "standard-version --dry-run",
-		"release:tag": "git push --follow-tags origin main",
+		"release:tag": "git fetch -q origin main && git merge-base --is-ancestor HEAD origin/main && VERSION=v$(node -p \"require('./package.json').version\") && git tag -a \"$VERSION\" -m \"$VERSION\" && git push origin \"$VERSION\"",
 		"release:github": "TARBALL=$(npm pack --silent | tail -1) && gh release create v$(node -p \"require('./package.json').version\") \"$TARBALL\" --generate-notes && rm -f \"$TARBALL\"",
-		"release:publish": "pnpm run release && pnpm run release:tag && pnpm publish --access public && pnpm run release:github"
+		"release:publish": "pnpm publish --access public && pnpm run release:github"
 	},
 	"repository": {
 		"type": "git",
