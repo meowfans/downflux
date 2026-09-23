@@ -70,9 +70,10 @@
 		"release:prepare:major": "standard-version --release-as major --skip.tag",
 		"release:dry-run": "standard-version --dry-run",
 		"release:tag": "git fetch -q origin main && git merge-base --is-ancestor HEAD origin/main && VERSION=v$(node -p \"require('./package.json').version\") && git tag -a \"$VERSION\" -m \"$VERSION\" && git push origin \"$VERSION\"",
-		"release:github": "TARBALL=$(npm pack --silent | tail -1) && gh release create v$(node -p \"require('./package.json').version\") \"$TARBALL\" --generate-notes && rm -f \"$TARBALL\"",
-		"release:publish": "tsx scripts/release.ts",
-		"release:publish:major": "tsx scripts/release.ts --major"
+		"release": "tsx scripts/release.ts",
+		"release:major": "tsx scripts/release.ts --major",
+		"publish:npm": "pnpm publish --access public",
+		"publish:github": "TARBALL=$(npm pack --silent | tail -1) && gh release create v$(node -p \"require('./package.json').version\") \"$TARBALL\" --generate-notes && rm -f \"$TARBALL\""
 	},
 	"repository": {
 		"type": "git",

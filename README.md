@@ -480,19 +480,26 @@ The generated docs are intentionally linked from this README so provider and API
 
 ## Publishing
 
-One command does the whole release:
+Three separate commands, in order. They are separate on purpose: publishing to npm is
+irreversible — a version number can never be reused — so it is never reached as the tail of
+a longer chain that might get there after something earlier went wrong, and either
+distribution step can be retried without redoing the other.
 
 ```bash
-pnpm run release:publish          # or release:publish:major for a breaking release
+# 1. version, land and tag — no distribution happens here
+pnpm run release              # or release:major for a breaking release
+
+# 2. publish the package
+pnpm run publish:npm
+
+# 3. attach the tarball to a GitHub release on the tag
+pnpm run publish:github
 ```
 
-It bumps the version, writes the CHANGELOG, opens and squash-merges the release pull
-request, tags the merged commit, publishes to npm, and creates the GitHub release with the
-tarball attached.
-
-It refuses to start unless you are on `main`, the working tree is clean, and `main` is level
-with `origin/main`. Two ordering rules are baked in and are the reason this is a script
-rather than a chain of git commands:
+Step 1 bumps the version, writes the CHANGELOG, opens and squash-merges the release pull
+request, then tags the merged commit. It refuses to start unless you are on `main`, the
+working tree is clean, and `main` is level with `origin/main`. Two ordering rules are baked
+in, and are why this is a script rather than a chain of git commands:
 
 - the release branch is cut **before** the version bump, because `standard-version` commits
   to the current branch; bumping on `main` leaves a commit that the squash merge duplicates,
@@ -500,12 +507,8 @@ rather than a chain of git commands:
 - the tag is created **after** the merge, against the squashed commit; tagging earlier
   strands the tag on a commit that never reaches the released history
 
-If a step fails, nothing further is attempted. Fix the cause and re-run, or finish by hand:
-
-```bash
-pnpm run release:tag              # tags the merged commit, refuses if it is not on origin/main
-pnpm run release:github           # packs and attaches the tarball to the tag
-```
+If step 1 fails, nothing further is attempted. Fix the cause and re-run, or tag by hand with
+`pnpm run release:tag`, which refuses to tag anything that is not already on `origin/main`.
 
 `pnpm run release:dry-run` previews the bump and changelog without writing anything, and
 `pnpm run pack:dry-run` lists the files npm will receive.
