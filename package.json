@@ -35,11 +35,17 @@
 		"format": "prettier --write \"packages/**/*.ts\" \"scripts/**/*.ts\"",
 		"generate": "tsx scripts/codegen/generate.ts",
 		"make:index": "tsx scripts/make-index.ts",
-		"make:registry": "tsx scripts/make-registry.ts"
+		"make:registry": "tsx scripts/make-registry.ts",
+		"release": "standard-version",
+		"release:major": "standard-version --release-as major",
+		"release:dry-run": "standard-version --dry-run",
+		"release:tag": "git push --follow-tags origin main",
+		"release:github": "TARBALL=$(npm pack --silent | tail -1) && gh release create v$(node -p \"require('./package.json').version\") \"$TARBALL\" --generate-notes && rm -f \"$TARBALL\"",
+		"release:publish": "pnpm run release && pnpm run release:tag && pnpm publish --access public && pnpm run release:github"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/cloudgrids/downflux.git"
+		"url": "git+https://github.com/meowfans/downflux.git"
 	},
 	"keywords": [
 		"downflux",
@@ -50,9 +56,9 @@
 	"author": "cloudgrids <cloudgrids@users.noreply.github.com>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/cloudgrids/downflux/issues"
+		"url": "https://github.com/meowfans/downflux/issues"
 	},
-	"homepage": "https://github.com/cloudgrids/downflux#readme",
+	"homepage": "https://github.com/meowfans/downflux#readme",
 	"engines": {
 		"node": ">=22.0.0"
 	},
