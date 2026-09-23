@@ -447,27 +447,32 @@ The generated docs are intentionally linked from this README so provider and API
 
 ## Publishing
 
-`main` is protected, so the version bump goes through a pull request and the tag is
-created afterwards, against the commit that actually landed.
+One command does the whole release:
 
 ```bash
-# 1. bump the version and write the CHANGELOG (no tag yet)
-pnpm run release:prepare          # or release:prepare:major for a breaking release
-
-# 2. land the version commit
-git checkout -b release/v$(node -p "require('./package.json').version")
-git push -u origin HEAD
-gh pr create -t "Release v$(node -p "require('./package.json').version")" -b "" && gh pr merge -sd
-
-# 3. tag the merged commit and publish
-git checkout main && git pull
-pnpm run release:tag
-pnpm run release:publish
+pnpm run release:publish          # or release:publish:major for a breaking release
 ```
 
-`release:tag` refuses to run unless `HEAD` is already on `origin/main`. Tagging before the
-pull request is merged strands the tag: a squash merge rewrites the commit, so the tag ends
-up pointing at an orphan that is not in the released history.
+It bumps the version, writes the CHANGELOG, opens and squash-merges the release pull
+request, tags the merged commit, publishes to npm, and creates the GitHub release with the
+tarball attached.
+
+It refuses to start unless you are on `main`, the working tree is clean, and `main` is level
+with `origin/main`. Two ordering rules are baked in and are the reason this is a script
+rather than a chain of git commands:
+
+- the release branch is cut **before** the version bump, because `standard-version` commits
+  to the current branch; bumping on `main` leaves a commit that the squash merge duplicates,
+  and `main` diverges from its own remote
+- the tag is created **after** the merge, against the squashed commit; tagging earlier
+  strands the tag on a commit that never reaches the released history
+
+If a step fails, nothing further is attempted. Fix the cause and re-run, or finish by hand:
+
+```bash
+pnpm run release:tag              # tags the merged commit, refuses if it is not on origin/main
+pnpm run release:github           # packs and attaches the tarball to the tag
+```
 
 `pnpm run release:dry-run` previews the bump and changelog without writing anything, and
-`pnpm run pack:dry-run` rebuilds and lists the files npm will receive.
+`pnpm run pack:dry-run` lists the files npm will receive.
