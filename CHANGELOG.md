@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.0.0](https://github.com/meowfans/downflux/compare/v2.0.0...v3.0.0) (2026-09-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* there is no root entry. Import from the package directory instead,
+for example `downflux/providers` or `downflux/types`.
+
+Importing downflux/types costs 4.9 KB against 269.8 KB for downflux/providers.
+
+### Features
+
+* expose each package directory as its own entry point ([#161](https://github.com/meowfans/downflux/issues/161)) ([f7dd144](https://github.com/meowfans/downflux/commit/f7dd1440199c38075be63c42419e44de9a00a1d5))
+
+
+### Bug Fixes
+
+* bring scripts/ into the tsconfig project ([#162](https://github.com/meowfans/downflux/issues/162)) ([faf64fd](https://github.com/meowfans/downflux/commit/faf64fde2cce30a13ffe97bf5f04d25574a7855c)), closes [#151](https://github.com/meowfans/downflux/issues/151)
+
 ## [2.0.0](https://github.com/meowfans/downflux/compare/v1.1.1...v2.0.0) (2026-09-23)
 
 
