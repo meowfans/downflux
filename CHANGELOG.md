@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.0.1](https://github.com/meowfans/downflux/compare/v3.0.0...v3.0.1) (2026-09-23)
+
+
+### Bug Fixes
+
+* keep a settled job from being repainted as running ([#165](https://github.com/meowfans/downflux/issues/165)) ([ec74f36](https://github.com/meowfans/downflux/commit/ec74f3605fc4bde71ace1ace3b89cabc87f46442))
+* stop minification corrupting the CJS build ([#164](https://github.com/meowfans/downflux/issues/164)) ([f3b7567](https://github.com/meowfans/downflux/commit/f3b75673572a424b2fb86cf5e4eb536f291b924d))
+
 ## [3.0.0](https://github.com/meowfans/downflux/compare/v2.0.0...v3.0.0) (2026-09-23)
 
 
