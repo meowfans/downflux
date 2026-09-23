@@ -1,8 +1,14 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, PageRange, Provider, UrlFormat, VideoQuality } from '@types';
-import { PornHubChannelsOutput, PornHubExecArgs, PornHubVideoOutput, PornHubVideosExecArgs, PornHubVideosOutput } from './PornHubContracts';
-import { PornHubChannelsQueryArgsType, PornHubMethods, PornHubVideosFormat } from './PornHubTypes';
+import { ExtractionTarget, type PageRange, Provider, type UrlFormat, type VideoQuality } from '@types';
+import {
+	type PornHubChannelsOutput,
+	type PornHubExecArgs,
+	type PornHubVideoOutput,
+	type PornHubVideosExecArgs,
+	type PornHubVideosOutput
+} from './PornHubContracts';
+import { type PornHubChannelsQueryArgsType, PornHubMethods, type PornHubVideosFormat } from './PornHubTypes';
 
 /**
  * @class PornHub provider.

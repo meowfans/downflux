@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { TnAFlixExecArgs, TnAFlixOutput, TnAFlixVideoOutput } from './TnAFlixContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type TnAFlixExecArgs, type TnAFlixOutput, type TnAFlixVideoOutput } from './TnAFlixContracts';
 import { TnAFlixMethods } from './TnAFlixTypes';
 
 /**

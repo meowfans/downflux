@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { ShamelessExecArgs, ShamelessOutput } from './ShamelessContracts';
+import { type ShamelessExecArgs, type ShamelessOutput } from './ShamelessContracts';
 
 /**
  * Builds downloadable Shameless pipeline items from normalized metadata.

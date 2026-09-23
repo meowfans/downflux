@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { PussySpaceOutput } from './PussySpaceContracts';
+import { type PussySpaceOutput } from './PussySpaceContracts';
 
 /**
  * Extracts PussySpace-specific metadata from fetched HTML.

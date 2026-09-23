@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { ZbPornExecArgs, ZbPornOutput, ZbPornVideoOutput } from './ZbPornContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type ZbPornExecArgs, type ZbPornOutput, type ZbPornVideoOutput } from './ZbPornContracts';
 import { ZbPornMethods } from './ZbPornTypes';
 
 type ZbPornTransformedOutput = DefaultExecutionResult<Partial<ZbPornOutput>>;

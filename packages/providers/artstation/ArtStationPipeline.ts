@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { ArtStationExecArgs, ArtStationOutput } from './ArtStationContracts';
+import { type ArtStationExecArgs, type ArtStationOutput } from './ArtStationContracts';
 
 export class ArtStationPipeline extends BasePipeline<ArtStationExecArgs, ArtStationOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<ArtStationOutput>): string {

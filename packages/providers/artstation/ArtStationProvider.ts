@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { ArtStationExecArgs } from './ArtStationContracts';
+import { type ArtStationExecArgs } from './ArtStationContracts';
 
 export class ArtStationProvider extends GenericContentProvider<ArtStationExecArgs> {
 	constructor(url: string) {

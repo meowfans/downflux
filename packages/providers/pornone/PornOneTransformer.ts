@@ -1,7 +1,7 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { VideoQuality } from '@types';
-import { PornOneExecArgs, PornOneOutput, PornOneVideoOutput } from './PornOneContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type VideoQuality } from '@types';
+import { type PornOneExecArgs, type PornOneOutput, type PornOneVideoOutput } from './PornOneContracts';
 import { PornOneMethods } from './PornOneTypes';
 
 /**

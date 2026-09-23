@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { TwitterExecArgs, TwitterOutput, TwitterPostOutput, TwitterTimelineOutput } from './TwitterContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type TwitterExecArgs, type TwitterOutput, type TwitterPostOutput, type TwitterTimelineOutput } from './TwitterContracts';
 import { TwitterMethods } from './TwitterTypes';
 
 type TwitterTransformedOutput = DefaultExecutionResult<Partial<TwitterOutput>>;

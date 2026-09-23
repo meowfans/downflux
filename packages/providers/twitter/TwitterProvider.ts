@@ -1,7 +1,13 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, PageRange, Provider } from '@types';
-import { TwitterApiTimelineArgs, TwitterExecArgs, TwitterPostOutput, TwitterSearchArgs, TwitterTimelineOutput } from './TwitterContracts';
+import { ExtractionTarget, type PageRange, Provider } from '@types';
+import {
+	type TwitterApiTimelineArgs,
+	type TwitterExecArgs,
+	type TwitterPostOutput,
+	type TwitterSearchArgs,
+	type TwitterTimelineOutput
+} from './TwitterContracts';
 import { TwitterMethods } from './TwitterTypes';
 
 const DEFAULT_PAGE_RANGE: PageRange = { page: 1, limit: 1 };

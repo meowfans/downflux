@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { AnalRzExecArgs, AnalRzVideoOutput } from './AnalRzContracts';
+import { type AnalRzExecArgs, type AnalRzVideoOutput } from './AnalRzContracts';
 import { AnalRzMethods } from './AnalRzTypes';
 
 /**

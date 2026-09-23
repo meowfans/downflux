@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { EpicGfsExecArgs, EpicGfsOutput, EpicGfsVideoOutput } from './EpicGfsContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type EpicGfsExecArgs, type EpicGfsOutput, type EpicGfsVideoOutput } from './EpicGfsContracts';
 import { EpicGfsMethods } from './EpicGfsTypes';
 
 type EpicGfsTransformedOutput = DefaultExecutionResult<Partial<EpicGfsOutput>>;

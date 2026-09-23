@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { ZzzTubeExecArgs, ZzzTubeOutput, ZzzTubeVideoOutput } from './ZzzTubeContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type ZzzTubeExecArgs, type ZzzTubeOutput, type ZzzTubeVideoOutput } from './ZzzTubeContracts';
 import { ZzzTubeMethods } from './ZzzTubeTypes';
 
 /**

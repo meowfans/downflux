@@ -1,10 +1,10 @@
-import { TranscodeOptions } from '@contracts';
-import { ProgressManager } from '@core/progress';
+import { type TranscodeOptions } from '@contracts';
+import { type ProgressManager } from '@core/progress';
 import { execFile, spawn } from 'child_process';
 import ffmpegPath from 'ffmpeg-static';
 import { accessSync, constants, promises as fs } from 'fs';
 import path from 'path';
-import { Readable, Writable } from 'stream';
+import { type Readable, type Writable } from 'stream';
 import { promisify } from 'util';
 
 const execFileAsync = promisify(execFile);

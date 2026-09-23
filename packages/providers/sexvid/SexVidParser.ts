@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { SexVidOutput } from './SexVidContracts';
+import { type SexVidOutput } from './SexVidContracts';
 
 /**
  * Extracts SexVid-specific metadata from fetched HTML.

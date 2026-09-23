@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { BehanceExecArgs } from './BehanceContracts';
+import { type BehanceExecArgs } from './BehanceContracts';
 
 export class BehanceProvider extends GenericContentProvider<BehanceExecArgs> {
 	constructor(url: string) {

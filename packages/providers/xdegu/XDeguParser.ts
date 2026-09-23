@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { XDeguOutput } from './XDeguContracts';
+import { type XDeguOutput } from './XDeguContracts';
 
 /**
  * Extracts XDegu-specific metadata from fetched HTML.

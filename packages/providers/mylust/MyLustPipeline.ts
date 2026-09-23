@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { MyLustExecArgs, MyLustOutput } from './MyLustContracts';
+import { type MyLustExecArgs, type MyLustOutput } from './MyLustContracts';
 
 /**
  * Builds downloadable MyLust pipeline items from normalized metadata.

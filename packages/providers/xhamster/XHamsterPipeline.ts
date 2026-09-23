@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType, VideoQuality } from '@types';
-import { XHamsterExecArgs, XHamsterOutput } from './XHamsterContracts';
+import { type XHamsterExecArgs, type XHamsterOutput } from './XHamsterContracts';
 
 /**
  * Builds downloadable XHamster pipeline items from normalized metadata.

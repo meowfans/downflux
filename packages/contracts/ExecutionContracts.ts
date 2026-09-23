@@ -1,21 +1,21 @@
-import { ProviderMetadata, TagFilterOptions } from '@base';
+import { type ProviderMetadata, type TagFilterOptions } from '@base';
 import {
-	AllowedExtension,
-	ExecutionShape,
-	ExecutionType,
-	ExtractionTarget,
-	OutputType,
-	Provider,
-	ShapeOutput,
-	VideoCodec,
-	VideoFormat,
-	VideoQuality
+	type AllowedExtension,
+	type ExecutionShape,
+	type ExecutionType,
+	type ExtractionTarget,
+	type OutputType,
+	type Provider,
+	type ShapeOutput,
+	type VideoCodec,
+	type VideoFormat,
+	type VideoQuality
 } from '@types';
-import { Dispatcher } from 'undici';
-import { HttpFetchOptions, VideoSourceOutput } from './DownloadContracts';
-import { PipelineHook, PipelineItem } from './PipelineContracts';
-import { JobProgressEvent } from './ProgressContracts';
-import { DirectoryOutputOptions, TranscodeOptions } from './StorageContracts';
+import { type Dispatcher } from 'undici';
+import { type HttpFetchOptions, type VideoSourceOutput } from './DownloadContracts';
+import { type PipelineHook, type PipelineItem } from './PipelineContracts';
+import { type JobProgressEvent } from './ProgressContracts';
+import { type DirectoryOutputOptions, type TranscodeOptions } from './StorageContracts';
 
 export interface ExecutionArgs<S extends ExecutionShape = ExecutionShape> extends ExecutionOptions {
 	provider: Provider;

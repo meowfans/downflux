@@ -1,4 +1,4 @@
-import { JobProgressStatus } from '@types';
+import { type JobProgressStatus } from '@types';
 
 /**
  * ANSI styling helpers and DownFlux brand assets.

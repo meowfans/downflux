@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { ItsPornExecArgs, ItsPornOutput } from './ItsPornContracts';
+import { type ItsPornExecArgs, type ItsPornOutput } from './ItsPornContracts';
 
 /**
  * Builds downloadable ItsPorn pipeline items from normalized metadata.

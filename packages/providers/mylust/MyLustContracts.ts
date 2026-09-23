@@ -1,4 +1,4 @@
-import { DefaultExecutionResult, DefaultVideoOutput, ExecutionArgs } from '@contracts';
+import { type DefaultExecutionResult, type DefaultVideoOutput, type ExecutionArgs } from '@contracts';
 
 export interface MyLustExecArgs extends ExecutionArgs {}
 export interface MyLustOutput extends DefaultExecutionResult, MyLustVideoOutput {}

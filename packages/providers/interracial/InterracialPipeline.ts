@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { InterracialExecArgs, InterracialOutput } from './InterracialContracts';
+import { type InterracialExecArgs, type InterracialOutput } from './InterracialContracts';
 
 /**
  * Builds downloadable Interracial pipeline items from normalized metadata.

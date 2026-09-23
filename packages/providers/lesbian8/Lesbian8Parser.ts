@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { Lesbian8Output } from './Lesbian8Contracts';
+import { type Lesbian8Output } from './Lesbian8Contracts';
 
 /**
  * Extracts Lesbian8-specific metadata from fetched HTML.

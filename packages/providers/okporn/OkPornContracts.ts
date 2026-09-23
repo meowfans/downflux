@@ -1,6 +1,6 @@
-import { TagFilterOptions } from '@base';
-import { DefaultExecutionResult, DefaultVideoOutput, ExecutionArgs } from '@contracts';
-import { VideoQuality } from '@types';
+import { type TagFilterOptions } from '@base';
+import { type DefaultExecutionResult, type DefaultVideoOutput, type ExecutionArgs } from '@contracts';
+import { type VideoQuality } from '@types';
 
 export type OkPornIdType = 'path' | 'url';
 

@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { PornDoeOutput } from './PornDoeContracts';
+import { type PornDoeOutput } from './PornDoeContracts';
 
 /**
  * Extracts PornDoe-specific metadata from fetched HTML.

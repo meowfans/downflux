@@ -1,7 +1,7 @@
-import { DownloadOptions, DownloadResult, HLSStreamRequest, PipelineItem, ResolvedFile } from '@contracts';
-import { ProgressManager } from '@core/progress';
-import { StreamHttpClient } from '@engine/http';
-import { FileManager } from '@storage';
+import { type DownloadOptions, type DownloadResult, type HLSStreamRequest, type PipelineItem, type ResolvedFile } from '@contracts';
+import { type ProgressManager } from '@core/progress';
+import { type StreamHttpClient } from '@engine/http';
+import { type FileManager } from '@storage';
 import { OutputType } from '@types';
 import { finished } from 'stream/promises';
 

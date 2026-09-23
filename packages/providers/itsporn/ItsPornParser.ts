@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { ItsPornOutput } from './ItsPornContracts';
+import { type ItsPornOutput } from './ItsPornContracts';
 
 /**
  * Extracts ItsPorn-specific metadata from fetched HTML.

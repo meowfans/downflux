@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { ShamelessExecArgs, ShamelessVideoOutput } from './ShamelessContracts';
+import { type ShamelessExecArgs, type ShamelessVideoOutput } from './ShamelessContracts';
 import { ShamelessMethods } from './ShamelessTypes';
 
 /**

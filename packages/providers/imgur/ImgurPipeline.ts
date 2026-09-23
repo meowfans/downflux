@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { ImgurExecArgs, ImgurOutput } from './ImgurContracts';
+import { type ImgurExecArgs, type ImgurOutput } from './ImgurContracts';
 
 export class ImgurPipeline extends BasePipeline<ImgurExecArgs, ImgurOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<ImgurOutput>): string {

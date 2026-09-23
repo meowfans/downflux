@@ -1,7 +1,7 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { VideoQuality } from '@types';
-import { AnalRzExecArgs, AnalRzOutput } from './AnalRzContracts';
+import { type AnalRzExecArgs, type AnalRzOutput } from './AnalRzContracts';
 import { AnalRzMethods } from './AnalRzTypes';
 
 type AnalRzTransformedOutput = DefaultExecutionResult<Partial<AnalRzOutput>>;

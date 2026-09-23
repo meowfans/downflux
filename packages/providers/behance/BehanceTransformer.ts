@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { BehanceExecArgs, BehanceOutput } from './BehanceContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type BehanceExecArgs, type BehanceOutput } from './BehanceContracts';
 import { BehanceMethods } from './BehanceTypes';
 
 type BehanceTransformedOutput = DefaultExecutionResult<Partial<BehanceOutput>>;

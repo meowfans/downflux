@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { WikiArtExecArgs, WikiArtOutput } from './WikiArtContracts';
+import { type WikiArtExecArgs, type WikiArtOutput } from './WikiArtContracts';
 
 export class WikiArtPipeline extends BasePipeline<WikiArtExecArgs, WikiArtOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<WikiArtOutput>): string {

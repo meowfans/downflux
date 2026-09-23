@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { DeviantArtExecArgs, DeviantArtOutput } from './DeviantArtContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type DeviantArtExecArgs, type DeviantArtOutput } from './DeviantArtContracts';
 import { DeviantArtMethods } from './DeviantArtTypes';
 
 type DeviantArtTransformedOutput = DefaultExecutionResult<Partial<DeviantArtOutput>>;

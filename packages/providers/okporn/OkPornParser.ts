@@ -1,9 +1,9 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { inferVideoQuality } from '@shared';
 import { Provider } from '@types';
-import { OkPornModelVideoCard, OkPornOutput } from './OkPornContracts';
+import { type OkPornModelVideoCard, type OkPornOutput } from './OkPornContracts';
 
 /**
  * Extracts OkPorn-specific metadata from fetched HTML.

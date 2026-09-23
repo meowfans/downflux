@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { DaNudeExecArgs, DaNudeOutput } from './DaNudeContracts';
+import { type DaNudeExecArgs, type DaNudeOutput } from './DaNudeContracts';
 
 /**
  * Builds downloadable DaNude pipeline items from normalized metadata.

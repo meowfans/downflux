@@ -1,5 +1,5 @@
-import { AuthenticatedCrawlOptions, DefaultExecutionResult, ExecutionArgs } from '@contracts';
-import { TwitterSearchMode } from './TwitterTypes';
+import { type AuthenticatedCrawlOptions, type DefaultExecutionResult, type ExecutionArgs } from '@contracts';
+import { type TwitterSearchMode } from './TwitterTypes';
 
 export interface TwitterExecArgs extends ExecutionArgs {
 	auth?: AuthenticatedCrawlOptions;

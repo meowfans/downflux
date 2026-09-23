@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { BeegOutput } from './BeegContracts';
+import { type BeegOutput } from './BeegContracts';
 
 /**
  * Extracts Beeg-specific metadata from fetched HTML.

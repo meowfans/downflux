@@ -1,9 +1,9 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
 import path from 'path';
-import { WallHavenOutput, WallHavenUserFavoriteCollectionsOutput } from './WallHavenContracts';
+import { type WallHavenOutput, type WallHavenUserFavoriteCollectionsOutput } from './WallHavenContracts';
 import { WallHavenThumbnailQuality } from './WallHavenTypes';
 
 /**

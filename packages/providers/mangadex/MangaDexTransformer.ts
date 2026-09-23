@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { MangaDexExecArgs, MangaDexOutput } from './MangaDexContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type MangaDexExecArgs, type MangaDexOutput } from './MangaDexContracts';
 import { MangaDexMethods } from './MangaDexTypes';
 
 type MangaDexTransformedOutput = DefaultExecutionResult<Partial<MangaDexOutput>>;

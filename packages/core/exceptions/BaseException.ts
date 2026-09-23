@@ -1,4 +1,4 @@
-import { ErrorCodes, Provider } from '@types';
+import { type ErrorCodes, type Provider } from '@types';
 
 export interface ExceptionPayload<TMeta = any> {
 	errorCode: ErrorCodes;

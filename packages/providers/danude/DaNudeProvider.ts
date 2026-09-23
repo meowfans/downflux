@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { DaNudeExecArgs, DaNudeVideoOutput } from './DaNudeContracts';
+import { type DaNudeExecArgs, type DaNudeVideoOutput } from './DaNudeContracts';
 import { DaNudeMethods } from './DaNudeTypes';
 
 /**

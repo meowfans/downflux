@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { UnsplashExecArgs, UnsplashOutput } from './UnsplashContracts';
+import { type UnsplashExecArgs, type UnsplashOutput } from './UnsplashContracts';
 
 export class UnsplashPipeline extends BasePipeline<UnsplashExecArgs, UnsplashOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<UnsplashOutput>): string {

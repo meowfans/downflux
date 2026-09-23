@@ -1,15 +1,15 @@
-import { BaseProvider, TagFilterOptions } from '@base';
+import { BaseProvider, type TagFilterOptions } from '@base';
 import { GenericException, InvalidRangeException } from '@core/exceptions';
-import { ExtractionTarget, IndexRange, PageRange, Provider, VideoQuality } from '@types';
+import { ExtractionTarget, type IndexRange, type PageRange, Provider, type VideoQuality } from '@types';
 import {
-	OkPornAlbumOutput,
-	OkPornChannelOutput,
-	OkPornExecArgs,
-	OkPornIdType,
-	OkPornModelOutput,
-	OkPornModelVideoIdsOutput,
-	OkPornTagOutput,
-	OkPornVideoOutput
+	type OkPornAlbumOutput,
+	type OkPornChannelOutput,
+	type OkPornExecArgs,
+	type OkPornIdType,
+	type OkPornModelOutput,
+	type OkPornModelVideoIdsOutput,
+	type OkPornTagOutput,
+	type OkPornVideoOutput
 } from './OkPornContracts';
 import { OkPornMethods } from './OkPornTypes';
 

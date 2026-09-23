@@ -1,5 +1,5 @@
-import { AllowedExtension, MediaType, Provider } from '@types';
-import { DownloadResult } from './DownloadContracts';
+import { type AllowedExtension, type MediaType, type Provider } from '@types';
+import { type DownloadResult } from './DownloadContracts';
 
 export interface PipelineIdentifier {
 	key: string;

@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { WikiArtExecArgs, WikiArtOutput } from './WikiArtContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type WikiArtExecArgs, type WikiArtOutput } from './WikiArtContracts';
 import { WikiArtMethods } from './WikiArtTypes';
 
 type WikiArtTransformedOutput = DefaultExecutionResult<Partial<WikiArtOutput>>;

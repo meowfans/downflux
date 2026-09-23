@@ -1,9 +1,9 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { inferVideoQuality } from '@shared';
 import { Provider } from '@types';
-import { PerfectGirlsModelVideoCard, PerfectGirlsOutput } from './PerfectGirlsContracts';
+import { type PerfectGirlsModelVideoCard, type PerfectGirlsOutput } from './PerfectGirlsContracts';
 
 /**
  * Extracts PerfectGirls-specific metadata from fetched HTML.

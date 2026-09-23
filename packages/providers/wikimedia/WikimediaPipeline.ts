@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { WikimediaExecArgs, WikimediaOutput } from './WikimediaContracts';
+import { type WikimediaExecArgs, type WikimediaOutput } from './WikimediaContracts';
 
 export class WikimediaPipeline extends BasePipeline<WikimediaExecArgs, WikimediaOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<WikimediaOutput>): string {

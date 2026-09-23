@@ -1,6 +1,6 @@
 import { BaseProvider, DefaultMethods } from '@base';
 import { ExtractionTarget, Provider } from '@types';
-import { DefaultExecArgs } from './DefaultContracts';
+import { type DefaultExecArgs } from './DefaultContracts';
 
 /**
  * Default provider.

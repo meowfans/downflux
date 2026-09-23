@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { TumblrExecArgs, TumblrOutput } from './TumblrContracts';
+import { type TumblrExecArgs, type TumblrOutput } from './TumblrContracts';
 
 export class TumblrPipeline extends BasePipeline<TumblrExecArgs, TumblrOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<TumblrOutput>): string {

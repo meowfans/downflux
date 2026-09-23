@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { ColliderPornExecArgs, ColliderPornVideoOutput } from './ColliderPornContracts';
+import { type ColliderPornExecArgs, type ColliderPornVideoOutput } from './ColliderPornContracts';
 import { ColliderPornMethods } from './ColliderPornTypes';
 
 /**

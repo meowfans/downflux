@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { WikimediaExecArgs, WikimediaOutput } from './WikimediaContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type WikimediaExecArgs, type WikimediaOutput } from './WikimediaContracts';
 import { WikimediaMethods } from './WikimediaTypes';
 
 type WikimediaTransformedOutput = DefaultExecutionResult<Partial<WikimediaOutput>>;

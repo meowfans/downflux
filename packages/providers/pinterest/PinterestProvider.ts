@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { PinterestExecArgs } from './PinterestContracts';
+import { type PinterestExecArgs } from './PinterestContracts';
 
 export class PinterestProvider extends GenericContentProvider<PinterestExecArgs> {
 	constructor(url: string) {

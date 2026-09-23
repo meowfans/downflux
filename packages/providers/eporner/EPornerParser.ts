@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { EPornerOutput } from './EPornerContracts';
+import { type EPornerOutput } from './EPornerContracts';
 
 /**
  * Extracts EPorner-specific metadata from fetched HTML.

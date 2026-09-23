@@ -1,4 +1,4 @@
-import { CoordinatorDependencies } from '@contracts';
+import { type CoordinatorDependencies } from '@contracts';
 import { ExecutionCoordinator, TaskCoordinator, TransferCoordinator } from '@core/coordinators';
 import { ProgressManager } from '@core/progress';
 import { PipelineRegistry, StrategyRegistry, TransformerRegistry } from '@core/registries';

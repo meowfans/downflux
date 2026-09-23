@@ -1,6 +1,6 @@
-import { JobProgressStatus, ProgressDestination } from '@types';
-import { DownloadResult } from './DownloadContracts';
-import { PipelineItem } from './PipelineContracts';
+import { type JobProgressStatus, type ProgressDestination } from '@types';
+import { type DownloadResult } from './DownloadContracts';
+import { type PipelineItem } from './PipelineContracts';
 
 /**
  * Progress for a single download item.

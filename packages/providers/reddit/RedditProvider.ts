@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { RedditExecArgs } from './RedditContracts';
+import { type RedditExecArgs } from './RedditContracts';
 
 export class RedditProvider extends GenericContentProvider<RedditExecArgs> {
 	constructor(url: string) {

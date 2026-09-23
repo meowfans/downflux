@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { DeviantArtExecArgs, DeviantArtOutput } from './DeviantArtContracts';
+import { type DeviantArtExecArgs, type DeviantArtOutput } from './DeviantArtContracts';
 
 export class DeviantArtPipeline extends BasePipeline<DeviantArtExecArgs, DeviantArtOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<DeviantArtOutput>): string {

@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { BlackPornExecArgs, BlackPornOutput } from './BlackPornContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type BlackPornExecArgs, type BlackPornOutput } from './BlackPornContracts';
 import { BlackPornMethods } from './BlackPornTypes';
 
 type BlackPornTransformedOutput = DefaultExecutionResult<Partial<BlackPornOutput>>;

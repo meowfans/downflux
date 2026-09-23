@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { NewgroundsExecArgs } from './NewgroundsContracts';
+import { type NewgroundsExecArgs } from './NewgroundsContracts';
 
 export class NewgroundsProvider extends GenericContentProvider<NewgroundsExecArgs> {
 	constructor(url: string) {

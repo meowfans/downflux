@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { FlickrExecArgs, FlickrOutput } from './FlickrContracts';
+import { type FlickrExecArgs, type FlickrOutput } from './FlickrContracts';
 
 export class FlickrPipeline extends BasePipeline<FlickrExecArgs, FlickrOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<FlickrOutput>): string {

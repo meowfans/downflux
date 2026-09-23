@@ -1,5 +1,5 @@
-import { DefaultExecutionResult, ExecutionArgs } from '@contracts';
-import { WallHavenThumbnailQuality } from './WallHavenTypes';
+import { type DefaultExecutionResult, type ExecutionArgs } from '@contracts';
+import { type WallHavenThumbnailQuality } from './WallHavenTypes';
 
 /**
  * @interface

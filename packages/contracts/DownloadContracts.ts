@@ -1,8 +1,8 @@
-import { OutputType, Provider, VideoQuality } from '@types';
-import { Readable, Writable } from 'stream';
-import { HttpAgentOptions } from './ExecutionContracts';
-import { PipelineItem } from './PipelineContracts';
-import { DirectoryOutputOptions, TranscodeOptions } from './StorageContracts';
+import { type OutputType, type Provider, type VideoQuality } from '@types';
+import { type Readable, type Writable } from 'stream';
+import { type HttpAgentOptions } from './ExecutionContracts';
+import { type PipelineItem } from './PipelineContracts';
+import { type DirectoryOutputOptions, type TranscodeOptions } from './StorageContracts';
 
 export interface DownloadOptions extends HttpFetchOptions {
 	dirConfig?: DirectoryOutputOptions;

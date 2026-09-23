@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { WikimediaExecArgs } from './WikimediaContracts';
+import { type WikimediaExecArgs } from './WikimediaContracts';
 
 export class WikimediaProvider extends GenericContentProvider<WikimediaExecArgs> {
 	constructor(url: string) {

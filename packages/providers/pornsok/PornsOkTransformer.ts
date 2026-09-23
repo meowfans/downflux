@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { PornsOkExecArgs, PornsOkOutput, PornsOkVideoOutput } from './PornsOkContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type PornsOkExecArgs, type PornsOkOutput, type PornsOkVideoOutput } from './PornsOkContracts';
 import { PornsOkMethods } from './PornsOkTypes';
 
 /**

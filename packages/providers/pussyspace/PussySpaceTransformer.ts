@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { PussySpaceExecArgs, PussySpaceOutput, PussySpaceVideoOutput } from './PussySpaceContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type PussySpaceExecArgs, type PussySpaceOutput, type PussySpaceVideoOutput } from './PussySpaceContracts';
 import { PussySpaceMethods } from './PussySpaceTypes';
 
 /**

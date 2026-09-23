@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { TikTokExecArgs } from './TikTokContracts';
+import { type TikTokExecArgs } from './TikTokContracts';
 
 export class TikTokProvider extends GenericContentProvider<TikTokExecArgs> {
 	constructor(url: string) {

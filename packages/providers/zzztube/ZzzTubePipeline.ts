@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { ZzzTubeExecArgs, ZzzTubeOutput } from './ZzzTubeContracts';
+import { type ZzzTubeExecArgs, type ZzzTubeOutput } from './ZzzTubeContracts';
 
 /**
  * Builds downloadable ZzzTube pipeline items from normalized metadata.

@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider, VideoQuality } from '@types';
-import { PornHubChannelsOutput, PornHubOutput, PornHubVideo } from './PornHubContracts';
+import { type PornHubChannelsOutput, type PornHubOutput, type PornHubVideo } from './PornHubContracts';
 
 /**
  * Extracts PornHub-specific metadata from fetched HTML.

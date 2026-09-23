@@ -1,5 +1,5 @@
-import { ItemProgressSnapshot, JobProgressEvent } from '@contracts';
-import { ProgressFormatter, ProgressManager } from '@core/progress';
+import { type ItemProgressSnapshot, type JobProgressEvent } from '@contracts';
+import { ProgressFormatter, type ProgressManager } from '@core/progress';
 import { Brand } from '@shared';
 import { LogManager } from './LogManager';
 

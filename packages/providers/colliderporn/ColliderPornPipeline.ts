@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { ColliderPornExecArgs, ColliderPornOutput } from './ColliderPornContracts';
+import { type ColliderPornExecArgs, type ColliderPornOutput } from './ColliderPornContracts';
 
 /**
  * Builds downloadable ColliderPorn pipeline items from normalized metadata.

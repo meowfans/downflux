@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { UnsplashExecArgs, UnsplashOutput } from './UnsplashContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type UnsplashExecArgs, type UnsplashOutput } from './UnsplashContracts';
 import { UnsplashMethods } from './UnsplashTypes';
 
 type UnsplashTransformedOutput = DefaultExecutionResult<Partial<UnsplashOutput>>;

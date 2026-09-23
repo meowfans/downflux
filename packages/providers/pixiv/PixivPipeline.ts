@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { PixivExecArgs, PixivOutput } from './PixivContracts';
+import { type PixivExecArgs, type PixivOutput } from './PixivContracts';
 
 export class PixivPipeline extends BasePipeline<PixivExecArgs, PixivOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<PixivOutput>): string {

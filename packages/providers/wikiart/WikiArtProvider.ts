@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { WikiArtExecArgs } from './WikiArtContracts';
+import { type WikiArtExecArgs } from './WikiArtContracts';
 
 export class WikiArtProvider extends GenericContentProvider<WikiArtExecArgs> {
 	constructor(url: string) {

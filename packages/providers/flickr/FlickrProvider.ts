@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { FlickrExecArgs } from './FlickrContracts';
+import { type FlickrExecArgs } from './FlickrContracts';
 
 export class FlickrProvider extends GenericContentProvider<FlickrExecArgs> {
 	constructor(url: string) {

@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider } from '@types';
-import { XVideosExecArgs, XVideosVideoOutput } from './XVideosContracts';
+import { type XVideosExecArgs, type XVideosVideoOutput } from './XVideosContracts';
 import { XVideosMethods } from './XVideosTypes';
 
 /**

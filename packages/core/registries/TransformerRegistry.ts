@@ -1,7 +1,7 @@
 import { BaseTransformer } from '@base';
-import { ExecutionArgs } from '@contracts';
-import { ProgressManager } from '@core/progress';
-import { HttpClient } from '@engine/http';
+import { type ExecutionArgs } from '@contracts';
+import { type ProgressManager } from '@core/progress';
+import { type HttpClient } from '@engine/http';
 import { Provider } from '@types';
 
 type TransformerCtor = new (html: HttpClient, progress: ProgressManager) => BaseTransformer<any, any>;

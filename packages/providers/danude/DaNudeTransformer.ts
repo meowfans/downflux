@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { DaNudeExecArgs, DaNudeOutput, DaNudeVideoOutput } from './DaNudeContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type DaNudeExecArgs, type DaNudeOutput, type DaNudeVideoOutput } from './DaNudeContracts';
 import { DaNudeMethods } from './DaNudeTypes';
 
 type DaNudeTransformedOutput = DefaultExecutionResult<Partial<DaNudeOutput>>;

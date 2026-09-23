@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { XCafeExecArgs, XCafeOutput } from './XCafeContracts';
+import { type XCafeExecArgs, type XCafeOutput } from './XCafeContracts';
 
 /**
  * Builds downloadable XCafe pipeline items from normalized metadata.

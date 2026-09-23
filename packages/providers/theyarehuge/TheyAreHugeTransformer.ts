@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { TheyAreHugeExecArgs, TheyAreHugeOutput, TheyAreHugeVideoOutput } from './TheyAreHugeContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type TheyAreHugeExecArgs, type TheyAreHugeOutput, type TheyAreHugeVideoOutput } from './TheyAreHugeContracts';
 import { TheyAreHugeMethods } from './TheyAreHugeTypes';
 
 /**

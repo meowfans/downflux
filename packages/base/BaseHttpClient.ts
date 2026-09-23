@@ -1,8 +1,8 @@
-import { DownloadOptions, HttpAgentOptions } from '@contracts';
-import { ProgressManager } from '@core/progress';
+import { type DownloadOptions, type HttpAgentOptions } from '@contracts';
+import { type ProgressManager } from '@core/progress';
 import { HEADER_PRESETS } from '@shared';
 import { checkServerIdentity as tlsCheckServerIdentity } from 'tls';
-import { Agent, Dispatcher, Headers, ProxyAgent, fetch as UFetch } from 'undici';
+import { Agent, type Dispatcher, type Headers, ProxyAgent, fetch as UFetch } from 'undici';
 import { brotliDecompressSync, gunzipSync, inflateSync } from 'zlib';
 
 /**

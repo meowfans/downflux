@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { XDeguExecArgs, XDeguVideoOutput } from './XDeguContracts';
+import { type XDeguExecArgs, type XDeguVideoOutput } from './XDeguContracts';
 import { XDeguMethods } from './XDeguTypes';
 
 /**

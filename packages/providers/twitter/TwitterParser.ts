@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { TwitterMediaOutput, TwitterOutput, TwitterPostOutput, TwitterUserOutput } from './TwitterContracts';
+import { type TwitterMediaOutput, type TwitterOutput, type TwitterPostOutput, type TwitterUserOutput } from './TwitterContracts';
 
 export class TwitterParser extends BaseParser {
 	public override transform(html: string, sourceUrl: string): Partial<DefaultExecutionResult<Partial<TwitterOutput>>> {

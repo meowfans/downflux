@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { FlickrExecArgs, FlickrOutput } from './FlickrContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type FlickrExecArgs, type FlickrOutput } from './FlickrContracts';
 import { FlickrMethods } from './FlickrTypes';
 
 type FlickrTransformedOutput = DefaultExecutionResult<Partial<FlickrOutput>>;

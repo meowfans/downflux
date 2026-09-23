@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { Porn300ExecArgs, Porn300Output, Porn300VideoOutput } from './Porn300Contracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type Porn300ExecArgs, type Porn300Output, type Porn300VideoOutput } from './Porn300Contracts';
 import { Porn300Methods } from './Porn300Types';
 
 /**

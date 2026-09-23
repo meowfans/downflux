@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineExtractedItem } from '@contracts';
+import { type IdentifierContext, type PipelineExtractedItem } from '@contracts';
 import { MediaType } from '@types';
-import { EPornerExecArgs, EPornerOutput } from './EPornerContracts';
+import { type EPornerExecArgs, type EPornerOutput } from './EPornerContracts';
 
 /**
  * Builds downloadable EPorner pipeline items from normalized metadata.

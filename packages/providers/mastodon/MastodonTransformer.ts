@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { MastodonExecArgs, MastodonOutput } from './MastodonContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type MastodonExecArgs, type MastodonOutput } from './MastodonContracts';
 import { MastodonMethods } from './MastodonTypes';
 
 type MastodonTransformedOutput = DefaultExecutionResult<Partial<MastodonOutput>>;

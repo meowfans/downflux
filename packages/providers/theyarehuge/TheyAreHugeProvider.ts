@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { TheyAreHugeExecArgs, TheyAreHugeVideoOutput } from './TheyAreHugeContracts';
+import { type TheyAreHugeExecArgs, type TheyAreHugeVideoOutput } from './TheyAreHugeContracts';
 import { TheyAreHugeMethods } from './TheyAreHugeTypes';
 
 /**

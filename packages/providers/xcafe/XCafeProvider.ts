@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { XCafeExecArgs, XCafeVideoOutput } from './XCafeContracts';
+import { type XCafeExecArgs, type XCafeVideoOutput } from './XCafeContracts';
 import { XCafeMethods } from './XCafeTypes';
 
 /**

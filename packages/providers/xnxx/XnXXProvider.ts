@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider } from '@types';
-import { XnXXExecArgs, XnXXVideoOutput } from './XnXXContracts';
+import { type XnXXExecArgs, type XnXXVideoOutput } from './XnXXContracts';
 import { XnXXMethods } from './XnXXTypes';
 
 /**

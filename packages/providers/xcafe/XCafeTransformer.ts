@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { XCafeExecArgs, XCafeOutput, XCafeVideoOutput } from './XCafeContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type XCafeExecArgs, type XCafeOutput, type XCafeVideoOutput } from './XCafeContracts';
 import { XCafeMethods } from './XCafeTypes';
 
 /**

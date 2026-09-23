@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { GelbooruExecArgs, GelbooruOutput } from './GelbooruContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type GelbooruExecArgs, type GelbooruOutput } from './GelbooruContracts';
 import { GelbooruMethods } from './GelbooruTypes';
 
 type GelbooruTransformedOutput = DefaultExecutionResult<Partial<GelbooruOutput>>;

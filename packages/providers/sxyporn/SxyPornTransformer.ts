@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { SxyPornExecArgs, SxyPornOutput, SxyPornVideoOutput } from './SxyPornContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type SxyPornExecArgs, type SxyPornOutput, type SxyPornVideoOutput } from './SxyPornContracts';
 import { SxyPornMethods } from './SxyPornTypes';
 
 /**

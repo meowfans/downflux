@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { TumblrExecArgs } from './TumblrContracts';
+import { type TumblrExecArgs } from './TumblrContracts';
 
 export class TumblrProvider extends GenericContentProvider<TumblrExecArgs> {
 	constructor(url: string) {

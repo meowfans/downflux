@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { MomVidsExecArgs, MomVidsOutput, MomVidsVideoOutput } from './MomVidsContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type MomVidsExecArgs, type MomVidsOutput, type MomVidsVideoOutput } from './MomVidsContracts';
 import { MomVidsMethods } from './MomVidsTypes';
 
 type MomVidsTransformedOutput = DefaultExecutionResult<Partial<MomVidsOutput>>;

@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { InstagramExecArgs } from './InstagramContracts';
+import { type InstagramExecArgs } from './InstagramContracts';
 
 export class InstagramProvider extends GenericContentProvider<InstagramExecArgs> {
 	constructor(url: string) {

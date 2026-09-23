@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { Lesbian8ExecArgs, Lesbian8Output } from './Lesbian8Contracts';
+import { type Lesbian8ExecArgs, type Lesbian8Output } from './Lesbian8Contracts';
 
 /**
  * Builds downloadable Lesbian8 pipeline items from normalized metadata.

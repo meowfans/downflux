@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider } from '@types';
-import { Porn300ExecArgs, Porn300VideoOutput } from './Porn300Contracts';
+import { type Porn300ExecArgs, type Porn300VideoOutput } from './Porn300Contracts';
 import { Porn300Methods } from './Porn300Types';
 
 /**

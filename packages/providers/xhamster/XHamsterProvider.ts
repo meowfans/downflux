@@ -1,7 +1,7 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
 import { ExtractionTarget, Provider } from '@types';
-import { XHamsterExecArgs, XHamsterVideoOutput } from './XHamsterContracts';
+import { type XHamsterExecArgs, type XHamsterVideoOutput } from './XHamsterContracts';
 import { XHamsterMethods } from './XHamsterTypes';
 
 /**

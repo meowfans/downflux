@@ -1,16 +1,16 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult, TagKeys } from '@contracts';
+import { type DefaultExecutionResult, type TagKeys } from '@contracts';
 import { ExtractionTarget } from '@types';
 import {
-	OkPornAlbumOutput,
-	OkPornChannelOutput,
-	OkPornExecArgs,
-	OkPornModelOutput,
-	OkPornModelVideoIdsOutput,
-	OkPornOutput,
-	OkPornTagOutput,
-	OkPornVideoOutput,
-	TagsOutput
+	type OkPornAlbumOutput,
+	type OkPornChannelOutput,
+	type OkPornExecArgs,
+	type OkPornModelOutput,
+	type OkPornModelVideoIdsOutput,
+	type OkPornOutput,
+	type OkPornTagOutput,
+	type OkPornVideoOutput,
+	type TagsOutput
 } from './OkPornContracts';
 import { OkPornMethods } from './OkPornTypes';
 

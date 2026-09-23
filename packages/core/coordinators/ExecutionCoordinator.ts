@@ -1,8 +1,8 @@
-import { ExecutionArgs, ExecutionResult, PipelineHook, PipelineItem } from '@contracts';
-import { ProgressManager } from '@core/progress';
-import { PipelineRegistry, TransformerRegistry } from '@core/registries';
-import { ExecutionShape, OutputType, ShapeOutput } from '@types';
-import { TaskCoordinator } from './TaskCoordinator';
+import { type ExecutionArgs, type ExecutionResult, type PipelineHook, type PipelineItem } from '@contracts';
+import { type ProgressManager } from '@core/progress';
+import { type PipelineRegistry, type TransformerRegistry } from '@core/registries';
+import { type ExecutionShape, OutputType, type ShapeOutput } from '@types';
+import { type TaskCoordinator } from './TaskCoordinator';
 
 /**
  * Coordinates extraction, pipeline creation, and output dispatch.

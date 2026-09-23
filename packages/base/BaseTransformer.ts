@@ -1,15 +1,15 @@
 import {
-	DefaultExecutionResult,
-	DefaultFlashVarsVideoOutput,
-	DefaultVideoOutput,
-	DownloadOptions,
-	ExecutionArgs,
-	VideosFormat,
-	VideoSourceOutput
+	type DefaultExecutionResult,
+	type DefaultFlashVarsVideoOutput,
+	type DefaultVideoOutput,
+	type DownloadOptions,
+	type ExecutionArgs,
+	type VideosFormat,
+	type VideoSourceOutput
 } from '@contracts';
-import { ProgressManager } from '@core/progress';
+import { type ProgressManager } from '@core/progress';
 import { ParserRegistry } from '@core/registries';
-import { HttpClient } from '@engine/http';
+import { type HttpClient } from '@engine/http';
 import { Provider, VideoQuality } from '@types';
 
 /**

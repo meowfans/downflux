@@ -1,4 +1,4 @@
-import { VideoSourceOutput } from './DownloadContracts';
+import { type VideoSourceOutput } from './DownloadContracts';
 
 export interface FlashVarsOutput {
 	videoId?: string;

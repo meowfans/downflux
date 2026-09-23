@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { XnXXExecArgs, XnXXOutput, XnXXVideoOutput } from './XnXXContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type XnXXExecArgs, type XnXXOutput, type XnXXVideoOutput } from './XnXXContracts';
 import { XnXXMethods } from './XnXXTypes';
 
 /**

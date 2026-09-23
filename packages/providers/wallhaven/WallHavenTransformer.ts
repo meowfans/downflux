@@ -1,15 +1,15 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { ExtractionTarget } from '@types';
 import {
-	WallHavenExecArgs,
-	WallHavenOutput,
-	WallHavenThumbnail,
-	WallHavenUserFavoriteCollectionOutput,
-	WallHavenUserFavoriteCollectionsOutput,
-	WallHavenUserInfoOutput,
-	WallHavenUserUploadsOutput,
-	WallHavenWallPaperOutput
+	type WallHavenExecArgs,
+	type WallHavenOutput,
+	type WallHavenThumbnail,
+	type WallHavenUserFavoriteCollectionOutput,
+	type WallHavenUserFavoriteCollectionsOutput,
+	type WallHavenUserInfoOutput,
+	type WallHavenUserUploadsOutput,
+	type WallHavenWallPaperOutput
 } from './WallHavenContracts';
 import { WallHavenMethods, WallHavenThumbnailQuality } from './WallHavenTypes';
 

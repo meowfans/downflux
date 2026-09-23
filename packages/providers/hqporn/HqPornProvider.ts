@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
-import { Provider, VideoQuality } from '@types';
-import { HqPornExecArgs, HqPornVideoOutput } from './HqPornContracts';
+import { Provider, type VideoQuality } from '@types';
+import { type HqPornExecArgs, type HqPornVideoOutput } from './HqPornContracts';
 import { HqPornMethods } from './HqPornTypes';
 
 /**

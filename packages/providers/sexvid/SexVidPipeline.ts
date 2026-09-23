@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { SexVidExecArgs, SexVidOutput } from './SexVidContracts';
+import { type SexVidExecArgs, type SexVidOutput } from './SexVidContracts';
 
 /**
  * Builds downloadable SexVid pipeline items from normalized metadata.

@@ -1,4 +1,4 @@
-import { AuthenticatedCrawlOptions, DefaultExecutionResult, ExecutionArgs } from '@contracts';
+import { type AuthenticatedCrawlOptions, type DefaultExecutionResult, type ExecutionArgs } from '@contracts';
 
 export interface TikTokExecArgs extends ExecutionArgs {
 	auth?: AuthenticatedCrawlOptions;

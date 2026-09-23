@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { CumLouderOutput } from './CumLouderContracts';
+import { type CumLouderOutput } from './CumLouderContracts';
 
 /**
  * Extracts CumLouder-specific metadata from fetched HTML.

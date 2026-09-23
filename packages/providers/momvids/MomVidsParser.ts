@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult } from '@contracts';
+import { type DefaultExecutionResult } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider } from '@types';
-import { MomVidsOutput } from './MomVidsContracts';
+import { type MomVidsOutput } from './MomVidsContracts';
 
 /**
  * Extracts MomVids-specific metadata from fetched HTML.

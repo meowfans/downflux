@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { XozillaExecArgs, XozillaOutput } from './XozillaContracts';
+import { type XozillaExecArgs, type XozillaOutput } from './XozillaContracts';
 
 /**
  * Builds downloadable Xozilla pipeline items from normalized metadata.

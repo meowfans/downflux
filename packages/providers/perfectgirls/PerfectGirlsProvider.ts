@@ -1,15 +1,15 @@
-import { BaseProvider, TagFilterOptions } from '@base';
+import { BaseProvider, type TagFilterOptions } from '@base';
 import { GenericException, InvalidRangeException } from '@core/exceptions';
-import { ExtractionTarget, IndexRange, PageRange, Provider, VideoQuality } from '@types';
+import { ExtractionTarget, type IndexRange, type PageRange, Provider, type VideoQuality } from '@types';
 import {
-	PerfectGirlsAlbumOutput,
-	PerfectGirlsChannelOutput,
-	PerfectGirlsExecArgs,
-	PerfectGirlsIdType,
-	PerfectGirlsModelOutput,
-	PerfectGirlsModelVideoIdsOutput,
-	PerfectGirlsTagOutput,
-	PerfectGirlsVideoOutput
+	type PerfectGirlsAlbumOutput,
+	type PerfectGirlsChannelOutput,
+	type PerfectGirlsExecArgs,
+	type PerfectGirlsIdType,
+	type PerfectGirlsModelOutput,
+	type PerfectGirlsModelVideoIdsOutput,
+	type PerfectGirlsTagOutput,
+	type PerfectGirlsVideoOutput
 } from './PerfectGirlsContracts';
 import { PerfectGirlsMethods } from './PerfectGirlsTypes';
 

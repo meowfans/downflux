@@ -1,7 +1,7 @@
 import { BasePipeline } from '@base';
-import { IdentifierContext, PipelineMappings } from '@contracts';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
 import { MediaType } from '@types';
-import { XnXXExecArgs, XnXXOutput } from './XnXXContracts';
+import { type XnXXExecArgs, type XnXXOutput } from './XnXXContracts';
 
 /**
  * Builds downloadable XnXX pipeline items from normalized metadata.

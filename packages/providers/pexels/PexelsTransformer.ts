@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { PexelsExecArgs, PexelsOutput } from './PexelsContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type PexelsExecArgs, type PexelsOutput } from './PexelsContracts';
 import { PexelsMethods } from './PexelsTypes';
 
 type PexelsTransformedOutput = DefaultExecutionResult<Partial<PexelsOutput>>;

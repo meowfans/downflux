@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { TikTokExecArgs, TikTokOutput } from './TikTokContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type TikTokExecArgs, type TikTokOutput } from './TikTokContracts';
 import { TikTokMethods } from './TikTokTypes';
 
 type TikTokTransformedOutput = DefaultExecutionResult<Partial<TikTokOutput>>;

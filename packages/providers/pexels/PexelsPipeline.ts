@@ -1,8 +1,8 @@
 import { BasePipeline } from '@base';
 import { NotImplementedException } from '@core/exceptions';
-import { IdentifierContext } from '@contracts';
+import { type IdentifierContext } from '@contracts';
 import { Provider } from '@types';
-import { PexelsExecArgs, PexelsOutput } from './PexelsContracts';
+import { type PexelsExecArgs, type PexelsOutput } from './PexelsContracts';
 
 export class PexelsPipeline extends BasePipeline<PexelsExecArgs, PexelsOutput> {
 	protected override buildIdentifier(_ctx: IdentifierContext<PexelsOutput>): string {

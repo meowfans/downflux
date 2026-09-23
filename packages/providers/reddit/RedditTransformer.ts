@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { RedditExecArgs, RedditOutput } from './RedditContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type RedditExecArgs, type RedditOutput } from './RedditContracts';
 import { RedditMethods } from './RedditTypes';
 
 type RedditTransformedOutput = DefaultExecutionResult<Partial<RedditOutput>>;

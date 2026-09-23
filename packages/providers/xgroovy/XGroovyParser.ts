@@ -1,8 +1,8 @@
 import { BaseParser } from '@base';
-import { DefaultExecutionResult, VideoSourceOutput } from '@contracts';
+import { type DefaultExecutionResult, type VideoSourceOutput } from '@contracts';
 import { GenericException } from '@core/exceptions';
 import { Provider, VideoQuality } from '@types';
-import { XGroovyOutput } from './XGroovyContracts';
+import { type XGroovyOutput } from './XGroovyContracts';
 
 /**
  * Extracts XGroovy-specific metadata from fetched HTML.

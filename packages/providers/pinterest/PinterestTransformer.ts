@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
-import { DefaultExecutionResult } from '@contracts';
-import { PinterestExecArgs, PinterestOutput } from './PinterestContracts';
+import { type DefaultExecutionResult } from '@contracts';
+import { type PinterestExecArgs, type PinterestOutput } from './PinterestContracts';
 import { PinterestMethods } from './PinterestTypes';
 
 type PinterestTransformedOutput = DefaultExecutionResult<Partial<PinterestOutput>>;

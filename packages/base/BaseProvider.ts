@@ -1,32 +1,32 @@
 import {
-	AuthenticatedCrawlOptions,
-	CoordinatorDependencies,
-	DirectoryOutputOptions,
-	ExecutionArgs,
-	ExecutionOptions,
-	HttpAgentOptions,
-	HttpFetchOptions,
-	JobProgressEvent,
-	JobSettlement,
-	ProviderConfig,
-	TranscodeOptions
+	type AuthenticatedCrawlOptions,
+	type CoordinatorDependencies,
+	type DirectoryOutputOptions,
+	type ExecutionArgs,
+	type ExecutionOptions,
+	type HttpAgentOptions,
+	type HttpFetchOptions,
+	type JobProgressEvent,
+	type JobSettlement,
+	type ProviderConfig,
+	type TranscodeOptions
 } from '@contracts';
 import { createDefaultDependencies } from '@core/dependency';
 import { SignalHandler } from '@core/lifecycle';
 import { InvalidRangeException, InvalidUrlException, UnsupportedOperationException } from '@core/exceptions';
 import {
-	AllowedExtension,
-	ExecutionShape,
+	type AllowedExtension,
+	type ExecutionShape,
 	ExecutionType,
 	ExtractionTarget,
-	InferExecutionShape,
+	type InferExecutionShape,
 	OutputType,
-	Provider,
-	Range,
-	VideoCodec,
+	type Provider,
+	type Range,
+	type VideoCodec,
 	VideoFormat
 } from '@types';
-import { ProviderMetadata } from './BaseContracts';
+import { type ProviderMetadata } from './BaseContracts';
 
 /**
  * Base provider API for every supported site.

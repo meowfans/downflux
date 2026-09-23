@@ -1,6 +1,6 @@
 import { Provider } from '@types';
 import { GenericContentProvider } from '@provider/shared';
-import { GelbooruExecArgs } from './GelbooruContracts';
+import { type GelbooruExecArgs } from './GelbooruContracts';
 
 export class GelbooruProvider extends GenericContentProvider<GelbooruExecArgs> {
 	constructor(url: string) {
