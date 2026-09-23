@@ -183,6 +183,6 @@
 	// </auto-generated:entries>
 		}
 	},
-	"include": ["packages/**/*", "test/**/*"],
-	"exclude": ["node_modules", "dist", "scripts"]
+	"include": ["packages/**/*", "test/**/*", "scripts/**/*"],
+	"exclude": ["node_modules", "dist"]
 }
