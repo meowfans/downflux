@@ -12,6 +12,7 @@ import {
 	TranscodeOptions
 } from '@contracts';
 import { createDefaultDependencies } from '@core/dependency';
+import { SignalHandler } from '@core/lifecycle';
 import { InvalidRangeException, InvalidUrlException, UnsupportedOperationException } from '@core/exceptions';
 import {
 	AllowedExtension,
@@ -41,6 +42,9 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 
 	/** Download phase of the most recent job, awaited via {@link BaseProvider.whenSettled}. */
 	private pendingJob?: Promise<JobSettlement>;
+
+	/** Removes the shutdown task installed by `abortOnSignal`. */
+	private unregisterSignal?: () => void;
 	protected httpOptions: HttpFetchOptions = {};
 	protected readonly deps: CoordinatorDependencies;
 	protected readonly provider: Provider;
@@ -316,6 +320,41 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 	}
 
 	/**
+	 * Wires `SIGINT`/`SIGTERM` to cancel this job, when the caller opted in.
+	 *
+	 * @remarks
+	 * Merges an internal controller with any signal the caller already supplied, so
+	 * `setJobOptions({ signal })` keeps working alongside it. The shutdown task
+	 * waits for the job to unwind, which is what gives each transfer time to delete
+	 * its `.part` file before the process exits.
+	 */
+	private installSignalAbort(): void {
+		/**
+		 * Device output owns partial files on disk, so it cleans up by default.
+		 * Stream output runs inside a host that manages its own shutdown.
+		 */
+		const enabled = this.executionOptions.abortOnSignal ?? this.executionOptions.outputType === OutputType.DEVICE;
+
+		if (!enabled || this.unregisterSignal) return;
+
+		const controller = new AbortController();
+		const external = this.executionOptions.signal;
+
+		if (external) {
+			if (external.aborted) controller.abort(external.reason);
+			else external.addEventListener('abort', () => controller.abort(external.reason), { once: true });
+		}
+
+		this.executionOptions.signal = controller.signal;
+
+		this.unregisterSignal = SignalHandler.register(async () => {
+			controller.abort(new Error('Cancelled by signal'));
+
+			await this.whenSettled().catch(() => undefined);
+		});
+	}
+
+	/**
 	 * Waits for the download phase of the most recent job.
 	 *
 	 * @returns How many items were written, how many failed, and their errors.
@@ -389,6 +428,9 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 	 * with DownFlux entirely rather than between jobs.
 	 */
 	public async dispose(options: { closeConnections?: boolean } = {}): Promise<void> {
+		this.unregisterSignal?.();
+		this.unregisterSignal = undefined;
+
 		this.deps.cliManager?.destroy();
 
 		if (options.closeConnections) await this.deps.httpClient.closeConnections();
@@ -429,6 +471,8 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 		type TShape = InferExecutionShape<TResult>;
 
 		type TRequest = TExec & { executionShape: TShape };
+
+		this.installSignalAbort();
 
 		const request = this.buildRequest(overrides as TExec) as TRequest;
 

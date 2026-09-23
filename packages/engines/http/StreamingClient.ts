@@ -252,7 +252,7 @@ export class StreamHttpClient extends BaseHttpClient {
 
 		const progressManager = this.progressManager;
 
-		const itemKey = opts.pipelineItem?.identifier.key;
+		const itemKey = opts.pipelineItem?.downloadUrl;
 		const itemLabel = this.itemLabel(opts);
 
 		const progress = new Transform({

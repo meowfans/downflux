@@ -39,6 +39,7 @@
 			"@core/coordinators": ["./packages/core/coordinators/index.ts"],
 			"@core/dependency": ["./packages/core/dependency/index.ts"],
 			"@core/exceptions": ["./packages/core/exceptions/index.ts"],
+			"@core/lifecycle": ["./packages/core/lifecycle/index.ts"],
 			"@core/progress": ["./packages/core/progress/index.ts"],
 			"@core/registries": ["./packages/core/registries/index.ts"],
 			"@core/ui": ["./packages/core/ui/index.ts"],

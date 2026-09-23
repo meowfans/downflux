@@ -1,3 +1,4 @@
+import { SignalHandler } from '@core/lifecycle';
 import { Brand } from '@shared';
 
 /**
@@ -49,10 +50,8 @@ export class TerminalSurface {
 
 	private readonly onExit = (): void => this.release();
 
-	private readonly onSignal = (): void => {
-		this.release();
-		process.exit(130);
-	};
+	/** Removes this surface's shutdown task, if one is registered. */
+	private unregisterSignal: (() => void) | null = null;
 
 	private get isTTY(): boolean {
 		return Boolean(process.stdout.isTTY);
@@ -230,8 +229,9 @@ export class TerminalSurface {
 		this.cursorHidden = true;
 
 		process.once('exit', this.onExit);
-		process.once('SIGINT', this.onSignal);
-		process.once('SIGTERM', this.onSignal);
+
+		// restoring the terminal is one shutdown task among several; SignalHandler exits
+		this.unregisterSignal ??= SignalHandler.register(() => this.release());
 	}
 
 	private erase(): void {
@@ -354,8 +354,9 @@ export class TerminalSurface {
 	/** Restores the terminal once no block is live. */
 	public release(): void {
 		process.removeListener('exit', this.onExit);
-		process.removeListener('SIGINT', this.onSignal);
-		process.removeListener('SIGTERM', this.onSignal);
+
+		this.unregisterSignal?.();
+		this.unregisterSignal = null;
 
 		if (this.cursorHidden) {
 			this.emit('\x1B[?25h');

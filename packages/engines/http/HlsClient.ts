@@ -211,7 +211,17 @@ export class HlsClient extends BaseHttpClient {
 	): Promise<NodeJS.ReadableStream> {
 		const pending = this.fetchStream(url, headers, timeoutMs, signal);
 
-		pending.catch(() => undefined);
+		pending
+			.then((readable) => {
+				/**
+				 * A prefetched segment sits idle until the loop reaches it. If the
+				 * connection dies first - an abort, or the peer going away - the idle
+				 * stream emits `error` with no consumer attached, which is a fatal
+				 * uncaught exception. Consumption still surfaces the failure.
+				 */
+				readable.on('error', () => undefined);
+			})
+			.catch(() => undefined);
 
 		return pending;
 	}
@@ -243,6 +253,10 @@ export class HlsClient extends BaseHttpClient {
 		const iv = segment.key.iv ?? this.sequenceIv(segment.sequence);
 
 		const decipher = createDecipheriv('aes-128-cbc', key, iv);
+
+		// pipe() does not forward errors, so a dead source would stall the consumer
+		readable.on('error', (error: Error) => decipher.destroy(error));
+
 		return readable.pipe(decipher);
 	}
 
@@ -292,7 +306,7 @@ export class HlsClient extends BaseHttpClient {
 		opts: DownloadOptions
 	): Promise<void> {
 		const signal = opts.signal;
-		const itemKey = opts.pipelineItem?.identifier.key;
+		const itemKey = opts.pipelineItem?.downloadUrl;
 		const itemLabel = this.itemLabel(opts);
 
 		if (!segments.length) return;
