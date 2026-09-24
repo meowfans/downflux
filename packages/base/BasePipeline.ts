@@ -94,9 +94,7 @@ export class BasePipeline<TExec extends ExecutionArgs, TResult extends DefaultEx
 	 * @param request Execution request with provider filters.
 	 * @returns Mapping definitions used by `extract`.
 	 */
-	protected mappings(metadata: TResult, request: TExec): PipelineMappings {
-		console.log('Resolving to base pipeline mapping:', request);
-
+	protected mappings(metadata: TResult, _request: TExec): PipelineMappings {
 		return [
 			this.createMappings(metadata?.sources, { getUrl: (x) => x, getMedia: () => MediaType.VIDEOS }),
 			this.createMappings(metadata?.videoSources, { getUrl: (x) => x, getMedia: () => MediaType.VIDEOS }),

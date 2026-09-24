@@ -7,6 +7,9 @@ export const makeIndex = async (directory: string) => {
 	const dirPath = path.join(__dirname, '..', directory);
 	console.log(`Making index file in ${directory}`);
 
+	// the CLI is an executable entry, not a library surface
+	if (directory.includes('cli')) return;
+
 	const files = fs
 		.readdirSync(dirPath)
 		.filter((file) => file !== INDEX_FILE_NAME)

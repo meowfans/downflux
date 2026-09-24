@@ -1,6 +1,9 @@
 {
 	"name": "downflux",
 	"version": "3.0.1",
+	"bin": {
+		"downflux": "./dist/cli.js"
+	},
 	"description": "A modular media downflux tool",
 	"exports": {
 		"./base": {
