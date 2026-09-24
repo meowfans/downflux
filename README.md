@@ -46,10 +46,35 @@ inspect `failed` and `errors`. It rejects only if the download pipeline itself c
 
 ## CLI
 
-Installing the package provides a `downflux` command.
+Install it globally and the command is on your path:
 
 ```bash
-npx downflux <url> -o ./media -q 1080p
+npm install -g downflux
+```
+
+```bash
+downflux <url> -o ./media -q 1080p
+```
+
+As a project dependency it is linked into `node_modules/.bin`, so reach it through your
+package manager or a script:
+
+```bash
+npx downflux <url> -o ./media
+```
+
+```json
+{
+  "scripts": {
+    "fetch": "downflux"
+  }
+}
+```
+
+To try it without installing anything:
+
+```bash
+npx --yes downflux@latest <url>
 ```
 
 ```
