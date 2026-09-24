@@ -1,7 +1,7 @@
 import { BaseProvider, DefaultMethods } from '@base';
+import { ProviderMismatchException } from '@core/exceptions';
 import { ExtractionTarget, Provider, providerPatterns } from '@types';
-import { type AnyProvider } from '@contracts';
-import { providerClasses } from '../resolver/ProviderClasses';
+import { providerClasses, type ResolvedProvider } from '../resolver/ProviderClasses';
 import { type DefaultExecArgs } from './DefaultContracts';
 
 /**
@@ -60,19 +60,50 @@ export class DefaultProvider extends BaseProvider<DefaultExecArgs> {
 	}
 
 	/**
+	 * Builds the provider that handles a URL, checked against the one you expect.
+	 *
+	 * @param url Page URL to resolve.
+	 * @param expected The provider the URL should belong to.
+	 * @returns That provider, typed concretely.
+	 * @throws ProviderMismatchException when the URL resolves to a different provider.
+	 *
+	 * @example
+	 * ```ts
+	 * await DefaultProvider.for(url, Provider.PornHub).setOutput(OutputType.DEVICE).getVideo(VideoQuality.Q1080);
+	 * ```
+	 */
+	public static for<K extends keyof typeof providerClasses>(url: string, expected: K): InstanceType<(typeof providerClasses)[K]>;
+
+	/**
 	 * Builds the provider that handles a URL.
 	 *
 	 * @param url Page URL to resolve.
 	 * @returns An instance of the matching provider, or a `DefaultProvider` when no
 	 * provider claims the host.
 	 *
+	 * @remarks
+	 * A URL is only known at runtime, so no signature can narrow a string to one
+	 * class ahead of time. Without an expected provider the result is a union of
+	 * every provider; narrow it with `instanceof` to reach a provider's own methods,
+	 * or name the provider you want in the second argument to get it typed directly.
+	 *
 	 * @example
 	 * ```ts
-	 * const provider = DefaultProvider.for('https://xhamster.com/videos/abc');
+	 * const provider = DefaultProvider.for(url);
+	 *
+	 * if (provider instanceof PornHubProvider) await provider.getVideo(VideoQuality.Q1080);
 	 * ```
 	 */
-	public static for(url: string): AnyProvider {
-		const ProviderClass = providerClasses[DefaultProvider.resolveProvider(url)];
+	public static for(url: string): ResolvedProvider | DefaultProvider;
+
+	public static for(url: string, expected?: Provider): ResolvedProvider | DefaultProvider {
+		const resolved = DefaultProvider.resolveProvider(url);
+
+		if (expected && resolved !== expected) {
+			throw new ProviderMismatchException(url, expected, 'for', { resolved });
+		}
+
+		const ProviderClass = providerClasses[resolved as keyof typeof providerClasses];
 
 		return ProviderClass ? new ProviderClass(url) : new DefaultProvider(url);
 	}

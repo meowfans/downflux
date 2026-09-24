@@ -77,8 +77,11 @@ import { ZzzTubeProvider } from '../zzztube/ZzzTubeProvider';
  *
  * `Default` is deliberately absent. It is the fallback used when nothing matches,
  * and listing it would make this module and `DefaultProvider` import each other.
+ *
+ * Declared with `satisfies` rather than an annotation: annotating it widens every
+ * entry to the base constructor and loses the concrete class each key points at.
  */
-export const providerClasses: Partial<Record<Provider, new (url: string) => AnyProvider>> = {
+export const providerClasses = {
 	[Provider.AnalRz]: AnalRzProvider,
 	[Provider.ArtStation]: ArtStationProvider,
 	[Provider.Beeg]: BeegProvider,
@@ -145,4 +148,15 @@ export const providerClasses: Partial<Record<Provider, new (url: string) => AnyP
 	[Provider.Xozilla]: XozillaProvider,
 	[Provider.ZbPorn]: ZbPornProvider,
 	[Provider.ZzzTube]: ZzzTubeProvider
-};
+} satisfies Partial<Record<Provider, new (url: string) => AnyProvider>>;
+
+/**
+ * Every provider a URL can resolve to.
+ *
+ * @remarks
+ * A union rather than the shared base class. A URL is only known at runtime, so no
+ * annotation can narrow it to one provider ahead of time — but returning the base
+ * class throws away the concrete methods entirely. The union keeps them reachable:
+ * narrow with `instanceof` and the provider's own API comes back.
+ */
+export type ResolvedProvider = InstanceType<(typeof providerClasses)[keyof typeof providerClasses]>;
