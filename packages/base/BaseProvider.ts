@@ -12,8 +12,8 @@ import {
 	type TranscodeOptions
 } from '@contracts';
 import { createDefaultDependencies } from '@core/dependency';
-import { SignalHandler } from '@core/lifecycle';
 import { InvalidRangeException, InvalidUrlException, UnsupportedOperationException } from '@core/exceptions';
+import { SignalHandler } from '@core/lifecycle';
 import {
 	type AllowedExtension,
 	type ExecutionShape,
@@ -91,7 +91,8 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 		this.executionOptions = {
 			outputType: OutputType.JSON,
 			executionType: ExecutionType.SEQUENTIAL,
-			preferredVideoFormat: VideoFormat.MP4
+			preferredVideoFormat: VideoFormat.MP4,
+			dirConfig: { pattern: 'recursive' }
 		};
 		this.httpOptions = { referer: url };
 	}
@@ -303,7 +304,7 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 	 * @param config Directory output configuration
 	 * @defaultValue OutputType.JSON
 	 */
-	public setOutput(type: OutputType, config: DirectoryOutputOptions = {}): this {
+	public setOutput(type: OutputType, config: DirectoryOutputOptions = { pattern: 'recursive' }): this {
 		this.executionOptions.outputType = type;
 		this.executionOptions.dirConfig = config;
 		return this;

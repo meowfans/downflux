@@ -27,10 +27,10 @@ export class InvalidDestinationException extends BaseException {
 	private static buildMessage(path: string, provider?: Provider, method?: string): string {
 		return [
 			`ENOENT: Invalid destination`,
-			`ERROR_CODE=${ErrorCodes.ENOENT}`,
-			`path=${path}`,
-			`provider=${provider}`,
-			method && `identifier=${method}`
+			`ERROR_CODE: ${ErrorCodes.ENOENT}`,
+			`Path: ${path}`,
+			`Provider: ${provider}`,
+			method && `Identifier: ${method}`
 		]
 			.filter(Boolean)
 			.join(' | ');

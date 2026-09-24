@@ -28,11 +28,11 @@ export class InvalidRangeException extends BaseException {
 	private static buildMessage(start: number, end: number, provider?: Provider, method?: string): string {
 		return [
 			`Invalid range encountered`,
-			`ERROR_CODE=${ErrorCodes.INVALID_RANGE}`,
-			`start=${start}`,
-			`end=${end}`,
-			`provider=${provider}`,
-			method && `method=${method}`
+			`ERROR_CODE: ${ErrorCodes.INVALID_RANGE}`,
+			`Start: ${start}`,
+			`End: ${end}`,
+			`Provider: ${provider}`,
+			method && `Method: ${method}`
 		]
 			.filter(Boolean)
 			.join(' | ');

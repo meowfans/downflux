@@ -25,6 +25,8 @@ export class InvalidUrlException extends BaseException {
 	}
 
 	private static buildMessage(url: string, provider?: Provider, method?: string): string {
-		return [`Invalid URL encountered`, `url=${url}`, `provider=${provider}`, method && `method=${method}`].filter(Boolean).join(' | ');
+		return [`Invalid URL encountered`, `Url: ${url}`, `Provider: ${provider}`, method && `Method: ${method}`]
+			.filter(Boolean)
+			.join(' | ');
 	}
 }

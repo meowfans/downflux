@@ -27,10 +27,10 @@ export class DownloadException extends BaseException {
 	private static buildMessage(path: string, provider?: Provider, method?: string): string {
 		return [
 			`Unable to download resource`,
-			`ERROR_CODE=${ErrorCodes.DOWNLOAD_FAILED}`,
-			`path=${path}`,
-			`provider=${provider}`,
-			method && `method=${method}`
+			`ERROR_CODE: ${ErrorCodes.DOWNLOAD_FAILED}`,
+			`Path: ${path}`,
+			`Provider: ${provider}`,
+			method && `Method: ${method}`
 		]
 			.filter(Boolean)
 			.join(' | ');

@@ -10,7 +10,7 @@ import {
 } from '@contracts';
 import { Helper } from '@shared';
 import { type FileManager, PathBuilder } from '@storage';
-import { MediaType, VideoQuality } from '@types';
+import { type AllowedExtension, MediaType, VideoQuality } from '@types';
 
 /**
  * Converts extracted metadata into downloadable work items.
@@ -40,20 +40,28 @@ export class BasePipeline<TExec extends ExecutionArgs, TResult extends DefaultEx
 				request,
 				this.filterByExt(
 					request,
-					this.extract(request, metadata).map((item) => ({
-						downloadUrl: item.url,
-						sourceUrl: request.entryUrl,
-						provider: request.provider,
-						identifier: {
-							mediaType: item.mediaType,
-							...this.fileManager.detectResourceType(item.url, request),
-							...(item.extension && { extension: item.extension }),
-							key: this.buildIdentifier({
-								metadata,
-								...item
-							})
-						}
-					}))
+					this.extract(request, metadata).map((item) => {
+						const { extension: ext, mimeType } = this.fileManager.detectResourceType(item.url, request);
+						const extension = item.extension || ext;
+						return {
+							downloadUrl: item.url,
+							sourceUrl: request.entryUrl,
+							provider: request.provider,
+							identifier: {
+								mediaType: item.mediaType,
+								extension,
+								mimeType,
+								key: this.mapIdentifier(
+									request,
+									extension,
+									this.buildIdentifier({
+										metadata,
+										...item
+									})
+								)
+							}
+						};
+					})
 				)
 			)
 		);
@@ -85,6 +93,18 @@ export class BasePipeline<TExec extends ExecutionArgs, TResult extends DefaultEx
 		if (!elements || !elements.length) return [undefined, handler];
 
 		return [elements, handler];
+	}
+
+	protected mapIdentifier(request: TExec, extension: AllowedExtension, defaultPattern: string): string {
+		switch (request.dirConfig?.pattern) {
+			case 'provider':
+				return request.provider;
+			case 'extension':
+				return extension;
+			case 'recursive':
+			default:
+				return defaultPattern;
+		}
 	}
 
 	/**

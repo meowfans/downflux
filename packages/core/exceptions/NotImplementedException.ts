@@ -31,10 +31,10 @@ export class NotImplementedException extends BaseException {
 	private static buildMessage(provider: Provider, method?: string): string {
 		return [
 			`ENOSYS: Provider is not implemented yet`,
-			`ERROR_CODE=${ErrorCodes.NOT_IMPLEMENTED}`,
-			`provider=${provider}`,
-			method && `method=${method}`,
-			`hint=this provider is still scaffolding, see the provider table in README.md`
+			`ERROR_CODE: ${ErrorCodes.NOT_IMPLEMENTED}`,
+			`Provider: ${provider}`,
+			method && `Method: ${method}`,
+			`Hint: This provider is still scaffolding, see the provider table in README.md`
 		]
 			.filter(Boolean)
 			.join(' | ');

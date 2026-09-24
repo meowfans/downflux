@@ -25,7 +25,7 @@ export class ProviderMismatchException extends BaseException {
 	}
 
 	private static buildMessage(url: string, provider?: Provider, method?: string): string {
-		return [`provider mismatch encountered`, `url=${url}`, provider && `provider=${provider}`, method && `method=${method}`]
+		return [`Provider mismatch encountered`, `Url: ${url}`, provider && `Provider: ${provider}`, method && `Method: ${method}`]
 			.filter(Boolean)
 			.join(' | ');
 	}

@@ -118,4 +118,16 @@ export interface DirectoryOutputOptions {
 
 	/** Filename prefix */
 	prefix?: string;
+
+	/**
+	 * Directory structure pattern for recursive downloads.
+	 *
+	 * @remarks
+	 * - `provider`: Organizes files by provider name.
+	 * - `extension`: Organizes files by file extension.
+	 * - `recursive`: Preserves the original directory structure from the source URL.
+	 *
+	 * @defaultValue 'recursive'
+	 */
+	pattern?: 'provider' | 'extension' | 'recursive';
 }
