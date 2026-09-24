@@ -32,10 +32,10 @@ export class UnsupportedOperationException extends BaseException {
 	private static buildMessage(reason: string, provider: Provider, method?: string): string {
 		return [
 			`ENOTSUP: Unsupported operation for this provider`,
-			`ERROR_CODE=${ErrorCodes.UNSUPPORTED_OPERATION}`,
+			`ERROR_CODE: ${ErrorCodes.UNSUPPORTED_OPERATION}`,
 			`reason=${reason}`,
-			`provider=${provider}`,
-			method && `method=${method}`
+			`Provider: ${provider}`,
+			method && `Method: ${method}`
 		]
 			.filter(Boolean)
 			.join(' | ');

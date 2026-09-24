@@ -27,10 +27,10 @@ export class GenericException extends BaseException {
 	private static buildMessage(message: string, provider?: Provider, method?: string): string {
 		return [
 			`ENOENT: Invalid arguments`,
-			`ERROR_CODE=${ErrorCodes.GENERIC_ERROR}`,
-			`message=${message}`,
-			`provider=${provider}`,
-			method && `identifier=${method}`
+			`ERROR_CODE: ${ErrorCodes.GENERIC_ERROR}`,
+			`Message: ${message}`,
+			`Provider: ${provider}`,
+			method && `Identifier: ${method}`
 		]
 			.filter(Boolean)
 			.join(' | ');
