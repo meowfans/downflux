@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/meowfans/downflux/compare/v3.0.1...v3.1.0) (2026-09-24)
+
+
+### Features
+
+* add a downflux command ([#169](https://github.com/meowfans/downflux/issues/169)) ([0cb05e9](https://github.com/meowfans/downflux/commit/0cb05e9923566130a7f982dc8f1cffaf4c20f53d))
+* resolve a URL to the provider that handles it ([#168](https://github.com/meowfans/downflux/issues/168)) ([efb41e8](https://github.com/meowfans/downflux/commit/efb41e86ac9f5ecacfd903490ad6b2e9d5df818d))
+
 ### [3.0.1](https://github.com/meowfans/downflux/compare/v3.0.0...v3.0.1) (2026-09-23)
 
 
