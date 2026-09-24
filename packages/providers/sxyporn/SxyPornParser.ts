@@ -15,7 +15,6 @@ export class SxyPornParser extends BaseParser {
 		const uploader = this.collectByClassNames(html, 'pes_author_div pes_edit_div transition', { includeInnerHTML: true });
 		const videoMeta = html.match(/duration:<b>(.*?)<\/b>\s*·\s*resolution:<b>.*?<\/b>(\d+)/i);
 
-		console.log({ uploader, videoMeta });
 		try {
 			return {
 				customFields: {

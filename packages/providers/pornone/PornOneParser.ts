@@ -12,16 +12,6 @@ import { type PornOneOutput } from './PornOneContracts';
  */
 export class PornOneParser extends BaseParser {
 	public override transform(html: string, sourceUrl: string): Partial<DefaultExecutionResult<Partial<PornOneOutput>>> {
-		const col = this.collectByClassNames(html, 'md:mb-2 p-1 font-semibold w-[136px] dark:text-white', {
-			includeInnerHTML: true
-		});
-
-		const cat = this.collectByClassNames(html, 'pt-1 flex flex-wrap leading-none', {
-			includeInnerHTML: true
-		});
-
-		console.log({ col, cat });
-
 		try {
 			return {
 				customFields: {

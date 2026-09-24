@@ -44,6 +44,38 @@ const { downloaded, failed, errors } = await provider.whenSettled();
 `whenSettled()` resolves even when some items fail, because a partial batch is a normal result -
 inspect `failed` and `errors`. It rejects only if the download pipeline itself could not run.
 
+## CLI
+
+Installing the package provides a `downflux` command.
+
+```bash
+npx downflux <url> -o ./media -q 1080p
+```
+
+```
+USAGE
+  downflux <url> [options]
+  downflux providers [filter]
+
+OPTIONS
+  -o, --output <dir>     directory to download into (default: ./DownFlux)
+  -q, --quality <q>      preferred video quality
+  -m, --method <name>    provider method to call (default: the first one it exposes)
+  -c, --concurrency <n>  parallel downloads (default: 5)
+      --json             print extracted metadata, download nothing
+      --no-progress      suppress the progress panel
+  -h, --help             show this help
+  -v, --version          show the version
+```
+
+The URL decides the provider: its host is matched against `providerPatterns`, and a host no
+provider claims falls back to generic extraction with a warning. Providers do not share one
+entry point — most expose `getVideo`, some only `getVideos` or `getMetadata` — so the CLI
+calls the first method a provider actually has, or whichever you name with `--method`.
+
+`--json` prints the extracted metadata and downloads nothing, so it pipes into `jq`. Ctrl+C
+during a download aborts it, removes the partial file and exits 130.
+
 ## Entry Points
 
 There is no root entry. Every import names the package directory it comes from, so a symbol

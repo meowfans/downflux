@@ -131,8 +131,7 @@ export class PornHubParser extends BaseParser {
 
 		try {
 			return JSON.parse(arrayString);
-		} catch (e) {
-			console.error('Failed to parse flashvars JSON:', e);
+		} catch {
 			return [];
 		}
 	}
