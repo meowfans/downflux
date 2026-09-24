@@ -42,7 +42,6 @@ export * from './pornseven';
 export * from './pornsok';
 export * from './pussyspace';
 export * from './reddit';
-export * from './resolver';
 export * from './sexvid';
 export * from './shameless';
 export * from './shared';
