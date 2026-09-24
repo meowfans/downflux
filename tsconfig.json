@@ -146,6 +146,8 @@
 
 			"@provider/tnaflix": ["./packages/providers/tnaflix/index.ts"],
 
+			"@provider/trashreality": ["./packages/providers/trashreality/index.ts"],
+
 			"@provider/tubevsex": ["./packages/providers/tubevsex/index.ts"],
 
 			"@provider/tumblr": ["./packages/providers/tumblr/index.ts"],

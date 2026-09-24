@@ -39,7 +39,12 @@ const registryPath = join(rootDir, 'scripts/codegen/registry.json');
 			const dirPath = join(providersPath, dir);
 			const files = readdirSync(dirPath);
 
-			const providerFile = files.find((f) => f.endsWith('Provider.ts'));
+			// Only `<dir>/<Dir>Provider.ts` is a real provider. Support folders such as
+			// `shared/` hold helper providers (e.g. GenericContentProvider) that must never
+			// be registered as services, or `generate` will scaffold a phantom provider for them.
+			const providerFile = files.find(
+				(f) => f.endsWith('Provider.ts') && f.replace('Provider.ts', '').toLowerCase() === dir.toLowerCase()
+			);
 			if (providerFile) {
 				const name = providerFile.replace('Provider.ts', '');
 				services.push({

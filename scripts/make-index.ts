@@ -3,18 +3,42 @@ import * as path from 'path';
 
 const INDEX_FILE_NAME = 'index.ts';
 
+/** Directories that are build entries rather than part of the library surface. */
+const NOT_EXPORTED = ['cli'];
+
+/**
+ * Whether a directory contributes anything to a barrel.
+ *
+ * @remarks
+ * A directory with no TypeScript in it still looked like a valid export target, so
+ * a half-created provider or a leftover empty folder produced
+ * `export * from './thing'` for a module that does not exist and broke the build.
+ */
+const hasSources = (dirPath: string): boolean =>
+	fs
+		.readdirSync(dirPath, { withFileTypes: true })
+		.some((entry) =>
+			entry.isDirectory() ? hasSources(path.join(dirPath, entry.name)) : entry.name.endsWith('.ts') && entry.name !== INDEX_FILE_NAME
+		);
+
 export const makeIndex = async (directory: string) => {
 	const dirPath = path.join(__dirname, '..', directory);
 	console.log(`Making index file in ${directory}`);
 
-	// the CLI is an executable entry, not a library surface
-	if (directory.includes('cli')) return;
+	if (NOT_EXPORTED.includes(path.basename(directory))) return;
 
 	const files = fs
 		.readdirSync(dirPath)
 		.filter((file) => file !== INDEX_FILE_NAME)
 		.filter((file) => !file.startsWith('.')) // Exclude hidden files like .DS_Store
-		.filter((file) => file.endsWith('.ts') || fs.statSync(path.join(dirPath, file)).isDirectory()); // Only .ts files or directories
+		.filter((file) => {
+			const entry = path.join(dirPath, file);
+
+			if (!fs.statSync(entry).isDirectory()) return file.endsWith('.ts');
+
+			// a build entry, or a directory with nothing to export yet
+			return !NOT_EXPORTED.includes(file) && hasSources(entry);
+		});
 	console.log(`Found ${files.length} ${files.length > 1 ? 'files' : 'file'}`);
 
 	if (!files.length) return;

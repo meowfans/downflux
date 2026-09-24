@@ -50,6 +50,7 @@ export * from './sxyporn';
 export * from './theyarehuge';
 export * from './tiktok';
 export * from './tnaflix';
+export * from './trashreality';
 export * from './tubevsex';
 export * from './tumblr';
 export * from './twitter';

@@ -2,10 +2,10 @@ import { BasePipeline } from '@base';
 import { type IdentifierContext } from '@contracts';
 import { NotImplementedException } from '@core/exceptions';
 import { Provider } from '@types';
-import { type {{ArgsName}}, type {{OutputName}} } from './{{ProviderName}}Contracts';
+import { type TrashRealityExecArgs, type TrashRealityOutput } from './TrashRealityContracts';
 
-export class {{ProviderName}}Pipeline extends BasePipeline<{{ArgsName}}, {{OutputName}}> {
-	protected override buildIdentifier(_ctx: IdentifierContext<{{OutputName}}>): string {
+export class TrashRealityPipeline extends BasePipeline<TrashRealityExecArgs, TrashRealityOutput> {
+	protected override buildIdentifier(_ctx: IdentifierContext<TrashRealityOutput>): string {
 		/**
 		 * Replace this with the real identifier once extraction is implemented.
 		 *
@@ -14,9 +14,9 @@ export class {{ProviderName}}Pipeline extends BasePipeline<{{ArgsName}}, {{Outpu
 		 *
 		 * A finished implementation looks like:
 		 *   const { mediaType, id } = _ctx;
-		 *   return this.pathBuilder.join('{{ProviderName}}', `${mediaType}/${id}`);
+		 *   return this.pathBuilder.join('TrashReality', `${mediaType}/${id}`);
 		 */
-		throw new NotImplementedException(Provider.{{ProviderName}}, 'buildIdentifier');
+		throw new NotImplementedException(Provider.TrashReality, 'buildIdentifier');
 	}
 
 	// override mappings() to declare which URLs become downloadable items
