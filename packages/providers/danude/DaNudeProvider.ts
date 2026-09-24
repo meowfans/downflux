@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type DaNudeExecArgs, type DaNudeVideoOutput } from './DaNudeContracts';
 import { DaNudeParser } from './DaNudeParser';
 import { DaNudeTransformer } from './DaNudeTransformer';
@@ -22,7 +22,7 @@ export class DaNudeProvider extends BaseProvider<DaNudeExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.DaNude,
-			urlPattern: /(?:www\.)?danude\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.DaNude],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

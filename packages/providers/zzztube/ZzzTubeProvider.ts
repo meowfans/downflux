@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type ZzzTubeExecArgs, type ZzzTubeVideoOutput } from './ZzzTubeContracts';
 import { ZzzTubeParser } from './ZzzTubeParser';
 import { ZzzTubeTransformer } from './ZzzTubeTransformer';
@@ -22,7 +22,7 @@ export class ZzzTubeProvider extends BaseProvider<ZzzTubeExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.ZzzTube,
-			urlPattern: /^(?:www\.)?zzztube\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.ZzzTube],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

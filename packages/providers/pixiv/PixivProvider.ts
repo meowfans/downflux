@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type PixivExecArgs } from './PixivContracts';
 import { PixivParser } from './PixivParser';
@@ -9,7 +9,7 @@ export class PixivProvider extends GenericContentProvider<PixivExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Pixiv,
-			urlPattern: /^(?:www\.)?pixiv\.net$/i,
+			urlPattern: providerPatterns[Provider.Pixiv],
 			metadata: {
 				hasHls: true,
 				type: 'art',

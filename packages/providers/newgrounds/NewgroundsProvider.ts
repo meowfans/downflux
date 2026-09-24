@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type NewgroundsExecArgs } from './NewgroundsContracts';
 import { NewgroundsParser } from './NewgroundsParser';
@@ -9,7 +9,7 @@ export class NewgroundsProvider extends GenericContentProvider<NewgroundsExecArg
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Newgrounds,
-			urlPattern: /^(?:www\.)?newgrounds\.com$/i,
+			urlPattern: providerPatterns[Provider.Newgrounds],
 			metadata: {
 				hasHls: true,
 				type: 'art',

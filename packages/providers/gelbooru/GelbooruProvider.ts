@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type GelbooruExecArgs } from './GelbooruContracts';
 import { GelbooruParser } from './GelbooruParser';
@@ -8,7 +8,7 @@ export class GelbooruProvider extends GenericContentProvider<GelbooruExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Gelbooru,
-			urlPattern: /^(?:www\.)?gelbooru\.com$/i,
+			urlPattern: providerPatterns[Provider.Gelbooru],
 			metadata: {
 				hasHls: true,
 				type: 'gallery',

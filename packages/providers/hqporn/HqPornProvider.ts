@@ -1,5 +1,5 @@
 import { BaseProvider } from '@base';
-import { Provider, type VideoQuality } from '@types';
+import { Provider, providerPatterns, type VideoQuality } from '@types';
 import { type HqPornExecArgs, type HqPornVideoOutput } from './HqPornContracts';
 import { HqPornParser } from './HqPornParser';
 import { HqPornTransformer } from './HqPornTransformer';
@@ -23,7 +23,7 @@ export class HqPornProvider extends BaseProvider<HqPornExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.HqPorn,
-			urlPattern: /^(?:www\.)?hqporn\.(?:com|xxx)$/i,
+			urlPattern: providerPatterns[Provider.HqPorn],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

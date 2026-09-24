@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type XDeguExecArgs, type XDeguVideoOutput } from './XDeguContracts';
 import { XDeguParser } from './XDeguParser';
 import { XDeguTransformer } from './XDeguTransformer';
@@ -22,7 +22,7 @@ export class XDeguProvider extends BaseProvider<XDeguExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.XDegu,
-			urlPattern: /(?:www\.)?xdegu\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.XDegu],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type DaFreePornExecArgs, type DaFreePornVideoOutput } from './DaFreePornContracts';
 import { DaFreePornParser } from './DaFreePornParser';
 import { DaFreePornTransformer } from './DaFreePornTransformer';
@@ -22,7 +22,7 @@ export class DaFreePornProvider extends BaseProvider<DaFreePornExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.DaFreePorn,
-			urlPattern: /(?:www\.)?dafreeporn\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.DaFreePorn],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

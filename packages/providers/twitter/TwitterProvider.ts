@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, type PageRange, Provider } from '@types';
+import { ExtractionTarget, type PageRange, Provider, providerPatterns } from '@types';
 import {
 	type TwitterApiTimelineArgs,
 	type TwitterExecArgs,
@@ -21,7 +21,7 @@ export class TwitterProvider extends BaseProvider<TwitterExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Twitter,
-			urlPattern: /^(?:www\.)?(?:twitter|x)\.com$/i,
+			urlPattern: providerPatterns[Provider.Twitter],
 			metadata: {
 				hasHls: true,
 				type: 'socialmedia',

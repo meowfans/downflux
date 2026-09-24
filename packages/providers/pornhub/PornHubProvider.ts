@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, type PageRange, Provider, type UrlFormat, type VideoQuality } from '@types';
+import { ExtractionTarget, type PageRange, Provider, providerPatterns, type UrlFormat, type VideoQuality } from '@types';
 import {
 	type PornHubChannelsOutput,
 	type PornHubExecArgs,
@@ -40,7 +40,7 @@ export class PornHubProvider extends BaseProvider<PornHubExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.PornHub,
-			urlPattern: /^(?:www\.)?pornhub\.(?:com|net|org)$/i,
+			urlPattern: providerPatterns[Provider.PornHub],
 			metadata: {
 				hasHls: true,
 				type: 'adult',

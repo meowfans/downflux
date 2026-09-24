@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type DeviantArtExecArgs } from './DeviantArtContracts';
 import { DeviantArtParser } from './DeviantArtParser';
@@ -9,7 +9,7 @@ export class DeviantArtProvider extends GenericContentProvider<DeviantArtExecArg
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.DeviantArt,
-			urlPattern: /^(?:www\.)?deviantart\.com$/i,
+			urlPattern: providerPatterns[Provider.DeviantArt],
 			metadata: {
 				hasHls: true,
 				type: 'art',

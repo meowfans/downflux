@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type BoKepPornExecArgs, type BoKepPornVideoOutput } from './BoKepPornContracts';
 import { BoKepPornParser } from './BoKepPornParser';
 import { BoKepPornTransformer } from './BoKepPornTransformer';
@@ -22,7 +22,7 @@ export class BoKepPornProvider extends BaseProvider<BoKepPornExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.BoKepPorn,
-			urlPattern: /(?:www\.)?bokep\.(?:porn)$/i,
+			urlPattern: providerPatterns[Provider.BoKepPorn],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

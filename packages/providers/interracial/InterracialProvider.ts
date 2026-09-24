@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type InterracialExecArgs, type InterracialVideoOutput } from './InterracialContracts';
 import { InterracialParser } from './InterracialParser';
 import { InterracialTransformer } from './InterracialTransformer';
@@ -22,7 +22,7 @@ export class InterracialProvider extends BaseProvider<InterracialExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Interracial,
-			urlPattern: /(?:www\.)?interracial\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.Interracial],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

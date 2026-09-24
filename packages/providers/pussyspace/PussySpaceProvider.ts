@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type PussySpaceExecArgs, type PussySpaceVideoOutput } from './PussySpaceContracts';
 import { PussySpaceParser } from './PussySpaceParser';
 import { PussySpaceTransformer } from './PussySpaceTransformer';
@@ -22,7 +22,7 @@ export class PussySpaceProvider extends BaseProvider<PussySpaceExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.PussySpace,
-			urlPattern: /^(?:www\.)?pussyspace\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.PussySpace],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

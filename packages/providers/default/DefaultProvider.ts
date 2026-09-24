@@ -1,5 +1,7 @@
 import { BaseProvider, DefaultMethods } from '@base';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
+import { type AnyProvider } from '@contracts';
+import { providerClasses } from '../resolver/ProviderClasses';
 import { type DefaultExecArgs } from './DefaultContracts';
 
 /**
@@ -12,7 +14,7 @@ export class DefaultProvider extends BaseProvider<DefaultExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Default,
-			urlPattern: /\.*/i,
+			urlPattern: providerPatterns[Provider.Default],
 			metadata: {
 				hasHls: true,
 				type: 'adult',
@@ -26,6 +28,53 @@ export class DefaultProvider extends BaseProvider<DefaultExecArgs> {
 				sniSpoofing: 'untested'
 			}
 		});
+	}
+
+	/**
+	 * Resolves a URL to the provider that claims its host.
+	 *
+	 * @remarks
+	 * `providerPatterns` entries match a hostname, not a whole URL — they are the
+	 * same anchored patterns each provider validates against — so the host has to be
+	 * extracted first. Testing a full URL against them never matches.
+	 *
+	 * An unparseable URL resolves to `Default` rather than being matched loosely.
+	 * Every provider constructor rejects a non-URL anyway, and failing through the
+	 * default keeps the error about the URL instead of blaming a provider the caller
+	 * never asked for.
+	 */
+	private static resolveProvider(url: string): Provider {
+		let hostname: string;
+
+		try {
+			hostname = new URL(url).hostname;
+		} catch {
+			return Provider.Default;
+		}
+
+		for (const [provider, pattern] of Object.entries(providerPatterns)) {
+			if (provider !== Provider.Default && pattern.test(hostname)) return provider as Provider;
+		}
+
+		return Provider.Default;
+	}
+
+	/**
+	 * Builds the provider that handles a URL.
+	 *
+	 * @param url Page URL to resolve.
+	 * @returns An instance of the matching provider, or a `DefaultProvider` when no
+	 * provider claims the host.
+	 *
+	 * @example
+	 * ```ts
+	 * const provider = DefaultProvider.for('https://xhamster.com/videos/abc');
+	 * ```
+	 */
+	public static for(url: string): AnyProvider {
+		const ProviderClass = providerClasses[DefaultProvider.resolveProvider(url)];
+
+		return ProviderClass ? new ProviderClass(url) : new DefaultProvider(url);
 	}
 
 	/**

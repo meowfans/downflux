@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type SxyPornExecArgs, type SxyPornVideoOutput } from './SxyPornContracts';
 import { SxyPornParser } from './SxyPornParser';
 import { SxyPornTransformer } from './SxyPornTransformer';
@@ -24,7 +24,7 @@ export class SxyPornProvider extends BaseProvider<SxyPornExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.SxyPorn,
-			urlPattern: /^(?:www\.)?sxyprn\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.SxyPorn],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

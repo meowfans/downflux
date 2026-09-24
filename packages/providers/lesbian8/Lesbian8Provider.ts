@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type Lesbian8ExecArgs, type Lesbian8VideoOutput } from './Lesbian8Contracts';
 import { Lesbian8Parser } from './Lesbian8Parser';
 import { Lesbian8Transformer } from './Lesbian8Transformer';
@@ -22,7 +22,7 @@ export class Lesbian8Provider extends BaseProvider<Lesbian8ExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Lesbian8,
-			urlPattern: /(?:www\.)?lesbian8\.(?:com|net)$/i,
+			urlPattern: providerPatterns[Provider.Lesbian8],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

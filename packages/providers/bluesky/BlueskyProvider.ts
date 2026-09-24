@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type BlueskyExecArgs } from './BlueskyContracts';
 import { BlueskyParser } from './BlueskyParser';
@@ -9,7 +9,7 @@ export class BlueskyProvider extends GenericContentProvider<BlueskyExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Bluesky,
-			urlPattern: /^(?:bsky\.app|(?:[a-z0-9-]+\.)*bsky\.social)$/i,
+			urlPattern: providerPatterns[Provider.Bluesky],
 			metadata: {
 				hasHls: true,
 				type: 'socialmedia',

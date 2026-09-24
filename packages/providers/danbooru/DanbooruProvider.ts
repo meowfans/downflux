@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type DanbooruExecArgs } from './DanbooruContracts';
 import { DanbooruParser } from './DanbooruParser';
@@ -9,7 +9,7 @@ export class DanbooruProvider extends GenericContentProvider<DanbooruExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Danbooru,
-			urlPattern: /^(?:www\.)?danbooru\.donmai\.us$/i,
+			urlPattern: providerPatterns[Provider.Danbooru],
 			metadata: {
 				hasHls: true,
 				type: 'gallery',

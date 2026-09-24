@@ -1,5 +1,5 @@
 import { BaseProvider } from '@base';
-import { ExtractionTarget, Provider, type VideoQuality } from '@types';
+import { ExtractionTarget, Provider, providerPatterns, type VideoQuality } from '@types';
 import { type TnAFlixExecArgs, type TnAFlixVideoOutput } from './TnAFlixContracts';
 import { TnAFlixParser } from './TnAFlixParser';
 import { TnAFlixTransformer } from './TnAFlixTransformer';
@@ -22,7 +22,7 @@ export class TnAFlixProvider extends BaseProvider<TnAFlixExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.TnAFlix,
-			urlPattern: /^(?:www\.)?tnaflix\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.TnAFlix],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

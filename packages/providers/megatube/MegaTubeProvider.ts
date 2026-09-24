@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type MegaTubeExecArgs, type MegaTubeVideoOutput } from './MegaTubeContracts';
 import { MegaTubeParser } from './MegaTubeParser';
 import { MegaTubeTransformer } from './MegaTubeTransformer';
@@ -22,7 +22,7 @@ export class MegaTubeProvider extends BaseProvider<MegaTubeExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.MegaTube,
-			urlPattern: /^(?:www\.)?megatube\.(?:xxx)$/i,
+			urlPattern: providerPatterns[Provider.MegaTube],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

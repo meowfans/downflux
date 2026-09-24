@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type MomVidsExecArgs, type MomVidsVideoOutput } from './MomVidsContracts';
 import { MomVidsParser } from './MomVidsParser';
 import { MomVidsTransformer } from './MomVidsTransformer';
@@ -22,7 +22,7 @@ export class MomVidsProvider extends BaseProvider<MomVidsExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.MomVids,
-			urlPattern: /(?:www\.)?momvids\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.MomVids],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

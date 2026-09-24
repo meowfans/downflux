@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type XozillaExecArgs, type XozillaVideoOutput } from './XozillaContracts';
 import { XozillaParser } from './XozillaParser';
 import { XozillaTransformer } from './XozillaTransformer';
@@ -22,7 +22,7 @@ export class XozillaProvider extends BaseProvider<XozillaExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Xozilla,
-			urlPattern: /(?:www\.)?xozilla\.(?:com|xxx)$/i,
+			urlPattern: providerPatterns[Provider.Xozilla],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

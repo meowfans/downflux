@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type ShamelessExecArgs, type ShamelessVideoOutput } from './ShamelessContracts';
 import { ShamelessParser } from './ShamelessParser';
 import { ShamelessTransformer } from './ShamelessTransformer';
@@ -22,7 +22,7 @@ export class ShamelessProvider extends BaseProvider<ShamelessExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Shameless,
-			urlPattern: /^(?:www\.)?shameless\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.Shameless],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

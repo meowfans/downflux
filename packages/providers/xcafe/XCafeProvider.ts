@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type XCafeExecArgs, type XCafeVideoOutput } from './XCafeContracts';
 import { XCafeParser } from './XCafeParser';
 import { XCafeTransformer } from './XCafeTransformer';
@@ -22,7 +22,7 @@ export class XCafeProvider extends BaseProvider<XCafeExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.XCafe,
-			urlPattern: /^(?:www\.)?xcafe\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.XCafe],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

@@ -1,5 +1,5 @@
 import { BaseProvider } from '@base';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type XVideosExecArgs, type XVideosVideoOutput } from './XVideosContracts';
 import { XVideosParser } from './XVideosParser';
 import { XVideosTransformer } from './XVideosTransformer';
@@ -27,7 +27,7 @@ export class XVideosProvider extends BaseProvider<XVideosExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.XVideos,
-			urlPattern: /(?:www\.)?xvideos(?:\d+)?\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.XVideos],
 			metadata: {
 				hasHls: true,
 				type: 'adult',

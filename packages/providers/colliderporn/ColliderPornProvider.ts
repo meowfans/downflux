@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type ColliderPornExecArgs, type ColliderPornVideoOutput } from './ColliderPornContracts';
 import { ColliderPornParser } from './ColliderPornParser';
 import { ColliderPornTransformer } from './ColliderPornTransformer';
@@ -28,7 +28,7 @@ export class ColliderPornProvider extends BaseProvider<ColliderPornExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.ColliderPorn,
-			urlPattern: /^(?:www\.)?colliderporn\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.ColliderPorn],
 			metadata: {
 				hasHls: true,
 				type: 'adult',

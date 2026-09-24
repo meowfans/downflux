@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type ItsPornExecArgs, type ItsPornVideoOutput } from './ItsPornContracts';
 import { ItsPornParser } from './ItsPornParser';
 import { ItsPornTransformer } from './ItsPornTransformer';
@@ -22,7 +22,7 @@ export class ItsPornProvider extends BaseProvider<ItsPornExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.ItsPorn,
-			urlPattern: /(?:www\.)?its\.(?:porn)$/i,
+			urlPattern: providerPatterns[Provider.ItsPorn],
 			metadata: {
 				hasHls: false,
 				type: 'adult',
