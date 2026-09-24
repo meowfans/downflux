@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type XGroovyExecArgs, type XGroovyVideoOutput } from './XGroovyContracts';
 import { XGroovyParser } from './XGroovyParser';
 import { XGroovyTransformer } from './XGroovyTransformer';
@@ -25,7 +25,7 @@ export class XGroovyProvider extends BaseProvider<XGroovyExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.XGroovy,
-			urlPattern: /^(?:(?:www|rt|pt|de|es|pl|it|cn|jp|ko|nl)?\.)?xgroovy(?:-fr)?\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.XGroovy],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

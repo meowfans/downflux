@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type UnsplashExecArgs } from './UnsplashContracts';
 import { UnsplashParser } from './UnsplashParser';
@@ -9,7 +9,7 @@ export class UnsplashProvider extends GenericContentProvider<UnsplashExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Unsplash,
-			urlPattern: /^(?:www\.)?unsplash\.com$/i,
+			urlPattern: providerPatterns[Provider.Unsplash],
 			metadata: {
 				hasHls: true,
 				type: 'gallery',

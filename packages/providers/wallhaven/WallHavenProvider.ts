@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, type IndexRange, OutputType, Provider } from '@types';
+import { ExtractionTarget, type IndexRange, OutputType, Provider, providerPatterns } from '@types';
 import {
 	type WallHavenExecArgs,
 	type WallHavenUserExecArgs,
@@ -33,7 +33,7 @@ export class WallHavenProvider extends BaseProvider<WallHavenExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.WallHaven,
-			urlPattern: /^(?:(?:www|th|w)\.)?wallhaven\.cc$/i,
+			urlPattern: providerPatterns[Provider.WallHaven],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

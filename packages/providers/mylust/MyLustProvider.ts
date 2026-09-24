@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type MyLustExecArgs, type MyLustVideoOutput } from './MyLustContracts';
 import { MyLustParser } from './MyLustParser';
 import { MyLustTransformer } from './MyLustTransformer';
@@ -23,7 +23,7 @@ export class MyLustProvider extends BaseProvider<MyLustExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.MyLust,
-			urlPattern: /^(?:(?:www|de|ru)\.)?mylust\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.MyLust],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type EpicGfsExecArgs, type EpicGfsVideoOutput } from './EpicGfsContracts';
 import { EpicGfsParser } from './EpicGfsParser';
 import { EpicGfsTransformer } from './EpicGfsTransformer';
@@ -22,7 +22,7 @@ export class EpicGfsProvider extends BaseProvider<EpicGfsExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.EpicGfs,
-			urlPattern: /(?:www\.)?epicgfs\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.EpicGfs],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

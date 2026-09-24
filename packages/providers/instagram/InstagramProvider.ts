@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type InstagramExecArgs } from './InstagramContracts';
 import { InstagramParser } from './InstagramParser';
@@ -9,7 +9,7 @@ export class InstagramProvider extends GenericContentProvider<InstagramExecArgs>
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Instagram,
-			urlPattern: /^(?:www\.)?instagram\.com$/i,
+			urlPattern: providerPatterns[Provider.Instagram],
 			metadata: {
 				hasHls: true,
 				type: 'socialmedia',

@@ -1,5 +1,5 @@
 import { BaseProvider } from '@base';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type EPornerExecArgs, type EPornerVideoOutput } from './EPornerContracts';
 import { EPornerParser } from './EPornerParser';
 import { EPornerTransformer } from './EPornerTransformer';
@@ -21,7 +21,7 @@ export class EPornerProvider extends BaseProvider<EPornerExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.EPorner,
-			urlPattern: /(?:(?:www|pl|en|fr|es|pt|it|de|nl|ph|jp)\.)?eporner\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.EPorner],
 			metadata: {
 				hasHls: true,
 				type: 'adult',

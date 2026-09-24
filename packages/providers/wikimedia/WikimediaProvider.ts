@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type WikimediaExecArgs } from './WikimediaContracts';
 import { WikimediaParser } from './WikimediaParser';
@@ -9,7 +9,7 @@ export class WikimediaProvider extends GenericContentProvider<WikimediaExecArgs>
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Wikimedia,
-			urlPattern: /^(?:commons\.)?wikimedia\.org$/i,
+			urlPattern: providerPatterns[Provider.Wikimedia],
 			metadata: {
 				hasHls: true,
 				type: 'educational',

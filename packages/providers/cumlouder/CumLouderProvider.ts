@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type CumLouderExecArgs, type CumLouderVideoOutput } from './CumLouderContracts';
 import { CumLouderParser } from './CumLouderParser';
 import { CumLouderTransformer } from './CumLouderTransformer';
@@ -25,7 +25,7 @@ export class CumLouderProvider extends BaseProvider<CumLouderExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.CumLouder,
-			urlPattern: /^(?:www\.)?cumlouder\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.CumLouder],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

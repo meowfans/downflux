@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type BeegExecArgs, type BeegVideoOutput } from './BeegContracts';
 import { BeegParser } from './BeegParser';
 import { BeegTransformer } from './BeegTransformer';
@@ -24,7 +24,7 @@ export class BeegProvider extends BaseProvider<BeegExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Beeg,
-			urlPattern: /^(?:www\.)?beeg\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.Beeg],
 			metadata: {
 				hasHls: true,
 				type: 'adult',

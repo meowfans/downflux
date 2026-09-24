@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type TheyAreHugeExecArgs, type TheyAreHugeVideoOutput } from './TheyAreHugeContracts';
 import { TheyAreHugeParser } from './TheyAreHugeParser';
 import { TheyAreHugeTransformer } from './TheyAreHugeTransformer';
@@ -26,7 +26,7 @@ export class TheyAreHugeProvider extends BaseProvider<TheyAreHugeExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.TheyAreHuge,
-			urlPattern: /^(?:www\.)?theyarehuge\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.TheyAreHuge],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

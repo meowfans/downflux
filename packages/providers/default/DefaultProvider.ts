@@ -1,5 +1,5 @@
 import { BaseProvider, DefaultMethods } from '@base';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type DefaultExecArgs } from './DefaultContracts';
 
 /**
@@ -12,7 +12,7 @@ export class DefaultProvider extends BaseProvider<DefaultExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Default,
-			urlPattern: /\.*/i,
+			urlPattern: providerPatterns[Provider.Default],
 			metadata: {
 				hasHls: true,
 				type: 'adult',

@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type PinterestExecArgs } from './PinterestContracts';
 import { PinterestParser } from './PinterestParser';
@@ -9,7 +9,7 @@ export class PinterestProvider extends GenericContentProvider<PinterestExecArgs>
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Pinterest,
-			urlPattern: /^(?:www\.)?pinterest\.[a-z.]+$/i,
+			urlPattern: providerPatterns[Provider.Pinterest],
 			metadata: {
 				hasHls: true,
 				type: 'gallery',

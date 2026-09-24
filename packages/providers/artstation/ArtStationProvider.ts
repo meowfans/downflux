@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type ArtStationExecArgs } from './ArtStationContracts';
 import { ArtStationParser } from './ArtStationParser';
@@ -9,7 +9,7 @@ export class ArtStationProvider extends GenericContentProvider<ArtStationExecArg
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.ArtStation,
-			urlPattern: /^(?:www\.)?artstation\.com$/i,
+			urlPattern: providerPatterns[Provider.ArtStation],
 			metadata: {
 				hasHls: true,
 				type: 'art',

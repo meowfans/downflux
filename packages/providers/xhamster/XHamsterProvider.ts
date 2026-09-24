@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type XHamsterExecArgs, type XHamsterVideoOutput } from './XHamsterContracts';
 import { XHamsterParser } from './XHamsterParser';
 import { XHamsterTransformer } from './XHamsterTransformer';
@@ -27,7 +27,7 @@ export class XHamsterProvider extends BaseProvider<XHamsterExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.XHamster,
-			urlPattern: /^(?:xhamster|xhopen|xhtotal)(?:\d+)?(?:\.com|\.desi)$/i,
+			urlPattern: providerPatterns[Provider.XHamster],
 			metadata: {
 				hasHls: true,
 				type: 'adult',

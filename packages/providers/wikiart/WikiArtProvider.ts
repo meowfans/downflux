@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type WikiArtExecArgs } from './WikiArtContracts';
 import { WikiArtParser } from './WikiArtParser';
@@ -9,7 +9,7 @@ export class WikiArtProvider extends GenericContentProvider<WikiArtExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.WikiArt,
-			urlPattern: /^(?:www\.)?wikiart\.org$/i,
+			urlPattern: providerPatterns[Provider.WikiArt],
 			metadata: {
 				hasHls: true,
 				type: 'art',

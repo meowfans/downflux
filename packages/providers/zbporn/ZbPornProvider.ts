@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type ZbPornExecArgs, type ZbPornVideoOutput } from './ZbPornContracts';
 import { ZbPornParser } from './ZbPornParser';
 import { ZbPornTransformer } from './ZbPornTransformer';
@@ -22,7 +22,7 @@ export class ZbPornProvider extends BaseProvider<ZbPornExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.ZbPorn,
-			urlPattern: /(?:www\.)?zbporn\.(?:tv|com)$/i,
+			urlPattern: providerPatterns[Provider.ZbPorn],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

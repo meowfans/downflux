@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type TubeVSexExecArgs, type TubeVSexVideoOutput } from './TubeVSexContracts';
 import { TubeVSexParser } from './TubeVSexParser';
 import { TubeVSexTransformer } from './TubeVSexTransformer';
@@ -22,7 +22,7 @@ export class TubeVSexProvider extends BaseProvider<TubeVSexExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.TubeVSex,
-			urlPattern: /^(?:www\.)?tubev\.(?:sex)$/i,
+			urlPattern: providerPatterns[Provider.TubeVSex],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

@@ -1,6 +1,6 @@
 import { BaseProvider, type TagFilterOptions } from '@base';
 import { GenericException, InvalidRangeException } from '@core/exceptions';
-import { ExtractionTarget, type IndexRange, type PageRange, Provider, type VideoQuality } from '@types';
+import { ExtractionTarget, type IndexRange, type PageRange, Provider, providerPatterns, type VideoQuality } from '@types';
 import {
 	type PerfectGirlsAlbumOutput,
 	type PerfectGirlsChannelOutput,
@@ -44,7 +44,7 @@ export class PerfectGirlsProvider extends BaseProvider<PerfectGirlsExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.PerfectGirls,
-			urlPattern: /^(?:www\.)?(?:perfectgirls|perfectdamen)\.(?:co|xxx)$/i,
+			urlPattern: providerPatterns[Provider.PerfectGirls],
 			metadata: {
 				hasHls: true,
 				type: 'adult',

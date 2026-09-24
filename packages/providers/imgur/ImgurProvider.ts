@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type ImgurExecArgs } from './ImgurContracts';
 import { ImgurParser } from './ImgurParser';
@@ -9,7 +9,7 @@ export class ImgurProvider extends GenericContentProvider<ImgurExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Imgur,
-			urlPattern: /^(?:i\.)?imgur\.com$/i,
+			urlPattern: providerPatterns[Provider.Imgur],
 			metadata: {
 				hasHls: true,
 				type: 'gallery',

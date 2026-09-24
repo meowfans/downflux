@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type TikTokExecArgs } from './TikTokContracts';
 import { TikTokParser } from './TikTokParser';
@@ -8,7 +8,7 @@ export class TikTokProvider extends GenericContentProvider<TikTokExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.TikTok,
-			urlPattern: /^(?:www\.)?tiktok\.com$/i,
+			urlPattern: providerPatterns[Provider.TikTok],
 			metadata: {
 				hasHls: true,
 				type: 'socialmedia',

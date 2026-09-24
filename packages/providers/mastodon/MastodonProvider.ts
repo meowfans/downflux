@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type MastodonExecArgs } from './MastodonContracts';
 import { MastodonParser } from './MastodonParser';
@@ -9,7 +9,7 @@ export class MastodonProvider extends GenericContentProvider<MastodonExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Mastodon,
-			urlPattern: /^(?:mastodon\.social|mastodon\.online|mstdn\.social|fosstodon\.org|techhub\.social)$/i,
+			urlPattern: providerPatterns[Provider.Mastodon],
 			metadata: {
 				hasHls: true,
 				type: 'socialmedia',

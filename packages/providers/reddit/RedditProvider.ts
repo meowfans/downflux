@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type RedditExecArgs } from './RedditContracts';
 import { RedditParser } from './RedditParser';
@@ -9,7 +9,7 @@ export class RedditProvider extends GenericContentProvider<RedditExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Reddit,
-			urlPattern: /^(?:www\.|old\.)?reddit\.com$/i,
+			urlPattern: providerPatterns[Provider.Reddit],
 			metadata: {
 				hasHls: true,
 				type: 'socialmedia',

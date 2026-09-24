@@ -1,5 +1,5 @@
 import { BaseProvider } from '@base';
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { {{ArgsName}} } from './{{ProviderName}}Contracts';
 import { {{ProviderName}}Parser } from './{{ProviderName}}Parser';
 import { {{ProviderName}}Pipeline } from './{{ProviderName}}Pipeline';
@@ -11,7 +11,12 @@ export class {{ProviderName}}Provider extends BaseProvider<{{ArgsName}}> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.{{ProviderName}},
-			urlPattern: /implementation$/i,
+			/**
+			 * The host pattern lives in `providerPatterns` so extraction and URL
+			 * matching read the same regex. Replace the generated placeholder there,
+			 * not here.
+			 */
+			urlPattern: providerPatterns[Provider.{{ProviderName}}],
 			metadata: {
 				hasHls: false,
 				type: 'implementation',

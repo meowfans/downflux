@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type FlickrExecArgs } from './FlickrContracts';
 import { FlickrParser } from './FlickrParser';
@@ -9,7 +9,7 @@ export class FlickrProvider extends GenericContentProvider<FlickrExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Flickr,
-			urlPattern: /^(?:www\.)?flickr\.com$/i,
+			urlPattern: providerPatterns[Provider.Flickr],
 			metadata: {
 				hasHls: true,
 				type: 'gallery',

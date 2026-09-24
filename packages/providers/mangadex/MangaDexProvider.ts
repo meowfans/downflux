@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type MangaDexExecArgs } from './MangaDexContracts';
 import { MangaDexParser } from './MangaDexParser';
@@ -9,7 +9,7 @@ export class MangaDexProvider extends GenericContentProvider<MangaDexExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.MangaDex,
-			urlPattern: /^(?:www\.)?mangadex\.org$/i,
+			urlPattern: providerPatterns[Provider.MangaDex],
 			metadata: {
 				hasHls: true,
 				type: 'manga',

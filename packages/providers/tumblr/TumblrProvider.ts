@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type TumblrExecArgs } from './TumblrContracts';
 import { TumblrParser } from './TumblrParser';
@@ -9,7 +9,7 @@ export class TumblrProvider extends GenericContentProvider<TumblrExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Tumblr,
-			urlPattern: /^(?:www\.)?tumblr\.com$|^(?:[a-z0-9-]+\.)?tumblr\.com$/i,
+			urlPattern: providerPatterns[Provider.Tumblr],
 			metadata: {
 				hasHls: true,
 				type: 'socialmedia',

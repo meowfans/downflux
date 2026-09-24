@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type AnalRzExecArgs, type AnalRzVideoOutput } from './AnalRzContracts';
 import { AnalRzParser } from './AnalRzParser';
 import { AnalRzTransformer } from './AnalRzTransformer';
@@ -23,7 +23,7 @@ export class AnalRzProvider extends BaseProvider<AnalRzExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.AnalRz,
-			urlPattern: /^(?:www\.)?analrz\.(?:com)$/i,
+			urlPattern: providerPatterns[Provider.AnalRz],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

@@ -1,5 +1,5 @@
 import { BaseProvider } from '@base';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type SexVidExecArgs, type SexVidVideoOutput } from './SexVidContracts';
 import { SexVidParser } from './SexVidParser';
 import { SexVidTransformer } from './SexVidTransformer';
@@ -21,7 +21,7 @@ export class SexVidProvider extends BaseProvider<SexVidExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.SexVid,
-			urlPattern: /^(?:www\.)?sexvid(?:\d+)?\.(?:xxx|com)$/i,
+			urlPattern: providerPatterns[Provider.SexVid],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

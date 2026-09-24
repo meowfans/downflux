@@ -1,6 +1,6 @@
 import { BaseProvider, type TagFilterOptions } from '@base';
 import { GenericException, InvalidRangeException } from '@core/exceptions';
-import { ExtractionTarget, type IndexRange, type PageRange, Provider, type VideoQuality } from '@types';
+import { ExtractionTarget, type IndexRange, type PageRange, Provider, providerPatterns, type VideoQuality } from '@types';
 import {
 	type OkPornAlbumOutput,
 	type OkPornChannelOutput,
@@ -42,7 +42,7 @@ export class OkPornProvider extends BaseProvider<OkPornExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.OkPorn,
-			urlPattern: /^(?:www\.)?ok\.(?:porn|xxx)$/i,
+			urlPattern: providerPatterns[Provider.OkPorn],
 			metadata: {
 				hasHls: true,
 				type: 'adult',

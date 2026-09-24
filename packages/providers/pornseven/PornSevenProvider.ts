@@ -1,6 +1,6 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type PornSevenExecArgs, type PornSevenVideoOutput } from './PornSevenContracts';
 import { PornSevenParser } from './PornSevenParser';
 import { PornSevenTransformer } from './PornSevenTransformer';
@@ -23,7 +23,7 @@ export class PornSevenProvider extends BaseProvider<PornSevenExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.PornSeven,
-			urlPattern: /^(?:www\.)?porn7\.(?:xxx)$/i,
+			urlPattern: providerPatterns[Provider.PornSeven],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

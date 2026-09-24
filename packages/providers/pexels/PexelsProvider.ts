@@ -1,4 +1,4 @@
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { GenericContentProvider } from '@provider/shared';
 import { type PexelsExecArgs } from './PexelsContracts';
 import { PexelsParser } from './PexelsParser';
@@ -9,7 +9,7 @@ export class PexelsProvider extends GenericContentProvider<PexelsExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.Pexels,
-			urlPattern: /^(?:www\.)?pexels\.com$/i,
+			urlPattern: providerPatterns[Provider.Pexels],
 			metadata: {
 				hasHls: true,
 				type: 'gallery',

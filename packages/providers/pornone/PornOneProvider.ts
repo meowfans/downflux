@@ -1,5 +1,5 @@
 import { BaseProvider } from '@base';
-import { Provider } from '@types';
+import { Provider, providerPatterns } from '@types';
 import { type PornOneExecArgs, type PornOneVideoOutput } from './PornOneContracts';
 import { PornOneParser } from './PornOneParser';
 import { PornOneTransformer } from './PornOneTransformer';
@@ -23,7 +23,7 @@ export class PornOneProvider extends BaseProvider<PornOneExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.PornOne,
-			urlPattern: /^(?:www\.)?pornone\.(?:com|net)$/i,
+			urlPattern: providerPatterns[Provider.PornOne],
 			metadata: {
 				hasHls: false,
 				type: 'adult',

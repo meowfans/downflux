@@ -1,5 +1,5 @@
 import { BaseProvider } from '@base';
-import { ExtractionTarget, Provider } from '@types';
+import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type XnXXExecArgs, type XnXXVideoOutput } from './XnXXContracts';
 import { XnXXParser } from './XnXXParser';
 import { XnXXTransformer } from './XnXXTransformer';
@@ -23,7 +23,7 @@ export class XnXXProvider extends BaseProvider<XnXXExecArgs> {
 	constructor(url: string) {
 		super(url, {
 			provider: Provider.XnXX,
-			urlPattern: /^(?:www\.)?xnxx(?:\d+)?\.(?:com|health)$/i,
+			urlPattern: providerPatterns[Provider.XnXX],
 			metadata: {
 				hasHls: true,
 				type: 'adult',
