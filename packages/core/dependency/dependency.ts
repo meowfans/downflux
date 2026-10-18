@@ -35,7 +35,7 @@ export function createDefaultDependencies(components: ProviderComponents = {}): 
 
 	const pipelineRegistry = new PipelineRegistry(fileManager, components);
 
-	const transformerRegistry = new TransformerRegistry(httpClient, progressManager, components);
+	const transformerRegistry = new TransformerRegistry(httpClient, hlsClient, progressManager, components);
 
 	const transferCoordinator = new TransferCoordinator(fileManager, streamHttpClient, progressManager);
 

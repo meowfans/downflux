@@ -1,8 +1,10 @@
 import { BaseTransformer } from '@base';
 import { type DefaultExecutionResult } from '@contracts';
 import { type OutputType, type VideoQuality } from '@types';
-import { type BeegExecArgs, type BeegVideoMetadata, type BeegVideoOutput } from './BeegContracts';
+import { type BeegExecArgs, type BeegOutput, type BeegVideoOutput } from './BeegContracts';
 import { BeegMethods } from './BeegTypes';
+
+type BeegTransformedOutput = DefaultExecutionResult<Partial<BeegOutput>>;
 
 /**
  * @class `BeegTransformer`
@@ -13,12 +15,15 @@ import { BeegMethods } from './BeegTypes';
 export class BeegTransformer extends BaseTransformer<BeegExecArgs, DefaultExecutionResult | BeegVideoOutput> {
 	private readonly REFERER = 'https://beeg.com/';
 	private readonly VIDEO_ORIGIN = 'https://video.beeg.com';
-	private readonly API_URL = 'https://store.externulls.com/facts/file';
+	private readonly API_URL = 'https://store.externulls.com/video/play_url';
 
 	public async transform(url: string, request?: BeegExecArgs): Promise<DefaultExecutionResult | BeegVideoOutput> {
+		const metadata = (await super.transform(url, request)) as BeegTransformedOutput;
+		if (!request?.transformOutput) return metadata;
+
 		switch (request?.method) {
 			case BeegMethods.getVideo:
-				return await this.toVideoOutput(request);
+				return await this.toVideoOutput(request, metadata);
 			default:
 				return {
 					title: 'Beeg_title_not_found',
@@ -35,40 +40,39 @@ export class BeegTransformer extends BaseTransformer<BeegExecArgs, DefaultExecut
 		}
 	}
 
-	private async toVideoOutput(request: BeegExecArgs): Promise<BeegVideoOutput> {
-		const parsedData = await this.requestData(`${this.API_URL}/${request.id}`, {
+	private async toVideoOutput(request: BeegExecArgs, metadata: BeegTransformedOutput): Promise<BeegVideoOutput> {
+		const requestOptions = {
 			...request,
-			outputType: request.outputType as OutputType,
-			referer: this.REFERER
-		});
+			referer: this.REFERER,
+			outputType: request.outputType as OutputType
+		};
 
-		const fetchedFile = parsedData?.file;
-		const description = fetchedFile?.data[0]?.cd_value || 'Beeg_description_not_found';
-		const videos = fetchedFile?.qualities?.h264 as BeegVideoMetadata[];
-		const videoId = videos?.[0]?.id;
-		const fallBackVideo = [
-			{
-				url: `${this.VIDEO_ORIGIN}/${fetchedFile?.fallback}`,
-				quality: fetchedFile?.fallback?.match(/\/(\d{3,4}p)\//)?.[1] as VideoQuality
-			}
-		];
+		const urlPath = await this.fetchText(`${this.API_URL}/${request.id}`, requestOptions);
+
+		const videoUrl = new URL(urlPath, this.VIDEO_ORIGIN).toString();
+
+		const manifest = await this.fetchText(videoUrl, requestOptions);
+
+		const variants = this.getVariants(manifest, this.VIDEO_ORIGIN);
+
+		console.log({ urlPath, videoUrl, manifest, variants });
 
 		return {
-			description: description,
-			username: 'unknown',
-			title: '',
+			description: metadata?.description ?? 'Beeg_description_not_found',
+			username: metadata?.customFields?.username ?? 'unknown',
+			title: metadata?.title ?? 'Beeg_title_not_found',
 			poster: '',
 			tags: [],
-			videoId: videoId?.toString() ?? 'unknown',
+			videoId: request.id,
 			pageUrl: request.entryUrl,
 			videos: {
-				hls: this.uniqueVideos(videos ?? [], {
-					getUrl: (video) => `${this.VIDEO_ORIGIN}/${video.url}`,
-					getQuality: (video) => `${video.quality}p` as VideoQuality
-				}),
-				mp4: this.uniqueVideos(fallBackVideo, {
-					getUrl: (video) => video.url,
-					getQuality: (video) => video.quality
+				hls: this.uniqueVideos(variants, {
+					getQuality(video) {
+						return `${video.height}p` as VideoQuality;
+					},
+					getUrl(video) {
+						return video.url;
+					}
 				})
 			}
 		};

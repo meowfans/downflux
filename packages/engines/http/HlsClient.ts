@@ -478,7 +478,7 @@ export class HlsClient extends BaseHttpClient {
 		return match ? parseInt(match[1], 10) : 0;
 	}
 
-	private getVariants(manifest: string, base: string): M3U8Variant[] {
+	public getVariants(manifest: string, base: string): M3U8Variant[] {
 		const lines = manifest.split('\n').map((l) => l.trim());
 		const variants: M3U8Variant[] = [];
 

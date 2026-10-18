@@ -1,7 +1,7 @@
 import { BaseHttpClient } from '@base';
+import type { ProviderComponents } from '@contracts';
 import { type DownloadOptions, type FetchResult } from '@contracts';
 import { type ProgressManager } from '@core/progress';
-import type { ProviderComponents } from '@contracts';
 import { StrategyRegistry } from '@core/registries';
 
 /**
@@ -18,7 +18,7 @@ export class HttpClient extends BaseHttpClient {
 	) {
 		super(progressManager);
 
-		// built here, not as a field initialiser, which would run before `components` is set
+		// built here, not as a field initializer, which would run before `components` is set
 		this.strategyRegistry = new StrategyRegistry(progressManager, components);
 	}
 

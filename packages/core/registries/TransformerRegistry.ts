@@ -1,7 +1,7 @@
 import { BaseTransformer } from '@base';
 import type { ExecutionArgs, ProviderComponents } from '@contracts';
 import type { ProgressManager } from '@core/progress';
-import type { HttpClient } from '@engine/http';
+import type { HlsClient, HttpClient } from '@engine/http';
 
 /**
  * Resolves the transformer for the running job.
@@ -15,6 +15,7 @@ import type { HttpClient } from '@engine/http';
 export class TransformerRegistry {
 	constructor(
 		private readonly httpClient: HttpClient,
+		private readonly hlsClient: HlsClient,
 		private readonly progressManager: ProgressManager,
 		private readonly components: ProviderComponents = {}
 	) {}
@@ -29,7 +30,7 @@ export class TransformerRegistry {
 	public async transform<TArgs extends ExecutionArgs, TResult>(url: string, request: TArgs): Promise<TResult> {
 		const TransformerClass = this.components.transformer ?? BaseTransformer;
 
-		const transformer = new TransformerClass(this.httpClient, this.progressManager, this.components.parser);
+		const transformer = new TransformerClass(this.httpClient, this.hlsClient, this.progressManager, this.components.parser);
 
 		return (await transformer.transform(url, request)) as TResult;
 	}
