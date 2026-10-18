@@ -42,7 +42,7 @@ export class BeegPipeline extends BasePipeline<BeegExecArgs, BeegOutput> {
 				}
 			),
 			this.createMappings(
-				this.filterByQuality(metadata.videos.hls, {
+				this.filterByQuality(metadata?.videos?.hls, {
 					allowedQuality: request.allowedVideoQuality,
 					getQuality: (item) => item?.quality
 				}),

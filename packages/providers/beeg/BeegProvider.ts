@@ -1,10 +1,10 @@
 import { BaseProvider } from '@base';
 import { GenericException } from '@core/exceptions';
-import { ExtractionTarget, Provider, providerPatterns } from '@types';
+import { ExtractionTarget, Provider, providerPatterns, type VideoQuality } from '@types';
 import { type BeegExecArgs, type BeegVideoOutput } from './BeegContracts';
 import { BeegParser } from './BeegParser';
-import { BeegTransformer } from './BeegTransformer';
 import { BeegPipeline } from './BeegPipeline';
+import { BeegTransformer } from './BeegTransformer';
 import { BeegMethods } from './BeegTypes';
 
 /**
@@ -65,7 +65,7 @@ export class BeegProvider extends BaseProvider<BeegExecArgs> {
 		};
 	}
 
-	public async getVideo(): Promise<BeegVideoOutput> {
+	public async getVideo(quality?: VideoQuality): Promise<BeegVideoOutput> {
 		const { videoId, videoUrl } = this.resolveVideo();
 
 		return await this.execute<BeegVideoOutput>({
@@ -74,7 +74,8 @@ export class BeegProvider extends BaseProvider<BeegExecArgs> {
 			provider: this.provider,
 			method: BeegMethods.getVideo,
 			extractionTarget: ExtractionTarget.SOURCES,
-			id: videoId
+			id: videoId,
+			allowedVideoQuality: quality
 		});
 	}
 }

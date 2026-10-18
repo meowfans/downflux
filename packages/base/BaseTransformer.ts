@@ -4,13 +4,14 @@ import {
 	type DefaultVideoOutput,
 	type DownloadOptions,
 	type ExecutionArgs,
+	type M3U8Variant,
 	type VideosFormat,
 	type VideoSourceOutput
 } from '@contracts';
 import { type ProgressManager } from '@core/progress';
-import { BaseParser } from './BaseParser';
-import { type HttpClient } from '@engine/http';
+import { type HlsClient, type HttpClient } from '@engine/http';
 import { VideoQuality } from '@types';
+import { BaseParser } from './BaseParser';
 
 /**
  * Selectors used to normalize provider-specific video records.
@@ -40,6 +41,7 @@ export class BaseTransformer<TExec extends ExecutionArgs, TResult = DefaultExecu
 	 */
 	constructor(
 		protected readonly httpClient: HttpClient,
+		protected readonly hlsClient: HlsClient,
 		protected readonly progressManager: ProgressManager,
 		protected readonly parser?: new () => BaseParser
 	) {}
@@ -72,8 +74,16 @@ export class BaseTransformer<TExec extends ExecutionArgs, TResult = DefaultExecu
 	 * @param opts HTTP and provider options.
 	 * @returns Parsed JSON response.
 	 */
-	public async requestData(url: string, opts: DownloadOptions) {
+	public async requestData(url: string, opts: DownloadOptions): Promise<any> {
 		return await this.httpClient.fetchJson(url, opts);
+	}
+
+	public async fetchText(url: string, opts: DownloadOptions): Promise<string> {
+		return await this.httpClient.fetchText(url, opts.timeoutMs || 10000, opts.headers || {}, opts.signal);
+	}
+
+	public getVariants(manifest: string, base: string): M3U8Variant[] {
+		return this.hlsClient.getVariants(manifest, base);
 	}
 
 	/**

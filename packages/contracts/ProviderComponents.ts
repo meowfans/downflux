@@ -1,6 +1,6 @@
 import type { BaseParser, BasePipeline, BaseProvider, BaseStrategy, BaseTransformer } from '@base';
 import type { ProgressManager } from '@core/progress';
-import type { HttpClient } from '@engine/http';
+import type { HlsClient, HttpClient } from '@engine/http';
 import type { FileManager } from '@storage';
 import type { ExecutionShape } from '@types';
 import type { ExecutionArgs } from './ExecutionContracts';
@@ -24,6 +24,7 @@ export interface ProviderComponents {
 	/** Fetches a target and normalizes it into the provider's output contract. */
 	transformer?: new (
 		httpClient: HttpClient,
+		hlsClient: HlsClient,
 		progressManager: ProgressManager,
 		parser?: new () => BaseParser
 	) => BaseTransformer<ExecutionArgs<ExecutionShape>, unknown>;
