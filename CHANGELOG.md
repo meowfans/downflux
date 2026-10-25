@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/meowfans/downflux/compare/v3.1.0...v3.2.0) (2026-10-25)
+
+
+### Features
+
+* Add dir pattern property ([#172](https://github.com/meowfans/downflux/issues/172)) ([a940c15](https://github.com/meowfans/downflux/commit/a940c156caa52162ba0241c6518a765e65bc02ae))
+
+
+### Bug Fixes
+
+* update hbs files with new eslint type config ([1b1f51f](https://github.com/meowfans/downflux/commit/1b1f51f76a7a8c6d1a765f6a30474714ee473a40))
+
 ## [3.1.0](https://github.com/meowfans/downflux/compare/v3.0.1...v3.1.0) (2026-09-24)
 
 
