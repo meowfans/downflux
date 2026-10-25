@@ -31,6 +31,7 @@ export * from './newgrounds';
 export * from './okporn';
 export * from './perfectgirls';
 export * from './pexels';
+export * from './pimpbunny';
 export * from './pinterest';
 export * from './pixiv';
 export * from './porn300';

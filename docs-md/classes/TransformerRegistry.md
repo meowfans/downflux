@@ -6,23 +6,24 @@
 
 # Class: TransformerRegistry
 
-Defined in: [packages/core/registries/TransformerRegistry.ts:101](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/TransformerRegistry.ts#L101)
+Defined in: [packages/core/registries/TransformerRegistry.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/TransformerRegistry.ts#L15)
 
-Resolves provider transformers and runs metadata extraction.
+Resolves the transformer for the running job.
 
 ## Remarks
 
-The transformer registry lets coordinators ask for "the transformer for this
-provider" without importing provider modules directly. This keeps startup
-lighter and preserves a single place for provider-to-class mapping.
+The transformer class is supplied by the provider rather than looked up from a
+table of every provider. That is what keeps this layer free of provider
+imports; the previous table referenced all 68, which made them mutually
+reachable and impossible to tree-shake.
 
 ## Constructors
 
 ### Constructor
 
-> **new TransformerRegistry**(`httpClient`, `progressManager`): `TransformerRegistry`
+> **new TransformerRegistry**(`httpClient`, `hlsClient`, `progressManager`, `components?`): `TransformerRegistry`
 
-Defined in: [packages/core/registries/TransformerRegistry.ts:104](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/TransformerRegistry.ts#L104)
+Defined in: [packages/core/registries/TransformerRegistry.ts:16](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/TransformerRegistry.ts#L16)
 
 #### Parameters
 
@@ -30,9 +31,17 @@ Defined in: [packages/core/registries/TransformerRegistry.ts:104](https://github
 
 [`HttpClient`](HttpClient.md)
 
+##### hlsClient
+
+[`HlsClient`](HlsClient.md)
+
 ##### progressManager
 
 [`ProgressManager`](ProgressManager.md)
+
+##### components?
+
+[`ProviderComponents`](../interfaces/ProviderComponents.md) = `{}`
 
 #### Returns
 
@@ -44,9 +53,9 @@ Defined in: [packages/core/registries/TransformerRegistry.ts:104](https://github
 
 > **transform**\<`TArgs`, `TResult`\>(`url`, `request`): `Promise`\<`TResult`\>
 
-Defined in: [packages/core/registries/TransformerRegistry.ts:137](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/TransformerRegistry.ts#L137)
+Defined in: [packages/core/registries/TransformerRegistry.ts:30](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/TransformerRegistry.ts#L30)
 
-Runs the matching transformer for a URL and request.
+Fetches and normalizes one target.
 
 #### Type Parameters
 
@@ -64,16 +73,16 @@ Runs the matching transformer for a URL and request.
 
 `string`
 
-Target URL to transform.
+Target to transform.
 
 ##### request
 
 `TArgs`
 
-Execution request containing the provider.
+Execution request for the current job.
 
 #### Returns
 
 `Promise`\<`TResult`\>
 
-Provider metadata in the requested result shape.
+Provider-shaped metadata, or the default shape when the provider ships no transformer.

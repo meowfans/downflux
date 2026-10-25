@@ -1,0 +1,62 @@
+import { BasePipeline } from '@base';
+import { type IdentifierContext, type PipelineMappings } from '@contracts';
+import { MediaType } from '@types';
+import { type PimpBunnyExecArgs, type PimpBunnyOutput } from './PimpBunnyContracts';
+
+export class PimpBunnyPipeline extends BasePipeline<PimpBunnyExecArgs, PimpBunnyOutput> {
+	protected override buildIdentifier(_ctx: IdentifierContext<PimpBunnyOutput>): string {
+		const { mediaType, id, metadata } = _ctx;
+		const prefix = 'PimpBunny';
+		let mediaSegment: string;
+
+		switch (mediaType) {
+			case MediaType.VIDEOS:
+				mediaSegment = `${MediaType.VIDEOS}/${id}`;
+				break;
+			case MediaType.VIDEO_POSTER:
+				mediaSegment = `${MediaType.VIDEOS}/${id}/${mediaType}`;
+				break;
+			case MediaType.VIDEO_TIMELINES:
+				mediaSegment = `${MediaType.VIDEOS}/${id}/${mediaType}`;
+				break;
+			case MediaType.VIDEO_PREVIEWS:
+				mediaSegment = `${MediaType.VIDEOS}/${id}/${mediaType}`;
+				break;
+			default:
+				mediaSegment = `${mediaType}/${id}`;
+		}
+
+		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata?.uploader || 'unknown_uploader'), mediaSegment);
+	}
+
+	protected override mappings(metadata: PimpBunnyOutput, _request: PimpBunnyExecArgs): PipelineMappings {
+		return [
+			this.createMappings(
+				this.filterByQuality(metadata.videos.mp4, {
+					allowedQuality: _request.allowedVideoQuality,
+					getQuality: (url) => url.quality
+				}),
+				{
+					getMedia: () => MediaType.VIDEOS,
+					getId: () => metadata.videoId,
+					getUrl: ({ url }) => url
+				}
+			),
+			this.createMappings(metadata?.poster ? [metadata.poster] : undefined, {
+				getUrl: (url) => url,
+				getMedia: () => MediaType.VIDEO_POSTER,
+				getId: () => metadata.videoId
+			}),
+			this.createMappings(metadata?.previews, {
+				getUrl: (url) => url,
+				getMedia: () => MediaType.VIDEO_PREVIEWS,
+				getId: () => metadata.videoId
+			}),
+			this.createMappings(metadata?.timelineScreens, {
+				getUrl: (url) => url,
+				getMedia: () => MediaType.VIDEO_TIMELINES,
+				getId: () => metadata.videoId
+			})
+		];
+	}
+}

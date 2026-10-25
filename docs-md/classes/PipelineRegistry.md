@@ -6,29 +6,31 @@
 
 # Class: PipelineRegistry
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:100](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/PipelineRegistry.ts#L100)
+Defined in: [packages/core/registries/PipelineRegistry.ts:11](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/PipelineRegistry.ts#L11)
 
-Resolves provider pipelines and builds download work items.
+Builds downloadable items using the pipeline the provider supplied.
 
 ## Remarks
 
-The pipeline registry separates provider lookup from coordinator logic. It
-lazy-loads the provider pipeline, injects storage support, and returns the
-concrete items that the download coordinator can process.
+Falls back to [BasePipeline](BasePipeline.md) when a provider declares none.
 
 ## Constructors
 
 ### Constructor
 
-> **new PipelineRegistry**(`fileManager`): `PipelineRegistry`
+> **new PipelineRegistry**(`fileManager`, `components?`): `PipelineRegistry`
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:103](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/PipelineRegistry.ts#L103)
+Defined in: [packages/core/registries/PipelineRegistry.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/PipelineRegistry.ts#L12)
 
 #### Parameters
 
 ##### fileManager
 
 [`FileManager`](FileManager.md)
+
+##### components?
+
+[`ProviderComponents`](../interfaces/ProviderComponents.md) = `{}`
 
 #### Returns
 
@@ -40,7 +42,7 @@ Defined in: [packages/core/registries/PipelineRegistry.ts:103](https://github.co
 
 > `protected` `readonly` **fileManager**: [`FileManager`](FileManager.md)
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:103](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/PipelineRegistry.ts#L103)
+Defined in: [packages/core/registries/PipelineRegistry.ts:13](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/PipelineRegistry.ts#L13)
 
 ## Methods
 
@@ -48,9 +50,9 @@ Defined in: [packages/core/registries/PipelineRegistry.ts:103](https://github.co
 
 > **build**\<`TResult`, `TExec`\>(`metadata`, `request`): `Promise`\<[`PipelineItem`](../interfaces/PipelineItem.md)[]\>
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:133](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/PipelineRegistry.ts#L133)
+Defined in: [packages/core/registries/PipelineRegistry.ts:23](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/PipelineRegistry.ts#L23)
 
-Builds pipeline items with the matching provider pipeline.
+Converts normalized metadata into pipeline items.
 
 #### Type Parameters
 
@@ -68,16 +70,14 @@ Builds pipeline items with the matching provider pipeline.
 
 `TResult`
 
-Extracted provider metadata.
+Output of the transformer.
 
 ##### request
 
 `TExec`
 
-Execution request containing the provider.
+Execution request for the current job.
 
 #### Returns
 
 `Promise`\<[`PipelineItem`](../interfaces/PipelineItem.md)[]\>
-
-Downloadable pipeline items.

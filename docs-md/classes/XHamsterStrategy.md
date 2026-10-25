@@ -6,7 +6,7 @@
 
 # Class: XHamsterStrategy
 
-Defined in: [packages/providers/xhamster/XHamsterStrategy.ts:9](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xhamster/XHamsterStrategy.ts#L9)
+Defined in: [packages/providers/xhamster/XHamsterStrategy.ts:9](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xhamster/XHamsterStrategy.ts#L9)
 
 Provides XHamster-specific HTTP behavior.
 
@@ -24,7 +24,7 @@ Strategies isolate host fallbacks, headers, and transport quirks from shared HTT
 
 > **new XHamsterStrategy**(`progressManager`): `XHamsterStrategy`
 
-Defined in: [packages/base/BaseStrategy.ts:15](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseStrategy.ts#L15)
+Defined in: [packages/base/BaseStrategy.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseStrategy.ts#L15)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [packages/base/BaseStrategy.ts:15](https://github.com/meowfans/downf
 
 > `protected` `readonly` **progressManager**: [`ProgressManager`](ProgressManager.md)
 
-Defined in: [packages/base/BaseStrategy.ts:15](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseStrategy.ts#L15)
+Defined in: [packages/base/BaseStrategy.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseStrategy.ts#L15)
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: [packages/base/BaseStrategy.ts:15](https://github.com/meowfans/downf
 
 > **shouldFallback404**(`url`): `boolean`
 
-Defined in: [packages/base/BaseStrategy.ts:17](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseStrategy.ts#L17)
+Defined in: [packages/base/BaseStrategy.ts:17](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseStrategy.ts#L17)
 
 #### Parameters
 
@@ -80,7 +80,7 @@ Defined in: [packages/base/BaseStrategy.ts:17](https://github.com/meowfans/downf
 
 > **getFallbackUrl**(`url`): `string` \| `null`
 
-Defined in: [packages/base/BaseStrategy.ts:37](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseStrategy.ts#L37)
+Defined in: [packages/base/BaseStrategy.ts:37](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseStrategy.ts#L37)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ Defined in: [packages/base/BaseStrategy.ts:37](https://github.com/meowfans/downf
 
 > **shouldReExtract**(`url`): `boolean`
 
-Defined in: [packages/base/BaseStrategy.ts:41](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseStrategy.ts#L41)
+Defined in: [packages/base/BaseStrategy.ts:41](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseStrategy.ts#L41)
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: [packages/base/BaseStrategy.ts:41](https://github.com/meowfans/downf
 
 > `protected` **constructPathname**(`url`): `string`
 
-Defined in: [packages/base/BaseStrategy.ts:49](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseStrategy.ts#L49)
+Defined in: [packages/base/BaseStrategy.ts:49](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseStrategy.ts#L49)
 
 #### Parameters
 
@@ -146,7 +146,7 @@ Defined in: [packages/base/BaseStrategy.ts:49](https://github.com/meowfans/downf
 
 > **getHostFallbackUrls**(`url`): `string`[]
 
-Defined in: [packages/providers/xhamster/XHamsterStrategy.ts:12](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xhamster/XHamsterStrategy.ts#L12)
+Defined in: [packages/providers/xhamster/XHamsterStrategy.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xhamster/XHamsterStrategy.ts#L12)
 
 #### Parameters
 
@@ -168,7 +168,7 @@ Defined in: [packages/providers/xhamster/XHamsterStrategy.ts:12](https://github.
 
 > **shouldResolveTextResponse**(`url`, `contentType`): `boolean`
 
-Defined in: [packages/providers/xhamster/XHamsterStrategy.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xhamster/XHamsterStrategy.ts#L16)
+Defined in: [packages/providers/xhamster/XHamsterStrategy.ts:16](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xhamster/XHamsterStrategy.ts#L16)
 
 #### Parameters
 
@@ -194,7 +194,7 @@ Defined in: [packages/providers/xhamster/XHamsterStrategy.ts:16](https://github.
 
 > **getDirectVideoUrlFromText**(`body`): `string` \| `null`
 
-Defined in: [packages/providers/xhamster/XHamsterStrategy.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xhamster/XHamsterStrategy.ts#L20)
+Defined in: [packages/providers/xhamster/XHamsterStrategy.ts:20](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xhamster/XHamsterStrategy.ts#L20)
 
 #### Parameters
 

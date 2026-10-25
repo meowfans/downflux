@@ -6,7 +6,7 @@
 
 # Class: CliManager
 
-Defined in: [packages/core/ui/CliManager.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/CliManager.ts#L14)
+Defined in: [packages/core/ui/CliManager.ts:14](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/ui/CliManager.ts#L14)
 
 Renders job progress as a branded terminal panel.
 
@@ -22,7 +22,7 @@ are omitted, so an image job does not show empty HLS segment counters.
 
 > **new CliManager**(`progressManager`): `CliManager`
 
-Defined in: [packages/core/ui/CliManager.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/CliManager.ts#L19)
+Defined in: [packages/core/ui/CliManager.ts:19](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/ui/CliManager.ts#L19)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [packages/core/ui/CliManager.ts:19](https://github.com/meowfans/down
 
 > **destroy**(): `void`
 
-Defined in: [packages/core/ui/CliManager.ts:27](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/ui/CliManager.ts#L27)
+Defined in: [packages/core/ui/CliManager.ts:27](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/ui/CliManager.ts#L27)
 
 #### Returns
 

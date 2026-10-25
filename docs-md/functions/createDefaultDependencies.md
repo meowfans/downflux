@@ -6,11 +6,19 @@
 
 # Function: createDefaultDependencies()
 
-> **createDefaultDependencies**(): [`CoordinatorDependencies`](../interfaces/CoordinatorDependencies.md)
+> **createDefaultDependencies**(`components?`): [`CoordinatorDependencies`](../interfaces/CoordinatorDependencies.md)
 
-Defined in: [packages/core/dependency/dependency.ts:21](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/dependency/dependency.ts#L21)
+Defined in: [packages/core/dependency/dependency.ts:22](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/dependency/dependency.ts#L22)
 
 Creates the default service dependency graph.
+
+## Parameters
+
+### components?
+
+[`ProviderComponents`](../interfaces/ProviderComponents.md) = `{}`
+
+Classes the provider contributes; anything omitted falls back to `Base*`.
 
 ## Returns
 

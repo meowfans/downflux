@@ -6,7 +6,7 @@
 
 # Enumeration: TheyAreHugeMethods
 
-Defined in: [packages/providers/theyarehuge/TheyAreHugeTypes.ts:1](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/theyarehuge/TheyAreHugeTypes.ts#L1)
+Defined in: [packages/providers/theyarehuge/TheyAreHugeTypes.ts:1](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/theyarehuge/TheyAreHugeTypes.ts#L1)
 
 ## Enumeration Members
 
@@ -14,4 +14,4 @@ Defined in: [packages/providers/theyarehuge/TheyAreHugeTypes.ts:1](https://githu
 
 > **getVideo**: `"getVideo"`
 
-Defined in: [packages/providers/theyarehuge/TheyAreHugeTypes.ts:2](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/theyarehuge/TheyAreHugeTypes.ts#L2)
+Defined in: [packages/providers/theyarehuge/TheyAreHugeTypes.ts:2](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/theyarehuge/TheyAreHugeTypes.ts#L2)

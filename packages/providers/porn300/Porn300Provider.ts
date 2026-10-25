@@ -2,9 +2,9 @@ import { BaseProvider } from '@base';
 import { ExtractionTarget, Provider, providerPatterns } from '@types';
 import { type Porn300ExecArgs, type Porn300VideoOutput } from './Porn300Contracts';
 import { Porn300Parser } from './Porn300Parser';
-import { Porn300Transformer } from './Porn300Transformer';
 import { Porn300Pipeline } from './Porn300Pipeline';
 import { Porn300Strategy } from './Porn300Strategy';
+import { Porn300Transformer } from './Porn300Transformer';
 import { Porn300Methods } from './Porn300Types';
 
 /**

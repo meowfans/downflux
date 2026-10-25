@@ -64,7 +64,7 @@ export class BaseParser {
 	 * @returns Normalized KVS fields, video sources, previews, and timelines.
 	 */
 	protected getFlashVars(html: string): FlashVarsOutput {
-		const flashVarsBlocks = [...html.matchAll(/var\s+flashVars\s*=\s*\{([\s\S]*?)\};/gi)].map((m) => m[1]);
+		const flashVarsBlocks = [...html.matchAll(/var\s+(?:flashVars|t[\da-f]+)\s*=\s*\{([\s\S]*?)\};/gi)].map((m) => m[1]);
 
 		if (!flashVarsBlocks.length) {
 			return {} as FlashVarsOutput;
@@ -131,9 +131,10 @@ export class BaseParser {
 				extractField('preview_url1'),
 				extractField('preview_url2'),
 				extractField('preview_url3'),
-				extractField('preview_url4')
+				extractField('preview_url4'),
+				extractField('preview_url5')
 			].filter(Boolean) as string[]
-		).map((url) => (url.startsWith('https://') ? url : `https:${url}`));
+		).map((url) => (url.startsWith('https://') ? url : `https://${url}`));
 
 		const timelineScreenUrl = extractField('timeline_screens_url');
 
@@ -339,11 +340,11 @@ export class BaseParser {
 			videos: {
 				mp4: flashVars?.videos
 			},
-			poster: poster?.startsWith('http://') ? poster : `https:${poster}`,
+			poster: poster?.startsWith('https://') ? poster : `https://${poster}`,
 			videoId: flashVars?.videoId as string,
 			previews: flashVars?.previews || [],
 			uploader,
-			starred,
+			starred: starred ?? flashVars?.models,
 			timelineScreenCount: flashVars?.timelineScreenCount,
 			timelineScreens: flashVars?.timelineScreens,
 			tags: flashVars?.tags || [],

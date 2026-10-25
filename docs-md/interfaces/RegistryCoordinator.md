@@ -6,7 +6,7 @@
 
 # Interface: RegistryCoordinator
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:20](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L20)
+Defined in: [packages/contracts/CoordinatorDependency.ts:30](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/CoordinatorDependency.ts#L30)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:20](https://github.com/
 
 > **name**: `string`
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:21](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L21)
+Defined in: [packages/contracts/CoordinatorDependency.ts:31](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/CoordinatorDependency.ts#L31)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:21](https://github.com/
 
 > `optional` **parser?**: `boolean`
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:22](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L22)
+Defined in: [packages/contracts/CoordinatorDependency.ts:32](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/CoordinatorDependency.ts#L32)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:22](https://github.com/
 
 > `optional` **pipeline?**: `boolean`
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:23](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L23)
+Defined in: [packages/contracts/CoordinatorDependency.ts:33](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/CoordinatorDependency.ts#L33)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:23](https://github.com/
 
 > `optional` **transformer?**: `boolean`
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:24](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L24)
+Defined in: [packages/contracts/CoordinatorDependency.ts:34](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/CoordinatorDependency.ts#L34)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:24](https://github.com/
 
 > `optional` **strategy?**: `boolean`
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:25](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L25)
+Defined in: [packages/contracts/CoordinatorDependency.ts:35](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/CoordinatorDependency.ts#L35)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [packages/contracts/CoordinatorDependency.ts:25](https://github.com/
 
 > `optional` **method?**: `boolean`
 
-Defined in: [packages/contracts/CoordinatorDependency.ts:26](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/CoordinatorDependency.ts#L26)
+Defined in: [packages/contracts/CoordinatorDependency.ts:36](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/CoordinatorDependency.ts#L36)

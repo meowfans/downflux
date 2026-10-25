@@ -6,7 +6,7 @@
 
 # Interface: PerfectGirlsVideoOutput
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:58](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L58)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:58](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L58)
 
 Output structure for PerfectGirls video operations.
 Contains video metadata, sources, poster, and album context.
@@ -25,7 +25,7 @@ Contains video metadata, sources, poster, and album context.
 
 > **title**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L274)
+Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L274)
 
 #### Inherited from
 
@@ -37,7 +37,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/me
 
 > **tags**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L275)
+Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L275)
 
 #### Inherited from
 
@@ -49,7 +49,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/me
 
 > **description**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L276)
+Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L276)
 
 #### Inherited from
 
@@ -61,7 +61,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/me
 
 > **pageUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L277)
+Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L277)
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/me
 
 > **poster**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L286)
+Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L286)
 
 #### Inherited from
 
@@ -85,7 +85,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/me
 
 > **videos**: [`VideosFormat`](VideosFormat.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L287)
+Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L287)
 
 #### Inherited from
 
@@ -97,7 +97,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/me
 
 > **videoId**: `string`
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:60](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L60)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:60](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L60)
 
 Video identifier
 
@@ -107,7 +107,7 @@ Video identifier
 
 > **videoScreenshot**: `string`
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:63](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L63)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:63](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L63)
 
 Screenshot image URL
 
@@ -117,7 +117,7 @@ Screenshot image URL
 
 > `optional` **videoCreatedAt?**: `string`
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:66](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L66)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:66](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L66)
 
 Video creation date text
 
@@ -127,7 +127,7 @@ Video creation date text
 
 > **author**: `string`
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:69](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L69)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:69](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L69)
 
 Author name associated with the video
 
@@ -137,7 +137,7 @@ Author name associated with the video
 
 > `optional` **fullVideoSource?**: `string`
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:72](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L72)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:72](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L72)
 
 Full source URL when available
 
@@ -147,7 +147,7 @@ Full source URL when available
 
 > `optional` **videoAlbumId?**: `string`
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:75](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L75)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:75](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L75)
 
 Album identifier linked to the video
 
@@ -157,7 +157,7 @@ Album identifier linked to the video
 
 > `optional` **videoAlbum?**: [`PerfectGirlsAlbumOutput`](PerfectGirlsAlbumOutput.md)
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:78](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L78)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:78](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L78)
 
 Album metadata linked to the video
 
@@ -167,6 +167,6 @@ Album metadata linked to the video
 
 > **starredBy**: `string`[]
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:81](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L81)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:81](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L81)
 
 Starred by list

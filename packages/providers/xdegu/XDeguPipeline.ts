@@ -27,6 +27,9 @@ export class XDeguPipeline extends BasePipeline<XDeguExecArgs, XDeguOutput> {
 			case MediaType.VIDEO_PREVIEWS:
 				mediaSegment = `${MediaType.VIDEOS}/${id}/${mediaType}`;
 				break;
+			case MediaType.VIDEO_TIMELINES:
+				mediaSegment = `${MediaType.VIDEOS}/${id}/${mediaType}`;
+				break;
 			default:
 				mediaSegment = `${mediaType}/${id}`;
 		}
@@ -59,6 +62,11 @@ export class XDeguPipeline extends BasePipeline<XDeguExecArgs, XDeguOutput> {
 			this.createMappings(metadata?.previews, {
 				getUrl: (url) => url,
 				getMedia: () => MediaType.VIDEO_PREVIEWS,
+				getId: () => metadata.videoId
+			}),
+			this.createMappings(metadata?.timelineScreens, {
+				getUrl: (url) => url,
+				getMedia: () => MediaType.VIDEO_TIMELINES,
 				getId: () => metadata.videoId
 			})
 		];

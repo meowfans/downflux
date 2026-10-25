@@ -6,7 +6,7 @@
 
 # Class: BeegPipeline
 
-Defined in: [packages/providers/beeg/BeegPipeline.ts:12](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/beeg/BeegPipeline.ts#L12)
+Defined in: [packages/providers/beeg/BeegPipeline.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegPipeline.ts#L12)
 
 Builds downloadable Beeg pipeline items from normalized metadata.
 
@@ -24,7 +24,7 @@ Pipelines decide which media URLs become work items and how those items are iden
 
 > **new BeegPipeline**(`fileManager`): `BeegPipeline`
 
-Defined in: [packages/base/BasePipeline.ts:28](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L28)
+Defined in: [packages/base/BasePipeline.ts:28](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L28)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [packages/base/BasePipeline.ts:28](https://github.com/meowfans/downf
 
 > `protected` `readonly` **pathBuilder**: [`PathBuilder`](PathBuilder.md)
 
-Defined in: [packages/base/BasePipeline.ts:25](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L25)
+Defined in: [packages/base/BasePipeline.ts:25](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L25)
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: [packages/base/BasePipeline.ts:25](https://github.com/meowfans/downf
 
 > `protected` `readonly` **helper**: [`Helper`](Helper.md)
 
-Defined in: [packages/base/BasePipeline.ts:26](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L26)
+Defined in: [packages/base/BasePipeline.ts:26](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L26)
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ Defined in: [packages/base/BasePipeline.ts:26](https://github.com/meowfans/downf
 
 > `protected` **fileManager**: [`FileManager`](FileManager.md)
 
-Defined in: [packages/base/BasePipeline.ts:28](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L28)
+Defined in: [packages/base/BasePipeline.ts:28](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L28)
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: [packages/base/BasePipeline.ts:28](https://github.com/meowfans/downf
 
 > **build**(`metadata`, `request`): [`PipelineItem`](../interfaces/PipelineItem.md)[]
 
-Defined in: [packages/base/BasePipeline.ts:37](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L37)
+Defined in: [packages/base/BasePipeline.ts:37](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L37)
 
 Builds filtered, deduplicated pipeline items for a single metadata result.
 
@@ -116,7 +116,7 @@ Downloadable pipeline items.
 
 > `protected` **filterByExt**(`request`, `pipelineItems`): [`PipelineItem`](../interfaces/PipelineItem.md)[]
 
-Defined in: [packages/base/BasePipeline.ts:62](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L62)
+Defined in: [packages/base/BasePipeline.ts:70](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L70)
 
 #### Parameters
 
@@ -142,7 +142,7 @@ Defined in: [packages/base/BasePipeline.ts:62](https://github.com/meowfans/downf
 
 > `protected` **sliceByMaxDownloads**(`request`, `items`): [`PipelineItem`](../interfaces/PipelineItem.md)[]
 
-Defined in: [packages/base/BasePipeline.ts:68](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L68)
+Defined in: [packages/base/BasePipeline.ts:76](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L76)
 
 #### Parameters
 
@@ -168,7 +168,7 @@ Defined in: [packages/base/BasePipeline.ts:68](https://github.com/meowfans/downf
 
 > `protected` **createMappings**\<`T`\>(`elements`, `handler`): [`PipelineMapping`](../type-aliases/PipelineMapping.md)\<`T`\>
 
-Defined in: [packages/base/BasePipeline.ts:84](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L84)
+Defined in: [packages/base/BasePipeline.ts:92](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L92)
 
 #### Type Parameters
 
@@ -196,11 +196,41 @@ Defined in: [packages/base/BasePipeline.ts:84](https://github.com/meowfans/downf
 
 ***
 
+### mapIdentifier()
+
+> `protected` **mapIdentifier**(`request`, `extension`, `defaultPattern`): `string`
+
+Defined in: [packages/base/BasePipeline.ts:98](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L98)
+
+#### Parameters
+
+##### request
+
+[`BeegExecArgs`](../interfaces/BeegExecArgs.md)
+
+##### extension
+
+[`AllowedExtension`](../type-aliases/AllowedExtension.md)
+
+##### defaultPattern
+
+`string`
+
+#### Returns
+
+`string`
+
+#### Inherited from
+
+[`BasePipeline`](BasePipeline.md).[`mapIdentifier`](BasePipeline.md#mapidentifier)
+
+***
+
 ### extract()
 
 > `protected` **extract**(`request`, `metadata`): [`PipelineExtractedItem`](../interfaces/PipelineExtractedItem.md)[]
 
-Defined in: [packages/base/BasePipeline.ts:108](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L108)
+Defined in: [packages/base/BasePipeline.ts:126](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L126)
 
 #### Parameters
 
@@ -226,7 +256,7 @@ Defined in: [packages/base/BasePipeline.ts:108](https://github.com/meowfans/down
 
 > `protected` **filterByQuality**\<`T`, `TEnum`\>(`items?`, `options`): `T`[]
 
-Defined in: [packages/base/BasePipeline.ts:125](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L125)
+Defined in: [packages/base/BasePipeline.ts:143](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L143)
 
 Applies provider quality filtering without changing source order.
 
@@ -276,7 +306,7 @@ Sources matching the requested quality, or all sources when no quality is reques
 
 > `protected` **uniquePipelines**(`pipelines`): [`PipelineItem`](../interfaces/PipelineItem.md)[]
 
-Defined in: [packages/base/BasePipeline.ts:139](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L139)
+Defined in: [packages/base/BasePipeline.ts:157](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L157)
 
 #### Parameters
 
@@ -298,7 +328,7 @@ Defined in: [packages/base/BasePipeline.ts:139](https://github.com/meowfans/down
 
 > `protected` **extractedItems**\<`T`\>(`targets`, `handlers`, `elements?`): `never`[] \| `undefined`
 
-Defined in: [packages/base/BasePipeline.ts:151](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BasePipeline.ts#L151)
+Defined in: [packages/base/BasePipeline.ts:169](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BasePipeline.ts#L169)
 
 #### Type Parameters
 
@@ -334,7 +364,7 @@ Defined in: [packages/base/BasePipeline.ts:151](https://github.com/meowfans/down
 
 > `protected` **buildIdentifier**(`ctx`): `string`
 
-Defined in: [packages/providers/beeg/BeegPipeline.ts:13](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/beeg/BeegPipeline.ts#L13)
+Defined in: [packages/providers/beeg/BeegPipeline.ts:13](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegPipeline.ts#L13)
 
 Builds the storage identifier used as the logical output path.
 
@@ -362,7 +392,7 @@ Stable identifier for storage and progress output.
 
 > `protected` **mappings**(`metadata`, `request`): [`PipelineMapping`](../type-aliases/PipelineMapping.md)\<`any`\>[]
 
-Defined in: [packages/providers/beeg/BeegPipeline.ts:30](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/beeg/BeegPipeline.ts#L30)
+Defined in: [packages/providers/beeg/BeegPipeline.ts:30](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegPipeline.ts#L30)
 
 Defines which metadata collections should become pipeline items.
 

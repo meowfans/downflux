@@ -6,7 +6,7 @@
 
 # Interface: VideoSourceOutput
 
-Defined in: [packages/contracts/DownloadContracts.ts:158](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L158)
+Defined in: [packages/contracts/DownloadContracts.ts:158](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/DownloadContracts.ts#L158)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:158](https://github.com/meo
 
 > **quality**: [`VideoQuality`](../enumerations/VideoQuality.md)
 
-Defined in: [packages/contracts/DownloadContracts.ts:159](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L159)
+Defined in: [packages/contracts/DownloadContracts.ts:159](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/DownloadContracts.ts#L159)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [packages/contracts/DownloadContracts.ts:159](https://github.com/meo
 
 > **url**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:160](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/DownloadContracts.ts#L160)
+Defined in: [packages/contracts/DownloadContracts.ts:160](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/DownloadContracts.ts#L160)

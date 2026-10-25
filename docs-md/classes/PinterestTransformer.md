@@ -6,7 +6,7 @@
 
 # Class: PinterestTransformer
 
-Defined in: [packages/providers/pinterest/PinterestTransformer.ts:8](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/pinterest/PinterestTransformer.ts#L8)
+Defined in: [packages/providers/pinterest/PinterestTransformer.ts:8](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pinterest/PinterestTransformer.ts#L8)
 
 Fetches a target URL and converts parser output into execution metadata.
 
@@ -24,9 +24,9 @@ subclasses can map those raw fields into stable public result types.
 
 ### Constructor
 
-> **new PinterestTransformer**(`httpClient`, `progressManager`): `PinterestTransformer`
+> **new PinterestTransformer**(`httpClient`, `hlsClient`, `progressManager`, `parser?`): `PinterestTransformer`
 
-Defined in: [packages/base/BaseTransformer.ts:34](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L34)
+Defined in: [packages/base/BaseTransformer.ts:42](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L42)
 
 #### Parameters
 
@@ -34,13 +34,28 @@ Defined in: [packages/base/BaseTransformer.ts:34](https://github.com/meowfans/do
 
 [`HttpClient`](HttpClient.md)
 
+##### hlsClient
+
+[`HlsClient`](HlsClient.md)
+
 ##### progressManager
 
 [`ProgressManager`](ProgressManager.md)
 
+##### parser?
+
+() => [`BaseParser`](BaseParser.md)
+
+Provider parser, injected by the provider that owns it.
+
 #### Returns
 
 `PinterestTransformer`
+
+#### Remarks
+
+Receiving the class removes the last runtime edge from `base` into `core`:
+this used to call a registry that imported every provider.
 
 #### Inherited from
 
@@ -52,7 +67,7 @@ Defined in: [packages/base/BaseTransformer.ts:34](https://github.com/meowfans/do
 
 > `protected` `readonly` **httpClient**: [`HttpClient`](HttpClient.md)
 
-Defined in: [packages/base/BaseTransformer.ts:35](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L35)
+Defined in: [packages/base/BaseTransformer.ts:43](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L43)
 
 #### Inherited from
 
@@ -60,15 +75,45 @@ Defined in: [packages/base/BaseTransformer.ts:35](https://github.com/meowfans/do
 
 ***
 
+### hlsClient
+
+> `protected` `readonly` **hlsClient**: [`HlsClient`](HlsClient.md)
+
+Defined in: [packages/base/BaseTransformer.ts:44](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L44)
+
+#### Inherited from
+
+[`BaseTransformer`](BaseTransformer.md).[`hlsClient`](BaseTransformer.md#hlsclient)
+
+***
+
 ### progressManager
 
 > `protected` `readonly` **progressManager**: [`ProgressManager`](ProgressManager.md)
 
-Defined in: [packages/base/BaseTransformer.ts:36](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L36)
+Defined in: [packages/base/BaseTransformer.ts:45](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L45)
 
 #### Inherited from
 
 [`BaseTransformer`](BaseTransformer.md).[`progressManager`](BaseTransformer.md#progressmanager)
+
+***
+
+### parser?
+
+> `protected` `readonly` `optional` **parser?**: () => [`BaseParser`](BaseParser.md)
+
+Defined in: [packages/base/BaseTransformer.ts:46](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L46)
+
+Provider parser, injected by the provider that owns it.
+
+#### Returns
+
+[`BaseParser`](BaseParser.md)
+
+#### Inherited from
+
+[`BaseTransformer`](BaseTransformer.md).[`parser`](BaseTransformer.md#parser)
 
 ## Methods
 
@@ -76,7 +121,7 @@ Defined in: [packages/base/BaseTransformer.ts:36](https://github.com/meowfans/do
 
 > **requestData**(`url`, `opts`): `Promise`\<`any`\>
 
-Defined in: [packages/base/BaseTransformer.ts:66](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L66)
+Defined in: [packages/base/BaseTransformer.ts:77](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L77)
 
 Fetches JSON data for providers that expose API-backed metadata.
 
@@ -106,11 +151,63 @@ Parsed JSON response.
 
 ***
 
+### fetchText()
+
+> **fetchText**(`url`, `opts`): `Promise`\<`string`\>
+
+Defined in: [packages/base/BaseTransformer.ts:81](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L81)
+
+#### Parameters
+
+##### url
+
+`string`
+
+##### opts
+
+[`DownloadOptions`](../interfaces/DownloadOptions.md)
+
+#### Returns
+
+`Promise`\<`string`\>
+
+#### Inherited from
+
+[`BaseTransformer`](BaseTransformer.md).[`fetchText`](BaseTransformer.md#fetchtext)
+
+***
+
+### getVariants()
+
+> **getVariants**(`manifest`, `base`): [`M3U8Variant`](../interfaces/M3U8Variant.md)[]
+
+Defined in: [packages/base/BaseTransformer.ts:85](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L85)
+
+#### Parameters
+
+##### manifest
+
+`string`
+
+##### base
+
+`string`
+
+#### Returns
+
+[`M3U8Variant`](../interfaces/M3U8Variant.md)[]
+
+#### Inherited from
+
+[`BaseTransformer`](BaseTransformer.md).[`getVariants`](BaseTransformer.md#getvariants)
+
+***
+
 ### uniqueVideos()
 
 > `protected` **uniqueVideos**\<`T`\>(`videos`, `options`): [`VideoSourceOutput`](../interfaces/VideoSourceOutput.md)[]
 
-Defined in: [packages/base/BaseTransformer.ts:77](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L77)
+Defined in: [packages/base/BaseTransformer.ts:96](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L96)
 
 Removes duplicate video URLs while preserving quality information.
 
@@ -150,7 +247,7 @@ Unique video sources in the shared shape.
 
 > `protected` **unique**\<`T`\>(`arr`): `T`[]
 
-Defined in: [packages/base/BaseTransformer.ts:94](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L94)
+Defined in: [packages/base/BaseTransformer.ts:113](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L113)
 
 #### Type Parameters
 
@@ -178,7 +275,7 @@ Defined in: [packages/base/BaseTransformer.ts:94](https://github.com/meowfans/do
 
 > `protected` **defaultFlashVarsVideoOutput**\<`T`\>(`metadata`): [`DefaultFlashVarsVideoOutput`](../interfaces/DefaultFlashVarsVideoOutput.md)
 
-Defined in: [packages/base/BaseTransformer.ts:99](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L99)
+Defined in: [packages/base/BaseTransformer.ts:118](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L118)
 
 #### Type Parameters
 
@@ -206,7 +303,7 @@ Defined in: [packages/base/BaseTransformer.ts:99](https://github.com/meowfans/do
 
 > `protected` **mapSources**(`sources`, `quality?`, `filter?`): [`VideosFormat`](../interfaces/VideosFormat.md)
 
-Defined in: [packages/base/BaseTransformer.ts:119](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L119)
+Defined in: [packages/base/BaseTransformer.ts:138](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L138)
 
 #### Parameters
 
@@ -236,7 +333,7 @@ Defined in: [packages/base/BaseTransformer.ts:119](https://github.com/meowfans/d
 
 > `protected` **defaultVideoOutput**\<`T`\>(`metadata`, `options?`): `T`
 
-Defined in: [packages/base/BaseTransformer.ts:137](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseTransformer.ts#L137)
+Defined in: [packages/base/BaseTransformer.ts:156](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L156)
 
 #### Type Parameters
 
@@ -278,7 +375,7 @@ Defined in: [packages/base/BaseTransformer.ts:137](https://github.com/meowfans/d
 
 > **transform**(`url`, `request?`): `Promise`\<[`DefaultExecutionResult`](../interfaces/DefaultExecutionResult.md)\<`unknown`\>\>
 
-Defined in: [packages/providers/pinterest/PinterestTransformer.ts:9](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/pinterest/PinterestTransformer.ts#L9)
+Defined in: [packages/providers/pinterest/PinterestTransformer.ts:9](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pinterest/PinterestTransformer.ts#L9)
 
 Fetches HTML and merges default metadata with provider-specific metadata.
 

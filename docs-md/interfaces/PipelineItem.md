@@ -6,7 +6,7 @@
 
 # Interface: PipelineItem
 
-Defined in: [packages/contracts/PipelineContracts.ts:11](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L11)
+Defined in: [packages/contracts/PipelineContracts.ts:11](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L11)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:11](https://github.com/meow
 
 > **downloadUrl**: `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:12](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L12)
+Defined in: [packages/contracts/PipelineContracts.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L12)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:12](https://github.com/meow
 
 > **sourceUrl**: `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:13](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L13)
+Defined in: [packages/contracts/PipelineContracts.ts:13](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L13)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:13](https://github.com/meow
 
 > **identifier**: [`PipelineIdentifier`](PipelineIdentifier.md)
 
-Defined in: [packages/contracts/PipelineContracts.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L14)
+Defined in: [packages/contracts/PipelineContracts.ts:14](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L14)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [packages/contracts/PipelineContracts.ts:14](https://github.com/meow
 
 > **provider**: [`Provider`](../enumerations/Provider.md)
 
-Defined in: [packages/contracts/PipelineContracts.ts:15](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/PipelineContracts.ts#L15)
+Defined in: [packages/contracts/PipelineContracts.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L15)
