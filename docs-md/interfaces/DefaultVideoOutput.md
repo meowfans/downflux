@@ -6,7 +6,7 @@
 
 # Interface: DefaultVideoOutput
 
-Defined in: [packages/contracts/ExecutionContracts.ts:285](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L285)
+Defined in: [packages/contracts/ExecutionContracts.ts:285](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L285)
 
 ## Extends
 
@@ -35,6 +35,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:285](https://github.com/me
 - [`SuperPornVideoOutput`](SuperPornVideoOutput.md)
 - [`SxyPornVideoOutput`](SxyPornVideoOutput.md)
 - [`TnAFlixVideoOutput`](TnAFlixVideoOutput.md)
+- [`TrashRealityVideoOutput`](TrashRealityVideoOutput.md)
 - [`TubeVSexVideoOutput`](TubeVSexVideoOutput.md)
 - [`XCafeVideoOutput`](XCafeVideoOutput.md)
 - [`XGroovyVideoOutput`](XGroovyVideoOutput.md)
@@ -46,7 +47,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:285](https://github.com/me
 
 > **title**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L274)
+Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L274)
 
 #### Inherited from
 
@@ -58,7 +59,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/me
 
 > **tags**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L275)
+Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L275)
 
 #### Inherited from
 
@@ -70,7 +71,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/me
 
 > **description**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L276)
+Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L276)
 
 #### Inherited from
 
@@ -82,7 +83,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/me
 
 > **pageUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L277)
+Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L277)
 
 #### Inherited from
 
@@ -94,7 +95,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/me
 
 > **poster**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L286)
+Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L286)
 
 ***
 
@@ -102,4 +103,4 @@ Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/me
 
 > **videos**: [`VideosFormat`](VideosFormat.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L287)
+Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L287)

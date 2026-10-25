@@ -6,7 +6,7 @@
 
 # Interface: SuperPornVideoOutput
 
-Defined in: [packages/providers/superporn/SuperPornContracts.ts:6](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/superporn/SuperPornContracts.ts#L6)
+Defined in: [packages/providers/superporn/SuperPornContracts.ts:6](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/superporn/SuperPornContracts.ts#L6)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/providers/superporn/SuperPornContracts.ts:6](https://githu
 
 > **title**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L274)
+Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L274)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/me
 
 > **tags**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L275)
+Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L275)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/me
 
 > **description**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L276)
+Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L276)
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/me
 
 > **pageUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L277)
+Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L277)
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/me
 
 > **poster**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L286)
+Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L286)
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/me
 
 > **videos**: [`VideosFormat`](VideosFormat.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L287)
+Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L287)
 
 #### Inherited from
 
@@ -94,7 +94,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/me
 
 > **duration**: `string`
 
-Defined in: [packages/providers/superporn/SuperPornContracts.ts:7](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/superporn/SuperPornContracts.ts#L7)
+Defined in: [packages/providers/superporn/SuperPornContracts.ts:7](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/superporn/SuperPornContracts.ts#L7)
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: [packages/providers/superporn/SuperPornContracts.ts:7](https://githu
 
 > **uploader**: `string`
 
-Defined in: [packages/providers/superporn/SuperPornContracts.ts:8](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/superporn/SuperPornContracts.ts#L8)
+Defined in: [packages/providers/superporn/SuperPornContracts.ts:8](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/superporn/SuperPornContracts.ts#L8)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: [packages/providers/superporn/SuperPornContracts.ts:8](https://githu
 
 > **uploadedAt**: `string`
 
-Defined in: [packages/providers/superporn/SuperPornContracts.ts:9](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/superporn/SuperPornContracts.ts#L9)
+Defined in: [packages/providers/superporn/SuperPornContracts.ts:9](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/superporn/SuperPornContracts.ts#L9)
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: [packages/providers/superporn/SuperPornContracts.ts:9](https://githu
 
 > **width**: `number`
 
-Defined in: [packages/providers/superporn/SuperPornContracts.ts:10](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/superporn/SuperPornContracts.ts#L10)
+Defined in: [packages/providers/superporn/SuperPornContracts.ts:10](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/superporn/SuperPornContracts.ts#L10)
 
 ***
 
@@ -126,7 +126,7 @@ Defined in: [packages/providers/superporn/SuperPornContracts.ts:10](https://gith
 
 > **height**: `number`
 
-Defined in: [packages/providers/superporn/SuperPornContracts.ts:11](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/superporn/SuperPornContracts.ts#L11)
+Defined in: [packages/providers/superporn/SuperPornContracts.ts:11](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/superporn/SuperPornContracts.ts#L11)
 
 ***
 
@@ -134,4 +134,4 @@ Defined in: [packages/providers/superporn/SuperPornContracts.ts:11](https://gith
 
 > **quality**: `string`
 
-Defined in: [packages/providers/superporn/SuperPornContracts.ts:12](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/superporn/SuperPornContracts.ts#L12)
+Defined in: [packages/providers/superporn/SuperPornContracts.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/superporn/SuperPornContracts.ts#L12)

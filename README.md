@@ -418,6 +418,7 @@ In short: a provider creates a typed request, coordinators run the extraction/do
 | Site                                                                 | Provider               | Short description                                                             |
 | -------------------------------------------------------------------- | ---------------------- | ----------------------------------------------------------------------------- |
 | [AnalRz](docs-md/classes/AnalRzProvider.md) <sup>new</sup>           | `AnalRzProvider`       | MP4 downloads; under development.                                             |
+| [PimpBunny](docs-md/classes/PimpBunnyProvider.md)                              | `PimpBunnyProvider`         | MP4 downloads, HLS downloads; geo-sensitive, under development.               |
 | [Beeg](docs-md/classes/BeegProvider.md)                              | `BeegProvider`         | MP4 downloads, HLS downloads; geo-sensitive, under development.               |
 | [BlackPorn](docs-md/classes/BlackPornProvider.md) <sup>new</sup>     | `BlackPornProvider`    | MP4 downloads; under development.                                             |
 | [BoKepPorn](docs-md/classes/BoKepPornProvider.md) <sup>new</sup>     | `BoKepPornProvider`    | MP4 downloads, KVS metadata; under development.                               |

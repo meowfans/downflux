@@ -6,7 +6,7 @@
 
 # Class: ExecutionCoordinator
 
-Defined in: [packages/core/coordinators/ExecutionCoordinator.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/ExecutionCoordinator.ts#L16)
+Defined in: [packages/core/coordinators/ExecutionCoordinator.ts:16](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/coordinators/ExecutionCoordinator.ts#L16)
 
 Coordinates extraction, pipeline creation, and output dispatch.
 
@@ -23,7 +23,7 @@ coordinator.
 
 > **new ExecutionCoordinator**(`transformerRegistry`, `taskCoordinator`, `progressManager`, `pipelineRegistry`): `ExecutionCoordinator`
 
-Defined in: [packages/core/coordinators/ExecutionCoordinator.ts:19](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/ExecutionCoordinator.ts#L19)
+Defined in: [packages/core/coordinators/ExecutionCoordinator.ts:19](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/coordinators/ExecutionCoordinator.ts#L19)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ Defined in: [packages/core/coordinators/ExecutionCoordinator.ts:19](https://gith
 
 > **execute**\<`TResult`, `TShape`, `TExec`\>(`request`): `Promise`\<[`ExecutionResult`](../interfaces/ExecutionResult.md)\<`TResult`, `TShape`\>\>
 
-Defined in: [packages/core/coordinators/ExecutionCoordinator.ts:32](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/coordinators/ExecutionCoordinator.ts#L32)
+Defined in: [packages/core/coordinators/ExecutionCoordinator.ts:32](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/coordinators/ExecutionCoordinator.ts#L32)
 
 Runs an execution request.
 

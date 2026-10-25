@@ -6,7 +6,7 @@
 
 # Interface: XHamsterVideoOutput
 
-Defined in: [packages/providers/xhamster/XHamsterContracts.ts:7](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xhamster/XHamsterContracts.ts#L7)
+Defined in: [packages/providers/xhamster/XHamsterContracts.ts:7](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xhamster/XHamsterContracts.ts#L7)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/providers/xhamster/XHamsterContracts.ts:7](https://github.
 
 > **title**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L274)
+Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L274)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/me
 
 > **tags**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L275)
+Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L275)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/me
 
 > **description**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L276)
+Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L276)
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/me
 
 > **pageUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L277)
+Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L277)
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/me
 
 > **thumbnailUrl**: `string`
 
-Defined in: [packages/providers/xhamster/XHamsterContracts.ts:8](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xhamster/XHamsterContracts.ts#L8)
+Defined in: [packages/providers/xhamster/XHamsterContracts.ts:8](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xhamster/XHamsterContracts.ts#L8)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [packages/providers/xhamster/XHamsterContracts.ts:8](https://github.
 
 > **masterPlaylistUrl**: `string`
 
-Defined in: [packages/providers/xhamster/XHamsterContracts.ts:9](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xhamster/XHamsterContracts.ts#L9)
+Defined in: [packages/providers/xhamster/XHamsterContracts.ts:9](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xhamster/XHamsterContracts.ts#L9)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [packages/providers/xhamster/XHamsterContracts.ts:9](https://github.
 
 > **defaultVideoUrl**: `string`
 
-Defined in: [packages/providers/xhamster/XHamsterContracts.ts:10](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xhamster/XHamsterContracts.ts#L10)
+Defined in: [packages/providers/xhamster/XHamsterContracts.ts:10](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xhamster/XHamsterContracts.ts#L10)
 
 ***
 
@@ -94,4 +94,4 @@ Defined in: [packages/providers/xhamster/XHamsterContracts.ts:10](https://github
 
 > **username**: `string`
 
-Defined in: [packages/providers/xhamster/XHamsterContracts.ts:11](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/xhamster/XHamsterContracts.ts#L11)
+Defined in: [packages/providers/xhamster/XHamsterContracts.ts:11](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xhamster/XHamsterContracts.ts#L11)

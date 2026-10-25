@@ -6,7 +6,7 @@
 
 # Interface: TubeVSexVideoOutput
 
-Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:6](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/tubevsex/TubeVSexContracts.ts#L6)
+Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:6](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tubevsex/TubeVSexContracts.ts#L6)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:6](https://github.
 
 > **title**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L274)
+Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L274)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/me
 
 > **tags**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L275)
+Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L275)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/me
 
 > **description**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L276)
+Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L276)
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/me
 
 > **pageUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L277)
+Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L277)
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/me
 
 > **poster**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L286)
+Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L286)
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/me
 
 > **videos**: [`VideosFormat`](VideosFormat.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/ExecutionContracts.ts#L287)
+Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L287)
 
 #### Inherited from
 
@@ -94,7 +94,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/me
 
 > **videoId**: `string`
 
-Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:7](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/tubevsex/TubeVSexContracts.ts#L7)
+Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:7](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tubevsex/TubeVSexContracts.ts#L7)
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:7](https://github.
 
 > **width**: `string`
 
-Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:8](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/tubevsex/TubeVSexContracts.ts#L8)
+Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:8](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tubevsex/TubeVSexContracts.ts#L8)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:8](https://github.
 
 > **height**: `string`
 
-Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:9](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/tubevsex/TubeVSexContracts.ts#L9)
+Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:9](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tubevsex/TubeVSexContracts.ts#L9)
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:9](https://github.
 
 > **duration**: `string`
 
-Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:10](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/tubevsex/TubeVSexContracts.ts#L10)
+Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:10](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tubevsex/TubeVSexContracts.ts#L10)
 
 ***
 
@@ -126,7 +126,7 @@ Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:10](https://github
 
 > **quality**: `string`
 
-Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:11](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/tubevsex/TubeVSexContracts.ts#L11)
+Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:11](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tubevsex/TubeVSexContracts.ts#L11)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:11](https://github
 
 > **uploader**: `string`
 
-Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:12](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/tubevsex/TubeVSexContracts.ts#L12)
+Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tubevsex/TubeVSexContracts.ts#L12)
 
 ***
 
@@ -142,7 +142,7 @@ Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:12](https://github
 
 > **uploadedAt**: `string`
 
-Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:13](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/tubevsex/TubeVSexContracts.ts#L13)
+Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:13](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tubevsex/TubeVSexContracts.ts#L13)
 
 ***
 
@@ -150,4 +150,4 @@ Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:13](https://github
 
 > **categories**: `string`[]
 
-Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/tubevsex/TubeVSexContracts.ts#L14)
+Defined in: [packages/providers/tubevsex/TubeVSexContracts.ts:14](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tubevsex/TubeVSexContracts.ts#L14)

@@ -8,7 +8,7 @@
 
 > **mapQualityToHeight**(`q`): `number`
 
-Defined in: [packages/shared/utils/InferVideoQuality.ts:35](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/shared/utils/InferVideoQuality.ts#L35)
+Defined in: [packages/shared/utils/InferVideoQuality.ts:35](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/shared/utils/InferVideoQuality.ts#L35)
 
 ## Parameters
 

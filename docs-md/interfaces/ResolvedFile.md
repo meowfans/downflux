@@ -6,7 +6,7 @@
 
 # Interface: ResolvedFile
 
-Defined in: [packages/contracts/StorageContracts.ts:44](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L44)
+Defined in: [packages/contracts/StorageContracts.ts:44](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L44)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/StorageContracts.ts:44](https://github.com/meowf
 
 > **originalFilename**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:45](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L45)
+Defined in: [packages/contracts/StorageContracts.ts:45](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L45)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/StorageContracts.ts:45](https://github.com/meowf
 
 > **extension**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:46](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L46)
+Defined in: [packages/contracts/StorageContracts.ts:46](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L46)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [packages/contracts/StorageContracts.ts:46](https://github.com/meowf
 
 > **extendedFilename**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:47](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L47)
+Defined in: [packages/contracts/StorageContracts.ts:47](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L47)

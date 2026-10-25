@@ -6,7 +6,7 @@
 
 # Interface: DirectoryOutputOptions
 
-Defined in: [packages/contracts/StorageContracts.ts:112](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L112)
+Defined in: [packages/contracts/StorageContracts.ts:112](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L112)
 
 Directory output options.
 Controls where downloaded files are written.
@@ -17,7 +17,7 @@ Controls where downloaded files are written.
 
 > `optional` **directoryPath?**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:117](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L117)
+Defined in: [packages/contracts/StorageContracts.ts:117](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L117)
 
 Directory path for written files
 
@@ -33,6 +33,28 @@ process.cwd()
 
 > `optional` **prefix?**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:120](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/contracts/StorageContracts.ts#L120)
+Defined in: [packages/contracts/StorageContracts.ts:120](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L120)
 
 Filename prefix
+
+***
+
+### pattern?
+
+> `optional` **pattern?**: `"recursive"` \| `"extension"` \| `"provider"`
+
+Defined in: [packages/contracts/StorageContracts.ts:132](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L132)
+
+Directory structure pattern for recursive downloads.
+
+#### Remarks
+
+- `provider`: Organizes files by provider name.
+- `extension`: Organizes files by file extension.
+- `recursive`: Preserves the original directory structure from the source URL.
+
+#### Default Value
+
+```ts
+'recursive'
+```

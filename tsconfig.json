@@ -110,6 +110,8 @@
 
 			"@provider/pexels": ["./packages/providers/pexels/index.ts"],
 
+			"@provider/pimpbunny": ["./packages/providers/pimpbunny/index.ts"],
+
 			"@provider/pinterest": ["./packages/providers/pinterest/index.ts"],
 
 			"@provider/pixiv": ["./packages/providers/pixiv/index.ts"],

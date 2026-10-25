@@ -6,29 +6,32 @@
 
 # Class: StrategyRegistry
 
-Defined in: [packages/core/registries/StrategyRegistry.ts:99](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/StrategyRegistry.ts#L99)
+Defined in: [packages/core/registries/StrategyRegistry.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/StrategyRegistry.ts#L12)
 
-Resolves provider transport strategies for HTTP clients.
+Supplies the transport strategy for the running job.
 
 ## Remarks
 
-The strategy registry keeps HTTP engines generic. Engines ask for the current
-provider strategy and then apply provider-specific fallback, redirect, or
-re-extraction behavior without importing provider modules themselves.
+Most providers need no strategy at all, so the default is [BaseStrategy](BaseStrategy.md).
+The instance is created once and reused; strategies are stateless helpers.
 
 ## Constructors
 
 ### Constructor
 
-> **new StrategyRegistry**(`progressManager`): `StrategyRegistry`
+> **new StrategyRegistry**(`progressManager`, `components?`): `StrategyRegistry`
 
-Defined in: [packages/core/registries/StrategyRegistry.ts:102](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/StrategyRegistry.ts#L102)
+Defined in: [packages/core/registries/StrategyRegistry.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/StrategyRegistry.ts#L15)
 
 #### Parameters
 
 ##### progressManager
 
 [`ProgressManager`](ProgressManager.md)
+
+##### components?
+
+[`ProviderComponents`](../interfaces/ProviderComponents.md) = `{}`
 
 #### Returns
 
@@ -38,22 +41,10 @@ Defined in: [packages/core/registries/StrategyRegistry.ts:102](https://github.co
 
 ### getStrategy()
 
-> **getStrategy**(`provider`): `Promise`\<[`BaseStrategy`](BaseStrategy.md)\>
+> **getStrategy**(): `Promise`\<[`BaseStrategy`](BaseStrategy.md)\>
 
-Defined in: [packages/core/registries/StrategyRegistry.ts:131](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/core/registries/StrategyRegistry.ts#L131)
-
-Creates a strategy instance for the requested provider.
-
-#### Parameters
-
-##### provider
-
-[`Provider`](../enumerations/Provider.md)
-
-Provider whose transport strategy should be loaded.
+Defined in: [packages/core/registries/StrategyRegistry.ts:20](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/StrategyRegistry.ts#L20)
 
 #### Returns
 
 `Promise`\<[`BaseStrategy`](BaseStrategy.md)\>
-
-Provider strategy, or the default strategy fallback.

@@ -6,7 +6,7 @@
 
 # Class: DaNudeParser
 
-Defined in: [packages/providers/danude/DaNudeParser.ts:13](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/danude/DaNudeParser.ts#L13)
+Defined in: [packages/providers/danude/DaNudeParser.ts:13](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/danude/DaNudeParser.ts#L13)
 
 Extracts DaNude-specific metadata from fetched HTML.
 
@@ -38,7 +38,7 @@ Parsers keep DOM/string extraction separate from network and download code so pr
 
 > `protected` **kvsResolver**: [`KvsResolver`](KvsResolver.md)
 
-Defined in: [packages/base/BaseParser.ts:16](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L16)
+Defined in: [packages/base/BaseParser.ts:16](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L16)
 
 #### Inherited from
 
@@ -50,7 +50,7 @@ Defined in: [packages/base/BaseParser.ts:16](https://github.com/meowfans/downflu
 
 > `protected` **extractScriptMethodInput**(`fnName`, `html`): `string` \| `null`
 
-Defined in: [packages/base/BaseParser.ts:54](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L54)
+Defined in: [packages/base/BaseParser.ts:54](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L54)
 
 Extracts the first string argument passed to a named script function.
 
@@ -84,7 +84,7 @@ The first string argument, or `null` when the call is absent.
 
 > `protected` **getFlashVars**(`html`): [`FlashVarsOutput`](../interfaces/FlashVarsOutput.md)
 
-Defined in: [packages/base/BaseParser.ts:66](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L66)
+Defined in: [packages/base/BaseParser.ts:66](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L66)
 
 Extracts KVS `flashVars` video metadata from inline scripts.
 
@@ -112,7 +112,7 @@ Normalized KVS fields, video sources, previews, and timelines.
 
 > `protected` **extractElementText**(`html`, `begin`, `end`, `fallback?`): `string`
 
-Defined in: [packages/base/BaseParser.ts:190](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L190)
+Defined in: [packages/base/BaseParser.ts:191](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L191)
 
 #### Parameters
 
@@ -146,7 +146,7 @@ Defined in: [packages/base/BaseParser.ts:190](https://github.com/meowfans/downfl
 
 > `protected` **extractElementTextPair**(`html`, `begin`, `end`, `pos?`): \[`string` \| `null`, `number`\]
 
-Defined in: [packages/base/BaseParser.ts:199](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L199)
+Defined in: [packages/base/BaseParser.ts:200](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L200)
 
 #### Parameters
 
@@ -180,7 +180,7 @@ Defined in: [packages/base/BaseParser.ts:199](https://github.com/meowfans/downfl
 
 > `protected` **extractAllPairs**(`html`, `begin`, `end`): `Generator`\<`string`\>
 
-Defined in: [packages/base/BaseParser.ts:208](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L208)
+Defined in: [packages/base/BaseParser.ts:209](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L209)
 
 #### Parameters
 
@@ -210,7 +210,7 @@ Defined in: [packages/base/BaseParser.ts:208](https://github.com/meowfans/downfl
 
 > `protected` **extractAll**(`html`, `rules`, `startPos?`): \[`Record`\<`string`, `string`\>, `number`\]
 
-Defined in: [packages/base/BaseParser.ts:228](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L228)
+Defined in: [packages/base/BaseParser.ts:229](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L229)
 
 #### Parameters
 
@@ -240,7 +240,7 @@ Defined in: [packages/base/BaseParser.ts:228](https://github.com/meowfans/downfl
 
 > `protected` **extractAnchors**(`html`, `sourceUrl?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:243](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L243)
+Defined in: [packages/base/BaseParser.ts:244](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L244)
 
 #### Parameters
 
@@ -266,7 +266,7 @@ Defined in: [packages/base/BaseParser.ts:243](https://github.com/meowfans/downfl
 
 > `protected` **extractAnchorTextsByHref**(`html`, `hrefPattern`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:258](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L258)
+Defined in: [packages/base/BaseParser.ts:259](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L259)
 
 #### Parameters
 
@@ -292,7 +292,7 @@ Defined in: [packages/base/BaseParser.ts:258](https://github.com/meowfans/downfl
 
 > `protected` **extractImageUrls**(`html`, `sourceUrl?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:277](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L277)
+Defined in: [packages/base/BaseParser.ts:278](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L278)
 
 #### Parameters
 
@@ -318,7 +318,7 @@ Defined in: [packages/base/BaseParser.ts:277](https://github.com/meowfans/downfl
 
 > `protected` **extractSourceUrls**(`html`, `sourceUrl?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:316](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L316)
+Defined in: [packages/base/BaseParser.ts:317](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L317)
 
 #### Parameters
 
@@ -344,7 +344,7 @@ Defined in: [packages/base/BaseParser.ts:316](https://github.com/meowfans/downfl
 
 > `protected` **getFlashVarsVideo**(`html`, `sourceUrl`, `uploader?`, `starred?`): [`DefaultFlashVarsVideoOutput`](../interfaces/DefaultFlashVarsVideoOutput.md)
 
-Defined in: [packages/base/BaseParser.ts:333](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L333)
+Defined in: [packages/base/BaseParser.ts:334](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L334)
 
 #### Parameters
 
@@ -378,7 +378,7 @@ Defined in: [packages/base/BaseParser.ts:333](https://github.com/meowfans/downfl
 
 > `protected` **collectElements**(`html`, `type`, `className?`): `Record`\<`string`, `string`\>[]
 
-Defined in: [packages/base/BaseParser.ts:356](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L356)
+Defined in: [packages/base/BaseParser.ts:357](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L357)
 
 #### Parameters
 
@@ -408,7 +408,7 @@ Defined in: [packages/base/BaseParser.ts:356](https://github.com/meowfans/downfl
 
 > `protected` **extractVideoPosters**(`html`, `sourceUrl?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:377](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L377)
+Defined in: [packages/base/BaseParser.ts:378](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L378)
 
 #### Parameters
 
@@ -434,7 +434,7 @@ Defined in: [packages/base/BaseParser.ts:377](https://github.com/meowfans/downfl
 
 > `protected` **extractDivHrefs**(`html`, `sourceUrl?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:394](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L394)
+Defined in: [packages/base/BaseParser.ts:395](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L395)
 
 #### Parameters
 
@@ -460,7 +460,7 @@ Defined in: [packages/base/BaseParser.ts:394](https://github.com/meowfans/downfl
 
 > `protected` **extractVideoUrls**(`html`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:405](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L405)
+Defined in: [packages/base/BaseParser.ts:406](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L406)
 
 #### Parameters
 
@@ -482,7 +482,7 @@ Defined in: [packages/base/BaseParser.ts:405](https://github.com/meowfans/downfl
 
 > `protected` **extractAllUrls**(`html`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:415](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L415)
+Defined in: [packages/base/BaseParser.ts:416](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L416)
 
 #### Parameters
 
@@ -504,7 +504,7 @@ Defined in: [packages/base/BaseParser.ts:415](https://github.com/meowfans/downfl
 
 > `protected` **extractLinks**(`html`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:419](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L419)
+Defined in: [packages/base/BaseParser.ts:420](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L420)
 
 #### Parameters
 
@@ -526,7 +526,7 @@ Defined in: [packages/base/BaseParser.ts:419](https://github.com/meowfans/downfl
 
 > `protected` **extractMetaDescription**(`html`): `string`
 
-Defined in: [packages/base/BaseParser.ts:431](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L431)
+Defined in: [packages/base/BaseParser.ts:432](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L432)
 
 #### Parameters
 
@@ -548,7 +548,7 @@ Defined in: [packages/base/BaseParser.ts:431](https://github.com/meowfans/downfl
 
 > `protected` **extractMetaNameContent**(`html`, `value`): `string`
 
-Defined in: [packages/base/BaseParser.ts:439](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L439)
+Defined in: [packages/base/BaseParser.ts:440](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L440)
 
 #### Parameters
 
@@ -574,7 +574,7 @@ Defined in: [packages/base/BaseParser.ts:439](https://github.com/meowfans/downfl
 
 > `protected` **extractMetaPropertyContent**(`html`, `value`): `string`
 
-Defined in: [packages/base/BaseParser.ts:447](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L447)
+Defined in: [packages/base/BaseParser.ts:448](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L448)
 
 #### Parameters
 
@@ -600,7 +600,7 @@ Defined in: [packages/base/BaseParser.ts:447](https://github.com/meowfans/downfl
 
 > `protected` **collectAnchors**(`html`, `options?`): `object`[]
 
-Defined in: [packages/base/BaseParser.ts:455](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L455)
+Defined in: [packages/base/BaseParser.ts:456](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L456)
 
 #### Parameters
 
@@ -636,7 +636,7 @@ Defined in: [packages/base/BaseParser.ts:455](https://github.com/meowfans/downfl
 
 > `protected` **extractMetaKeywords**(`html`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:507](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L507)
+Defined in: [packages/base/BaseParser.ts:508](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L508)
 
 #### Parameters
 
@@ -658,7 +658,7 @@ Defined in: [packages/base/BaseParser.ts:507](https://github.com/meowfans/downfl
 
 > `protected` **extractTitle**(`html`): `string`
 
-Defined in: [packages/base/BaseParser.ts:517](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L517)
+Defined in: [packages/base/BaseParser.ts:518](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L518)
 
 #### Parameters
 
@@ -680,7 +680,7 @@ Defined in: [packages/base/BaseParser.ts:517](https://github.com/meowfans/downfl
 
 > `protected` **resolveUrl**(`raw`, `base?`): `string` \| `null`
 
-Defined in: [packages/base/BaseParser.ts:521](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L521)
+Defined in: [packages/base/BaseParser.ts:522](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L522)
 
 #### Parameters
 
@@ -706,7 +706,7 @@ Defined in: [packages/base/BaseParser.ts:521](https://github.com/meowfans/downfl
 
 > `protected` **isHttpUrl**(`url?`): `url is string`
 
-Defined in: [packages/base/BaseParser.ts:530](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L530)
+Defined in: [packages/base/BaseParser.ts:531](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L531)
 
 #### Parameters
 
@@ -728,7 +728,7 @@ Defined in: [packages/base/BaseParser.ts:530](https://github.com/meowfans/downfl
 
 > `protected` **decodeHtmlEntities**(`str`): `string`
 
-Defined in: [packages/base/BaseParser.ts:534](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L534)
+Defined in: [packages/base/BaseParser.ts:535](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L535)
 
 #### Parameters
 
@@ -750,7 +750,7 @@ Defined in: [packages/base/BaseParser.ts:534](https://github.com/meowfans/downfl
 
 > `protected` **extractByTag**(`html`, `tag`, `options?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:545](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L545)
+Defined in: [packages/base/BaseParser.ts:546](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L546)
 
 #### Parameters
 
@@ -786,7 +786,7 @@ Defined in: [packages/base/BaseParser.ts:545](https://github.com/meowfans/downfl
 
 > `protected` **extractOneByTag**(`html`, `tag`, `options?`): `string` \| `null`
 
-Defined in: [packages/base/BaseParser.ts:571](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L571)
+Defined in: [packages/base/BaseParser.ts:572](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L572)
 
 #### Parameters
 
@@ -818,7 +818,7 @@ Defined in: [packages/base/BaseParser.ts:571](https://github.com/meowfans/downfl
 
 > `protected` **extractScriptsByType**(`html`, `type`, `objectType?`): `Record`\<`string`, `any`\>[]
 
-Defined in: [packages/base/BaseParser.ts:575](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L575)
+Defined in: [packages/base/BaseParser.ts:576](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L576)
 
 #### Parameters
 
@@ -848,7 +848,7 @@ Defined in: [packages/base/BaseParser.ts:575](https://github.com/meowfans/downfl
 
 > `protected` **extractByClass**(`html`, `className`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:595](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L595)
+Defined in: [packages/base/BaseParser.ts:596](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L596)
 
 #### Parameters
 
@@ -874,7 +874,7 @@ Defined in: [packages/base/BaseParser.ts:595](https://github.com/meowfans/downfl
 
 > `protected` **extractAttributes**(`html`, `tag`, `attr`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:609](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L609)
+Defined in: [packages/base/BaseParser.ts:610](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L610)
 
 #### Parameters
 
@@ -904,7 +904,7 @@ Defined in: [packages/base/BaseParser.ts:609](https://github.com/meowfans/downfl
 
 > `protected` **extractSpans**(`html`, `className?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:622](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L622)
+Defined in: [packages/base/BaseParser.ts:623](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L623)
 
 #### Parameters
 
@@ -930,7 +930,7 @@ Defined in: [packages/base/BaseParser.ts:622](https://github.com/meowfans/downfl
 
 > `protected` **extractDivs**(`html`, `className?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:626](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L626)
+Defined in: [packages/base/BaseParser.ts:627](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L627)
 
 #### Parameters
 
@@ -956,7 +956,7 @@ Defined in: [packages/base/BaseParser.ts:626](https://github.com/meowfans/downfl
 
 > `protected` **extractAnchorsContent**(`html`, `className?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:630](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L630)
+Defined in: [packages/base/BaseParser.ts:631](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L631)
 
 #### Parameters
 
@@ -982,7 +982,7 @@ Defined in: [packages/base/BaseParser.ts:630](https://github.com/meowfans/downfl
 
 > `protected` **extractH2s**(`html`, `className?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:634](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L634)
+Defined in: [packages/base/BaseParser.ts:635](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L635)
 
 #### Parameters
 
@@ -1008,7 +1008,7 @@ Defined in: [packages/base/BaseParser.ts:634](https://github.com/meowfans/downfl
 
 > `protected` **extractH3s**(`html`, `className?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:638](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L638)
+Defined in: [packages/base/BaseParser.ts:639](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L639)
 
 #### Parameters
 
@@ -1034,7 +1034,7 @@ Defined in: [packages/base/BaseParser.ts:638](https://github.com/meowfans/downfl
 
 > `protected` **extractLists**(`html`, `className?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:642](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L642)
+Defined in: [packages/base/BaseParser.ts:643](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L643)
 
 #### Parameters
 
@@ -1060,7 +1060,7 @@ Defined in: [packages/base/BaseParser.ts:642](https://github.com/meowfans/downfl
 
 > `protected` **extractBlocks**(`html`, `tag`, `className?`): `string`[]
 
-Defined in: [packages/base/BaseParser.ts:646](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L646)
+Defined in: [packages/base/BaseParser.ts:647](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L647)
 
 #### Parameters
 
@@ -1090,7 +1090,7 @@ Defined in: [packages/base/BaseParser.ts:646](https://github.com/meowfans/downfl
 
 > `protected` **extractKeyValue**(`html`, `keyPattern`, `valuePattern`): `Record`\<`string`, `string`\>
 
-Defined in: [packages/base/BaseParser.ts:654](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L654)
+Defined in: [packages/base/BaseParser.ts:655](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L655)
 
 #### Parameters
 
@@ -1120,7 +1120,7 @@ Defined in: [packages/base/BaseParser.ts:654](https://github.com/meowfans/downfl
 
 > `protected` **collectByClassNames**(`html`, `classNames`, `options?`): `any`[]
 
-Defined in: [packages/base/BaseParser.ts:669](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseParser.ts#L669)
+Defined in: [packages/base/BaseParser.ts:670](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseParser.ts#L670)
 
 #### Parameters
 
@@ -1160,7 +1160,7 @@ Defined in: [packages/base/BaseParser.ts:669](https://github.com/meowfans/downfl
 
 > **transform**(`html`, `sourceUrl`): `Partial`\<[`DefaultExecutionResult`](../interfaces/DefaultExecutionResult.md)\<`Partial`\<[`DaNudeOutput`](../interfaces/DaNudeOutput.md)\>\>\>
 
-Defined in: [packages/providers/danude/DaNudeParser.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/danude/DaNudeParser.ts#L14)
+Defined in: [packages/providers/danude/DaNudeParser.ts:14](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/danude/DaNudeParser.ts#L14)
 
 Extracts common metadata from a fetched HTML document.
 

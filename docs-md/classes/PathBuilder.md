@@ -6,7 +6,7 @@
 
 # Class: PathBuilder
 
-Defined in: [packages/storage/PathBuilder.ts:14](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/PathBuilder.ts#L14)
+Defined in: [packages/storage/PathBuilder.ts:14](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/PathBuilder.ts#L14)
 
 Small helper for provider output paths and identifiers.
 
@@ -35,7 +35,7 @@ hands them to the filesystem, so provider code never deals with separators.
 
 > **buildDirectoryPath**(`filename`, `identifier?`): `string`
 
-Defined in: [packages/storage/PathBuilder.ts:15](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/PathBuilder.ts#L15)
+Defined in: [packages/storage/PathBuilder.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/PathBuilder.ts#L15)
 
 #### Parameters
 
@@ -57,7 +57,7 @@ Defined in: [packages/storage/PathBuilder.ts:15](https://github.com/meowfans/dow
 
 > **join**(...`segments`): `string`
 
-Defined in: [packages/storage/PathBuilder.ts:28](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/PathBuilder.ts#L28)
+Defined in: [packages/storage/PathBuilder.ts:28](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/PathBuilder.ts#L28)
 
 Joins logical identifier segments.
 
@@ -82,7 +82,7 @@ and empty segments collapse instead of producing doubled separators.
 
 > **spaceNormalizer**(`input?`): `string`
 
-Defined in: [packages/storage/PathBuilder.ts:32](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/storage/PathBuilder.ts#L32)
+Defined in: [packages/storage/PathBuilder.ts:32](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/PathBuilder.ts#L32)
 
 #### Parameters
 

@@ -6,7 +6,7 @@
 
 # Class: DefaultProvider
 
-Defined in: [packages/providers/default/DefaultProvider.ts:9](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/default/DefaultProvider.ts#L9)
+Defined in: [packages/providers/default/DefaultProvider.ts:9](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/default/DefaultProvider.ts#L9)
 
 Default provider.
 Supports generic URL extraction.
@@ -21,7 +21,7 @@ Supports generic URL extraction.
 
 > **new DefaultProvider**(`url`): `DefaultProvider`
 
-Defined in: [packages/providers/default/DefaultProvider.ts:12](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/default/DefaultProvider.ts#L12)
+Defined in: [packages/providers/default/DefaultProvider.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/default/DefaultProvider.ts#L12)
 
 #### Parameters
 
@@ -43,7 +43,7 @@ Defined in: [packages/providers/default/DefaultProvider.ts:12](https://github.co
 
 > `protected` **executionOptions**: [`ExecutionOptions`](../interfaces/ExecutionOptions.md) = `{}`
 
-Defined in: [packages/base/BaseProvider.ts:41](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L41)
+Defined in: [packages/base/BaseProvider.ts:41](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L41)
 
 #### Inherited from
 
@@ -55,7 +55,7 @@ Defined in: [packages/base/BaseProvider.ts:41](https://github.com/meowfans/downf
 
 > `protected` **httpOptions**: [`HttpFetchOptions`](../interfaces/HttpFetchOptions.md) = `{}`
 
-Defined in: [packages/base/BaseProvider.ts:48](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L48)
+Defined in: [packages/base/BaseProvider.ts:48](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L48)
 
 #### Inherited from
 
@@ -67,7 +67,7 @@ Defined in: [packages/base/BaseProvider.ts:48](https://github.com/meowfans/downf
 
 > `protected` `readonly` **deps**: [`CoordinatorDependencies`](../interfaces/CoordinatorDependencies.md)
 
-Defined in: [packages/base/BaseProvider.ts:49](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L49)
+Defined in: [packages/base/BaseProvider.ts:49](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L49)
 
 #### Inherited from
 
@@ -79,7 +79,7 @@ Defined in: [packages/base/BaseProvider.ts:49](https://github.com/meowfans/downf
 
 > `protected` `readonly` **urlPattern**: `RegExp`
 
-Defined in: [packages/base/BaseProvider.ts:51](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L51)
+Defined in: [packages/base/BaseProvider.ts:51](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L51)
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ Defined in: [packages/base/BaseProvider.ts:51](https://github.com/meowfans/downf
 
 > `protected` `readonly` **providerMetadata**: [`ProviderMetadata`](../interfaces/ProviderMetadata.md)
 
-Defined in: [packages/base/BaseProvider.ts:52](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L52)
+Defined in: [packages/base/BaseProvider.ts:52](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L52)
 
 #### Inherited from
 
@@ -103,7 +103,7 @@ Defined in: [packages/base/BaseProvider.ts:52](https://github.com/meowfans/downf
 
 > `protected` `readonly` **url**: `string`
 
-Defined in: [packages/base/BaseProvider.ts:60](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L60)
+Defined in: [packages/base/BaseProvider.ts:60](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L60)
 
 #### Inherited from
 
@@ -115,7 +115,7 @@ Defined in: [packages/base/BaseProvider.ts:60](https://github.com/meowfans/downf
 
 > `protected` **config**: [`ProviderConfig`](../interfaces/ProviderConfig.md)
 
-Defined in: [packages/base/BaseProvider.ts:61](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L61)
+Defined in: [packages/base/BaseProvider.ts:61](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L61)
 
 #### Inherited from
 
@@ -127,7 +127,7 @@ Defined in: [packages/base/BaseProvider.ts:61](https://github.com/meowfans/downf
 
 > `protected` `readonly` **provider**: [`Default`](../enumerations/Provider.md#default) = `Provider.Default`
 
-Defined in: [packages/providers/default/DefaultProvider.ts:10](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/default/DefaultProvider.ts#L10)
+Defined in: [packages/providers/default/DefaultProvider.ts:10](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/default/DefaultProvider.ts#L10)
 
 #### Overrides
 
@@ -141,7 +141,7 @@ Defined in: [packages/providers/default/DefaultProvider.ts:10](https://github.co
 
 > **get** `protected` **metadata**(): [`ProviderMetadata`](../interfaces/ProviderMetadata.md)
 
-Defined in: [packages/base/BaseProvider.ts:55](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L55)
+Defined in: [packages/base/BaseProvider.ts:55](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L55)
 
 Provider capabilities, integration status, and access restrictions.
 
@@ -161,7 +161,7 @@ Provider capabilities, integration status, and access restrictions.
 
 > **get** `protected` **ORIGIN**(): `string`
 
-Defined in: [packages/base/BaseProvider.ts:89](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L89)
+Defined in: [packages/base/BaseProvider.ts:100](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L100)
 
 ##### Returns
 
@@ -179,7 +179,7 @@ Defined in: [packages/base/BaseProvider.ts:89](https://github.com/meowfans/downf
 
 > **get** `protected` **HOST\_NAME**(): `string`
 
-Defined in: [packages/base/BaseProvider.ts:93](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L93)
+Defined in: [packages/base/BaseProvider.ts:104](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L104)
 
 ##### Returns
 
@@ -195,7 +195,7 @@ Defined in: [packages/base/BaseProvider.ts:93](https://github.com/meowfans/downf
 
 > `protected` **isValidHostName**(): `boolean`
 
-Defined in: [packages/base/BaseProvider.ts:97](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L97)
+Defined in: [packages/base/BaseProvider.ts:108](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L108)
 
 #### Returns
 
@@ -211,7 +211,7 @@ Defined in: [packages/base/BaseProvider.ts:97](https://github.com/meowfans/downf
 
 > **setAuth**(`auth`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:118](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L118)
+Defined in: [packages/base/BaseProvider.ts:129](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L129)
 
 Sets authentication credentials for the provider.
 
@@ -242,7 +242,7 @@ Supports multiple authentication methods: cookies, bearer tokens, CSRF tokens, A
 
 > **setHeaders**(`headers`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:137](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L137)
+Defined in: [packages/base/BaseProvider.ts:148](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L148)
 
 Sets custom HTTP headers.
 
@@ -268,7 +268,7 @@ Request header map
 
 > **setTimeout**(`timeoutMs`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:146](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L146)
+Defined in: [packages/base/BaseProvider.ts:157](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L157)
 
 Sets HTTP timeout.
 
@@ -294,7 +294,7 @@ Timeout in milliseconds
 
 > **setRetries**(`retries`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:155](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L155)
+Defined in: [packages/base/BaseProvider.ts:166](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L166)
 
 Sets fetch retry count.
 
@@ -320,7 +320,7 @@ Retry attempt count
 
 > **setTransformOutput**(`transform?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:164](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L164)
+Defined in: [packages/base/BaseProvider.ts:175](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L175)
 
 Transform output to provider-specific result type.
 
@@ -346,7 +346,7 @@ Default is true, which applies the default transformation. Set to false to retur
 
 > **setHttpOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:173](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L173)
+Defined in: [packages/base/BaseProvider.ts:184](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L184)
 
 Sets HTTP fetch options.
 
@@ -372,7 +372,7 @@ HTTP options to merge
 
 > **setNoDownload**(`noDownload?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:183](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L183)
+Defined in: [packages/base/BaseProvider.ts:194](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L194)
 
 Sets no download flag.
 
@@ -404,7 +404,7 @@ false - set to true to skip the download phase and only perform extraction (usef
 
 > **setTranscodeOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:196](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L196)
+Defined in: [packages/base/BaseProvider.ts:207](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L207)
 
 Sets transcode options.
 
@@ -433,7 +433,7 @@ Make sure your OS can handle it
 
 > **setPreferredFormat**(`format`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:205](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L205)
+Defined in: [packages/base/BaseProvider.ts:216](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L216)
 
 Sets preferred video format.
 
@@ -459,7 +459,7 @@ Video format (hls or mp4)
 
 > **setPreferredCodec**(`codec`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:219](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L219)
+Defined in: [packages/base/BaseProvider.ts:230](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L230)
 
 Sets preferred video codec.
 
@@ -490,7 +490,7 @@ If the provider supports it, it will try to download the video in the specified 
 
 > **setJobOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:228](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L228)
+Defined in: [packages/base/BaseProvider.ts:239](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L239)
 
 Sets ExecutionCoordinator options.
 
@@ -516,7 +516,7 @@ Job options to merge
 
 > **setAgentOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:237](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L237)
+Defined in: [packages/base/BaseProvider.ts:248](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L248)
 
 Sets HTTP agent options.
 
@@ -542,7 +542,7 @@ HTTP agent options to merge
 
 > **setMaxDownloads**(`maxDownloads`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:246](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L246)
+Defined in: [packages/base/BaseProvider.ts:257](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L257)
 
 Sets maximum downloads.
 
@@ -568,7 +568,7 @@ Download limit
 
 > **setAllowedExtensions**(...`extensions`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:255](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L255)
+Defined in: [packages/base/BaseProvider.ts:266](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L266)
 
 Sets allowed file extensions.
 
@@ -594,7 +594,7 @@ File extensions such as `jpg` or `png`
 
 > **onProgress**(`handler`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:264](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L264)
+Defined in: [packages/base/BaseProvider.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L275)
 
 Sets progress handler.
 
@@ -620,7 +620,7 @@ Progress event callback
 
 > **setProgressLogging**(`enabled?`, `options?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:283](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L283)
+Defined in: [packages/base/BaseProvider.ts:294](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L294)
 
 Enables console progress logging.
 
@@ -668,7 +668,7 @@ library's.
 
 > **setOutput**(`type`, `config?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:296](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L296)
+Defined in: [packages/base/BaseProvider.ts:307](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L307)
 
 Sets output type.
 
@@ -682,7 +682,7 @@ Job output mode
 
 ##### config?
 
-[`DirectoryOutputOptions`](../interfaces/DirectoryOutputOptions.md) = `{}`
+[`DirectoryOutputOptions`](../interfaces/DirectoryOutputOptions.md) = `...`
 
 Directory output configuration
 
@@ -706,7 +706,7 @@ OutputType.JSON
 
 > **setExecutionType**(`type`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:317](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L317)
+Defined in: [packages/base/BaseProvider.ts:328](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L328)
 
 Sets execution strategy.
 
@@ -746,7 +746,7 @@ Use with caution and test thoroughly if you choose to use `PARALLEL` execution.
 
 > **whenSettled**(): `Promise`\<[`JobSettlement`](../interfaces/JobSettlement.md)\>
 
-Defined in: [packages/base/BaseProvider.ts:380](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L380)
+Defined in: [packages/base/BaseProvider.ts:391](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L391)
 
 Waits for the download phase of the most recent job.
 
@@ -785,7 +785,7 @@ that never download.
 
 > `protected` **assertSupported**(`method?`): `void`
 
-Defined in: [packages/base/BaseProvider.ts:395](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L395)
+Defined in: [packages/base/BaseProvider.ts:406](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L406)
 
 Enforces the capability flags declared in [ProviderMetadata](../interfaces/ProviderMetadata.md).
 
@@ -818,7 +818,7 @@ discovered the limitation as an obscure failure deep in the transport layer.
 
 > **dispose**(`options?`): `Promise`\<`void`\>
 
-Defined in: [packages/base/BaseProvider.ts:430](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L430)
+Defined in: [packages/base/BaseProvider.ts:441](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L441)
 
 Releases resources held by this provider instance.
 
@@ -850,7 +850,7 @@ with DownFlux entirely rather than between jobs.
 
 > `protected` **buildRequest**(`overrides?`): [`DefaultExecArgs`](../interfaces/DefaultExecArgs.md)
 
-Defined in: [packages/base/BaseProvider.ts:445](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L445)
+Defined in: [packages/base/BaseProvider.ts:456](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L456)
 
 Builds the execution request passed to the coordinator layer.
 
@@ -878,7 +878,7 @@ A typed request containing provider metadata and execution options.
 
 > `protected` **execute**\<`TResult`\>(`overrides`): `Promise`\<`TResult`\>
 
-Defined in: [packages/base/BaseProvider.ts:466](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L466)
+Defined in: [packages/base/BaseProvider.ts:477](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L477)
 
 Runs extraction and optional downloads through the shared coordinator.
 
@@ -912,7 +912,7 @@ Extracted output in the shape requested by the provider method.
 
 > `protected` **makeTargets**(`sourceUrl`, `range`, `provider`, `method`, `addTrailingSlash?`): `object`
 
-Defined in: [packages/base/BaseProvider.ts:501](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/base/BaseProvider.ts#L501)
+Defined in: [packages/base/BaseProvider.ts:512](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L512)
 
 Builds paginated target URLs for list-like provider methods.
 
@@ -976,7 +976,7 @@ Provider, method, and generated target URLs.
 
 > **getLinks**(): `Promise`\<`string`[]\>
 
-Defined in: [packages/providers/default/DefaultProvider.ts:35](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/default/DefaultProvider.ts#L35)
+Defined in: [packages/providers/default/DefaultProvider.ts:35](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/default/DefaultProvider.ts#L35)
 
 Gets links.
 
@@ -992,7 +992,7 @@ Extracted anchor result array
 
 > **getImages**(): `Promise`\<`string`[]\>
 
-Defined in: [packages/providers/default/DefaultProvider.ts:49](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/default/DefaultProvider.ts#L49)
+Defined in: [packages/providers/default/DefaultProvider.ts:49](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/default/DefaultProvider.ts#L49)
 
 Gets images.
 
@@ -1008,7 +1008,7 @@ Extracted image result array
 
 > **getVideos**(): `Promise`\<`string`[]\>
 
-Defined in: [packages/providers/default/DefaultProvider.ts:63](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/default/DefaultProvider.ts#L63)
+Defined in: [packages/providers/default/DefaultProvider.ts:63](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/default/DefaultProvider.ts#L63)
 
 Gets videos.
 
@@ -1024,7 +1024,7 @@ Extracted video result array
 
 > **getAudio**(): `Promise`\<`string`[]\>
 
-Defined in: [packages/providers/default/DefaultProvider.ts:77](https://github.com/meowfans/downflux/blob/26aad8b9c69f57a48960887a5c1cf136b2a3204f/packages/providers/default/DefaultProvider.ts#L77)
+Defined in: [packages/providers/default/DefaultProvider.ts:77](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/default/DefaultProvider.ts#L77)
 
 Gets audio.
 
