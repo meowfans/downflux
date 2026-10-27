@@ -6,7 +6,7 @@
 
 # Enumeration: VideoQuality
 
-Defined in: [packages/types/ExecutionTypes.ts:188](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L188)
+Defined in: [packages/types/ExecutionTypes.ts:188](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L188)
 
 Video quality labels
 
@@ -16,7 +16,7 @@ Video quality labels
 
 > **Q144**: `"144p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:190](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L190)
+Defined in: [packages/types/ExecutionTypes.ts:190](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L190)
 
 144p quality
 
@@ -26,7 +26,7 @@ Defined in: [packages/types/ExecutionTypes.ts:190](https://github.com/meowfans/d
 
 > **Q240**: `"240p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:193](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L193)
+Defined in: [packages/types/ExecutionTypes.ts:193](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L193)
 
 240p quality
 
@@ -36,7 +36,7 @@ Defined in: [packages/types/ExecutionTypes.ts:193](https://github.com/meowfans/d
 
 > **Q360**: `"360p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:196](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L196)
+Defined in: [packages/types/ExecutionTypes.ts:196](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L196)
 
 360p quality
 
@@ -46,7 +46,7 @@ Defined in: [packages/types/ExecutionTypes.ts:196](https://github.com/meowfans/d
 
 > **Q480**: `"480p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:199](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L199)
+Defined in: [packages/types/ExecutionTypes.ts:199](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L199)
 
 480p quality
 
@@ -56,7 +56,7 @@ Defined in: [packages/types/ExecutionTypes.ts:199](https://github.com/meowfans/d
 
 > **Q720**: `"720p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:202](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L202)
+Defined in: [packages/types/ExecutionTypes.ts:202](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L202)
 
 720p quality
 
@@ -66,7 +66,7 @@ Defined in: [packages/types/ExecutionTypes.ts:202](https://github.com/meowfans/d
 
 > **Q1080**: `"1080p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:205](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L205)
+Defined in: [packages/types/ExecutionTypes.ts:205](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L205)
 
 1080p quality
 
@@ -76,7 +76,7 @@ Defined in: [packages/types/ExecutionTypes.ts:205](https://github.com/meowfans/d
 
 > **Q1440**: `"1440p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:208](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L208)
+Defined in: [packages/types/ExecutionTypes.ts:208](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L208)
 
 1440p quality
 
@@ -86,7 +86,7 @@ Defined in: [packages/types/ExecutionTypes.ts:208](https://github.com/meowfans/d
 
 > **Q2160**: `"2160p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:211](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L211)
+Defined in: [packages/types/ExecutionTypes.ts:211](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L211)
 
 2160p quality
 
@@ -96,7 +96,7 @@ Defined in: [packages/types/ExecutionTypes.ts:211](https://github.com/meowfans/d
 
 > **Q4320**: `"4320p"`
 
-Defined in: [packages/types/ExecutionTypes.ts:214](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L214)
+Defined in: [packages/types/ExecutionTypes.ts:214](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L214)
 
 4320p quality
 
@@ -106,6 +106,6 @@ Defined in: [packages/types/ExecutionTypes.ts:214](https://github.com/meowfans/d
 
 > **QUnknown**: `"unknown"`
 
-Defined in: [packages/types/ExecutionTypes.ts:216](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L216)
+Defined in: [packages/types/ExecutionTypes.ts:216](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L216)
 
 Unknown quality

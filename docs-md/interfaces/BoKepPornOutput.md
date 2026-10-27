@@ -6,7 +6,7 @@
 
 # Interface: BoKepPornOutput
 
-Defined in: [packages/providers/bokepporn/BoKepPornContracts.ts:4](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/bokepporn/BoKepPornContracts.ts#L4)
+Defined in: [packages/providers/bokepporn/BoKepPornContracts.ts:4](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/bokepporn/BoKepPornContracts.ts#L4)
 
 Default output structure for extractor operations.
 Represents normalized metadata and extracted resources.
@@ -21,7 +21,7 @@ Represents normalized metadata and extracted resources.
 
 > **title**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:228](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L228)
+Defined in: [packages/contracts/ExecutionContracts.ts:228](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L228)
 
 Page title
 
@@ -35,7 +35,7 @@ Page title
 
 > **description**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:231](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L231)
+Defined in: [packages/contracts/ExecutionContracts.ts:231](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L231)
 
 Page description
 
@@ -49,7 +49,7 @@ Page description
 
 > **keywords**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:234](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L234)
+Defined in: [packages/contracts/ExecutionContracts.ts:234](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L234)
 
 SEO keywords
 
@@ -63,7 +63,7 @@ SEO keywords
 
 > **status**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:237](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L237)
+Defined in: [packages/contracts/ExecutionContracts.ts:237](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L237)
 
 HTTP status code
 
@@ -77,7 +77,7 @@ HTTP status code
 
 > **sourceUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:240](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L240)
+Defined in: [packages/contracts/ExecutionContracts.ts:240](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L240)
 
 Final resolved URL
 
@@ -91,7 +91,7 @@ Final resolved URL
 
 > **anchors**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:243](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L243)
+Defined in: [packages/contracts/ExecutionContracts.ts:243](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L243)
 
 Anchor links
 
@@ -105,7 +105,7 @@ Anchor links
 
 > **images**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:246](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L246)
+Defined in: [packages/contracts/ExecutionContracts.ts:246](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L246)
 
 Image URLs
 
@@ -119,7 +119,7 @@ Image URLs
 
 > **sources**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:249](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L249)
+Defined in: [packages/contracts/ExecutionContracts.ts:249](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L249)
 
 Media source URLs
 
@@ -133,7 +133,7 @@ Media source URLs
 
 > **videoSources**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:252](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L252)
+Defined in: [packages/contracts/ExecutionContracts.ts:252](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L252)
 
 Video URLs
 
@@ -147,7 +147,7 @@ Video URLs
 
 > **links**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:255](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L255)
+Defined in: [packages/contracts/ExecutionContracts.ts:255](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L255)
 
 Hyper links
 
@@ -161,7 +161,7 @@ Hyper links
 
 > `optional` **videoPosters?**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:258](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L258)
+Defined in: [packages/contracts/ExecutionContracts.ts:258](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L258)
 
 Video poster URLs
 
@@ -175,7 +175,7 @@ Video poster URLs
 
 > `optional` **divHREFs?**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:261](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L261)
+Defined in: [packages/contracts/ExecutionContracts.ts:261](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L261)
 
 URLs extracted from div href attributes
 
@@ -189,7 +189,7 @@ URLs extracted from div href attributes
 
 > `optional` **allUrls?**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:264](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L264)
+Defined in: [packages/contracts/ExecutionContracts.ts:264](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L264)
 
 All discovered URLs
 
@@ -203,7 +203,7 @@ All discovered URLs
 
 > `optional` **extractionTarget?**: [`ExtractionTarget`](../enumerations/ExtractionTarget.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:267](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L267)
+Defined in: [packages/contracts/ExecutionContracts.ts:267](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L267)
 
 URL category for pipeline routing
 
@@ -217,7 +217,7 @@ URL category for pipeline routing
 
 > `optional` **customFields?**: `unknown`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:270](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L270)
+Defined in: [packages/contracts/ExecutionContracts.ts:270](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L270)
 
 Extensible service-specific fields
 
@@ -231,7 +231,7 @@ Extensible service-specific fields
 
 > **tags**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L275)
+Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L275)
 
 #### Inherited from
 
@@ -243,7 +243,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/me
 
 > **pageUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L277)
+Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L277)
 
 #### Inherited from
 
@@ -255,7 +255,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/me
 
 > **poster**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L286)
+Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L286)
 
 #### Inherited from
 
@@ -267,7 +267,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/me
 
 > **videos**: [`VideosFormat`](VideosFormat.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L287)
+Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L287)
 
 #### Inherited from
 
@@ -279,7 +279,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/me
 
 > **videoId**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:291](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L291)
+Defined in: [packages/contracts/ExecutionContracts.ts:291](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L291)
 
 #### Inherited from
 
@@ -291,7 +291,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:291](https://github.com/me
 
 > **previews**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:292](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L292)
+Defined in: [packages/contracts/ExecutionContracts.ts:292](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L292)
 
 #### Inherited from
 
@@ -303,7 +303,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:292](https://github.com/me
 
 > `optional` **timelineScreenCount?**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:293](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L293)
+Defined in: [packages/contracts/ExecutionContracts.ts:293](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L293)
 
 #### Inherited from
 
@@ -315,7 +315,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:293](https://github.com/me
 
 > `optional` **timelineScreens?**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:294](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L294)
+Defined in: [packages/contracts/ExecutionContracts.ts:294](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L294)
 
 #### Inherited from
 
@@ -327,7 +327,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:294](https://github.com/me
 
 > `optional` **starred?**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:295](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L295)
+Defined in: [packages/contracts/ExecutionContracts.ts:295](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L295)
 
 #### Inherited from
 
@@ -339,7 +339,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:295](https://github.com/me
 
 > `optional` **uploader?**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:296](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L296)
+Defined in: [packages/contracts/ExecutionContracts.ts:296](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L296)
 
 #### Inherited from
 

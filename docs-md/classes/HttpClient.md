@@ -6,7 +6,7 @@
 
 # Class: HttpClient
 
-Defined in: [packages/engines/http/HttpClient.ts:14](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/engines/http/HttpClient.ts#L14)
+Defined in: [packages/engines/http/HttpClient.ts:14](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/engines/http/HttpClient.ts#L14)
 
 HTTP engine for page and JSON metadata requests.
 
@@ -25,7 +25,7 @@ transport fallback, and response decoding before parsers receive HTML.
 
 > **new HttpClient**(`progressManager`, `components?`): `HttpClient`
 
-Defined in: [packages/engines/http/HttpClient.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/engines/http/HttpClient.ts#L15)
+Defined in: [packages/engines/http/HttpClient.ts:15](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/engines/http/HttpClient.ts#L15)
 
 #### Parameters
 
@@ -51,7 +51,7 @@ Defined in: [packages/engines/http/HttpClient.ts:15](https://github.com/meowfans
 
 > `protected` `readonly` **progressManager**: [`ProgressManager`](ProgressManager.md)
 
-Defined in: [packages/base/BaseHttpClient.ts:17](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L17)
+Defined in: [packages/base/BaseHttpClient.ts:17](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L17)
 
 #### Inherited from
 
@@ -63,7 +63,7 @@ Defined in: [packages/base/BaseHttpClient.ts:17](https://github.com/meowfans/dow
 
 > `protected` `readonly` **cookieJar**: `Map`\<`string`, `Map`\<`string`, `string`\>\>
 
-Defined in: [packages/base/BaseHttpClient.ts:19](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L19)
+Defined in: [packages/base/BaseHttpClient.ts:19](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L19)
 
 #### Inherited from
 
@@ -75,7 +75,7 @@ Defined in: [packages/base/BaseHttpClient.ts:19](https://github.com/meowfans/dow
 
 > `protected` `readonly` `static` **CHROME\_CIPHERS**: `string`
 
-Defined in: [packages/base/BaseHttpClient.ts:20](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L20)
+Defined in: [packages/base/BaseHttpClient.ts:20](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L20)
 
 #### Inherited from
 
@@ -89,7 +89,7 @@ Defined in: [packages/base/BaseHttpClient.ts:20](https://github.com/meowfans/dow
 
 > **get** `protected` **CHROME\_CIPHERS**(): `string`
 
-Defined in: [packages/base/BaseHttpClient.ts:38](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L38)
+Defined in: [packages/base/BaseHttpClient.ts:38](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L38)
 
 ##### Returns
 
@@ -107,7 +107,7 @@ Defined in: [packages/base/BaseHttpClient.ts:38](https://github.com/meowfans/dow
 
 > **get** `protected` **agent**(): `Agent`
 
-Defined in: [packages/base/BaseHttpClient.ts:55](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L55)
+Defined in: [packages/base/BaseHttpClient.ts:55](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L55)
 
 ##### Returns
 
@@ -123,7 +123,7 @@ Defined in: [packages/base/BaseHttpClient.ts:55](https://github.com/meowfans/dow
 
 > `protected` **spoofAgentFor**(`hostname`): `Agent`
 
-Defined in: [packages/base/BaseHttpClient.ts:78](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L78)
+Defined in: [packages/base/BaseHttpClient.ts:78](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L78)
 
 Builds the SNI-spoofing agent for one host.
 
@@ -154,7 +154,7 @@ being contacted. The previous `checkServerIdentity: () => undefined` accepted
 
 > **closeConnections**(): `Promise`\<`void`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:109](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L109)
+Defined in: [packages/base/BaseHttpClient.ts:109](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L109)
 
 Instance-side alias for [BaseHttpClient.closeSharedAgents](BaseHttpClient.md#closesharedagents).
 
@@ -172,7 +172,7 @@ Instance-side alias for [BaseHttpClient.closeSharedAgents](BaseHttpClient.md#clo
 
 > `static` **closeSharedAgents**(): `Promise`\<`void`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:113](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L113)
+Defined in: [packages/base/BaseHttpClient.ts:113](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L113)
 
 #### Returns
 
@@ -188,7 +188,7 @@ Defined in: [packages/base/BaseHttpClient.ts:113](https://github.com/meowfans/do
 
 > `protected` **randomHeaders**(`extra?`): `object`
 
-Defined in: [packages/base/BaseHttpClient.ts:127](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L127)
+Defined in: [packages/base/BaseHttpClient.ts:127](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L127)
 
 #### Parameters
 
@@ -210,7 +210,7 @@ Defined in: [packages/base/BaseHttpClient.ts:127](https://github.com/meowfans/do
 
 > `protected` **buildHlsHeaders**(`opts`): `object`
 
-Defined in: [packages/base/BaseHttpClient.ts:136](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L136)
+Defined in: [packages/base/BaseHttpClient.ts:136](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L136)
 
 #### Parameters
 
@@ -248,7 +248,7 @@ Defined in: [packages/base/BaseHttpClient.ts:136](https://github.com/meowfans/do
 
 > `protected` **linkSignal**(`timeoutMs`, `external?`): `AbortSignal`
 
-Defined in: [packages/base/BaseHttpClient.ts:188](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L188)
+Defined in: [packages/base/BaseHttpClient.ts:188](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L188)
 
 Combines a per-request timeout with a caller-supplied abort signal.
 
@@ -282,7 +282,7 @@ A signal that aborts on whichever fires first.
 
 > `protected` **itemLabel**(`opts`): `string` \| `undefined`
 
-Defined in: [packages/base/BaseHttpClient.ts:203](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L203)
+Defined in: [packages/base/BaseHttpClient.ts:203](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L203)
 
 Short display name for a download item, falling back to the URL tail.
 
@@ -311,7 +311,7 @@ per-item progress rows they emit.
 
 > `protected` **delay**(`attempt`): `Promise`\<`unknown`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:215](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L215)
+Defined in: [packages/base/BaseHttpClient.ts:215](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L215)
 
 #### Parameters
 
@@ -333,7 +333,7 @@ Defined in: [packages/base/BaseHttpClient.ts:215](https://github.com/meowfans/do
 
 > `protected` **readBody**(`body`): `Promise`\<`Buffer`\<`ArrayBufferLike`\>\>
 
-Defined in: [packages/base/BaseHttpClient.ts:222](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L222)
+Defined in: [packages/base/BaseHttpClient.ts:222](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L222)
 
 #### Parameters
 
@@ -355,7 +355,7 @@ Defined in: [packages/base/BaseHttpClient.ts:222](https://github.com/meowfans/do
 
 > `protected` **decodeBody**(`buffer`, `headers`): `Buffer`
 
-Defined in: [packages/base/BaseHttpClient.ts:237](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L237)
+Defined in: [packages/base/BaseHttpClient.ts:237](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L237)
 
 #### Parameters
 
@@ -381,7 +381,7 @@ Defined in: [packages/base/BaseHttpClient.ts:237](https://github.com/meowfans/do
 
 > `protected` **applyCookieWithHeader**(`url`, `headers`): `Record`\<`string`, `string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:253](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L253)
+Defined in: [packages/base/BaseHttpClient.ts:253](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L253)
 
 #### Parameters
 
@@ -407,7 +407,7 @@ Defined in: [packages/base/BaseHttpClient.ts:253](https://github.com/meowfans/do
 
 > `protected` **storeCookies**(`url`, `headers`): `void`
 
-Defined in: [packages/base/BaseHttpClient.ts:268](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L268)
+Defined in: [packages/base/BaseHttpClient.ts:268](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L268)
 
 #### Parameters
 
@@ -433,7 +433,7 @@ Defined in: [packages/base/BaseHttpClient.ts:268](https://github.com/meowfans/do
 
 > `protected` **addOriginWithHeader**(`headers`, `referer?`): `Record`\<`string`, `string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:291](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L291)
+Defined in: [packages/base/BaseHttpClient.ts:291](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L291)
 
 #### Parameters
 
@@ -459,7 +459,7 @@ Defined in: [packages/base/BaseHttpClient.ts:291](https://github.com/meowfans/do
 
 > `protected` **headers**(`headers`): `Record`\<`string`, `string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:302](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L302)
+Defined in: [packages/base/BaseHttpClient.ts:302](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L302)
 
 #### Parameters
 
@@ -481,7 +481,7 @@ Defined in: [packages/base/BaseHttpClient.ts:302](https://github.com/meowfans/do
 
 > `protected` **isTransportError**(`error`): `string` \| `undefined`
 
-Defined in: [packages/base/BaseHttpClient.ts:306](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L306)
+Defined in: [packages/base/BaseHttpClient.ts:306](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L306)
 
 #### Parameters
 
@@ -503,7 +503,7 @@ Defined in: [packages/base/BaseHttpClient.ts:306](https://github.com/meowfans/do
 
 > **fetchWithTransportFallback**(`url`, `init`, `options`, `allowFallback?`): `Promise`\<`Response`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:329](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L329)
+Defined in: [packages/base/BaseHttpClient.ts:329](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L329)
 
 Runs a fetch request with transport fallback for transient TLS/socket failures.
 
@@ -549,7 +549,7 @@ Native fetch response.
 
 > **fetchText**(`url`, `timeoutMs`, `headers`, `signal?`): `Promise`\<`string`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:356](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L356)
+Defined in: [packages/base/BaseHttpClient.ts:356](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L356)
 
 #### Parameters
 
@@ -583,7 +583,7 @@ Defined in: [packages/base/BaseHttpClient.ts:356](https://github.com/meowfans/do
 
 > **fetchJson**(`url`, `opts`): `Promise`\<`any`\>
 
-Defined in: [packages/base/BaseHttpClient.ts:360](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseHttpClient.ts#L360)
+Defined in: [packages/base/BaseHttpClient.ts:360](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseHttpClient.ts#L360)
 
 #### Parameters
 
@@ -609,7 +609,7 @@ Defined in: [packages/base/BaseHttpClient.ts:360](https://github.com/meowfans/do
 
 > **fetchHtml**(`url`, `opts`): `Promise`\<[`FetchResult`](../interfaces/FetchResult.md)\>
 
-Defined in: [packages/engines/http/HttpClient.ts:34](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/engines/http/HttpClient.ts#L34)
+Defined in: [packages/engines/http/HttpClient.ts:34](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/engines/http/HttpClient.ts#L34)
 
 Fetches a page as HTML using provider-aware transport rules.
 

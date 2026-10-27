@@ -6,7 +6,7 @@
 
 # Interface: PipelineIdentifier
 
-Defined in: [packages/contracts/PipelineContracts.ts:4](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L4)
+Defined in: [packages/contracts/PipelineContracts.ts:4](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L4)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:4](https://github.com/meowf
 
 > **key**: `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:5](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L5)
+Defined in: [packages/contracts/PipelineContracts.ts:5](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L5)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:5](https://github.com/meowf
 
 > **mediaType**: [`MediaType`](../enumerations/MediaType.md)
 
-Defined in: [packages/contracts/PipelineContracts.ts:6](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L6)
+Defined in: [packages/contracts/PipelineContracts.ts:6](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L6)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:6](https://github.com/meowf
 
 > **mimeType**: `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:7](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L7)
+Defined in: [packages/contracts/PipelineContracts.ts:7](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L7)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [packages/contracts/PipelineContracts.ts:7](https://github.com/meowf
 
 > **extension**: [`AllowedExtension`](../type-aliases/AllowedExtension.md)
 
-Defined in: [packages/contracts/PipelineContracts.ts:8](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L8)
+Defined in: [packages/contracts/PipelineContracts.ts:8](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L8)

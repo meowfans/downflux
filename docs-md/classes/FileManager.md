@@ -6,7 +6,7 @@
 
 # Class: FileManager
 
-Defined in: [packages/storage/FileManager.ts:28](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L28)
+Defined in: [packages/storage/FileManager.ts:28](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L28)
 
 Storage service for JSON results, buffers, and files on disk.
 
@@ -23,7 +23,7 @@ and coordinators from duplicating filesystem rules.
 
 > **new FileManager**(`ffmpegEngine`, `progressManager`): `FileManager`
 
-Defined in: [packages/storage/FileManager.ts:33](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L33)
+Defined in: [packages/storage/FileManager.ts:33](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L33)
 
 #### Parameters
 
@@ -45,7 +45,7 @@ Defined in: [packages/storage/FileManager.ts:33](https://github.com/meowfans/dow
 
 > **createSink**(`sinkInput`): `object`
 
-Defined in: [packages/storage/FileManager.ts:44](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L44)
+Defined in: [packages/storage/FileManager.ts:44](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L44)
 
 Creates the output sink for a download.
 
@@ -103,7 +103,7 @@ Writable stream and finalize callback for the selected output mode.
 
 > **createStreamSink**(`sinkInput`, `resolved`, `isFmp4?`): [`StreamSink`](../interfaces/StreamSink.md)
 
-Defined in: [packages/storage/FileManager.ts:94](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L94)
+Defined in: [packages/storage/FileManager.ts:94](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L94)
 
 Opens a pass-through sink whose readable side is handed to the caller.
 
@@ -144,7 +144,7 @@ keeps one code path for every media type.
 
 > **needsRemux**(`extension?`, `isFmp4?`): `boolean`
 
-Defined in: [packages/storage/FileManager.ts:181](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L181)
+Defined in: [packages/storage/FileManager.ts:181](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L181)
 
 Whether downloaded bytes still need remuxing into a playable container.
 
@@ -181,7 +181,7 @@ as finished; the buffer sink previously applied no such test at all.
 
 > **finalizeStream**(`finalPath`, `tOptions?`, `isFmp4?`, `opts?`): `Promise`\<\{ `path`: `string`; `filename`: `string`; `extension`: `string`; `mimeType`: `any`; \}\>
 
-Defined in: [packages/storage/FileManager.ts:194](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L194)
+Defined in: [packages/storage/FileManager.ts:194](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L194)
 
 Finalizes a file after streaming completes.
 
@@ -229,7 +229,7 @@ Final path, filename, extension, and MIME type.
 
 > **toJSON**\<`T`, `S`\>(`result`, `directoryPath?`): `string`
 
-Defined in: [packages/storage/FileManager.ts:220](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L220)
+Defined in: [packages/storage/FileManager.ts:220](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L220)
 
 Writes an execution result as JSON.
 
@@ -269,7 +269,7 @@ Path to the written JSON file.
 
 > **getFileInfo**(`url`, `prefix?`): [`ResolvedFile`](../interfaces/ResolvedFile.md)
 
-Defined in: [packages/storage/FileManager.ts:246](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L246)
+Defined in: [packages/storage/FileManager.ts:246](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L246)
 
 Extracts filename and extension from URL.
 
@@ -299,7 +299,7 @@ path undefined => fud_timestamp
 
 > **sanitizeFilename**(`name`): `string`
 
-Defined in: [packages/storage/FileManager.ts:276](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L276)
+Defined in: [packages/storage/FileManager.ts:276](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L276)
 
 Sanitize filename by replacing invalid characters with underscores mostly for
 Windows OS which has a lot of reserved characters for filenames such as < > : " / \ | ? *
@@ -320,7 +320,7 @@ Windows OS which has a lot of reserved characters for filenames such as < > : " 
 
 > **detectResourceType**(`url`, `request`): `object`
 
-Defined in: [packages/storage/FileManager.ts:342](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L342)
+Defined in: [packages/storage/FileManager.ts:342](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L342)
 
 Infers MIME type and extension for a media URL.
 
@@ -358,7 +358,7 @@ Detected or provider-default resource type.
 
 > **deriveResolvedFile**(`initial`, `finalUrl`, `headers`, `isFmp4?`, `prefix?`): [`ResolvedFile`](../interfaces/ResolvedFile.md)
 
-Defined in: [packages/storage/FileManager.ts:375](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/storage/FileManager.ts#L375)
+Defined in: [packages/storage/FileManager.ts:375](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/storage/FileManager.ts#L375)
 
 Reconciles the initial file guess with the final response URL and headers.
 

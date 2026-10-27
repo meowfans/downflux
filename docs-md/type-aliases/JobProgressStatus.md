@@ -8,4 +8,4 @@
 
 > **JobProgressStatus** = `"STARTED"` \| `"QUEUED"` \| `"DOWNLOADING"` \| `"DOWNLOADED"` \| `"COMPLETED"` \| `"FAILED"` \| `"ABORTED"` \| `"COMPLETED"` \| `"EXTRACTION-HOOK"` \| `"DOWNLOADING-HOOK"`
 
-Defined in: [packages/types/ProgressTypes.ts:1](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ProgressTypes.ts#L1)
+Defined in: [packages/types/ProgressTypes.ts:1](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ProgressTypes.ts#L1)

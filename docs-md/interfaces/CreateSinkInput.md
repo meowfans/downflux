@@ -6,7 +6,7 @@
 
 # Interface: CreateSinkInput
 
-Defined in: [packages/contracts/StorageContracts.ts:4](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L4)
+Defined in: [packages/contracts/StorageContracts.ts:4](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L4)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/StorageContracts.ts:4](https://github.com/meowfa
 
 > **provider**: [`Provider`](../enumerations/Provider.md)
 
-Defined in: [packages/contracts/StorageContracts.ts:5](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L5)
+Defined in: [packages/contracts/StorageContracts.ts:5](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L5)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/StorageContracts.ts:5](https://github.com/meowfa
 
 > **type**: [`OutputType`](../enumerations/OutputType.md)
 
-Defined in: [packages/contracts/StorageContracts.ts:6](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L6)
+Defined in: [packages/contracts/StorageContracts.ts:6](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L6)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/StorageContracts.ts:6](https://github.com/meowfa
 
 > `optional` **transCodeOptions?**: [`TranscodeOptions`](TranscodeOptions.md)
 
-Defined in: [packages/contracts/StorageContracts.ts:7](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L7)
+Defined in: [packages/contracts/StorageContracts.ts:7](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L7)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/contracts/StorageContracts.ts:7](https://github.com/meowfa
 
 > `optional` **directoryPath?**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:8](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L8)
+Defined in: [packages/contracts/StorageContracts.ts:8](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L8)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/contracts/StorageContracts.ts:8](https://github.com/meowfa
 
 > **filename**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:9](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L9)
+Defined in: [packages/contracts/StorageContracts.ts:9](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L9)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/contracts/StorageContracts.ts:9](https://github.com/meowfa
 
 > **identifier**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:10](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L10)
+Defined in: [packages/contracts/StorageContracts.ts:10](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L10)
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: [packages/contracts/StorageContracts.ts:10](https://github.com/meowf
 
 > `optional` **noDownload?**: `boolean`
 
-Defined in: [packages/contracts/StorageContracts.ts:11](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L11)
+Defined in: [packages/contracts/StorageContracts.ts:11](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L11)

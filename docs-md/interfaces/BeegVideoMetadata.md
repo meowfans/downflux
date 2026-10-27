@@ -6,7 +6,7 @@
 
 # Interface: BeegVideoMetadata
 
-Defined in: [packages/providers/beeg/BeegContracts.ts:13](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegContracts.ts#L13)
+Defined in: [packages/providers/beeg/BeegContracts.ts:13](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/beeg/BeegContracts.ts#L13)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/beeg/BeegContracts.ts:13](https://github.com/meo
 
 > **id**: `number`
 
-Defined in: [packages/providers/beeg/BeegContracts.ts:14](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegContracts.ts#L14)
+Defined in: [packages/providers/beeg/BeegContracts.ts:14](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/beeg/BeegContracts.ts#L14)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/providers/beeg/BeegContracts.ts:14](https://github.com/meo
 
 > **codec**: `string`
 
-Defined in: [packages/providers/beeg/BeegContracts.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegContracts.ts#L15)
+Defined in: [packages/providers/beeg/BeegContracts.ts:15](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/beeg/BeegContracts.ts#L15)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/providers/beeg/BeegContracts.ts:15](https://github.com/meo
 
 > **quality**: `number`
 
-Defined in: [packages/providers/beeg/BeegContracts.ts:16](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegContracts.ts#L16)
+Defined in: [packages/providers/beeg/BeegContracts.ts:16](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/beeg/BeegContracts.ts#L16)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/providers/beeg/BeegContracts.ts:16](https://github.com/meo
 
 > **video\_codec**: `string`
 
-Defined in: [packages/providers/beeg/BeegContracts.ts:17](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegContracts.ts#L17)
+Defined in: [packages/providers/beeg/BeegContracts.ts:17](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/beeg/BeegContracts.ts#L17)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/providers/beeg/BeegContracts.ts:17](https://github.com/meo
 
 > **audio\_codec**: `string`
 
-Defined in: [packages/providers/beeg/BeegContracts.ts:18](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegContracts.ts#L18)
+Defined in: [packages/providers/beeg/BeegContracts.ts:18](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/beeg/BeegContracts.ts#L18)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/providers/beeg/BeegContracts.ts:18](https://github.com/meo
 
 > **size**: `number`
 
-Defined in: [packages/providers/beeg/BeegContracts.ts:19](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegContracts.ts#L19)
+Defined in: [packages/providers/beeg/BeegContracts.ts:19](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/beeg/BeegContracts.ts#L19)
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: [packages/providers/beeg/BeegContracts.ts:19](https://github.com/meo
 
 > **url**: `string`
 
-Defined in: [packages/providers/beeg/BeegContracts.ts:20](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/beeg/BeegContracts.ts#L20)
+Defined in: [packages/providers/beeg/BeegContracts.ts:20](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/beeg/BeegContracts.ts#L20)

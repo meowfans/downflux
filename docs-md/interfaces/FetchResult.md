@@ -6,7 +6,7 @@
 
 # Interface: FetchResult
 
-Defined in: [packages/contracts/DownloadContracts.ts:81](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/DownloadContracts.ts#L81)
+Defined in: [packages/contracts/DownloadContracts.ts:81](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/DownloadContracts.ts#L81)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:81](https://github.com/meow
 
 > **html**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:82](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/DownloadContracts.ts#L82)
+Defined in: [packages/contracts/DownloadContracts.ts:82](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/DownloadContracts.ts#L82)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:82](https://github.com/meow
 
 > **buffer**: `Buffer`
 
-Defined in: [packages/contracts/DownloadContracts.ts:83](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/DownloadContracts.ts#L83)
+Defined in: [packages/contracts/DownloadContracts.ts:83](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/DownloadContracts.ts#L83)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:83](https://github.com/meow
 
 > **finalUrl**: `string`
 
-Defined in: [packages/contracts/DownloadContracts.ts:84](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/DownloadContracts.ts#L84)
+Defined in: [packages/contracts/DownloadContracts.ts:84](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/DownloadContracts.ts#L84)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:84](https://github.com/meow
 
 > **status**: `number`
 
-Defined in: [packages/contracts/DownloadContracts.ts:85](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/DownloadContracts.ts#L85)
+Defined in: [packages/contracts/DownloadContracts.ts:85](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/DownloadContracts.ts#L85)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/contracts/DownloadContracts.ts:85](https://github.com/meow
 
 > **ok**: `boolean`
 
-Defined in: [packages/contracts/DownloadContracts.ts:86](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/DownloadContracts.ts#L86)
+Defined in: [packages/contracts/DownloadContracts.ts:86](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/DownloadContracts.ts#L86)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [packages/contracts/DownloadContracts.ts:86](https://github.com/meow
 
 > **headers**: `Record`\<`string`, `string`\>
 
-Defined in: [packages/contracts/DownloadContracts.ts:87](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/DownloadContracts.ts#L87)
+Defined in: [packages/contracts/DownloadContracts.ts:87](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/DownloadContracts.ts#L87)

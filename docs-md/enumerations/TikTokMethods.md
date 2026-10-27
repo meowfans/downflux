@@ -6,7 +6,7 @@
 
 # Enumeration: TikTokMethods
 
-Defined in: [packages/providers/tiktok/TikTokTypes.ts:1](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tiktok/TikTokTypes.ts#L1)
+Defined in: [packages/providers/tiktok/TikTokTypes.ts:1](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/tiktok/TikTokTypes.ts#L1)
 
 ## Enumeration Members
 
@@ -14,4 +14,4 @@ Defined in: [packages/providers/tiktok/TikTokTypes.ts:1](https://github.com/meow
 
 > **getVideo**: `"getVideo"`
 
-Defined in: [packages/providers/tiktok/TikTokTypes.ts:2](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/tiktok/TikTokTypes.ts#L2)
+Defined in: [packages/providers/tiktok/TikTokTypes.ts:2](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/tiktok/TikTokTypes.ts#L2)

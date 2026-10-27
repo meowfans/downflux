@@ -6,7 +6,7 @@
 
 # Interface: DirectoryOutputOptions
 
-Defined in: [packages/contracts/StorageContracts.ts:112](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L112)
+Defined in: [packages/contracts/StorageContracts.ts:112](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L112)
 
 Directory output options.
 Controls where downloaded files are written.
@@ -17,7 +17,7 @@ Controls where downloaded files are written.
 
 > `optional` **directoryPath?**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:117](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L117)
+Defined in: [packages/contracts/StorageContracts.ts:117](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L117)
 
 Directory path for written files
 
@@ -33,7 +33,7 @@ process.cwd()
 
 > `optional` **prefix?**: `string`
 
-Defined in: [packages/contracts/StorageContracts.ts:120](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L120)
+Defined in: [packages/contracts/StorageContracts.ts:120](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L120)
 
 Filename prefix
 
@@ -41,9 +41,9 @@ Filename prefix
 
 ### pattern?
 
-> `optional` **pattern?**: `"recursive"` \| `"extension"` \| `"provider"`
+> `optional` **pattern?**: `"extension"` \| `"provider"` \| `"recursive"`
 
-Defined in: [packages/contracts/StorageContracts.ts:132](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/StorageContracts.ts#L132)
+Defined in: [packages/contracts/StorageContracts.ts:132](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/StorageContracts.ts#L132)
 
 Directory structure pattern for recursive downloads.
 

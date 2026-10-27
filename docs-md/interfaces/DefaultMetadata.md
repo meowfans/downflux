@@ -6,7 +6,7 @@
 
 # Interface: DefaultMetadata
 
-Defined in: [packages/contracts/ExecutionContracts.ts:273](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L273)
+Defined in: [packages/contracts/ExecutionContracts.ts:273](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L273)
 
 ## Extended by
 
@@ -21,7 +21,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:273](https://github.com/me
 
 > **title**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L274)
+Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L274)
 
 ***
 
@@ -29,7 +29,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/me
 
 > **tags**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L275)
+Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L275)
 
 ***
 
@@ -37,7 +37,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/me
 
 > **description**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L276)
+Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L276)
 
 ***
 
@@ -45,4 +45,4 @@ Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/me
 
 > **pageUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L277)
+Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L277)

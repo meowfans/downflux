@@ -6,7 +6,7 @@
 
 # Interface: HttpAgentOptions
 
-Defined in: [packages/contracts/ExecutionContracts.ts:166](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L166)
+Defined in: [packages/contracts/ExecutionContracts.ts:166](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L166)
 
 ## Extended by
 
@@ -18,7 +18,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:166](https://github.com/me
 
 > `optional` **userAgent?**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:167](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L167)
+Defined in: [packages/contracts/ExecutionContracts.ts:167](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L167)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:167](https://github.com/me
 
 > `optional` **enableSniSpoofing?**: `boolean`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:169](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L169)
+Defined in: [packages/contracts/ExecutionContracts.ts:169](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L169)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:169](https://github.com/me
 
 > `optional` **proxy?**: [`ProxyOptions`](ProxyOptions.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:171](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L171)
+Defined in: [packages/contracts/ExecutionContracts.ts:171](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L171)
 
 ***
 
@@ -42,4 +42,4 @@ Defined in: [packages/contracts/ExecutionContracts.ts:171](https://github.com/me
 
 > `optional` **dispatcher?**: `Dispatcher`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:173](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L173)
+Defined in: [packages/contracts/ExecutionContracts.ts:173](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L173)

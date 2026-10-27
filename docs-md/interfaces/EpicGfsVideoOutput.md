@@ -6,7 +6,7 @@
 
 # Interface: EpicGfsVideoOutput
 
-Defined in: [packages/providers/epicgfs/EpicGfsContracts.ts:6](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/epicgfs/EpicGfsContracts.ts#L6)
+Defined in: [packages/providers/epicgfs/EpicGfsContracts.ts:6](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/epicgfs/EpicGfsContracts.ts#L6)
 
 ## Extends
 
@@ -22,7 +22,7 @@ Defined in: [packages/providers/epicgfs/EpicGfsContracts.ts:6](https://github.co
 
 > **title**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L274)
+Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L274)
 
 #### Inherited from
 
@@ -34,7 +34,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/me
 
 > **tags**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L275)
+Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L275)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/me
 
 > **description**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L276)
+Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L276)
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/me
 
 > **pageUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L277)
+Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L277)
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/me
 
 > **poster**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L286)
+Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L286)
 
 #### Inherited from
 
@@ -82,7 +82,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/me
 
 > **videos**: [`VideosFormat`](VideosFormat.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L287)
+Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L287)
 
 #### Inherited from
 
@@ -94,7 +94,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/me
 
 > **videoId**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:291](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L291)
+Defined in: [packages/contracts/ExecutionContracts.ts:291](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L291)
 
 #### Inherited from
 
@@ -106,7 +106,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:291](https://github.com/me
 
 > **previews**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:292](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L292)
+Defined in: [packages/contracts/ExecutionContracts.ts:292](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L292)
 
 #### Inherited from
 
@@ -118,7 +118,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:292](https://github.com/me
 
 > `optional` **timelineScreenCount?**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:293](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L293)
+Defined in: [packages/contracts/ExecutionContracts.ts:293](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L293)
 
 #### Inherited from
 
@@ -130,7 +130,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:293](https://github.com/me
 
 > `optional` **timelineScreens?**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:294](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L294)
+Defined in: [packages/contracts/ExecutionContracts.ts:294](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L294)
 
 #### Inherited from
 
@@ -142,7 +142,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:294](https://github.com/me
 
 > `optional` **starred?**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:295](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L295)
+Defined in: [packages/contracts/ExecutionContracts.ts:295](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L295)
 
 #### Inherited from
 
@@ -154,7 +154,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:295](https://github.com/me
 
 > `optional` **uploader?**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:296](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L296)
+Defined in: [packages/contracts/ExecutionContracts.ts:296](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L296)
 
 #### Inherited from
 

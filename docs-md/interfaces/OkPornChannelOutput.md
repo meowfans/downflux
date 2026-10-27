@@ -6,7 +6,7 @@
 
 # Interface: OkPornChannelOutput
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:92](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/okporn/OkPornContracts.ts#L92)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:92](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/okporn/OkPornContracts.ts#L92)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/okporn/OkPornContracts.ts:92](https://github.com
 
 > **channelUrls**: `string`[]
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:93](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/okporn/OkPornContracts.ts#L93)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:93](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/okporn/OkPornContracts.ts#L93)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [packages/providers/okporn/OkPornContracts.ts:93](https://github.com
 
 > **channelCount**: `number`
 
-Defined in: [packages/providers/okporn/OkPornContracts.ts:94](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/okporn/OkPornContracts.ts#L94)
+Defined in: [packages/providers/okporn/OkPornContracts.ts:94](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/okporn/OkPornContracts.ts#L94)

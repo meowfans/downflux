@@ -6,7 +6,7 @@
 
 # Class: StrategyRegistry
 
-Defined in: [packages/core/registries/StrategyRegistry.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/StrategyRegistry.ts#L12)
+Defined in: [packages/core/registries/StrategyRegistry.ts:12](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/registries/StrategyRegistry.ts#L12)
 
 Supplies the transport strategy for the running job.
 
@@ -21,7 +21,7 @@ The instance is created once and reused; strategies are stateless helpers.
 
 > **new StrategyRegistry**(`progressManager`, `components?`): `StrategyRegistry`
 
-Defined in: [packages/core/registries/StrategyRegistry.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/StrategyRegistry.ts#L15)
+Defined in: [packages/core/registries/StrategyRegistry.ts:15](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/registries/StrategyRegistry.ts#L15)
 
 #### Parameters
 
@@ -43,7 +43,7 @@ Defined in: [packages/core/registries/StrategyRegistry.ts:15](https://github.com
 
 > **getStrategy**(): `Promise`\<[`BaseStrategy`](BaseStrategy.md)\>
 
-Defined in: [packages/core/registries/StrategyRegistry.ts:20](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/StrategyRegistry.ts#L20)
+Defined in: [packages/core/registries/StrategyRegistry.ts:20](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/registries/StrategyRegistry.ts#L20)
 
 #### Returns
 

@@ -6,7 +6,7 @@
 
 # Interface: PipelineExtractionHandler\<T\>
 
-Defined in: [packages/contracts/PipelineContracts.ts:33](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L33)
+Defined in: [packages/contracts/PipelineContracts.ts:33](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L33)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:33](https://github.com/meow
 
 > **getUrl**(`item`): `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:34](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L34)
+Defined in: [packages/contracts/PipelineContracts.ts:34](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L34)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:34](https://github.com/meow
 
 > **getMedia**(`item`): [`MediaType`](../enumerations/MediaType.md)
 
-Defined in: [packages/contracts/PipelineContracts.ts:35](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L35)
+Defined in: [packages/contracts/PipelineContracts.ts:35](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L35)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:35](https://github.com/meow
 
 > `optional` **getMime**(`item`): `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:36](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L36)
+Defined in: [packages/contracts/PipelineContracts.ts:36](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L36)
 
 #### Parameters
 
@@ -74,7 +74,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:36](https://github.com/meow
 
 > `optional` **getExt**(`item`): [`AllowedExtension`](../type-aliases/AllowedExtension.md)
 
-Defined in: [packages/contracts/PipelineContracts.ts:37](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L37)
+Defined in: [packages/contracts/PipelineContracts.ts:37](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L37)
 
 #### Parameters
 
@@ -92,7 +92,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:37](https://github.com/meow
 
 > `optional` **getId**(`item`): `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:38](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L38)
+Defined in: [packages/contracts/PipelineContracts.ts:38](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L38)
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:38](https://github.com/meow
 
 > `optional` **getSecondaryId**(`item`): `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:39](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L39)
+Defined in: [packages/contracts/PipelineContracts.ts:39](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L39)
 
 #### Parameters
 
@@ -128,7 +128,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:39](https://github.com/meow
 
 > `optional` **getUsername**(`item`): `string`
 
-Defined in: [packages/contracts/PipelineContracts.ts:40](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L40)
+Defined in: [packages/contracts/PipelineContracts.ts:40](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L40)
 
 #### Parameters
 

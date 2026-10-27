@@ -6,7 +6,7 @@
 
 # Interface: PerfectGirlsChannelOutput
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:93](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L93)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:93](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L93)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:93](https:
 
 > **channelUrls**: `string`[]
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:94](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L94)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:94](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L94)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:94](https:
 
 > **channelCount**: `number`
 
-Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:95](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L95)
+Defined in: [packages/providers/perfectgirls/PerfectGirlsContracts.ts:95](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/perfectgirls/PerfectGirlsContracts.ts#L95)

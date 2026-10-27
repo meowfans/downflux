@@ -6,7 +6,7 @@
 
 # Class: PipelineRegistry
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:11](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/PipelineRegistry.ts#L11)
+Defined in: [packages/core/registries/PipelineRegistry.ts:11](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/registries/PipelineRegistry.ts#L11)
 
 Builds downloadable items using the pipeline the provider supplied.
 
@@ -20,7 +20,7 @@ Falls back to [BasePipeline](BasePipeline.md) when a provider declares none.
 
 > **new PipelineRegistry**(`fileManager`, `components?`): `PipelineRegistry`
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/PipelineRegistry.ts#L12)
+Defined in: [packages/core/registries/PipelineRegistry.ts:12](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/registries/PipelineRegistry.ts#L12)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [packages/core/registries/PipelineRegistry.ts:12](https://github.com
 
 > `protected` `readonly` **fileManager**: [`FileManager`](FileManager.md)
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:13](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/PipelineRegistry.ts#L13)
+Defined in: [packages/core/registries/PipelineRegistry.ts:13](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/registries/PipelineRegistry.ts#L13)
 
 ## Methods
 
@@ -50,7 +50,7 @@ Defined in: [packages/core/registries/PipelineRegistry.ts:13](https://github.com
 
 > **build**\<`TResult`, `TExec`\>(`metadata`, `request`): `Promise`\<[`PipelineItem`](../interfaces/PipelineItem.md)[]\>
 
-Defined in: [packages/core/registries/PipelineRegistry.ts:23](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/PipelineRegistry.ts#L23)
+Defined in: [packages/core/registries/PipelineRegistry.ts:23](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/registries/PipelineRegistry.ts#L23)
 
 Converts normalized metadata into pipeline items.
 

@@ -6,7 +6,7 @@
 
 # Interface: PipelineHook
 
-Defined in: [packages/contracts/PipelineContracts.ts:18](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L18)
+Defined in: [packages/contracts/PipelineContracts.ts:18](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L18)
 
 ## Methods
 
@@ -14,7 +14,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:18](https://github.com/meow
 
 > `optional` **onExtract**(`item`): `void` \| `Promise`\<`void`\>
 
-Defined in: [packages/contracts/PipelineContracts.ts:19](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L19)
+Defined in: [packages/contracts/PipelineContracts.ts:19](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L19)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [packages/contracts/PipelineContracts.ts:19](https://github.com/meow
 
 > `optional` **onDownload**(`payload`): `void` \| `Promise`\<`void`\>
 
-Defined in: [packages/contracts/PipelineContracts.ts:20](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/PipelineContracts.ts#L20)
+Defined in: [packages/contracts/PipelineContracts.ts:20](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/PipelineContracts.ts#L20)
 
 #### Parameters
 

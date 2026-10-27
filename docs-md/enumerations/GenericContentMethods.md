@@ -6,7 +6,7 @@
 
 # Enumeration: GenericContentMethods
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/shared/GenericContentProvider.ts#L12)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:12](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/shared/GenericContentProvider.ts#L12)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:12](https://git
 
 > **getMetadata**: `"getMetadata"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:13](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/shared/GenericContentProvider.ts#L13)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:13](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/shared/GenericContentProvider.ts#L13)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:13](https://git
 
 > **getLinks**: `"getLinks"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:14](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/shared/GenericContentProvider.ts#L14)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:14](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/shared/GenericContentProvider.ts#L14)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:14](https://git
 
 > **getImages**: `"getImages"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/shared/GenericContentProvider.ts#L15)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:15](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/shared/GenericContentProvider.ts#L15)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:15](https://git
 
 > **getVideos**: `"getVideos"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:16](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/shared/GenericContentProvider.ts#L16)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:16](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/shared/GenericContentProvider.ts#L16)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:16](https://git
 
 > **getAudio**: `"getAudio"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:17](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/shared/GenericContentProvider.ts#L17)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:17](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/shared/GenericContentProvider.ts#L17)
 
 ***
 
@@ -54,4 +54,4 @@ Defined in: [packages/providers/shared/GenericContentProvider.ts:17](https://git
 
 > **getAllUrls**: `"getAllUrls"`
 
-Defined in: [packages/providers/shared/GenericContentProvider.ts:18](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/shared/GenericContentProvider.ts#L18)
+Defined in: [packages/providers/shared/GenericContentProvider.ts:18](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/shared/GenericContentProvider.ts#L18)

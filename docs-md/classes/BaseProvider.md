@@ -6,7 +6,7 @@
 
 # Abstract Class: BaseProvider\<TExec\>
 
-Defined in: [packages/base/BaseProvider.ts:40](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L40)
+Defined in: [packages/base/BaseProvider.ts:40](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L40)
 
 Base provider API for every supported site.
 
@@ -81,7 +81,7 @@ methods that turn a site URL into an execution request.
 
 > **new BaseProvider**\<`TExec`\>(`url`, `config`): `BaseProvider`\<`TExec`\>
 
-Defined in: [packages/base/BaseProvider.ts:59](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L59)
+Defined in: [packages/base/BaseProvider.ts:59](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L59)
 
 #### Parameters
 
@@ -103,7 +103,7 @@ Defined in: [packages/base/BaseProvider.ts:59](https://github.com/meowfans/downf
 
 > `protected` **executionOptions**: [`ExecutionOptions`](../interfaces/ExecutionOptions.md) = `{}`
 
-Defined in: [packages/base/BaseProvider.ts:41](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L41)
+Defined in: [packages/base/BaseProvider.ts:41](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L41)
 
 ***
 
@@ -111,7 +111,7 @@ Defined in: [packages/base/BaseProvider.ts:41](https://github.com/meowfans/downf
 
 > `protected` **httpOptions**: [`HttpFetchOptions`](../interfaces/HttpFetchOptions.md) = `{}`
 
-Defined in: [packages/base/BaseProvider.ts:48](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L48)
+Defined in: [packages/base/BaseProvider.ts:48](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L48)
 
 ***
 
@@ -119,7 +119,7 @@ Defined in: [packages/base/BaseProvider.ts:48](https://github.com/meowfans/downf
 
 > `protected` `readonly` **deps**: [`CoordinatorDependencies`](../interfaces/CoordinatorDependencies.md)
 
-Defined in: [packages/base/BaseProvider.ts:49](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L49)
+Defined in: [packages/base/BaseProvider.ts:49](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L49)
 
 ***
 
@@ -127,7 +127,7 @@ Defined in: [packages/base/BaseProvider.ts:49](https://github.com/meowfans/downf
 
 > `protected` `readonly` **provider**: [`Provider`](../enumerations/Provider.md)
 
-Defined in: [packages/base/BaseProvider.ts:50](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L50)
+Defined in: [packages/base/BaseProvider.ts:50](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L50)
 
 ***
 
@@ -135,7 +135,7 @@ Defined in: [packages/base/BaseProvider.ts:50](https://github.com/meowfans/downf
 
 > `protected` `readonly` **urlPattern**: `RegExp`
 
-Defined in: [packages/base/BaseProvider.ts:51](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L51)
+Defined in: [packages/base/BaseProvider.ts:51](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L51)
 
 ***
 
@@ -143,7 +143,7 @@ Defined in: [packages/base/BaseProvider.ts:51](https://github.com/meowfans/downf
 
 > `protected` `readonly` **providerMetadata**: [`ProviderMetadata`](../interfaces/ProviderMetadata.md)
 
-Defined in: [packages/base/BaseProvider.ts:52](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L52)
+Defined in: [packages/base/BaseProvider.ts:52](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L52)
 
 ***
 
@@ -151,7 +151,7 @@ Defined in: [packages/base/BaseProvider.ts:52](https://github.com/meowfans/downf
 
 > `protected` `readonly` **url**: `string`
 
-Defined in: [packages/base/BaseProvider.ts:60](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L60)
+Defined in: [packages/base/BaseProvider.ts:60](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L60)
 
 ***
 
@@ -159,7 +159,7 @@ Defined in: [packages/base/BaseProvider.ts:60](https://github.com/meowfans/downf
 
 > `protected` **config**: [`ProviderConfig`](../interfaces/ProviderConfig.md)
 
-Defined in: [packages/base/BaseProvider.ts:61](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L61)
+Defined in: [packages/base/BaseProvider.ts:61](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L61)
 
 ## Accessors
 
@@ -169,7 +169,7 @@ Defined in: [packages/base/BaseProvider.ts:61](https://github.com/meowfans/downf
 
 > **get** `protected` **metadata**(): [`ProviderMetadata`](../interfaces/ProviderMetadata.md)
 
-Defined in: [packages/base/BaseProvider.ts:55](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L55)
+Defined in: [packages/base/BaseProvider.ts:55](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L55)
 
 Provider capabilities, integration status, and access restrictions.
 
@@ -185,7 +185,7 @@ Provider capabilities, integration status, and access restrictions.
 
 > **get** `protected` **ORIGIN**(): `string`
 
-Defined in: [packages/base/BaseProvider.ts:100](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L100)
+Defined in: [packages/base/BaseProvider.ts:100](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L100)
 
 ##### Returns
 
@@ -199,7 +199,7 @@ Defined in: [packages/base/BaseProvider.ts:100](https://github.com/meowfans/down
 
 > **get** `protected` **HOST\_NAME**(): `string`
 
-Defined in: [packages/base/BaseProvider.ts:104](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L104)
+Defined in: [packages/base/BaseProvider.ts:104](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L104)
 
 ##### Returns
 
@@ -211,7 +211,7 @@ Defined in: [packages/base/BaseProvider.ts:104](https://github.com/meowfans/down
 
 > `protected` **isValidHostName**(): `boolean`
 
-Defined in: [packages/base/BaseProvider.ts:108](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L108)
+Defined in: [packages/base/BaseProvider.ts:108](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L108)
 
 #### Returns
 
@@ -223,7 +223,7 @@ Defined in: [packages/base/BaseProvider.ts:108](https://github.com/meowfans/down
 
 > **setAuth**(`auth`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:129](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L129)
+Defined in: [packages/base/BaseProvider.ts:129](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L129)
 
 Sets authentication credentials for the provider.
 
@@ -250,7 +250,7 @@ Supports multiple authentication methods: cookies, bearer tokens, CSRF tokens, A
 
 > **setHeaders**(`headers`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:148](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L148)
+Defined in: [packages/base/BaseProvider.ts:148](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L148)
 
 Sets custom HTTP headers.
 
@@ -272,7 +272,7 @@ Request header map
 
 > **setTimeout**(`timeoutMs`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:157](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L157)
+Defined in: [packages/base/BaseProvider.ts:157](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L157)
 
 Sets HTTP timeout.
 
@@ -294,7 +294,7 @@ Timeout in milliseconds
 
 > **setRetries**(`retries`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:166](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L166)
+Defined in: [packages/base/BaseProvider.ts:166](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L166)
 
 Sets fetch retry count.
 
@@ -316,7 +316,7 @@ Retry attempt count
 
 > **setTransformOutput**(`transform?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:175](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L175)
+Defined in: [packages/base/BaseProvider.ts:175](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L175)
 
 Transform output to provider-specific result type.
 
@@ -338,7 +338,7 @@ Default is true, which applies the default transformation. Set to false to retur
 
 > **setHttpOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:184](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L184)
+Defined in: [packages/base/BaseProvider.ts:184](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L184)
 
 Sets HTTP fetch options.
 
@@ -360,7 +360,7 @@ HTTP options to merge
 
 > **setNoDownload**(`noDownload?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:194](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L194)
+Defined in: [packages/base/BaseProvider.ts:194](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L194)
 
 Sets no download flag.
 
@@ -388,7 +388,7 @@ false - set to true to skip the download phase and only perform extraction (usef
 
 > **setTranscodeOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:207](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L207)
+Defined in: [packages/base/BaseProvider.ts:207](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L207)
 
 Sets transcode options.
 
@@ -413,7 +413,7 @@ Make sure your OS can handle it
 
 > **setPreferredFormat**(`format`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:216](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L216)
+Defined in: [packages/base/BaseProvider.ts:216](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L216)
 
 Sets preferred video format.
 
@@ -435,7 +435,7 @@ Video format (hls or mp4)
 
 > **setPreferredCodec**(`codec`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:230](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L230)
+Defined in: [packages/base/BaseProvider.ts:230](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L230)
 
 Sets preferred video codec.
 
@@ -462,7 +462,7 @@ If the provider supports it, it will try to download the video in the specified 
 
 > **setJobOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:239](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L239)
+Defined in: [packages/base/BaseProvider.ts:239](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L239)
 
 Sets ExecutionCoordinator options.
 
@@ -484,7 +484,7 @@ Job options to merge
 
 > **setAgentOptions**(`opts`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:248](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L248)
+Defined in: [packages/base/BaseProvider.ts:248](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L248)
 
 Sets HTTP agent options.
 
@@ -506,7 +506,7 @@ HTTP agent options to merge
 
 > **setMaxDownloads**(`maxDownloads`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:257](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L257)
+Defined in: [packages/base/BaseProvider.ts:257](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L257)
 
 Sets maximum downloads.
 
@@ -528,7 +528,7 @@ Download limit
 
 > **setAllowedExtensions**(...`extensions`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:266](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L266)
+Defined in: [packages/base/BaseProvider.ts:266](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L266)
 
 Sets allowed file extensions.
 
@@ -550,7 +550,7 @@ File extensions such as `jpg` or `png`
 
 > **onProgress**(`handler`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L275)
+Defined in: [packages/base/BaseProvider.ts:275](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L275)
 
 Sets progress handler.
 
@@ -572,7 +572,7 @@ Progress event callback
 
 > **setProgressLogging**(`enabled?`, `options?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:294](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L294)
+Defined in: [packages/base/BaseProvider.ts:294](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L294)
 
 Enables console progress logging.
 
@@ -616,7 +616,7 @@ library's.
 
 > **setOutput**(`type`, `config?`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:307](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L307)
+Defined in: [packages/base/BaseProvider.ts:307](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L307)
 
 Sets output type.
 
@@ -650,7 +650,7 @@ OutputType.JSON
 
 > **setExecutionType**(`type`): `this`
 
-Defined in: [packages/base/BaseProvider.ts:328](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L328)
+Defined in: [packages/base/BaseProvider.ts:328](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L328)
 
 Sets execution strategy.
 
@@ -686,7 +686,7 @@ Use with caution and test thoroughly if you choose to use `PARALLEL` execution.
 
 > **whenSettled**(): `Promise`\<[`JobSettlement`](../interfaces/JobSettlement.md)\>
 
-Defined in: [packages/base/BaseProvider.ts:391](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L391)
+Defined in: [packages/base/BaseProvider.ts:391](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L391)
 
 Waits for the download phase of the most recent job.
 
@@ -721,7 +721,7 @@ that never download.
 
 > `protected` **assertSupported**(`method?`): `void`
 
-Defined in: [packages/base/BaseProvider.ts:406](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L406)
+Defined in: [packages/base/BaseProvider.ts:406](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L406)
 
 Enforces the capability flags declared in [ProviderMetadata](../interfaces/ProviderMetadata.md).
 
@@ -750,7 +750,7 @@ discovered the limitation as an obscure failure deep in the transport layer.
 
 > **dispose**(`options?`): `Promise`\<`void`\>
 
-Defined in: [packages/base/BaseProvider.ts:441](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L441)
+Defined in: [packages/base/BaseProvider.ts:441](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L441)
 
 Releases resources held by this provider instance.
 
@@ -778,7 +778,7 @@ with DownFlux entirely rather than between jobs.
 
 > `protected` **buildRequest**(`overrides?`): `TExec`
 
-Defined in: [packages/base/BaseProvider.ts:456](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L456)
+Defined in: [packages/base/BaseProvider.ts:456](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L456)
 
 Builds the execution request passed to the coordinator layer.
 
@@ -802,7 +802,7 @@ A typed request containing provider metadata and execution options.
 
 > `protected` **execute**\<`TResult`\>(`overrides`): `Promise`\<`TResult`\>
 
-Defined in: [packages/base/BaseProvider.ts:477](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L477)
+Defined in: [packages/base/BaseProvider.ts:477](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L477)
 
 Runs extraction and optional downloads through the shared coordinator.
 
@@ -832,7 +832,7 @@ Extracted output in the shape requested by the provider method.
 
 > `protected` **makeTargets**(`sourceUrl`, `range`, `provider`, `method`, `addTrailingSlash?`): `object`
 
-Defined in: [packages/base/BaseProvider.ts:512](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseProvider.ts#L512)
+Defined in: [packages/base/BaseProvider.ts:512](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseProvider.ts#L512)
 
 Builds paginated target URLs for list-like provider methods.
 

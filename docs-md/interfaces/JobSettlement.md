@@ -6,7 +6,7 @@
 
 # Interface: JobSettlement
 
-Defined in: [packages/contracts/ExecutionContracts.ts:216](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L216)
+Defined in: [packages/contracts/ExecutionContracts.ts:216](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L216)
 
 Outcome of a job's download phase.
 
@@ -22,7 +22,7 @@ only rejects if the download pipeline itself could not run.
 
 > **downloaded**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:217](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L217)
+Defined in: [packages/contracts/ExecutionContracts.ts:217](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L217)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:217](https://github.com/me
 
 > **failed**: `number`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:218](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L218)
+Defined in: [packages/contracts/ExecutionContracts.ts:218](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L218)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [packages/contracts/ExecutionContracts.ts:218](https://github.com/me
 
 > **errors**: `Error`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:219](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L219)
+Defined in: [packages/contracts/ExecutionContracts.ts:219](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L219)

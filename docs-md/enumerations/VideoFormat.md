@@ -6,7 +6,7 @@
 
 # Enumeration: VideoFormat
 
-Defined in: [packages/types/ExecutionTypes.ts:220](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L220)
+Defined in: [packages/types/ExecutionTypes.ts:220](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L220)
 
 Video stream formats
 
@@ -16,7 +16,7 @@ Video stream formats
 
 > **HLS**: `"hls"`
 
-Defined in: [packages/types/ExecutionTypes.ts:222](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L222)
+Defined in: [packages/types/ExecutionTypes.ts:222](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L222)
 
 HTTP Live Streaming
 
@@ -26,6 +26,6 @@ HTTP Live Streaming
 
 > **MP4**: `"mp4"`
 
-Defined in: [packages/types/ExecutionTypes.ts:225](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L225)
+Defined in: [packages/types/ExecutionTypes.ts:225](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L225)
 
 MPEG-4 Part 14

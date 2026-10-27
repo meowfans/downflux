@@ -6,7 +6,7 @@
 
 # Interface: UniqueVideosProps\<T\>
 
-Defined in: [packages/base/BaseTransformer.ts:21](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L21)
+Defined in: [packages/base/BaseTransformer.ts:21](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L21)
 
 Selectors used to normalize provider-specific video records.
 
@@ -24,7 +24,7 @@ Provider-specific video source record type.
 
 > **getUrl**: (`video`) => `string`
 
-Defined in: [packages/base/BaseTransformer.ts:22](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L22)
+Defined in: [packages/base/BaseTransformer.ts:22](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L22)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [packages/base/BaseTransformer.ts:22](https://github.com/meowfans/do
 
 > **getQuality**: (`video`) => [`VideoQuality`](../enumerations/VideoQuality.md)
 
-Defined in: [packages/base/BaseTransformer.ts:23](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L23)
+Defined in: [packages/base/BaseTransformer.ts:23](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L23)
 
 #### Parameters
 

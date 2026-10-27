@@ -6,7 +6,7 @@
 
 # Class: ProgressManager
 
-Defined in: [packages/core/progress/ProgressManager.ts:20](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/progress/ProgressManager.ts#L20)
+Defined in: [packages/core/progress/ProgressManager.ts:20](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/progress/ProgressManager.ts#L20)
 
 Manages progress updates during ExecutionCoordinator execution.
 
@@ -52,7 +52,7 @@ Defined in: node\_modules/.pnpm/@types+node@25.6.0/node\_modules/@types/node/eve
 
 > **get** **renderOptions**(): `object`
 
-Defined in: [packages/core/progress/ProgressManager.ts:97](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/progress/ProgressManager.ts#L97)
+Defined in: [packages/core/progress/ProgressManager.ts:97](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/progress/ProgressManager.ts#L97)
 
 Rendering preferences for the current job.
 
@@ -674,7 +674,7 @@ v0.3.5
 
 > **on**\<`E`\>(`eventName`, `listener`): `this`
 
-Defined in: [packages/core/progress/ProgressManager.ts:64](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/progress/ProgressManager.ts#L64)
+Defined in: [packages/core/progress/ProgressManager.ts:64](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/progress/ProgressManager.ts#L64)
 
 Adds the `listener` function to the end of the listeners array for the
 event named `eventName`. No checks are made to see if the `listener` has
@@ -743,7 +743,7 @@ v0.1.101
 
 > **emit**\<`E`\>(`eventName`, ...`args`): `boolean`
 
-Defined in: [packages/core/progress/ProgressManager.ts:68](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/progress/ProgressManager.ts#L68)
+Defined in: [packages/core/progress/ProgressManager.ts:68](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/progress/ProgressManager.ts#L68)
 
 Synchronously calls each of the listeners registered for the event named
 `eventName`, in the order they were registered, passing the supplied arguments
@@ -818,7 +818,7 @@ v0.1.26
 
 > **off**\<`E`\>(`eventName`, `listener`): `this`
 
-Defined in: [packages/core/progress/ProgressManager.ts:72](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/progress/ProgressManager.ts#L72)
+Defined in: [packages/core/progress/ProgressManager.ts:72](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/progress/ProgressManager.ts#L72)
 
 Alias for `emitter.removeListener()`.
 
@@ -856,7 +856,7 @@ v10.0.0
 
 > **once**\<`E`\>(`eventName`, `listener`): `this`
 
-Defined in: [packages/core/progress/ProgressManager.ts:76](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/progress/ProgressManager.ts#L76)
+Defined in: [packages/core/progress/ProgressManager.ts:76](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/progress/ProgressManager.ts#L76)
 
 Adds a **one-time** `listener` function for the event named `eventName`. The
 next time `eventName` is triggered, this listener is removed and then invoked.
@@ -922,7 +922,7 @@ v0.3.0
 
 > **init**(`options`): `void`
 
-Defined in: [packages/core/progress/ProgressManager.ts:88](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/progress/ProgressManager.ts#L88)
+Defined in: [packages/core/progress/ProgressManager.ts:88](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/progress/ProgressManager.ts#L88)
 
 Binds a new job to this manager.
 
@@ -948,7 +948,7 @@ same provider instance start from the previous run's numbers.
 
 > **update**(`params`): `void`
 
-Defined in: [packages/core/progress/ProgressManager.ts:266](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/progress/ProgressManager.ts#L266)
+Defined in: [packages/core/progress/ProgressManager.ts:266](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/progress/ProgressManager.ts#L266)
 
 #### Parameters
 

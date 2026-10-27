@@ -6,7 +6,7 @@
 
 # Class: TransformerRegistry
 
-Defined in: [packages/core/registries/TransformerRegistry.ts:15](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/TransformerRegistry.ts#L15)
+Defined in: [packages/core/registries/TransformerRegistry.ts:15](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/registries/TransformerRegistry.ts#L15)
 
 Resolves the transformer for the running job.
 
@@ -23,7 +23,7 @@ reachable and impossible to tree-shake.
 
 > **new TransformerRegistry**(`httpClient`, `hlsClient`, `progressManager`, `components?`): `TransformerRegistry`
 
-Defined in: [packages/core/registries/TransformerRegistry.ts:16](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/TransformerRegistry.ts#L16)
+Defined in: [packages/core/registries/TransformerRegistry.ts:16](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/registries/TransformerRegistry.ts#L16)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ Defined in: [packages/core/registries/TransformerRegistry.ts:16](https://github.
 
 > **transform**\<`TArgs`, `TResult`\>(`url`, `request`): `Promise`\<`TResult`\>
 
-Defined in: [packages/core/registries/TransformerRegistry.ts:30](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/registries/TransformerRegistry.ts#L30)
+Defined in: [packages/core/registries/TransformerRegistry.ts:30](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/registries/TransformerRegistry.ts#L30)
 
 Fetches and normalizes one target.
 

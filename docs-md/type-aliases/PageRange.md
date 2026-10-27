@@ -8,7 +8,7 @@
 
 > **PageRange** = `object`
 
-Defined in: [packages/types/StorageTypes.ts:2](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/StorageTypes.ts#L2)
+Defined in: [packages/types/StorageTypes.ts:2](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/StorageTypes.ts#L2)
 
 ## Properties
 
@@ -16,7 +16,7 @@ Defined in: [packages/types/StorageTypes.ts:2](https://github.com/meowfans/downf
 
 > **page**: `number`
 
-Defined in: [packages/types/StorageTypes.ts:2](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/StorageTypes.ts#L2)
+Defined in: [packages/types/StorageTypes.ts:2](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/StorageTypes.ts#L2)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [packages/types/StorageTypes.ts:2](https://github.com/meowfans/downf
 
 > **limit**: `number`
 
-Defined in: [packages/types/StorageTypes.ts:2](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/StorageTypes.ts#L2)
+Defined in: [packages/types/StorageTypes.ts:2](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/StorageTypes.ts#L2)

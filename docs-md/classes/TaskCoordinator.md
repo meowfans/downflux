@@ -6,7 +6,7 @@
 
 # Class: TaskCoordinator
 
-Defined in: [packages/core/coordinators/TaskCoordinator.ts:24](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/coordinators/TaskCoordinator.ts#L24)
+Defined in: [packages/core/coordinators/TaskCoordinator.ts:24](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/coordinators/TaskCoordinator.ts#L24)
 
 Coordinates concurrent work within an execution result.
 
@@ -22,7 +22,7 @@ and from the lower-level transfer code that writes individual items.
 
 > **new TaskCoordinator**(`transferCoordinator`, `fileManager`, `transformerRegistry`, `progressManager`, `pipelineRegistry`): `TaskCoordinator`
 
-Defined in: [packages/core/coordinators/TaskCoordinator.ts:27](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/coordinators/TaskCoordinator.ts#L27)
+Defined in: [packages/core/coordinators/TaskCoordinator.ts:27](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/coordinators/TaskCoordinator.ts#L27)
 
 #### Parameters
 
@@ -56,7 +56,7 @@ Defined in: [packages/core/coordinators/TaskCoordinator.ts:27](https://github.co
 
 > **runWithConcurrency**\<`T`\>(`items`, `concurrency`, `worker`): `Promise`\<`void`\>
 
-Defined in: [packages/core/coordinators/TaskCoordinator.ts:186](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/coordinators/TaskCoordinator.ts#L186)
+Defined in: [packages/core/coordinators/TaskCoordinator.ts:186](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/coordinators/TaskCoordinator.ts#L186)
 
 Runs asynchronous workers with a bounded concurrency limit.
 
@@ -96,7 +96,7 @@ Async item handler.
 
 > **handleJsonOutput**\<`T`, `S`\>(`result`, `options`): `Promise`\<[`ExecutionResult`](../interfaces/ExecutionResult.md)\<`T`, `S`\>\>
 
-Defined in: [packages/core/coordinators/TaskCoordinator.ts:210](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/coordinators/TaskCoordinator.ts#L210)
+Defined in: [packages/core/coordinators/TaskCoordinator.ts:210](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/coordinators/TaskCoordinator.ts#L210)
 
 Persists a JSON execution result.
 
@@ -136,7 +136,7 @@ The original execution result.
 
 > **handleDeviceOutputAsync**\<`T`, `S`\>(`options`, `outputType`, `request`, `pipelineHooks`, `result`): `Promise`\<[`JobSettlement`](../interfaces/JobSettlement.md)\>
 
-Defined in: [packages/core/coordinators/TaskCoordinator.ts:227](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/coordinators/TaskCoordinator.ts#L227)
+Defined in: [packages/core/coordinators/TaskCoordinator.ts:227](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/coordinators/TaskCoordinator.ts#L227)
 
 Starts background download processing for device or buffer output.
 

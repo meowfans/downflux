@@ -6,7 +6,7 @@
 
 # Enumeration: Provider
 
-Defined in: [packages/types/ExecutionTypes.ts:37](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L37)
+Defined in: [packages/types/ExecutionTypes.ts:37](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L37)
 
 ## Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [packages/types/ExecutionTypes.ts:37](https://github.com/meowfans/do
 
 > **AnalRz**: `"AnalRzProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:39](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L39)
+Defined in: [packages/types/ExecutionTypes.ts:39](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L39)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/types/ExecutionTypes.ts:39](https://github.com/meowfans/do
 
 > **ArtStation**: `"ArtStationProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:40](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L40)
+Defined in: [packages/types/ExecutionTypes.ts:40](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L40)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/types/ExecutionTypes.ts:40](https://github.com/meowfans/do
 
 > **Beeg**: `"BeegProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:41](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L41)
+Defined in: [packages/types/ExecutionTypes.ts:41](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L41)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/types/ExecutionTypes.ts:41](https://github.com/meowfans/do
 
 > **Behance**: `"BehanceProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:42](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L42)
+Defined in: [packages/types/ExecutionTypes.ts:42](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L42)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/types/ExecutionTypes.ts:42](https://github.com/meowfans/do
 
 > **BlackPorn**: `"BlackPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:43](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L43)
+Defined in: [packages/types/ExecutionTypes.ts:43](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L43)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/types/ExecutionTypes.ts:43](https://github.com/meowfans/do
 
 > **Bluesky**: `"BlueskyProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:44](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L44)
+Defined in: [packages/types/ExecutionTypes.ts:44](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L44)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [packages/types/ExecutionTypes.ts:44](https://github.com/meowfans/do
 
 > **BoKepPorn**: `"BoKepPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:45](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L45)
+Defined in: [packages/types/ExecutionTypes.ts:45](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L45)
 
 ***
 
@@ -70,7 +70,7 @@ Defined in: [packages/types/ExecutionTypes.ts:45](https://github.com/meowfans/do
 
 > **ColliderPorn**: `"ColliderPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:46](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L46)
+Defined in: [packages/types/ExecutionTypes.ts:46](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L46)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [packages/types/ExecutionTypes.ts:46](https://github.com/meowfans/do
 
 > **CumLouder**: `"CumLouderProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:47](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L47)
+Defined in: [packages/types/ExecutionTypes.ts:47](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L47)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [packages/types/ExecutionTypes.ts:47](https://github.com/meowfans/do
 
 > **DaFreePorn**: `"DaFreePornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:48](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L48)
+Defined in: [packages/types/ExecutionTypes.ts:48](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L48)
 
 ***
 
@@ -94,7 +94,7 @@ Defined in: [packages/types/ExecutionTypes.ts:48](https://github.com/meowfans/do
 
 > **Danbooru**: `"DanbooruProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:49](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L49)
+Defined in: [packages/types/ExecutionTypes.ts:49](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L49)
 
 ***
 
@@ -102,7 +102,7 @@ Defined in: [packages/types/ExecutionTypes.ts:49](https://github.com/meowfans/do
 
 > **DaNude**: `"DaNudeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:50](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L50)
+Defined in: [packages/types/ExecutionTypes.ts:50](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L50)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: [packages/types/ExecutionTypes.ts:50](https://github.com/meowfans/do
 
 > **Default**: `"DefaultProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:51](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L51)
+Defined in: [packages/types/ExecutionTypes.ts:51](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L51)
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: [packages/types/ExecutionTypes.ts:51](https://github.com/meowfans/do
 
 > **DeviantArt**: `"DeviantArtProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:52](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L52)
+Defined in: [packages/types/ExecutionTypes.ts:52](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L52)
 
 ***
 
@@ -126,7 +126,7 @@ Defined in: [packages/types/ExecutionTypes.ts:52](https://github.com/meowfans/do
 
 > **EpicGfs**: `"EpicGfsProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:53](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L53)
+Defined in: [packages/types/ExecutionTypes.ts:53](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L53)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: [packages/types/ExecutionTypes.ts:53](https://github.com/meowfans/do
 
 > **EPorner**: `"EPornerProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:54](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L54)
+Defined in: [packages/types/ExecutionTypes.ts:54](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L54)
 
 ***
 
@@ -142,7 +142,7 @@ Defined in: [packages/types/ExecutionTypes.ts:54](https://github.com/meowfans/do
 
 > **Flickr**: `"FlickrProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:55](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L55)
+Defined in: [packages/types/ExecutionTypes.ts:55](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L55)
 
 ***
 
@@ -150,7 +150,7 @@ Defined in: [packages/types/ExecutionTypes.ts:55](https://github.com/meowfans/do
 
 > **Gelbooru**: `"GelbooruProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:56](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L56)
+Defined in: [packages/types/ExecutionTypes.ts:56](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L56)
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: [packages/types/ExecutionTypes.ts:56](https://github.com/meowfans/do
 
 > **HqPorn**: `"HqPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:57](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L57)
+Defined in: [packages/types/ExecutionTypes.ts:57](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L57)
 
 ***
 
@@ -166,7 +166,7 @@ Defined in: [packages/types/ExecutionTypes.ts:57](https://github.com/meowfans/do
 
 > **Imgur**: `"ImgurProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:58](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L58)
+Defined in: [packages/types/ExecutionTypes.ts:58](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L58)
 
 ***
 
@@ -174,7 +174,7 @@ Defined in: [packages/types/ExecutionTypes.ts:58](https://github.com/meowfans/do
 
 > **Instagram**: `"InstagramProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:59](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L59)
+Defined in: [packages/types/ExecutionTypes.ts:59](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L59)
 
 ***
 
@@ -182,7 +182,7 @@ Defined in: [packages/types/ExecutionTypes.ts:59](https://github.com/meowfans/do
 
 > **Interracial**: `"InterracialProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:60](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L60)
+Defined in: [packages/types/ExecutionTypes.ts:60](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L60)
 
 ***
 
@@ -190,7 +190,7 @@ Defined in: [packages/types/ExecutionTypes.ts:60](https://github.com/meowfans/do
 
 > **ItsPorn**: `"ItsPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:61](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L61)
+Defined in: [packages/types/ExecutionTypes.ts:61](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L61)
 
 ***
 
@@ -198,7 +198,7 @@ Defined in: [packages/types/ExecutionTypes.ts:61](https://github.com/meowfans/do
 
 > **Lesbian8**: `"Lesbian8Provider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:62](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L62)
+Defined in: [packages/types/ExecutionTypes.ts:62](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L62)
 
 ***
 
@@ -206,7 +206,7 @@ Defined in: [packages/types/ExecutionTypes.ts:62](https://github.com/meowfans/do
 
 > **MangaDex**: `"MangaDexProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:63](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L63)
+Defined in: [packages/types/ExecutionTypes.ts:63](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L63)
 
 ***
 
@@ -214,7 +214,7 @@ Defined in: [packages/types/ExecutionTypes.ts:63](https://github.com/meowfans/do
 
 > **Mastodon**: `"MastodonProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:64](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L64)
+Defined in: [packages/types/ExecutionTypes.ts:64](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L64)
 
 ***
 
@@ -222,7 +222,7 @@ Defined in: [packages/types/ExecutionTypes.ts:64](https://github.com/meowfans/do
 
 > **MegaTube**: `"MegaTubeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:65](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L65)
+Defined in: [packages/types/ExecutionTypes.ts:65](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L65)
 
 ***
 
@@ -230,7 +230,7 @@ Defined in: [packages/types/ExecutionTypes.ts:65](https://github.com/meowfans/do
 
 > **MomVids**: `"MomVidsProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:66](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L66)
+Defined in: [packages/types/ExecutionTypes.ts:66](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L66)
 
 ***
 
@@ -238,7 +238,7 @@ Defined in: [packages/types/ExecutionTypes.ts:66](https://github.com/meowfans/do
 
 > **MyLust**: `"MyLustProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:67](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L67)
+Defined in: [packages/types/ExecutionTypes.ts:67](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L67)
 
 ***
 
@@ -246,7 +246,7 @@ Defined in: [packages/types/ExecutionTypes.ts:67](https://github.com/meowfans/do
 
 > **Newgrounds**: `"NewgroundsProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:68](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L68)
+Defined in: [packages/types/ExecutionTypes.ts:68](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L68)
 
 ***
 
@@ -254,7 +254,7 @@ Defined in: [packages/types/ExecutionTypes.ts:68](https://github.com/meowfans/do
 
 > **OkPorn**: `"OkPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:69](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L69)
+Defined in: [packages/types/ExecutionTypes.ts:69](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L69)
 
 ***
 
@@ -262,7 +262,7 @@ Defined in: [packages/types/ExecutionTypes.ts:69](https://github.com/meowfans/do
 
 > **PerfectGirls**: `"PerfectGirlsProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:70](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L70)
+Defined in: [packages/types/ExecutionTypes.ts:70](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L70)
 
 ***
 
@@ -270,7 +270,7 @@ Defined in: [packages/types/ExecutionTypes.ts:70](https://github.com/meowfans/do
 
 > **Pexels**: `"PexelsProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:71](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L71)
+Defined in: [packages/types/ExecutionTypes.ts:71](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L71)
 
 ***
 
@@ -278,7 +278,7 @@ Defined in: [packages/types/ExecutionTypes.ts:71](https://github.com/meowfans/do
 
 > **PimpBunny**: `"PimpBunnyProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:72](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L72)
+Defined in: [packages/types/ExecutionTypes.ts:72](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L72)
 
 ***
 
@@ -286,7 +286,7 @@ Defined in: [packages/types/ExecutionTypes.ts:72](https://github.com/meowfans/do
 
 > **Pinterest**: `"PinterestProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:73](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L73)
+Defined in: [packages/types/ExecutionTypes.ts:73](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L73)
 
 ***
 
@@ -294,7 +294,7 @@ Defined in: [packages/types/ExecutionTypes.ts:73](https://github.com/meowfans/do
 
 > **Pixiv**: `"PixivProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:74](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L74)
+Defined in: [packages/types/ExecutionTypes.ts:74](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L74)
 
 ***
 
@@ -302,7 +302,7 @@ Defined in: [packages/types/ExecutionTypes.ts:74](https://github.com/meowfans/do
 
 > **Porn300**: `"Porn300Provider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:75](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L75)
+Defined in: [packages/types/ExecutionTypes.ts:75](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L75)
 
 ***
 
@@ -310,7 +310,7 @@ Defined in: [packages/types/ExecutionTypes.ts:75](https://github.com/meowfans/do
 
 > **PornDoe**: `"PornDoeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:76](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L76)
+Defined in: [packages/types/ExecutionTypes.ts:76](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L76)
 
 ***
 
@@ -318,7 +318,7 @@ Defined in: [packages/types/ExecutionTypes.ts:76](https://github.com/meowfans/do
 
 > **PornHub**: `"PornHubProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:77](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L77)
+Defined in: [packages/types/ExecutionTypes.ts:77](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L77)
 
 ***
 
@@ -326,7 +326,7 @@ Defined in: [packages/types/ExecutionTypes.ts:77](https://github.com/meowfans/do
 
 > **PornId**: `"PornIdProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:78](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L78)
+Defined in: [packages/types/ExecutionTypes.ts:78](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L78)
 
 ***
 
@@ -334,7 +334,7 @@ Defined in: [packages/types/ExecutionTypes.ts:78](https://github.com/meowfans/do
 
 > **PornOne**: `"PornOneProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:79](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L79)
+Defined in: [packages/types/ExecutionTypes.ts:79](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L79)
 
 ***
 
@@ -342,7 +342,7 @@ Defined in: [packages/types/ExecutionTypes.ts:79](https://github.com/meowfans/do
 
 > **PornSeven**: `"PornSevenProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:80](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L80)
+Defined in: [packages/types/ExecutionTypes.ts:80](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L80)
 
 ***
 
@@ -350,7 +350,7 @@ Defined in: [packages/types/ExecutionTypes.ts:80](https://github.com/meowfans/do
 
 > **PornsOk**: `"PornsOkProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:81](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L81)
+Defined in: [packages/types/ExecutionTypes.ts:81](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L81)
 
 ***
 
@@ -358,7 +358,7 @@ Defined in: [packages/types/ExecutionTypes.ts:81](https://github.com/meowfans/do
 
 > **PussySpace**: `"PussySpaceProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:82](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L82)
+Defined in: [packages/types/ExecutionTypes.ts:82](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L82)
 
 ***
 
@@ -366,7 +366,7 @@ Defined in: [packages/types/ExecutionTypes.ts:82](https://github.com/meowfans/do
 
 > **Reddit**: `"RedditProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:83](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L83)
+Defined in: [packages/types/ExecutionTypes.ts:83](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L83)
 
 ***
 
@@ -374,7 +374,7 @@ Defined in: [packages/types/ExecutionTypes.ts:83](https://github.com/meowfans/do
 
 > **SexVid**: `"SexVidProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:84](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L84)
+Defined in: [packages/types/ExecutionTypes.ts:84](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L84)
 
 ***
 
@@ -382,7 +382,7 @@ Defined in: [packages/types/ExecutionTypes.ts:84](https://github.com/meowfans/do
 
 > **Shameless**: `"ShamelessProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:85](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L85)
+Defined in: [packages/types/ExecutionTypes.ts:85](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L85)
 
 ***
 
@@ -390,7 +390,7 @@ Defined in: [packages/types/ExecutionTypes.ts:85](https://github.com/meowfans/do
 
 > **SuperPorn**: `"SuperPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:86](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L86)
+Defined in: [packages/types/ExecutionTypes.ts:86](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L86)
 
 ***
 
@@ -398,7 +398,7 @@ Defined in: [packages/types/ExecutionTypes.ts:86](https://github.com/meowfans/do
 
 > **SxyPorn**: `"SxyPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:87](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L87)
+Defined in: [packages/types/ExecutionTypes.ts:87](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L87)
 
 ***
 
@@ -406,7 +406,7 @@ Defined in: [packages/types/ExecutionTypes.ts:87](https://github.com/meowfans/do
 
 > **TheyAreHuge**: `"TheyAreHugeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:88](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L88)
+Defined in: [packages/types/ExecutionTypes.ts:88](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L88)
 
 ***
 
@@ -414,7 +414,7 @@ Defined in: [packages/types/ExecutionTypes.ts:88](https://github.com/meowfans/do
 
 > **TikTok**: `"TikTokProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:89](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L89)
+Defined in: [packages/types/ExecutionTypes.ts:89](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L89)
 
 ***
 
@@ -422,7 +422,7 @@ Defined in: [packages/types/ExecutionTypes.ts:89](https://github.com/meowfans/do
 
 > **TnAFlix**: `"TnAFlixProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:90](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L90)
+Defined in: [packages/types/ExecutionTypes.ts:90](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L90)
 
 ***
 
@@ -430,7 +430,7 @@ Defined in: [packages/types/ExecutionTypes.ts:90](https://github.com/meowfans/do
 
 > **TrashReality**: `"TrashRealityProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:91](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L91)
+Defined in: [packages/types/ExecutionTypes.ts:91](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L91)
 
 ***
 
@@ -438,7 +438,7 @@ Defined in: [packages/types/ExecutionTypes.ts:91](https://github.com/meowfans/do
 
 > **TubeVSex**: `"TubeVSexProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:92](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L92)
+Defined in: [packages/types/ExecutionTypes.ts:92](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L92)
 
 ***
 
@@ -446,7 +446,7 @@ Defined in: [packages/types/ExecutionTypes.ts:92](https://github.com/meowfans/do
 
 > **Tumblr**: `"TumblrProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:93](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L93)
+Defined in: [packages/types/ExecutionTypes.ts:93](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L93)
 
 ***
 
@@ -454,7 +454,7 @@ Defined in: [packages/types/ExecutionTypes.ts:93](https://github.com/meowfans/do
 
 > **Twitter**: `"TwitterProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:94](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L94)
+Defined in: [packages/types/ExecutionTypes.ts:94](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L94)
 
 ***
 
@@ -462,7 +462,7 @@ Defined in: [packages/types/ExecutionTypes.ts:94](https://github.com/meowfans/do
 
 > **Unsplash**: `"UnsplashProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:95](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L95)
+Defined in: [packages/types/ExecutionTypes.ts:95](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L95)
 
 ***
 
@@ -470,7 +470,7 @@ Defined in: [packages/types/ExecutionTypes.ts:95](https://github.com/meowfans/do
 
 > **WallHaven**: `"WallHavenProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:96](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L96)
+Defined in: [packages/types/ExecutionTypes.ts:96](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L96)
 
 ***
 
@@ -478,7 +478,7 @@ Defined in: [packages/types/ExecutionTypes.ts:96](https://github.com/meowfans/do
 
 > **WikiArt**: `"WikiArtProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:97](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L97)
+Defined in: [packages/types/ExecutionTypes.ts:97](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L97)
 
 ***
 
@@ -486,7 +486,7 @@ Defined in: [packages/types/ExecutionTypes.ts:97](https://github.com/meowfans/do
 
 > **Wikimedia**: `"WikimediaProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:98](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L98)
+Defined in: [packages/types/ExecutionTypes.ts:98](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L98)
 
 ***
 
@@ -494,7 +494,7 @@ Defined in: [packages/types/ExecutionTypes.ts:98](https://github.com/meowfans/do
 
 > **XCafe**: `"XCafeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:99](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L99)
+Defined in: [packages/types/ExecutionTypes.ts:99](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L99)
 
 ***
 
@@ -502,7 +502,7 @@ Defined in: [packages/types/ExecutionTypes.ts:99](https://github.com/meowfans/do
 
 > **XDegu**: `"XDeguProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:100](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L100)
+Defined in: [packages/types/ExecutionTypes.ts:100](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L100)
 
 ***
 
@@ -510,7 +510,7 @@ Defined in: [packages/types/ExecutionTypes.ts:100](https://github.com/meowfans/d
 
 > **XGroovy**: `"XGroovyProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:101](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L101)
+Defined in: [packages/types/ExecutionTypes.ts:101](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L101)
 
 ***
 
@@ -518,7 +518,7 @@ Defined in: [packages/types/ExecutionTypes.ts:101](https://github.com/meowfans/d
 
 > **XHamster**: `"XHamsterProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:102](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L102)
+Defined in: [packages/types/ExecutionTypes.ts:102](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L102)
 
 ***
 
@@ -526,7 +526,7 @@ Defined in: [packages/types/ExecutionTypes.ts:102](https://github.com/meowfans/d
 
 > **XnXX**: `"XnXXProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:103](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L103)
+Defined in: [packages/types/ExecutionTypes.ts:103](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L103)
 
 ***
 
@@ -534,7 +534,7 @@ Defined in: [packages/types/ExecutionTypes.ts:103](https://github.com/meowfans/d
 
 > **Xozilla**: `"XozillaProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:104](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L104)
+Defined in: [packages/types/ExecutionTypes.ts:104](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L104)
 
 ***
 
@@ -542,7 +542,7 @@ Defined in: [packages/types/ExecutionTypes.ts:104](https://github.com/meowfans/d
 
 > **XVideos**: `"XVideosProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:105](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L105)
+Defined in: [packages/types/ExecutionTypes.ts:105](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L105)
 
 ***
 
@@ -550,7 +550,7 @@ Defined in: [packages/types/ExecutionTypes.ts:105](https://github.com/meowfans/d
 
 > **ZbPorn**: `"ZbPornProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:106](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L106)
+Defined in: [packages/types/ExecutionTypes.ts:106](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L106)
 
 ***
 
@@ -558,4 +558,4 @@ Defined in: [packages/types/ExecutionTypes.ts:106](https://github.com/meowfans/d
 
 > **ZzzTube**: `"ZzzTubeProvider"`
 
-Defined in: [packages/types/ExecutionTypes.ts:107](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/types/ExecutionTypes.ts#L107)
+Defined in: [packages/types/ExecutionTypes.ts:107](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/types/ExecutionTypes.ts#L107)

@@ -6,7 +6,7 @@
 
 # Interface: ExceptionPayload\<TMeta\>
 
-Defined in: [packages/core/exceptions/BaseException.ts:3](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/exceptions/BaseException.ts#L3)
+Defined in: [packages/core/exceptions/BaseException.ts:3](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/exceptions/BaseException.ts#L3)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:3](https://github.com/meo
 
 > **errorCode**: [`ErrorCodes`](../enumerations/ErrorCodes.md)
 
-Defined in: [packages/core/exceptions/BaseException.ts:4](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/exceptions/BaseException.ts#L4)
+Defined in: [packages/core/exceptions/BaseException.ts:4](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/exceptions/BaseException.ts#L4)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:4](https://github.com/meo
 
 > **message**: `string`
 
-Defined in: [packages/core/exceptions/BaseException.ts:5](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/exceptions/BaseException.ts#L5)
+Defined in: [packages/core/exceptions/BaseException.ts:5](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/exceptions/BaseException.ts#L5)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:5](https://github.com/meo
 
 > **provider**: [`Provider`](../enumerations/Provider.md)
 
-Defined in: [packages/core/exceptions/BaseException.ts:6](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/exceptions/BaseException.ts#L6)
+Defined in: [packages/core/exceptions/BaseException.ts:6](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/exceptions/BaseException.ts#L6)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:6](https://github.com/meo
 
 > `optional` **method?**: `string`
 
-Defined in: [packages/core/exceptions/BaseException.ts:7](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/exceptions/BaseException.ts#L7)
+Defined in: [packages/core/exceptions/BaseException.ts:7](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/exceptions/BaseException.ts#L7)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [packages/core/exceptions/BaseException.ts:7](https://github.com/meo
 
 > `optional` **context?**: `Record`\<`string`, `any`\>
 
-Defined in: [packages/core/exceptions/BaseException.ts:8](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/exceptions/BaseException.ts#L8)
+Defined in: [packages/core/exceptions/BaseException.ts:8](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/exceptions/BaseException.ts#L8)
 
 ***
 
@@ -60,4 +60,4 @@ Defined in: [packages/core/exceptions/BaseException.ts:8](https://github.com/meo
 
 > `optional` **metadata?**: `TMeta`
 
-Defined in: [packages/core/exceptions/BaseException.ts:9](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/exceptions/BaseException.ts#L9)
+Defined in: [packages/core/exceptions/BaseException.ts:9](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/exceptions/BaseException.ts#L9)

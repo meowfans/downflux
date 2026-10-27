@@ -6,7 +6,7 @@
 
 # Class: XCafeTransformer
 
-Defined in: [packages/providers/xcafe/XCafeTransformer.ts:12](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xcafe/XCafeTransformer.ts#L12)
+Defined in: [packages/providers/xcafe/XCafeTransformer.ts:12](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/xcafe/XCafeTransformer.ts#L12)
 
 Normalizes parsed XCafe metadata into the public output shape.
 
@@ -24,7 +24,7 @@ Transformers bridge raw parser fields and typed provider results, including meth
 
 > **new XCafeTransformer**(`httpClient`, `hlsClient`, `progressManager`, `parser?`): `XCafeTransformer`
 
-Defined in: [packages/base/BaseTransformer.ts:42](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L42)
+Defined in: [packages/base/BaseTransformer.ts:42](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L42)
 
 #### Parameters
 
@@ -65,7 +65,7 @@ this used to call a registry that imported every provider.
 
 > `protected` `readonly` **httpClient**: [`HttpClient`](HttpClient.md)
 
-Defined in: [packages/base/BaseTransformer.ts:43](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L43)
+Defined in: [packages/base/BaseTransformer.ts:43](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L43)
 
 #### Inherited from
 
@@ -77,7 +77,7 @@ Defined in: [packages/base/BaseTransformer.ts:43](https://github.com/meowfans/do
 
 > `protected` `readonly` **hlsClient**: [`HlsClient`](HlsClient.md)
 
-Defined in: [packages/base/BaseTransformer.ts:44](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L44)
+Defined in: [packages/base/BaseTransformer.ts:44](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L44)
 
 #### Inherited from
 
@@ -89,7 +89,7 @@ Defined in: [packages/base/BaseTransformer.ts:44](https://github.com/meowfans/do
 
 > `protected` `readonly` **progressManager**: [`ProgressManager`](ProgressManager.md)
 
-Defined in: [packages/base/BaseTransformer.ts:45](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L45)
+Defined in: [packages/base/BaseTransformer.ts:45](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L45)
 
 #### Inherited from
 
@@ -101,7 +101,7 @@ Defined in: [packages/base/BaseTransformer.ts:45](https://github.com/meowfans/do
 
 > `protected` `readonly` `optional` **parser?**: () => [`BaseParser`](BaseParser.md)
 
-Defined in: [packages/base/BaseTransformer.ts:46](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L46)
+Defined in: [packages/base/BaseTransformer.ts:46](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L46)
 
 Provider parser, injected by the provider that owns it.
 
@@ -119,7 +119,7 @@ Provider parser, injected by the provider that owns it.
 
 > **requestData**(`url`, `opts`): `Promise`\<`any`\>
 
-Defined in: [packages/base/BaseTransformer.ts:77](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L77)
+Defined in: [packages/base/BaseTransformer.ts:77](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L77)
 
 Fetches JSON data for providers that expose API-backed metadata.
 
@@ -153,7 +153,7 @@ Parsed JSON response.
 
 > **fetchText**(`url`, `opts`): `Promise`\<`string`\>
 
-Defined in: [packages/base/BaseTransformer.ts:81](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L81)
+Defined in: [packages/base/BaseTransformer.ts:81](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L81)
 
 #### Parameters
 
@@ -179,7 +179,7 @@ Defined in: [packages/base/BaseTransformer.ts:81](https://github.com/meowfans/do
 
 > **getVariants**(`manifest`, `base`): [`M3U8Variant`](../interfaces/M3U8Variant.md)[]
 
-Defined in: [packages/base/BaseTransformer.ts:85](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L85)
+Defined in: [packages/base/BaseTransformer.ts:85](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L85)
 
 #### Parameters
 
@@ -205,7 +205,7 @@ Defined in: [packages/base/BaseTransformer.ts:85](https://github.com/meowfans/do
 
 > `protected` **uniqueVideos**\<`T`\>(`videos`, `options`): [`VideoSourceOutput`](../interfaces/VideoSourceOutput.md)[]
 
-Defined in: [packages/base/BaseTransformer.ts:96](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L96)
+Defined in: [packages/base/BaseTransformer.ts:96](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L96)
 
 Removes duplicate video URLs while preserving quality information.
 
@@ -245,7 +245,7 @@ Unique video sources in the shared shape.
 
 > `protected` **unique**\<`T`\>(`arr`): `T`[]
 
-Defined in: [packages/base/BaseTransformer.ts:113](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L113)
+Defined in: [packages/base/BaseTransformer.ts:113](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L113)
 
 #### Type Parameters
 
@@ -273,7 +273,7 @@ Defined in: [packages/base/BaseTransformer.ts:113](https://github.com/meowfans/d
 
 > `protected` **defaultFlashVarsVideoOutput**\<`T`\>(`metadata`): [`DefaultFlashVarsVideoOutput`](../interfaces/DefaultFlashVarsVideoOutput.md)
 
-Defined in: [packages/base/BaseTransformer.ts:118](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L118)
+Defined in: [packages/base/BaseTransformer.ts:118](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L118)
 
 #### Type Parameters
 
@@ -301,7 +301,7 @@ Defined in: [packages/base/BaseTransformer.ts:118](https://github.com/meowfans/d
 
 > `protected` **mapSources**(`sources`, `quality?`, `filter?`): [`VideosFormat`](../interfaces/VideosFormat.md)
 
-Defined in: [packages/base/BaseTransformer.ts:138](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L138)
+Defined in: [packages/base/BaseTransformer.ts:138](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L138)
 
 #### Parameters
 
@@ -331,7 +331,7 @@ Defined in: [packages/base/BaseTransformer.ts:138](https://github.com/meowfans/d
 
 > `protected` **defaultVideoOutput**\<`T`\>(`metadata`, `options?`): `T`
 
-Defined in: [packages/base/BaseTransformer.ts:156](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/base/BaseTransformer.ts#L156)
+Defined in: [packages/base/BaseTransformer.ts:156](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/base/BaseTransformer.ts#L156)
 
 #### Type Parameters
 
@@ -373,7 +373,7 @@ Defined in: [packages/base/BaseTransformer.ts:156](https://github.com/meowfans/d
 
 > **transform**(`url`, `request?`): `Promise`\<[`DefaultExecutionResult`](../interfaces/DefaultExecutionResult.md)\<`unknown`\> \| [`XCafeVideoOutput`](../interfaces/XCafeVideoOutput.md)\>
 
-Defined in: [packages/providers/xcafe/XCafeTransformer.ts:13](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/xcafe/XCafeTransformer.ts#L13)
+Defined in: [packages/providers/xcafe/XCafeTransformer.ts:13](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/xcafe/XCafeTransformer.ts#L13)
 
 Fetches HTML and merges default metadata with provider-specific metadata.
 

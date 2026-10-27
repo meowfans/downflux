@@ -6,7 +6,7 @@
 
 # Interface: PornHubVideoOutput
 
-Defined in: [packages/providers/pornhub/PornHubContracts.ts:67](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pornhub/PornHubContracts.ts#L67)
+Defined in: [packages/providers/pornhub/PornHubContracts.ts:67](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/pornhub/PornHubContracts.ts#L67)
 
 Interface representing the output structure for a PornHub video.
 
@@ -20,7 +20,7 @@ Interface representing the output structure for a PornHub video.
 
 > **title**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L274)
+Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L274)
 
 #### Inherited from
 
@@ -32,7 +32,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:274](https://github.com/me
 
 > **tags**: `string`[]
 
-Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L275)
+Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L275)
 
 #### Inherited from
 
@@ -44,7 +44,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:275](https://github.com/me
 
 > **description**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L276)
+Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L276)
 
 #### Inherited from
 
@@ -56,7 +56,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:276](https://github.com/me
 
 > **pageUrl**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L277)
+Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L277)
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:277](https://github.com/me
 
 > **poster**: `string`
 
-Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L286)
+Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L286)
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:286](https://github.com/me
 
 > **videos**: [`VideosFormat`](VideosFormat.md)
 
-Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/contracts/ExecutionContracts.ts#L287)
+Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/contracts/ExecutionContracts.ts#L287)
 
 #### Inherited from
 
@@ -92,7 +92,7 @@ Defined in: [packages/contracts/ExecutionContracts.ts:287](https://github.com/me
 
 > **duration**: `string`
 
-Defined in: [packages/providers/pornhub/PornHubContracts.ts:69](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pornhub/PornHubContracts.ts#L69)
+Defined in: [packages/providers/pornhub/PornHubContracts.ts:69](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/pornhub/PornHubContracts.ts#L69)
 
 The duration of the video in seconds
 
@@ -102,7 +102,7 @@ The duration of the video in seconds
 
 > **views**: `string`
 
-Defined in: [packages/providers/pornhub/PornHubContracts.ts:72](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pornhub/PornHubContracts.ts#L72)
+Defined in: [packages/providers/pornhub/PornHubContracts.ts:72](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/pornhub/PornHubContracts.ts#L72)
 
 The number of views the video has
 
@@ -112,7 +112,7 @@ The number of views the video has
 
 > **likes**: `string`
 
-Defined in: [packages/providers/pornhub/PornHubContracts.ts:75](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pornhub/PornHubContracts.ts#L75)
+Defined in: [packages/providers/pornhub/PornHubContracts.ts:75](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/pornhub/PornHubContracts.ts#L75)
 
 The number of likes the video has
 
@@ -122,7 +122,7 @@ The number of likes the video has
 
 > `optional` **category?**: `string`[]
 
-Defined in: [packages/providers/pornhub/PornHubContracts.ts:78](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pornhub/PornHubContracts.ts#L78)
+Defined in: [packages/providers/pornhub/PornHubContracts.ts:78](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/pornhub/PornHubContracts.ts#L78)
 
 The category of the video
 
@@ -132,7 +132,7 @@ The category of the video
 
 > **user**: `string`
 
-Defined in: [packages/providers/pornhub/PornHubContracts.ts:81](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pornhub/PornHubContracts.ts#L81)
+Defined in: [packages/providers/pornhub/PornHubContracts.ts:81](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/pornhub/PornHubContracts.ts#L81)
 
 The name of the uploader of the video
 
@@ -142,7 +142,7 @@ The name of the uploader of the video
 
 > **userAvatar**: `string`
 
-Defined in: [packages/providers/pornhub/PornHubContracts.ts:84](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pornhub/PornHubContracts.ts#L84)
+Defined in: [packages/providers/pornhub/PornHubContracts.ts:84](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/pornhub/PornHubContracts.ts#L84)
 
 user avatar
 
@@ -152,7 +152,7 @@ user avatar
 
 > **totalVideos**: `string`
 
-Defined in: [packages/providers/pornhub/PornHubContracts.ts:87](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pornhub/PornHubContracts.ts#L87)
+Defined in: [packages/providers/pornhub/PornHubContracts.ts:87](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/pornhub/PornHubContracts.ts#L87)
 
 total Videos
 
@@ -162,7 +162,7 @@ total Videos
 
 > **totalSubscribers**: `string`
 
-Defined in: [packages/providers/pornhub/PornHubContracts.ts:90](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pornhub/PornHubContracts.ts#L90)
+Defined in: [packages/providers/pornhub/PornHubContracts.ts:90](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/pornhub/PornHubContracts.ts#L90)
 
 total subscribers
 
@@ -172,6 +172,6 @@ total subscribers
 
 > **uploadDate**: `string`
 
-Defined in: [packages/providers/pornhub/PornHubContracts.ts:93](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/providers/pornhub/PornHubContracts.ts#L93)
+Defined in: [packages/providers/pornhub/PornHubContracts.ts:93](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/providers/pornhub/PornHubContracts.ts#L93)
 
 The upload date of the video

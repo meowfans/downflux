@@ -6,7 +6,7 @@
 
 # Interface: ProgressEvents
 
-Defined in: [packages/core/progress/ProgressManager.ts:5](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/progress/ProgressManager.ts#L5)
+Defined in: [packages/core/progress/ProgressManager.ts:5](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/progress/ProgressManager.ts#L5)
 
 ## Properties
 
@@ -14,7 +14,7 @@ Defined in: [packages/core/progress/ProgressManager.ts:5](https://github.com/meo
 
 > **progress**: (`state`) => `void`
 
-Defined in: [packages/core/progress/ProgressManager.ts:6](https://github.com/meowfans/downflux/blob/aaac94436aefdb28ed855da958dc3ecd1c0ed81d/packages/core/progress/ProgressManager.ts#L6)
+Defined in: [packages/core/progress/ProgressManager.ts:6](https://github.com/opensegra/downflux/blob/c6686089f8cf3fd19c123a024dc242e2779a5334/packages/core/progress/ProgressManager.ts#L6)
 
 #### Parameters
 
