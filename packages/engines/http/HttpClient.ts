@@ -1,7 +1,7 @@
 import { BaseHttpClient } from '@base';
 import type { ProviderComponents } from '@contracts';
 import { type DownloadOptions, type FetchResult } from '@contracts';
-import { type ProgressManager } from '@core/progress';
+import { type SegraProgress } from 'segra-logger';
 import { StrategyRegistry } from '@core/registries';
 
 /**
@@ -13,13 +13,13 @@ import { StrategyRegistry } from '@core/registries';
  */
 export class HttpClient extends BaseHttpClient {
 	constructor(
-		progressManager: ProgressManager,
+		progress: SegraProgress,
 		private readonly components: ProviderComponents = {}
 	) {
-		super(progressManager);
+		super(progress);
 
 		// built here, not as a field initializer, which would run before `components` is set
-		this.strategyRegistry = new StrategyRegistry(progressManager, components);
+		this.strategyRegistry = new StrategyRegistry(progress, components);
 	}
 
 	private readonly strategyRegistry: StrategyRegistry;

@@ -10,9 +10,8 @@
 import type { ProviderMetadata } from '@base';
 import type { ProviderComponents } from './ProviderComponents';
 import type { ExecutionCoordinator, TransferCoordinator } from '@core/coordinators';
-import type { ProgressManager } from '@core/progress';
+import type { SegraProgress } from 'segra-logger';
 import type { StrategyRegistry, TransformerRegistry } from '@core/registries';
-import type { CliManager } from '@core/ui';
 import type { HttpClient, StreamHttpClient } from '@engine/http';
 import { type Provider } from '@types';
 
@@ -23,8 +22,7 @@ export interface CoordinatorDependencies {
 	transferCoordinator: TransferCoordinator;
 	executionCoordinator: ExecutionCoordinator;
 	strategyRegistry: StrategyRegistry;
-	progressManager: ProgressManager;
-	cliManager: CliManager;
+	progress: SegraProgress;
 }
 
 export interface RegistryCoordinator {

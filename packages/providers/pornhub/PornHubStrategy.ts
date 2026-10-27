@@ -31,7 +31,7 @@ export class PornHubStrategy extends BaseStrategy {
 	}
 
 	public getFallbackUrl(url: string) {
-		this.progressManager.update({ message: '[Switch CDN IF POSSIBLE]' });
+		this.progress.message('[Switch CDN IF POSSIBLE]');
 
 		if (url.includes('iv-h')) return url.replace('iv-h', 'ev-h');
 		if (url.includes('ev-h')) return url.replace('ev-h', 'iv-h');
@@ -39,7 +39,7 @@ export class PornHubStrategy extends BaseStrategy {
 	}
 
 	public shouldReExtract(url: string) {
-		this.progressManager.update({ message: 'CHECKING FOR RE-EXTRACTION' });
+		this.progress.message('CHECKING FOR RE-EXTRACTION');
 
 		return url.includes('phncdn.com') && url.includes('.m3u8');
 	}
@@ -52,14 +52,14 @@ export class PornHubStrategy extends BaseStrategy {
 	}
 
 	public getDirectVideoUrlFromText(body: string, opts: DownloadOptions) {
-		this.progressManager.update({ message: 'GETTING DIRECT URL FROM TEXT' });
+		this.progress.message('GETTING DIRECT URL FROM TEXT');
 
 		const normalized = body.replace(/\\\//g, '/').replace(/&amp;/g, '&');
 
 		try {
 			const definitions = JSON.parse(normalized) as PornHubMediaDefinition[];
 			if (Array.isArray(definitions)) {
-				this.progressManager.update({ message: 'PARSED MEDIA DEFINITIONS' });
+				this.progress.message('PARSED MEDIA DEFINITIONS');
 
 				const mp4Definitions = definitions
 					.filter((definition) => definition.format === 'mp4' && definition.videoUrl)
@@ -70,15 +70,13 @@ export class PornHubStrategy extends BaseStrategy {
 					: mp4Definitions[0]?.videoUrl;
 
 				if (opts.noDownload) {
-					this.progressManager.update({
-						message: `NO DOWNLOAD MODE - SELECTED VIDEO URL: ${preferred} DEFINITION: ${mp4Definitions}`
-					});
+					this.progress.message(`NO DOWNLOAD MODE - SELECTED VIDEO URL: ${preferred} DEFINITION: ${mp4Definitions}`);
 				}
 
 				return preferred ?? null;
 			}
 		} catch {
-			this.progressManager.update({ message: 'FALLING BACK TO PREVIOUS URL' });
+			this.progress.message('FALLING BACK TO PREVIOUS URL');
 		}
 
 		const match = normalized.match(/https?:\/\/[^\s"'<>\\]+\.mp4(?:\?[^\s"'<>\\]*)?/i);

@@ -1,6 +1,7 @@
 import { BaseTransformer } from '@base';
 import { type DefaultExecutionResult } from '@contracts';
 import { type OutputType, type VideoQuality } from '@types';
+import { SegraLogger } from 'segra-logger';
 import { type BeegExecArgs, type BeegOutput, type BeegVideoOutput } from './BeegContracts';
 import { BeegMethods } from './BeegTypes';
 
@@ -55,7 +56,7 @@ export class BeegTransformer extends BaseTransformer<BeegExecArgs, DefaultExecut
 
 		const variants = this.getVariants(manifest, this.VIDEO_ORIGIN);
 
-		console.log({ urlPath, videoUrl, manifest, variants });
+		SegraLogger.debug('%o', { urlPath, videoUrl, manifest, variants });
 
 		return {
 			description: metadata?.description ?? 'Beeg_description_not_found',

@@ -1,6 +1,6 @@
 import { BaseStrategy } from '@base';
 import type { ProviderComponents } from '@contracts';
-import type { ProgressManager } from '@core/progress';
+import type { SegraProgress } from 'segra-logger';
 
 /**
  * Supplies the transport strategy for the running job.
@@ -13,7 +13,7 @@ export class StrategyRegistry {
 	private strategy: BaseStrategy | null = null;
 
 	constructor(
-		private readonly progressManager: ProgressManager,
+		private readonly progress: SegraProgress,
 		private readonly components: ProviderComponents = {}
 	) {}
 
@@ -22,7 +22,7 @@ export class StrategyRegistry {
 
 		const StrategyClass = this.components.strategy ?? BaseStrategy;
 
-		this.strategy = new StrategyClass(this.progressManager);
+		this.strategy = new StrategyClass(this.progress);
 
 		return this.strategy;
 	}

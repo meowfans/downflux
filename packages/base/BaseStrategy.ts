@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { type DownloadOptions, type ServiceStrategy } from '@contracts';
-import { type ProgressManager } from '@core/progress';
+import { type SegraProgress } from 'segra-logger';
 
 /**
  * Default provider transport strategy.
@@ -12,7 +12,7 @@ import { type ProgressManager } from '@core/progress';
  * URL re-extraction, or text responses that should be treated as redirects.
  */
 export class BaseStrategy implements ServiceStrategy {
-	constructor(protected readonly progressManager: ProgressManager) {}
+	constructor(protected readonly progress: SegraProgress) {}
 
 	public shouldFallback404(url: string): boolean {
 		return false;

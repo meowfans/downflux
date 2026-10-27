@@ -11,10 +11,10 @@ import {
 	type VideoFormat,
 	type VideoQuality
 } from '@types';
+import { type ProgressSnapshot } from 'segra-logger';
 import { type Dispatcher } from 'undici';
 import { type HttpFetchOptions, type VideoSourceOutput } from './DownloadContracts';
 import { type PipelineHook, type PipelineItem } from './PipelineContracts';
-import { type JobProgressEvent } from './ProgressContracts';
 import { type DirectoryOutputOptions, type TranscodeOptions } from './StorageContracts';
 
 export interface ExecutionArgs<S extends ExecutionShape = ExecutionShape> extends ExecutionOptions {
@@ -147,8 +147,8 @@ export interface ExecutionOptions extends HttpFetchOptions {
 	/** PipelineRegistry lifecycle hooks */
 	pipelineHooks?: PipelineHook[];
 
-	/** Progress event handler */
-	onProgress?: (event: JobProgressEvent) => void;
+	/** Receives segra-logger's progress snapshot on every update */
+	onProgress?: (snapshot: ProgressSnapshot) => void;
 
 	/** Enables console progress logging */
 	logProgress?: boolean;

@@ -8,7 +8,7 @@ import {
 	type TranscodeOptions
 } from '@contracts';
 import { InvalidDestinationException } from '@core/exceptions';
-import { type ProgressManager } from '@core/progress';
+import { type SegraProgress } from 'segra-logger';
 import { type AllowedExtension, type ExecutionShape, MIME_TYPE, OutputType, type Provider } from '@types';
 import { createWriteStream, promises as fs, mkdirSync, writeFileSync } from 'fs';
 import { basename, dirname, extname, isAbsolute, relative, resolve } from 'path';
@@ -32,7 +32,7 @@ export class FileManager {
 
 	constructor(
 		private readonly ffmpegEngine: FFmpegEngine,
-		private readonly progressManager: ProgressManager
+		private readonly progress: SegraProgress
 	) {}
 
 	/**
@@ -346,9 +346,7 @@ export class FileManager {
 		else if (/(mp3|wav|aac|flac|ogg)$/.test(extension)) return { mimeType: `audio/${extension}`, extension };
 		else if (/(jpg|jpeg|png|gif|webp)$/.test(extension)) return { mimeType: `image/${extension}`, extension };
 
-		const message = { message: `[${request.provider}]Resolving resource type to default` };
-
-		this.progressManager.update(message);
+		this.progress.message(`[${request.provider}]Resolving resource type to default`);
 
 		/**
 		 * Providers declare their own media shape in `ProviderMetadata`, so the

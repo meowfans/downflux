@@ -1,5 +1,5 @@
 import type { BaseParser, BasePipeline, BaseProvider, BaseStrategy, BaseTransformer } from '@base';
-import type { ProgressManager } from '@core/progress';
+import type { SegraProgress } from 'segra-logger';
 import type { HlsClient, HttpClient } from '@engine/http';
 import type { FileManager } from '@storage';
 import type { ExecutionShape } from '@types';
@@ -25,7 +25,7 @@ export interface ProviderComponents {
 	transformer?: new (
 		httpClient: HttpClient,
 		hlsClient: HlsClient,
-		progressManager: ProgressManager,
+		progress: SegraProgress,
 		parser?: new () => BaseParser
 	) => BaseTransformer<ExecutionArgs<ExecutionShape>, unknown>;
 
@@ -33,7 +33,7 @@ export interface ProviderComponents {
 	pipeline?: new (fileManager: FileManager) => BasePipeline<ExecutionArgs<ExecutionShape>, never>;
 
 	/** Provider-specific transport behaviour such as CDN fallback. */
-	strategy?: new (progressManager: ProgressManager) => BaseStrategy;
+	strategy?: new (progress: SegraProgress) => BaseStrategy;
 }
 
 /** Narrow alias used where only the provider class itself is needed. */

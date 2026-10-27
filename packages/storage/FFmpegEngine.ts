@@ -1,5 +1,5 @@
 import { type TranscodeOptions } from '@contracts';
-import { type ProgressManager } from '@core/progress';
+import { type SegraProgress } from 'segra-logger';
 import { execFile, spawn } from 'child_process';
 import ffmpegPath from 'ffmpeg-static';
 import { accessSync, constants, promises as fs } from 'fs';
@@ -18,7 +18,7 @@ const execFileAsync = promisify(execFile);
  * transcodes formats such as HLS `.ts`/fMP4 into a playable final file.
  */
 export class FFmpegEngine {
-	constructor(private readonly progressManager: ProgressManager) {}
+	constructor(private readonly progress: SegraProgress) {}
 
 	public get ffmpeg(): string {
 		return ffmpegPath && this.pathExists(ffmpegPath) ? ffmpegPath : 'ffmpeg';
@@ -56,7 +56,7 @@ export class FFmpegEngine {
 
 		const args = ffmpegArgs.length ? ffmpegArgs : ['-loglevel', 'error', '-i', 'pipe:0', ...codecArgs, '-f', 'mp4', 'pipe:1'];
 
-		this.progressManager.update({ message: `Streaming remux via ${this.resolveFfmpeg(options)}` });
+		this.progress.message(`Streaming remux via ${this.resolveFfmpeg(options)}`);
 
 		const child = spawn(this.resolveFfmpeg(options), args, { stdio: ['pipe', 'pipe', 'pipe'] });
 
@@ -107,11 +107,10 @@ export class FFmpegEngine {
 
 		const outputPath = path.join(dir, outputFilename);
 
-		this.progressManager.update({
-			message:
-				`Finalizing media ${inputPath} with options ${JSON.stringify(options)} ` +
+		this.progress.message(
+			`Finalizing media ${inputPath} with options ${JSON.stringify(options)} ` +
 				`to ${outputPath} using ${this.resolveFfmpeg(options)}...`
-		});
+		);
 
 		let args: string[];
 

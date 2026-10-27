@@ -4,7 +4,7 @@ Modular TypeScript media extraction and download toolkit. Each site integration 
 
 ## Installation
 
-Requires **Node.js 22 or newer**.
+Requires **Node.js 22.12 or newer**.
 
 ```bash
 npm install downflux
@@ -116,10 +116,10 @@ import { BeegProvider } from 'downflux/providers';
 | --- | --- |
 | `downflux/providers` | every site integration |
 | `downflux/base` | `BaseProvider`, `BaseParser`, `BaseTransformer`, `BasePipeline`, `BaseStrategy` |
-| `downflux/core` | coordinators, registries, progress, exceptions, lifecycle, CLI |
+| `downflux/core` | coordinators, registries, exceptions, `downfluxTheme` |
 | `downflux/engines` | `HttpClient`, `StreamHttpClient`, `HlsClient` |
 | `downflux/storage` | `FileManager`, `FFmpegEngine`, `PathBuilder` |
-| `downflux/shared` | constants, helpers, `Brand` |
+| `downflux/shared` | constants, helpers |
 | `downflux/types` | enums and type-level helpers |
 | `downflux/contracts` | interfaces only, erased at runtime |
 
@@ -254,8 +254,10 @@ Call `provider.dispose()` when finished to detach the progress renderer, or
 ## Progress Output
 
 `setProgressLogging(true)` renders a live panel that redraws in place, with a bar per concurrent
-item, transfer rate and ETA. It uses no colour dependency and degrades to plain append-only text
-when stdout is not a TTY, when `NO_COLOR` is set, or under `TERM=dumb`.
+item, transfer rate and ETA. It is drawn on stderr by [segra-logger](https://www.npmjs.com/package/segra-logger),
+and becomes one summary line per update when stderr is not a TTY or the logger is in append mode.
+It looks the same from the `downflux` command and inside your app: DOWNFLUX banner and branding, live
+panel. If your app calls `SegraLogger.create({ theme, mode })` first, the panel follows that instead.
 
 ```ts
 provider.setProgressLogging(true, { captureConsole: true });
@@ -265,8 +267,9 @@ provider.setProgressLogging(true, { captureConsole: true });
 frame. It is off by default because it patches `stdout`/`stderr`, which is the host application's
 call to make.
 
-For programmatic progress use `onProgress`, which reports aggregate counters plus an `activeItems`
-snapshot carrying per-item bytes, rate and ETA.
+For programmatic progress use `onProgress`, which receives segra-logger's `ProgressSnapshot` on every
+update: `status`, `counts` (`Targets`, `Items`), `details`, totals (`bytes`, `totalBytes`, `speed`, `eta`)
+and `transfers`, one per file with its own bytes, segments, rate and ETA.
 
 ## Documentation
 
@@ -283,9 +286,7 @@ Useful entry points:
 - [TransferCoordinator](docs-md/classes/TransferCoordinator.md) - streams one pipeline item into storage.
 - [HttpClient](docs-md/classes/HttpClient.md), [StreamHttpClient](docs-md/classes/StreamHttpClient.md), and [HlsClient](docs-md/classes/HlsClient.md) - HTTP and HLS engines.
 - [FileManager](docs-md/classes/FileManager.md) and [FFmpegEngine](docs-md/classes/FFmpegEngine.md) - output sinks, filenames, JSON, and media finalization.
-- [ProgressManager](docs-md/classes/ProgressManager.md), [CliManager](docs-md/classes/CliManager.md), and [TerminalSurface](docs-md/classes/TerminalSurface.md) - progress state and terminal rendering.
-- [SignalHandler](docs-md/classes/SignalHandler.md) - shutdown tasks and cancellation on process signals.
-- [JobSettlement](docs-md/interfaces/JobSettlement.md) and [ItemProgressSnapshot](docs-md/interfaces/ItemProgressSnapshot.md) - what `whenSettled()` and `onProgress` hand back.
+- [JobSettlement](docs-md/interfaces/JobSettlement.md) - what `whenSettled()` hands back; `onProgress` receives segra-logger's `ProgressSnapshot`.
 - [Provider](docs-md/enumerations/Provider.md), [OutputType](docs-md/enumerations/OutputType.md), [ExecutionType](docs-md/enumerations/ExecutionType.md), [VideoQuality](docs-md/enumerations/VideoQuality.md).
 
 Regenerate the Markdown docs with:
@@ -499,7 +500,7 @@ More incoming...
 
 ## Development
 
-Requires Node.js 22 or newer.
+Requires Node.js 22.12 or newer.
 
 ```bash
 pnpm install

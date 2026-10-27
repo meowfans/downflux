@@ -1,6 +1,7 @@
 #!/usr/bin/env node
-import { Brand } from '@shared';
+import { downfluxTheme } from '@core/ui';
 import { OutputType, VideoQuality } from '@types';
+import { SegraLogger, Style } from 'segra-logger';
 import { parseArgs } from 'util';
 import { methodFor, providerFor, resolveProvider } from './resolve';
 import { providerList, usage } from './usage';
@@ -16,8 +17,11 @@ const options = {
 	'version': { type: 'boolean', short: 'v' }
 } as const;
 
+// set up front so errors and warnings are branded before any panel renders
+SegraLogger.create({ theme: downfluxTheme, mode: 'live' });
+
 const fail = (message: string): never => {
-	process.stderr.write(`${Brand.danger('error')} ${message}\n`);
+	SegraLogger.error(message);
 	process.exit(1);
 };
 
@@ -47,18 +51,18 @@ const run = async (): Promise<void> => {
 
 	const provider = providerFor(first);
 	const resolved = resolveProvider(first);
+	const progress = !values['no-progress'] && !values.json;
 
 	if (resolved === 'DefaultProvider') {
-		process.stderr.write(
-			`${Brand.warn('warning')} no provider claims this host; falling back to generic extraction\n` +
-				`${Brand.dim('          run `downflux providers` to see what is supported')}\n\n`
+		SegraLogger.warn(
+			'no provider claims this host; falling back to generic extraction. Run `downflux providers` to see what is supported'
 		);
 	}
 
 	const method = methodFor(provider, values.method);
 
 	provider
-		.setProgressLogging(!values['no-progress'] && !values.json, { captureConsole: true })
+		.setProgressLogging(progress, { captureConsole: true })
 		.setOutput(values.json ? OutputType.RETURN : OutputType.DEVICE, { directoryPath: values.output ?? 'DownFlux' })
 		.setJobOptions({ ...(values.concurrency && { concurrency: Number(values.concurrency) }) });
 
@@ -70,11 +74,14 @@ const run = async (): Promise<void> => {
 	// downloads continue after extraction resolves, so wait for them before exiting
 	const { downloaded, failed, errors } = await provider.whenSettled();
 
-	process.stdout.write(`\n${Brand.success('✔')} ${downloaded} downloaded${failed ? Brand.danger(`, ${failed} failed`) : ''}\n`);
-
-	for (const error of errors.slice(0, 3)) process.stderr.write(`${Brand.dim('  ' + error.message.split('|')[0].trim())}\n`);
-
+	// disposing first ends the live panel, so the summary lands below its last frame
 	await provider.dispose({ closeConnections: true });
+
+	const style = new Style(process.stderr);
+
+	SegraLogger.log(`${style.success('✔')} ${downloaded} downloaded${failed ? style.danger(`, ${failed} failed`) : ''}`);
+
+	for (const error of errors.slice(0, 3)) SegraLogger.error(error.message.split('|')[0].trim());
 
 	if (failed) process.exitCode = 1;
 };

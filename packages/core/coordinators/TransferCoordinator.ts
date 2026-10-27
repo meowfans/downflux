@@ -1,5 +1,5 @@
 import { type DownloadOptions, type DownloadResult, type HLSStreamRequest, type PipelineItem, type ResolvedFile } from '@contracts';
-import { type ProgressManager } from '@core/progress';
+import { type SegraProgress } from 'segra-logger';
 import { type StreamHttpClient } from '@engine/http';
 import { type FileManager } from '@storage';
 import { OutputType } from '@types';
@@ -17,7 +17,7 @@ export class TransferCoordinator {
 	constructor(
 		protected readonly fileManager: FileManager,
 		protected readonly streamHttpClient: StreamHttpClient,
-		protected readonly progressManager: ProgressManager
+		protected readonly progress: SegraProgress
 	) {}
 
 	/**
@@ -112,7 +112,7 @@ export class TransferCoordinator {
 
 		const resolvedFile = this.fileManager.deriveResolvedFile(initialFile, finalUrl, headers, isFmp4, dirConfig?.prefix);
 
-		this.progressManager.update({ message: `Extracting metadata for: ${resolvedFile.extendedFilename}` });
+		this.progress.message(`Extracting metadata for: ${resolvedFile.extendedFilename}`);
 
 		if (outputType === OutputType.STREAM) {
 			return this.streamItem(item, opts, streamRequest, resolvedFile);

@@ -1,5 +1,5 @@
 import { type ExecutionArgs, type ExecutionResult, type PipelineHook, type PipelineItem } from '@contracts';
-import { type ProgressManager } from '@core/progress';
+import { type SegraProgress } from 'segra-logger';
 import { type PipelineRegistry, type TransformerRegistry } from '@core/registries';
 import { type ExecutionShape, OutputType, type ShapeOutput } from '@types';
 import { type TaskCoordinator } from './TaskCoordinator';
@@ -19,7 +19,7 @@ export class ExecutionCoordinator {
 	constructor(
 		private readonly transformerRegistry: TransformerRegistry,
 		private readonly taskCoordinator: TaskCoordinator,
-		private readonly progressManager: ProgressManager,
+		private readonly progress: SegraProgress,
 		private readonly pipelineRegistry: PipelineRegistry
 	) {}
 
@@ -39,7 +39,8 @@ export class ExecutionCoordinator {
 		const pipelineItems: PipelineItem[] = [];
 		const iterables: TResult[] = [];
 
-		this.progressManager.update({ status: 'STARTED', totalTargets: targets.length });
+		this.progress.status('STARTED', 'muted');
+		this.progress.count('Targets', 0, targets.length);
 
 		const transformed = await this.extractMetadataFromTargets<TResult, TExec>(targets, request, errors);
 
@@ -60,7 +61,8 @@ export class ExecutionCoordinator {
 			pipelineItems
 		};
 
-		this.progressManager.update({ status: 'QUEUED', totalItems: result.pipelineItems.length });
+		this.progress.status('QUEUED', 'muted');
+		this.progress.count('Items', 0, result.pipelineItems.length);
 
 		switch (outputType) {
 			case OutputType.JSON:
@@ -118,9 +120,7 @@ export class ExecutionCoordinator {
 				 */
 				errors.push(normalizedError);
 
-				this.progressManager.update({
-					error: { cause: normalizedError, name: 'Extraction Error', message: `Error EXTRACTING ${target}` }
-				});
+				this.progress.detail('Error', `Error extracting ${target}: ${normalizedError.message}`, 'danger');
 			}
 		});
 

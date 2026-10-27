@@ -1,6 +1,6 @@
 import { BaseHttpClient } from '@base';
 import { type DownloadOptions, type M3U8Variant } from '@contracts';
-import { type ProgressManager } from '@core/progress';
+import { type SegraProgress } from 'segra-logger';
 import { mapQualityToHeight } from '@shared';
 import { VideoQuality } from '@types';
 import { createDecipheriv } from 'crypto';
@@ -58,8 +58,8 @@ export class HlsClient extends BaseHttpClient {
 	/** Minimum gap between byte-progress events while a segment streams. */
 	private static readonly BYTE_REPORT_INTERVAL = 250;
 
-	constructor(progressManager: ProgressManager) {
-		super(progressManager);
+	constructor(progress: SegraProgress) {
+		super(progress);
 	}
 
 	/**
@@ -183,9 +183,9 @@ export class HlsClient extends BaseHttpClient {
 				if (signal?.aborted) break;
 
 				if (attempt < retries) {
-					this.progressManager.update({
-						message: `Error fetching segment ${url}: ${(error as Error).message}. Retrying... (${attempt + 1}/${retries})`
-					});
+					this.progress.message(
+						`Error fetching segment ${url}: ${(error as Error).message}. Retrying... (${attempt + 1}/${retries})`
+					);
 					await new Promise((res) => setTimeout(res, 1000 * (attempt + 1)));
 					continue;
 				}
@@ -242,9 +242,9 @@ export class HlsClient extends BaseHttpClient {
 	private withDecrypt(readable: NodeJS.ReadableStream, segment: HlsSegment, key: Buffer | null): NodeJS.ReadableStream {
 		if (!key || !segment.key || segment.key.method === 'NONE') return readable;
 
-		this.progressManager.update({
-			message: `Decrypting segment ${segment.sequence} with key ${segment.key.url} and IV ${segment.key.iv?.toString('hex') ?? 'derived'}`
-		});
+		this.progress.message(
+			`Decrypting segment ${segment.sequence} with key ${segment.key.url} and IV ${segment.key.iv?.toString('hex') ?? 'derived'}`
+		);
 
 		/**
 		 * RFC 8216 §5.2: when `IV` is absent the media sequence number of the
@@ -306,14 +306,15 @@ export class HlsClient extends BaseHttpClient {
 		opts: DownloadOptions
 	): Promise<void> {
 		const signal = opts.signal;
-		const itemKey = opts.pipelineItem?.downloadUrl;
+		const itemKey = opts.pipelineItem?.downloadUrl ?? 'stream';
 		const itemLabel = this.itemLabel(opts);
 
 		if (!segments.length) return;
 
 		const total = segments.length;
 
-		this.progressManager.update({ totalSegments: total, message: 'Starting to stream segments...', itemKey, itemLabel });
+		this.progress.message('Starting to stream segments...');
+		this.progress.transfer(itemKey, { label: itemLabel, totalSegments: total });
 
 		const keyCache = new Map<string, Buffer>();
 
@@ -330,7 +331,7 @@ export class HlsClient extends BaseHttpClient {
 
 			lastByteReport = now;
 
-			this.progressManager.update({ downloadedBytes, itemKey, itemLabel });
+			this.progress.transfer(itemKey, { label: itemLabel, bytes: downloadedBytes });
 		};
 
 		// --- Prefetch 1 ahead ---
@@ -356,13 +357,7 @@ export class HlsClient extends BaseHttpClient {
 				await this.pipeOne(readable, stream, reportBytes);
 
 				// progress callback (segment-level)
-				this.progressManager.update({
-					resolvedSegments: i + 1,
-					currentSegment: segments[i].url,
-					downloadedBytes,
-					itemKey,
-					itemLabel
-				});
+				this.progress.transfer(itemKey, { label: itemLabel, segments: i + 1, bytes: downloadedBytes });
 			}
 		} catch (error) {
 			await this.abandonSegmentFetch(nextPromise);
@@ -539,7 +534,7 @@ export class HlsClient extends BaseHttpClient {
 			return b.bw - a.bw;
 		});
 
-		this.progressManager.update({ message: 'Selecting variants from manifest' });
+		this.progress.message('Selecting variants from manifest');
 
 		// If no preference, return best
 		if (!allowedVideoQuality || allowedVideoQuality === VideoQuality.QUnknown) return variants[0].url;
@@ -619,7 +614,7 @@ export class HlsClient extends BaseHttpClient {
 
 		const rawIv = line.match(/IV=0[xX]([0-9a-fA-F]+)/)?.[1];
 
-		this.progressManager.update({ message: `Parsed ${method} key from manifest (explicit IV: ${!!rawIv})` });
+		this.progress.message(`Parsed ${method} key from manifest (explicit IV: ${!!rawIv})`);
 
 		return {
 			method: 'AES-128',

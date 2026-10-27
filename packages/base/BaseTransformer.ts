@@ -8,7 +8,7 @@ import {
 	type VideosFormat,
 	type VideoSourceOutput
 } from '@contracts';
-import { type ProgressManager } from '@core/progress';
+import { type SegraProgress } from 'segra-logger';
 import { type HlsClient, type HttpClient } from '@engine/http';
 import { VideoQuality } from '@types';
 import { BaseParser } from './BaseParser';
@@ -42,7 +42,7 @@ export class BaseTransformer<TExec extends ExecutionArgs, TResult = DefaultExecu
 	constructor(
 		protected readonly httpClient: HttpClient,
 		protected readonly hlsClient: HlsClient,
-		protected readonly progressManager: ProgressManager,
+		protected readonly progress: SegraProgress,
 		protected readonly parser?: new () => BaseParser
 	) {}
 

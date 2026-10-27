@@ -1,5 +1,5 @@
 import { type DownloadOptions, type HttpAgentOptions } from '@contracts';
-import { type ProgressManager } from '@core/progress';
+import { type SegraProgress } from 'segra-logger';
 import { HEADER_PRESETS } from '@shared';
 import { checkServerIdentity as tlsCheckServerIdentity } from 'tls';
 import { Agent, type Dispatcher, type Headers, ProxyAgent, fetch as UFetch } from 'undici';
@@ -14,7 +14,7 @@ import { brotliDecompressSync, gunzipSync, inflateSync } from 'zlib';
  * dispatchers, retries, and low-level fetch fallback behavior.
  */
 export abstract class BaseHttpClient {
-	constructor(protected readonly progressManager: ProgressManager) {}
+	constructor(protected readonly progress: SegraProgress) {}
 
 	protected readonly cookieJar = new Map<string, Map<string, string>>();
 	protected static readonly CHROME_CIPHERS = [
@@ -342,12 +342,12 @@ export abstract class BaseHttpClient {
 			// a caller-requested abort is final, never retry through another transport
 			if (signal?.aborted || !allowFallback || !transportError) throw error;
 
-			this.progressManager.update({ message: `Transport failure, Retrying with SNI spoof, CODE: ${transportError}` });
+			this.progress.message(`Transport failure, Retrying with SNI spoof, CODE: ${transportError}`);
 
 			try {
 				return await UFetch(url, { ...init, signal, dispatcher: this.createDispatcher(url, options) });
 			} catch (spoofError) {
-				this.progressManager.update({ message: `SNI spoof transport failed, Retry with default, ${spoofError}` });
+				this.progress.message(`SNI spoof transport failed, Retry with default, ${spoofError}`);
 				return await UFetch(url, { ...init, signal });
 			}
 		}
@@ -380,7 +380,7 @@ export abstract class BaseHttpClient {
 		} catch (error) {
 			const transportError = this.isTransportError(error);
 
-			if (transportError) this.progressManager.update({ message: `Transport error occurred: ${transportError}` });
+			if (transportError) this.progress.message(`Transport error occurred: ${transportError}`);
 
 			throw new Error('JSON parsing failed', { cause: error });
 		}

@@ -3,6 +3,5 @@ export * from './DownloadContracts';
 export * from './ExecutionContracts';
 export * from './FlashVars';
 export * from './PipelineContracts';
-export * from './ProgressContracts';
 export * from './ProviderComponents';
 export * from './StorageContracts';

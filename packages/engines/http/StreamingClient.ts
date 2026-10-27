@@ -1,7 +1,7 @@
 import { BaseHttpClient } from '@base';
 import { type DownloadOptions, type HLSStreamRequest, type PipelineItem } from '@contracts';
 import { DownloadException, NotFoundException } from '@core/exceptions';
-import { type ProgressManager } from '@core/progress';
+import { type SegraProgress } from 'segra-logger';
 import { type StrategyRegistry } from '@core/registries';
 import { Readable, Transform, type Writable } from 'stream';
 import { pipeline } from 'stream/promises';
@@ -23,9 +23,9 @@ export class StreamHttpClient extends BaseHttpClient {
 	constructor(
 		private readonly hlsClient: HlsClient,
 		private readonly strategyRegistry: StrategyRegistry,
-		progressManager: ProgressManager
+		progress: SegraProgress
 	) {
-		super(progressManager);
+		super(progress);
 	}
 
 	private async handleServiceAware404(url: string, opts: DownloadOptions): Promise<HLSStreamRequest | null> {
@@ -42,7 +42,7 @@ export class StreamHttpClient extends BaseHttpClient {
 			const fallback = strategy.getFallbackUrl?.(url);
 
 			if (fallback && fallback !== url) {
-				this.progressManager.update({ message: `CDN fallback (${cdnBudget} left): ${fallback}` });
+				this.progress.message(`CDN fallback (${cdnBudget} left): ${fallback}`);
 
 				return this.requestStream(fallback, { ...opts, cdnFallbackBudget: cdnBudget - 1, reExtractBudget });
 			}
@@ -51,7 +51,7 @@ export class StreamHttpClient extends BaseHttpClient {
 		const shouldReExtract = strategy.shouldReExtract?.(url) && opts.reExtract && opts.pipelineItem && reExtractBudget > 0;
 
 		if (shouldReExtract) {
-			this.progressManager.update({ message: `HLS expired, re extracting (${reExtractBudget} left)...` });
+			this.progress.message(`HLS expired, re extracting (${reExtractBudget} left)...`);
 
 			const freshItem = await opts.reExtract?.(opts?.pipelineItem as PipelineItem);
 			const freshUrl = freshItem?.downloadUrl;
@@ -94,14 +94,15 @@ export class StreamHttpClient extends BaseHttpClient {
 		const strategy = await this.strategyRegistry.getStrategy();
 		const shouldResolve = strategy?.shouldResolveTextResponse?.(url, contentType);
 
-		this.progressManager.update({ message: `Resolving text response...${url} should resolve ${shouldResolve}` });
+		this.progress.message(`Resolving text response...${url} should resolve ${shouldResolve}`);
 
 		if (!shouldResolve) return null;
 
 		const directUrl = strategy?.getDirectVideoUrlFromText?.(await body.text(), opts);
 		if (!directUrl || directUrl === url) throw new Error(`Unable to resolve direct video url from ${url}`);
 
-		this.progressManager.update({ message: 'Direct mp4 resolved', redirectedUrl: directUrl });
+		this.progress.message('Direct mp4 resolved');
+		this.progress.detail('Redirect', directUrl);
 		return this.requestStream(directUrl, opts);
 	}
 
@@ -150,7 +151,7 @@ export class StreamHttpClient extends BaseHttpClient {
 					const responseHeaders = Object.fromEntries(response.headers.entries());
 
 					if (response.status === 404) {
-						this.progressManager.update({ message: `Statuscode 404: ${candidateUrl}` });
+						this.progress.message(`Statuscode 404: ${candidateUrl}`);
 
 						await this.discardBody(response);
 
@@ -216,7 +217,7 @@ export class StreamHttpClient extends BaseHttpClient {
 						estimatedBytes: declaredLength,
 						start: async (stream: Writable, noDownload?: boolean) => {
 							if (noDownload) {
-								this.progressManager.update({ message: `Stream debug mode - skipping download for ${finalUrl}` });
+								this.progress.message(`Stream debug mode - skipping download for ${finalUrl}`);
 
 								await this.discardBody(response);
 
@@ -250,24 +251,21 @@ export class StreamHttpClient extends BaseHttpClient {
 		let downloadedBytes = 0;
 		let lastEmit = Date.now();
 
-		const progressManager = this.progressManager;
+		const progress = this.progress;
 
-		const itemKey = opts.pipelineItem?.downloadUrl;
-		const itemLabel = this.itemLabel(opts);
+		const itemKey = opts.pipelineItem?.downloadUrl ?? res.url;
+		const label = this.itemLabel(opts);
 
-		const progress = new Transform({
+		const meter = new Transform({
 			transform(chunk: Buffer, _, cb) {
 				downloadedBytes += chunk.length;
 
 				const now = Date.now();
 
-				if (now - lastEmit > 2000) {
+				if (now - lastEmit > 500) {
 					lastEmit = now;
 
-					progressManager.update({
-						downloadedBytes,
-						totalBytes: size
-					});
+					progress.transfer(itemKey, { label, bytes: downloadedBytes, totalBytes: size });
 				}
 
 				cb(null, chunk);
@@ -275,8 +273,8 @@ export class StreamHttpClient extends BaseHttpClient {
 		});
 
 		// the signal reaches the byte pump itself, so an abort tears down an in-flight transfer
-		await pipeline(readable, progress, stream, opts.signal ? { signal: opts.signal } : {});
+		await pipeline(readable, meter, stream, opts.signal ? { signal: opts.signal } : {});
 
-		progressManager.update({ downloadedBytes, totalBytes: size, itemKey, itemLabel });
+		progress.transfer(itemKey, { label, bytes: downloadedBytes, totalBytes: size });
 	}
 }

@@ -1,16 +1,15 @@
 import { type CoordinatorDependencies, type ProviderComponents } from '@contracts';
 import { ExecutionCoordinator, TaskCoordinator, TransferCoordinator } from '@core/coordinators';
-import { ProgressManager } from '@core/progress';
 import { PipelineRegistry, StrategyRegistry, TransformerRegistry } from '@core/registries';
-import { CliManager } from '@core/ui';
 import { HlsClient, HttpClient, StreamHttpClient } from '@engine/http';
 import { FFmpegEngine, FileManager } from '@storage';
+import { SegraProgress } from 'segra-logger';
 
 /**
  * Creates the default service dependency graph.
  *
  * @remarks
- * One graph per provider instance is intentional: `ProgressManager` carries
+ * One graph per provider instance is intentional: `SegraProgress` carries
  * per-job state, so sharing it across providers would interleave progress from
  * unrelated jobs. The graph itself is cheap because the undici connection pools
  * underneath it are process-wide and shared (see `BaseHttpClient`), which is what
@@ -20,27 +19,25 @@ import { FFmpegEngine, FileManager } from '@storage';
  * @returns Default service dependencies
  */
 export function createDefaultDependencies(components: ProviderComponents = {}): CoordinatorDependencies {
-	const progressManager = new ProgressManager();
+	const progress = new SegraProgress('Job');
 
-	const cliManager = new CliManager(progressManager);
+	const ffmpegEngine = new FFmpegEngine(progress);
+	const fileManager = new FileManager(ffmpegEngine, progress);
 
-	const ffmpegEngine = new FFmpegEngine(progressManager);
-	const fileManager = new FileManager(ffmpegEngine, progressManager);
+	const strategyRegistry = new StrategyRegistry(progress, components);
 
-	const strategyRegistry = new StrategyRegistry(progressManager, components);
-
-	const httpClient = new HttpClient(progressManager, components);
-	const hlsClient = new HlsClient(progressManager);
-	const streamHttpClient = new StreamHttpClient(hlsClient, strategyRegistry, progressManager);
+	const httpClient = new HttpClient(progress, components);
+	const hlsClient = new HlsClient(progress);
+	const streamHttpClient = new StreamHttpClient(hlsClient, strategyRegistry, progress);
 
 	const pipelineRegistry = new PipelineRegistry(fileManager, components);
 
-	const transformerRegistry = new TransformerRegistry(httpClient, hlsClient, progressManager, components);
+	const transformerRegistry = new TransformerRegistry(httpClient, hlsClient, progress, components);
 
-	const transferCoordinator = new TransferCoordinator(fileManager, streamHttpClient, progressManager);
+	const transferCoordinator = new TransferCoordinator(fileManager, streamHttpClient, progress);
 
-	const taskCoordinator = new TaskCoordinator(transferCoordinator, fileManager, transformerRegistry, progressManager, pipelineRegistry);
-	const executionCoordinator = new ExecutionCoordinator(transformerRegistry, taskCoordinator, progressManager, pipelineRegistry);
+	const taskCoordinator = new TaskCoordinator(transferCoordinator, fileManager, transformerRegistry, progress, pipelineRegistry);
+	const executionCoordinator = new ExecutionCoordinator(transformerRegistry, taskCoordinator, progress, pipelineRegistry);
 
 	return {
 		httpClient,
@@ -49,7 +46,6 @@ export function createDefaultDependencies(components: ProviderComponents = {}): 
 		transferCoordinator,
 		strategyRegistry,
 		executionCoordinator,
-		progressManager,
-		cliManager
+		progress
 	};
 }

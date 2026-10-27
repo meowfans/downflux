@@ -1,12 +1,12 @@
-import { ProgressManager } from '@core/progress';
+import { SegraProgress } from 'segra-logger';
 import { Provider } from '@types';
 import { BaseStrategy } from '@base';
 {{imports}}
 
-type StrategyCtor = new (progress: ProgressManager) => BaseStrategy;
+type StrategyCtor = new (progress: SegraProgress) => BaseStrategy;
 
 export class StrategyRegistry {
-	constructor(private readonly progressManager: ProgressManager) {}
+	constructor(private readonly progress: SegraProgress) {}
 
 	private readonly strategies: Record<Provider, StrategyCtor> = {
 		{{entries}}
@@ -14,6 +14,6 @@ export class StrategyRegistry {
 
 	public getStrategy(provider: Provider): BaseStrategy {
 		const StrategyClass = this.strategies[provider] ?? this.strategies[Provider.Default];
-		return new StrategyClass(this.progressManager);
+		return new StrategyClass(this.progress);
 	}
 }

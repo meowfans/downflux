@@ -6,14 +6,13 @@ import {
 	type ExecutionOptions,
 	type HttpAgentOptions,
 	type HttpFetchOptions,
-	type JobProgressEvent,
 	type JobSettlement,
 	type ProviderConfig,
 	type TranscodeOptions
 } from '@contracts';
 import { createDefaultDependencies } from '@core/dependency';
 import { InvalidRangeException, InvalidUrlException, UnsupportedOperationException } from '@core/exceptions';
-import { SignalHandler } from '@core/lifecycle';
+import { downfluxTheme } from '@core/ui';
 import {
 	type AllowedExtension,
 	type ExecutionShape,
@@ -26,6 +25,7 @@ import {
 	type VideoCodec,
 	VideoFormat
 } from '@types';
+import { defaultTheme, getLoggerConfig, type ProgressSnapshot, SegraLogger, SignalHandler } from 'segra-logger';
 import { type ProviderMetadata } from './BaseContracts';
 
 /**
@@ -270,9 +270,9 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 
 	/**
 	 * Sets progress handler.
-	 * @param handler Progress event callback
+	 * @param handler Receives segra-logger's progress snapshot on every update
 	 */
-	public onProgress(handler: (event: JobProgressEvent) => void): this {
+	public onProgress(handler: (snapshot: ProgressSnapshot) => void): this {
 		this.executionOptions.onProgress = handler;
 		return this;
 	}
@@ -328,6 +328,26 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 	public setExecutionType(type: ExecutionType): this {
 		this.executionOptions.executionType = type;
 		return this;
+	}
+
+	/**
+	 * Resets the progress panel for a new job.
+	 *
+	 * @remarks
+	 * DownFlux brands its panel the same way from the CLI and inside an app. A host
+	 * that already called `SegraLogger.create()` keeps its own theme and mode;
+	 * otherwise the DOWNFLUX theme and the live panel apply.
+	 */
+	private startProgress(request: ExecutionOptions): void {
+		const { progress } = this.deps;
+
+		if (request.logProgress && getLoggerConfig().theme === defaultTheme) SegraLogger.create({ theme: downfluxTheme, mode: 'live' });
+
+		progress.removeAllListeners('update');
+
+		if (request.onProgress) progress.on('update', request.onProgress);
+
+		progress.start({ display: Boolean(request.logProgress), captureConsole: Boolean(request.captureConsole) });
 	}
 
 	/**
@@ -442,7 +462,7 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 		this.unregisterSignal?.();
 		this.unregisterSignal = undefined;
 
-		this.deps.cliManager?.destroy();
+		this.deps.progress.end();
 
 		if (options.closeConnections) await this.deps.httpClient.closeConnections();
 	}
@@ -489,8 +509,7 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 
 		this.assertSupported(request.method);
 
-		// without calling the `init` method, the ProgressManager will not emit events
-		this.deps.progressManager.init(request);
+		this.startProgress(request);
 
 		const result = await this.deps.executionCoordinator.execute<TItem, TShape, TRequest>(request);
 

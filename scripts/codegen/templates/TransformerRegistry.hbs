@@ -1,11 +1,11 @@
 import { HttpClient } from '@engines/http';
 import { ExecutionArgs } from '@contracts';
-import { ProgressManager } from '@core/progress';
+import { SegraProgress } from 'segra-logger';
 import { Provider } from '@types';
 import { BaseTransformer } from '@base';
 {{imports}}
 
-type TransformerCtor = new (html: HttpClient, progress: ProgressManager) => BaseTransformer<any, any>;
+type TransformerCtor = new (html: HttpClient, progress: SegraProgress) => BaseTransformer<any, any>;
 
 export class TransformerRegistry {
 	private readonly transformers: Record<Provider, TransformerCtor> = {
@@ -14,7 +14,7 @@ export class TransformerRegistry {
 
 	constructor(
 		private readonly httpClient: HttpClient,
-		private readonly progressManager: ProgressManager
+		private readonly progress: SegraProgress
 	) {}
 
 
@@ -23,7 +23,7 @@ export class TransformerRegistry {
 
 		const TransformerClass = this.transformers[provider] ?? this.transformers[Provider.Default];
 
-		const transformer = new TransformerClass(this.httpClient, this.progressManager);
+		const transformer = new TransformerClass(this.httpClient, this.progress);
 
 		return (await transformer.transform(url, request)) as TResult;
 	}
