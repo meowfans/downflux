@@ -80,7 +80,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/meowfans/downflux.git"
+		"url": "git+https://github.com/opensegra/downflux.git"
 	},
 	"keywords": [
 		"downflux",
@@ -88,12 +88,12 @@
 		"scraper",
 		"media"
 	],
-	"author": "meowfans <meowfans@users.noreply.github.com>",
+	"author": "opensegra <opensegra@users.noreply.github.com>",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/meowfans/downflux/issues"
+		"url": "https://github.com/opensegra/downflux/issues"
 	},
-	"homepage": "https://github.com/meowfans/downflux#readme",
+	"homepage": "https://github.com/opensegra/downflux#readme",
 	"engines": {
 		"node": ">=22.0.0"
 	},
