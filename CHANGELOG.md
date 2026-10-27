@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.2.1](https://github.com/opensegra/downflux/compare/v3.2.0...v3.2.1) (2026-10-27)
+
+
+### Bug Fixes
+
+* update docs-md with new commit link ([7237659](https://github.com/opensegra/downflux/commit/72376593153f2f3e51ee5ca18ca4cd0782520ad7))
+* update the repo organization name ([c668608](https://github.com/opensegra/downflux/commit/c6686089f8cf3fd19c123a024dc242e2779a5334))
+
 ## [3.2.0](https://github.com/opensegra/downflux/compare/v3.1.0...v3.2.0) (2026-10-25)
 
 ### Features
