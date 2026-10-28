@@ -25,7 +25,7 @@ import {
 	type VideoCodec,
 	VideoFormat
 } from '@types';
-import { defaultTheme, getLoggerConfig, type ProgressSnapshot, SegraLogger, SignalHandler } from 'segra-logger';
+import { defaultTheme, getLoggerConfig, type ProgressSnapshot, Inumaki, SignalHandler } from 'inumaki';
 import { type ProviderMetadata } from './BaseContracts';
 
 /**
@@ -270,7 +270,7 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 
 	/**
 	 * Sets progress handler.
-	 * @param handler Receives segra-logger's progress snapshot on every update
+	 * @param handler Receives inumaki's progress snapshot on every update
 	 */
 	public onProgress(handler: (snapshot: ProgressSnapshot) => void): this {
 		this.executionOptions.onProgress = handler;
@@ -335,13 +335,13 @@ export abstract class BaseProvider<TExec extends ExecutionArgs<ExecutionShape>> 
 	 *
 	 * @remarks
 	 * DownFlux brands its panel the same way from the CLI and inside an app. A host
-	 * that already called `SegraLogger.create()` keeps its own theme and mode;
+	 * that already called `Inumaki.create()` keeps its own theme and mode;
 	 * otherwise the DOWNFLUX theme and the live panel apply.
 	 */
 	private startProgress(request: ExecutionOptions): void {
 		const { progress } = this.deps;
 
-		if (request.logProgress && getLoggerConfig().theme === defaultTheme) SegraLogger.create({ theme: downfluxTheme, mode: 'live' });
+		if (request.logProgress && getLoggerConfig().theme === defaultTheme) Inumaki.create({ theme: downfluxTheme, mode: 'live' });
 
 		progress.removeAllListeners('update');
 

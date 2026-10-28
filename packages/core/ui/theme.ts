@@ -1,11 +1,11 @@
-import { type ThemeOverrides } from 'segra-logger';
+import { type ThemeOverrides } from 'inumaki';
 
 /**
  * DOWNFLUX branding for the progress panel and CLI output.
  *
  * @remarks
  * Applied the same way from the CLI and from inside an app, unless the host has
- * already called `SegraLogger.create()`, in which case its branding wins. The
+ * already called `Inumaki.create()`, in which case its branding wins. The
  * banner prints because it is provided; there is no separate switch. The palette
  * is left at the Segra default, which DownFlux shares.
  */

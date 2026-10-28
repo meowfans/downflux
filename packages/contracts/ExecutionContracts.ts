@@ -11,7 +11,7 @@ import {
 	type VideoFormat,
 	type VideoQuality
 } from '@types';
-import { type ProgressSnapshot } from 'segra-logger';
+import { type ProgressSnapshot } from 'inumaki';
 import { type Dispatcher } from 'undici';
 import { type HttpFetchOptions, type VideoSourceOutput } from './DownloadContracts';
 import { type PipelineHook, type PipelineItem } from './PipelineContracts';
@@ -147,7 +147,7 @@ export interface ExecutionOptions extends HttpFetchOptions {
 	/** PipelineRegistry lifecycle hooks */
 	pipelineHooks?: PipelineHook[];
 
-	/** Receives segra-logger's progress snapshot on every update */
+	/** Receives inumaki's progress snapshot on every update */
 	onProgress?: (snapshot: ProgressSnapshot) => void;
 
 	/** Enables console progress logging */

@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
 import { type DefaultExecutionResult } from '@contracts';
-import { type OutputType, type VideoQuality } from '@types';
+import { type VideoQuality } from '@types';
 import { type PornDoeExecArgs, type PornDoeOutput, type PornDoeVideoOutput, type PornDoeVideoSource } from './PornDoeContracts';
 import { PornDoeMethods } from './PornDoeTypes';
 
@@ -36,7 +36,6 @@ export class PornDoeTransformer extends BaseTransformer<PornDoeExecArgs, Default
 			`${this.MP4_URL}&page=${pornDoeFields.banners?.page}&id=${pornDoeFields.banners?.id}`,
 			{
 				...request,
-				outputType: request.outputType as OutputType,
 				referer: request.entryUrl,
 				headers: {
 					'Accept': '*/*',

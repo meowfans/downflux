@@ -1,49 +1,47 @@
 import { type CoordinatorDependencies, type ProviderComponents } from '@contracts';
-import { ExecutionCoordinator, TaskCoordinator, TransferCoordinator } from '@core/coordinators';
+import { ExecutionCoordinator, TaskCoordinator } from '@core/coordinators';
 import { PipelineRegistry, StrategyRegistry, TransformerRegistry } from '@core/registries';
-import { HlsClient, HttpClient, StreamHttpClient } from '@engine/http';
-import { FFmpegEngine, FileManager } from '@storage';
-import { SegraProgress } from 'segra-logger';
+import { HttpClient } from '@engine/http';
+import { FileManager } from '@storage';
+import { InumakiProgress } from 'inumaki';
+import { Charanko, FFmpegEngine, HlsClient, StreamHttpClient } from 'charanko';
 
 /**
  * Creates the default service dependency graph.
  *
  * @remarks
- * One graph per provider instance is intentional: `SegraProgress` carries
+ * One graph per provider instance is intentional: `InumakiProgress` carries
  * per-job state, so sharing it across providers would interleave progress from
  * unrelated jobs. The graph itself is cheap because the undici connection pools
- * underneath it are process-wide and shared (see `BaseHttpClient`), which is what
- * previously leaked six pools per provider construction.
+ * underneath it are process-wide and shared (see charanko's `BaseHttpClient`),
+ * which is what previously leaked six pools per provider construction. Downloads
+ * go through charanko; DownFlux keeps page fetching, extraction and scheduling.
  *
  * @param components Classes the provider contributes; anything omitted falls back to `Base*`.
  * @returns Default service dependencies
  */
 export function createDefaultDependencies(components: ProviderComponents = {}): CoordinatorDependencies {
-	const progress = new SegraProgress('Job');
+	const progress = new InumakiProgress('Job');
 
-	const ffmpegEngine = new FFmpegEngine(progress);
-	const fileManager = new FileManager(ffmpegEngine, progress);
+	const fileManager = new FileManager(new FFmpegEngine(progress), progress);
 
 	const strategyRegistry = new StrategyRegistry(progress, components);
 
 	const httpClient = new HttpClient(progress, components);
 	const hlsClient = new HlsClient(progress);
-	const streamHttpClient = new StreamHttpClient(hlsClient, strategyRegistry, progress);
+	const charanko = new Charanko(fileManager, new StreamHttpClient(hlsClient, progress, strategyRegistry.strategy), progress);
 
 	const pipelineRegistry = new PipelineRegistry(fileManager, components);
 
 	const transformerRegistry = new TransformerRegistry(httpClient, hlsClient, progress, components);
 
-	const transferCoordinator = new TransferCoordinator(fileManager, streamHttpClient, progress);
-
-	const taskCoordinator = new TaskCoordinator(transferCoordinator, fileManager, transformerRegistry, progress, pipelineRegistry);
+	const taskCoordinator = new TaskCoordinator(charanko, fileManager, transformerRegistry, progress, pipelineRegistry);
 	const executionCoordinator = new ExecutionCoordinator(transformerRegistry, taskCoordinator, progress, pipelineRegistry);
 
 	return {
 		httpClient,
-		streamHttpClient,
+		charanko,
 		transformerRegistry,
-		transferCoordinator,
 		strategyRegistry,
 		executionCoordinator,
 		progress

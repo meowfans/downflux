@@ -28,7 +28,7 @@ export class PornOnePipeline extends BasePipeline<PornOneExecArgs, PornOneOutput
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.uploader || 'unknown'), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.uploader || 'unknown'), mediaSegment);
 	}
 
 	protected override mappings(metadata: PornOneOutput, request: PornOneExecArgs): PipelineMappings {

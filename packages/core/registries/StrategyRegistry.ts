@@ -1,6 +1,6 @@
 import { BaseStrategy } from '@base';
 import type { ProviderComponents } from '@contracts';
-import type { SegraProgress } from 'segra-logger';
+import type { InumakiProgress } from 'inumaki';
 
 /**
  * Supplies the transport strategy for the running job.
@@ -10,20 +10,17 @@ import type { SegraProgress } from 'segra-logger';
  * The instance is created once and reused; strategies are stateless helpers.
  */
 export class StrategyRegistry {
-	private strategy: BaseStrategy | null = null;
+	private instance: BaseStrategy | null = null;
 
 	constructor(
-		private readonly progress: SegraProgress,
+		private readonly progress: InumakiProgress,
 		private readonly components: ProviderComponents = {}
 	) {}
 
-	public async getStrategy(): Promise<BaseStrategy> {
-		if (this.strategy) return this.strategy;
-
+	/** The provider's strategy, created on first use. */
+	public get strategy(): BaseStrategy {
 		const StrategyClass = this.components.strategy ?? BaseStrategy;
 
-		this.strategy = new StrategyClass(this.progress);
-
-		return this.strategy;
+		return (this.instance ??= new StrategyClass(this.progress));
 	}
 }

@@ -1,11 +1,11 @@
 import { HttpClient } from '@engines/http';
 import { ExecutionArgs } from '@contracts';
-import { SegraProgress } from 'segra-logger';
+import { InumakiProgress } from 'inumaki';
 import { Provider } from '@types';
 import { BaseTransformer } from '@base';
 {{imports}}
 
-type TransformerCtor = new (html: HttpClient, progress: SegraProgress) => BaseTransformer<any, any>;
+type TransformerCtor = new (html: HttpClient, progress: InumakiProgress) => BaseTransformer<any, any>;
 
 export class TransformerRegistry {
 	private readonly transformers: Record<Provider, TransformerCtor> = {
@@ -14,7 +14,7 @@ export class TransformerRegistry {
 
 	constructor(
 		private readonly httpClient: HttpClient,
-		private readonly progress: SegraProgress
+		private readonly progress: InumakiProgress
 	) {}
 
 

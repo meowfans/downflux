@@ -49,7 +49,7 @@ export class PerfectGirlsPipeline extends BasePipeline<PerfectGirlsExecArgs, Per
 				mediaSegment = 'misc';
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.author || metadata.modelName), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.author || metadata.modelName), mediaSegment);
 	}
 
 	protected override mappings(metadata: PerfectGirlsOutput, request: PerfectGirlsExecArgs): PipelineMappings {

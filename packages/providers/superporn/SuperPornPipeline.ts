@@ -28,11 +28,11 @@ export class SuperPornPipeline extends BasePipeline<SuperPornExecArgs, SuperPorn
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.uploader || 'superporn_uploader'), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.uploader || 'superporn_uploader'), mediaSegment);
 	}
 
 	protected override mappings(metadata: SuperPornOutput, request: SuperPornExecArgs): PipelineMappings {
-		const videoId = this.pathBuilder.spaceNormalizer(metadata.title);
+		const videoId = this.pathBuilder.safeName(metadata.title);
 		return [
 			this.createMappings(
 				this.filterByQuality(metadata.videos?.mp4, {

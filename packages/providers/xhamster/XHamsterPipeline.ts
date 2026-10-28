@@ -23,7 +23,7 @@ export class XHamsterPipeline extends BasePipeline<XHamsterExecArgs, XHamsterOut
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.username), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.username), mediaSegment);
 	}
 
 	protected override mappings(metadata: XHamsterOutput, request: XHamsterExecArgs): PipelineMappings {
@@ -35,13 +35,13 @@ export class XHamsterPipeline extends BasePipeline<XHamsterExecArgs, XHamsterOut
 				{
 					getMedia: () => MediaType.VIDEOS,
 					getUrl: (url) => url,
-					getId: () => this.pathBuilder.spaceNormalizer(metadata.title)
+					getId: () => this.pathBuilder.safeName(metadata.title)
 				}
 			),
 			this.createMappings(metadata?.thumbnailUrl ? [metadata.thumbnailUrl] : undefined, {
 				getMedia: () => MediaType.VIDEO_POSTER,
 				getUrl: (url) => url,
-				getId: () => this.pathBuilder.spaceNormalizer(metadata.title)
+				getId: () => this.pathBuilder.safeName(metadata.title)
 			})
 		];
 	}

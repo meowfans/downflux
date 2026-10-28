@@ -4,19 +4,26 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+overrides:
+  inumaki: link:../segra/inumaki
+  charanko: link:../segra/charanko
+
 importers:
 
   .:
     dependencies:
+      charanko:
+        specifier: ^0.3.0
+        version: 0.3.0
       execa:
         specifier: ^9.6.1
         version: 9.6.1
       ffmpeg-static:
         specifier: ^5.3.0
         version: 5.3.0
-      segra-logger:
-        specifier: ^0.4.0
-        version: 0.4.0
+      inumaki:
+        specifier: link:../segra/inumaki
+        version: link:../segra/inumaki
       undici:
         specifier: ^8.1.0
         version: 8.1.0
@@ -1403,6 +1410,10 @@ packages:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
     engines: {node: '>=10'}
 
+  charanko@0.3.0:
+    resolution: {integrity: sha512-IJ8XxNtB1b1HhKW+8yj4A32xCicj43wAAknpvc3Gro4THYTL3ijLGvOIVIOWh4LO9If2BWrD+plZe4Xk1hmm4A==}
+    engines: {node: '>=22.12'}
+
   chokidar@4.0.3:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
@@ -2676,10 +2687,6 @@ packages:
   safe-buffer@5.2.1:
     resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
 
-  segra-logger@0.4.0:
-    resolution: {integrity: sha512-4Azc1p221WLz1xrwCToCLxmgdBmWgndUQrXdIV0n5dZ3cyT5ITs7ICV6oQ5jfQQ/cxPj7xsC9FiH59312OjsoQ==}
-    engines: {node: '>=22.12'}
-
   semver@5.7.2:
     resolution: {integrity: sha512-cBznnQ9KjJqU67B52RMC65CMarK2600WFnbkcaiwWq3xy/5haFJlshgnpjovMVJ+Hff49d8GEn0b87C5pDQ10g==}
     hasBin: true
@@ -3019,6 +3026,10 @@ packages:
 
   undici@8.1.0:
     resolution: {integrity: sha512-E9MkTS4xXLnRPYqxH2e6Hr2/49e7WFDKczKcCaFH4VaZs2iNvHMqeIkyUAD9vM8kujy9TjVrRlQ5KkdEJxB2pw==}
+    engines: {node: '>=22.19.0'}
+
+  undici@8.12.3:
+    resolution: {integrity: sha512-+fdndUTwBP86cVjihTp21hZHo7d6oj1c/47XPA3lL8mM0XHs+C4EkcjmgRsFnFk2f/UONGDy9ItBItmXsLOQHw==}
     engines: {node: '>=22.19.0'}
 
   unicorn-magic@0.3.0:
@@ -4358,6 +4369,14 @@ snapshots:
       supports-color: 7.2.0
 
   char-regex@1.0.2: {}
+
+  charanko@0.3.0:
+    dependencies:
+      ffmpeg-static: 5.3.0
+      inumaki: link:../segra/inumaki
+      undici: 8.12.3
+    transitivePeerDependencies:
+      - supports-color
 
   chokidar@4.0.3:
     dependencies:
@@ -5855,8 +5874,6 @@ snapshots:
 
   safe-buffer@5.2.1: {}
 
-  segra-logger@0.4.0: {}
-
   semver@5.7.2: {}
 
   semver@6.3.1: {}
@@ -6168,6 +6185,8 @@ snapshots:
   undici-types@7.19.2: {}
 
   undici@8.1.0: {}
+
+  undici@8.12.3: {}
 
   unicorn-magic@0.3.0: {}
 

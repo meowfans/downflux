@@ -32,7 +32,7 @@ export class Lesbian8Pipeline extends BasePipeline<Lesbian8ExecArgs, Lesbian8Out
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata?.starred?.join('_')), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata?.starred?.join('_')), mediaSegment);
 	}
 
 	protected override mappings(metadata: Lesbian8Output, request: Lesbian8ExecArgs): PipelineMappings {

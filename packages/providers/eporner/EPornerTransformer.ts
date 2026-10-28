@@ -1,6 +1,6 @@
 import { BaseTransformer } from '@base';
 import { type DefaultExecutionResult, type VideosFormat } from '@contracts';
-import { OutputType, Provider, VideoQuality } from '@types';
+import { VideoQuality } from '@types';
 import { type EPornerExecArgs, type EPornerOutput, type EPornerVideoOutput } from './EPornerContracts';
 import { EPornerMethods } from './EPornerTypes';
 
@@ -52,11 +52,7 @@ export class EPornerTransformer extends BaseTransformer<EPornerExecArgs, Default
 
 		const videoJSON = `https://${hostname}/xhr/video/${ePornerFields.videoId}?hash=${hash}&domain=${hostname}&pixelRatio=2&playerWidth=0&playerHeight=0&fallback=false&embed=false&supportedFormats=hls,dash,h265,vp9,av1,mp4&_=${new Date().getTime().toString()}`;
 
-		const json = await this.httpClient.fetchJson(videoJSON, {
-			outputType: OutputType.JSON,
-			provider: Provider.EPorner,
-			referer: request.entryUrl
-		});
+		const json = await this.httpClient.fetchJson(videoJSON, { referer: request.entryUrl });
 
 		return {
 			mp4: this.uniqueVideos<EPornerSource>(json?.sources?.mp4, {

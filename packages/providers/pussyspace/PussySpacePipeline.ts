@@ -31,7 +31,7 @@ export class PussySpacePipeline extends BasePipeline<PussySpaceExecArgs, PussySp
 	}
 
 	protected override mappings(metadata: PussySpaceOutput, request: PussySpaceExecArgs): PipelineMappings {
-		const videoId = this.pathBuilder.spaceNormalizer(metadata.pageUrl.match(/vid-([a-z-0-9A-Z-.]+)/i)?.[1] || metadata.title);
+		const videoId = this.pathBuilder.safeName(metadata.pageUrl.match(/vid-([a-z-0-9A-Z-.]+)/i)?.[1] || metadata.title);
 
 		return [
 			this.createMappings(

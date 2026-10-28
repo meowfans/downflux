@@ -4,12 +4,12 @@ import {
 	type DefaultVideoOutput,
 	type DownloadOptions,
 	type ExecutionArgs,
-	type M3U8Variant,
 	type VideosFormat,
 	type VideoSourceOutput
 } from '@contracts';
-import { type SegraProgress } from 'segra-logger';
-import { type HlsClient, type HttpClient } from '@engine/http';
+import { type InumakiProgress } from 'inumaki';
+import { type HttpClient } from '@engine/http';
+import { type HlsClient, type HlsVariant } from 'charanko';
 import { VideoQuality } from '@types';
 import { BaseParser } from './BaseParser';
 
@@ -42,7 +42,7 @@ export class BaseTransformer<TExec extends ExecutionArgs, TResult = DefaultExecu
 	constructor(
 		protected readonly httpClient: HttpClient,
 		protected readonly hlsClient: HlsClient,
-		protected readonly progress: SegraProgress,
+		protected readonly progress: InumakiProgress,
 		protected readonly parser?: new () => BaseParser
 	) {}
 
@@ -82,8 +82,8 @@ export class BaseTransformer<TExec extends ExecutionArgs, TResult = DefaultExecu
 		return await this.httpClient.fetchText(url, opts.timeoutMs || 10000, opts.headers || {}, opts.signal);
 	}
 
-	public getVariants(manifest: string, base: string): M3U8Variant[] {
-		return this.hlsClient.getVariants(manifest, base);
+	public getVariants(manifest: string, base: string): HlsVariant[] {
+		return this.hlsClient.parseVariants(manifest, base);
 	}
 
 	/**

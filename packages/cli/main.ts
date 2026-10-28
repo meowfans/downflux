@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { downfluxTheme } from '@core/ui';
 import { OutputType, VideoQuality } from '@types';
-import { SegraLogger, Style } from 'segra-logger';
+import { Inumaki, Style } from 'inumaki';
 import { parseArgs } from 'util';
 import { methodFor, providerFor, resolveProvider } from './resolve';
 import { providerList, usage } from './usage';
@@ -18,10 +18,10 @@ const options = {
 } as const;
 
 // set up front so errors and warnings are branded before any panel renders
-SegraLogger.create({ theme: downfluxTheme, mode: 'live' });
+Inumaki.create({ theme: downfluxTheme, mode: 'live' });
 
 const fail = (message: string): never => {
-	SegraLogger.error(message);
+	Inumaki.error(message);
 	process.exit(1);
 };
 
@@ -54,9 +54,7 @@ const run = async (): Promise<void> => {
 	const progress = !values['no-progress'] && !values.json;
 
 	if (resolved === 'DefaultProvider') {
-		SegraLogger.warn(
-			'no provider claims this host; falling back to generic extraction. Run `downflux providers` to see what is supported'
-		);
+		Inumaki.warn('no provider claims this host; falling back to generic extraction. Run `downflux providers` to see what is supported');
 	}
 
 	const method = methodFor(provider, values.method);
@@ -79,9 +77,9 @@ const run = async (): Promise<void> => {
 
 	const style = new Style(process.stderr);
 
-	SegraLogger.log(`${style.success('✔')} ${downloaded} downloaded${failed ? style.danger(`, ${failed} failed`) : ''}`);
+	Inumaki.log(`${style.success('✔')} ${downloaded} downloaded${failed ? style.danger(`, ${failed} failed`) : ''}`);
 
-	for (const error of errors.slice(0, 3)) SegraLogger.error(error.message.split('|')[0].trim());
+	for (const error of errors.slice(0, 3)) Inumaki.error(error.message.split('|')[0].trim());
 
 	if (failed) process.exitCode = 1;
 };

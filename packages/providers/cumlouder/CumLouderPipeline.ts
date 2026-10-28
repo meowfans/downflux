@@ -32,7 +32,7 @@ export class CumLouderPipeline extends BasePipeline<CumLouderExecArgs, CumLouder
 	}
 
 	protected override mappings(metadata: CumLouderOutput, request: CumLouderExecArgs): PipelineMappings {
-		const videoId = this.pathBuilder.spaceNormalizer(
+		const videoId = this.pathBuilder.safeName(
 			request.entryUrl.match(/porn-video\/([^./]+)/i)?.[1] || (metadata.pageUrl.split('/').filter(Boolean).pop() as string)
 		);
 

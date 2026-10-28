@@ -9,20 +9,20 @@
  */
 import type { ProviderMetadata } from '@base';
 import type { ProviderComponents } from './ProviderComponents';
-import type { ExecutionCoordinator, TransferCoordinator } from '@core/coordinators';
-import type { SegraProgress } from 'segra-logger';
+import type { ExecutionCoordinator } from '@core/coordinators';
+import type { InumakiProgress } from 'inumaki';
 import type { StrategyRegistry, TransformerRegistry } from '@core/registries';
-import type { HttpClient, StreamHttpClient } from '@engine/http';
+import type { HttpClient } from '@engine/http';
+import type { Charanko } from 'charanko';
 import { type Provider } from '@types';
 
 export interface CoordinatorDependencies {
 	httpClient: HttpClient;
-	streamHttpClient: StreamHttpClient;
+	charanko: Charanko;
 	transformerRegistry: TransformerRegistry;
-	transferCoordinator: TransferCoordinator;
 	executionCoordinator: ExecutionCoordinator;
 	strategyRegistry: StrategyRegistry;
-	progress: SegraProgress;
+	progress: InumakiProgress;
 }
 
 export interface RegistryCoordinator {

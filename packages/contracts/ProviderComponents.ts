@@ -1,6 +1,7 @@
 import type { BaseParser, BasePipeline, BaseProvider, BaseStrategy, BaseTransformer } from '@base';
-import type { SegraProgress } from 'segra-logger';
-import type { HlsClient, HttpClient } from '@engine/http';
+import type { InumakiProgress } from 'inumaki';
+import type { HttpClient } from '@engine/http';
+import type { HlsClient } from 'charanko';
 import type { FileManager } from '@storage';
 import type { ExecutionShape } from '@types';
 import type { ExecutionArgs } from './ExecutionContracts';
@@ -25,7 +26,7 @@ export interface ProviderComponents {
 	transformer?: new (
 		httpClient: HttpClient,
 		hlsClient: HlsClient,
-		progress: SegraProgress,
+		progress: InumakiProgress,
 		parser?: new () => BaseParser
 	) => BaseTransformer<ExecutionArgs<ExecutionShape>, unknown>;
 
@@ -33,7 +34,7 @@ export interface ProviderComponents {
 	pipeline?: new (fileManager: FileManager) => BasePipeline<ExecutionArgs<ExecutionShape>, never>;
 
 	/** Provider-specific transport behaviour such as CDN fallback. */
-	strategy?: new (progress: SegraProgress) => BaseStrategy;
+	strategy?: new (progress: InumakiProgress) => BaseStrategy;
 }
 
 /** Narrow alias used where only the provider class itself is needed. */

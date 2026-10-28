@@ -1,5 +1,5 @@
 import { Provider, VideoQuality } from '@types';
-import { Style } from 'segra-logger';
+import { Style } from 'inumaki';
 
 /** Long-form help, printed for `--help` and for an empty invocation. */
 export const usage = (): string => {

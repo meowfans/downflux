@@ -17,7 +17,7 @@ export class PornDoeStrategy extends BaseStrategy {
 		'it.porndoe.com'
 	];
 
-	public override getHostFallbackUrls(url: string): string[] {
-		return super.getHostFallbackUrls(url, this.SUB_DOMAINS);
+	public override candidateUrls(url: string): string[] {
+		return super.candidateUrls(url, this.SUB_DOMAINS);
 	}
 }
