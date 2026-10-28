@@ -26,7 +26,7 @@ export class SexVidPipeline extends BasePipeline<SexVidExecArgs, SexVidOutput> {
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata?.uploader), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata?.uploader), mediaSegment);
 	}
 
 	protected override mappings(metadata: SexVidOutput, request: SexVidExecArgs): PipelineMappings {

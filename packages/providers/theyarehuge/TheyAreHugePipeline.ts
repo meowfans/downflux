@@ -32,7 +32,7 @@ export class TheyAreHugePipeline extends BasePipeline<TheyAreHugeExecArgs, TheyA
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.title), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.title), mediaSegment);
 	}
 
 	protected override mappings(metadata: TheyAreHugeOutput, request: TheyAreHugeExecArgs): PipelineMappings {

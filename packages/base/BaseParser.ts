@@ -1,7 +1,8 @@
 import { type DefaultExecutionResult, type DefaultFlashVarsVideoOutput, type FlashVarsOutput, type VideoSourceOutput } from '@contracts';
 import { GenericException } from '@core/exceptions';
-import { inferVideoQuality, KvsResolver } from '@shared';
+import { inferVideoQuality } from '@shared';
 import { Provider, VideoQuality } from '@types';
+import { KvsResolver } from 'charanko';
 
 /**
  * Default HTML parser shared by provider-specific parsers.
@@ -13,8 +14,6 @@ import { Provider, VideoQuality } from '@types';
  * needed by transformers and pipelines.
  */
 export class BaseParser {
-	protected kvsResolver = new KvsResolver();
-
 	/**
 	 * Extracts common metadata from a fetched HTML document.
 	 *
@@ -99,7 +98,7 @@ export class BaseParser {
 			if (!cleaned) return undefined;
 
 			return {
-				url: licenseCode ? this.kvsResolver.resolveKvsUrl(cleaned, licenseCode) : cleaned,
+				url: KvsResolver.resolve(cleaned, licenseCode),
 				quality: (quality?.replace(/[^0-9p]+/gi, '') as VideoQuality) || VideoQuality.QUnknown
 			};
 		};

@@ -35,7 +35,7 @@ export class XozillaPipeline extends BasePipeline<XozillaExecArgs, XozillaOutput
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata?.title || 'unknown_uploader'), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata?.title || 'unknown_uploader'), mediaSegment);
 	}
 
 	protected override mappings(metadata: XozillaOutput, request: XozillaExecArgs): PipelineMappings {

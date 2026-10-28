@@ -1,12 +1,12 @@
-import { SegraProgress } from 'segra-logger';
+import { InumakiProgress } from 'inumaki';
 import { Provider } from '@types';
 import { BaseStrategy } from '@base';
 {{imports}}
 
-type StrategyCtor = new (progress: SegraProgress) => BaseStrategy;
+type StrategyCtor = new (progress: InumakiProgress) => BaseStrategy;
 
 export class StrategyRegistry {
-	constructor(private readonly progress: SegraProgress) {}
+	constructor(private readonly progress: InumakiProgress) {}
 
 	private readonly strategies: Record<Provider, StrategyCtor> = {
 		{{entries}}

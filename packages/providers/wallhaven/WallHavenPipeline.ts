@@ -37,7 +37,7 @@ export class WallHavenPipeline extends BasePipeline<WallHavenExecArgs, WallHaven
 				mediaSegment = 'misc';
 		}
 
-		return this.pathBuilder.join(prefix, username ?? this.pathBuilder.spaceNormalizer(metadata.uploader), mediaSegment);
+		return this.pathBuilder.join(prefix, username ?? this.pathBuilder.safeName(metadata.uploader), mediaSegment);
 	}
 
 	protected override mappings(metadata: WallHavenOutput, request: WallHavenExecArgs): PipelineMappings {

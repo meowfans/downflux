@@ -23,11 +23,11 @@ export class HqPornPipeline extends BasePipeline<HqPornExecArgs, HqPornOutput> {
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.uploader), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.uploader), mediaSegment);
 	}
 
 	protected override mappings(metadata: HqPornOutput, request: HqPornExecArgs): PipelineMappings {
-		const videoId = this.pathBuilder.spaceNormalizer(metadata.title.match(/:\s([^HD]+)\s/i)?.[1] || metadata.title);
+		const videoId = this.pathBuilder.safeName(metadata.title.match(/:\s([^HD]+)\s/i)?.[1] || metadata.title);
 
 		return [
 			this.createMappings(

@@ -35,7 +35,7 @@ export class BoKepPornPipeline extends BasePipeline<BoKepPornExecArgs, BoKepPorn
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata?.uploader || 'unknown_uploader'), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata?.uploader || 'unknown_uploader'), mediaSegment);
 	}
 
 	protected override mappings(metadata: BoKepPornOutput, request: BoKepPornExecArgs): PipelineMappings {

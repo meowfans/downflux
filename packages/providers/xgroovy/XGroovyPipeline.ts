@@ -28,13 +28,13 @@ export class XGroovyPipeline extends BasePipeline<XGroovyExecArgs, XGroovyOutput
 
 		return this.pathBuilder.join(
 			prefix,
-			this.pathBuilder.spaceNormalizer(metadata.uploaderId?.split('/')?.pop() || 'xgroovy_uploader'),
+			this.pathBuilder.safeName(metadata.uploaderId?.split('/')?.pop() || 'xgroovy_uploader'),
 			mediaSegment
 		);
 	}
 
 	protected override mappings(metadata: XGroovyOutput, request: XGroovyExecArgs): PipelineMappings {
-		const videoId = this.pathBuilder.spaceNormalizer(metadata.title);
+		const videoId = this.pathBuilder.safeName(metadata.title);
 
 		return [
 			this.createMappings(

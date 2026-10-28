@@ -1,5 +1,5 @@
 import { type ExecutionArgs, type ExecutionResult, type PipelineHook, type PipelineItem } from '@contracts';
-import { type SegraProgress } from 'segra-logger';
+import { type InumakiProgress } from 'inumaki';
 import { type PipelineRegistry, type TransformerRegistry } from '@core/registries';
 import { type ExecutionShape, OutputType, type ShapeOutput } from '@types';
 import { type TaskCoordinator } from './TaskCoordinator';
@@ -19,7 +19,7 @@ export class ExecutionCoordinator {
 	constructor(
 		private readonly transformerRegistry: TransformerRegistry,
 		private readonly taskCoordinator: TaskCoordinator,
-		private readonly progress: SegraProgress,
+		private readonly progress: InumakiProgress,
 		private readonly pipelineRegistry: PipelineRegistry
 	) {}
 

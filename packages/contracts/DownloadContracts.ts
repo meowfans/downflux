@@ -1,7 +1,6 @@
 import { type OutputType, type Provider, type VideoQuality } from '@types';
-import { type Readable, type Writable } from 'stream';
+import { type Readable } from 'stream';
 import { type HttpAgentOptions } from './ExecutionContracts';
-import { type PipelineItem } from './PipelineContracts';
 import { type DirectoryOutputOptions, type TranscodeOptions } from './StorageContracts';
 
 export interface DownloadOptions extends HttpFetchOptions {
@@ -9,22 +8,8 @@ export interface DownloadOptions extends HttpFetchOptions {
 	transcodeOptions?: TranscodeOptions;
 	outputType: OutputType;
 	provider: Provider;
-	reExtract?: (item: PipelineItem) => Promise<PipelineItem | null>;
-	pipelineItem?: PipelineItem;
 	noDownload?: boolean;
 	allowedVideoQuality?: VideoQuality;
-
-	/**
-	 * Remaining CDN fallback attempts for this transfer.
-	 *
-	 * @remarks
-	 * Carried on the request rather than on the client so one item cannot exhaust
-	 * the budget of every other item sharing the same `StreamHttpClient`.
-	 */
-	cdnFallbackBudget?: number;
-
-	/** Remaining expired-URL re-extraction attempts for this transfer. */
-	reExtractBudget?: number;
 }
 
 /**
@@ -87,27 +72,6 @@ export interface FetchResult {
 	headers: Record<string, string>;
 }
 
-export interface HLSStreamRequest {
-	finalUrl: string;
-	headers: Record<string, string>;
-	isFmp4?: boolean;
-
-	/**
-	 * Exact byte length of what will be delivered, when it can be known.
-	 *
-	 * @remarks
-	 * Only set when bytes pass through untouched. Remuxing changes the container,
-	 * so the origin's length no longer describes the output and publishing it as
-	 * `Content-Length` would truncate or stall the client.
-	 */
-	contentLength?: number;
-
-	/** Best-effort source size, safe for progress UI but never for `Content-Length`. */
-	estimatedBytes?: number;
-
-	start: (stream: Writable, noDownload?: boolean) => Promise<void>;
-}
-
 /**
  * HTTP fetch options.
  * Controls request headers, retries, timeout, and referer.
@@ -137,22 +101,6 @@ export interface HttpFetchOptions extends HttpAgentOptions {
 
 	/** Optional FormData for POST requests */
 	formData?: Record<string, string>;
-}
-
-export interface M3U8Variant {
-	url: string;
-	width: number;
-	height: number;
-	bw: number;
-}
-
-export interface ServiceStrategy {
-	shouldFallback404?(url: string): boolean;
-	getFallbackUrl?(url: string): string | null;
-	shouldReExtract?(url: string): boolean;
-	shouldResolveTextResponse?(url: string, contentType: string): boolean;
-	getDirectVideoUrlFromText?(body: string, opts: DownloadOptions): string | null;
-	getHostFallbackUrls?(url: string): string[];
 }
 
 export interface VideoSourceOutput {

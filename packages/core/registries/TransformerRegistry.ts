@@ -1,7 +1,8 @@
 import { BaseTransformer } from '@base';
 import type { ExecutionArgs, ProviderComponents } from '@contracts';
-import type { SegraProgress } from 'segra-logger';
-import type { HlsClient, HttpClient } from '@engine/http';
+import type { InumakiProgress } from 'inumaki';
+import type { HttpClient } from '@engine/http';
+import type { HlsClient } from 'charanko';
 
 /**
  * Resolves the transformer for the running job.
@@ -16,7 +17,7 @@ export class TransformerRegistry {
 	constructor(
 		private readonly httpClient: HttpClient,
 		private readonly hlsClient: HlsClient,
-		private readonly progress: SegraProgress,
+		private readonly progress: InumakiProgress,
 		private readonly components: ProviderComponents = {}
 	) {}
 

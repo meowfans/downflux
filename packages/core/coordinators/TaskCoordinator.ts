@@ -8,10 +8,10 @@ import {
 	type PipelineItem
 } from '@contracts';
 import { type PipelineRegistry, type TransformerRegistry } from '@core/registries';
-import { type FileManager } from '@storage';
-import { type ExecutionShape, type OutputType } from '@types';
-import { type SegraProgress } from 'segra-logger';
-import { type TransferCoordinator } from './TransferCoordinator';
+import { FileManager } from '@storage';
+import { type ExecutionShape, OutputType } from '@types';
+import { type InumakiProgress } from 'inumaki';
+import { type Charanko, type DownloadOptions as TransferOptions, type DownloadTarget } from 'charanko';
 
 /**
  * Coordinates concurrent work within an execution result.
@@ -25,10 +25,10 @@ export class TaskCoordinator {
 	private static readonly Default_DOWNLOAD_CONCURRENCY = 5;
 
 	constructor(
-		private readonly transferCoordinator: TransferCoordinator,
+		private readonly charanko: Charanko,
 		private readonly fileManager: FileManager,
 		private readonly transformerRegistry: TransformerRegistry,
-		private readonly progress: SegraProgress,
+		private readonly progress: InumakiProgress,
 		private readonly pipelineRegistry: PipelineRegistry
 	) {}
 
@@ -65,29 +65,36 @@ export class TaskCoordinator {
 			this.reportCounts(result, pending, pipelineItem);
 
 			try {
-				const downloadResult = await this.transferCoordinator.download(pipelineItem, {
-					...options,
-					outputType,
-					provider: request.provider,
-					cdnFallbackBudget: options.maxCdnFallbacks,
-					reExtractBudget: options.maxReExtractions,
-					reExtract: async (item) => {
-						const result = await this.transformerRegistry.transform(item.sourceUrl, { ...request, entryUrl: item.sourceUrl });
+				let current = pipelineItem;
 
-						const newItems = await this.pipelineRegistry.build(result, request);
+				const downloaded = await this.charanko.download(this.targetOf(pipelineItem), {
+					...this.transferOptions(options, outputType),
+					refresh: async () => {
+						const extracted = await this.transformerRegistry.transform(current.sourceUrl, {
+							...request,
+							entryUrl: current.sourceUrl
+						});
+
+						const rebuilt = await this.pipelineRegistry.build(extracted, request);
 
 						/**
 						 * Re-extraction has to return the replacement for *this* item. Taking
 						 * the first rebuilt item would silently swap quality or media type
 						 * whenever a page yields more than one download.
 						 */
-						return (
-							newItems.find((candidate) => candidate.identifier.key === item.identifier.key) ??
-							newItems.find((candidate) => candidate.identifier.mediaType === item.identifier.mediaType) ??
-							null
-						);
+						const replacement =
+							rebuilt.find((candidate) => candidate.identifier.key === current.identifier.key) ??
+							rebuilt.find((candidate) => candidate.identifier.mediaType === current.identifier.mediaType);
+
+						if (!replacement) return null;
+
+						current = replacement;
+
+						return this.targetOf(replacement);
 					}
 				});
+
+				const downloadResult: DownloadResult = { ...downloaded, provider: request.provider };
 
 				this.runDownloadHooks(pipelineHooks, pipelineItem, downloadResult);
 
@@ -165,6 +172,35 @@ export class TaskCoordinator {
 				}
 			}
 		});
+	}
+
+	/** What charanko downloads for a pipeline item: its URL, the page it came from and its folder. */
+	private targetOf(item: PipelineItem): DownloadTarget {
+		return { url: item.downloadUrl, referer: item.sourceUrl, folder: item.identifier.key };
+	}
+
+	/** Maps the job options onto charanko's transfer options. */
+	private transferOptions(options: ExecutionOptions, outputType: OutputType): TransferOptions {
+		return {
+			outputType: outputType === OutputType.STREAM ? 'STREAM' : 'DEVICE',
+			directory: {
+				directoryPath: options.dirConfig?.directoryPath ?? FileManager.DEFAULT_DIRECTORY,
+				prefix: options.dirConfig?.prefix
+			},
+			transcode: options.transcodeOptions,
+			quality: options.allowedVideoQuality,
+			dryRun: options.noDownload,
+			headers: options.headers,
+			timeoutMs: options.timeoutMs,
+			retries: options.retries,
+			signal: options.signal,
+			proxy: options.proxy,
+			dispatcher: options.dispatcher,
+			enableSniSpoofing: options.enableSniSpoofing,
+			userAgent: options.userAgent,
+			cdnFallbackBudget: options.maxCdnFallbacks,
+			refreshBudget: options.maxReExtractions
+		};
 	}
 
 	private runDownloadHooks(hooks: PipelineHook[], item: PipelineItem, result: DownloadResult): void {

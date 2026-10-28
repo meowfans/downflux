@@ -36,7 +36,7 @@ export class ShamelessPipeline extends BasePipeline<ShamelessExecArgs, Shameless
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.uploader), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.uploader), mediaSegment);
 	}
 
 	protected override mappings(metadata: ShamelessOutput, request: ShamelessExecArgs): PipelineMappings {

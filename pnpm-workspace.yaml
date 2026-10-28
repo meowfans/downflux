@@ -1,2 +1,7 @@
 onlyBuiltDependencies:
   - ffmpeg-static
+
+# uses the local packages until inumaki and charanko are on npm; remove after publishing them
+overrides:
+  inumaki: link:../segra/inumaki
+  charanko: link:../segra/charanko

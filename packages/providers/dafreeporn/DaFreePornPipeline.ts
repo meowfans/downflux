@@ -35,7 +35,7 @@ export class DaFreePornPipeline extends BasePipeline<DaFreePornExecArgs, DaFreeP
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata?.title || 'unknown_uploader'), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata?.title || 'unknown_uploader'), mediaSegment);
 	}
 
 	protected override mappings(metadata: DaFreePornOutput, request: DaFreePornExecArgs): PipelineMappings {

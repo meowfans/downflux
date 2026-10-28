@@ -28,7 +28,7 @@ export class EPornerPipeline extends BasePipeline<EPornerExecArgs, EPornerOutput
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.uploader), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.uploader), mediaSegment);
 	}
 
 	protected override extract(request: EPornerExecArgs, metadata: EPornerOutput): PipelineExtractedItem[] {

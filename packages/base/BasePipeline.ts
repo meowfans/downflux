@@ -9,8 +9,9 @@ import {
 	type PipelineMappings
 } from '@contracts';
 import { Helper } from '@shared';
-import { type FileManager, PathBuilder } from '@storage';
+import { type FileManager } from '@storage';
 import { type AllowedExtension, MediaType, VideoQuality } from '@types';
+import { PathBuilder } from 'charanko';
 
 /**
  * Converts extracted metadata into downloadable work items.

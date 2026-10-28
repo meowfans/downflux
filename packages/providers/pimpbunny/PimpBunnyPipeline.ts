@@ -26,7 +26,7 @@ export class PimpBunnyPipeline extends BasePipeline<PimpBunnyExecArgs, PimpBunny
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata?.uploader || 'unknown_uploader'), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata?.uploader || 'unknown_uploader'), mediaSegment);
 	}
 
 	protected override mappings(metadata: PimpBunnyOutput, _request: PimpBunnyExecArgs): PipelineMappings {

@@ -28,7 +28,7 @@ export class TubeVSexPipeline extends BasePipeline<TubeVSexExecArgs, TubeVSexOut
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.uploader), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.uploader), mediaSegment);
 	}
 
 	protected override mappings(metadata: TubeVSexOutput, request: TubeVSexExecArgs): PipelineMappings {

@@ -28,11 +28,11 @@ export class PornsOkPipeline extends BasePipeline<PornsOkExecArgs, PornsOkOutput
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.starredBy?.[0]), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.starredBy?.[0]), mediaSegment);
 	}
 
 	protected override mappings(metadata: PornsOkOutput, request: PornsOkExecArgs) {
-		const videoId = this.pathBuilder.spaceNormalizer(metadata.title);
+		const videoId = this.pathBuilder.safeName(metadata.title);
 
 		return [
 			this.createMappings(

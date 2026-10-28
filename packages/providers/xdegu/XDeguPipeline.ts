@@ -34,11 +34,7 @@ export class XDeguPipeline extends BasePipeline<XDeguExecArgs, XDeguOutput> {
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(
-			prefix,
-			this.pathBuilder.spaceNormalizer(metadata?.starred?.join('_') ?? 'unknown_uploader'),
-			mediaSegment
-		);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata?.starred?.join('_') ?? 'unknown_uploader'), mediaSegment);
 	}
 
 	protected override mappings(metadata: XDeguOutput, request: XDeguExecArgs): PipelineMappings {

@@ -32,11 +32,11 @@ export class PornDoePipeline extends BasePipeline<PornDoeExecArgs, PornDoeOutput
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.uploader), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.uploader), mediaSegment);
 	}
 
 	protected override mappings(metadata: PornDoeOutput, request: PornDoeExecArgs): PipelineMappings {
-		const videoId = this.pathBuilder.spaceNormalizer(request.entryUrl.split('/').filter(Boolean).pop() as string);
+		const videoId = this.pathBuilder.safeName(request.entryUrl.split('/').filter(Boolean).pop() as string);
 
 		return [
 			this.createMappings(

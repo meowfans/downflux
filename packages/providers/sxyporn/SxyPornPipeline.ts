@@ -28,7 +28,7 @@ export class SxyPornPipeline extends BasePipeline<SxyPornExecArgs, SxyPornOutput
 				mediaSegment = `${mediaType}/${id}`;
 		}
 
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata?.uploader || 'sxyporn_uploader'), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata?.uploader || 'sxyporn_uploader'), mediaSegment);
 	}
 
 	protected override mappings(metadata: SxyPornOutput, request: SxyPornExecArgs): PipelineMappings {

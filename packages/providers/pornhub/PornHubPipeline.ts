@@ -32,7 +32,7 @@ export class PornHubPipeline extends BasePipeline<PornHubExecArgs, PornHubOutput
 			default:
 				mediaSegment = `${mediaType}/${id}`;
 		}
-		return this.pathBuilder.join(prefix, this.pathBuilder.spaceNormalizer(metadata.user ?? id), mediaSegment);
+		return this.pathBuilder.join(prefix, this.pathBuilder.safeName(metadata.user ?? id), mediaSegment);
 	}
 
 	protected override mappings(metadata: PornHubOutput, request: PornHubExecArgs): PipelineMappings {
@@ -77,17 +77,17 @@ export class PornHubPipeline extends BasePipeline<PornHubExecArgs, PornHubOutput
 			this.createMappings(metadata?.userAvatar ? [metadata.userAvatar] : undefined, {
 				getMedia: () => MediaType.AVATAR,
 				getUrl: (avatar) => avatar,
-				getId: () => this.pathBuilder.spaceNormalizer(metadata.user ?? 'unknown')
+				getId: () => this.pathBuilder.safeName(metadata.user ?? 'unknown')
 			}),
 			this.createMappings(metadata?.channelThumbnail ? [metadata.channelThumbnail] : undefined, {
 				getMedia: () => MediaType.CHANNELS,
 				getUrl: (thumb) => thumb,
-				getId: () => this.pathBuilder.spaceNormalizer(metadata.channelName ?? 'unknown')
+				getId: () => this.pathBuilder.safeName(metadata.channelName ?? 'unknown')
 			}),
 			this.createMappings(metadata?.channelThumbnail ? [metadata.channelThumbnail] : undefined, {
 				getMedia: () => MediaType.CHANNELS,
 				getUrl: (cover) => cover,
-				getId: () => this.pathBuilder.spaceNormalizer(metadata.channelName ?? 'unknown')
+				getId: () => this.pathBuilder.safeName(metadata.channelName ?? 'unknown')
 			})
 		];
 	}

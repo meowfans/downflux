@@ -117,8 +117,8 @@ import { BeegProvider } from 'downflux/providers';
 | `downflux/providers` | every site integration |
 | `downflux/base` | `BaseProvider`, `BaseParser`, `BaseTransformer`, `BasePipeline`, `BaseStrategy` |
 | `downflux/core` | coordinators, registries, exceptions, `downfluxTheme` |
-| `downflux/engines` | `HttpClient`, `StreamHttpClient`, `HlsClient` |
-| `downflux/storage` | `FileManager`, `FFmpegEngine`, `PathBuilder` |
+| `downflux/engines` | `HttpClient` (page and API requests; downloads go through [charanko](https://www.npmjs.com/package/charanko)) |
+| `downflux/storage` | `FileManager` (JSON output and resource types, on top of charanko's) |
 | `downflux/shared` | constants, helpers |
 | `downflux/types` | enums and type-level helpers |
 | `downflux/contracts` | interfaces only, erased at runtime |
@@ -254,10 +254,10 @@ Call `provider.dispose()` when finished to detach the progress renderer, or
 ## Progress Output
 
 `setProgressLogging(true)` renders a live panel that redraws in place, with a bar per concurrent
-item, transfer rate and ETA. It is drawn on stderr by [segra-logger](https://www.npmjs.com/package/segra-logger),
+item, transfer rate and ETA. It is drawn on stderr by [inumaki](https://www.npmjs.com/package/inumaki),
 and becomes one summary line per update when stderr is not a TTY or the logger is in append mode.
 It looks the same from the `downflux` command and inside your app: DOWNFLUX banner and branding, live
-panel. If your app calls `SegraLogger.create({ theme, mode })` first, the panel follows that instead.
+panel. If your app calls `Inumaki.create({ theme, mode })` first, the panel follows that instead.
 
 ```ts
 provider.setProgressLogging(true, { captureConsole: true });
@@ -267,7 +267,7 @@ provider.setProgressLogging(true, { captureConsole: true });
 frame. It is off by default because it patches `stdout`/`stderr`, which is the host application's
 call to make.
 
-For programmatic progress use `onProgress`, which receives segra-logger's `ProgressSnapshot` on every
+For programmatic progress use `onProgress`, which receives inumaki's `ProgressSnapshot` on every
 update: `status`, `counts` (`Targets`, `Items`), `details`, totals (`bytes`, `totalBytes`, `speed`, `eta`)
 and `transfers`, one per file with its own bytes, segments, rate and ETA.
 
@@ -283,10 +283,10 @@ Useful entry points:
 - [BasePipeline](docs-md/classes/BasePipeline.md) - turns extracted metadata into downloadable items.
 - [ExecutionCoordinator](docs-md/classes/ExecutionCoordinator.md) - job-level extraction and output flow.
 - [TaskCoordinator](docs-md/classes/TaskCoordinator.md) - concurrency, hooks, and background downloads.
-- [TransferCoordinator](docs-md/classes/TransferCoordinator.md) - streams one pipeline item into storage.
-- [HttpClient](docs-md/classes/HttpClient.md), [StreamHttpClient](docs-md/classes/StreamHttpClient.md), and [HlsClient](docs-md/classes/HlsClient.md) - HTTP and HLS engines.
-- [FileManager](docs-md/classes/FileManager.md) and [FFmpegEngine](docs-md/classes/FFmpegEngine.md) - output sinks, filenames, JSON, and media finalization.
-- [JobSettlement](docs-md/interfaces/JobSettlement.md) - what `whenSettled()` hands back; `onProgress` receives segra-logger's `ProgressSnapshot`.
+- [HttpClient](docs-md/classes/HttpClient.md) - page and API requests with provider host fallbacks.
+- [FileManager](docs-md/classes/FileManager.md) - JSON results and resource types.
+- [charanko](https://www.npmjs.com/package/charanko) - the download engine: HTTP and HLS transfers, CDN fallbacks, refreshes, sinks, and FFmpeg remux.
+- [JobSettlement](docs-md/interfaces/JobSettlement.md) - what `whenSettled()` hands back; `onProgress` receives inumaki's `ProgressSnapshot`.
 - [Provider](docs-md/enumerations/Provider.md), [OutputType](docs-md/enumerations/OutputType.md), [ExecutionType](docs-md/enumerations/ExecutionType.md), [VideoQuality](docs-md/enumerations/VideoQuality.md).
 
 Regenerate the Markdown docs with:
@@ -336,10 +336,10 @@ flowchart TD
     subgraph ExecutionLayer["Execution Layer"]
         TaskCoordinator[TaskCoordinator<br/>Schedules concurrent tasks]
 
-        TransferCoordinator[TransferCoordinator<br/>Coordinates downloads]
+        Charanko[Charanko<br/>Downloads one item]
     end
 
-    subgraph StreamLayer["Stream & Output Layer"]
+    subgraph StreamLayer["Transfer & Output Layer (charanko)"]
         StreamHttpClient[StreamHttpClient<br/>Streams remote files<br/>• Uses Strategy for CDN fallback<br/>• Delegates HLS to HlsClient]
 
         StrategyRegistry[StrategyRegistry<br/>Loads extraction strategies]
@@ -374,9 +374,9 @@ flowchart TD
     PipelineItems --> Identifiers
 
     Pipeline --> TaskCoordinator
-    TaskCoordinator --> TransferCoordinator
+    TaskCoordinator --> Charanko
 
-    TransferCoordinator --> StreamHttpClient
+    Charanko --> StreamHttpClient
     StreamHttpClient --> StrategyRegistry
     StrategyRegistry --> Strategy
     Strategy -.->|CDN Fallback<br/>Re-extraction| StreamHttpClient
@@ -403,7 +403,7 @@ flowchart TD
     class ServiceProvider,BaseProvider provider;
     class TransformerRegistry,Transformer transform;
     class PipelineRegistry,Pipeline,PipelineItems,URLs,MediaTypes,Identifiers pipeline;
-    class TaskCoordinator,TransferCoordinator execution;
+    class TaskCoordinator,Charanko execution;
     class HttpClient network;
     class ParserRegistry,Parser parser;
     class StrategyRegistry,Strategy strategy;
