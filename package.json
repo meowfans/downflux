@@ -1,6 +1,6 @@
 {
 	"name": "downflux",
-	"version": "3.2.1",
+	"version": "3.2.2",
 	"bin": {
 		"downflux": "./dist/cli.js"
 	},
