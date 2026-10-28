@@ -1,7 +1,6 @@
 onlyBuiltDependencies:
   - ffmpeg-static
 
-# uses the local packages until inumaki and charanko are on npm; remove after publishing them
 overrides:
-  inumaki: link:../segra/inumaki
-  charanko: link:../segra/charanko
+  # esbuild before 0.28.1 has a file-read advisory, and tsup still pulls it in
+  'esbuild@<0.28.1': ^0.28.1
